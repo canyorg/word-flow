@@ -7,10 +7,10 @@ A new word / verb / phrase every 20 seconds, with its meaning right below it,
 so you learn it whenever your eye catches it.
 
 Language pairs (word → meaning):
-    de-tr   German  → Turkish
-    en-tr   English → Turkish   (Everyday + Academic)
-    en-de   English → German    (Everyday + Academic)
-    de-en   German  → English
+    de-tr   German  → Turkish   (General / Academic / Cyber)
+    en-tr   English → Turkish   (Everyday / Academic / Cyber)
+    en-de   English → German    (Everyday / Academic / Cyber)
+    de-en   German  → English   (General / Academic / Cyber)
 
 Usage:
     python3 wordflow.py de-tr
@@ -52,10 +52,12 @@ UI = {
         "next": "Sonraki", "tip_level": "Mod / seviye değiştir",
         "pin_on": "Konum kilitli — aç", "pin_off": "Konumu kilitle",
         "choose": "Seviyeni seç",
-        "modes": {"general": "Genel", "daily": "Günlük", "academic": "Akademik"},
-        "hints": {"general": "Alt seviyelerden de ara sıra tekrar gelir — seviyeni seç",
-                  "daily": "Günlük konuşma kelimeleri ve kalıplar — seviyeni seç",
-                  "academic": "Makale, tez ve sunum dili — seviyeni seç"},
+        "modes": {"general": "Genel", "daily": "Günlük", "academic": "Akademik",
+                  "cyber": "Siber"},
+        "hints": {"general": "Temel 1500 kelimeden C2 deyimlerine — seviyeni seç",
+                  "daily": "Günlük kelimeler, phrasal verb'ler, deyimler — seviyeni seç",
+                  "academic": "Makale, tez ve sunum dili — seviyeni seç",
+                  "cyber": "Siber güvenlik: ağ → saldırı → pentest → SOC → GRC"},
         "m_mode": "Mod", "m_level": "Seviye", "m_interval": "Değişme süresi",
         "sec": "{} saniye", "m_lock": "Konumu kilitle", "m_top": "Her zaman üstte",
         "m_bg": "Arka plan resmi seç…", "m_bg_reset": "Varsayılan arka plan",
@@ -69,10 +71,12 @@ UI = {
         "next": "Next", "tip_level": "Change mode / level",
         "pin_on": "Position locked — unlock", "pin_off": "Lock position",
         "choose": "Choose your level",
-        "modes": {"general": "General", "daily": "Everyday", "academic": "Academic"},
-        "hints": {"general": "Lower levels come back now and then — choose your level",
-                  "daily": "Everyday words and phrases — choose your level",
-                  "academic": "Language of papers, theses and talks — choose your level"},
+        "modes": {"general": "General", "daily": "Everyday", "academic": "Academic",
+                  "cyber": "Cyber"},
+        "hints": {"general": "From 1,500 core words to C2 idioms — choose your level",
+                  "daily": "Everyday words, phrasal verbs, idioms — choose your level",
+                  "academic": "Language of papers, theses and talks — choose your level",
+                  "cyber": "Cybersecurity: network → attacks → pentest → SOC → GRC"},
         "m_mode": "Mode", "m_level": "Level", "m_interval": "Change every",
         "sec": "{} seconds", "m_lock": "Lock position", "m_top": "Always on top",
         "m_bg": "Choose background image…", "m_bg_reset": "Default background",
@@ -86,10 +90,12 @@ UI = {
         "next": "Weiter", "tip_level": "Modus / Niveau ändern",
         "pin_on": "Position gesperrt — entsperren", "pin_off": "Position sperren",
         "choose": "Wähle dein Niveau",
-        "modes": {"general": "Allgemein", "daily": "Alltag", "academic": "Akademisch"},
-        "hints": {"general": "Niedrigere Niveaus kommen ab und zu wieder — wähle dein Niveau",
-                  "daily": "Wörter und Wendungen für den Alltag — wähle dein Niveau",
-                  "academic": "Sprache für Paper, Abschlussarbeit und Vortrag — wähle dein Niveau"},
+        "modes": {"general": "Allgemein", "daily": "Alltag", "academic": "Akademisch",
+                  "cyber": "Cyber"},
+        "hints": {"general": "Von 1.500 Grundwörtern bis zu C2-Redewendungen",
+                  "daily": "Alltagswörter, Phrasal Verbs, Redewendungen",
+                  "academic": "Sprache für Paper, Abschlussarbeit und Vortrag",
+                  "cyber": "Cybersecurity: Netzwerk → Angriffe → Pentest → SOC → GRC"},
         "m_mode": "Modus", "m_level": "Niveau", "m_interval": "Wechsel alle",
         "sec": "{} Sekunden", "m_lock": "Position sperren", "m_top": "Immer im Vordergrund",
         "m_bg": "Hintergrundbild wählen…", "m_bg_reset": "Standard-Hintergrund",
@@ -118,29 +124,41 @@ def parse_block(raw, mode, meaning):
 
 
 def en_de(mode):
-    table = english.EN_DE_ACADEMIC if mode == "academic" else english.EN_DE
+    table = {"academic": english.EN_DE_ACADEMIC, "cyber": english.EN_DE_CYBER}.get(
+        mode, english.EN_DE)
     return lambda w, tr: table.get(w) or english.EN_DE.get(w, tr)
+
+
+def de_en(table):
+    return lambda w, tr: table.get(w, tr)
 
 
 PAIRS = {
     "de-tr": {"title": "Kelime Akışı · DE → TR", "ui": "tr", "src": "de", "dst": "tr",
               "state": "kelime-akisi",
-              "modes": {"general": parse_block(german.GERMAN, "general",
-                                               lambda w, tr: tr)}},
+              "modes": {"general": parse_block(german.GERMAN, "general", lambda w, tr: tr),
+                        "academic": parse_block(german.GERMAN_ACADEMIC, "academic",
+                                                lambda w, tr: tr),
+                        "cyber": parse_block(german.GERMAN_CYBER, "cyber", lambda w, tr: tr)}},
     "en-tr": {"title": "Word Flow · EN → TR", "ui": "tr", "src": "en", "dst": "tr",
               "state": "kelime-akisi-en",
               "modes": {"daily": parse_block(english.DAILY, "daily", lambda w, tr: tr),
                         "academic": parse_block(english.ACADEMIC, "academic",
-                                                lambda w, tr: tr)}},
+                                                lambda w, tr: tr),
+                        "cyber": parse_block(english.CYBER, "cyber", lambda w, tr: tr)}},
     "en-de": {"title": "Word Flow · EN → DE", "ui": "de", "src": "en", "dst": "de",
               "state": "word-flow-en-de",
               "modes": {"daily": parse_block(english.DAILY, "daily", en_de("daily")),
                         "academic": parse_block(english.ACADEMIC, "academic",
-                                                en_de("academic"))}},
+                                                en_de("academic")),
+                        "cyber": parse_block(english.CYBER, "cyber", en_de("cyber"))}},
     "de-en": {"title": "Word Flow · DE → EN", "ui": "en", "src": "de", "dst": "en",
               "state": "word-flow-de-en",
-              "modes": {"general": parse_block(german.GERMAN, "general",
-                                               lambda w, tr: german.DE_EN.get(w, tr))}},
+              "modes": {"general": parse_block(german.GERMAN, "general", de_en(german.DE_EN)),
+                        "academic": parse_block(german.GERMAN_ACADEMIC, "academic",
+                                                de_en(german.DE_EN_ACADEMIC)),
+                        "cyber": parse_block(german.GERMAN_CYBER, "cyber",
+                                             de_en(german.DE_EN_CYBER))}},
 }
 
 ARTICLE_COLORS = {"der": "#7fb2ff", "die": "#ff8fa3", "das": "#7fe0a8"}
@@ -383,9 +401,10 @@ class WordWidget(QWidget):
         v.addStretch(1)
         return page
 
-    def seg_css(self, on, left):
-        r = ("border-top-left-radius:11px;border-bottom-left-radius:11px;" if left
-             else "border-top-right-radius:11px;border-bottom-right-radius:11px;")
+    def seg_css(self, on, pos):
+        r = {"first": "border-top-left-radius:11px;border-bottom-left-radius:11px;",
+             "last": "border-top-right-radius:11px;border-bottom-right-radius:11px;"
+             }.get(pos, "border-radius:0px;")
         bg = "rgba(140,120,255,0.8)" if on else "rgba(255,255,255,0.12)"
         return ("QPushButton{color:white;background:%s;border:none;%s"
                 "padding:5px;font-size:12px;font-weight:700;}"
@@ -393,8 +412,10 @@ class WordWidget(QWidget):
 
     def pick_mode(self, m):
         self.picker_mode = m
+        n = len(self.mode_btns)
         for i, (k, b) in enumerate(self.mode_btns.items()):
-            b.setStyleSheet(self.seg_css(k == m, i == 0))
+            b.setStyleSheet(self.seg_css(k == m, "first" if i == 0 else
+                                         "last" if i == n - 1 else "mid"))
         self.pick_hint.setText(self.T["hints"][m])
         while self.grid.count():
             wd = self.grid.takeAt(0).widget()

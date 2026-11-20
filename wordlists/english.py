@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """English word lists.
 
-DAILY    : A1.1–C2.2 — foundation built from the same 1500 core concepts as the
-           German list, plus phrasal verbs and idioms in the upper levels
-ACADEMIC : B1.1–C2.2 — vocabulary for papers, theses and talks
+DAILY    : A1.1–C2.2 — 1500 core concepts (A1–B1), C1 general vocabulary,
+           phrasal verbs, connectors and idioms up to C2.2
+ACADEMIC : B1.1–C2.2 — vocabulary and set phrases for papers, theses and talks
+CYBER    : B1.1–C2.2 — professional cybersecurity vocabulary (attacks, networking,
+           Linux, web security, crypto & IAM, pentest, SOC/IR, GRC, workplace phrases)
 Lines: "type|English|Turkish|hint"
-         type: n = noun, v = verb, a = adjective, d = adverb / linker,
-               p = phrase / phrasal verb, w = other word
-EN_DE / EN_DE_ACADEMIC : English -> German meaning (academic overrides daily)
+       type: n noun, v verb, a adjective, d adverb / linker, p phrase, w other word
+EN_DE* : English -> German meaning
 """
 
 DAILY = {
@@ -1727,6 +1728,30 @@ a|clear-cut|net
 d|presumably|muhtemelen
 d|increasingly|giderek
 d|in any case|her halükârda
+v|appreciate|takdir etmek, değerini bilmek
+v|attempt|teşebbüs etmek
+v|blame|suçlamak
+v|ensure|sağlamak, garantiye almak
+v|handle|üstesinden gelmek, idare etmek
+v|maintain|sürdürmek, savunmak
+v|prevent|önlemek
+v|seek|aramak, peşinde olmak|sought · sought
+n|appeal|çekicilik, itiraz
+n|capacity|kapasite, yetenek
+a|essential|temel, şart
+p|back down|geri adım atmak
+p|get by|idare etmek, geçinmek
+p|get on with|iyi geçinmek, devam etmek
+p|give in|pes etmek, boyun eğmek
+p|go over|gözden geçirmek
+p|set out|yola koyulmak, ortaya koymak
+p|set up|kurmak
+p|take on|üstlenmek, işe almak
+p|take up|başlamak (hobi), yer kaplamak
+p|be that as it may|öyle olsa bile
+p|in line with|-ile uyumlu olarak
+p|that being said|bununla birlikte
+d|thus|böylece
 """,
 "B2.2": """
 n|basis|temel
@@ -1782,6 +1807,122 @@ a|temporary|geçici
 d|explicitly|açıkça
 d|consequently|sonuç olarak
 d|meanwhile|bu arada
+v|admit|itiraf etmek, kabul etmek
+v|advocate|savunmak, desteklemek
+v|afford|(maddi olarak) gücü yetmek
+v|boost|artırmak, yükseltmek
+v|commit|taahhüt etmek, adamak
+v|conduct|yürütmek, icra etmek
+v|confirm|doğrulamak, teyit etmek
+v|demonstrate|göstermek, kanıtlamak
+v|deny|inkâr etmek, reddetmek
+v|eliminate|ortadan kaldırmak, elemek
+v|embrace|benimsemek, kucaklamak
+v|encounter|karşılaşmak
+v|engage|meşgul etmek, katılmak
+v|establish|kurmak, tesis etmek
+v|exhibit|sergilemek, göstermek
+v|foster|teşvik etmek, beslemek
+v|generate|üretmek, oluşturmak
+v|highlight|öne çıkarmak, vurgulamak
+v|identify|tespit etmek, tanımlamak
+v|implement|hayata geçirmek, uygulamak
+v|indicate|göstermek, belirtmek
+v|investigate|soruşturmak, araştırmak
+v|involve|içermek, dahil etmek
+v|monitor|izlemek, takip etmek
+v|obtain|elde etmek
+v|occur|meydana gelmek
+v|preserve|korumak, muhafaza etmek
+v|proceed|devam etmek, ilerlemek
+v|qualify|hak kazanmak, nitelendirmek
+v|recall|hatırlamak, geri çağırmak
+v|reflect|yansıtmak, düşünüp taşınmak
+v|regard|saymak, addetmek
+v|rely|güvenmek, dayanmak
+v|restore|eski hâline getirmek
+v|retain|elde tutmak, korumak
+v|reveal|ortaya çıkarmak, açığa vurmak
+v|reverse|tersine çevirmek
+v|settle|yerleşmek, çözüme kavuşturmak
+v|substitute|yerine koymak
+v|suffer|acı çekmek, maruz kalmak
+v|tend|eğiliminde olmak
+v|urge|ısrarla teşvik etmek
+v|vary|değişkenlik göstermek
+v|witness|tanık olmak
+v|yield|vermek (sonuç), boyun eğmek
+n|accuracy|doğruluk, isabet
+n|aspect|yön, boyut
+n|awareness|farkındalık
+n|barrier|engel
+n|burden|yük, külfet
+n|consensus|uzlaşı
+n|controversy|tartışma, ihtilaf
+n|conviction|inanç, mahkûmiyet
+n|efficiency|verimlilik
+n|emphasis|vurgu
+n|exposure|maruz kalma, görünürlük
+n|framework|çerçeve
+n|initiative|girişim, inisiyatif
+n|insight|içgörü
+n|intent|niyet
+n|liability|sorumluluk, yükümlülük
+n|outcome|sonuç
+n|pace|hız, tempo
+n|pattern|örüntü, kalıp
+n|perspective|bakış açısı
+n|preference|tercih
+n|priority|öncelik
+n|proportion|oran
+n|prospect|olasılık, ihtimal
+n|resource|kaynak
+n|significance|önem
+n|stake|pay, risk edilen şey
+n|strain|gerilim, zorlanma
+n|transition|geçiş
+n|trend|eğilim, trend
+a|accessible|erişilebilir
+a|accurate|doğru, isabetli
+a|apparent|görünen, aşikâr
+a|comprehensive|kapsamlı
+a|consistent|tutarlı
+a|crucial|çok önemli, kritik
+a|demanding|zorlayıcı, çok şey isteyen
+a|diverse|çeşitli, farklı
+a|eligible|hak sahibi, uygun
+a|excessive|aşırı
+a|extensive|geniş kapsamlı
+a|fundamental|temel
+a|innovative|yenilikçi
+a|legitimate|meşru
+a|mandatory|zorunlu
+a|ongoing|süregelen
+a|outstanding|üstün, ödenmemiş
+a|precise|kesin, hassas
+a|preliminary|ön, hazırlık niteliğinde
+a|prominent|öne çıkan
+a|remarkable|kayda değer
+a|subsequent|sonraki
+a|substantial|hatırı sayılır, esaslı
+a|vulnerable|savunmasız, kırılgan
+a|widespread|yaygın
+d|ultimately|nihayetinde
+p|account for|açıklamak, -in nedeni olmak
+p|bring up|gündeme getirmek, yetiştirmek
+p|call off|iptal etmek
+p|cut back on|kısmak, azaltmak
+p|cut off|kesmek, bağlantıyı koparmak
+p|follow up|takip etmek, peşini bırakmamak
+p|hold back|geri tutmak, çekinmek
+p|hold on|beklemek, tutunmak
+p|given that|-diği göz önüne alınırsa
+d|hence|dolayısıyla
+p|in light of|-ışığında
+p|in the long run|uzun vadede
+p|on the whole|genel olarak
+d|whereas|oysa ki, buna karşın
+p|with a view to|-mek amacıyla
 """,
 "C1.1": """
 n|assumption|varsayım
@@ -1837,6 +1978,173 @@ d|in view of|karşısında
 d|nonetheless|buna rağmen
 d|as a result|sonuç olarak
 d|demonstrably|kanıtlanabilir şekilde
+v|abandon|terk etmek, vazgeçmek
+v|accomplish|başarmak, tamamlamak
+v|adjust|ayarlamak, uyarlamak
+v|alter|değiştirmek
+v|anticipate|önceden tahmin etmek, beklemek
+v|approve|onaylamak
+v|assign|atamak, görevlendirmek
+v|assure|temin etmek, güvence vermek
+v|attain|elde etmek, ulaşmak
+v|attribute|atfetmek, bağlamak
+v|cease|son vermek, kesilmek
+v|compensate|telafi etmek, tazmin etmek
+v|comply|uymak, riayet etmek
+v|comprise|kapsamak, oluşmak
+v|confront|yüzleşmek, karşı karşıya gelmek
+v|consist|-den oluşmak
+v|constitute|oluşturmak, teşkil etmek
+v|consult|danışmak
+v|convey|iletmek, aktarmak
+v|cope|başa çıkmak
+v|curb|dizginlemek, sınırlamak
+v|delegate|yetki devretmek
+v|deploy|konuşlandırmak, devreye almak
+v|disclose|ifşa etmek, açıklamak
+v|dismiss|reddetmek, işten çıkarmak
+v|elaborate|ayrıntılandırmak
+v|endure|dayanmak, katlanmak
+v|enforce|uygulamak, zorla yürürlüğe koymak
+v|enhance|geliştirmek, iyileştirmek
+v|evolve|evrilmek, gelişmek
+v|exceed|aşmak, geçmek
+v|exclude|dışlamak, hariç tutmak
+v|exploit|sömürmek, istismar etmek
+v|expose|maruz bırakmak, ifşa etmek
+v|facilitate|kolaylaştırmak
+v|govern|yönetmek, belirlemek
+v|hesitate|tereddüt etmek
+v|incorporate|dahil etmek, bünyesine katmak
+v|insist|ısrar etmek
+v|inspire|ilham vermek
+v|integrate|entegre etmek, bütünleştirmek
+v|interfere|müdahale etmek, karışmak
+v|interpret|yorumlamak
+v|intervene|araya girmek, müdahale etmek
+v|manipulate|manipüle etmek, yönlendirmek
+v|modify|değiştirmek, uyarlamak
+v|outline|ana hatlarıyla belirtmek
+v|persuade|ikna etmek
+v|portray|tasvir etmek, canlandırmak
+v|reckon|sanmak, hesap etmek
+v|recruit|işe almak
+v|refrain|kaçınmak, geri durmak
+v|reinforce|pekiştirmek, güçlendirmek
+v|relieve|rahatlatmak, hafifletmek
+v|remark|belirtmek, yorum yapmak
+v|render|hâle getirmek, sunmak
+v|resemble|benzemek
+v|restrict|kısıtlamak
+v|retrieve|geri almak, geri getirmek
+v|specify|belirtmek, açıkça saptamak
+v|strengthen|güçlendirmek
+v|supplement|takviye etmek, eklemek
+v|suppress|bastırmak
+v|sustain|sürdürmek, ayakta tutmak
+v|tailor|özel olarak uyarlamak
+v|terminate|sonlandırmak
+v|transform|dönüştürmek
+v|undergo|geçirmek, maruz kalmak
+v|undertake|üstlenmek|undertook · undertaken
+v|verify|doğrulamak
+v|withdraw|geri çekmek, çekilmek
+v|withstand|dayanmak, karşı koymak
+n|aftermath|sonrasında yaşananlar
+n|backlash|sert tepki
+n|benchmark|kıyas ölçütü
+n|breakthrough|çığır açan gelişme
+n|circumstance|koşul, durum
+n|credibility|güvenilirlik
+n|disruption|kesinti, altüst oluş
+n|expertise|uzmanlık
+n|flaw|kusur
+n|interference|müdahale, karışma
+n|leverage|kaldıraç gücü, nüfuz
+n|likelihood|olasılık
+n|magnitude|büyüklük, çap
+n|milestone|dönüm noktası
+n|momentum|ivme
+n|motive|güdü, saik
+n|obligation|yükümlülük
+n|obstacle|engel
+n|outlook|görünüm, bakış açısı
+n|oversight|gözetim, gözden kaçırma
+n|precedent|emsal
+n|premise|öncül, dayanak
+n|prevalence|yaygınlık
+n|reasoning|akıl yürütme
+n|remainder|geri kalan
+n|scrutiny|yakın inceleme
+n|standpoint|bakış açısı
+n|surplus|fazlalık, artı değer
+n|threshold|eşik
+n|trait|özellik, karakter özelliği
+n|transparency|şeffaflık
+n|turnover|devir hızı, ciro
+n|uncertainty|belirsizlik
+n|validity|geçerlilik
+a|abundant|bol, bereketli
+a|adequate|yeterli
+a|adverse|olumsuz, ters
+a|arbitrary|keyfi
+a|beneficial|faydalı
+a|biased|önyargılı, taraflı
+a|competent|yetkin
+a|convincing|inandırıcı
+a|evident|besbelli
+a|explicit|açık, sarih
+a|feasible|yapılabilir
+a|flawed|kusurlu
+a|imminent|çok yakın, an meselesi
+a|inadequate|yetersiz
+a|inclusive|kapsayıcı
+a|inconsistent|tutarsız
+a|influential|etkili, nüfuzlu
+a|inherent|doğasında olan
+a|intriguing|merak uyandıran
+a|irrelevant|konu dışı, ilgisiz
+a|marginal|marjinal, sınırda
+a|misleading|yanıltıcı
+a|notable|dikkate değer
+a|noticeable|fark edilir
+a|outdated|güncelliğini yitirmiş
+a|overwhelming|ezici, bunaltıcı
+a|persistent|inatçı, kalıcı
+a|plausible|makul, inandırıcı
+a|prevalent|yaygın
+a|proportional|orantılı
+a|questionable|kuşkulu
+a|rigorous|titiz, sıkı
+a|robust|sağlam, güçlü
+a|scarce|kıt
+a|straightforward|dolaysız, anlaşılır
+a|susceptible|duyarlı, açık (etkiye)
+a|unanimous|oybirliğiyle
+a|unprecedented|eşi görülmemiş
+a|versatile|çok yönlü
+a|viable|uygulanabilir
+d|deliberately|kasten
+d|inevitably|kaçınılmaz olarak
+d|notably|özellikle, dikkat çekici biçimde
+d|predominantly|ağırlıklı olarak
+d|substantially|önemli ölçüde
+a|thereby|böylece
+p|drop out|bırakmak, ayrılmak
+p|fall behind|geri kalmak
+p|pass on|aktarmak, devretmek
+p|pick up on|fark etmek, yakalamak
+p|step down|görevden çekilmek
+d|albeit|her ne kadar öyle olsa da
+p|all things considered|her şey göz önüne alındığında
+p|as a matter of fact|aslına bakılırsa
+p|in respect of|-e ilişkin
+p|it goes without saying|söylemeye gerek yok ki
+p|let alone|bırakın -i, şöyle dursun
+p|provided that|şu şartla ki
+p|subject to|-e tabi olarak
+p|take into account|hesaba katmak
+p|to put it simply|basitçe söylemek gerekirse
 """,
 "C1.2": """
 n|objection|itiraz
@@ -1889,6 +2197,115 @@ d|at times|zaman zaman
 d|henceforth|bundan böyle
 d|primarily|öncelikle
 d|occasionally|ara sıra
+v|accumulate|birikmek, biriktirmek
+v|alleviate|hafifletmek, azaltmak
+v|allocate|tahsis etmek, ayırmak
+v|amend|düzeltmek, tadil etmek
+v|broaden|genişletmek
+v|collaborate|iş birliği yapmak
+v|compel|zorlamak, mecbur bırakmak
+v|compile|derlemek
+v|concede|kabullenmek, taviz vermek
+v|correspond|karşılık gelmek, yazışmak
+v|cultivate|geliştirmek, yetiştirmek
+v|dedicate|adamak, tahsis etmek
+v|defer|ertelemek
+v|denote|belirtmek, işaret etmek
+v|depict|betimlemek, tasvir etmek
+v|derive|türetmek, elde etmek
+v|deter|caydırmak
+v|devise|tasarlamak, kurgulamak
+v|diminish|azalmak, küçültmek
+v|discourage|caydırmak, cesaretini kırmak
+v|displace|yerinden etmek
+v|dispose|elden çıkarmak, bertaraf etmek
+v|disrupt|kesintiye uğratmak, bozmak
+v|diverge|ayrılmak, sapmak
+v|entail|gerektirmek, beraberinde getirmek
+v|exaggerate|abartmak
+v|exert|(çaba/baskı) uygulamak
+v|fulfil|yerine getirmek, karşılamak
+v|hinder|engellemek
+v|impair|zayıflatmak, bozmak
+v|incline|eğilim göstermek
+v|induce|yol açmak, teşvik etmek
+v|inhibit|engellemek, ketlemek
+v|mitigate|hafifletmek, azaltmak
+v|oversee|denetlemek, gözetmek
+v|overlook|gözden kaçırmak, göz yummak
+v|persist|ısrar etmek, sürüp gitmek
+v|pinpoint|tam olarak belirlemek
+v|prevail|hüküm sürmek, galip gelmek
+v|prioritise|önceliklendirmek
+v|prohibit|yasaklamak
+v|quantify|nicelleştirmek, sayısallaştırmak
+v|reassure|güven vermek, içini rahatlatmak
+v|refine|inceltmek, iyileştirmek
+v|revise|gözden geçirmek, revize etmek
+v|simplify|basitleştirmek
+v|supervise|denetlemek
+v|unveil|tanıtmak, perdeyi kaldırmak
+v|uphold|desteklemek, sürdürmek (ilke)
+v|utilise|kullanmak, yararlanmak
+v|validate|doğrulamak, geçerli kılmak
+v|weaken|zayıflatmak
+n|adversity|zorluk, sıkıntı
+n|ambiguity|belirsizlik, muğlaklık
+n|constraint|kısıt
+n|contradiction|çelişki
+n|criterion|ölçüt
+n|discrepancy|tutarsızlık, uyuşmazlık
+n|disparity|eşitsizlik, fark
+n|drawback|dezavantaj
+n|endeavour|çaba, girişim
+n|feasibility|yapılabilirlik
+n|hindrance|engel
+n|implication|çıkarım, doğuracağı sonuç
+n|inconsistency|tutarsızlık
+n|misconception|yanlış kanı
+n|nuance|nüans, ince ayrım
+n|persistence|azim, süreklilik
+n|plausibility|inandırıcılık
+n|proficiency|yetkinlik
+n|rationale|gerekçe, mantık
+n|reluctance|isteksizlik
+n|resilience|dayanıklılık, direnç
+n|setback|aksilik, geri adım
+n|shortcoming|eksiklik
+n|urgency|aciliyet
+n|viability|yaşayabilirlik, uygulanabilirlik
+a|ambiguous|belirsiz, çift anlamlı
+a|conclusive|kesin, belirleyici
+a|conspicuous|göze çarpan
+a|cumbersome|hantal, kullanışsız
+a|detrimental|zararlı
+a|eminent|seçkin, önde gelen
+a|exhaustive|çok kapsamlı, eksiksiz
+a|fluctuating|dalgalanan
+a|intricate|karmaşık, ince işlenmiş
+a|negligible|ihmal edilebilir
+a|pervasive|her yere yayılmış
+a|predominant|baskın
+a|redundant|gereksiz, fazlalık
+a|resilient|dirençli
+a|unbiased|tarafsız
+p|draw on|-den yararlanmak
+p|lay off|işten çıkarmak
+p|narrow down|daraltmak, elemek
+p|opt for|-i tercih etmek
+p|phase out|kademeli olarak kaldırmak
+p|stick to|bağlı kalmak
+p|sum up|özetlemek
+p|as far as I'm concerned|bana kalırsa
+p|at the expense of|-in pahasına
+p|contrary to|-in aksine
+p|for the sake of|-in hatırına, uğruna
+p|in the wake of|-in ardından
+p|insofar as|-diği ölçüde
+p|on the grounds that|-gerekçesiyle
+p|regardless of|-e bakılmaksızın
+p|to a certain extent|bir dereceye kadar
+p|with regard to|-e ilişkin
 """,
 "C2.1": """
 n|bias|önyargı, taraflılık
@@ -1940,6 +2357,43 @@ a|subtle|ince
 a|irrefutable|çürütülemez
 a|hesitant|tereddütlü
 d|in passing|laf arasında
+n|acumen|keskin zekâ, sezgi
+n|alacrity|şevk, istek
+n|antipathy|antipati
+n|candour|açık sözlülük
+n|clout|nüfuz
+n|conundrum|bilmece, çıkmaz
+n|debacle|fiyasko
+n|euphemism|örtmece
+n|impasse|çıkmaz
+n|predilection|düşkünlük
+n|propensity|eğilim
+n|tenacity|azim
+n|vicissitudes|iniş çıkışlar
+v|bolster|desteklemek
+v|circumvent|atlatmak
+v|corroborate|doğrulamak
+v|exacerbate|kötüleştirmek
+v|galvanise|harekete geçirmek
+v|mollify|yatıştırmak
+v|obviate|gereksiz kılmak
+v|placate|gönlünü almak
+v|relinquish|vazgeçmek
+v|repudiate|reddetmek
+v|stymie|engellemek
+v|vindicate|haklı çıkarmak
+a|astute|zeki, kurnaz
+a|cogent|ikna edici
+a|commensurate|orantılı
+a|disingenuous|samimiyetsiz
+a|egregious|korkunç, göze batan
+a|fastidious|titiz, müşkülpesent
+a|gratuitous|gereksiz, sebepsiz
+a|inexorable|durdurulamaz
+a|nebulous|bulanık
+a|perfunctory|baştan savma
+a|tenuous|zayıf
+d|ostensibly|görünüşte
 """,
 "C2.2": """
 n|window dressing|göz boyama
@@ -1989,6 +2443,41 @@ a|ephemeral|geçici
 a|laconic|kısa ve öz
 a|pretentious|iddialı, gösterişçi
 a|eccentric|tuhaf
+n|anathema|nefret edilen şey
+n|chicanery|hile
+n|ennui|can sıkıntısı
+n|hubris|kibir
+n|largesse|cömertlik
+n|minutiae|ince ayrıntılar
+n|panacea|her derde deva
+n|sycophant|dalkavuk
+n|vitriol|zehir zemberek söz
+n|zeitgeist|çağın ruhu
+v|obfuscate|bulanıklaştırmak
+v|prevaricate|kıvırmak
+v|proselytise|propaganda yapmak
+v|vacillate|tereddüt etmek
+p|a double-edged sword|iki ucu keskin kılıç
+p|bark up the wrong tree|yanlış kapıyı çalmak
+p|cut to the chase|sadede gelmek
+p|have an axe to grind|kişisel hesabı olmak
+p|jump on the bandwagon|modaya uymak
+p|move the goalposts|kuralları sonradan değiştirmek
+p|play devil's advocate|şeytanın avukatlığını yapmak
+p|sit on the fence|tarafsız kalmak
+p|the tip of the iceberg|buzdağının görünen yüzü
+p|throw caution to the wind|her şeyi göze almak
+a|abstruse|anlaşılmaz
+a|antediluvian|çok eski kafalı
+a|bombastic|tumturaklı
+a|insouciant|kaygısız
+a|obsequious|dalkavuk
+a|pernicious|sinsice zararlı
+a|quixotic|hayalperest
+a|sanctimonious|ikiyüzlü dindar
+a|supercilious|kibirli
+a|truculent|kavgacı
+a|unctuous|yağcı
 """,
 }
 
@@ -2043,6 +2532,41 @@ d|however|ancak
 d|therefore|bu nedenle
 d|in conclusion|sonuç olarak
 d|such as|gibi
+v|state|belirtmek, ifade etmek
+v|question|sorgulamak
+n|series|seri
+v|report|raporlamak, bildirmek
+v|list|sıralamak
+v|project|öngörmek, yansıtmak
+v|record|kaydetmek
+v|test|sınamak
+n|result|sonuç
+v|model|modellemek
+v|review|gözden geçirmek, derlemek
+n|range|aralık, erim
+n|stage|aşama
+v|note|kaydetmek, belirtmek
+n|conference|konferans
+n|population|evren, popülasyon
+n|focus|odak
+n|section|bölüm
+d|particularly|özellikle
+n|application|uygulama, başvuru
+n|condition|koşul
+n|scale|ölçek
+a|critical|eleştirel, kritik
+n|authority|otorite, yetkili kaynak
+n|foundation|temel
+n|function|işlev
+v|prove|kanıtlamak
+n|journal|akademik dergi
+n|volume|cilt, hacim
+v|reduce|indirgemek, azaltmak
+n|alternative|seçenek
+d|relatively|görece
+a|numerous|çok sayıda
+d|specifically|özellikle, spesifik olarak
+n|phase|evre
 """,
 "B1.2": """
 n|concept|kavram
@@ -2093,6 +2617,56 @@ d|moreover|üstelik
 d|similarly|benzer şekilde
 d|overall|genel olarak
 d|on the other hand|öte yandan
+d|typically|tipik olarak
+v|draft|taslak hazırlamak
+n|statistics|istatistik
+n|instance|örnek, durum
+n|definition|tanım
+a|random|rastgele
+n|index|dizin, endeks
+a|representative|temsil edici
+d|significantly|anlamlı biçimde
+n|portion|kısım, pay
+v|pilot|pilot uygulama yapmak
+v|quote|alıntı yapmak
+n|comparison|karşılaştırma
+v|document|belgelemek
+n|convention|teamül, uzlaşım
+a|equivalent|eşdeğer
+a|contemporary|çağdaş
+d|initially|başlangıçta
+n|technique|teknik
+n|assessment|değerlendirme
+n|element|öge
+n|formula|formül
+n|publication|yayın
+v|rank|sıralamak, derecelendirmek
+n|explanation|açıklama
+n|procedure|prosedür, işlem
+v|label|etiketlemek
+n|output|çıktı
+d|essentially|esasen
+n|institution|kurum
+n|experiment|deney
+v|introduce|tanıtmak, sunmak
+n|ratio|oran
+d|merely|sadece
+n|frequency|sıklık
+n|exception|istisna
+n|input|girdi
+n|data set|veri kümesi
+v|depend on|-e bağlı olmak
+v|map (out)|haritalamak, planlamak
+v|relate to|ilişkilendirmek
+v|pertain to|-ile ilgili olmak
+n|case study|vaka çalışması
+v|restrict to|-ile sınırlamak
+n|sample size|örneklem büyüklüğü
+p|in terms of|-açısından
+p|by contrast|buna karşılık
+v|identify with|özdeşleştirmek
+n|knowledge gap|bilgi boşluğu
+n|response rate|yanıt oranı
 """,
 "B2.1": """
 n|assumption|varsayım|underlying assumption
@@ -2144,6 +2718,56 @@ d|accordingly|buna uygun olarak
 d|primarily|öncelikle
 d|to some extent|bir ölçüde
 d|with regard to|ile ilgili olarak
+n|sequence|dizi, sıra
+n|contribution|katkı
+n|principle|ilke
+n|composition|bileşim, kompozisyon
+a|uniform|tekdüze, aynı
+n|feedback|geri bildirim
+a|sufficient|yeterli
+n|domain|alan, saha
+a|dynamic|değişken, dinamik
+a|collective|toplu, ortak
+n|estimate|tahmin
+n|interaction|etkileşim
+a|distinct|belirgin, ayrı
+a|parallel|koşut
+n|instrument|araç (ölçüm)
+n|intervention|müdahale
+n|requirement|gereklilik
+n|inquiry|araştırma, soruşturma
+n|discipline|bilim dalı
+a|dominant|baskın
+d|briefly|kısaca
+d|precisely|tam olarak
+d|solely|yalnızca
+v|trace|izini sürmek
+n|ethics|etik
+n|scenario|senaryo
+a|respective|ilgili, sırasıyla
+d|partially|kısmen
+v|resolve|çözümlemek
+n|notion|kavram, fikir
+a|partial|kısmi
+a|underlying|altta yatan
+n|observation|gözlem
+a|applicable|uygulanabilir
+a|linear|doğrusal
+p|control group|kontrol grubu
+v|compensate for|telafi etmek
+p|taken together|bir bütün olarak ele alındığında
+n|margin of error|hata payı
+n|research design|araştırma tasarımı
+p|with respect to|-e ilişkin olarak
+p|on the basis of|-e dayanarak
+p|it follows that|buradan şu çıkar ki
+n|qualitative data|nitel veri
+p|in the same vein|aynı doğrultuda
+p|conceptual model|kavramsal model
+p|ethical approval|etik kurul onayı
+p|informed consent|bilgilendirilmiş onam
+n|literature review|literatür taraması
+n|quantitative data|nicel veri
 """,
 "B2.2": """
 n|methodology|yöntembilim|research methodology
@@ -2194,6 +2818,61 @@ a|theoretical|kuramsal
 d|approximately|yaklaşık
 d|subsequently|ardından
 d|correspondingly|buna karşılık olarak
+v|convert|dönüştürmek
+a|generic|genel, jenerik
+v|publish|yayımlamak
+n|array|dizi, yelpaze
+n|dynamics|dinamikler
+a|comparable|karşılaştırılabilir
+v|observe|gözlemlemek
+v|detect|saptamak, tespit etmek
+n|graph|grafik
+n|median|ortanca
+n|thesis|tez, sav
+a|likewise|benzer şekilde
+n|threshold|eşik
+v|accommodate|barındırmak, uyum sağlatmak
+v|extract|çıkarmak, ayıklamak
+n|axis|eksen
+d|namely|yani, şöyle ki
+n|adaptation|uyarlama
+v|probe|derinlemesine araştırmak
+v|propose|önermek
+v|weigh|tartmak, değerlendirmek
+n|configuration|yapılandırma
+n|tendency|eğilim
+a|integral|ayrılmaz, bütünleyici
+d|explicitly|açıkça
+v|aggregate|toplamak, bir araya getirmek
+v|locate|konumlandırmak, bulmak
+a|optimal|en uygun
+v|translate|çevirmek
+n|norm|norm
+n|illustration|görsel örnek
+n|manuscript|müsvedde, makale metni
+v|emerge|ortaya çıkmak
+n|module|modül
+v|verify|doğrulamak
+n|credibility|güvenilirlik
+a|peer-reviewed|hakemli
+v|calculate|hesaplamak
+v|regulate|düzenlemek
+a|systematic|sistematik
+p|research question|araştırma sorusu
+n|body of literature|literatür bütünü
+n|empirical evidence|ampirik kanıt
+n|significance level|anlamlılık düzeyi
+n|standard deviation|standart sapma
+p|in accordance with|-e uygun olarak
+p|as shown in Table 2|Tablo 2'de görüldüğü üzere
+p|the extent to which|-in ne ölçüde olduğu
+p|the null hypothesis|sıfır hipotezi
+p|in the present study|bu çalışmada
+p|we hypothesised that|şu hipotezi kurduk
+p|confounding variable|karıştırıcı değişken
+p|theoretical framework|kuramsal çerçeve
+p|this paper argues that|bu çalışma şunu savunmaktadır
+p|the data indicate that|veriler şunu göstermektedir
 """,
 "C1.1": """
 n|paradigm|paradigma
@@ -2244,6 +2923,58 @@ a|plausible|akla yatkın
 d|thereby|böylece
 d|whereby|ki bununla
 d|nonetheless|yine de
+n|diagram|şema
+a|arbitrary|keyfi
+n|synthesis|sentez
+v|critique|eleştirel değerlendirme yapmak
+n|justification|gerekçelendirme
+n|prototype|prototip
+a|diagnostic|tanısal
+n|bibliography|kaynakça
+d|broadly|genel hatlarıyla
+d|alternatively|alternatif olarak
+a|subjective|öznel
+n|hierarchy|hiyerarşi
+n|interval|aralık
+v|merge|birleştirmek
+a|finite|sonlu
+n|allocation|tahsis
+a|preceding|önceki
+a|analytical|çözümleyici
+v|perceive|algılamak
+n|specimen|numune
+n|analogy|benzeşim
+n|dissertation|tez (doktora)
+v|manifest|açığa vurmak, tezahür etmek
+n|terminology|terminoloji
+v|cite|alıntılamak, kaynak göstermek
+v|transmit|iletmek
+d|statistically|istatistiksel olarak
+v|approximate|yaklaşık olarak hesaplamak
+d|theoretically|kuramsal olarak
+v|inspect|denetlemek, incelemek
+v|reconsider|yeniden değerlendirmek
+v|reproduce|yeniden üretmek
+n|practitioner|uygulayıcı
+v|assert|savunmak, öne sürmek
+v|presume|varsaymak
+a|conceptual|kavramsal
+a|hypothetical|varsayımsal
+p|drawing on the work of|-in çalışmasından yararlanarak
+p|prior research suggests|önceki araştırmalar şunu göstermektedir
+p|it should be noted that|belirtmek gerekir ki
+p|this is consistent with|bu, -ile uyumludur
+p|the scope of this paper|bu makalenin kapsamı
+p|contrary to expectations|beklentilerin aksine
+p|insofar as the data allow|verilerin izin verdiği ölçüde
+p|statistically significant|istatistiksel olarak anlamlı
+p|it is widely accepted that|genel kabul görmektedir ki
+p|further research is needed|daha fazla araştırmaya ihtiyaç var
+p|as illustrated in Figure 1|Şekil 1'de gösterildiği gibi
+p|in light of these findings|bu bulgular ışığında
+p|future work should address|ilerideki çalışmalar -i ele almalıdır
+p|the aim of this study is to|bu çalışmanın amacı
+p|these findings suggest that|bu bulgular şunu düşündürmektedir
 """,
 "C1.2": """
 n|caveat|çekince, uyarı
@@ -2294,6 +3025,60 @@ d|insofar as|-dığı ölçüde
 d|notwithstanding|-e rağmen
 d|in this regard|bu bağlamda
 d|by extension|buna bağlı olarak
+v|isolate|yalıtmak, ayrıştırmak
+n|equilibrium|denge
+v|commence|başlamak
+d|inherently|doğası gereği
+v|adhere|bağlı kalmak, uymak
+a|indicative|gösterge niteliğinde
+a|complementary|tamamlayıcı
+v|fragment|parçalamak
+v|replicate|yinelemek (deneyi), kopyalamak
+a|cumulative|birikimli
+a|descriptive|betimleyici
+v|conform|uygun olmak, uymak
+n|dependency|bağımlılık
+n|excerpt|alıntı parçası
+d|comparatively|görece olarak
+v|organise|düzenlemek
+v|provoke|kışkırtmak, tetiklemek
+a|correlated|ilişkili, bağıntılı
+v|coincide|çakışmak, aynı anda olmak
+a|concurrent|eşzamanlı
+v|speculate|spekülasyon yapmak
+n|deduction|tümdengelim
+n|variance|varyans
+v|simulate|benzetim yapmak
+n|continuum|süreklilik
+n|replication|yineleme çalışması
+a|inverse|ters
+v|compute|hesaplamak
+n|cohort|kohort, grup
+n|deviation|sapma
+v|classify|sınıflandırmak
+n|coefficient|katsayı
+a|interdisciplinary|disiplinlerarası
+v|designate|belirlemek, atamak
+v|originate|kaynaklanmak, doğmak
+a|longitudinal|boylamsal (uzun süreli)
+a|predictive|öngörücü
+a|unilateral|tek taraflı
+a|causal|nedensel
+n|acknowledgement|teşekkür bölümü, kabul
+p|this raises the question of|bu, şu soruyu doğurmaktadır
+p|a substantial proportion of|-in hatırı sayılır bir kısmı
+p|the present findings extend|mevcut bulgular -i genişletmektedir
+p|to the best of our knowledge|bildiğimiz kadarıyla
+p|the underlying assumption is|altta yatan varsayım şudur
+p|a possible explanation is that|olası bir açıklama şudur ki
+p|beyond the scope of this study|bu çalışmanın kapsamı dışında
+p|for the purposes of this study|bu çalışmanın amaçları doğrultusunda
+p|a number of studies have shown|bir dizi çalışma göstermiştir ki
+p|one limitation of this study is|bu çalışmanın bir sınırlılığı
+p|the results are consistent with|sonuçlar -ile tutarlıdır
+p|in contrast to previous findings|önceki bulguların aksine
+p|little attention has been paid to|-e çok az dikkat gösterilmiştir
+p|there is a growing body of evidence|giderek artan bir kanıt bütünü var
 """,
 "C2.1": """
 n|epistemology|epistemoloji, bilgi kuramı
@@ -2340,6 +3125,50 @@ a|post hoc|sonradan
 d|in toto|bütünüyle
 d|sensu stricto|dar anlamda
 d|vis-à-vis|-e karşı, ile ilgili olarak
+n|approximation|yaklaşıklık
+v|illuminate|aydınlatmak (konuyu)
+a|conclusive|kesin
+a|exhaustive|tüketici, eksiksiz
+a|sequential|ardışık
+d|markedly|belirgin biçimde
+v|evoke|çağrıştırmak, uyandırmak
+a|hierarchical|hiyerarşik
+n|guideline|yönerge
+n|subsection|alt bölüm
+v|denounce|kınamak
+v|converge|yakınsamak, birleşmek
+n|plagiarism|intihal
+d|implicitly|dolaylı olarak
+v|correlate|ilişkilendirmek, bağıntı kurmak
+v|equate|eşitlemek, denk saymak
+v|augment|artırmak, takviye etmek
+v|allege|iddia etmek (kanıtsız)
+a|exploratory|keşfedici
+v|embody|somutlaştırmak, cisimleştirmek
+n|footnote|dipnot
+v|amplify|güçlendirmek, büyütmek
+n|proponent|savunucu
+a|hitherto|şimdiye kadar
+v|impede|engellemek
+a|contextual|bağlamsal
+v|mediate|aracılık etmek
+v|reiterate|yinelemek
+n|schema|şema, çerçeve
+a|inconclusive|sonuçsuz, belirsiz
+n|predictor|yordayıcı değişken
+v|elicit|ortaya çıkarmak, elde etmek (yanıt)
+n|causation|nedensellik
+n|respondent|katılımcı, yanıtlayan
+v|automate|otomatikleştirmek
+v|distort|çarpıtmak
+v|omit|çıkarmak, atlamak
+v|paraphrase|başka sözcüklerle ifade etmek
+v|unify|birleştirmek
+v|deviate|sapmak
+v|solicit|talep etmek, istemek
+n|derivation|türetme
+a|methodological|yöntemsel
+v|invalidate|geçersiz kılmak
 """,
 "C2.2": """
 n|heterogeneity|heterojenlik
@@ -2385,6 +3214,563 @@ a|syncretic|bağdaştırmacı
 d|pace|(-e) saygıyla katılmayarak
 d|sic|aynen böyle (alıntıda)
 d|viz.|yani, şöyle ki
+v|underscore|altını çizmek, vurgulamak
+v|disprove|çürütmek
+v|confine|sınırlamak, kısıtlamak
+v|fabricate|uydurmak, imal etmek
+n|annotation|dipnot, açıklama
+d|empirically|ampirik olarak
+v|nullify|hükümsüz kılmak
+v|substantiate|kanıtlarla desteklemek
+v|narrate|anlatmak
+v|posit|varsaymak, öne sürmek
+v|ascribe|atfetmek
+v|authenticate|gerçekliğini doğrulamak
+v|transcribe|deşifre etmek, yazıya dökmek
+v|supersede|yerini almak, geçersiz kılmak
+v|recur|yinelemek, tekrar etmek
+v|append|eklemek (sona)
+v|characterise|nitelendirmek
+v|purport|iddia etmek, öyle görünmek
+v|optimise|en iyi duruma getirmek
+v|expound|ayrıntılı açıklamak
+v|restate|yeniden ifade etmek
+n|generalisation|genelleme
+v|collate|karşılaştırıp derlemek
+v|situate|konumlandırmak
+v|enumerate|tek tek saymak
+v|rationalise|akla uydurmak, gerekçelendirmek
+v|construe|yorumlamak, anlam vermek
+v|normalise|normalleştirmek
+v|annotate|notlandırmak, açıklama düşmek
+v|generalise|genellemek
+v|tabulate|tablolaştırmak
+v|recapitulate|özetleyerek tekrarlamak
+v|conceptualise|kavramsallaştırmak
+v|interrelate|karşılıklı ilişkilendirmek
+v|hypothesise|hipotez kurmak
+v|randomise|rastgeleleştirmek
+""",
+}
+
+CYBER = {
+"B1.1": """
+n|asset|varlık (korunacak değer)
+n|threat|tehdit
+n|threat actor|tehdit aktörü
+n|vulnerability|zafiyet, açık
+n|exploit|istismar kodu / istismar etmek
+n|risk|risk
+n|likelihood|olasılık
+n|impact|etki, sonuç
+n|attack surface|saldırı yüzeyi
+n|attack vector|saldırı vektörü
+n|blast radius|etki alanı, yayılma çapı
+n|confidentiality|gizlilik
+n|integrity|bütünlük
+n|availability|erişilebilirlik
+n|non-repudiation|inkâr edilemezlik
+n|authentication|kimlik doğrulama
+n|authorisation|yetkilendirme
+n|accounting|kayıt tutma, hesap verme
+n|least privilege|en az yetki ilkesi
+n|defence in depth|katmanlı savunma
+n|zero trust|sıfır güven
+n|security posture|güvenlik duruşu
+n|baseline|temel referans yapılandırma
+n|hardening|sıkılaştırma
+n|patch|yama
+n|patch management|yama yönetimi
+n|countermeasure|karşı önlem
+n|safeguard|koruyucu tedbir
+n|control|kontrol, denetim mekanizması
+n|compensating control|telafi edici kontrol
+n|mitigation|azaltma, hafifletme
+n|remediation|giderme, düzeltme
+n|residual risk|artık risk
+n|false positive|yanlış pozitif
+n|false negative|yanlış negatif
+n|true positive|doğru pozitif
+n|detection|tespit
+n|prevention|önleme
+n|response|müdahale
+n|recovery|kurtarma
+n|resilience|dayanıklılık
+n|redundancy|yedeklilik
+n|failover|yedeğe geçiş
+n|business continuity|iş sürekliliği
+n|disaster recovery|felaket kurtarma
+n|single point of failure|tek hata noktası
+n|security by design|tasarımdan gelen güvenlik
+n|fail secure|hata durumunda güvenli kalma
+n|trust boundary|güven sınırı
+n|threat landscape|tehdit ortamı
+p|assess the risk|riski değerlendirmek
+p|mitigate the risk|riski azaltmak
+p|escalate the incident|olayı üst seviyeye taşımak
+p|contain the threat|tehdidi kontrol altına almak
+p|remediate the finding|bulguyu gidermek
+p|harden the system|sistemi sıkılaştırmak
+p|patch the vulnerability|zafiyeti yamalamak
+p|enforce the policy|politikayı uygulatmak
+p|validate the fix|düzeltmeyi doğrulamak
+p|reproduce the issue|sorunu yeniden oluşturmak
+p|document the steps|adımları belgelemek
+p|raise a ticket|kayıt/talep açmak
+p|flag a concern|bir endişeyi işaretlemek
+p|walk through the report|raporu adım adım anlatmak
+p|follow up on|takibini yapmak
+p|loop in the team|ekibi sürece dâhil etmek
+p|align with stakeholders|paydaşlarla mutabık kalmak
+p|prioritise findings|bulguları önceliklendirmek
+p|scope the engagement|projenin kapsamını belirlemek
+p|sign off on|onay vermek
+""",
+"B1.2": """
+p|roll out|yaygınlaştırmak, devreye almak
+p|roll back|geri almak (değişikliği)
+d|decommission|hizmetten çıkarmak
+p|whitelist an IP|bir IP'yi izin listesine eklemek
+p|revoke access|erişimi iptal etmek
+p|grant access|erişim vermek
+p|rotate credentials|kimlik bilgilerini yenilemek
+p|enable logging|günlük kaydını açmak
+p|monitor for anomalies|anormallikleri izlemek
+p|correlate events|olayları ilişkilendirmek
+p|verify the alert|uyarıyı doğrulamak
+p|dismiss as false positive|yanlış pozitif olarak kapatmak
+p|conduct a review|inceleme yürütmek
+p|present the findings|bulguları sunmak
+p|justify the budget|bütçeyi gerekçelendirmek
+p|as per our policy|politikamız gereği
+p|in line with best practice|iyi uygulamalarla uyumlu olarak
+p|subject to approval|onaya tabi olarak
+p|pending further investigation|inceleme sürerken, sonuç beklenirken
+p|with immediate effect|derhal geçerli olmak üzere
+n|packet|paket
+n|payload|yük, veri kısmı
+n|header|başlık
+n|frame|çerçeve
+n|protocol|protokol
+n|port|port
+n|socket|soket
+n|handshake|el sıkışma
+n|three-way handshake|üçlü el sıkışma
+n|subnet|alt ağ
+n|gateway|ağ geçidi
+n|router|yönlendirici
+n|switch|anahtar
+n|firewall|güvenlik duvarı
+n|next-generation firewall|yeni nesil güvenlik duvarı
+n|stateful inspection|durum bilgili denetim
+n|access control list (ACL)|erişim kontrol listesi
+n|NAT|ağ adresi çevirisi
+n|VLAN|sanal yerel ağ
+n|network segmentation|ağ segmentasyonu
+n|micro-segmentation|mikro segmentasyon
+n|DMZ|silahtan arındırılmış bölge
+n|proxy|vekil sunucu
+n|reverse proxy|ters vekil sunucu
+n|load balancer|yük dengeleyici
+n|VPN|sanal özel ağ
+n|tunnelling|tünelleme
+n|port forwarding|port yönlendirme
+n|pivoting|başka ağa sıçrama
+n|packet capture|paket yakalama
+n|sniffing|trafik dinleme
+n|traffic analysis|trafik analizi
+n|bandwidth|bant genişliği
+n|latency|gecikme
+n|throughput|iş hacmi, veri geçiş oranı
+n|broadcast|yayın (tüm ağa)
+n|routing table|yönlendirme tablosu
+n|DNS resolution|DNS çözümleme
+n|DHCP lease|DHCP kirası
+n|TLS|taşıma katmanı güvenliği
+n|mutual TLS|karşılıklı TLS
+n|certificate pinning|sertifika sabitleme
+n|wireless access point|kablosuz erişim noktası
+n|rogue access point|sahte erişim noktası
+n|evil twin|ikiz sahte ağ
+n|deauthentication attack|bağlantı kesme saldırısı
+n|WPA2 / WPA3|kablosuz güvenlik standardı
+n|egress filtering|çıkış trafiği filtreleme
+n|ingress filtering|giriş trafiği filtreleme
+n|network tap|ağ dinleme noktası
+""",
+"B2.1": """
+n|kernel|çekirdek
+n|process|süreç, işlem
+n|daemon|arka plan servisi
+n|service|servis
+n|shell|kabuk
+n|privilege|yetki
+n|root|en yetkili kullanıcı
+n|sudo|yetkili komut çalıştırma
+n|file permission|dosya izni
+n|setuid binary|setuid çalıştırılabilir
+n|cron job|zamanlanmış görev
+n|systemd unit|systemd servis birimi
+n|log file|günlük dosyası
+n|syslog|sistem günlük protokolü
+n|audit trail|denetim izi
+n|registry|kayıt defteri (Windows)
+n|Active Directory|Active Directory dizin hizmeti
+n|domain controller|etki alanı denetleyicisi
+n|group policy|grup ilkesi
+n|service account|servis hesabı
+n|golden ticket|sahte Kerberos bileti (altın bilet)
+n|hash|özet değeri
+n|pass-the-hash|hash ile kimlik doğrulama saldırısı
+n|LSASS dump|LSASS bellek dökümü
+n|memory dump|bellek dökümü
+n|snapshot|anlık görüntü
+n|virtual machine|sanal makine
+n|hypervisor|hipervizör
+n|container|konteyner
+n|image|imaj
+n|sandbox|yalıtılmış test ortamı
+n|escape (sandbox/container)|yalıtımdan kaçış
+n|endpoint|uç nokta
+n|agent|ajan yazılımı
+n|inventory|envanter
+n|asset management|varlık yönetimi
+n|configuration drift|yapılandırma sapması
+n|golden image|standart kurulum imajı
+n|malware|zararlı yazılım
+n|ransomware|fidye yazılımı
+n|spyware|casus yazılım
+n|adware|reklam yazılımı
+n|rootkit|rootkit, kök seti
+n|bootkit|önyükleme zararlısı
+n|trojan|truva atı
+n|worm|solucan
+n|virus|virüs
+n|dropper|yükleyici zararlı
+n|loader|yükleyici bileşen
+n|wiper|veri silici zararlı
+n|keylogger|tuş kaydedici
+n|botnet|bot ağı
+n|command and control (C2)|komuta kontrol sunucusu
+n|beacon|periyodik geri bağlantı sinyali
+n|backdoor|arka kapı
+n|logic bomb|mantık bombası
+n|phishing|oltalama
+n|spear phishing|hedefli oltalama
+n|whaling|üst yönetime yönelik oltalama
+n|smishing|SMS ile oltalama
+n|vishing|telefonla oltalama
+n|pretexting|bahane uydurma (sosyal mühendislik)
+n|baiting|yem atma
+n|tailgating|yetkisiz peşinden girme
+n|social engineering|sosyal mühendislik
+n|business email compromise|kurumsal e-posta dolandırıcılığı
+n|credential theft|kimlik bilgisi hırsızlığı
+n|credential stuffing|çalıntı kimlik denemesi
+n|password spraying|yaygın parola denemesi
+n|brute force|kaba kuvvet saldırısı
+n|dictionary attack|sözlük saldırısı
+n|rainbow table|gökkuşağı tablosu
+""",
+"B2.2": """
+n|man-in-the-middle (MitM)|araya girme saldırısı
+n|replay attack|tekrar saldırısı
+n|session hijacking|oturum ele geçirme
+n|spoofing|kimlik/adres sahteciliği
+n|ARP poisoning|ARP zehirlemesi
+n|DNS poisoning|DNS zehirlemesi
+n|DNS tunnelling|DNS üzerinden tünelleme
+n|typosquatting|yazım hatası alan adı kapma
+n|watering hole attack|su kaynağı saldırısı
+n|supply chain attack|tedarik zinciri saldırısı
+n|denial of service (DoS)|hizmet dışı bırakma
+n|DDoS|dağıtık hizmet dışı bırakma
+n|amplification attack|yükseltme saldırısı
+n|zero-day|sıfırıncı gün açığı
+n|privilege escalation|yetki yükseltme
+n|lateral movement|yatay hareket
+n|persistence|kalıcılık sağlama
+n|data exfiltration|veri sızdırma
+n|data breach|veri ihlali
+n|insider threat|iç tehdit
+n|advanced persistent threat (APT)|gelişmiş kalıcı tehdit
+n|living off the land|sistemin kendi araçlarını kullanma
+n|fileless malware|dosyasız zararlı
+n|obfuscation|gizleme, karmaşıklaştırma
+n|packing|paketleme (zararlıyı gizleme)
+a|polymorphic|çok biçimli (zararlı)
+n|evasion|atlatma, kaçınma
+n|anti-forensics|adli analizi engelleme
+n|cryptojacking|izinsiz kripto madenciliği
+n|scareware|korkutma yazılımı
+n|double extortion|çifte şantaj
+n|initial access|ilk erişim
+n|dwell time|saldırganın sistemde kalış süresi
+n|kill chain|saldırı zinciri
+n|injection|enjeksiyon
+n|SQL injection|SQL enjeksiyonu
+n|command injection|komut enjeksiyonu
+n|cross-site scripting (XSS)|siteler arası betik çalıştırma
+n|stored XSS|kalıcı XSS
+n|reflected XSS|yansıyan XSS
+n|cross-site request forgery (CSRF)|siteler arası istek sahteciliği
+n|server-side request forgery (SSRF)|sunucu taraflı istek sahteciliği
+n|insecure deserialisation|güvensiz seri hâlden çıkarma
+n|path traversal|dizin geçişi
+n|local file inclusion|yerel dosya dahil etme
+n|remote code execution (RCE)|uzaktan kod çalıştırma
+n|open redirect|açık yönlendirme
+n|clickjacking|tıklama hırsızlığı
+n|broken access control|bozuk erişim kontrolü
+n|insecure direct object reference (IDOR)|güvensiz doğrudan nesne referansı
+n|business logic flaw|iş mantığı açığı
+n|race condition|yarış durumu
+n|buffer overflow|arabellek taşması
+n|heap overflow|yığın taşması
+n|stack overflow|yığıt taşması
+n|use-after-free|serbest bırakılan belleği kullanma
+n|input validation|girdi doğrulama
+n|output encoding|çıktı kodlama
+""",
+"C1.1": """
+n|sanitisation|temizleme, arındırma
+n|parameterised query|parametreli sorgu
+n|prepared statement|hazırlanmış ifade
+n|content security policy (CSP)|içerik güvenlik politikası
+n|same-origin policy|aynı köken politikası
+n|CORS|kökenler arası kaynak paylaşımı
+n|security header|güvenlik başlığı
+n|rate limiting|istek sınırlama
+n|web application firewall (WAF)|web uygulama güvenlik duvarı
+n|API gateway|API ağ geçidi
+n|token|jeton
+n|session cookie|oturum çerezi
+n|secure flag|güvenli çerez bayrağı
+n|HttpOnly|betikten erişilemez çerez
+n|CAPTCHA|bot doğrulama testi
+n|dependency|bağımlılık
+n|software bill of materials (SBOM)|yazılım bileşen listesi
+n|secure coding|güvenli kod yazımı
+n|code review|kod incelemesi
+n|static analysis (SAST)|statik kod analizi
+n|dynamic analysis (DAST)|dinamik uygulama testi
+n|fuzzing|rastgele girdi testi
+n|secrets management|gizli bilgi yönetimi
+n|hardcoded credentials|koda gömülü kimlik bilgisi
+n|encryption|şifreleme
+n|decryption|şifre çözme
+n|plaintext|düz metin
+n|ciphertext|şifreli metin
+n|cipher|şifre algoritması
+n|symmetric encryption|simetrik şifreleme
+n|asymmetric encryption|asimetrik şifreleme
+n|public key|açık anahtar
+n|private key|özel anahtar
+n|key exchange|anahtar değişimi
+n|key rotation|anahtar döndürme
+n|key management|anahtar yönetimi
+n|hashing|özetleme
+n|salt|tuz (hash'e eklenen rastgele değer)
+n|pepper|gizli ek değer
+n|digital signature|dijital imza
+n|certificate|sertifika
+n|certificate authority (CA)|sertifika otoritesi
+n|public key infrastructure (PKI)|açık anahtar altyapısı
+n|self-signed certificate|kendinden imzalı sertifika
+n|revocation|iptal (sertifika)
+n|entropy|entropi, rastgelelik
+n|nonce|tek kullanımlık değer
+n|initialisation vector|başlatma vektörü
+n|end-to-end encryption|uçtan uca şifreleme
+n|encryption at rest|durağan veri şifreleme
+n|encryption in transit|aktarımda şifreleme
+n|hardware security module (HSM)|donanım güvenlik modülü
+n|identity provider (IdP)|kimlik sağlayıcı
+n|single sign-on (SSO)|tek oturum açma
+n|federation|kimlik federasyonu
+n|SAML|SAML kimlik doğrulama standardı
+n|OAuth|OAuth yetkilendirme protokolü
+n|OpenID Connect|OIDC kimlik katmanı
+n|multi-factor authentication (MFA)|çok faktörlü kimlik doğrulama
+n|one-time password (OTP)|tek kullanımlık parola
+n|passkey|geçiş anahtarı, şifresiz kimlik
+a|biometric|biyometrik
+n|role-based access control (RBAC)|rol tabanlı erişim kontrolü
+n|attribute-based access control|nitelik tabanlı erişim kontrolü
+n|privileged access management (PAM)|ayrıcalıklı erişim yönetimi
+n|just-in-time access|anlık/geçici yetki verme
+n|identity lifecycle|kimlik yaşam döngüsü
+n|provisioning|hesap oluşturma/atama
+n|deprovisioning|hesap kapatma
+n|access review|erişim gözden geçirmesi
+n|segregation of duties|görevler ayrılığı
+""",
+"C1.2": """
+n|penetration test|sızma testi
+n|red team|kırmızı takım
+n|blue team|mavi takım
+n|purple team|mor takım
+n|engagement|proje, görev süreci
+n|rules of engagement|görev kuralları
+n|scope|kapsam
+n|in scope / out of scope|kapsam içi / kapsam dışı
+n|authorisation letter|yetki mektubu
+n|get-out-of-jail letter|yasal muafiyet yazısı
+n|black box|kara kutu testi
+n|white box|beyaz kutu testi
+n|grey box|gri kutu testi
+n|reconnaissance|keşif
+n|OSINT|açık kaynak istihbaratı
+n|footprinting|iz sürme, hedef haritalama
+n|enumeration|numaralandırma, listeleme
+n|scanning|tarama
+n|port scan|port taraması
+n|service detection|servis tespiti
+n|banner grabbing|servis afişi toplama
+n|vulnerability scanning|zafiyet taraması
+n|proof of concept (PoC)|kavram kanıtı
+n|payload delivery|zararlı yük iletimi
+n|shellcode|kabuk kodu
+n|reverse shell|ters kabuk bağlantısı
+n|bind shell|dinleyen kabuk
+n|foothold|ilk tutunma noktası
+n|pivot|sıçrama noktası olarak kullanmak
+n|post-exploitation|istismar sonrası aşama
+n|credential harvesting|kimlik bilgisi toplama
+n|password cracking|parola kırma
+n|privilege enumeration|yetki listeleme
+n|persistence mechanism|kalıcılık yöntemi
+n|cleanup|iz temizleme, ortamı eski hâline getirme
+n|debrief|değerlendirme toplantısı
+n|finding|bulgu
+n|severity|önem derecesi
+n|CVSS score|CVSS puanı
+n|exploitability|istismar edilebilirlik
+n|remediation advice|düzeltme önerisi
+n|retest|yeniden test
+n|executive summary|yönetici özeti
+n|technical report|teknik rapor
+n|bug bounty|hata ödül programı
+n|responsible disclosure|sorumlu açıklama
+n|coordinated disclosure|eşgüdümlü açıklama
+n|adversary emulation|saldırgan taklidi
+n|TTPs|taktikler, teknikler ve prosedürler
+n|MITRE ATT&CK|ATT&CK saldırı tekniği çerçevesi
+n|threat model|tehdit modeli
+n|attack tree|saldırı ağacı
+""",
+"C2.1": """
+n|security operations centre (SOC)|güvenlik operasyon merkezi
+n|analyst|analist
+n|tier 1 / tier 2|birinci / ikinci seviye destek
+n|alert|uyarı
+n|alert fatigue|uyarı yorgunluğu
+n|triage|önceliklendirme, ilk eleme
+n|escalation|üst seviyeye taşıma
+n|incident|olay
+n|incident response|olay müdahalesi
+n|playbook|müdahale kılavuzu
+n|runbook|işletim adımları kılavuzu
+n|on-call|nöbetçi olma
+n|containment|sınırlandırma, kontrol altına alma
+n|eradication|tehdidi tamamen temizleme
+n|lessons learned|çıkarılan dersler
+n|post-mortem|olay sonrası inceleme
+n|root cause analysis|kök neden analizi
+n|SIEM|güvenlik bilgi ve olay yönetimi
+n|log aggregation|günlük toplama
+n|correlation rule|korelasyon kuralı
+n|use case|kullanım senaryosu (tespit kuralı)
+n|detection engineering|tespit mühendisliği
+n|signature|imza tabanlı tespit
+a|heuristic|sezgisel tespit
+n|anomaly detection|anomali tespiti
+n|behavioural analysis|davranışsal analiz
+n|baseline deviation|normalden sapma
+n|EDR|uç nokta tespit ve müdahale
+n|XDR|genişletilmiş tespit ve müdahale
+n|IDS|saldırı tespit sistemi
+n|IPS|saldırı önleme sistemi
+n|honeypot|bal küpü tuzak sistemi
+n|deception technology|aldatma teknolojisi
+n|threat intelligence|tehdit istihbaratı
+n|indicator of compromise (IoC)|ihlal göstergesi
+n|indicator of attack (IoA)|saldırı göstergesi
+n|threat hunting|tehdit avcılığı
+n|hypothesis-driven hunt|hipotez temelli avlanma
+n|digital forensics|dijital adli bilişim
+n|chain of custody|delil zinciri
+n|imaging|birebir disk kopyası alma
+n|write blocker|yazma engelleyici
+n|volatile data|uçucu veri
+n|timeline analysis|zaman çizelgesi analizi
+n|artefact|iz, kalıntı (adli)
+n|malware analysis|zararlı yazılım analizi
+n|static analysis|statik analiz
+n|dynamic analysis|dinamik analiz
+n|reverse engineering|tersine mühendislik
+n|sandbox detonation|zararlıyı yalıtılmış ortamda çalıştırma
+n|YARA rule|YARA tespit kuralı
+n|SOAR|güvenlik orkestrasyonu ve otomasyonu
+n|mean time to detect (MTTD)|ortalama tespit süresi
+n|mean time to respond (MTTR)|ortalama müdahale süresi
+n|false alarm|yanlış alarm
+n|tuning|kural ince ayarı
+n|whitelisting|beyaz listeye alma
+n|blocklisting|engelleme listesi
+n|quarantine|karantinaya alma
+n|isolation|makineyi ağdan yalıtma
+n|kill switch|acil durdurma anahtarı
+""",
+"C2.2": """
+n|governance|yönetişim
+n|compliance|uyum, mevzuata uygunluk
+n|regulation|düzenleme, mevzuat
+n|standard|standart
+n|framework|çerçeve
+n|policy|politika
+n|procedure|prosedür
+n|guideline|kılavuz ilke
+n|audit|denetim
+n|auditor|denetçi
+n|audit finding|denetim bulgusu
+n|evidence|kanıt, delil
+n|attestation|beyan, onaylama
+n|certification|sertifikasyon
+n|accreditation|akreditasyon
+n|gap analysis|boşluk analizi
+n|maturity model|olgunluk modeli
+n|risk assessment|risk değerlendirmesi
+n|risk register|risk kaydı
+n|risk appetite|risk iştahı
+n|risk tolerance|risk toleransı
+n|risk acceptance|riski kabul etme
+n|risk transfer|riski devretme (sigorta vb.)
+n|risk avoidance|riskten kaçınma
+n|inherent risk|doğal risk
+n|business impact analysis|iş etki analizi
+n|recovery time objective (RTO)|kurtarma süresi hedefi
+n|recovery point objective (RPO)|kurtarma noktası hedefi
+n|data classification|veri sınıflandırma
+n|data retention|veri saklama süresi
+n|data minimisation|veri minimizasyonu
+n|personal data|kişisel veri
+n|data subject|veri sahibi
+n|data controller|veri sorumlusu
+n|data processor|veri işleyen
+n|GDPR|Avrupa Genel Veri Koruma Tüzüğü
+n|breach notification|ihlal bildirimi
+n|privacy by design|tasarımdan gelen mahremiyet
+n|third-party risk|üçüncü taraf riski
+n|vendor assessment|tedarikçi değerlendirmesi
+n|due diligence|gerekli özen incelemesi
+n|service level agreement (SLA)|hizmet seviyesi anlaşması
+n|NDA|gizlilik sözleşmesi
+n|security awareness training|güvenlik farkındalık eğitimi
+n|acceptable use policy|kabul edilebilir kullanım politikası
+n|change management|değişiklik yönetimi
+n|approval workflow|onay akışı
+n|exception request|istisna talebi
 """,
 }
 
@@ -4342,7 +5728,495 @@ EN_DE = {'family': 'die Familie',
  'ephemeral': 'vergänglich',
  'laconic': 'lakonisch',
  'pretentious': 'prätentiös',
- 'eccentric': 'exzentrisch, verschroben'}
+ 'eccentric': 'exzentrisch, verschroben',
+ 'abandon': 'aufgeben, verlassen',
+ 'accomplish': 'vollbringen, erreichen',
+ 'accumulate': 'ansammeln, anhäufen',
+ 'adjust': 'anpassen, einstellen',
+ 'admit': 'zugeben, eingestehen',
+ 'advocate': 'befürworten, sich einsetzen für',
+ 'afford': 'sich leisten können',
+ 'alleviate': 'lindern',
+ 'allocate': 'zuweisen, bereitstellen',
+ 'alter': 'ändern',
+ 'amend': 'ändern, berichtigen',
+ 'anticipate': 'vorhersehen, erwarten',
+ 'appreciate': 'schätzen, zu schätzen wissen',
+ 'approve': 'genehmigen, billigen',
+ 'assign': 'zuweisen, beauftragen',
+ 'assure': 'versichern, zusichern',
+ 'attain': 'erreichen, erlangen',
+ 'attempt': 'versuchen',
+ 'attribute': 'zuschreiben',
+ 'blame': 'beschuldigen, die Schuld geben',
+ 'boost': 'steigern, ankurbeln',
+ 'broaden': 'erweitern',
+ 'cease': 'aufhören, einstellen',
+ 'collaborate': 'zusammenarbeiten',
+ 'commit': 'sich verpflichten; begehen',
+ 'compel': 'zwingen',
+ 'compensate': 'ausgleichen, entschädigen',
+ 'compile': 'zusammenstellen',
+ 'comply': 'einhalten, befolgen',
+ 'comprise': 'umfassen, bestehen aus',
+ 'concede': 'einräumen, zugestehen',
+ 'conduct': 'durchführen, leiten',
+ 'confirm': 'bestätigen',
+ 'confront': 'konfrontieren, sich stellen',
+ 'consist': 'bestehen aus',
+ 'constitute': 'darstellen, bilden',
+ 'consult': 'konsultieren, sich beraten',
+ 'convey': 'vermitteln, übermitteln',
+ 'cope': 'bewältigen, zurechtkommen',
+ 'correspond': 'entsprechen; korrespondieren',
+ 'cultivate': 'pflegen, kultivieren',
+ 'curb': 'eindämmen, zügeln',
+ 'dedicate': 'widmen',
+ 'defer': 'aufschieben',
+ 'delegate': 'delegieren',
+ 'demonstrate': 'zeigen, nachweisen',
+ 'denote': 'bezeichnen, bedeuten',
+ 'deny': 'leugnen, verweigern',
+ 'depict': 'darstellen, schildern',
+ 'deploy': 'einsetzen, bereitstellen',
+ 'derive': 'ableiten, gewinnen',
+ 'deter': 'abschrecken',
+ 'devise': 'ersinnen, entwerfen',
+ 'diminish': 'verringern, abnehmen',
+ 'disclose': 'offenlegen',
+ 'discourage': 'entmutigen, abraten',
+ 'dismiss': 'entlassen; abtun',
+ 'displace': 'verdrängen, vertreiben',
+ 'dispose': 'entsorgen',
+ 'disrupt': 'stören, unterbrechen',
+ 'diverge': 'auseinandergehen, abweichen',
+ 'elaborate': 'näher ausführen',
+ 'eliminate': 'beseitigen',
+ 'embrace': 'annehmen, begrüßen',
+ 'encounter': 'begegnen, stoßen auf',
+ 'endure': 'ertragen, aushalten',
+ 'enforce': 'durchsetzen',
+ 'engage': 'beschäftigen; sich beteiligen',
+ 'enhance': 'verbessern, steigern',
+ 'ensure': 'sicherstellen, gewährleisten',
+ 'entail': 'mit sich bringen',
+ 'establish': 'gründen, festlegen',
+ 'evolve': 'sich entwickeln',
+ 'exaggerate': 'übertreiben',
+ 'exceed': 'überschreiten',
+ 'exclude': 'ausschließen',
+ 'exert': 'ausüben',
+ 'exhibit': 'zeigen, ausstellen',
+ 'exploit': 'ausbeuten, ausnutzen',
+ 'expose': 'aussetzen; aufdecken',
+ 'facilitate': 'erleichtern',
+ 'foster': 'fördern',
+ 'fulfil': 'erfüllen',
+ 'generate': 'erzeugen',
+ 'govern': 'regieren, bestimmen',
+ 'handle': 'bewältigen, handhaben',
+ 'hesitate': 'zögern',
+ 'hinder': 'behindern',
+ 'highlight': 'hervorheben',
+ 'identify': 'identifizieren, erkennen',
+ 'impair': 'beeinträchtigen',
+ 'implement': 'umsetzen',
+ 'incline': 'neigen zu',
+ 'incorporate': 'einbeziehen, integrieren',
+ 'indicate': 'hinweisen auf, anzeigen',
+ 'induce': 'herbeiführen, auslösen',
+ 'inhibit': 'hemmen',
+ 'insist': 'bestehen auf',
+ 'inspire': 'inspirieren',
+ 'integrate': 'integrieren',
+ 'interfere': 'sich einmischen, stören',
+ 'interpret': 'interpretieren, deuten',
+ 'intervene': 'eingreifen',
+ 'investigate': 'ermitteln, untersuchen',
+ 'involve': 'beinhalten, einbeziehen',
+ 'maintain': 'aufrechterhalten; behaupten',
+ 'manipulate': 'manipulieren',
+ 'mitigate': 'mildern, abschwächen',
+ 'modify': 'modifizieren, ändern',
+ 'monitor': 'überwachen',
+ 'obtain': 'erhalten, erlangen',
+ 'occur': 'vorkommen, auftreten',
+ 'outline': 'skizzieren, umreißen',
+ 'oversee': 'beaufsichtigen',
+ 'overlook': 'übersehen',
+ 'persist': 'fortbestehen, beharren',
+ 'persuade': 'überreden',
+ 'pinpoint': 'genau bestimmen',
+ 'portray': 'darstellen, porträtieren',
+ 'preserve': 'bewahren, erhalten',
+ 'prevail': 'sich durchsetzen, vorherrschen',
+ 'prevent': 'verhindern',
+ 'prioritise': 'priorisieren',
+ 'proceed': 'fortfahren',
+ 'prohibit': 'verbieten',
+ 'qualify': 'sich qualifizieren; einschränken',
+ 'quantify': 'quantifizieren',
+ 'reassure': 'beruhigen',
+ 'recall': 'sich erinnern; zurückrufen',
+ 'reckon': 'schätzen, meinen',
+ 'recruit': 'anwerben, einstellen',
+ 'refine': 'verfeinern',
+ 'reflect': 'widerspiegeln; nachdenken',
+ 'refrain': 'unterlassen, sich enthalten',
+ 'regard': 'betrachten als',
+ 'reinforce': 'verstärken',
+ 'relieve': 'entlasten, lindern',
+ 'rely': 'sich verlassen auf',
+ 'remark': 'bemerken',
+ 'render': 'machen zu; erbringen',
+ 'resemble': 'ähneln',
+ 'restore': 'wiederherstellen',
+ 'restrict': 'beschränken',
+ 'retain': 'behalten, bewahren',
+ 'retrieve': 'abrufen, zurückholen',
+ 'reveal': 'enthüllen, offenbaren',
+ 'reverse': 'umkehren',
+ 'revise': 'überarbeiten',
+ 'seek': 'suchen, anstreben',
+ 'settle': 'sich niederlassen; beilegen',
+ 'simplify': 'vereinfachen',
+ 'specify': 'festlegen, angeben',
+ 'strengthen': 'stärken',
+ 'substitute': 'ersetzen',
+ 'suffer': 'leiden',
+ 'supervise': 'beaufsichtigen',
+ 'supplement': 'ergänzen',
+ 'suppress': 'unterdrücken',
+ 'sustain': 'aufrechterhalten',
+ 'tailor': 'maßschneidern, anpassen',
+ 'tend': 'neigen, tendieren',
+ 'terminate': 'beenden, kündigen',
+ 'transform': 'verwandeln',
+ 'undergo': 'durchlaufen, sich unterziehen',
+ 'undertake': 'übernehmen',
+ 'unveil': 'enthüllen, vorstellen',
+ 'uphold': 'aufrechterhalten (Prinzip)',
+ 'urge': 'eindringlich auffordern',
+ 'utilise': 'nutzen, verwenden',
+ 'validate': 'validieren, bestätigen',
+ 'vary': 'variieren',
+ 'verify': 'überprüfen',
+ 'weaken': 'schwächen',
+ 'withdraw': 'zurückziehen, abheben',
+ 'withstand': 'standhalten',
+ 'witness': 'bezeugen, miterleben',
+ 'yield': 'ergeben, liefern; nachgeben',
+ 'accuracy': 'die Genauigkeit',
+ 'adversity': 'die Widrigkeit',
+ 'aftermath': 'die Nachwirkungen (Pl.)',
+ 'ambiguity': 'die Mehrdeutigkeit',
+ 'appeal': 'der Reiz; der Einspruch',
+ 'aspect': 'der Aspekt',
+ 'awareness': 'das Bewusstsein',
+ 'backlash': 'die Gegenreaktion',
+ 'barrier': 'die Barriere, das Hindernis',
+ 'benchmark': 'der Maßstab, der Richtwert',
+ 'breakthrough': 'der Durchbruch',
+ 'burden': 'die Last, die Belastung',
+ 'capacity': 'die Kapazität',
+ 'circumstance': 'der Umstand',
+ 'consensus': 'der Konsens',
+ 'constraint': 'die Einschränkung',
+ 'contradiction': 'der Widerspruch',
+ 'controversy': 'die Kontroverse',
+ 'conviction': 'die Überzeugung; die Verurteilung',
+ 'credibility': 'die Glaubwürdigkeit',
+ 'criterion': 'das Kriterium',
+ 'discrepancy': 'die Diskrepanz',
+ 'disparity': 'die Ungleichheit',
+ 'disruption': 'die Störung, der Umbruch',
+ 'drawback': 'der Nachteil',
+ 'efficiency': 'die Effizienz',
+ 'emphasis': 'die Betonung',
+ 'endeavour': 'das Bestreben',
+ 'expertise': 'das Fachwissen, die Expertise',
+ 'exposure': 'die Exposition, die Sichtbarkeit',
+ 'feasibility': 'die Machbarkeit',
+ 'flaw': 'der Fehler, der Mangel',
+ 'framework': 'der Rahmen',
+ 'hindrance': 'das Hindernis',
+ 'implication': 'die Implikation, die Folge',
+ 'inconsistency': 'die Inkonsistenz',
+ 'initiative': 'die Initiative',
+ 'insight': 'die Einsicht, der Einblick',
+ 'intent': 'die Absicht',
+ 'interference': 'die Einmischung',
+ 'leverage': 'der Hebel, der Einfluss',
+ 'liability': 'die Haftung',
+ 'likelihood': 'die Wahrscheinlichkeit',
+ 'magnitude': 'das Ausmaß, die Größenordnung',
+ 'milestone': 'der Meilenstein',
+ 'misconception': 'das Missverständnis, der Irrglaube',
+ 'momentum': 'die Dynamik, der Schwung',
+ 'motive': 'das Motiv',
+ 'nuance': 'die Nuance',
+ 'obligation': 'die Verpflichtung',
+ 'obstacle': 'das Hindernis',
+ 'outcome': 'das Ergebnis',
+ 'outlook': 'die Aussicht, der Ausblick',
+ 'oversight': 'die Aufsicht; das Versehen',
+ 'pace': 'das Tempo',
+ 'pattern': 'das Muster',
+ 'persistence': 'die Beharrlichkeit',
+ 'perspective': 'die Perspektive',
+ 'plausibility': 'die Plausibilität',
+ 'precedent': 'der Präzedenzfall',
+ 'preference': 'die Vorliebe, die Präferenz',
+ 'premise': 'die Prämisse',
+ 'prevalence': 'die Verbreitung, die Häufigkeit',
+ 'priority': 'die Priorität',
+ 'proficiency': 'die Kompetenz, die Fertigkeit',
+ 'proportion': 'der Anteil, das Verhältnis',
+ 'prospect': 'die Aussicht',
+ 'rationale': 'die Begründung',
+ 'reasoning': 'die Argumentation',
+ 'reluctance': 'das Widerstreben',
+ 'remainder': 'der Rest',
+ 'resilience': 'die Resilienz, die Widerstandskraft',
+ 'resource': 'die Ressource',
+ 'scrutiny': 'die genaue Prüfung',
+ 'setback': 'der Rückschlag',
+ 'shortcoming': 'der Mangel, das Defizit',
+ 'significance': 'die Bedeutung',
+ 'stake': 'der Anteil; das, was auf dem Spiel steht',
+ 'standpoint': 'der Standpunkt',
+ 'strain': 'die Belastung, die Anspannung',
+ 'surplus': 'der Überschuss',
+ 'threshold': 'die Schwelle',
+ 'trait': 'das Merkmal, der Wesenszug',
+ 'transition': 'der Übergang',
+ 'transparency': 'die Transparenz',
+ 'trend': 'der Trend',
+ 'turnover': 'der Umsatz; die Fluktuation',
+ 'uncertainty': 'die Unsicherheit',
+ 'urgency': 'die Dringlichkeit',
+ 'validity': 'die Gültigkeit',
+ 'viability': 'die Tragfähigkeit',
+ 'abundant': 'reichlich',
+ 'accessible': 'zugänglich',
+ 'accurate': 'genau',
+ 'adequate': 'angemessen, ausreichend',
+ 'adverse': 'nachteilig, ungünstig',
+ 'ambiguous': 'mehrdeutig',
+ 'apparent': 'offensichtlich, scheinbar',
+ 'arbitrary': 'willkürlich',
+ 'beneficial': 'vorteilhaft',
+ 'biased': 'voreingenommen',
+ 'competent': 'kompetent',
+ 'comprehensive': 'umfassend',
+ 'conclusive': 'schlüssig, eindeutig',
+ 'consistent': 'konsistent, folgerichtig',
+ 'conspicuous': 'auffällig',
+ 'convincing': 'überzeugend',
+ 'crucial': 'entscheidend',
+ 'cumbersome': 'umständlich, schwerfällig',
+ 'demanding': 'anspruchsvoll',
+ 'detrimental': 'schädlich',
+ 'diverse': 'vielfältig',
+ 'eligible': 'berechtigt, infrage kommend',
+ 'eminent': 'herausragend, bedeutend',
+ 'essential': 'wesentlich, unerlässlich',
+ 'evident': 'offenkundig',
+ 'excessive': 'übermäßig',
+ 'exhaustive': 'erschöpfend, lückenlos',
+ 'explicit': 'ausdrücklich, explizit',
+ 'extensive': 'umfangreich',
+ 'feasible': 'machbar',
+ 'flawed': 'fehlerhaft',
+ 'fluctuating': 'schwankend',
+ 'fundamental': 'grundlegend',
+ 'imminent': 'unmittelbar bevorstehend',
+ 'inadequate': 'unzureichend',
+ 'inclusive': 'inklusiv',
+ 'inconsistent': 'widersprüchlich',
+ 'influential': 'einflussreich',
+ 'inherent': 'inhärent',
+ 'innovative': 'innovativ',
+ 'intricate': 'kompliziert, verwickelt',
+ 'intriguing': 'faszinierend',
+ 'irrelevant': 'irrelevant',
+ 'legitimate': 'legitim, rechtmäßig',
+ 'mandatory': 'verpflichtend',
+ 'marginal': 'geringfügig, marginal',
+ 'misleading': 'irreführend',
+ 'negligible': 'vernachlässigbar',
+ 'notable': 'bemerkenswert',
+ 'noticeable': 'spürbar, merklich',
+ 'ongoing': 'fortlaufend, laufend',
+ 'outdated': 'überholt',
+ 'outstanding': 'herausragend; ausstehend',
+ 'overwhelming': 'überwältigend',
+ 'persistent': 'hartnäckig, anhaltend',
+ 'pervasive': 'allgegenwärtig',
+ 'plausible': 'plausibel',
+ 'precise': 'präzise',
+ 'predominant': 'vorherrschend',
+ 'preliminary': 'vorläufig',
+ 'prevalent': 'weit verbreitet',
+ 'prominent': 'prominent, herausragend',
+ 'proportional': 'verhältnismäßig',
+ 'questionable': 'fragwürdig',
+ 'redundant': 'überflüssig',
+ 'remarkable': 'bemerkenswert',
+ 'resilient': 'widerstandsfähig',
+ 'rigorous': 'streng, gründlich',
+ 'robust': 'robust',
+ 'scarce': 'knapp',
+ 'straightforward': 'unkompliziert',
+ 'subsequent': 'nachfolgend',
+ 'substantial': 'beträchtlich',
+ 'susceptible': 'anfällig',
+ 'unanimous': 'einstimmig',
+ 'unbiased': 'unvoreingenommen',
+ 'unprecedented': 'beispiellos',
+ 'versatile': 'vielseitig',
+ 'viable': 'tragfähig, realisierbar',
+ 'vulnerable': 'verwundbar',
+ 'widespread': 'weit verbreitet',
+ 'deliberately': 'absichtlich',
+ 'inevitably': 'zwangsläufig',
+ 'notably': 'insbesondere',
+ 'predominantly': 'überwiegend',
+ 'substantially': 'erheblich',
+ 'thereby': 'dadurch',
+ 'ultimately': 'letztendlich',
+ 'account for': 'erklären, ausmachen',
+ 'back down': 'einen Rückzieher machen',
+ 'bring up': 'zur Sprache bringen; großziehen',
+ 'call off': 'absagen',
+ 'cut back on': 'einsparen bei',
+ 'cut off': 'abschneiden, trennen',
+ 'draw on': 'zurückgreifen auf',
+ 'drop out': 'abbrechen, aussteigen',
+ 'fall behind': 'in Rückstand geraten',
+ 'follow up': 'nachverfolgen, nachhaken',
+ 'get by': 'über die Runden kommen',
+ 'get on with': 'gut auskommen mit; weitermachen',
+ 'give in': 'nachgeben',
+ 'go over': 'durchgehen, überprüfen',
+ 'hold back': 'zurückhalten',
+ 'hold on': 'warten, festhalten',
+ 'lay off': 'entlassen',
+ 'narrow down': 'eingrenzen',
+ 'opt for': 'sich entscheiden für',
+ 'pass on': 'weitergeben',
+ 'phase out': 'schrittweise abschaffen',
+ 'pick up on': 'mitbekommen, aufgreifen',
+ 'set out': 'aufbrechen; darlegen',
+ 'set up': 'einrichten, gründen',
+ 'step down': 'zurücktreten',
+ 'stick to': 'sich halten an',
+ 'sum up': 'zusammenfassen',
+ 'take on': 'übernehmen; einstellen',
+ 'take up': 'anfangen (Hobby); einnehmen',
+ 'albeit': 'wenn auch',
+ 'all things considered': 'alles in allem',
+ 'as a matter of fact': 'tatsächlich, eigentlich',
+ "as far as I'm concerned": 'was mich betrifft',
+ 'at the expense of': 'auf Kosten von',
+ 'be that as it may': 'wie dem auch sei',
+ 'contrary to': 'im Gegensatz zu',
+ 'for the sake of': 'um … willen',
+ 'given that': 'angesichts der Tatsache, dass',
+ 'hence': 'daher',
+ 'in light of': 'angesichts',
+ 'in line with': 'im Einklang mit',
+ 'in respect of': 'hinsichtlich',
+ 'in the long run': 'auf lange Sicht',
+ 'in the wake of': 'im Zuge von, nach',
+ 'insofar as': 'insofern als',
+ 'it goes without saying': 'es versteht sich von selbst',
+ 'let alone': 'geschweige denn',
+ 'on the grounds that': 'mit der Begründung, dass',
+ 'on the whole': 'im Großen und Ganzen',
+ 'provided that': 'vorausgesetzt, dass',
+ 'regardless of': 'unabhängig von',
+ 'subject to': 'vorbehaltlich',
+ 'take into account': 'berücksichtigen',
+ 'that being said': 'davon abgesehen',
+ 'thus': 'somit',
+ 'to a certain extent': 'bis zu einem gewissen Grad',
+ 'to put it simply': 'einfach ausgedrückt',
+ 'whereas': 'während, wohingegen',
+ 'with a view to': 'mit dem Ziel',
+ 'with regard to': 'in Bezug auf',
+ 'acumen': 'der Scharfsinn',
+ 'alacrity': 'die Bereitwilligkeit',
+ 'antipathy': 'die Abneigung',
+ 'candour': 'die Offenheit',
+ 'clout': 'der Einfluss',
+ 'conundrum': 'das Rätsel',
+ 'debacle': 'das Debakel',
+ 'euphemism': 'der Euphemismus',
+ 'impasse': 'die Sackgasse',
+ 'predilection': 'die Vorliebe',
+ 'propensity': 'der Hang, die Neigung',
+ 'tenacity': 'die Hartnäckigkeit',
+ 'vicissitudes': 'die Wechselfälle',
+ 'bolster': 'stärken, stützen',
+ 'circumvent': 'umgehen',
+ 'corroborate': 'bestätigen',
+ 'exacerbate': 'verschärfen',
+ 'galvanise': 'aufrütteln',
+ 'mollify': 'besänftigen',
+ 'obviate': 'erübrigen',
+ 'placate': 'beschwichtigen',
+ 'relinquish': 'aufgeben, abtreten',
+ 'repudiate': 'zurückweisen',
+ 'stymie': 'behindern',
+ 'vindicate': 'rechtfertigen',
+ 'astute': 'scharfsinnig',
+ 'cogent': 'stichhaltig',
+ 'commensurate': 'angemessen',
+ 'disingenuous': 'unaufrichtig',
+ 'egregious': 'ungeheuerlich',
+ 'fastidious': 'pingelig',
+ 'gratuitous': 'unnötig, grundlos',
+ 'inexorable': 'unaufhaltsam',
+ 'nebulous': 'vage',
+ 'perfunctory': 'oberflächlich',
+ 'tenuous': 'schwach, dürftig',
+ 'ostensibly': 'angeblich',
+ 'anathema': 'ein Gräuel',
+ 'chicanery': 'die Schikane',
+ 'ennui': 'die Langeweile',
+ 'hubris': 'die Hybris',
+ 'largesse': 'die Freigebigkeit',
+ 'minutiae': 'die Einzelheiten',
+ 'panacea': 'das Allheilmittel',
+ 'sycophant': 'der Speichellecker',
+ 'vitriol': 'die Gehässigkeit',
+ 'zeitgeist': 'der Zeitgeist',
+ 'obfuscate': 'verschleiern',
+ 'prevaricate': 'ausweichen',
+ 'proselytise': 'missionieren',
+ 'vacillate': 'schwanken',
+ 'a double-edged sword': 'ein zweischneidiges Schwert',
+ 'bark up the wrong tree': 'auf dem Holzweg sein',
+ 'cut to the chase': 'zur Sache kommen',
+ 'have an axe to grind': 'ein persönliches Interesse verfolgen',
+ 'jump on the bandwagon': 'auf den Zug aufspringen',
+ 'move the goalposts': 'die Spielregeln ändern',
+ "play devil's advocate": 'den Advocatus Diaboli spielen',
+ 'sit on the fence': 'sich nicht festlegen',
+ 'the tip of the iceberg': 'die Spitze des Eisbergs',
+ 'throw caution to the wind': 'alle Vorsicht in den Wind schlagen',
+ 'abstruse': 'abstrus',
+ 'antediluvian': 'vorsintflutlich',
+ 'bombastic': 'schwülstig',
+ 'insouciant': 'unbekümmert',
+ 'obsequious': 'unterwürfig',
+ 'pernicious': 'verderblich',
+ 'quixotic': 'weltfremd, idealistisch',
+ 'sanctimonious': 'scheinheilig',
+ 'supercilious': 'hochnäsig',
+ 'truculent': 'streitlustig',
+ 'unctuous': 'salbungsvoll'}
 
 EN_DE_ACADEMIC = {'research': 'die Forschung',
  'data': 'die Daten (Pl.)',
@@ -4720,4 +6594,883 @@ EN_DE_ACADEMIC = {'research': 'die Forschung',
  'syncretic': 'synkretistisch',
  'pace': 'bei allem Respekt vor',
  'sic': 'sic',
- 'viz.': 'nämlich'}
+ 'viz.': 'nämlich',
+ 'state': 'angeben, feststellen',
+ 'question': 'hinterfragen',
+ 'series': 'die Reihe, die Serie',
+ 'report': 'berichten',
+ 'list': 'auflisten',
+ 'project': 'prognostizieren',
+ 'record': 'aufzeichnen, erfassen',
+ 'test': 'testen',
+ 'result': 'das Ergebnis',
+ 'model': 'modellieren',
+ 'review': 'überprüfen; rezensieren',
+ 'range': 'der Bereich, die Spannweite',
+ 'stage': 'die Phase, das Stadium',
+ 'note': 'festhalten, anmerken',
+ 'conference': 'die Konferenz, die Tagung',
+ 'population': 'die Grundgesamtheit, die Population',
+ 'focus': 'der Fokus',
+ 'section': 'der Abschnitt',
+ 'particularly': 'insbesondere',
+ 'application': 'die Anwendung; die Bewerbung',
+ 'condition': 'die Bedingung',
+ 'scale': 'die Skala',
+ 'critical': 'kritisch',
+ 'authority': 'die Autorität',
+ 'foundation': 'die Grundlage',
+ 'function': 'die Funktion',
+ 'prove': 'beweisen',
+ 'journal': 'die Fachzeitschrift',
+ 'volume': 'der Band; das Volumen',
+ 'reduce': 'reduzieren',
+ 'alternative': 'die Alternative',
+ 'relatively': 'relativ',
+ 'numerous': 'zahlreich',
+ 'specifically': 'spezifisch, gezielt',
+ 'phase': 'die Phase',
+ 'typically': 'typischerweise',
+ 'draft': 'entwerfen',
+ 'statistics': 'die Statistik',
+ 'instance': 'der Fall, das Beispiel',
+ 'definition': 'die Definition',
+ 'random': 'zufällig',
+ 'index': 'der Index',
+ 'representative': 'repräsentativ',
+ 'significantly': 'signifikant, erheblich',
+ 'portion': 'der Anteil',
+ 'pilot': 'pilotieren, erproben',
+ 'quote': 'zitieren',
+ 'comparison': 'der Vergleich',
+ 'document': 'dokumentieren',
+ 'convention': 'die Konvention',
+ 'equivalent': 'gleichwertig, äquivalent',
+ 'contemporary': 'zeitgenössisch',
+ 'initially': 'anfangs',
+ 'technique': 'die Technik',
+ 'assessment': 'die Bewertung',
+ 'element': 'das Element',
+ 'formula': 'die Formel',
+ 'publication': 'die Veröffentlichung',
+ 'rank': 'einstufen, ranken',
+ 'explanation': 'die Erklärung',
+ 'procedure': 'das Verfahren',
+ 'label': 'kennzeichnen',
+ 'output': 'der Output, die Ausgabe',
+ 'essentially': 'im Wesentlichen',
+ 'institution': 'die Institution',
+ 'experiment': 'das Experiment',
+ 'introduce': 'einführen, vorstellen',
+ 'ratio': 'das Verhältnis',
+ 'merely': 'lediglich',
+ 'frequency': 'die Häufigkeit',
+ 'exception': 'die Ausnahme',
+ 'input': 'der Input, die Eingabe',
+ 'sequence': 'die Abfolge, die Sequenz',
+ 'contribution': 'der Beitrag',
+ 'principle': 'das Prinzip',
+ 'composition': 'die Zusammensetzung',
+ 'uniform': 'einheitlich',
+ 'feedback': 'das Feedback, die Rückmeldung',
+ 'sufficient': 'ausreichend',
+ 'domain': 'der Bereich, die Domäne',
+ 'dynamic': 'dynamisch',
+ 'collective': 'kollektiv, gemeinsam',
+ 'estimate': 'die Schätzung',
+ 'interaction': 'die Wechselwirkung',
+ 'distinct': 'eindeutig, verschieden',
+ 'parallel': 'parallel',
+ 'instrument': 'das Instrument',
+ 'intervention': 'die Intervention',
+ 'requirement': 'die Anforderung',
+ 'inquiry': 'die Untersuchung',
+ 'discipline': 'die Disziplin, das Fachgebiet',
+ 'dominant': 'dominant',
+ 'briefly': 'kurz',
+ 'precisely': 'genau',
+ 'solely': 'ausschließlich',
+ 'trace': 'nachverfolgen',
+ 'ethics': 'die Ethik',
+ 'scenario': 'das Szenario',
+ 'respective': 'jeweilig',
+ 'partially': 'teilweise',
+ 'resolve': 'auflösen, lösen',
+ 'notion': 'die Vorstellung, der Begriff',
+ 'partial': 'teilweise, partiell',
+ 'underlying': 'zugrunde liegend',
+ 'observation': 'die Beobachtung',
+ 'applicable': 'anwendbar',
+ 'linear': 'linear',
+ 'convert': 'umwandeln',
+ 'generic': 'generisch, allgemein',
+ 'publish': 'veröffentlichen',
+ 'array': 'die Reihe, die Palette',
+ 'dynamics': 'die Dynamik',
+ 'comparable': 'vergleichbar',
+ 'observe': 'beobachten',
+ 'detect': 'erkennen, nachweisen',
+ 'graph': 'der Graph, die Grafik',
+ 'median': 'der Median',
+ 'thesis': 'die These; die Abschlussarbeit',
+ 'likewise': 'ebenso',
+ 'threshold': 'der Schwellenwert',
+ 'accommodate': 'unterbringen, berücksichtigen',
+ 'extract': 'extrahieren',
+ 'axis': 'die Achse',
+ 'namely': 'nämlich',
+ 'adaptation': 'die Anpassung',
+ 'probe': 'untersuchen, sondieren',
+ 'propose': 'vorschlagen',
+ 'weigh': 'abwägen',
+ 'configuration': 'die Konfiguration',
+ 'tendency': 'die Tendenz',
+ 'integral': 'integral, wesentlich',
+ 'explicitly': 'ausdrücklich',
+ 'aggregate': 'aggregieren, zusammenfassen',
+ 'locate': 'lokalisieren',
+ 'optimal': 'optimal',
+ 'translate': 'übersetzen',
+ 'norm': 'die Norm',
+ 'illustration': 'die Illustration',
+ 'manuscript': 'das Manuskript',
+ 'emerge': 'hervorgehen, auftauchen',
+ 'module': 'das Modul',
+ 'verify': 'verifizieren',
+ 'credibility': 'die Glaubwürdigkeit',
+ 'peer-reviewed': 'begutachtet (peer-reviewed)',
+ 'calculate': 'berechnen',
+ 'regulate': 'regulieren',
+ 'systematic': 'systematisch',
+ 'diagram': 'das Diagramm',
+ 'arbitrary': 'willkürlich',
+ 'synthesis': 'die Synthese',
+ 'critique': 'kritisch bewerten',
+ 'justification': 'die Begründung, die Rechtfertigung',
+ 'prototype': 'der Prototyp',
+ 'diagnostic': 'diagnostisch',
+ 'bibliography': 'das Literaturverzeichnis',
+ 'broadly': 'im Großen und Ganzen',
+ 'alternatively': 'alternativ',
+ 'subjective': 'subjektiv',
+ 'hierarchy': 'die Hierarchie',
+ 'interval': 'das Intervall',
+ 'merge': 'zusammenführen',
+ 'finite': 'endlich',
+ 'allocation': 'die Zuweisung',
+ 'preceding': 'vorhergehend',
+ 'analytical': 'analytisch',
+ 'perceive': 'wahrnehmen',
+ 'specimen': 'die Probe',
+ 'analogy': 'die Analogie',
+ 'dissertation': 'die Dissertation',
+ 'manifest': 'sich manifestieren',
+ 'terminology': 'die Terminologie',
+ 'cite': 'zitieren',
+ 'transmit': 'übertragen',
+ 'statistically': 'statistisch',
+ 'approximate': 'annähern, näherungsweise berechnen',
+ 'theoretically': 'theoretisch',
+ 'inspect': 'prüfen, inspizieren',
+ 'reconsider': 'überdenken',
+ 'reproduce': 'reproduzieren',
+ 'practitioner': 'der Praktiker',
+ 'assert': 'behaupten, geltend machen',
+ 'presume': 'vermuten',
+ 'conceptual': 'konzeptionell',
+ 'hypothetical': 'hypothetisch',
+ 'isolate': 'isolieren',
+ 'equilibrium': 'das Gleichgewicht',
+ 'commence': 'beginnen',
+ 'inherently': 'naturgemäß',
+ 'adhere': 'sich halten an, einhalten',
+ 'indicative': 'indikativ, hinweisend',
+ 'complementary': 'ergänzend, komplementär',
+ 'fragment': 'fragmentieren',
+ 'replicate': 'replizieren',
+ 'cumulative': 'kumulativ',
+ 'descriptive': 'deskriptiv',
+ 'conform': 'entsprechen, sich anpassen',
+ 'dependency': 'die Abhängigkeit',
+ 'excerpt': 'der Auszug',
+ 'comparatively': 'vergleichsweise',
+ 'organise': 'organisieren',
+ 'provoke': 'provozieren, auslösen',
+ 'correlated': 'korreliert',
+ 'coincide': 'zusammenfallen',
+ 'concurrent': 'gleichzeitig',
+ 'speculate': 'spekulieren',
+ 'deduction': 'die Deduktion',
+ 'variance': 'die Varianz',
+ 'simulate': 'simulieren',
+ 'continuum': 'das Kontinuum',
+ 'replication': 'die Replikation',
+ 'inverse': 'umgekehrt, invers',
+ 'compute': 'berechnen',
+ 'cohort': 'die Kohorte',
+ 'deviation': 'die Abweichung',
+ 'classify': 'klassifizieren',
+ 'coefficient': 'der Koeffizient',
+ 'interdisciplinary': 'interdisziplinär',
+ 'designate': 'bestimmen, benennen',
+ 'originate': 'entstammen',
+ 'longitudinal': 'longitudinal',
+ 'predictive': 'prädiktiv',
+ 'unilateral': 'einseitig',
+ 'causal': 'kausal',
+ 'acknowledgement': 'die Danksagung; die Anerkennung',
+ 'approximation': 'die Annäherung',
+ 'illuminate': 'beleuchten',
+ 'conclusive': 'schlüssig',
+ 'exhaustive': 'erschöpfend',
+ 'sequential': 'sequenziell',
+ 'markedly': 'deutlich',
+ 'evoke': 'hervorrufen',
+ 'hierarchical': 'hierarchisch',
+ 'guideline': 'die Richtlinie',
+ 'subsection': 'der Unterabschnitt',
+ 'denounce': 'anprangern',
+ 'converge': 'konvergieren, zusammenlaufen',
+ 'plagiarism': 'das Plagiat',
+ 'implicitly': 'implizit',
+ 'correlate': 'korrelieren',
+ 'equate': 'gleichsetzen',
+ 'augment': 'erweitern, ergänzen',
+ 'allege': 'behaupten (ohne Beweis)',
+ 'exploratory': 'explorativ',
+ 'embody': 'verkörpern',
+ 'footnote': 'die Fußnote',
+ 'amplify': 'verstärken',
+ 'proponent': 'der Befürworter',
+ 'hitherto': 'bislang',
+ 'impede': 'behindern',
+ 'contextual': 'kontextuell',
+ 'mediate': 'vermitteln',
+ 'reiterate': 'wiederholen, bekräftigen',
+ 'schema': 'das Schema',
+ 'inconclusive': 'nicht schlüssig',
+ 'predictor': 'der Prädiktor',
+ 'elicit': 'hervorlocken, ermitteln',
+ 'causation': 'die Kausalität',
+ 'respondent': 'der Befragte',
+ 'automate': 'automatisieren',
+ 'distort': 'verzerren',
+ 'omit': 'auslassen',
+ 'paraphrase': 'paraphrasieren',
+ 'unify': 'vereinheitlichen',
+ 'deviate': 'abweichen',
+ 'solicit': 'erbitten, einholen',
+ 'derivation': 'die Herleitung',
+ 'methodological': 'methodisch',
+ 'invalidate': 'entkräften, ungültig machen',
+ 'underscore': 'unterstreichen',
+ 'disprove': 'widerlegen',
+ 'confine': 'beschränken',
+ 'fabricate': 'fälschen; herstellen',
+ 'annotation': 'die Anmerkung',
+ 'empirically': 'empirisch',
+ 'nullify': 'annullieren',
+ 'substantiate': 'untermauern',
+ 'narrate': 'erzählen',
+ 'posit': 'postulieren',
+ 'ascribe': 'zuschreiben',
+ 'authenticate': 'authentifizieren, beglaubigen',
+ 'transcribe': 'transkribieren',
+ 'supersede': 'ablösen, ersetzen',
+ 'recur': 'wiederkehren',
+ 'append': 'anhängen',
+ 'characterise': 'charakterisieren',
+ 'purport': 'vorgeben, angeblich sein',
+ 'optimise': 'optimieren',
+ 'expound': 'ausführlich darlegen',
+ 'restate': 'neu formulieren',
+ 'generalisation': 'die Verallgemeinerung',
+ 'collate': 'zusammentragen, abgleichen',
+ 'situate': 'verorten',
+ 'enumerate': 'aufzählen',
+ 'rationalise': 'rationalisieren',
+ 'construe': 'auslegen, deuten',
+ 'normalise': 'normalisieren',
+ 'annotate': 'annotieren, kommentieren',
+ 'generalise': 'verallgemeinern',
+ 'tabulate': 'tabellarisch darstellen',
+ 'recapitulate': 'rekapitulieren',
+ 'conceptualise': 'konzeptualisieren',
+ 'interrelate': 'in Beziehung setzen',
+ 'hypothesise': 'Hypothesen aufstellen',
+ 'randomise': 'randomisieren',
+ 'data set': 'der Datensatz',
+ 'depend on': 'abhängen von',
+ 'map (out)': 'kartieren, planen',
+ 'relate to': 'in Beziehung setzen',
+ 'pertain to': 'betreffen',
+ 'case study': 'die Fallstudie',
+ 'restrict to': 'beschränken auf',
+ 'sample size': 'die Stichprobengröße',
+ 'in terms of': 'im Hinblick auf',
+ 'by contrast': 'im Gegensatz dazu',
+ 'identify with': 'sich identifizieren mit',
+ 'knowledge gap': 'die Forschungslücke',
+ 'response rate': 'die Rücklaufquote',
+ 'control group': 'die Kontrollgruppe',
+ 'compensate for': 'ausgleichen',
+ 'taken together': 'zusammengenommen',
+ 'margin of error': 'die Fehlertoleranz, die Fehlermarge',
+ 'research design': 'das Forschungsdesign',
+ 'with respect to': 'in Bezug auf',
+ 'on the basis of': 'auf der Grundlage von',
+ 'it follows that': 'daraus folgt, dass',
+ 'qualitative data': 'qualitative Daten (Pl.)',
+ 'in the same vein': 'in diesem Sinne',
+ 'conceptual model': 'das konzeptionelle Modell',
+ 'ethical approval': 'das Ethikvotum',
+ 'informed consent': 'die informierte Einwilligung',
+ 'literature review': 'die Literaturübersicht',
+ 'quantitative data': 'quantitative Daten (Pl.)',
+ 'research question': 'die Forschungsfrage',
+ 'body of literature': 'der Forschungsstand',
+ 'empirical evidence': 'die empirische Evidenz',
+ 'significance level': 'das Signifikanzniveau',
+ 'standard deviation': 'die Standardabweichung',
+ 'in accordance with': 'in Übereinstimmung mit',
+ 'as shown in Table 2': 'wie in Tabelle 2 ersichtlich',
+ 'the extent to which': 'inwieweit',
+ 'the null hypothesis': 'die Nullhypothese',
+ 'in the present study': 'in der vorliegenden Studie',
+ 'we hypothesised that': 'wir haben die Hypothese aufgestellt, dass',
+ 'confounding variable': 'die Störvariable',
+ 'theoretical framework': 'der theoretische Rahmen',
+ 'this paper argues that': 'in dieser Arbeit wird argumentiert, dass',
+ 'the data indicate that': 'die Daten zeigen, dass',
+ 'drawing on the work of': 'in Anlehnung an die Arbeit von',
+ 'prior research suggests': 'frühere Forschung legt nahe',
+ 'it should be noted that': 'es ist darauf hinzuweisen, dass',
+ 'this is consistent with': 'dies steht im Einklang mit',
+ 'the scope of this paper': 'der Rahmen dieser Arbeit',
+ 'contrary to expectations': 'entgegen den Erwartungen',
+ 'insofar as the data allow': 'soweit die Daten es zulassen',
+ 'statistically significant': 'statistisch signifikant',
+ 'it is widely accepted that': 'es ist allgemein anerkannt, dass',
+ 'further research is needed': 'weitere Forschung ist erforderlich',
+ 'as illustrated in Figure 1': 'wie in Abbildung 1 dargestellt',
+ 'in light of these findings': 'angesichts dieser Befunde',
+ 'future work should address': 'künftige Arbeiten sollten … behandeln',
+ 'the aim of this study is to': 'Ziel dieser Studie ist es, …',
+ 'these findings suggest that': 'diese Befunde legen nahe, dass',
+ 'this raises the question of': 'dies wirft die Frage auf',
+ 'a substantial proportion of': 'ein erheblicher Anteil von',
+ 'the present findings extend': 'die vorliegenden Befunde erweitern',
+ 'to the best of our knowledge': 'nach unserem besten Wissen',
+ 'the underlying assumption is': 'die zugrunde liegende Annahme ist',
+ 'a possible explanation is that': 'eine mögliche Erklärung ist, dass',
+ 'beyond the scope of this study': 'über den Rahmen dieser Studie hinaus',
+ 'for the purposes of this study': 'für die Zwecke dieser Studie',
+ 'a number of studies have shown': 'mehrere Studien haben gezeigt',
+ 'one limitation of this study is': 'eine Limitation dieser Studie ist',
+ 'the results are consistent with': 'die Ergebnisse stimmen überein mit',
+ 'in contrast to previous findings': 'im Gegensatz zu früheren Befunden',
+ 'little attention has been paid to': '… wurde bisher wenig beachtet',
+ 'there is a growing body of evidence': 'es gibt zunehmend Belege'}
+
+EN_DE_CYBER = {'asset': 'der Vermögenswert, das Asset',
+ 'threat': 'die Bedrohung',
+ 'threat actor': 'der Bedrohungsakteur',
+ 'vulnerability': 'die Schwachstelle',
+ 'exploit': 'der Exploit; ausnutzen',
+ 'risk': 'das Risiko',
+ 'likelihood': 'die Eintrittswahrscheinlichkeit',
+ 'impact': 'die Auswirkung',
+ 'attack surface': 'die Angriffsfläche',
+ 'attack vector': 'der Angriffsvektor',
+ 'blast radius': 'der Schadensradius',
+ 'confidentiality': 'die Vertraulichkeit',
+ 'integrity': 'die Integrität',
+ 'availability': 'die Verfügbarkeit',
+ 'non-repudiation': 'die Nichtabstreitbarkeit',
+ 'authentication': 'die Authentifizierung',
+ 'authorisation': 'die Autorisierung',
+ 'accounting': 'die Protokollierung (Accounting)',
+ 'least privilege': 'das Prinzip der geringsten Rechte',
+ 'defence in depth': 'die gestaffelte Verteidigung (Defense in Depth)',
+ 'zero trust': 'Zero Trust',
+ 'security posture': 'die Sicherheitslage',
+ 'baseline': 'die Baseline, die Referenzkonfiguration',
+ 'hardening': 'die Härtung',
+ 'patch': 'der Patch',
+ 'patch management': 'das Patch-Management',
+ 'countermeasure': 'die Gegenmaßnahme',
+ 'safeguard': 'die Schutzmaßnahme',
+ 'control': 'die Kontrolle, die Sicherheitsmaßnahme',
+ 'compensating control': 'die kompensierende Kontrolle',
+ 'mitigation': 'die Risikominderung',
+ 'remediation': 'die Behebung',
+ 'residual risk': 'das Restrisiko',
+ 'false positive': 'das False Positive, der Fehlalarm',
+ 'false negative': 'das False Negative',
+ 'true positive': 'das True Positive',
+ 'detection': 'die Erkennung',
+ 'prevention': 'die Prävention',
+ 'response': 'die Reaktion',
+ 'recovery': 'die Wiederherstellung',
+ 'resilience': 'die Resilienz',
+ 'redundancy': 'die Redundanz',
+ 'failover': 'das Failover',
+ 'business continuity': 'die Geschäftskontinuität',
+ 'disaster recovery': 'die Notfallwiederherstellung (Disaster Recovery)',
+ 'single point of failure': 'der Single Point of Failure',
+ 'security by design': 'Security by Design',
+ 'fail secure': 'ausfallsicher (fail secure)',
+ 'trust boundary': 'die Vertrauensgrenze',
+ 'threat landscape': 'die Bedrohungslage',
+ 'assess the risk': 'das Risiko bewerten',
+ 'mitigate the risk': 'das Risiko mindern',
+ 'escalate the incident': 'den Vorfall eskalieren',
+ 'contain the threat': 'die Bedrohung eindämmen',
+ 'remediate the finding': 'den Befund beheben',
+ 'harden the system': 'das System härten',
+ 'patch the vulnerability': 'die Schwachstelle patchen',
+ 'enforce the policy': 'die Richtlinie durchsetzen',
+ 'validate the fix': 'die Korrektur verifizieren',
+ 'reproduce the issue': 'das Problem reproduzieren',
+ 'document the steps': 'die Schritte dokumentieren',
+ 'raise a ticket': 'ein Ticket erstellen',
+ 'flag a concern': 'ein Bedenken melden',
+ 'walk through the report': 'den Bericht durchgehen',
+ 'follow up on': 'nachfassen bei',
+ 'loop in the team': 'das Team einbeziehen',
+ 'align with stakeholders': 'sich mit den Stakeholdern abstimmen',
+ 'prioritise findings': 'Befunde priorisieren',
+ 'scope the engagement': 'den Auftragsumfang festlegen',
+ 'sign off on': 'freigeben, abzeichnen',
+ 'roll out': 'ausrollen',
+ 'roll back': 'zurückrollen',
+ 'decommission': 'außer Betrieb nehmen',
+ 'whitelist an IP': 'eine IP auf die Allowlist setzen',
+ 'revoke access': 'den Zugriff entziehen',
+ 'grant access': 'Zugriff gewähren',
+ 'rotate credentials': 'Zugangsdaten rotieren',
+ 'enable logging': 'die Protokollierung aktivieren',
+ 'monitor for anomalies': 'auf Anomalien überwachen',
+ 'correlate events': 'Ereignisse korrelieren',
+ 'verify the alert': 'den Alarm verifizieren',
+ 'dismiss as false positive': 'als Fehlalarm schließen',
+ 'conduct a review': 'eine Überprüfung durchführen',
+ 'present the findings': 'die Befunde präsentieren',
+ 'justify the budget': 'das Budget begründen',
+ 'as per our policy': 'gemäß unserer Richtlinie',
+ 'in line with best practice': 'im Einklang mit Best Practices',
+ 'subject to approval': 'vorbehaltlich der Genehmigung',
+ 'pending further investigation': 'bis zur weiteren Untersuchung',
+ 'with immediate effect': 'mit sofortiger Wirkung',
+ 'packet': 'das Paket',
+ 'payload': 'die Nutzlast, der Payload',
+ 'header': 'der Header',
+ 'frame': 'der Frame',
+ 'protocol': 'das Protokoll',
+ 'port': 'der Port',
+ 'socket': 'der Socket',
+ 'handshake': 'der Handshake',
+ 'three-way handshake': 'der Drei-Wege-Handshake',
+ 'subnet': 'das Subnetz',
+ 'gateway': 'das Gateway',
+ 'router': 'der Router',
+ 'switch': 'der Switch',
+ 'firewall': 'die Firewall',
+ 'next-generation firewall': 'die Next-Generation-Firewall',
+ 'stateful inspection': 'die Stateful Inspection',
+ 'access control list (ACL)': 'die Zugriffskontrollliste (ACL)',
+ 'NAT': 'NAT (Netzwerkadressübersetzung)',
+ 'VLAN': 'das VLAN',
+ 'network segmentation': 'die Netzwerksegmentierung',
+ 'micro-segmentation': 'die Mikrosegmentierung',
+ 'DMZ': 'die DMZ',
+ 'proxy': 'der Proxy',
+ 'reverse proxy': 'der Reverse Proxy',
+ 'load balancer': 'der Load Balancer, der Lastverteiler',
+ 'VPN': 'das VPN',
+ 'tunnelling': 'das Tunneling',
+ 'port forwarding': 'die Portweiterleitung',
+ 'pivoting': 'das Pivoting',
+ 'packet capture': 'der Paketmitschnitt',
+ 'sniffing': 'das Sniffing',
+ 'traffic analysis': 'die Verkehrsanalyse',
+ 'bandwidth': 'die Bandbreite',
+ 'latency': 'die Latenz',
+ 'throughput': 'der Durchsatz',
+ 'broadcast': 'der Broadcast',
+ 'routing table': 'die Routingtabelle',
+ 'DNS resolution': 'die DNS-Auflösung',
+ 'DHCP lease': 'die DHCP-Lease',
+ 'TLS': 'TLS',
+ 'mutual TLS': 'mutual TLS (mTLS)',
+ 'certificate pinning': 'das Certificate Pinning',
+ 'wireless access point': 'der WLAN-Zugangspunkt',
+ 'rogue access point': 'der Rogue Access Point',
+ 'evil twin': 'der Evil Twin',
+ 'deauthentication attack': 'der Deauthentication-Angriff',
+ 'WPA2 / WPA3': 'WPA2 / WPA3',
+ 'egress filtering': 'die Egress-Filterung',
+ 'ingress filtering': 'die Ingress-Filterung',
+ 'network tap': 'der Netzwerk-TAP',
+ 'kernel': 'der Kernel',
+ 'process': 'der Prozess',
+ 'daemon': 'der Daemon, der Dienst',
+ 'service': 'der Dienst',
+ 'shell': 'die Shell',
+ 'privilege': 'das Recht, die Berechtigung',
+ 'root': 'root',
+ 'sudo': 'sudo',
+ 'file permission': 'die Dateiberechtigung',
+ 'setuid binary': 'das Setuid-Binary',
+ 'cron job': 'der Cronjob',
+ 'systemd unit': 'die systemd-Unit',
+ 'log file': 'die Logdatei',
+ 'syslog': 'Syslog',
+ 'audit trail': 'der Prüfpfad, der Audit-Trail',
+ 'registry': 'die Registry',
+ 'Active Directory': 'Active Directory',
+ 'domain controller': 'der Domänencontroller',
+ 'group policy': 'die Gruppenrichtlinie',
+ 'service account': 'das Dienstkonto',
+ 'golden ticket': 'das Golden Ticket',
+ 'hash': 'der Hash',
+ 'pass-the-hash': 'Pass-the-Hash',
+ 'LSASS dump': 'der LSASS-Dump',
+ 'memory dump': 'der Speicherabzug',
+ 'snapshot': 'der Snapshot',
+ 'virtual machine': 'die virtuelle Maschine',
+ 'hypervisor': 'der Hypervisor',
+ 'container': 'der Container',
+ 'image': 'das Image',
+ 'sandbox': 'die Sandbox',
+ 'escape (sandbox/container)': 'der Ausbruch (Sandbox/Container)',
+ 'endpoint': 'der Endpunkt',
+ 'agent': 'der Agent',
+ 'inventory': 'das Inventar',
+ 'asset management': 'das Asset-Management',
+ 'configuration drift': 'die Konfigurationsabweichung',
+ 'golden image': 'das Golden Image',
+ 'malware': 'die Schadsoftware, die Malware',
+ 'ransomware': 'die Ransomware, die Erpressersoftware',
+ 'spyware': 'die Spyware',
+ 'adware': 'die Adware',
+ 'rootkit': 'das Rootkit',
+ 'bootkit': 'das Bootkit',
+ 'trojan': 'der Trojaner',
+ 'worm': 'der Wurm',
+ 'virus': 'der Virus',
+ 'dropper': 'der Dropper',
+ 'loader': 'der Loader',
+ 'wiper': 'der Wiper',
+ 'keylogger': 'der Keylogger',
+ 'botnet': 'das Botnetz',
+ 'command and control (C2)': 'Command and Control (C2)',
+ 'beacon': 'der Beacon',
+ 'backdoor': 'die Hintertür',
+ 'logic bomb': 'die logische Bombe',
+ 'phishing': 'das Phishing',
+ 'spear phishing': 'das Spear-Phishing',
+ 'whaling': 'das Whaling',
+ 'smishing': 'das Smishing',
+ 'vishing': 'das Vishing',
+ 'pretexting': 'das Pretexting',
+ 'baiting': 'das Baiting, der Köder',
+ 'tailgating': 'das Tailgating',
+ 'social engineering': 'das Social Engineering',
+ 'business email compromise': 'der CEO-Betrug (Business Email Compromise)',
+ 'credential theft': 'der Diebstahl von Zugangsdaten',
+ 'credential stuffing': 'das Credential Stuffing',
+ 'password spraying': 'das Password Spraying',
+ 'brute force': 'der Brute-Force-Angriff',
+ 'dictionary attack': 'der Wörterbuchangriff',
+ 'rainbow table': 'die Rainbow Table',
+ 'man-in-the-middle (MitM)': 'der Man-in-the-Middle-Angriff',
+ 'replay attack': 'der Replay-Angriff',
+ 'session hijacking': 'das Session Hijacking',
+ 'spoofing': 'das Spoofing',
+ 'ARP poisoning': 'das ARP-Spoofing',
+ 'DNS poisoning': 'das DNS-Poisoning',
+ 'DNS tunnelling': 'das DNS-Tunneling',
+ 'typosquatting': 'das Typosquatting',
+ 'watering hole attack': 'der Watering-Hole-Angriff',
+ 'supply chain attack': 'der Lieferkettenangriff',
+ 'denial of service (DoS)': 'der Denial-of-Service-Angriff (DoS)',
+ 'DDoS': 'der DDoS-Angriff',
+ 'amplification attack': 'der Amplification-Angriff',
+ 'zero-day': 'die Zero-Day-Lücke',
+ 'privilege escalation': 'die Rechteausweitung',
+ 'lateral movement': 'die laterale Bewegung',
+ 'persistence': 'die Persistenz',
+ 'data exfiltration': 'die Datenexfiltration',
+ 'data breach': 'die Datenpanne',
+ 'insider threat': 'der Innentäter',
+ 'advanced persistent threat (APT)': 'die APT (fortgeschrittene, andauernde Bedrohung)',
+ 'living off the land': 'Living off the Land',
+ 'fileless malware': 'die dateilose Malware',
+ 'obfuscation': 'die Verschleierung',
+ 'packing': 'das Packing',
+ 'polymorphic': 'polymorph',
+ 'evasion': 'die Umgehung',
+ 'anti-forensics': 'Anti-Forensik',
+ 'cryptojacking': 'das Cryptojacking',
+ 'scareware': 'die Scareware',
+ 'double extortion': 'die doppelte Erpressung',
+ 'initial access': 'der Erstzugriff',
+ 'dwell time': 'die Verweildauer',
+ 'kill chain': 'die Kill Chain',
+ 'injection': 'die Injection',
+ 'SQL injection': 'die SQL-Injection',
+ 'command injection': 'die Command Injection',
+ 'cross-site scripting (XSS)': 'Cross-Site-Scripting (XSS)',
+ 'stored XSS': 'Stored XSS',
+ 'reflected XSS': 'Reflected XSS',
+ 'cross-site request forgery (CSRF)': 'Cross-Site Request Forgery (CSRF)',
+ 'server-side request forgery (SSRF)': 'Server-Side Request Forgery (SSRF)',
+ 'insecure deserialisation': 'die unsichere Deserialisierung',
+ 'path traversal': 'die Path Traversal',
+ 'local file inclusion': 'die Local File Inclusion',
+ 'remote code execution (RCE)': 'die Remote Code Execution (RCE)',
+ 'open redirect': 'die offene Weiterleitung',
+ 'clickjacking': 'das Clickjacking',
+ 'broken access control': 'die fehlerhafte Zugriffskontrolle',
+ 'insecure direct object reference (IDOR)': 'IDOR (unsichere direkte Objektreferenz)',
+ 'business logic flaw': 'der Logikfehler',
+ 'race condition': 'die Race Condition',
+ 'buffer overflow': 'der Pufferüberlauf',
+ 'heap overflow': 'der Heap-Überlauf',
+ 'stack overflow': 'der Stack-Überlauf',
+ 'use-after-free': 'Use-after-free',
+ 'input validation': 'die Eingabevalidierung',
+ 'output encoding': 'die Ausgabekodierung',
+ 'sanitisation': 'die Bereinigung',
+ 'parameterised query': 'die parametrisierte Abfrage',
+ 'prepared statement': 'das Prepared Statement',
+ 'content security policy (CSP)': 'die Content Security Policy (CSP)',
+ 'same-origin policy': 'die Same-Origin-Policy',
+ 'CORS': 'CORS',
+ 'security header': 'der Sicherheitsheader',
+ 'rate limiting': 'die Ratenbegrenzung',
+ 'web application firewall (WAF)': 'die Web Application Firewall (WAF)',
+ 'API gateway': 'das API-Gateway',
+ 'token': 'das Token',
+ 'session cookie': 'das Session-Cookie',
+ 'secure flag': 'das Secure-Flag',
+ 'HttpOnly': 'HttpOnly',
+ 'CAPTCHA': 'das CAPTCHA',
+ 'dependency': 'die Abhängigkeit',
+ 'software bill of materials (SBOM)': 'die Software-Stückliste (SBOM)',
+ 'secure coding': 'sicheres Programmieren',
+ 'code review': 'das Code-Review',
+ 'static analysis (SAST)': 'die statische Codeanalyse (SAST)',
+ 'dynamic analysis (DAST)': 'die dynamische Analyse (DAST)',
+ 'fuzzing': 'das Fuzzing',
+ 'secrets management': 'das Secrets-Management',
+ 'hardcoded credentials': 'fest codierte Zugangsdaten',
+ 'encryption': 'die Verschlüsselung',
+ 'decryption': 'die Entschlüsselung',
+ 'plaintext': 'der Klartext',
+ 'ciphertext': 'der Geheimtext, der Chiffretext',
+ 'cipher': 'die Chiffre',
+ 'symmetric encryption': 'die symmetrische Verschlüsselung',
+ 'asymmetric encryption': 'die asymmetrische Verschlüsselung',
+ 'public key': 'der öffentliche Schlüssel',
+ 'private key': 'der private Schlüssel',
+ 'key exchange': 'der Schlüsselaustausch',
+ 'key rotation': 'die Schlüsselrotation',
+ 'key management': 'das Schlüsselmanagement',
+ 'hashing': 'das Hashing',
+ 'salt': 'der Salt',
+ 'pepper': 'der Pepper',
+ 'digital signature': 'die digitale Signatur',
+ 'certificate': 'das Zertifikat',
+ 'certificate authority (CA)': 'die Zertifizierungsstelle (CA)',
+ 'public key infrastructure (PKI)': 'die Public-Key-Infrastruktur (PKI)',
+ 'self-signed certificate': 'das selbstsignierte Zertifikat',
+ 'revocation': 'der Widerruf',
+ 'entropy': 'die Entropie',
+ 'nonce': 'die Nonce',
+ 'initialisation vector': 'der Initialisierungsvektor',
+ 'end-to-end encryption': 'die Ende-zu-Ende-Verschlüsselung',
+ 'encryption at rest': 'die Verschlüsselung ruhender Daten',
+ 'encryption in transit': 'die Transportverschlüsselung',
+ 'hardware security module (HSM)': 'das Hardware-Sicherheitsmodul (HSM)',
+ 'identity provider (IdP)': 'der Identitätsanbieter (IdP)',
+ 'single sign-on (SSO)': 'Single Sign-on (SSO)',
+ 'federation': 'die Föderation',
+ 'SAML': 'SAML',
+ 'OAuth': 'OAuth',
+ 'OpenID Connect': 'OpenID Connect',
+ 'multi-factor authentication (MFA)': 'die Multi-Faktor-Authentifizierung (MFA)',
+ 'one-time password (OTP)': 'das Einmalpasswort (OTP)',
+ 'passkey': 'der Passkey',
+ 'biometric': 'biometrisch',
+ 'role-based access control (RBAC)': 'die rollenbasierte Zugriffskontrolle (RBAC)',
+ 'attribute-based access control': 'die attributbasierte Zugriffskontrolle',
+ 'privileged access management (PAM)': 'das Privileged Access Management (PAM)',
+ 'just-in-time access': 'der Just-in-Time-Zugriff',
+ 'identity lifecycle': 'der Identitätslebenszyklus',
+ 'provisioning': 'die Bereitstellung (Provisioning)',
+ 'deprovisioning': 'die Deprovisionierung',
+ 'access review': 'die Zugriffsprüfung',
+ 'segregation of duties': 'die Funktionstrennung',
+ 'penetration test': 'der Penetrationstest',
+ 'red team': 'das Red Team',
+ 'blue team': 'das Blue Team',
+ 'purple team': 'das Purple Team',
+ 'engagement': 'der Auftrag, das Projekt',
+ 'rules of engagement': 'die Rules of Engagement',
+ 'scope': 'der Umfang, der Scope',
+ 'in scope / out of scope': 'im Scope / außerhalb des Scopes',
+ 'authorisation letter': 'das Autorisierungsschreiben',
+ 'get-out-of-jail letter': 'die Freistellungserklärung',
+ 'black box': 'der Blackbox-Test',
+ 'white box': 'der Whitebox-Test',
+ 'grey box': 'der Greybox-Test',
+ 'reconnaissance': 'die Aufklärung',
+ 'OSINT': 'OSINT',
+ 'footprinting': 'das Footprinting',
+ 'enumeration': 'die Enumeration',
+ 'scanning': 'das Scannen',
+ 'port scan': 'der Portscan',
+ 'service detection': 'die Diensterkennung',
+ 'banner grabbing': 'das Banner Grabbing',
+ 'vulnerability scanning': 'der Schwachstellenscan',
+ 'proof of concept (PoC)': 'der Proof of Concept (PoC)',
+ 'payload delivery': 'die Payload-Auslieferung',
+ 'shellcode': 'der Shellcode',
+ 'reverse shell': 'die Reverse Shell',
+ 'bind shell': 'die Bind Shell',
+ 'foothold': 'der Brückenkopf, der Foothold',
+ 'pivot': 'pivotieren',
+ 'post-exploitation': 'die Post-Exploitation',
+ 'credential harvesting': 'das Sammeln von Zugangsdaten',
+ 'password cracking': 'das Knacken von Passwörtern',
+ 'privilege enumeration': 'die Rechte-Enumeration',
+ 'persistence mechanism': 'der Persistenzmechanismus',
+ 'cleanup': 'die Bereinigung (Cleanup)',
+ 'debrief': 'die Nachbesprechung',
+ 'finding': 'der Befund',
+ 'severity': 'der Schweregrad',
+ 'CVSS score': 'der CVSS-Wert',
+ 'exploitability': 'die Ausnutzbarkeit',
+ 'remediation advice': 'die Behebungsempfehlung',
+ 'retest': 'der Retest',
+ 'executive summary': 'die Management-Zusammenfassung',
+ 'technical report': 'der technische Bericht',
+ 'bug bounty': 'das Bug-Bounty-Programm',
+ 'responsible disclosure': 'die verantwortungsvolle Offenlegung',
+ 'coordinated disclosure': 'die koordinierte Offenlegung',
+ 'adversary emulation': 'die Angreiferemulation',
+ 'TTPs': 'TTPs (Taktiken, Techniken, Prozeduren)',
+ 'MITRE ATT&CK': 'MITRE ATT&CK',
+ 'threat model': 'das Bedrohungsmodell',
+ 'attack tree': 'der Angriffsbaum',
+ 'security operations centre (SOC)': 'das Security Operations Center (SOC)',
+ 'analyst': 'der Analyst',
+ 'tier 1 / tier 2': 'Level 1 / Level 2',
+ 'alert': 'der Alarm, die Warnung',
+ 'alert fatigue': 'die Alarmmüdigkeit',
+ 'triage': 'die Triage',
+ 'escalation': 'die Eskalation',
+ 'incident': 'der Sicherheitsvorfall',
+ 'incident response': 'die Vorfallsreaktion (Incident Response)',
+ 'playbook': 'das Playbook',
+ 'runbook': 'das Runbook',
+ 'on-call': 'die Rufbereitschaft',
+ 'containment': 'die Eindämmung',
+ 'eradication': 'die Beseitigung',
+ 'lessons learned': 'die Lessons Learned',
+ 'post-mortem': 'die Nachanalyse (Post-Mortem)',
+ 'root cause analysis': 'die Ursachenanalyse',
+ 'SIEM': 'SIEM',
+ 'log aggregation': 'die Log-Aggregation',
+ 'correlation rule': 'die Korrelationsregel',
+ 'use case': 'der Use Case',
+ 'detection engineering': 'das Detection Engineering',
+ 'signature': 'die Signatur',
+ 'heuristic': 'heuristisch',
+ 'anomaly detection': 'die Anomalieerkennung',
+ 'behavioural analysis': 'die Verhaltensanalyse',
+ 'baseline deviation': 'die Abweichung von der Baseline',
+ 'EDR': 'EDR',
+ 'XDR': 'XDR',
+ 'IDS': 'IDS (Angriffserkennungssystem)',
+ 'IPS': 'IPS (Angriffsverhinderungssystem)',
+ 'honeypot': 'der Honeypot',
+ 'deception technology': 'die Deception-Technologie',
+ 'threat intelligence': 'die Bedrohungsaufklärung (Threat Intelligence)',
+ 'indicator of compromise (IoC)': 'der Kompromittierungsindikator (IoC)',
+ 'indicator of attack (IoA)': 'der Angriffsindikator (IoA)',
+ 'threat hunting': 'das Threat Hunting',
+ 'hypothesis-driven hunt': 'die hypothesengetriebene Jagd',
+ 'digital forensics': 'die digitale Forensik',
+ 'chain of custody': 'die Beweismittelkette',
+ 'imaging': 'die forensische Abbilderstellung',
+ 'write blocker': 'der Schreibblocker',
+ 'volatile data': 'flüchtige Daten (Pl.)',
+ 'timeline analysis': 'die Zeitlinienanalyse',
+ 'artefact': 'das Artefakt',
+ 'malware analysis': 'die Malware-Analyse',
+ 'static analysis': 'die statische Analyse',
+ 'dynamic analysis': 'die dynamische Analyse',
+ 'reverse engineering': 'das Reverse Engineering',
+ 'sandbox detonation': 'die Sandbox-Detonation',
+ 'YARA rule': 'die YARA-Regel',
+ 'SOAR': 'SOAR',
+ 'mean time to detect (MTTD)': 'die mittlere Erkennungszeit (MTTD)',
+ 'mean time to respond (MTTR)': 'die mittlere Reaktionszeit (MTTR)',
+ 'false alarm': 'der Fehlalarm',
+ 'tuning': 'das Tuning, die Feinabstimmung',
+ 'whitelisting': 'das Whitelisting',
+ 'blocklisting': 'das Blocklisting',
+ 'quarantine': 'die Quarantäne',
+ 'isolation': 'die Isolierung',
+ 'kill switch': 'der Notausschalter (Kill Switch)',
+ 'governance': 'die Governance',
+ 'compliance': 'die Compliance, die Einhaltung',
+ 'regulation': 'die Regulierung',
+ 'standard': 'der Standard',
+ 'framework': 'das Rahmenwerk',
+ 'policy': 'die Richtlinie',
+ 'procedure': 'das Verfahren',
+ 'guideline': 'die Leitlinie',
+ 'audit': 'das Audit, die Prüfung',
+ 'auditor': 'der Auditor, der Prüfer',
+ 'audit finding': 'die Audit-Feststellung',
+ 'evidence': 'der Nachweis, das Beweismittel',
+ 'attestation': 'die Bestätigung, die Attestierung',
+ 'certification': 'die Zertifizierung',
+ 'accreditation': 'die Akkreditierung',
+ 'gap analysis': 'die Gap-Analyse',
+ 'maturity model': 'das Reifegradmodell',
+ 'risk assessment': 'die Risikobewertung',
+ 'risk register': 'das Risikoregister',
+ 'risk appetite': 'die Risikobereitschaft',
+ 'risk tolerance': 'die Risikotoleranz',
+ 'risk acceptance': 'die Risikoakzeptanz',
+ 'risk transfer': 'der Risikotransfer',
+ 'risk avoidance': 'die Risikovermeidung',
+ 'inherent risk': 'das inhärente Risiko',
+ 'business impact analysis': 'die Business-Impact-Analyse',
+ 'recovery time objective (RTO)': 'das Wiederherstellungszeitziel (RTO)',
+ 'recovery point objective (RPO)': 'das Wiederherstellungspunktziel (RPO)',
+ 'data classification': 'die Datenklassifizierung',
+ 'data retention': 'die Datenaufbewahrung',
+ 'data minimisation': 'die Datenminimierung',
+ 'personal data': 'personenbezogene Daten (Pl.)',
+ 'data subject': 'die betroffene Person',
+ 'data controller': 'der Verantwortliche (Datenschutz)',
+ 'data processor': 'der Auftragsverarbeiter',
+ 'GDPR': 'die DSGVO',
+ 'breach notification': 'die Meldung einer Datenpanne',
+ 'privacy by design': 'Privacy by Design',
+ 'third-party risk': 'das Drittanbieterrisiko',
+ 'vendor assessment': 'die Lieferantenbewertung',
+ 'due diligence': 'die Sorgfaltsprüfung (Due Diligence)',
+ 'service level agreement (SLA)': 'das Service-Level-Agreement (SLA)',
+ 'NDA': 'die Geheimhaltungsvereinbarung (NDA)',
+ 'security awareness training': 'die Sicherheitsschulung',
+ 'acceptable use policy': 'die Nutzungsrichtlinie',
+ 'change management': 'das Änderungsmanagement',
+ 'approval workflow': 'der Genehmigungsworkflow',
+ 'exception request': 'der Ausnahmeantrag'}
