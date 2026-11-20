@@ -18,9 +18,9 @@ Word Flow is a single app for English, German and Turkish. On first start it ask
 | You speak | You learn | Word → meaning | Modes (number of words) |
 |---|---|---|---|
 | English | German | German → English | General 2,588 · Academic 691 · Cyber 500 |
-| English | Turkish | Turkish → English | Everyday · Academic · Cyber |
+| English | Turkish | Turkish → English | Everyday 2,417 · Academic 745 · Cyber 502 |
 | German | English | English → German | Everyday 2,443 · Academic 753 · Cyber 502 |
-| German | Turkish | Turkish → German | General · Academic · Cyber |
+| German | Turkish | Turkish → German | General 2,567 · Academic 684 · Cyber 500 |
 | Turkish | English | English → Turkish | Everyday 2,443 · Academic 753 · Cyber 502 |
 | Turkish | German | German → Turkish | General 2,588 · Academic 691 · Cyber 500 |
 
@@ -81,9 +81,9 @@ Word Flow İngilizce, Almanca ve Türkçe için tek bir uygulama. İlk açılı�
 | Türkçe | İngilizce | İngilizce → Türkçe | Günlük 2.443 · Akademik 753 · Siber 502 |
 | Türkçe | Almanca | Almanca → Türkçe | Genel 2.588 · Akademik 691 · Siber 500 |
 | İngilizce | Almanca | Almanca → İngilizce | Genel 2.588 · Akademik 691 · Siber 500 |
-| İngilizce | Türkçe | Türkçe → İngilizce | Günlük · Akademik · Siber |
+| İngilizce | Türkçe | Türkçe → İngilizce | Günlük 2.417 · Akademik 745 · Siber 502 |
 | Almanca | İngilizce | İngilizce → Almanca | Günlük 2.443 · Akademik 753 · Siber 502 |
-| Almanca | Türkçe | Türkçe → Almanca | Genel · Akademik · Siber |
+| Almanca | Türkçe | Türkçe → Almanca | Genel 2.567 · Akademik 684 · Siber 500 |
 
 ### Kelime listeleri
 - **Genel / Günlük (A1.1 – C2.2).** A1–B1 seviyeleri 26 konuda 1500 temel kelimeyi kapsıyor. Konular arasında selamlaşma, sayılar, aile, ev, yemek, şehir, iş ve Almanya'daki resmî işler var. Bunlara ek günlük fiiller de eklendi. B2–C1 seviyelerinde C1 düzeyinde fiiller, isimler, sıfatlar, phrasal verb'ler ve bağlaçlar var; ne kadar sık kullanıldıklarına göre sıralandılar. C2'de nadir kelimeler ve deyimler var.
@@ -140,9 +140,9 @@ Word Flow ist eine einzige App für Englisch, Deutsch und Türkisch. Beim ersten
 | Du sprichst | Du lernst | Wort → Bedeutung | Modi (Anzahl Wörter) |
 |---|---|---|---|
 | Deutsch | Englisch | Englisch → Deutsch | Alltag 2.443 · Akademisch 753 · Cyber 502 |
-| Deutsch | Türkisch | Türkisch → Deutsch | Allgemein · Akademisch · Cyber |
+| Deutsch | Türkisch | Türkisch → Deutsch | Allgemein 2.567 · Akademisch 684 · Cyber 500 |
 | Englisch | Deutsch | Deutsch → Englisch | Allgemein 2.588 · Akademisch 691 · Cyber 500 |
-| Englisch | Türkisch | Türkisch → Englisch | Alltag · Akademisch · Cyber |
+| Englisch | Türkisch | Türkisch → Englisch | Alltag 2.417 · Akademisch 745 · Cyber 502 |
 | Türkisch | Englisch | Englisch → Türkisch | Alltag 2.443 · Akademisch 753 · Cyber 502 |
 | Türkisch | Deutsch | Deutsch → Türkisch | Allgemein 2.588 · Akademisch 691 · Cyber 500 |
 
