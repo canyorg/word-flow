@@ -3336,6 +3336,436 @@ p|provided that|şu şartla ki
 p|subject to|-e tabi olarak
 p|take into account|hesaba katmak
 p|to put it simply|basitçe söylemek gerekirse
+n|courtesy|nezaket
+n|disc|disk
+n|embassy|büyükelçilik
+n|goodness|iyilik
+n|guilt|suçluluk
+n|haven|sığınak
+w|keen|istekli
+w|lesser|daha az
+w|mere|sadece, basit
+n|miracle|mucize
+w|protective|koruyucu
+n|publisher|yayıncı
+n|retreat|geri çekilme
+n|theft|hırsızlık
+n|valve|vana
+w|adjacent|bitişik
+n|appreciation|takdir
+w|athletic|atletik
+n|banner|afiş
+n|charm|çekicilik
+n|colony|koloni
+w|cruel|zalim
+n|curriculum|müfredat
+w|electoral|seçimle ilgili
+n|entity|varlık, kuruluş
+n|interface|arayüz
+n|journalism|gazetecilik
+w|occasional|ara sıra olan
+n|pursuit|peşinde koşma
+n|ridge|sırt
+n|tribe|kabile
+w|unfortunate|talihsiz
+w|alternate|dönüşümlü
+n|athlete|sporcu
+n|attraction|cazibe
+n|bankruptcy|iflas
+n|closure|kapanış
+w|cognitive|bilişsel
+w|dental|diş
+w|diplomatic|diplomatik
+w|editorial|editoryal
+w|eternal|ebedi
+v|freeze|donmak|froze · frozen
+n|grip|kavrama
+n|handful|avuç dolusu
+w|happily|mutlulukla
+n|harmony|uyum
+w|humble|alçakgönüllü
+w|hybrid|melez
+w|mild|ılımlı
+w|minimal|asgari
+w|molecular|moleküler
+w|nowadays|günümüzde
+w|pathetic|acınası
+n|restoration|restorasyon
+w|selfish|bencil
+n|throne|taht
+n|archives|arşiv
+w|brutal|vahşi
+n|cliff|uçurum
+n|declaration|beyan
+n|distinction|ayrım
+w|faithful|sadık
+w|fatal|ölümcül
+w|fitting|uygun
+n|hurricane|kasırga
+n|jurisdiction|yargı yetkisi
+n|lung|akciğer
+w|mighty|kudretli
+w|monetary|parasal
+n|nutrition|beslenme
+w|poorly|kötü
+v|pose|oluşturmak (tehdit)
+v|pour|dökmek
+w|anxious|endişeli
+n|cult|tarikat
+n|diary|günlük
+v|disagree|katılmamak
+n|forecast|tahmin
+w|indoor|kapalı alan
+v|intend|niyet etmek
+w|invisible|görünmez
+n|lawsuit|dava
+n|leak|sızıntı
+w|passionate|tutkulu
+n|recommendation|tavsiye
+n|riot|isyan
+n|servant|hizmetçi
+n|skull|kafatası
+v|smash|parçalamak
+n|statue|heykel
+n|surrender|teslimiyet
+w|suspicious|şüpheli
+w|tender|şefkatli
+n|vacuum|boşluk
+n|breed|ırk, cins
+n|bride|gelin
+n|confirmation|onay
+n|contractor|yüklenici
+n|diameter|çap
+n|fabric|kumaş
+w|fabulous|harika
+v|fold|katlamak
+w|glorious|şanlı
+n|merchant|tüccar
+n|merit|değer, liyakat
+n|myth|efsane
+w|pale|solgun
+n|poison|zehir
+n|rebel|asi
+n|rotation|dönüş
+n|toll|geçiş ücreti; bedel
+w|torn|yırtık
+w|unbelievable|inanılmaz
+w|underneath|altında
+n|variation|değişkenlik
+w|viral|viral
+n|warehouse|depo
+n|widow|dul kadın
+w|altogether|tamamen
+n|beard|sakal
+n|blanket|battaniye
+n|capability|yetenek
+n|curse|lanet
+n|drain|gider
+n|excellence|mükemmellik
+n|flame|alev
+n|hint|ipucu
+n|horizon|ufuk
+w|hostile|düşmanca
+w|miserable|perişan
+n|nest|yuva
+n|nomination|aday gösterme
+n|quantity|miktar
+n|reign|saltanat
+v|scare|korkutmak
+n|span|süre, aralık
+n|submission|teslim
+n|supporter|destekçi
+w|tremendous|muazzam
+w|ashamed|utanmış
+n|ballot|oy pusulası
+n|cemetery|mezarlık
+v|cheat|hile yapmak
+n|compact|anlaşma
+n|deficit|açık
+w|halfway|yarı yolda
+n|indication|belirti
+w|intensive|yoğun
+w|intimate|samimi
+w|martial|askerî
+n|prosecution|kovuşturma
+n|pulse|nabız
+w|rational|akılcı
+n|realm|alan, diyar
+n|rope|ip
+v|shout|bağırmak
+w|spectacular|muhteşem
+n|streak|seri
+n|subscription|abonelik
+w|technological|teknolojik
+n|tolerance|hoşgörü
+w|unhappy|mutsuz
+n|apology|özür
+w|exceptional|olağanüstü
+v|hack|kesmek; hacklemek
+n|hatred|nefret
+v|interact|etkileşmek
+n|majesty|majeste
+v|retire|emekli olmak
+n|rhythm|ritim
+w|savage|vahşi
+w|slim|ince
+w|someday|bir gün
+n|stack|yığın
+n|stance|duruş
+w|supportive|destekleyici
+w|surgical|cerrahi
+n|tide|gelgit
+n|warfare|savaş
+w|authentic|otantik
+n|bolt|cıvata
+n|collar|yaka
+v|donate|bağışlamak
+n|finale|final
+n|flavour|tat
+n|ignorance|cehalet
+n|immigrant|göçmen
+w|intermediate|orta düzey
+n|invention|buluş
+w|magnificent|görkemli
+w|mathematical|matematiksel
+n|placement|yerleştirme; staj
+n|recreation|eğlence
+w|shallow|sığ
+n|sketch|taslak
+n|spite|kin
+n|sponsor|sponsor
+n|sunset|gün batımı
+w|thermal|termal
+n|chapel|şapel
+n|cloth|kumaş
+v|differ|farklı olmak
+v|elect|seçmek
+n|essence|öz
+n|harvest|hasat
+n|headline|manşet
+n|junk|hurda
+n|kidney|böbrek
+n|ladder|merdiven
+n|lobby|lobi
+n|mineral|mineral
+w|modest|alçakgönüllü
+n|orbit|yörünge
+n|paragraph|paragraf
+w|passive|pasif
+n|peninsula|yarımada
+w|profitable|kârlı
+n|sentiment|duygu
+n|trunk|gövde; bagaj
+w|varied|çeşitli
+n|verdict|karar
+n|anchor|çapa
+n|arch|kemer
+n|badge|rozet
+w|bizarre|tuhaf
+v|bounce|zıplamak
+n|consultation|danışma
+w|continental|kıtasal
+n|convenience|kolaylık
+n|dignity|onur
+n|enthusiasm|coşku
+n|ferry|feribot
+n|fusion|füzyon
+n|helmet|kask
+n|inclusion|dahil etme
+n|keeper|koruyucu; kaleci
+n|liar|yalancı
+n|machinery|makineler
+n|mansion|konak
+v|possess|sahip olmak
+n|probability|olasılık
+n|ritual|ritüel
+v|slam|çarpmak
+v|subscribe|abone olmak
+n|voltage|voltaj
+n|width|genişlik
+n|workout|antrenman
+n|bail|kefalet
+w|delicate|narin
+n|disappointment|hayal kırıklığı
+v|insert|yerleştirmek
+n|loser|kaybeden
+n|massage|masaj
+n|musician|müzisyen
+n|orchestra|orkestra
+n|precision|hassasiyet
+n|preservation|koruma
+v|sail|yelken açmak
+w|sheer|katıksız
+w|stark|sert, çıplak
+n|sympathy|sempati; başsağlığı
+n|thumb|başparmak
+n|timber|kereste
+w|transparent|şeffaf
+n|upside|olumlu yan
+n|visitor|ziyaretçi
+n|vitamin|vitamin
+n|void|boşluk
+w|voluntary|gönüllü
+n|wheat|buğday
+v|wipe|silmek
+n|wrist|bilek
+w|acute|akut
+v|behave|davranmak
+n|chin|çene
+w|civic|yurttaşlık
+n|clerk|memur, katip
+n|cottage|kır evi
+n|coup|darbe
+w|crude|ham
+n|disposal|bertaraf
+w|distinctive|ayırt edici
+n|donation|bağış
+n|drone|drone
+w|indirect|dolaylı
+w|institutional|kurumsal
+w|interim|geçici
+n|lottery|piyango
+n|outlet|priz; satış yeri
+n|pledge|söz, taahhüt
+n|portal|portal
+n|publicity|tanıtım
+n|puppy|köpek yavrusu
+n|slice|dilim
+n|survivor|hayatta kalan
+n|vaccine|aşı
+n|affiliate|bağlı kuruluş
+n|asylum|sığınma
+n|barn|ahır
+w|bent|eğri
+n|cathedral|katedral
+n|clause|madde
+n|cluster|küme
+n|consistency|tutarlılık
+n|dancer|dansçı
+w|deaf|sağır
+n|denial|inkâr
+n|dock|rıhtım
+n|entrepreneur|girişimci
+n|expedition|keşif gezisi
+n|feat|başarı
+n|fossil|fosil
+n|freight|yük
+n|honesty|dürüstlük
+w|inappropriate|uygunsuz
+n|infant|bebek
+n|insult|hakaret
+w|neat|düzenli
+n|outbreak|salgın, patlak verme
+n|perfection|mükemmellik
+w|quarterly|üç aylık
+w|resistant|dayanıklı
+w|skinny|sıska
+v|sneak|gizlice girmek
+w|sore|ağrıyan
+n|spark|kıvılcım
+n|speculation|spekülasyon
+w|steep|dik
+n|straw|saman; pipet
+n|successor|halef
+w|uncertain|belirsiz
+w|whatsoever|hiçbir şekilde
+w|absent|yok, eksik
+w|acoustic|akustik
+w|atomic|atomik
+n|bean|fasulye
+n|bump|tümsek
+n|cart|araba
+n|cord|kordon
+n|defendant|sanık
+w|dense|yoğun
+n|doctrine|öğreti
+n|freshman|birinci sınıf öğrencisi
+n|habitat|yaşam alanı
+n|hazard|tehlike
+n|hydrogen|hidrojen
+w|intact|sağlam
+n|intake|alım
+n|lawn|çim
+v|manufacture|üretmek
+w|mistaken|yanılmış
+n|needle|iğne
+n|pity|acıma
+n|pond|gölet
+n|prey|av
+n|prophet|peygamber
+n|referendum|referandum
+n|refugee|mülteci
+v|satisfy|tatmin etmek
+w|seasonal|mevsimlik
+w|sensible|mantıklı
+n|sequel|devam filmi
+n|whale|balina
+n|ankle|ayak bileği
+n|armour|zırh
+n|bachelor|bekâr erkek; lisans
+n|berry|dut, böğürtlen
+n|capitalism|kapitalizm
+n|caution|dikkat
+n|characteristic|özellik
+n|clash|çatışma
+w|compatible|uyumlu
+n|curiosity|merak
+n|delight|zevk
+w|explosive|patlayıcı
+w|fortunate|şanslı
+n|frontier|sınır
+v|grasp|kavramak
+w|handy|kullanışlı
+w|harmful|zararlı
+n|mandate|yetki
+w|memorable|unutulmaz
+n|merger|birleşme
+w|portable|taşınabilir
+v|slap|tokatlamak
+n|succession|ardıllık
+v|sweep|süpürmek|swept · swept
+w|tactical|taktik
+w|thereafter|ondan sonra
+n|tuition|öğrenim ücreti
+w|wholesale|toptan
+n|canvas|tuval
+n|cheek|yanak
+w|circular|dairesel
+n|circulation|dolaşım
+n|clearance|izin; temizleme
+n|comedian|komedyen
+n|conscience|vicdan
+w|countless|sayısız
+n|detention|gözaltı
+v|employ|istihdam etmek
+n|fraction|kesir; küçük bir kısım
+w|lightly|hafifçe
+n|marble|mermer
+w|maritime|denizcilik
+v|melt|erimek
+n|nominee|aday
+n|oath|yemin
+n|pillow|yastık
+n|pirate|korsan
+w|polar|kutup
+n|puzzle|bulmaca
+n|revelation|vahiy; ifşa
+n|scholar|akademisyen
+v|stir|karıştırmak
+w|superb|mükemmel
+n|toast|kızarmış ekmek; kadeh kaldırma
+w|tricky|zor, çetrefil
+n|triumph|zafer
+n|waist|bel
+n|wreck|enkaz
+w|absurd|saçma
+w|amid|ortasında
+n|bargain|kelepir
+w|binary|ikili
+n|blend|karışım
+n|brake|fren
+n|collision|çarpışma
+n|compassion|şefkat
 """,
 "C1.2": """
 n|objection|itiraz
@@ -3497,6 +3927,524 @@ p|on the grounds that|-gerekçesiyle
 p|regardless of|-e bakılmaksızın
 p|to a certain extent|bir dereceye kadar
 p|with regard to|-e ilişkin
+n|critic|eleştirmen
+n|distress|sıkıntı
+w|elegant|zarif
+n|elevator|asansör
+v|execute|yürütmek; idam etmek
+n|feast|ziyafet
+n|hike|yürüyüş; artış
+w|hollow|içi boş
+n|homeland|vatan
+w|lame|topal; zayıf
+n|messenger|haberci
+n|plea|savunma; yakarış
+v|punish|cezalandırmak
+n|rhetoric|söylem
+n|salvation|kurtuluş
+w|secular|laik
+n|sigh|iç çekme
+w|sovereign|egemen
+n|spouse|eş
+w|tense|gergin
+n|wilderness|vahşi doğa
+n|adviser|danışman
+n|anatomy|anatomi
+n|chess|satranç
+w|dull|sıkıcı; donuk
+n|fare|ücret (bilet)
+v|float|yüzmek (su üstü)
+n|generator|jeneratör
+v|grind|öğütmek|ground · ground
+n|illusion|yanılsama
+w|incorrect|yanlış
+n|junction|kavşak
+n|leap|sıçrama
+v|oppose|karşı çıkmak
+w|postal|posta
+w|profound|derin
+n|prosecutor|savcı
+n|rebellion|isyan
+n|recipient|alıcı
+n|refund|iade
+w|sober|ayık
+n|spice|baharat
+v|squeeze|sıkmak
+n|terrain|arazi
+w|unconscious|bilinçsiz, baygın
+n|virtue|erdem
+n|acre|dönüm
+v|bloom|çiçek açmak
+n|bundle|demet
+n|butterfly|kelebek
+n|conjunction|bağlaç; birlik
+w|costly|pahalı
+n|descent|iniş; soy
+n|directory|dizin
+n|discharge|taburcu; boşaltım
+v|dodge|kaçmak
+n|halt|duruş
+w|implied|örtük
+v|impress|etkilemek
+n|inability|yetersizlik
+n|mentor|akıl hocası
+n|merchandise|mal
+n|monk|keşiş
+v|occupy|işgal etmek
+w|orthodox|ortodoks
+w|overhead|tepede
+n|painter|ressam
+w|prone|eğilimli
+n|reunion|yeniden bir araya gelme
+n|revival|canlanma
+n|sanctuary|sığınak
+n|siege|kuşatma
+n|sleeve|kol (giysi)
+n|spine|omurga
+n|tenure|görev süresi
+n|texture|doku
+w|thankful|müteşekkir
+n|triangle|üçgen
+w|unclear|belirsiz
+n|affection|sevgi
+n|altitude|rakım
+n|countryside|kırsal
+n|debris|enkaz
+n|donor|bağışçı
+v|educate|eğitmek
+w|fierce|şiddetli
+n|gratitude|minnet
+n|inequality|eşitsizlik
+n|leisure|boş zaman
+n|sculpture|heykel
+n|showcase|vitrin
+n|subsidiary|yan kuruluş
+n|theology|ilahiyat
+n|velocity|hız
+n|ambition|hırs
+n|ammunition|cephane
+n|batch|parti
+w|charitable|hayırsever
+n|collector|koleksiyoncu
+n|compliment|iltifat
+w|exotic|egzotik
+w|exterior|dış
+w|feminine|kadınsı
+n|fountain|çeşme
+n|fury|öfke
+n|glance|bakış
+n|glow|parıltı
+w|humanitarian|insani
+n|immunity|bağışıklık
+n|liberation|kurtuluş
+w|lone|yalnız
+n|necessity|gereklilik
+n|nickname|lakap
+n|observer|gözlemci
+w|offshore|açık deniz
+w|optional|isteğe bağlı
+n|pioneer|öncü
+n|prosperity|refah
+n|refuge|sığınak
+n|shortage|kıtlık
+n|sphere|küre; alan
+v|stare|dik dik bakmak
+w|territorial|bölgesel
+v|toss|atmak
+w|verbal|sözlü
+n|wool|yün
+w|accountable|hesap verebilir
+n|advocacy|savunuculuk
+n|aggression|saldırganlık
+n|burial|defin
+n|clarity|açıklık
+w|confidential|gizli
+n|discretion|takdir; ağzı sıkılık
+n|drought|kuraklık
+n|elevation|yükseklik
+n|esteem|itibar
+n|gesture|jest
+n|historian|tarihçi
+n|hospitality|misafirperverlik
+n|hostage|rehine
+n|literacy|okuryazarlık
+n|particle|parçacık
+n|progression|ilerleme
+n|reservoir|baraj gölü
+n|sensation|duyum; sansasyon
+n|slope|yamaç
+n|spotlight|spot ışığı
+w|stern|sert
+w|stiff|sert
+w|terrific|harika
+v|unite|birleştirmek
+v|unlock|kilidi açmak
+n|vault|kasa; tonoz
+n|biography|biyografi
+n|broker|komisyoncu
+v|bury|gömmek
+w|destructive|yıkıcı
+v|dislike|sevmemek
+n|farewell|veda
+n|fist|yumruk
+w|fond of|düşkün
+w|foolish|aptalca
+n|landmark|simge yapı
+w|liable|sorumlu
+n|midst|orta
+n|misery|sefalet
+n|nursery|kreş
+n|plague|veba
+n|solidarity|dayanışma
+n|specialty|uzmanlık
+w|supernatural|doğaüstü
+n|tomb|mezar
+v|trim|kırpmak
+n|voyage|deniz yolculuğu
+n|attachment|ek; bağlılık
+n|candle|mum
+n|choir|koro
+n|confession|itiraf
+n|corridor|koridor
+n|geometry|geometri
+n|gossip|dedikodu
+w|immense|muazzam
+n|intersection|kavşak
+w|juvenile|çocuk, genç
+n|mankind|insanlık
+n|militia|milis
+w|pointless|anlamsız
+n|proximity|yakınlık
+n|qualification|nitelik
+w|selective|seçici
+w|shiny|parlak
+n|thief|hırsız
+n|tribunal|mahkeme
+n|villain|kötü adam
+n|whistle|düdük
+w|abusive|kötü davranan
+n|alley|ara sokak
+n|appetite|iştah
+n|bully|zorba
+v|dominate|hâkim olmak
+n|dynasty|hanedan
+n|forehead|alın
+w|informal|gayriresmî
+w|prospective|olası
+v|swallow|yutmak
+w|unacceptable|kabul edilemez
+w|unaware|habersiz
+w|uncommon|nadir
+w|underway|devam eden
+w|unstable|dengesiz
+w|vague|belirsiz
+n|abundance|bolluk
+w|antique|antika
+n|autonomy|özerklik
+n|breeze|esinti
+n|commodity|emtia
+n|correspondent|muhabir
+n|curtain|perde
+n|envelope|zarf
+v|fade|solmak
+n|fatigue|yorgunluk
+w|fragile|kırılgan
+n|instinct|içgüdü
+n|irony|ironi
+w|lethal|öldürücü
+w|lively|canlı
+n|logistics|lojistik
+n|morality|ahlak
+w|mortal|ölümlü
+n|radius|yarıçap
+n|referee|hakem
+n|sovereignty|egemenlik
+n|taxpayer|vergi mükellefi
+n|allowance|ödenek
+w|autonomous|özerk
+n|bait|yem
+n|compilation|derleme
+n|correspondence|yazışma
+w|desirable|arzu edilir
+w|favourable|elverişli
+w|incomplete|eksik
+w|lengthy|uzun
+n|levy|vergi
+v|mock|alay etmek
+n|niche|niş
+w|obscure|belirsiz; az bilinen
+n|recession|durgunluk
+w|successive|ardışık
+w|timely|zamanında
+v|utter|söylemek
+v|yell|bağırmak
+n|elbow|dirsek
+n|envy|kıskançlık
+n|exile|sürgün
+n|heel|topuk
+n|monopoly|tekel
+n|outrage|öfke
+n|paperwork|evrak işi
+n|renewal|yenileme
+w|sincere|içten
+n|slaughter|katliam
+v|spill|dökmek
+n|supplier|tedarikçi
+w|tasty|lezzetli
+v|testify|tanıklık etmek
+n|decay|çürüme
+n|dominance|hâkimiyet
+v|entertain|eğlendirmek
+n|imagery|imgeler
+n|innocence|masumiyet
+n|livestock|çiftlik hayvanları
+w|notorious|kötü şöhretli
+w|outright|tamamen, açıkça
+w|overly|aşırı
+n|refusal|ret
+n|statute|kanun
+w|thoughtful|düşünceli
+w|vicious|acımasız
+w|wholly|tamamen
+n|compression|sıkıştırma
+v|confess|itiraf etmek
+n|decree|kararname
+n|despair|umutsuzluk
+n|dividend|temettü
+n|drift|sürüklenme
+n|infinity|sonsuzluk
+n|pardon|af
+n|predecessor|selef
+w|reckless|pervasız
+n|redemption|kurtuluş; itfa
+n|revision|revizyon
+n|scent|koku
+n|stimulus|uyarıcı
+n|surge|ani artış
+n|vocabulary|kelime dağarcığı
+w|worthless|değersiz
+v|absorb|emmek
+n|accord|anlaşma
+n|assurance|güvence
+n|boycott|boykot
+n|competitor|rakip
+n|cuisine|mutfak (yemek kültürü)
+n|doom|kıyamet
+v|flee|kaçmak|fled · fled
+n|glimpse|bir anlık bakış
+w|homemade|ev yapımı
+w|honourable|onurlu
+w|infectious|bulaşıcı
+w|inferior|aşağı
+n|injustice|adaletsizlik
+n|masterpiece|başyapıt
+n|melody|melodi
+n|reliance|bağımlılık
+n|retention|tutma, saklama
+w|rotten|çürük
+v|spoil|bozmak; şımartmak
+n|suburb|banliyö
+w|sympathetic|anlayışlı
+n|taxation|vergilendirme
+n|temper|huy, öfke
+n|coffin|tabut
+n|combo|kombinasyon
+n|conductor|şef; iletken
+w|decorative|dekoratif
+w|definitive|kesin
+n|epidemic|salgın
+v|explode|patlamak
+n|extraction|çıkarma
+n|inheritance|miras
+v|minimise|en aza indirmek
+w|primitive|ilkel
+w|righteous|doğru, erdemli
+v|seize|ele geçirmek
+n|skeleton|iskelet
+w|sticky|yapışkan
+w|unpleasant|tatsız
+w|vacant|boş
+n|vicinity|civar
+n|warmth|sıcaklık
+n|bulletin|bülten
+w|cautious|temkinli
+v|cooperate|iş birliği yapmak
+n|counsellor|danışman
+n|faction|hizip
+v|gamble|kumar oynamak
+w|harmless|zararsız
+w|hopeful|umutlu
+n|hygiene|hijyen
+w|imaginary|hayali
+n|oppression|baskı
+w|probable|olası
+n|probation|deneme süresi; şartlı tahliye
+n|projection|projeksiyon; tahmin
+n|reproduction|üreme; kopya
+n|spokesman|sözcü
+v|surround|çevrelemek
+n|apparatus|aygıt
+n|bliss|mutluluk
+w|bodily|bedensel
+n|buffer|tampon
+w|constructive|yapıcı
+w|cosmic|kozmik
+w|definite|kesin
+n|drawer|çekmece
+n|ecosystem|ekosistem
+w|exempt|muaf
+w|faint|zayıf, belli belirsiz
+w|foremost|en önde gelen
+n|greenhouse|sera
+n|metabolism|metabolizma
+w|newborn|yeni doğan
+n|parody|parodi
+n|parole|şartlı tahliye
+n|queue|kuyruk
+n|sociology|sosyoloji
+n|traction|çekiş
+w|unwanted|istenmeyen
+n|variant|varyant
+w|wherein|ki orada
+n|algebra|cebir
+n|antenna|anten
+n|audition|seçme
+w|comparative|karşılaştırmalı
+v|complement|tamamlamak
+v|conquer|fethetmek
+n|conquest|fetih
+n|continuity|süreklilik
+v|crawl|emeklemek
+w|credible|inandırıcı
+n|digit|rakam
+n|drainage|drenaj
+n|felony|ağır suç
+n|fortress|kale
+n|herb|ot
+n|herd|sürü
+w|immortal|ölümsüz
+n|incumbent|görevdeki kişi
+w|insufficient|yetersiz
+w|literal|kelimesi kelimesine
+w|lunar|ay ile ilgili
+w|maternal|anne tarafı
+n|memoir|anı
+n|modification|değişiklik
+n|occurrence|olay
+n|offspring|döl, çocuk
+n|pathway|yol
+n|prohibition|yasak
+n|scar|yara izi
+n|scripture|kutsal metin
+n|simplicity|sadelik
+n|textbook|ders kitabı
+n|trader|tüccar
+w|undercover|gizli
+n|vegetation|bitki örtüsü
+n|vein|damar
+n|accountant|muhasebeci
+v|activate|etkinleştirmek
+n|corpse|ceset
+n|designation|atama; ad
+n|diploma|diploma
+v|dispatch|göndermek
+n|extinction|yok olma
+n|geology|jeoloji
+n|mentality|zihniyet
+w|phenomenal|olağanüstü
+n|shipment|sevkiyat
+w|spatial|mekânsal
+w|stubborn|inatçı
+n|transplant|nakil
+n|volcano|yanardağ
+v|attach|eklemek
+w|disciplinary|disiplin
+n|endorsement|onay
+w|forensic|adli
+w|forthcoming|yaklaşan
+w|infamous|kötü şöhretli
+w|lateral|yanal
+w|lifelong|ömür boyu
+w|naive|saf
+n|prestige|prestij
+w|rigid|katı
+n|specification|şartname
+w|splendid|muhteşem
+n|telescope|teleskop
+w|unreasonable|makul olmayan
+n|valuation|değerleme
+v|violate|ihlal etmek
+w|vivid|canlı
+n|anticipation|beklenti
+n|authorisation|yetkilendirme
+w|auxiliary|yardımcı
+n|baggage|bagaj
+n|bounty|ödül
+n|contempt|küçümseme
+n|endurance|dayanıklılık
+n|expenditure|harcama
+w|overweight|kilolu
+w|potent|güçlü
+n|rust|pas
+n|seizure|nöbet; el koyma
+w|singular|tekil
+w|stray|başıboş
+w|systemic|sistemik
+n|tempo|tempo
+n|torch|meşale; el feneri
+w|understandable|anlaşılır
+w|upright|dik
+w|vain|kibirli; boş
+n|vanity|kibir
+v|whisper|fısıldamak
+w|worthwhile|zahmete değer
+w|bankrupt|iflas etmiş
+v|blink|göz kırpmak
+w|childish|çocukça
+n|coil|bobin
+n|covenant|ahit
+n|devotion|bağlılık
+n|disgrace|rezalet
+w|eventual|nihai
+v|excel|üstün olmak
+w|firstly|ilk olarak
+n|greed|açgözlülük
+v|greet|selamlamak
+n|inflammation|iltihap
+n|magnet|mıknatıs
+n|metaphor|mecaz
+v|notify|bildirmek
+n|pact|pakt
+w|paramount|en önemli
+n|patron|hami; müşteri
+v|regain|yeniden kazanmak
+v|renew|yenilemek
+n|revolt|isyan
+w|rightly|haklı olarak
+n|rumour|söylenti
+n|shrine|türbe
+v|shrink|küçülmek|shrank · shrunk
+w|solitary|yalnız
+n|sorrow|keder
+n|termination|fesih
+n|thigh|uyluk
+w|unpaid|ödenmemiş
+w|unsuccessful|başarısız
+n|warranty|garanti
+n|aisle|koridor
+n|atom|atom
+w|bilateral|ikili
+v|bleed|kanamak|bled · bled
+n|caption|altyazı
+v|choke|boğulmak
+v|condemn|kınamak
+n|disguise|kılık
+w|downstairs|alt katta
+n|empathy|empati
+n|impulse|dürtü
+w|incapable|yetersiz
+w|insecure|güvensiz
+n|knot|düğüm
 """,
 "C2.1": """
 n|bias|önyargı, taraflılık
@@ -8598,7 +9546,955 @@ EN_DE = {'family': 'die Familie',
  'breach': 'der Verstoß',
  'combine': 'kombinieren',
  'companion': 'der Begleiter',
- 'consciousness': 'das Bewusstsein'}
+ 'consciousness': 'das Bewusstsein',
+ 'courtesy': 'die Höflichkeit',
+ 'disc': 'die Scheibe',
+ 'embassy': 'die Botschaft',
+ 'goodness': 'die Güte',
+ 'guilt': 'die Schuld',
+ 'haven': 'der Zufluchtsort',
+ 'keen': 'eifrig',
+ 'lesser': 'geringer',
+ 'mere': 'bloß',
+ 'miracle': 'das Wunder',
+ 'protective': 'schützend',
+ 'publisher': 'der Verlag',
+ 'retreat': 'der Rückzug',
+ 'theft': 'der Diebstahl',
+ 'valve': 'das Ventil',
+ 'adjacent': 'angrenzend',
+ 'appreciation': 'die Wertschätzung',
+ 'athletic': 'sportlich',
+ 'banner': 'das Banner',
+ 'charm': 'der Charme',
+ 'colony': 'die Kolonie',
+ 'cruel': 'grausam',
+ 'curriculum': 'der Lehrplan',
+ 'electoral': 'Wahl-',
+ 'entity': 'die Einheit, das Gebilde',
+ 'interface': 'die Schnittstelle',
+ 'journalism': 'der Journalismus',
+ 'occasional': 'gelegentlich',
+ 'pursuit': 'die Verfolgung, das Streben',
+ 'ridge': 'der Grat',
+ 'tribe': 'der Stamm',
+ 'unfortunate': 'bedauerlich',
+ 'alternate': 'abwechselnd',
+ 'athlete': 'der Athlet',
+ 'attraction': 'die Anziehung',
+ 'bankruptcy': 'die Insolvenz',
+ 'closure': 'die Schließung',
+ 'cognitive': 'kognitiv',
+ 'dental': 'Zahn-',
+ 'diplomatic': 'diplomatisch',
+ 'editorial': 'redaktionell',
+ 'eternal': 'ewig',
+ 'freeze': 'frieren',
+ 'grip': 'der Griff',
+ 'handful': 'die Handvoll',
+ 'happily': 'glücklich',
+ 'harmony': 'die Harmonie',
+ 'humble': 'bescheiden',
+ 'hybrid': 'hybrid',
+ 'mild': 'mild',
+ 'minimal': 'minimal',
+ 'molecular': 'molekular',
+ 'nowadays': 'heutzutage',
+ 'pathetic': 'erbärmlich',
+ 'restoration': 'die Restaurierung',
+ 'selfish': 'egoistisch',
+ 'throne': 'der Thron',
+ 'archives': 'das Archiv',
+ 'brutal': 'brutal',
+ 'cliff': 'die Klippe',
+ 'declaration': 'die Erklärung',
+ 'distinction': 'die Unterscheidung',
+ 'faithful': 'treu',
+ 'fatal': 'tödlich',
+ 'fitting': 'passend',
+ 'hurricane': 'der Hurrikan',
+ 'jurisdiction': 'die Zuständigkeit',
+ 'lung': 'die Lunge',
+ 'mighty': 'mächtig',
+ 'monetary': 'monetär',
+ 'nutrition': 'die Ernährung',
+ 'poorly': 'schlecht',
+ 'pose': 'darstellen',
+ 'pour': 'gießen',
+ 'anxious': 'ängstlich',
+ 'cult': 'der Kult',
+ 'diary': 'das Tagebuch',
+ 'disagree': 'widersprechen',
+ 'forecast': 'die Vorhersage',
+ 'indoor': 'Innen-',
+ 'intend': 'beabsichtigen',
+ 'invisible': 'unsichtbar',
+ 'lawsuit': 'die Klage',
+ 'leak': 'das Leck',
+ 'passionate': 'leidenschaftlich',
+ 'recommendation': 'die Empfehlung',
+ 'riot': 'der Aufruhr',
+ 'servant': 'der Diener',
+ 'skull': 'der Schädel',
+ 'smash': 'zerschlagen',
+ 'statue': 'die Statue',
+ 'surrender': 'die Kapitulation',
+ 'suspicious': 'verdächtig',
+ 'tender': 'zärtlich',
+ 'vacuum': 'das Vakuum',
+ 'breed': 'die Rasse',
+ 'bride': 'die Braut',
+ 'confirmation': 'die Bestätigung',
+ 'contractor': 'der Auftragnehmer',
+ 'diameter': 'der Durchmesser',
+ 'fabric': 'der Stoff',
+ 'fabulous': 'fabelhaft',
+ 'fold': 'falten',
+ 'glorious': 'glorreich',
+ 'merchant': 'der Händler',
+ 'merit': 'der Verdienst',
+ 'myth': 'der Mythos',
+ 'pale': 'blass',
+ 'poison': 'das Gift',
+ 'rebel': 'der Rebell',
+ 'rotation': 'die Drehung',
+ 'toll': 'die Maut; der Tribut',
+ 'torn': 'zerrissen',
+ 'unbelievable': 'unglaublich',
+ 'underneath': 'unterhalb',
+ 'variation': 'die Variation',
+ 'viral': 'viral',
+ 'warehouse': 'das Lager',
+ 'widow': 'die Witwe',
+ 'altogether': 'insgesamt',
+ 'beard': 'der Bart',
+ 'blanket': 'die Decke',
+ 'capability': 'die Fähigkeit',
+ 'curse': 'der Fluch',
+ 'drain': 'der Abfluss',
+ 'excellence': 'die Exzellenz',
+ 'flame': 'die Flamme',
+ 'hint': 'der Hinweis',
+ 'horizon': 'der Horizont',
+ 'hostile': 'feindselig',
+ 'miserable': 'elend',
+ 'nest': 'das Nest',
+ 'nomination': 'die Nominierung',
+ 'quantity': 'die Menge',
+ 'reign': 'die Herrschaft',
+ 'scare': 'erschrecken',
+ 'span': 'die Spanne',
+ 'submission': 'die Einreichung',
+ 'supporter': 'der Unterstützer',
+ 'tremendous': 'enorm',
+ 'ashamed': 'beschämt',
+ 'ballot': 'der Stimmzettel',
+ 'cemetery': 'der Friedhof',
+ 'cheat': 'betrügen',
+ 'compact': 'der Pakt',
+ 'deficit': 'das Defizit',
+ 'halfway': 'auf halbem Weg',
+ 'indication': 'der Hinweis',
+ 'intensive': 'intensiv',
+ 'intimate': 'intim',
+ 'martial': 'kriegerisch',
+ 'prosecution': 'die Strafverfolgung',
+ 'pulse': 'der Puls',
+ 'rational': 'rational',
+ 'realm': 'das Reich',
+ 'rope': 'das Seil',
+ 'shout': 'schreien',
+ 'spectacular': 'spektakulär',
+ 'streak': 'die Serie, die Strähne',
+ 'subscription': 'das Abonnement',
+ 'technological': 'technologisch',
+ 'tolerance': 'die Toleranz',
+ 'unhappy': 'unglücklich',
+ 'apology': 'die Entschuldigung',
+ 'exceptional': 'außergewöhnlich',
+ 'hack': 'hacken',
+ 'hatred': 'der Hass',
+ 'interact': 'interagieren',
+ 'majesty': 'die Majestät',
+ 'retire': 'in Rente gehen',
+ 'rhythm': 'der Rhythmus',
+ 'savage': 'wild',
+ 'slim': 'schlank',
+ 'someday': 'eines Tages',
+ 'stack': 'der Stapel',
+ 'stance': 'die Haltung',
+ 'supportive': 'unterstützend',
+ 'surgical': 'chirurgisch',
+ 'tide': 'die Gezeiten (Pl.)',
+ 'warfare': 'die Kriegsführung',
+ 'authentic': 'authentisch',
+ 'bolt': 'der Bolzen',
+ 'collar': 'der Kragen',
+ 'donate': 'spenden',
+ 'finale': 'das Finale',
+ 'flavour': 'der Geschmack',
+ 'ignorance': 'die Unwissenheit',
+ 'immigrant': 'der Einwanderer',
+ 'intermediate': 'mittlere',
+ 'invention': 'die Erfindung',
+ 'magnificent': 'prächtig',
+ 'mathematical': 'mathematisch',
+ 'placement': 'die Platzierung; das Praktikum',
+ 'recreation': 'die Erholung',
+ 'shallow': 'seicht',
+ 'sketch': 'die Skizze',
+ 'spite': 'die Bosheit',
+ 'sponsor': 'der Sponsor',
+ 'sunset': 'der Sonnenuntergang',
+ 'thermal': 'thermisch',
+ 'chapel': 'die Kapelle',
+ 'cloth': 'das Tuch',
+ 'differ': 'sich unterscheiden',
+ 'elect': 'wählen',
+ 'essence': 'das Wesen',
+ 'harvest': 'die Ernte',
+ 'headline': 'die Schlagzeile',
+ 'junk': 'der Kram',
+ 'kidney': 'die Niere',
+ 'ladder': 'die Leiter',
+ 'lobby': 'die Lobby',
+ 'mineral': 'das Mineral',
+ 'modest': 'bescheiden',
+ 'orbit': 'die Umlaufbahn',
+ 'paragraph': 'der Absatz',
+ 'passive': 'passiv',
+ 'peninsula': 'die Halbinsel',
+ 'profitable': 'profitabel',
+ 'sentiment': 'die Stimmung',
+ 'trunk': 'der Stamm; der Kofferraum',
+ 'varied': 'abwechslungsreich',
+ 'verdict': 'das Urteil',
+ 'anchor': 'der Anker',
+ 'arch': 'der Bogen',
+ 'badge': 'das Abzeichen',
+ 'bizarre': 'bizarr',
+ 'bounce': 'abprallen',
+ 'consultation': 'die Beratung',
+ 'continental': 'kontinental',
+ 'convenience': 'die Bequemlichkeit',
+ 'dignity': 'die Würde',
+ 'enthusiasm': 'die Begeisterung',
+ 'ferry': 'die Fähre',
+ 'fusion': 'die Fusion',
+ 'helmet': 'der Helm',
+ 'inclusion': 'die Einbeziehung',
+ 'keeper': 'der Hüter; der Torwart',
+ 'liar': 'der Lügner',
+ 'machinery': 'die Maschinen (Pl.)',
+ 'mansion': 'die Villa',
+ 'possess': 'besitzen',
+ 'probability': 'die Wahrscheinlichkeit',
+ 'ritual': 'das Ritual',
+ 'slam': 'zuschlagen',
+ 'subscribe': 'abonnieren',
+ 'voltage': 'die Spannung',
+ 'width': 'die Breite',
+ 'workout': 'das Training',
+ 'bail': 'die Kaution',
+ 'delicate': 'zart',
+ 'disappointment': 'die Enttäuschung',
+ 'insert': 'einfügen',
+ 'loser': 'der Verlierer',
+ 'massage': 'die Massage',
+ 'musician': 'der Musiker',
+ 'orchestra': 'das Orchester',
+ 'precision': 'die Präzision',
+ 'preservation': 'die Erhaltung',
+ 'sail': 'segeln',
+ 'sheer': 'rein',
+ 'stark': 'krass',
+ 'sympathy': 'das Mitgefühl',
+ 'thumb': 'der Daumen',
+ 'timber': 'das Holz',
+ 'transparent': 'transparent',
+ 'upside': 'der Vorteil',
+ 'visitor': 'der Besucher',
+ 'vitamin': 'das Vitamin',
+ 'void': 'die Leere',
+ 'voluntary': 'freiwillig',
+ 'wheat': 'der Weizen',
+ 'wipe': 'wischen',
+ 'wrist': 'das Handgelenk',
+ 'acute': 'akut',
+ 'behave': 'sich benehmen',
+ 'chin': 'das Kinn',
+ 'civic': 'bürgerlich',
+ 'clerk': 'der Sachbearbeiter',
+ 'cottage': 'das Häuschen',
+ 'coup': 'der Putsch',
+ 'crude': 'roh',
+ 'disposal': 'die Entsorgung',
+ 'distinctive': 'unverwechselbar',
+ 'donation': 'die Spende',
+ 'drone': 'die Drohne',
+ 'indirect': 'indirekt',
+ 'institutional': 'institutionell',
+ 'interim': 'vorläufig',
+ 'lottery': 'die Lotterie',
+ 'outlet': 'die Steckdose; die Verkaufsstelle',
+ 'pledge': 'das Versprechen',
+ 'portal': 'das Portal',
+ 'publicity': 'die Öffentlichkeit',
+ 'puppy': 'der Welpe',
+ 'slice': 'die Scheibe',
+ 'survivor': 'der Überlebende',
+ 'vaccine': 'der Impfstoff',
+ 'affiliate': 'das Partnerunternehmen',
+ 'asylum': 'das Asyl',
+ 'barn': 'die Scheune',
+ 'bent': 'gebogen',
+ 'cathedral': 'der Dom',
+ 'clause': 'die Klausel',
+ 'cluster': 'der Cluster',
+ 'consistency': 'die Konsistenz',
+ 'dancer': 'der Tänzer',
+ 'deaf': 'taub',
+ 'denial': 'die Leugnung',
+ 'dock': 'das Dock',
+ 'entrepreneur': 'der Unternehmer',
+ 'expedition': 'die Expedition',
+ 'feat': 'die Leistung',
+ 'fossil': 'das Fossil',
+ 'freight': 'die Fracht',
+ 'honesty': 'die Ehrlichkeit',
+ 'inappropriate': 'unangemessen',
+ 'infant': 'der Säugling',
+ 'insult': 'die Beleidigung',
+ 'neat': 'ordentlich',
+ 'outbreak': 'der Ausbruch',
+ 'perfection': 'die Perfektion',
+ 'quarterly': 'vierteljährlich',
+ 'resistant': 'beständig',
+ 'skinny': 'dünn',
+ 'sneak': 'schleichen',
+ 'sore': 'wund',
+ 'spark': 'der Funke',
+ 'speculation': 'die Spekulation',
+ 'steep': 'steil',
+ 'straw': 'das Stroh; der Strohhalm',
+ 'successor': 'der Nachfolger',
+ 'uncertain': 'unsicher',
+ 'whatsoever': 'überhaupt',
+ 'absent': 'abwesend',
+ 'acoustic': 'akustisch',
+ 'atomic': 'atomar',
+ 'bean': 'die Bohne',
+ 'bump': 'die Beule',
+ 'cart': 'der Wagen',
+ 'cord': 'die Schnur',
+ 'defendant': 'der Angeklagte',
+ 'dense': 'dicht',
+ 'doctrine': 'die Doktrin',
+ 'freshman': 'der Erstsemester',
+ 'habitat': 'der Lebensraum',
+ 'hazard': 'die Gefahr',
+ 'hydrogen': 'der Wasserstoff',
+ 'intact': 'intakt',
+ 'intake': 'die Aufnahme',
+ 'lawn': 'der Rasen',
+ 'manufacture': 'herstellen',
+ 'mistaken': 'irrtümlich',
+ 'needle': 'die Nadel',
+ 'pity': 'das Mitleid',
+ 'pond': 'der Teich',
+ 'prey': 'die Beute',
+ 'prophet': 'der Prophet',
+ 'referendum': 'die Volksabstimmung',
+ 'refugee': 'der Flüchtling',
+ 'satisfy': 'befriedigen',
+ 'seasonal': 'saisonal',
+ 'sensible': 'vernünftig',
+ 'sequel': 'die Fortsetzung',
+ 'whale': 'der Wal',
+ 'ankle': 'der Knöchel',
+ 'armour': 'die Rüstung',
+ 'bachelor': 'der Junggeselle; der Bachelor',
+ 'berry': 'die Beere',
+ 'capitalism': 'der Kapitalismus',
+ 'caution': 'die Vorsicht',
+ 'characteristic': 'das Merkmal',
+ 'clash': 'der Zusammenstoß',
+ 'compatible': 'kompatibel',
+ 'curiosity': 'die Neugier',
+ 'delight': 'die Freude',
+ 'explosive': 'explosiv',
+ 'fortunate': 'glücklich',
+ 'frontier': 'die Grenze',
+ 'grasp': 'begreifen',
+ 'handy': 'praktisch',
+ 'harmful': 'schädlich',
+ 'mandate': 'das Mandat',
+ 'memorable': 'unvergesslich',
+ 'merger': 'die Fusion',
+ 'portable': 'tragbar',
+ 'slap': 'ohrfeigen',
+ 'succession': 'die Nachfolge',
+ 'sweep': 'fegen',
+ 'tactical': 'taktisch',
+ 'thereafter': 'danach',
+ 'tuition': 'die Studiengebühr',
+ 'wholesale': 'Großhandels-',
+ 'canvas': 'die Leinwand',
+ 'cheek': 'die Wange',
+ 'circular': 'kreisförmig',
+ 'circulation': 'der Kreislauf',
+ 'clearance': 'die Freigabe; die Räumung',
+ 'comedian': 'der Komiker',
+ 'conscience': 'das Gewissen',
+ 'countless': 'unzählig',
+ 'detention': 'die Haft',
+ 'employ': 'beschäftigen',
+ 'fraction': 'der Bruchteil',
+ 'lightly': 'leicht',
+ 'marble': 'der Marmor',
+ 'maritime': 'maritim',
+ 'melt': 'schmelzen',
+ 'nominee': 'der Nominierte',
+ 'oath': 'der Eid',
+ 'pillow': 'das Kissen',
+ 'pirate': 'der Pirat',
+ 'polar': 'polar',
+ 'puzzle': 'das Rätsel',
+ 'revelation': 'die Enthüllung',
+ 'scholar': 'der Gelehrte',
+ 'stir': 'umrühren',
+ 'superb': 'hervorragend',
+ 'toast': 'der Toast; der Trinkspruch',
+ 'tricky': 'knifflig',
+ 'triumph': 'der Triumph',
+ 'waist': 'die Taille',
+ 'wreck': 'das Wrack',
+ 'absurd': 'absurd',
+ 'amid': 'inmitten',
+ 'bargain': 'das Schnäppchen',
+ 'binary': 'binär',
+ 'blend': 'die Mischung',
+ 'brake': 'die Bremse',
+ 'collision': 'die Kollision',
+ 'compassion': 'das Mitgefühl',
+ 'critic': 'der Kritiker',
+ 'distress': 'die Not',
+ 'elegant': 'elegant',
+ 'elevator': 'der Aufzug',
+ 'execute': 'ausführen; hinrichten',
+ 'feast': 'das Festmahl',
+ 'hike': 'die Wanderung; die Erhöhung',
+ 'hollow': 'hohl',
+ 'homeland': 'die Heimat',
+ 'lame': 'lahm',
+ 'messenger': 'der Bote',
+ 'plea': 'das Plädoyer',
+ 'punish': 'bestrafen',
+ 'rhetoric': 'die Rhetorik',
+ 'salvation': 'die Erlösung',
+ 'secular': 'säkular',
+ 'sigh': 'der Seufzer',
+ 'sovereign': 'souverän',
+ 'spouse': 'der Ehepartner',
+ 'tense': 'angespannt',
+ 'wilderness': 'die Wildnis',
+ 'adviser': 'der Berater',
+ 'anatomy': 'die Anatomie',
+ 'chess': 'das Schach',
+ 'dull': 'langweilig; stumpf',
+ 'fare': 'der Fahrpreis',
+ 'float': 'schweben, treiben',
+ 'generator': 'der Generator',
+ 'grind': 'mahlen',
+ 'illusion': 'die Illusion',
+ 'incorrect': 'falsch',
+ 'junction': 'die Kreuzung',
+ 'leap': 'der Sprung',
+ 'oppose': 'ablehnen, sich widersetzen',
+ 'postal': 'Post-',
+ 'profound': 'tiefgreifend',
+ 'prosecutor': 'der Staatsanwalt',
+ 'rebellion': 'die Rebellion',
+ 'recipient': 'der Empfänger',
+ 'refund': 'die Rückerstattung',
+ 'sober': 'nüchtern',
+ 'spice': 'das Gewürz',
+ 'squeeze': 'drücken',
+ 'terrain': 'das Gelände',
+ 'unconscious': 'bewusstlos',
+ 'virtue': 'die Tugend',
+ 'acre': 'der Morgen (Fläche)',
+ 'bloom': 'blühen',
+ 'bundle': 'das Bündel',
+ 'butterfly': 'der Schmetterling',
+ 'conjunction': 'die Konjunktion; die Verbindung',
+ 'costly': 'kostspielig',
+ 'descent': 'der Abstieg; die Abstammung',
+ 'directory': 'das Verzeichnis',
+ 'discharge': 'die Entlassung; die Entladung',
+ 'dodge': 'ausweichen',
+ 'halt': 'der Halt',
+ 'implied': 'implizit',
+ 'impress': 'beeindrucken',
+ 'inability': 'die Unfähigkeit',
+ 'mentor': 'der Mentor',
+ 'merchandise': 'die Ware',
+ 'monk': 'der Mönch',
+ 'occupy': 'besetzen',
+ 'orthodox': 'orthodox',
+ 'overhead': 'oben',
+ 'painter': 'der Maler',
+ 'prone': 'anfällig',
+ 'reunion': 'das Wiedersehen',
+ 'revival': 'die Wiederbelebung',
+ 'sanctuary': 'die Zuflucht',
+ 'siege': 'die Belagerung',
+ 'sleeve': 'der Ärmel',
+ 'spine': 'die Wirbelsäule',
+ 'tenure': 'die Amtszeit',
+ 'texture': 'die Textur',
+ 'thankful': 'dankbar',
+ 'triangle': 'das Dreieck',
+ 'unclear': 'unklar',
+ 'affection': 'die Zuneigung',
+ 'altitude': 'die Höhe',
+ 'countryside': 'das Land',
+ 'debris': 'die Trümmer (Pl.)',
+ 'donor': 'der Spender',
+ 'educate': 'erziehen, bilden',
+ 'fierce': 'heftig',
+ 'gratitude': 'die Dankbarkeit',
+ 'inequality': 'die Ungleichheit',
+ 'leisure': 'die Freizeit',
+ 'sculpture': 'die Skulptur',
+ 'showcase': 'das Schaufenster',
+ 'subsidiary': 'die Tochtergesellschaft',
+ 'theology': 'die Theologie',
+ 'velocity': 'die Geschwindigkeit',
+ 'ambition': 'der Ehrgeiz',
+ 'ammunition': 'die Munition',
+ 'batch': 'die Charge',
+ 'charitable': 'wohltätig',
+ 'collector': 'der Sammler',
+ 'compliment': 'das Kompliment',
+ 'exotic': 'exotisch',
+ 'exterior': 'äußere',
+ 'feminine': 'weiblich',
+ 'fountain': 'der Brunnen',
+ 'fury': 'die Wut',
+ 'glance': 'der Blick',
+ 'glow': 'das Leuchten',
+ 'humanitarian': 'humanitär',
+ 'immunity': 'die Immunität',
+ 'liberation': 'die Befreiung',
+ 'lone': 'einsam',
+ 'necessity': 'die Notwendigkeit',
+ 'nickname': 'der Spitzname',
+ 'observer': 'der Beobachter',
+ 'offshore': 'Offshore-',
+ 'optional': 'optional',
+ 'pioneer': 'der Pionier',
+ 'prosperity': 'der Wohlstand',
+ 'refuge': 'die Zuflucht',
+ 'shortage': 'der Mangel',
+ 'sphere': 'die Kugel; der Bereich',
+ 'stare': 'starren',
+ 'territorial': 'territorial',
+ 'toss': 'werfen',
+ 'verbal': 'verbal',
+ 'wool': 'die Wolle',
+ 'accountable': 'verantwortlich',
+ 'advocacy': 'die Interessenvertretung',
+ 'aggression': 'die Aggression',
+ 'burial': 'die Beerdigung',
+ 'clarity': 'die Klarheit',
+ 'confidential': 'vertraulich',
+ 'discretion': 'das Ermessen; die Diskretion',
+ 'drought': 'die Dürre',
+ 'elevation': 'die Erhöhung',
+ 'esteem': 'die Wertschätzung',
+ 'gesture': 'die Geste',
+ 'historian': 'der Historiker',
+ 'hospitality': 'die Gastfreundschaft',
+ 'hostage': 'die Geisel',
+ 'literacy': 'die Lesefähigkeit',
+ 'particle': 'das Teilchen',
+ 'progression': 'der Fortschritt',
+ 'reservoir': 'der Stausee',
+ 'sensation': 'die Empfindung; die Sensation',
+ 'slope': 'der Hang',
+ 'spotlight': 'das Rampenlicht',
+ 'stern': 'streng',
+ 'stiff': 'steif',
+ 'terrific': 'großartig',
+ 'unite': 'vereinen',
+ 'unlock': 'entsperren',
+ 'vault': 'der Tresor; das Gewölbe',
+ 'biography': 'die Biografie',
+ 'broker': 'der Makler',
+ 'bury': 'begraben',
+ 'destructive': 'zerstörerisch',
+ 'dislike': 'nicht mögen',
+ 'farewell': 'der Abschied',
+ 'fist': 'die Faust',
+ 'fond of': 'angetan von',
+ 'foolish': 'töricht',
+ 'landmark': 'das Wahrzeichen',
+ 'liable': 'haftbar',
+ 'midst': 'die Mitte',
+ 'misery': 'das Elend',
+ 'nursery': 'die Kinderkrippe',
+ 'plague': 'die Pest',
+ 'solidarity': 'die Solidarität',
+ 'specialty': 'die Spezialität',
+ 'supernatural': 'übernatürlich',
+ 'tomb': 'das Grab',
+ 'trim': 'kürzen',
+ 'voyage': 'die Seereise',
+ 'attachment': 'der Anhang; die Bindung',
+ 'candle': 'die Kerze',
+ 'choir': 'der Chor',
+ 'confession': 'das Geständnis',
+ 'corridor': 'der Korridor',
+ 'geometry': 'die Geometrie',
+ 'gossip': 'der Klatsch',
+ 'immense': 'immens',
+ 'intersection': 'die Kreuzung',
+ 'juvenile': 'jugendlich',
+ 'mankind': 'die Menschheit',
+ 'militia': 'die Miliz',
+ 'pointless': 'sinnlos',
+ 'proximity': 'die Nähe',
+ 'qualification': 'die Qualifikation',
+ 'selective': 'selektiv',
+ 'shiny': 'glänzend',
+ 'thief': 'der Dieb',
+ 'tribunal': 'das Tribunal',
+ 'villain': 'der Schurke',
+ 'whistle': 'die Pfeife',
+ 'abusive': 'beleidigend, missbräuchlich',
+ 'alley': 'die Gasse',
+ 'appetite': 'der Appetit',
+ 'bully': 'der Tyrann',
+ 'dominate': 'dominieren',
+ 'dynasty': 'die Dynastie',
+ 'forehead': 'die Stirn',
+ 'informal': 'informell',
+ 'prospective': 'künftig',
+ 'swallow': 'schlucken',
+ 'unacceptable': 'inakzeptabel',
+ 'unaware': 'ahnungslos',
+ 'uncommon': 'ungewöhnlich',
+ 'underway': 'im Gange',
+ 'unstable': 'instabil',
+ 'vague': 'vage',
+ 'abundance': 'die Fülle',
+ 'antique': 'antik',
+ 'autonomy': 'die Autonomie',
+ 'breeze': 'die Brise',
+ 'commodity': 'die Ware',
+ 'correspondent': 'der Korrespondent',
+ 'curtain': 'der Vorhang',
+ 'envelope': 'der Umschlag',
+ 'fade': 'verblassen',
+ 'fatigue': 'die Erschöpfung',
+ 'fragile': 'zerbrechlich',
+ 'instinct': 'der Instinkt',
+ 'irony': 'die Ironie',
+ 'lethal': 'tödlich',
+ 'lively': 'lebhaft',
+ 'logistics': 'die Logistik',
+ 'morality': 'die Moral',
+ 'mortal': 'sterblich',
+ 'radius': 'der Radius',
+ 'referee': 'der Schiedsrichter',
+ 'sovereignty': 'die Souveränität',
+ 'taxpayer': 'der Steuerzahler',
+ 'allowance': 'die Zulage',
+ 'autonomous': 'autonom',
+ 'bait': 'der Köder',
+ 'compilation': 'die Zusammenstellung',
+ 'correspondence': 'die Korrespondenz',
+ 'desirable': 'wünschenswert',
+ 'favourable': 'günstig',
+ 'incomplete': 'unvollständig',
+ 'lengthy': 'langwierig',
+ 'levy': 'die Abgabe',
+ 'mock': 'verspotten',
+ 'niche': 'die Nische',
+ 'obscure': 'obskur; unbekannt',
+ 'recession': 'die Rezession',
+ 'successive': 'aufeinanderfolgend',
+ 'timely': 'rechtzeitig',
+ 'utter': 'äußern',
+ 'yell': 'schreien',
+ 'elbow': 'der Ellbogen',
+ 'envy': 'der Neid',
+ 'exile': 'das Exil',
+ 'heel': 'die Ferse',
+ 'monopoly': 'das Monopol',
+ 'outrage': 'die Empörung',
+ 'paperwork': 'der Papierkram',
+ 'renewal': 'die Erneuerung',
+ 'sincere': 'aufrichtig',
+ 'slaughter': 'das Gemetzel',
+ 'spill': 'verschütten',
+ 'supplier': 'der Lieferant',
+ 'tasty': 'lecker',
+ 'testify': 'aussagen',
+ 'decay': 'der Verfall',
+ 'dominance': 'die Vorherrschaft',
+ 'entertain': 'unterhalten',
+ 'imagery': 'die Bildsprache',
+ 'innocence': 'die Unschuld',
+ 'livestock': 'das Vieh',
+ 'notorious': 'berüchtigt',
+ 'outright': 'völlig, offen',
+ 'overly': 'übermäßig',
+ 'refusal': 'die Ablehnung',
+ 'statute': 'das Gesetz',
+ 'thoughtful': 'nachdenklich, aufmerksam',
+ 'vicious': 'bösartig',
+ 'wholly': 'gänzlich',
+ 'compression': 'die Kompression',
+ 'confess': 'gestehen',
+ 'decree': 'das Dekret',
+ 'despair': 'die Verzweiflung',
+ 'dividend': 'die Dividende',
+ 'drift': 'die Drift',
+ 'infinity': 'die Unendlichkeit',
+ 'pardon': 'die Begnadigung',
+ 'predecessor': 'der Vorgänger',
+ 'reckless': 'rücksichtslos',
+ 'redemption': 'die Erlösung; die Tilgung',
+ 'revision': 'die Überarbeitung',
+ 'scent': 'der Duft',
+ 'stimulus': 'der Reiz',
+ 'surge': 'der Anstieg',
+ 'vocabulary': 'der Wortschatz',
+ 'worthless': 'wertlos',
+ 'absorb': 'aufnehmen',
+ 'accord': 'das Abkommen',
+ 'assurance': 'die Zusicherung',
+ 'boycott': 'der Boykott',
+ 'competitor': 'der Konkurrent',
+ 'cuisine': 'die Küche',
+ 'doom': 'das Verhängnis',
+ 'flee': 'fliehen',
+ 'glimpse': 'der flüchtige Blick',
+ 'homemade': 'hausgemacht',
+ 'honourable': 'ehrenhaft',
+ 'infectious': 'ansteckend',
+ 'inferior': 'minderwertig',
+ 'injustice': 'die Ungerechtigkeit',
+ 'masterpiece': 'das Meisterwerk',
+ 'melody': 'die Melodie',
+ 'reliance': 'die Abhängigkeit',
+ 'retention': 'die Beibehaltung',
+ 'rotten': 'faul',
+ 'spoil': 'verderben; verwöhnen',
+ 'suburb': 'der Vorort',
+ 'sympathetic': 'verständnisvoll',
+ 'taxation': 'die Besteuerung',
+ 'temper': 'das Temperament',
+ 'coffin': 'der Sarg',
+ 'combo': 'die Kombination',
+ 'conductor': 'der Dirigent; der Leiter',
+ 'decorative': 'dekorativ',
+ 'definitive': 'endgültig',
+ 'epidemic': 'die Epidemie',
+ 'explode': 'explodieren',
+ 'extraction': 'die Gewinnung',
+ 'inheritance': 'das Erbe',
+ 'minimise': 'minimieren',
+ 'primitive': 'primitiv',
+ 'righteous': 'rechtschaffen',
+ 'seize': 'ergreifen',
+ 'skeleton': 'das Skelett',
+ 'sticky': 'klebrig',
+ 'unpleasant': 'unangenehm',
+ 'vacant': 'frei, leer',
+ 'vicinity': 'die Umgebung',
+ 'warmth': 'die Wärme',
+ 'bulletin': 'das Bulletin',
+ 'cautious': 'vorsichtig',
+ 'cooperate': 'zusammenarbeiten',
+ 'counsellor': 'der Berater',
+ 'faction': 'die Fraktion',
+ 'gamble': 'spielen, wetten',
+ 'harmless': 'harmlos',
+ 'hopeful': 'hoffnungsvoll',
+ 'hygiene': 'die Hygiene',
+ 'imaginary': 'imaginär',
+ 'oppression': 'die Unterdrückung',
+ 'probable': 'wahrscheinlich',
+ 'probation': 'die Probezeit; die Bewährung',
+ 'projection': 'die Projektion; die Prognose',
+ 'reproduction': 'die Fortpflanzung; die Reproduktion',
+ 'spokesman': 'der Sprecher',
+ 'surround': 'umgeben',
+ 'apparatus': 'der Apparat',
+ 'bliss': 'die Glückseligkeit',
+ 'bodily': 'körperlich',
+ 'buffer': 'der Puffer',
+ 'constructive': 'konstruktiv',
+ 'cosmic': 'kosmisch',
+ 'definite': 'bestimmt',
+ 'drawer': 'die Schublade',
+ 'ecosystem': 'das Ökosystem',
+ 'exempt': 'befreit',
+ 'faint': 'schwach',
+ 'foremost': 'vorderste',
+ 'greenhouse': 'das Gewächshaus',
+ 'metabolism': 'der Stoffwechsel',
+ 'newborn': 'neugeboren',
+ 'parody': 'die Parodie',
+ 'parole': 'die Bewährung',
+ 'queue': 'die Warteschlange',
+ 'sociology': 'die Soziologie',
+ 'traction': 'die Traktion',
+ 'unwanted': 'unerwünscht',
+ 'variant': 'die Variante',
+ 'wherein': 'worin',
+ 'algebra': 'die Algebra',
+ 'antenna': 'die Antenne',
+ 'audition': 'das Vorsprechen',
+ 'comparative': 'vergleichend',
+ 'complement': 'ergänzen',
+ 'conquer': 'erobern',
+ 'conquest': 'die Eroberung',
+ 'continuity': 'die Kontinuität',
+ 'crawl': 'kriechen',
+ 'credible': 'glaubwürdig',
+ 'digit': 'die Ziffer',
+ 'drainage': 'die Entwässerung',
+ 'felony': 'das Verbrechen',
+ 'fortress': 'die Festung',
+ 'herb': 'das Kraut',
+ 'herd': 'die Herde',
+ 'immortal': 'unsterblich',
+ 'incumbent': 'der Amtsinhaber',
+ 'insufficient': 'unzureichend',
+ 'literal': 'wörtlich',
+ 'lunar': 'Mond-',
+ 'maternal': 'mütterlich',
+ 'memoir': 'die Memoiren (Pl.)',
+ 'modification': 'die Änderung',
+ 'occurrence': 'das Vorkommen',
+ 'offspring': 'der Nachwuchs',
+ 'pathway': 'der Weg',
+ 'prohibition': 'das Verbot',
+ 'scar': 'die Narbe',
+ 'scripture': 'die Heilige Schrift',
+ 'simplicity': 'die Einfachheit',
+ 'textbook': 'das Lehrbuch',
+ 'trader': 'der Händler',
+ 'undercover': 'verdeckt',
+ 'vegetation': 'die Vegetation',
+ 'vein': 'die Ader',
+ 'accountant': 'der Buchhalter',
+ 'activate': 'aktivieren',
+ 'corpse': 'die Leiche',
+ 'designation': 'die Bezeichnung',
+ 'diploma': 'das Diplom',
+ 'dispatch': 'versenden',
+ 'extinction': 'das Aussterben',
+ 'geology': 'die Geologie',
+ 'mentality': 'die Mentalität',
+ 'phenomenal': 'phänomenal',
+ 'shipment': 'die Lieferung',
+ 'spatial': 'räumlich',
+ 'stubborn': 'stur',
+ 'transplant': 'die Transplantation',
+ 'volcano': 'der Vulkan',
+ 'attach': 'anhängen',
+ 'disciplinary': 'disziplinarisch',
+ 'endorsement': 'die Billigung',
+ 'forensic': 'forensisch',
+ 'forthcoming': 'bevorstehend',
+ 'infamous': 'berüchtigt',
+ 'lateral': 'seitlich',
+ 'lifelong': 'lebenslang',
+ 'naive': 'naiv',
+ 'prestige': 'das Prestige',
+ 'rigid': 'starr',
+ 'specification': 'die Spezifikation',
+ 'splendid': 'prächtig',
+ 'telescope': 'das Teleskop',
+ 'unreasonable': 'unvernünftig',
+ 'valuation': 'die Bewertung',
+ 'violate': 'verletzen',
+ 'vivid': 'lebhaft',
+ 'anticipation': 'die Vorfreude, die Erwartung',
+ 'authorisation': 'die Genehmigung',
+ 'auxiliary': 'Hilfs-',
+ 'baggage': 'das Gepäck',
+ 'bounty': 'die Belohnung',
+ 'contempt': 'die Verachtung',
+ 'endurance': 'die Ausdauer',
+ 'expenditure': 'die Ausgaben (Pl.)',
+ 'overweight': 'übergewichtig',
+ 'potent': 'stark',
+ 'rust': 'der Rost',
+ 'seizure': 'der Anfall; die Beschlagnahme',
+ 'singular': 'einzigartig',
+ 'stray': 'streunend',
+ 'systemic': 'systemisch',
+ 'tempo': 'das Tempo',
+ 'torch': 'die Fackel; die Taschenlampe',
+ 'understandable': 'verständlich',
+ 'upright': 'aufrecht',
+ 'vain': 'eitel; vergeblich',
+ 'vanity': 'die Eitelkeit',
+ 'whisper': 'flüstern',
+ 'worthwhile': 'lohnend',
+ 'bankrupt': 'bankrott',
+ 'blink': 'blinzeln',
+ 'childish': 'kindisch',
+ 'coil': 'die Spule',
+ 'covenant': 'der Bund',
+ 'devotion': 'die Hingabe',
+ 'disgrace': 'die Schande',
+ 'eventual': 'letztendlich',
+ 'excel': 'sich auszeichnen',
+ 'firstly': 'erstens',
+ 'greed': 'die Gier',
+ 'greet': 'begrüßen',
+ 'inflammation': 'die Entzündung',
+ 'magnet': 'der Magnet',
+ 'metaphor': 'die Metapher',
+ 'notify': 'benachrichtigen',
+ 'pact': 'der Pakt',
+ 'paramount': 'vorrangig',
+ 'patron': 'der Gönner; der Kunde',
+ 'regain': 'zurückgewinnen',
+ 'renew': 'erneuern',
+ 'revolt': 'der Aufstand',
+ 'rightly': 'zu Recht',
+ 'rumour': 'das Gerücht',
+ 'shrine': 'der Schrein',
+ 'shrink': 'schrumpfen',
+ 'solitary': 'einsam',
+ 'sorrow': 'der Kummer',
+ 'termination': 'die Kündigung',
+ 'thigh': 'der Oberschenkel',
+ 'unpaid': 'unbezahlt',
+ 'unsuccessful': 'erfolglos',
+ 'warranty': 'die Garantie',
+ 'aisle': 'der Gang',
+ 'atom': 'das Atom',
+ 'bilateral': 'bilateral',
+ 'bleed': 'bluten',
+ 'caption': 'die Bildunterschrift',
+ 'choke': 'ersticken',
+ 'condemn': 'verurteilen',
+ 'disguise': 'die Verkleidung',
+ 'downstairs': 'unten',
+ 'empathy': 'die Empathie',
+ 'impulse': 'der Impuls',
+ 'incapable': 'unfähig',
+ 'insecure': 'unsicher',
+ 'knot': 'der Knoten'}
 
 EN_DE_ACADEMIC = {'research': 'die Forschung',
  'data': 'die Daten (Pl.)',

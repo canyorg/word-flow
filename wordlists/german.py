@@ -3096,6 +3096,426 @@ p|geschweige denn|bırakın -i, şöyle dursun
 p|vorausgesetzt, dass|şu şartla ki
 p|vorbehaltlich|-e tabi olarak
 p|einfach ausgedrückt|basitçe söylemek gerekirse
+n|die Verlegung|taşıma; erteleme
+n|die Zuwanderung|göç (gelen)
+n|die Abschiebung|sınır dışı etme
+w|angewandt|uygulamalı
+v|antun|(birine) yapmak (kötülük)
+n|die Aufarbeitung|yüzleşme, işleme
+v|aufklären|aydınlatmak
+w|dergleichen|benzeri
+w|durchweg|baştan sona
+w|einmalig|tek seferlik; eşsiz
+w|elegant|zarif
+w|empfindlich|hassas
+w|entsetzt|dehşete düşmüş
+v|erlernen|öğrenmek (beceri)
+n|das Exil|sürgün
+n|die Globalisierung|küreselleşme
+n|die Komplexität|karmaşıklık
+v|loben|övmek
+n|das Massaker|katliam
+v|protestieren|protesto etmek
+v|registrieren|kaydetmek
+n|das Repertoire|repertuvar
+n|die Straftat|suç
+w|telefonisch|telefonla
+n|die Vergabe|tahsis, ihale
+n|die Wertschätzung|takdir
+w|anderthalb|bir buçuk
+n|die Aufteilung|paylaştırma
+v|ausweichen|kaçınmak, yol vermek
+n|die Beliebtheit|popülerlik
+w|betreffend|ilgili
+n|die Dienstleistung|hizmet
+v|falten|katlamak
+v|gestehen|itiraf etmek
+v|grinsen|sırıtmak
+n|die Hauptrolle|başrol
+n|die Inklusion|kapsayıcılık
+n|das Misstrauen|güvensizlik
+w|neidisch|kıskanç
+n|die Reduzierung|azaltma
+w|regelrecht|resmen
+v|schwitzen|terlemek
+n|die Tötung|öldürme
+n|das Umland|çevre bölge
+w|unfähig|yeteneksiz
+n|die Vorgeschichte|ön tarih, geçmiş
+w|vorüber|geçmiş, bitmiş
+v|wachen über|gözetmek
+v|zusammenleben|birlikte yaşamak
+v|abziehen|çekmek; düşmek
+v|eindringen|girmek, sızmak
+v|eintreffen|varmak
+v|erfreuen|sevindirmek
+n|der Fachbereich|bölüm, uzmanlık alanı
+n|der Freistaat|özgür devlet (eyalet)
+v|fügen|eklemek, birleştirmek
+n|das Gesundheitswesen|sağlık sistemi
+w|ironisch|ironik
+v|knacken|kırmak, çatlatmak
+n|der Notruf|acil çağrı
+w|passiv|pasif
+v|rügen|azarlamak
+n|das Tabu|tabu
+v|tippen|yazmak (klavye); tahmin etmek
+n|das Trauma|travma
+v|trocknen|kurutmak
+n|die Umwandlung|dönüştürme
+w|unsichtbar|görünmez
+v|verschenken|hediye etmek
+n|die Zuordnung|eşleştirme
+n|die Ansprache|konuşma, hitap
+w|auswärts|dışarıda; deplasmanda
+v|beeindrucken|etkilemek
+v|beibringen|öğretmek
+v|beschaffen|temin etmek
+w|eiskalt|buz gibi
+n|die Flexibilität|esneklik
+v|gratulieren|tebrik etmek
+w|hilflos|çaresiz
+v|hindern|engellemek
+n|der Hörer|dinleyici; ahize
+n|die Inschrift|kitabe
+n|die Kehle|gırtlak
+n|die Manipulation|manipülasyon
+v|meistern|üstesinden gelmek
+w|notfalls|gerekirse
+v|pfeifen|ıslık çalmak
+v|platzen|patlamak; suya düşmek
+w|populär|popüler
+w|religiös|dindar
+n|die Sichtweise|bakış açısı
+w|strafbar|cezai, suç teşkil eden
+v|täuschen|aldatmak
+w|verborgen|gizli
+v|verurteilen|mahkûm etmek
+v|wegnehmen|elinden almak
+n|die Begrenzung|sınırlama
+n|der Betrachter|izleyici
+n|der Dienstleister|hizmet sağlayıcı
+n|die Dominanz|baskınlık
+n|die Geltung|geçerlilik; değer
+n|die Gleichstellung|eşitlik
+n|das Heimatland|anavatan
+w|medizinisch|tıbbi
+v|meiden|kaçınmak
+n|das Mobbing|zorbalık
+n|der Nahverkehr|toplu taşıma
+n|das Schnäppchen|kelepir
+n|die Sprecherin|sözcü (kadın)
+n|der Stammtisch|müdavim masası
+w|synonym|eş anlamlı
+n|die Vorfreude|beklenti sevinci
+n|die Wartezeit|bekleme süresi
+n|der Zeitplan|zaman çizelgesi
+w|albern|saçma
+n|die Anhörung|duruşma, dinleme
+n|die Anschaffung|satın alma
+w|aufwärts|yukarı
+v|auskommen mit|geçinmek
+n|die Demenz|bunama
+v|einlegen|koymak; itiraz etmek
+w|einwandfrei|kusursuz
+w|gesellschaftlich|toplumsal
+n|die Gewissheit|kesinlik
+v|jammern|sızlanmak
+n|die Klausur|sınav (üniversite)
+n|die Klärung|açıklık getirme
+w|meinetwegen|bana kalırsa, olur
+n|die Mitgliederversammlung|genel kurul
+v|prägen|şekillendirmek
+n|die Psyche|ruh
+w|rege|canlı, hareketli
+w|rückgängig machen|geri almak
+v|starren|bakakalmak
+v|stürmen|hücum etmek
+n|die Vermeidung|kaçınma
+w|wundervoll|harika
+w|würdig|layık
+w|zugute kommen|yararına olmak
+n|der Algorithmus|algoritma
+w|auf Anhieb|ilk denemede
+n|die Ausbreitung|yayılma
+n|die Ausweitung|genişletme
+n|die Beschaffung|tedarik
+v|erforschen|araştırmak
+v|erkunden|keşfetmek
+v|ersparen|esirgemek, kurtarmak
+n|die Fertigung|imalat
+v|meckern|söylenmek
+n|das Mikrofon|mikrofon
+v|ablenken|dikkatini dağıtmak
+n|die Abrechnung|hesaplaşma; fatura
+w|anständig|edepli, düzgün
+v|ausdenken (sich)|uydurmak, düşünmek
+v|einfügen|eklemek, yapıştırmak
+v|erwachen|uyanmak
+v|kassieren|tahsil etmek
+w|niedlich|şirin
+v|schildern|anlatmak, betimlemek
+v|verkünden|ilan etmek
+v|verzeihen|bağışlamak
+w|wünschenswert|arzu edilir
+n|das Arzneimittel|ilaç
+v|aufbringen|bulmak, toplamak (para, cesaret)
+v|aufhängen|asmak
+v|aufsteigen|yükselmek
+w|auf Augenhöhe|eşit düzeyde
+w|bedenklich|kaygı verici
+w|brutto|brüt
+w|dreckig|pis
+n|die Durchsetzung|uygulatma
+v|erstatten|iade etmek; yapmak (ihbar)
+w|feierlich|törensel
+w|folgend|aşağıdaki
+w|glänzend|parlak
+w|hinreichend|yeterli
+w|juristisch|hukuki
+n|die Kennzeichnung|işaretleme
+n|die Koordination|koordinasyon
+n|der Mehrwert|katma değer
+w|nutzbar|kullanılabilir
+v|schonen|korumak, idareli kullanmak
+n|die Senkung|indirim, düşürme
+n|der Sprachgebrauch|dil kullanımı
+w|unauffällig|göze çarpmayan
+n|der Verbleib|nerede olduğu
+v|widerstehen|karşı koymak
+n|das Zusammenspiel|etkileşim
+v|angeln|balık tutmak
+w|ausgiebig|bol bol
+w|ausnahmslos|istisnasız
+v|aussterben|nesli tükenmek
+v|befragen|sorgulamak, sormak
+n|das Desaster|felaket
+w|eilig|acele
+v|sich einlassen auf|bulaşmak, girişmek
+n|die Konfrontation|yüzleşme
+w|konservativ|muhafazakâr
+w|künstlerisch|sanatsal
+n|die Marktwirtschaft|piyasa ekonomisi
+w|oberflächlich|yüzeysel
+w|sehenswert|görülmeye değer
+w|seinerseits|o da kendi tarafından
+w|sichtlich|gözle görülür biçimde
+w|stumm|dilsiz, sessiz
+w|tragisch|trajik
+v|verfassen|kaleme almak
+v|verschicken|göndermek
+v|würdigen|takdir etmek
+w|alljährlich|her yıl
+n|die Altersvorsorge|emeklilik birikimi
+n|der Appell|çağrı
+v|auffallen|göze çarpmak
+v|bekennen|itiraf etmek
+w|eindrucksvoll|etkileyici
+w|erbärmlich|acınası
+v|flirten|flört etmek
+n|die Gegenleistung|karşılık
+w|jüngst|son zamanlarda
+v|klatschen|alkışlamak; dedikodu yapmak
+w|köstlich|leziz
+w|kühn|cesur
+w|leidenschaftlich|tutkulu
+n|das Neuland|keşfedilmemiş alan
+v|programmieren|programlamak
+v|repräsentieren|temsil etmek
+w|seriös|ciddi, güvenilir
+v|spiegeln|yansıtmak
+w|strategisch|stratejik
+n|der Umschlag|zarf
+w|unbemerkt|fark edilmeden
+w|unwichtig|önemsiz
+v|vorlegen|sunmak
+v|zaubern|sihir yapmak
+v|zugreifen|erişmek
+n|die Absicherung|güvence
+n|das Anschreiben|ön yazı (başvuru)
+n|die Beschaffenheit|nitelik
+v|beschützen|korumak
+n|die Besteuerung|vergilendirme
+w|biologisch|biyolojik
+n|das Erscheinungsbild|dış görünüş
+v|erziehen|yetiştirmek
+w|flüssig|akıcı; sıvı
+n|die Gewinnung|elde etme
+n|der Grundriss|kat planı
+w|ineinander|iç içe
+n|das Jugendamt|gençlik dairesi
+n|der Lebensstil|yaşam tarzı
+n|das Milieu|çevre
+v|nützen|yaramak
+n|die Optimierung|iyileştirme
+w|prompt|derhal
+n|das Ritual|ritüel
+w|simpel|basit
+n|die Simulation|simülasyon
+v|sprengen|patlatmak
+w|ungleich|eşit olmayan
+w|ungültig|geçersiz
+n|das Urheberrecht|telif hakkı
+w|verschwiegen|ketum
+n|der Völkermord|soykırım
+v|zerschlagen|parçalamak
+v|aufrufen|çağırmak
+v|aufsuchen|ziyaret etmek, başvurmak
+v|ausbilden|yetiştirmek
+n|die Drohne|drone
+n|die Faszination|büyülenme
+w|gehoben|üst düzey
+w|kulturell|kültürel
+v|verbleiben|kalmak
+n|die Vermarktung|pazarlama
+n|die Verschiebung|kaydırma, erteleme
+w|wochenlang|haftalarca
+w|zart|narin
+v|ablaufen|sona ermek; cereyan etmek
+v|anrichten|yol açmak (zarar)
+n|die Arbeitswelt|iş dünyası
+v|befriedigen|tatmin etmek
+v|begrenzen|sınırlamak
+v|bereuen|pişman olmak
+v|betteln|dilenmek
+v|durchsuchen|aramak (ev, çanta)
+n|die Echtzeit|gerçek zaman
+w|edel|asil
+w|endlos|sonsuz
+w|geborgen|güvende
+n|der Gesetzentwurf|kanun tasarısı
+v|gestatten|izin vermek
+n|die Gruppierung|gruplaşma
+v|jubeln|sevinç çığlığı atmak
+n|die Konstellation|durum, düzen
+w|manuell|el ile
+n|die Nachhilfe|özel ders
+n|die Schreibweise|yazılış
+v|verwalten|yönetmek
+v|zusammenhängen|bağlantılı olmak
+w|anschaulich|açık, somut
+v|ansetzen|planlamak; başlamak
+n|der Betriebsrat|işçi temsilciliği
+w|erfreulich|sevindirici
+v|erwecken|uyandırmak
+v|erwischen|yakalamak
+n|die Gesamtheit|bütün
+n|die Identifikation|özdeşleşme
+v|knien|diz çökmek
+n|die Lebensdauer|ömür
+n|das Meisterwerk|başyapıt
+v|rauschen|hışırdamak
+n|die Rechtslage|hukuki durum
+v|reiben|ovmak
+w|spitz|sivri
+v|unterzeichnen|imzalamak
+v|verhungern|açlıktan ölmek
+v|sich verständigen|anlaşmak
+w|zurückhaltend|ölçülü, çekingen
+v|anbringen|takmak
+v|anzünden|yakmak
+w|auffallend|dikkat çekici
+w|aufregend|heyecan verici
+w|bestenfalls|en iyi ihtimalle
+w|eineinhalb|bir buçuk
+n|der Endeffekt|nihai sonuç
+w|erschrocken|korkmuş
+v|ertrinken|boğulmak
+v|explodieren|patlamak
+n|die Festlegung|belirleme
+n|das Geschäftsmodell|iş modeli
+n|der Innenhof|iç avlu
+v|loslassen|bırakmak
+n|der Marktanteil|pazar payı
+w|obendrein|üstelik
+v|rutschen|kaymak
+v|schlichten|arabuluculuk yapmak
+v|schmunzeln|gülümsemek
+w|steif|sert, kaskatı
+w|süchtig|bağımlı
+w|tagelang|günlerce
+w|tapfer|cesur
+v|tasten|el yordamıyla aramak
+v|untergehen|batmak
+v|vernehmen|duymak; sorgulamak
+w|vorbildlich|örnek
+w|amüsant|eğlenceli
+v|bereichern|zenginleştirmek
+n|die Erlösung|kurtuluş
+v|erneuern|yenilemek
+n|die Finanzkrise|finans krizi
+n|der Flohmarkt|bit pazarı
+n|die Gedenkstätte|anıt yeri
+w|glaubwürdig|inandırıcı
+n|das Grundeinkommen|temel gelir
+v|knüpfen|bağlamak
+n|die Kontinuität|süreklilik
+n|der Kratzer|çizik
+n|die Mündung|ağız (nehir)
+n|der Neustart|yeniden başlama
+n|die Normalität|normallik
+n|der Projektleiter|proje yöneticisi
+n|die Rekonstruktion|yeniden yapılanma
+w|schlechthin|tam anlamıyla
+n|die Schnittstelle|arayüz
+n|die Seltenheit|nadirlik
+w|umher|etrafta
+v|vermehren|çoğaltmak
+v|versammeln|toplamak
+v|vorwerfen|suçlamak
+v|zusagen|söz vermek; hoşa gitmek
+v|abbiegen|sapmak
+n|das Ambiente|atmosfer
+n|die Bauweise|yapım tarzı
+v|bedrohen|tehdit etmek
+n|das Berufsleben|iş hayatı
+n|die Erwärmung|ısınma
+w|gnadenlos|acımasız
+w|haltbar|dayanıklı; savunulabilir
+n|die Handhabung|kullanım
+n|die Hautfarbe|ten rengi
+v|kombinieren|birleştirmek
+w|mitsamt|ile birlikte
+w|nachdenklich|düşünceli
+v|nachsehen|kontrol etmek
+n|der Neuanfang|yeni başlangıç
+n|die Palette|yelpaze; palet
+n|der Populismus|popülizm
+v|schweben|süzülmek
+n|die Selbstverständlichkeit|olağanlık
+n|die Vergessenheit|unutulmuşluk
+w|verehrt|saygıdeğer
+v|verweilen|kalmak, oyalanmak
+n|das Wahlergebnis|seçim sonucu
+n|die Abwicklung|işlem, tasfiye
+n|die Aggression|saldırganlık
+n|die Aktualisierung|güncelleme
+n|das Augenmerk|dikkat
+v|beugen|bükmek
+w|chronisch|kronik
+w|demzufolge|buna göre
+v|einschlagen|vurmak; tutmak (yol)
+n|die Empathie|empati
+n|der Entzug|yoksun bırakma; tedavi
+n|die Inbetriebnahme|devreye alma
+n|die Intention|niyet
+n|die Reflexion|düşünme, yansıma
+w|ungeeignet|uygun olmayan
+n|die Untersuchungshaft|tutukluluk
+w|unzulässig|kabul edilemez
+v|verklagen|dava etmek
+w|verspätet|gecikmiş
+n|das Versteck|saklanma yeri
+w|verwöhnt|şımarık
+n|die Zentralbank|merkez bankası
+n|die Attraktivität|çekicilik
+v|befolgen|uymak
+n|der Blickwinkel|bakış açısı
+v|blühen|çiçek açmak
+v|bohren|delmek
+w|drittens|üçüncüsü
+w|düster|kasvetli
+n|der Erreger|patojen
 """,
 "C1.2": """
 n|die Gepflogenheit|alışkanlık, teamül
@@ -3261,6 +3681,383 @@ p|mit der Begründung, dass|-gerekçesiyle
 p|unabhängig von|-e bakılmaksızın
 p|bis zu einem gewissen Grad|bir dereceye kadar
 p|in Bezug auf|-e ilişkin
+v|erschweren|zorlaştırmak
+w|erstmalig|ilk kez
+n|die Erwägung|değerlendirme
+w|flott|hızlı, şık
+n|der Gesprächspartner|muhatap
+w|höchstwahrscheinlich|büyük olasılıkla
+v|kreuzen|kesişmek
+w|obgleich|-e rağmen
+v|schleppen|sürüklemek
+v|schmelzen|erimek
+w|senkrecht|dikey
+w|symbolisch|sembolik
+v|umarmen|sarılmak
+w|unberührt|el değmemiş
+w|ungestört|rahatsız edilmeden
+v|unterbinden|engellemek
+n|die Verbundenheit|bağlılık
+n|die Vertreibung|sürgün
+w|vielerlei|türlü
+n|der Vormarsch|ilerleme
+w|vorzugsweise|tercihen
+n|der Wegfall|ortadan kalkma
+w|ängstlich|korkak
+n|die Überwindung|üstesinden gelme
+n|das Belieben|keyif, istek
+w|beständig|kalıcı, istikrarlı
+v|biegen|bükmek
+v|brüllen|kükremek, bağırmak
+w|eifrig|hevesli
+n|die Eignung|uygunluk
+n|die Entsorgung|atık bertarafı
+v|erzwingen|zorlamak
+n|die Fragestellung|soru, problem
+n|das Gremium|kurul
+v|kompensieren|telafi etmek
+v|kratzen|kaşımak
+w|kurzerhand|hemen, tereddütsüz
+n|die Meditation|meditasyon
+n|die Privatisierung|özelleştirme
+w|prächtig|görkemli
+v|quälen|eziyet etmek
+n|die Raumfahrt|uzay yolculuğu
+v|reflektieren|yansıtmak; düşünmek
+w|schier|neredeyse
+v|sich sehnen nach|özlemek
+n|die Selbstständigkeit|bağımsızlık
+v|servieren|servis yapmak
+w|starr|katı
+v|strömen|akmak
+v|teilhaben an|pay sahibi olmak
+w|undenkbar|düşünülemez
+w|ununterbrochen|aralıksız
+n|die Verwertung|değerlendirme
+v|verwöhnen|şımartmak
+n|die Wahrung|koruma
+v|abbauen|sökmek; azaltmak
+n|die Belästigung|taciz
+n|die Berufserfahrung|iş deneyimi
+v|bezweifeln|şüphe etmek
+w|charakteristisch|karakteristik
+n|die Differenzierung|ayrıştırma
+v|erleiden|maruz kalmak
+v|erschrecken|korkmak, korkutmak
+v|ersticken|boğulmak
+n|die Exekutive|yürütme
+n|die Fahndung|arama (polis)
+w|gerichtlich|adli
+w|gewandt|becerikli
+w|grundlos|sebepsiz
+n|die Haftstrafe|hapis cezası
+n|das Indiz|ipucu, belirti
+w|lässig|rahat
+n|die Metapher|mecaz
+w|physisch|fiziksel
+w|treffend|yerinde
+w|unverschämt|küstah
+w|verbindlich|bağlayıcı
+v|verhelfen zu|yardım etmek
+w|wertlos|değersiz
+n|die Ökologie|ekoloji
+w|abwärts|aşağı
+n|die Arroganz|kibir
+w|aufrichtig|içten
+v|bedürfen|gerektirmek (+ Gen.)
+v|forschen|araştırma yapmak
+n|das Grundwasser|yeraltı suyu
+w|hoffnungslos|umutsuz
+n|die Ignoranz|cehalet
+v|kürzen|kısaltmak
+n|die Lebenserwartung|yaşam beklentisi
+w|mathematisch|matematiksel
+w|niedergeschlagen|üzgün
+n|die Pandemie|pandemi
+n|das Pendant|karşılık
+w|rechtswidrig|hukuka aykırı
+v|rächen|intikam almak
+w|separat|ayrı
+v|streicheln|okşamak
+n|die Verhinderung|önleme
+v|vorweisen|göstermek, ibraz etmek
+n|das Wahrzeichen|simge
+n|die Arbeitsweise|çalışma tarzı
+n|die Disposition|eğilim; düzenleme
+w|dreifach|üç kat
+v|einstecken|cebe koymak; katlanmak
+v|erraten|tahmin etmek
+n|die Gelassenheit|soğukkanlılık
+w|genetisch|genetik
+n|die Gänsehaut|tüyleri diken diken olma
+n|der Hauptsitz|merkez
+v|heizen|ısıtmak
+n|das Immunsystem|bağışıklık sistemi
+n|das Kindergeld|çocuk parası
+n|das Markenzeichen|alamet-i farika
+v|münden in|-e dökülmek
+w|produktiv|verimli
+n|die Prägung|damga, iz
+v|prügeln|dövmek
+w|sprachlich|dilsel
+n|die Symbolik|sembolizm
+n|das Timing|zamanlama
+n|der Vortag|bir önceki gün
+n|die Wirtschaftlichkeit|ekonomiklik
+n|das Wirtschaftswachstum|ekonomik büyüme
+w|zerrissen|yırtık
+n|das Arbeitsrecht|iş hukuku
+n|die Ausgrenzung|dışlama
+n|der Auszubildende|çırak
+n|die Fachkraft|kalifiye eleman
+v|glänzen|parlamak
+n|der Hauptdarsteller|başrol oyuncusu
+v|hüten|korumak, bakmak
+n|das Inkrafttreten|yürürlüğe girme
+n|das Lebenswerk|ömür boyu eser
+n|die Legitimation|meşruiyet
+v|operieren|ameliyat etmek
+w|paradox|çelişkili
+n|der Prozessor|işlemci
+n|das Selbstverständnis|öz algı
+n|die Sozialhilfe|sosyal yardım
+w|sparsam|tutumlu
+n|das Spektakel|gösteri
+n|der Steuerberater|vergi danışmanı
+v|trauern|yas tutmak
+v|trösten|teselli etmek
+w|unbegründet|asılsız
+w|ungeduldig|sabırsız
+w|unruhig|huzursuz
+n|der Versager|başarısız kişi
+v|verschlafen|uyuyakalmak
+v|verschweigen|saklamak (söylememek)
+n|die Zeitgeschichte|çağdaş tarih
+v|zuschlagen|vurmak; kapatmak
+v|abdecken|örtmek, kapsamak
+v|aufgehen|açılmak; doğmak
+v|ausstellen|sergilemek; düzenlemek (belge)
+n|die Automatisierung|otomasyon
+v|beitreten|katılmak (üye)
+v|enttäuschen|hayal kırıklığına uğratmak
+n|das Ermessen|takdir
+w|fürchterlich|korkunç
+w|gleichgültig|kayıtsız
+n|die Individualität|bireysellik
+n|die Konsistenz|tutarlılık
+w|lästig|can sıkıcı
+w|machtlos|güçsüz
+w|rational|akılcı
+v|rauben|soymak
+n|der Rechtsstreit|hukuki anlaşmazlık
+n|der Regelfall|olağan durum
+n|die Rehabilitation|rehabilitasyon
+v|verbrauchen|tüketmek
+n|die Vergebung|bağışlama
+v|verkürzen|kısaltmak
+w|vertraulich|gizli
+w|vorweg|önceden
+n|das Weltall|evren
+n|die Wendung|dönüş; deyim
+n|die Zubereitung|hazırlama
+v|abspielen|oynatmak
+n|die Arbeitskraft|işgücü
+w|bezeichnend|tipik
+v|durchbrechen|yarmak
+v|einpacken|paketlemek
+v|entsetzen|dehşete düşürmek
+v|erhitzen|ısıtmak
+n|das Gestein|kayaç
+w|gleichsam|sanki
+n|das Gros|büyük çoğunluk
+n|die Industrialisierung|sanayileşme
+n|die Masche|ilmek; hile
+n|die Obergrenze|üst sınır
+w|sensibel|duyarlı
+w|stellvertretend|vekâleten
+n|der Straftäter|suçlu
+n|das Telefonat|telefon görüşmesi
+n|die Umarmung|kucaklaşma
+v|verführen|baştan çıkarmak
+w|vergebens|boşuna
+v|verkehren|işlemek (sefer); takılmak
+v|versenden|göndermek
+w|vollends|tamamen
+v|winken|el sallamak
+v|zerbrechen|kırılmak
+w|zivil|sivil
+n|der Zuschuss|sübvansiyon
+v|abonnieren|abone olmak
+w|amtlich|resmî
+n|die Anlaufstelle|başvuru noktası
+w|aufgeschlossen|açık fikirli
+v|ausweisen|sınır dışı etmek; kanıtlamak
+v|belästigen|rahatsız etmek
+n|die Doktorarbeit|doktora tezi
+n|die Einflussnahme|etki etme
+n|die Einkommensteuer|gelir vergisi
+n|die Enteignung|kamulaştırma
+v|ermorden|öldürmek
+n|das Grundrecht|temel hak
+v|impfen|aşılamak
+n|die Instandhaltung|bakım
+n|das Kriegsverbrechen|savaş suçu
+w|ratlos|çaresiz
+w|räumlich|mekânsal
+n|die Speicherung|depolama
+n|die Todesursache|ölüm nedeni
+n|die Verschärfung|sertleştirme
+n|die Waffenruhe|ateşkes
+n|die Abspaltung|ayrılma
+n|der Atemzug|nefes
+v|aufwachsen|büyümek
+v|auslaufen|sona ermek; sızmak
+n|die Authentizität|özgünlük
+w|chemisch|kimyasal
+n|die Dienststelle|daire, birim
+v|dringen|nüfuz etmek
+n|die Ehrung|onurlandırma
+w|fies|alçak
+w|heiter|neşeli
+v|lüften|havalandırmak
+v|mitwirken|katkıda bulunmak
+w|rechtskräftig|kesinleşmiş
+w|respektlos|saygısız
+v|schlüpfen|süzülmek
+v|schwören|yemin etmek
+n|der Sensor|sensör
+w|sprachlos|dili tutulmuş
+n|die Steuerhinterziehung|vergi kaçakçılığı
+w|unbegrenzt|sınırsız
+w|unhöflich|kaba
+w|unwohl|rahatsız
+n|die Verringerung|azaltma
+n|der Verzehr|tüketim
+n|die Vorgabe|direktif
+w|vorsätzlich|kasıtlı
+n|die Wortwahl|kelime seçimi
+n|die Überarbeitung|revizyon
+n|die Abkehr|vazgeçme
+n|die Ablösung|değişim, nöbet devri
+w|abstrakt|soyut
+n|der Aktivist|aktivist
+n|das Arbeitslosengeld|işsizlik parası
+v|aufwärmen|ısıtmak
+v|ausbreiten|yaymak
+v|beben|titremek
+v|einordnen|sınıflandırmak
+w|fassungslos|şaşkın
+w|gereizt|sinirli
+n|das Gespür|sezgi
+w|giftig|zehirli
+n|das Idol|idol
+v|predigen|vaaz vermek
+n|die Rangliste|sıralama
+w|regulär|olağan
+w|restlos|tamamen
+w|riskant|riskli
+v|ruinieren|mahvetmek
+n|der Schadensersatz|tazminat
+w|schlagartig|birden
+v|schmücken|süslemek
+n|die Strafverfolgung|kovuşturma
+v|streiken|grev yapmak
+w|ungewohnt|alışılmadık
+v|vergraben|gömmek
+n|das Vermächtnis|miras
+n|die Verschlechterung|kötüleşme
+n|das Verwaltungsgericht|idare mahkemesi
+n|der Wirkstoff|etken madde
+v|zurückzahlen|geri ödemek
+n|die Zustellung|teslimat
+w|zweierlei|iki türlü
+v|zünden|ateşlemek
+w|allerhand|türlü türlü
+n|der Antragsteller|başvuran
+v|aufladen|şarj etmek
+v|betrügen|aldatmak, dolandırmak
+w|blutig|kanlı
+w|egoistisch|bencil
+v|einsperren|kilitlemek, hapsetmek
+v|erregen|uyandırmak
+w|fatal|ölümcül, vahim
+n|der Feinstaub|ince toz
+w|harmonisch|uyumlu
+w|kindisch|çocukça
+w|kriminell|suç teşkil eden
+w|mechanisch|mekanik
+w|reibungslos|sorunsuz
+v|schwanken|dalgalanmak
+v|stabilisieren|istikrara kavuşturmak
+n|die Suchmaschine|arama motoru
+w|unbrauchbar|kullanılamaz
+w|unerheblich|önemsiz
+w|unvollständig|eksik
+w|unvorstellbar|hayal edilemez
+v|wandeln|dönüştürmek
+v|abwenden|önlemek
+v|anfertigen|hazırlamak
+n|der Anklang|beğeni
+n|die Ausarbeitung|hazırlama
+w|belebt|canlı
+n|die Bequemlichkeit|rahatlık
+n|die Einfachheit|sadelik
+v|entführen|kaçırmak
+n|die Euphorie|coşku
+w|hohl|boş, oyuk
+v|lauschen|kulak vermek
+w|mild|ılıman
+w|mündlich|sözlü
+v|schimpfen|azarlamak, söylenmek
+n|die Selbsthilfe|kendi kendine yardım
+n|die Strafanzeige|suç duyurusu
+w|ungefährlich|tehlikesiz
+v|wiedergeben|aktarmak
+w|zärtlich|şefkatli
+n|die Adoption|evlat edinme
+n|die Entfaltung|gelişim
+n|der Fachkräftemangel|nitelikli eleman açığı
+w|fahrlässig|ihmalkâr
+w|formell|resmî
+w|fälschlicherweise|yanlışlıkla
+w|geneigt|eğilimli
+w|horizontal|yatay
+n|die Kapitulation|teslim olma
+w|magisch|büyülü
+v|mitreden|söz sahibi olmak
+n|der Nachruf|anma yazısı
+n|die Nostalgie|nostalji
+w|psychologisch|psikolojik
+v|reizen|kışkırtmak; cezbetmek
+n|der Tatbestand|olgu, suç unsuru
+v|unterwerfen|boyun eğdirmek
+v|verrichten|yerine getirmek
+v|vertiefen|derinleştirmek
+n|der Vorreiter|öncü
+v|sich weigern|reddetmek
+n|der Zulieferer|tedarikçi
+v|anführen|liderlik etmek; öne sürmek
+v|begehren|arzulamak
+w|behutsam|dikkatli
+v|belohnen|ödüllendirmek
+n|die Emanzipation|özgürleşme
+n|der Freiraum|serbest alan
+v|handhaben|kullanmak
+w|heimisch|yerli
+w|originell|özgün
+n|die Selbstverteidigung|nefsi müdafaa
+w|ungeklärt|çözülmemiş
+w|vielversprechend|umut verici
+n|die Zuwendung|ilgi; bağış
+v|belehren|ders vermek
+w|beängstigend|korkutucu
+n|die Denkweise|düşünce tarzı
+n|die Evakuierung|tahliye
+n|der Gegenwind|ters rüzgâr
+v|kapieren|anlamak (günlük)
+n|der Menschenverstand|sağduyu
+v|praktizieren|uygulamak
+n|das Schmerzmittel|ağrı kesici
 """,
 "C2.1": """
 n|die Befangenheit|taraflılık; çekingenlik
@@ -8137,7 +8934,804 @@ DE_EN = {'der Mann': 'man',
  'die Intensität': 'intensity',
  'nutzlos': 'useless',
  'optimistisch': 'optimistic',
- 'romantisch': 'romantic'}
+ 'romantisch': 'romantic',
+ 'die Verlegung': 'relocation; postponement',
+ 'die Zuwanderung': 'immigration',
+ 'die Abschiebung': 'deportation',
+ 'angewandt': 'applied',
+ 'antun': 'to do (sth) to sb',
+ 'die Aufarbeitung': 'coming to terms with, review',
+ 'aufklären': 'to clear up, to inform',
+ 'dergleichen': 'the like',
+ 'durchweg': 'throughout',
+ 'einmalig': 'one-off; unique',
+ 'elegant': 'elegant',
+ 'empfindlich': 'sensitive',
+ 'entsetzt': 'horrified',
+ 'erlernen': 'to learn (a skill)',
+ 'das Exil': 'exile',
+ 'die Globalisierung': 'globalisation',
+ 'die Komplexität': 'complexity',
+ 'loben': 'to praise',
+ 'das Massaker': 'massacre',
+ 'protestieren': 'to protest',
+ 'registrieren': 'to register',
+ 'das Repertoire': 'repertoire',
+ 'die Straftat': 'criminal offence',
+ 'telefonisch': 'by phone',
+ 'die Vergabe': 'award, allocation',
+ 'die Wertschätzung': 'appreciation',
+ 'anderthalb': 'one and a half',
+ 'die Aufteilung': 'division, split',
+ 'ausweichen': 'to evade, to dodge',
+ 'die Beliebtheit': 'popularity',
+ 'betreffend': 'concerning',
+ 'die Dienstleistung': 'service',
+ 'falten': 'to fold',
+ 'gestehen': 'to confess',
+ 'grinsen': 'to grin',
+ 'die Hauptrolle': 'leading role',
+ 'die Inklusion': 'inclusion',
+ 'das Misstrauen': 'distrust',
+ 'neidisch': 'envious',
+ 'die Reduzierung': 'reduction',
+ 'regelrecht': 'downright',
+ 'schwitzen': 'to sweat',
+ 'die Tötung': 'killing',
+ 'das Umland': 'surrounding area',
+ 'unfähig': 'incapable',
+ 'die Vorgeschichte': 'history, background',
+ 'vorüber': 'over',
+ 'wachen über': 'to watch over',
+ 'zusammenleben': 'to live together',
+ 'abziehen': 'to withdraw; to deduct',
+ 'eindringen': 'to penetrate, to intrude',
+ 'eintreffen': 'to arrive',
+ 'erfreuen': 'to delight',
+ 'der Fachbereich': 'department, field',
+ 'der Freistaat': 'free state',
+ 'fügen': 'to join, to add',
+ 'das Gesundheitswesen': 'health system',
+ 'ironisch': 'ironic',
+ 'knacken': 'to crack',
+ 'der Notruf': 'emergency call',
+ 'passiv': 'passive',
+ 'rügen': 'to reprimand',
+ 'das Tabu': 'taboo',
+ 'tippen': 'to type; to guess',
+ 'das Trauma': 'trauma',
+ 'trocknen': 'to dry',
+ 'die Umwandlung': 'conversion',
+ 'unsichtbar': 'invisible',
+ 'verschenken': 'to give away',
+ 'die Zuordnung': 'assignment',
+ 'die Ansprache': 'address, speech',
+ 'auswärts': 'away',
+ 'beeindrucken': 'to impress',
+ 'beibringen': 'to teach',
+ 'beschaffen': 'to procure',
+ 'eiskalt': 'ice-cold',
+ 'die Flexibilität': 'flexibility',
+ 'gratulieren': 'to congratulate',
+ 'hilflos': 'helpless',
+ 'hindern': 'to prevent',
+ 'der Hörer': 'listener; receiver',
+ 'die Inschrift': 'inscription',
+ 'die Kehle': 'throat',
+ 'die Manipulation': 'manipulation',
+ 'meistern': 'to master',
+ 'notfalls': 'if necessary',
+ 'pfeifen': 'to whistle',
+ 'platzen': 'to burst; to fall through',
+ 'populär': 'popular',
+ 'religiös': 'religious',
+ 'die Sichtweise': 'perspective',
+ 'strafbar': 'punishable',
+ 'täuschen': 'to deceive',
+ 'verborgen': 'hidden',
+ 'verurteilen': 'to convict, to condemn',
+ 'wegnehmen': 'to take away',
+ 'die Begrenzung': 'limitation',
+ 'der Betrachter': 'viewer',
+ 'der Dienstleister': 'service provider',
+ 'die Dominanz': 'dominance',
+ 'die Geltung': 'validity; recognition',
+ 'die Gleichstellung': 'equality',
+ 'das Heimatland': 'homeland',
+ 'medizinisch': 'medical',
+ 'meiden': 'to avoid',
+ 'das Mobbing': 'bullying',
+ 'der Nahverkehr': 'local transport',
+ 'das Schnäppchen': 'bargain',
+ 'die Sprecherin': 'spokeswoman',
+ 'der Stammtisch': "regulars' table",
+ 'synonym': 'synonymous',
+ 'die Vorfreude': 'anticipation',
+ 'die Wartezeit': 'waiting time',
+ 'der Zeitplan': 'schedule',
+ 'albern': 'silly',
+ 'die Anhörung': 'hearing',
+ 'die Anschaffung': 'purchase',
+ 'aufwärts': 'upwards',
+ 'auskommen mit': 'to get by with, to get on with',
+ 'die Demenz': 'dementia',
+ 'einlegen': 'to insert; to lodge (appeal)',
+ 'einwandfrei': 'flawless',
+ 'gesellschaftlich': 'social',
+ 'die Gewissheit': 'certainty',
+ 'jammern': 'to moan',
+ 'die Klausur': 'exam',
+ 'die Klärung': 'clarification',
+ 'meinetwegen': "as far as I'm concerned",
+ 'die Mitgliederversammlung': 'general meeting',
+ 'prägen': 'to shape',
+ 'die Psyche': 'psyche',
+ 'rege': 'lively',
+ 'rückgängig machen': 'to undo, to reverse',
+ 'starren': 'to stare',
+ 'stürmen': 'to storm',
+ 'die Vermeidung': 'avoidance',
+ 'wundervoll': 'wonderful',
+ 'würdig': 'worthy',
+ 'zugute kommen': 'to benefit',
+ 'der Algorithmus': 'algorithm',
+ 'auf Anhieb': 'straight away',
+ 'die Ausbreitung': 'spread',
+ 'die Ausweitung': 'expansion',
+ 'die Beschaffung': 'procurement',
+ 'erforschen': 'to research',
+ 'erkunden': 'to explore',
+ 'ersparen': 'to spare',
+ 'die Fertigung': 'manufacturing',
+ 'meckern': 'to grumble',
+ 'das Mikrofon': 'microphone',
+ 'ablenken': 'to distract',
+ 'die Abrechnung': 'settlement; bill',
+ 'anständig': 'decent',
+ 'ausdenken (sich)': 'to think up',
+ 'einfügen': 'to insert, to paste',
+ 'erwachen': 'to awaken',
+ 'kassieren': 'to collect (money)',
+ 'niedlich': 'cute',
+ 'schildern': 'to describe',
+ 'verkünden': 'to proclaim',
+ 'verzeihen': 'to forgive',
+ 'wünschenswert': 'desirable',
+ 'das Arzneimittel': 'medicine',
+ 'aufbringen': 'to raise, to muster',
+ 'aufhängen': 'to hang up',
+ 'aufsteigen': 'to rise, to ascend',
+ 'auf Augenhöhe': 'on equal terms',
+ 'bedenklich': 'worrying',
+ 'brutto': 'gross',
+ 'dreckig': 'dirty',
+ 'die Durchsetzung': 'enforcement',
+ 'erstatten': 'to refund; to file (report)',
+ 'feierlich': 'solemn',
+ 'folgend': 'following',
+ 'glänzend': 'brilliant',
+ 'hinreichend': 'sufficient',
+ 'juristisch': 'legal',
+ 'die Kennzeichnung': 'labelling',
+ 'die Koordination': 'coordination',
+ 'der Mehrwert': 'added value',
+ 'nutzbar': 'usable',
+ 'schonen': 'to spare, to protect',
+ 'die Senkung': 'reduction',
+ 'der Sprachgebrauch': 'usage',
+ 'unauffällig': 'inconspicuous',
+ 'der Verbleib': 'whereabouts',
+ 'widerstehen': 'to resist',
+ 'das Zusammenspiel': 'interplay',
+ 'angeln': 'to fish',
+ 'ausgiebig': 'extensive(ly)',
+ 'ausnahmslos': 'without exception',
+ 'aussterben': 'to die out',
+ 'befragen': 'to question',
+ 'das Desaster': 'disaster',
+ 'eilig': 'hurried',
+ 'sich einlassen auf': 'to get involved in',
+ 'die Konfrontation': 'confrontation',
+ 'konservativ': 'conservative',
+ 'künstlerisch': 'artistic',
+ 'die Marktwirtschaft': 'market economy',
+ 'oberflächlich': 'superficial',
+ 'sehenswert': 'worth seeing',
+ 'seinerseits': 'for his part',
+ 'sichtlich': 'visibly',
+ 'stumm': 'mute',
+ 'tragisch': 'tragic',
+ 'verfassen': 'to write, to compose',
+ 'verschicken': 'to send out',
+ 'würdigen': 'to acknowledge, to honour',
+ 'alljährlich': 'annual(ly)',
+ 'die Altersvorsorge': 'retirement provision',
+ 'der Appell': 'appeal',
+ 'auffallen': 'to stand out',
+ 'bekennen': 'to confess',
+ 'eindrucksvoll': 'impressive',
+ 'erbärmlich': 'pathetic',
+ 'flirten': 'to flirt',
+ 'die Gegenleistung': 'consideration, return',
+ 'jüngst': 'recently',
+ 'klatschen': 'to clap; to gossip',
+ 'köstlich': 'delicious',
+ 'kühn': 'bold',
+ 'leidenschaftlich': 'passionate',
+ 'das Neuland': 'new territory',
+ 'programmieren': 'to program',
+ 'repräsentieren': 'to represent',
+ 'seriös': 'reputable',
+ 'spiegeln': 'to reflect',
+ 'strategisch': 'strategic',
+ 'der Umschlag': 'envelope',
+ 'unbemerkt': 'unnoticed',
+ 'unwichtig': 'unimportant',
+ 'vorlegen': 'to present, to submit',
+ 'zaubern': 'to conjure',
+ 'zugreifen': 'to access',
+ 'die Absicherung': 'safeguard',
+ 'das Anschreiben': 'cover letter',
+ 'die Beschaffenheit': 'nature, condition',
+ 'beschützen': 'to protect',
+ 'die Besteuerung': 'taxation',
+ 'biologisch': 'biological',
+ 'das Erscheinungsbild': 'appearance',
+ 'erziehen': 'to raise, to educate',
+ 'flüssig': 'fluent; liquid',
+ 'die Gewinnung': 'extraction',
+ 'der Grundriss': 'floor plan',
+ 'ineinander': 'into each other',
+ 'das Jugendamt': 'youth welfare office',
+ 'der Lebensstil': 'lifestyle',
+ 'das Milieu': 'milieu',
+ 'nützen': 'to be of use',
+ 'die Optimierung': 'optimisation',
+ 'prompt': 'prompt',
+ 'das Ritual': 'ritual',
+ 'simpel': 'simple',
+ 'die Simulation': 'simulation',
+ 'sprengen': 'to blow up',
+ 'ungleich': 'unequal',
+ 'ungültig': 'invalid',
+ 'das Urheberrecht': 'copyright',
+ 'verschwiegen': 'discreet',
+ 'der Völkermord': 'genocide',
+ 'zerschlagen': 'to smash',
+ 'aufrufen': 'to call up, to urge',
+ 'aufsuchen': 'to visit, to consult',
+ 'ausbilden': 'to train',
+ 'die Drohne': 'drone',
+ 'die Faszination': 'fascination',
+ 'gehoben': 'upscale, elevated',
+ 'kulturell': 'cultural',
+ 'verbleiben': 'to remain',
+ 'die Vermarktung': 'marketing',
+ 'die Verschiebung': 'shift, postponement',
+ 'wochenlang': 'for weeks',
+ 'zart': 'tender',
+ 'ablaufen': 'to expire; to proceed',
+ 'anrichten': 'to cause (damage)',
+ 'die Arbeitswelt': 'world of work',
+ 'befriedigen': 'to satisfy',
+ 'begrenzen': 'to limit',
+ 'bereuen': 'to regret',
+ 'betteln': 'to beg',
+ 'durchsuchen': 'to search',
+ 'die Echtzeit': 'real time',
+ 'edel': 'noble',
+ 'endlos': 'endless',
+ 'geborgen': 'secure, sheltered',
+ 'der Gesetzentwurf': 'bill',
+ 'gestatten': 'to permit',
+ 'die Gruppierung': 'grouping',
+ 'jubeln': 'to cheer',
+ 'die Konstellation': 'constellation',
+ 'manuell': 'manual',
+ 'die Nachhilfe': 'tutoring',
+ 'die Schreibweise': 'spelling',
+ 'verwalten': 'to administer',
+ 'zusammenhängen': 'to be connected',
+ 'anschaulich': 'vivid, clear',
+ 'ansetzen': 'to schedule; to start',
+ 'der Betriebsrat': 'works council',
+ 'erfreulich': 'pleasing',
+ 'erwecken': 'to awaken, to arouse',
+ 'erwischen': 'to catch',
+ 'die Gesamtheit': 'totality',
+ 'die Identifikation': 'identification',
+ 'knien': 'to kneel',
+ 'die Lebensdauer': 'service life',
+ 'das Meisterwerk': 'masterpiece',
+ 'rauschen': 'to rustle, to roar',
+ 'die Rechtslage': 'legal situation',
+ 'reiben': 'to rub',
+ 'spitz': 'pointed',
+ 'unterzeichnen': 'to sign',
+ 'verhungern': 'to starve',
+ 'sich verständigen': 'to communicate, to agree',
+ 'zurückhaltend': 'reserved',
+ 'anbringen': 'to attach',
+ 'anzünden': 'to light',
+ 'auffallend': 'striking',
+ 'aufregend': 'exciting',
+ 'bestenfalls': 'at best',
+ 'eineinhalb': 'one and a half',
+ 'der Endeffekt': 'end result',
+ 'erschrocken': 'startled',
+ 'ertrinken': 'to drown',
+ 'explodieren': 'to explode',
+ 'die Festlegung': 'determination',
+ 'das Geschäftsmodell': 'business model',
+ 'der Innenhof': 'courtyard',
+ 'loslassen': 'to let go',
+ 'der Marktanteil': 'market share',
+ 'obendrein': 'on top of that',
+ 'rutschen': 'to slip',
+ 'schlichten': 'to settle (dispute)',
+ 'schmunzeln': 'to smirk',
+ 'steif': 'stiff',
+ 'süchtig': 'addicted',
+ 'tagelang': 'for days',
+ 'tapfer': 'brave',
+ 'tasten': 'to grope',
+ 'untergehen': 'to sink, to perish',
+ 'vernehmen': 'to hear; to question',
+ 'vorbildlich': 'exemplary',
+ 'amüsant': 'amusing',
+ 'bereichern': 'to enrich',
+ 'die Erlösung': 'redemption',
+ 'erneuern': 'to renew',
+ 'die Finanzkrise': 'financial crisis',
+ 'der Flohmarkt': 'flea market',
+ 'die Gedenkstätte': 'memorial site',
+ 'glaubwürdig': 'credible',
+ 'das Grundeinkommen': 'basic income',
+ 'knüpfen': 'to tie, to establish',
+ 'die Kontinuität': 'continuity',
+ 'der Kratzer': 'scratch',
+ 'die Mündung': 'mouth (of river)',
+ 'der Neustart': 'restart',
+ 'die Normalität': 'normality',
+ 'der Projektleiter': 'project manager',
+ 'die Rekonstruktion': 'reconstruction',
+ 'schlechthin': 'par excellence',
+ 'die Schnittstelle': 'interface',
+ 'die Seltenheit': 'rarity',
+ 'umher': 'around',
+ 'vermehren': 'to multiply',
+ 'versammeln': 'to assemble',
+ 'vorwerfen': 'to reproach',
+ 'zusagen': 'to promise; to appeal',
+ 'abbiegen': 'to turn off',
+ 'das Ambiente': 'ambience',
+ 'die Bauweise': 'construction method',
+ 'bedrohen': 'to threaten',
+ 'das Berufsleben': 'working life',
+ 'die Erwärmung': 'warming',
+ 'gnadenlos': 'merciless',
+ 'haltbar': 'durable; tenable',
+ 'die Handhabung': 'handling',
+ 'die Hautfarbe': 'skin colour',
+ 'kombinieren': 'to combine',
+ 'mitsamt': 'together with',
+ 'nachdenklich': 'thoughtful',
+ 'nachsehen': 'to check',
+ 'der Neuanfang': 'fresh start',
+ 'die Palette': 'range; pallet',
+ 'der Populismus': 'populism',
+ 'schweben': 'to float',
+ 'die Selbstverständlichkeit': 'matter of course',
+ 'die Vergessenheit': 'oblivion',
+ 'verehrt': 'revered',
+ 'verweilen': 'to linger',
+ 'das Wahlergebnis': 'election result',
+ 'die Abwicklung': 'processing; liquidation',
+ 'die Aggression': 'aggression',
+ 'die Aktualisierung': 'update',
+ 'das Augenmerk': 'attention',
+ 'beugen': 'to bend',
+ 'chronisch': 'chronic',
+ 'demzufolge': 'consequently',
+ 'einschlagen': 'to strike; to take (path)',
+ 'die Empathie': 'empathy',
+ 'der Entzug': 'withdrawal',
+ 'die Inbetriebnahme': 'commissioning',
+ 'die Intention': 'intention',
+ 'die Reflexion': 'reflection',
+ 'ungeeignet': 'unsuitable',
+ 'die Untersuchungshaft': 'custody on remand',
+ 'unzulässig': 'inadmissible',
+ 'verklagen': 'to sue',
+ 'verspätet': 'delayed',
+ 'das Versteck': 'hiding place',
+ 'verwöhnt': 'spoilt',
+ 'die Zentralbank': 'central bank',
+ 'die Attraktivität': 'attractiveness',
+ 'befolgen': 'to follow, to obey',
+ 'der Blickwinkel': 'angle, perspective',
+ 'blühen': 'to bloom',
+ 'bohren': 'to drill',
+ 'drittens': 'thirdly',
+ 'düster': 'gloomy',
+ 'der Erreger': 'pathogen',
+ 'erschweren': 'to make difficult',
+ 'erstmalig': 'for the first time',
+ 'die Erwägung': 'consideration',
+ 'flott': 'quick, smart',
+ 'der Gesprächspartner': 'interlocutor',
+ 'höchstwahrscheinlich': 'most probably',
+ 'kreuzen': 'to cross',
+ 'obgleich': 'although',
+ 'schleppen': 'to drag',
+ 'schmelzen': 'to melt',
+ 'senkrecht': 'vertical',
+ 'symbolisch': 'symbolic',
+ 'umarmen': 'to hug',
+ 'unberührt': 'untouched',
+ 'ungestört': 'undisturbed',
+ 'unterbinden': 'to stop, to prevent',
+ 'die Verbundenheit': 'attachment',
+ 'die Vertreibung': 'expulsion',
+ 'vielerlei': 'various',
+ 'der Vormarsch': 'advance',
+ 'vorzugsweise': 'preferably',
+ 'der Wegfall': 'elimination',
+ 'ängstlich': 'anxious',
+ 'die Überwindung': 'overcoming',
+ 'das Belieben': 'discretion',
+ 'beständig': 'constant, stable',
+ 'biegen': 'to bend',
+ 'brüllen': 'to roar',
+ 'eifrig': 'eager',
+ 'die Eignung': 'suitability',
+ 'die Entsorgung': 'disposal',
+ 'erzwingen': 'to force',
+ 'die Fragestellung': 'question, issue',
+ 'das Gremium': 'committee',
+ 'kompensieren': 'to compensate',
+ 'kratzen': 'to scratch',
+ 'kurzerhand': 'without further ado',
+ 'die Meditation': 'meditation',
+ 'die Privatisierung': 'privatisation',
+ 'prächtig': 'magnificent',
+ 'quälen': 'to torment',
+ 'die Raumfahrt': 'space travel',
+ 'reflektieren': 'to reflect',
+ 'schier': 'sheer, almost',
+ 'sich sehnen nach': 'to long for',
+ 'die Selbstständigkeit': 'independence',
+ 'servieren': 'to serve',
+ 'starr': 'rigid',
+ 'strömen': 'to stream',
+ 'teilhaben an': 'to participate in',
+ 'undenkbar': 'unthinkable',
+ 'ununterbrochen': 'uninterrupted',
+ 'die Verwertung': 'utilisation',
+ 'verwöhnen': 'to pamper',
+ 'die Wahrung': 'safeguarding',
+ 'abbauen': 'to dismantle; to reduce',
+ 'die Belästigung': 'harassment',
+ 'die Berufserfahrung': 'work experience',
+ 'bezweifeln': 'to doubt',
+ 'charakteristisch': 'characteristic',
+ 'die Differenzierung': 'differentiation',
+ 'erleiden': 'to suffer',
+ 'erschrecken': 'to frighten',
+ 'ersticken': 'to suffocate',
+ 'die Exekutive': 'executive',
+ 'die Fahndung': 'manhunt',
+ 'gerichtlich': 'judicial',
+ 'gewandt': 'skilful',
+ 'grundlos': 'groundless',
+ 'die Haftstrafe': 'prison sentence',
+ 'das Indiz': 'indication',
+ 'lässig': 'casual',
+ 'die Metapher': 'metaphor',
+ 'physisch': 'physical',
+ 'treffend': 'apt',
+ 'unverschämt': 'impudent',
+ 'verbindlich': 'binding',
+ 'verhelfen zu': 'to help to get',
+ 'wertlos': 'worthless',
+ 'die Ökologie': 'ecology',
+ 'abwärts': 'downwards',
+ 'die Arroganz': 'arrogance',
+ 'aufrichtig': 'sincere',
+ 'bedürfen': 'to require',
+ 'forschen': 'to research',
+ 'das Grundwasser': 'groundwater',
+ 'hoffnungslos': 'hopeless',
+ 'die Ignoranz': 'ignorance',
+ 'kürzen': 'to shorten, to cut',
+ 'die Lebenserwartung': 'life expectancy',
+ 'mathematisch': 'mathematical',
+ 'niedergeschlagen': 'dejected',
+ 'die Pandemie': 'pandemic',
+ 'das Pendant': 'counterpart',
+ 'rechtswidrig': 'unlawful',
+ 'rächen': 'to avenge',
+ 'separat': 'separate',
+ 'streicheln': 'to stroke',
+ 'die Verhinderung': 'prevention',
+ 'vorweisen': 'to show, to produce',
+ 'das Wahrzeichen': 'landmark',
+ 'die Arbeitsweise': 'way of working',
+ 'die Disposition': 'disposition',
+ 'dreifach': 'triple',
+ 'einstecken': 'to pocket; to take',
+ 'erraten': 'to guess',
+ 'die Gelassenheit': 'composure',
+ 'genetisch': 'genetic',
+ 'die Gänsehaut': 'goosebumps',
+ 'der Hauptsitz': 'headquarters',
+ 'heizen': 'to heat',
+ 'das Immunsystem': 'immune system',
+ 'das Kindergeld': 'child benefit',
+ 'das Markenzeichen': 'trademark',
+ 'münden in': 'to flow into',
+ 'produktiv': 'productive',
+ 'die Prägung': 'imprint, influence',
+ 'prügeln': 'to beat up',
+ 'sprachlich': 'linguistic',
+ 'die Symbolik': 'symbolism',
+ 'das Timing': 'timing',
+ 'der Vortag': 'day before',
+ 'die Wirtschaftlichkeit': 'cost-effectiveness',
+ 'das Wirtschaftswachstum': 'economic growth',
+ 'zerrissen': 'torn',
+ 'das Arbeitsrecht': 'labour law',
+ 'die Ausgrenzung': 'exclusion',
+ 'der Auszubildende': 'trainee',
+ 'die Fachkraft': 'skilled worker',
+ 'glänzen': 'to shine',
+ 'der Hauptdarsteller': 'leading actor',
+ 'hüten': 'to guard, to tend',
+ 'das Inkrafttreten': 'entry into force',
+ 'das Lebenswerk': "life's work",
+ 'die Legitimation': 'legitimation',
+ 'operieren': 'to operate',
+ 'paradox': 'paradoxical',
+ 'der Prozessor': 'processor',
+ 'das Selbstverständnis': 'self-image',
+ 'die Sozialhilfe': 'social welfare',
+ 'sparsam': 'thrifty',
+ 'das Spektakel': 'spectacle',
+ 'der Steuerberater': 'tax adviser',
+ 'trauern': 'to mourn',
+ 'trösten': 'to comfort',
+ 'unbegründet': 'unfounded',
+ 'ungeduldig': 'impatient',
+ 'unruhig': 'restless',
+ 'der Versager': 'failure (person)',
+ 'verschlafen': 'to oversleep',
+ 'verschweigen': 'to keep quiet about',
+ 'die Zeitgeschichte': 'contemporary history',
+ 'zuschlagen': 'to strike; to slam',
+ 'abdecken': 'to cover',
+ 'aufgehen': 'to open; to rise',
+ 'ausstellen': 'to exhibit; to issue',
+ 'die Automatisierung': 'automation',
+ 'beitreten': 'to join',
+ 'enttäuschen': 'to disappoint',
+ 'das Ermessen': 'discretion',
+ 'fürchterlich': 'dreadful',
+ 'gleichgültig': 'indifferent',
+ 'die Individualität': 'individuality',
+ 'die Konsistenz': 'consistency',
+ 'lästig': 'annoying',
+ 'machtlos': 'powerless',
+ 'rational': 'rational',
+ 'rauben': 'to rob',
+ 'der Rechtsstreit': 'lawsuit',
+ 'der Regelfall': 'normal case',
+ 'die Rehabilitation': 'rehabilitation',
+ 'verbrauchen': 'to consume',
+ 'die Vergebung': 'forgiveness',
+ 'verkürzen': 'to shorten',
+ 'vertraulich': 'confidential',
+ 'vorweg': 'beforehand',
+ 'das Weltall': 'universe',
+ 'die Wendung': 'turn; expression',
+ 'die Zubereitung': 'preparation',
+ 'abspielen': 'to play',
+ 'die Arbeitskraft': 'workforce',
+ 'bezeichnend': 'characteristic',
+ 'durchbrechen': 'to break through',
+ 'einpacken': 'to pack',
+ 'entsetzen': 'to horrify',
+ 'erhitzen': 'to heat',
+ 'das Gestein': 'rock',
+ 'gleichsam': 'as it were',
+ 'das Gros': 'bulk',
+ 'die Industrialisierung': 'industrialisation',
+ 'die Masche': 'stitch; trick',
+ 'die Obergrenze': 'upper limit',
+ 'sensibel': 'sensitive',
+ 'stellvertretend': 'on behalf, deputy',
+ 'der Straftäter': 'offender',
+ 'das Telefonat': 'phone call',
+ 'die Umarmung': 'hug',
+ 'verführen': 'to seduce',
+ 'vergebens': 'in vain',
+ 'verkehren': 'to run; to associate',
+ 'versenden': 'to send',
+ 'vollends': 'completely',
+ 'winken': 'to wave',
+ 'zerbrechen': 'to break',
+ 'zivil': 'civil',
+ 'der Zuschuss': 'subsidy',
+ 'abonnieren': 'to subscribe',
+ 'amtlich': 'official',
+ 'die Anlaufstelle': 'point of contact',
+ 'aufgeschlossen': 'open-minded',
+ 'ausweisen': 'to expel; to identify',
+ 'belästigen': 'to harass',
+ 'die Doktorarbeit': 'doctoral thesis',
+ 'die Einflussnahme': 'exertion of influence',
+ 'die Einkommensteuer': 'income tax',
+ 'die Enteignung': 'expropriation',
+ 'ermorden': 'to murder',
+ 'das Grundrecht': 'fundamental right',
+ 'impfen': 'to vaccinate',
+ 'die Instandhaltung': 'maintenance',
+ 'das Kriegsverbrechen': 'war crime',
+ 'ratlos': 'at a loss',
+ 'räumlich': 'spatial',
+ 'die Speicherung': 'storage',
+ 'die Todesursache': 'cause of death',
+ 'die Verschärfung': 'tightening',
+ 'die Waffenruhe': 'ceasefire',
+ 'die Abspaltung': 'split, secession',
+ 'der Atemzug': 'breath',
+ 'aufwachsen': 'to grow up',
+ 'auslaufen': 'to expire; to leak',
+ 'die Authentizität': 'authenticity',
+ 'chemisch': 'chemical',
+ 'die Dienststelle': 'office, agency',
+ 'dringen': 'to penetrate',
+ 'die Ehrung': 'honour',
+ 'fies': 'nasty',
+ 'heiter': 'cheerful',
+ 'lüften': 'to air',
+ 'mitwirken': 'to take part',
+ 'rechtskräftig': 'legally binding',
+ 'respektlos': 'disrespectful',
+ 'schlüpfen': 'to slip',
+ 'schwören': 'to swear',
+ 'der Sensor': 'sensor',
+ 'sprachlos': 'speechless',
+ 'die Steuerhinterziehung': 'tax evasion',
+ 'unbegrenzt': 'unlimited',
+ 'unhöflich': 'impolite',
+ 'unwohl': 'unwell',
+ 'die Verringerung': 'reduction',
+ 'der Verzehr': 'consumption',
+ 'die Vorgabe': 'specification',
+ 'vorsätzlich': 'intentional',
+ 'die Wortwahl': 'choice of words',
+ 'die Überarbeitung': 'revision',
+ 'die Abkehr': 'turning away',
+ 'die Ablösung': 'replacement',
+ 'abstrakt': 'abstract',
+ 'der Aktivist': 'activist',
+ 'das Arbeitslosengeld': 'unemployment benefit',
+ 'aufwärmen': 'to warm up',
+ 'ausbreiten': 'to spread',
+ 'beben': 'to tremble',
+ 'einordnen': 'to classify',
+ 'fassungslos': 'stunned',
+ 'gereizt': 'irritated',
+ 'das Gespür': 'instinct',
+ 'giftig': 'poisonous',
+ 'das Idol': 'idol',
+ 'predigen': 'to preach',
+ 'die Rangliste': 'ranking',
+ 'regulär': 'regular',
+ 'restlos': 'completely',
+ 'riskant': 'risky',
+ 'ruinieren': 'to ruin',
+ 'der Schadensersatz': 'damages',
+ 'schlagartig': 'abruptly',
+ 'schmücken': 'to decorate',
+ 'die Strafverfolgung': 'prosecution',
+ 'streiken': 'to strike',
+ 'ungewohnt': 'unfamiliar',
+ 'vergraben': 'to bury',
+ 'das Vermächtnis': 'legacy',
+ 'die Verschlechterung': 'deterioration',
+ 'das Verwaltungsgericht': 'administrative court',
+ 'der Wirkstoff': 'active ingredient',
+ 'zurückzahlen': 'to pay back',
+ 'die Zustellung': 'delivery',
+ 'zweierlei': 'two different',
+ 'zünden': 'to ignite',
+ 'allerhand': 'all kinds of',
+ 'der Antragsteller': 'applicant',
+ 'aufladen': 'to charge',
+ 'betrügen': 'to cheat',
+ 'blutig': 'bloody',
+ 'egoistisch': 'selfish',
+ 'einsperren': 'to lock up',
+ 'erregen': 'to arouse',
+ 'fatal': 'fatal',
+ 'der Feinstaub': 'particulate matter',
+ 'harmonisch': 'harmonious',
+ 'kindisch': 'childish',
+ 'kriminell': 'criminal',
+ 'mechanisch': 'mechanical',
+ 'reibungslos': 'smooth(ly)',
+ 'schwanken': 'to fluctuate',
+ 'stabilisieren': 'to stabilise',
+ 'die Suchmaschine': 'search engine',
+ 'unbrauchbar': 'unusable',
+ 'unerheblich': 'insignificant',
+ 'unvollständig': 'incomplete',
+ 'unvorstellbar': 'unimaginable',
+ 'wandeln': 'to transform',
+ 'abwenden': 'to avert',
+ 'anfertigen': 'to make, to prepare',
+ 'der Anklang': 'approval',
+ 'die Ausarbeitung': 'elaboration',
+ 'belebt': 'busy, lively',
+ 'die Bequemlichkeit': 'convenience',
+ 'die Einfachheit': 'simplicity',
+ 'entführen': 'to kidnap',
+ 'die Euphorie': 'euphoria',
+ 'hohl': 'hollow',
+ 'lauschen': 'to listen',
+ 'mild': 'mild',
+ 'mündlich': 'oral',
+ 'schimpfen': 'to scold',
+ 'die Selbsthilfe': 'self-help',
+ 'die Strafanzeige': 'criminal complaint',
+ 'ungefährlich': 'harmless',
+ 'wiedergeben': 'to reproduce, to render',
+ 'zärtlich': 'tender',
+ 'die Adoption': 'adoption',
+ 'die Entfaltung': 'development',
+ 'der Fachkräftemangel': 'skills shortage',
+ 'fahrlässig': 'negligent',
+ 'formell': 'formal',
+ 'fälschlicherweise': 'erroneously',
+ 'geneigt': 'inclined',
+ 'horizontal': 'horizontal',
+ 'die Kapitulation': 'surrender',
+ 'magisch': 'magical',
+ 'mitreden': 'to have a say',
+ 'der Nachruf': 'obituary',
+ 'die Nostalgie': 'nostalgia',
+ 'psychologisch': 'psychological',
+ 'reizen': 'to provoke; to appeal to',
+ 'der Tatbestand': 'facts, offence',
+ 'unterwerfen': 'to subjugate',
+ 'verrichten': 'to perform',
+ 'vertiefen': 'to deepen',
+ 'der Vorreiter': 'pioneer',
+ 'sich weigern': 'to refuse',
+ 'der Zulieferer': 'supplier',
+ 'anführen': 'to lead; to cite',
+ 'begehren': 'to desire',
+ 'behutsam': 'careful',
+ 'belohnen': 'to reward',
+ 'die Emanzipation': 'emancipation',
+ 'der Freiraum': 'freedom, scope',
+ 'handhaben': 'to handle',
+ 'heimisch': 'native, domestic',
+ 'originell': 'original',
+ 'die Selbstverteidigung': 'self-defence',
+ 'ungeklärt': 'unresolved',
+ 'vielversprechend': 'promising',
+ 'die Zuwendung': 'attention; donation',
+ 'belehren': 'to lecture',
+ 'beängstigend': 'frightening',
+ 'die Denkweise': 'way of thinking',
+ 'die Evakuierung': 'evacuation',
+ 'der Gegenwind': 'headwind',
+ 'kapieren': 'to get it',
+ 'der Menschenverstand': 'common sense',
+ 'praktizieren': 'to practise',
+ 'das Schmerzmittel': 'painkiller'}
 
 DE_EN_ACADEMIC = {'die Forschung': 'research',
  'die Daten (Pl.)': 'data',
