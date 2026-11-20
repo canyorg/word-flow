@@ -64,7 +64,7 @@ UI = {
                   "academic": "Makale, tez ve sunum dili — seviyeni seç",
                   "cyber": "Siber güvenlik: ağ → saldırı → pentest → SOC → GRC"},
         "m_mode": "Mod", "m_level": "Seviye", "m_interval": "Değişme süresi",
-        "sec": "{} saniye", "m_lock": "Konumu kilitle", "m_top": "Her zaman üstte",
+        "sec": "{} saniye", "m_lock": "Konumu kilitle", "m_top": "Her zaman üstte", "m_auto": "Windows ile başlat",
         "m_bg": "Arka plan resmi seç…", "m_bg_reset": "Varsayılan arka plan",
         "m_reset": "İlerlemeyi sıfırla", "m_close": "Kapat", "images": "Resimler",
         "m_lang": "Dili değiştir…", "learn_q": "Hangi dili öğrenmek istiyorsunuz?",
@@ -86,7 +86,7 @@ UI = {
                   "academic": "Language of papers, theses and talks — choose your level",
                   "cyber": "Cybersecurity: network → attacks → pentest → SOC → GRC"},
         "m_mode": "Mode", "m_level": "Level", "m_interval": "Change every",
-        "sec": "{} seconds", "m_lock": "Lock position", "m_top": "Always on top",
+        "sec": "{} seconds", "m_lock": "Lock position", "m_top": "Always on top", "m_auto": "Start with Windows",
         "m_bg": "Choose background image…", "m_bg_reset": "Default background",
         "m_reset": "Reset progress", "m_close": "Close", "images": "Images",
         "m_lang": "Change language…", "learn_q": "Which language do you want to learn?",
@@ -108,7 +108,7 @@ UI = {
                   "academic": "Sprache für Paper, Abschlussarbeit und Vortrag",
                   "cyber": "Cybersecurity: Netzwerk → Angriffe → Pentest → SOC → GRC"},
         "m_mode": "Modus", "m_level": "Niveau", "m_interval": "Wechsel alle",
-        "sec": "{} Sekunden", "m_lock": "Position sperren", "m_top": "Immer im Vordergrund",
+        "sec": "{} Sekunden", "m_lock": "Position sperren", "m_top": "Immer im Vordergrund", "m_auto": "Mit Windows starten",
         "m_bg": "Hintergrundbild wählen…", "m_bg_reset": "Standard-Hintergrund",
         "m_reset": "Fortschritt zurücksetzen", "m_close": "Schließen", "images": "Bilder",
         "m_lang": "Sprache ändern…", "learn_q": "Welche Sprache möchten Sie lernen?",
@@ -130,7 +130,7 @@ UI = {
                   "academic": "Язык статей, диссертаций и докладов",
                   "cyber": "Кибербезопасность: сеть → атаки → пентест → SOC → GRC"},
         "m_mode": "Режим", "m_level": "Уровень", "m_interval": "Смена каждые",
-        "sec": "{} секунд", "m_lock": "Закрепить позицию", "m_top": "Поверх всех окон",
+        "sec": "{} секунд", "m_lock": "Закрепить позицию", "m_top": "Поверх всех окон", "m_auto": "Запускать вместе с Windows",
         "m_bg": "Выбрать фон…", "m_bg_reset": "Стандартный фон",
         "m_reset": "Сбросить прогресс", "m_close": "Закрыть", "images": "Изображения",
         "m_lang": "Сменить язык…", "learn_q": "Какой язык вы хотите учить?",
@@ -808,6 +808,11 @@ class WordWidget(QWidget):
         a.setCheckable(True)
         a.setChecked(self.st["on_top"])
         a.triggered.connect(self.toggle_on_top)
+        if sys.platform == "win32":
+            a = m.addAction(T["m_auto"])
+            a.setCheckable(True)
+            a.setChecked(win_autostart())
+            a.triggered.connect(win_autostart)
         m.addSeparator()
         m.addAction(T["m_bg"], self.choose_bg)
         if self.st.get("bg"):
@@ -879,6 +884,42 @@ class WordWidget(QWidget):
         if not (self.controller and self.controller.switching):
             QApplication.instance().quit()
         super().closeEvent(e)
+
+
+# --------------------------------------------------------------------------- Windows
+WIN_RUN_KEY = r"Software\Microsoft\Windows\CurrentVersion\Run"
+
+
+def win_autostart(enable=None):
+    """Read (enable=None) or set the 'start with Windows' entry for the current user."""
+    import winreg
+    if getattr(sys, "frozen", False):
+        cmd = f'"{sys.executable}"'
+    else:
+        pyw = os.path.join(os.path.dirname(sys.executable), "pythonw.exe")
+        cmd = f'"{pyw if os.path.exists(pyw) else sys.executable}" "{os.path.abspath(__file__)}"'
+    with winreg.OpenKey(winreg.HKEY_CURRENT_USER, WIN_RUN_KEY, 0,
+                        winreg.KEY_READ | winreg.KEY_SET_VALUE) as k:
+        if enable is None:
+            try:
+                winreg.QueryValueEx(k, "WordFlow")
+                return True
+            except FileNotFoundError:
+                return False
+        if enable:
+            winreg.SetValueEx(k, "WordFlow", 0, winreg.REG_SZ, cmd)
+        else:
+            try:
+                winreg.DeleteValue(k, "WordFlow")
+            except FileNotFoundError:
+                pass
+        return enable
+
+
+def resource(name):
+    """Path of a bundled file, also inside a PyInstaller one-file exe."""
+    base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, name)
 
 
 # --------------------------------------------------------------------------- first start
@@ -1058,6 +1099,15 @@ def main():
     args = ap.parse_args()
     app = QApplication(sys.argv[:1])
     app.setApplicationName("Word Flow")
+    if os.path.exists(resource("icon.png")):
+        from PyQt6.QtGui import QIcon
+        app.setWindowIcon(QIcon(resource("icon.png")))
+    if sys.platform == "win32":
+        try:  # own taskbar identity instead of python.exe
+            import ctypes
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("canyorg.WordFlow")
+        except Exception:
+            pass
     app.setQuitOnLastWindowClosed(False)
     ctl = Controller()
     ctl.start(args.pair)

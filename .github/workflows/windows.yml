@@ -1,0 +1,48 @@
+name: Windows exe
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install PyQt6 pyinstaller
+
+      - name: Smoke test (all 12 language pairs)
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: |
+          python -c "import wordflow as w; from PyQt6.QtWidgets import QApplication; app = QApplication([]); [w.WordWidget(p).close() for p in w.PAIRS]; print('ok', len(w.PAIRS), 'pairs')"
+
+      - name: Build one-file exe
+        run: >
+          pyinstaller --noconfirm --onefile --windowed --name WordFlow
+          --icon icon.ico --add-data "icon.png;."
+          --exclude-module PyQt6.QtWebEngineCore --exclude-module PyQt6.QtQml
+          --exclude-module PyQt6.QtQuick --exclude-module PyQt6.QtMultimedia
+          wordflow.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WordFlow-windows
+          path: dist/WordFlow.exe
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/WordFlow.exe
+          generate_release_notes: true

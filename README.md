@@ -48,6 +48,11 @@ Word Flow is a single app for English, German, Turkish and Russian. On first sta
 - You can drag the card anywhere and 📍 lock it in place. It stays on top of other windows, and you can set your own background image.
 - Your progress is saved separately for each language combination in `~/.config/…`.
 
+### Windows
+Download **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** and double-click it. That's all: there is nothing to install and no Python needed. To start it automatically, right-click the card and tick **Start with Windows**.
+
+Windows may show a blue "Windows protected your PC" box the first time, because the exe isn't signed. Click **More info → Run anyway**.
+
 ### Installation (Linux)
 ```bash
 sudo dnf install python3-pyqt6   # Fedora  (Debian/Ubuntu: sudo apt install python3-pyqt6)
@@ -57,7 +62,7 @@ cd word-flow
 ```
 Or run it without installing: `python3 wordflow.py`
 
-**Windows:** `pip install PyQt6`, then `py wordflow.py`
+**Windows from source:** `pip install PyQt6`, then `py wordflow.py`
 
 To update later: `git pull && ./install.sh`
 
@@ -115,6 +120,11 @@ Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk a
 - Kartı istediğin yere sürükleyip 📍 ile sabitleyebilirsin. Diğer pencerelerin üstünde kalır ve istersen kendi arka plan resmini seçebilirsin.
 - İlerlemen her dil kombinasyonu için ayrı olarak `~/.config/…` içinde saklanır.
 
+### Windows
+**[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** dosyasını indir ve çift tıkla. Bu kadar: kurulum yok, Python gerekmiyor. Bilgisayar açılınca kendiliğinden başlasın istersen karta sağ tıklayıp **Windows ile başlat** seçeneğini işaretle.
+
+İlk açılışta Windows mavi bir "Windows bilgisayarınızı korudu" penceresi gösterebilir, çünkü exe imzalı değil. **Ek bilgi → Yine de çalıştır**'a tıkla.
+
 ### Kurulum (Linux)
 ```bash
 sudo dnf install python3-pyqt6   # Fedora  (Debian/Ubuntu: sudo apt install python3-pyqt6)
@@ -124,7 +134,7 @@ cd word-flow
 ```
 Kurmadan da çalıştırabilirsin: `python3 wordflow.py`
 
-**Windows:** `pip install PyQt6`, ardından `py wordflow.py`
+**Windows'ta kaynak koddan:** `pip install PyQt6`, ardından `py wordflow.py`
 
 İleride güncellemek için: `git pull && ./install.sh`
 
@@ -182,6 +192,11 @@ Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. B
 - Du kannst die Karte überallhin ziehen und mit 📍 fixieren. Sie bleibt über anderen Fenstern, und du kannst ein eigenes Hintergrundbild wählen.
 - Dein Fortschritt wird für jede Sprachkombination getrennt in `~/.config/…` gespeichert.
 
+### Windows
+**[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** herunterladen und doppelklicken. Fertig: keine Installation, kein Python nötig. Damit es automatisch startet, Rechtsklick auf die Karte und **Mit Windows starten** anhaken.
+
+Beim ersten Start zeigt Windows eventuell ein blaues Fenster „Der Computer wurde durch Windows geschützt“, weil die exe nicht signiert ist. Auf **Weitere Informationen → Trotzdem ausführen** klicken.
+
 ### Installation (Linux)
 ```bash
 sudo dnf install python3-pyqt6   # Fedora  (Debian/Ubuntu: sudo apt install python3-pyqt6)
@@ -191,7 +206,7 @@ cd word-flow
 ```
 Oder ohne Installation starten: `python3 wordflow.py`
 
-**Windows:** `pip install PyQt6`, dann `py wordflow.py`
+**Windows aus dem Quellcode:** `pip install PyQt6`, dann `py wordflow.py`
 
 Später aktualisieren: `git pull && ./install.sh`
 
@@ -222,6 +237,8 @@ Word Flow — одно приложение для английского, не�
 | английский | русский | русский → английский | 4 850 · 746 · 502 |
 | немецкий | русский | русский → немецкий | 4 420 · 685 · 499 |
 | турецкий | русский | русский → турецкий | 4 850 · 746 · 502 |
+
+**Windows:** скачайте **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** и запустите двойным щелчком — ничего устанавливать не нужно. Автозапуск: правый клик по карточке → **Запускать вместе с Windows**. Если появится окно «Windows защитила ваш компьютер», нажмите **Подробнее → Выполнить в любом случае**.
 
 Всё остальное (уровни A1.1–C2.2, кнопки ✓ Знаю / ✗ Не знал(а), три режима, установка) работает так же, как описано выше.
 

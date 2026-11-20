@@ -18,7 +18,7 @@ if ! python3 -c "import PyQt6" 2>/dev/null; then
 fi
 
 mkdir -p "$DEST" "$APPS"
-cp -r "$SRC/wordflow.py" "$SRC/wordlists" "$DEST/"
+cp -r "$SRC/wordflow.py" "$SRC/wordlists" "$SRC/icon.png" "$DEST/"
 
 # remove entries of older versions (one entry per language pair)
 rm -f "$APPS"/word-flow-*.desktop "$AUTO"/word-flow-*.desktop "$AUTO"/kelime-akisi*.desktop
@@ -28,9 +28,9 @@ write_entry() {
 [Desktop Entry]
 Type=Application
 Name=Word Flow
-Comment=Tiny always-on-top vocabulary widget (English · Deutsch · Türkçe)
+Comment=Tiny always-on-top vocabulary widget (English · Deutsch · Türkçe · Русский)
 Exec=python3 $DEST/wordflow.py
-Icon=accessories-dictionary
+Icon=$DEST/icon.png
 Terminal=false
 Categories=Education;Languages;
 X-GNOME-Autostart-Delay=10
