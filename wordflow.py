@@ -1,0 +1,734 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Word Flow — a tiny always-on-top vocabulary widget.
+
+A new word / verb / phrase every 20 seconds, with its meaning right below it,
+so you learn it whenever your eye catches it.
+
+Language pairs (word → meaning):
+    de-tr   German  → Turkish
+    en-tr   English → Turkish   (Everyday + Academic)
+    en-de   English → German    (Everyday + Academic)
+    de-en   German  → English
+
+Usage:
+    python3 wordflow.py de-tr
+    python3 wordflow.py en-de
+"""
+import os
+import re
+import sys
+import json
+import random
+import datetime
+import argparse
+from html import escape
+
+# GNOME/KDE on Wayland ignore "always on top" for normal clients -> use XWayland.
+if sys.platform.startswith("linux") and os.environ.get("WAYLAND_DISPLAY") \
+        and "QT_QPA_PLATFORM" not in os.environ:
+    os.environ["QT_QPA_PLATFORM"] = "xcb"
+
+from PyQt6.QtCore import Qt, QTimer, QRectF, QPoint
+from PyQt6.QtGui import (QPainter, QColor, QLinearGradient, QRadialGradient,
+                         QPainterPath, QPixmap, QFont, QFontMetrics,
+                         QActionGroup)
+from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton,
+                             QVBoxLayout, QHBoxLayout, QGridLayout,
+                             QStackedWidget, QMenu, QFileDialog, QSizePolicy)
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from wordlists import german, english  # noqa: E402
+
+APP_W, APP_H = 340, 196
+CONFIG_ROOT = os.path.join(os.path.expanduser("~"), ".config")
+
+# --------------------------------------------------------------------------- UI text
+UI = {
+    "tr": {
+        "know": "✓ Biliyorum", "dont": "✗ Bilmiyordum",
+        "tip_know": "Öğrendim — daha az göster", "tip_dont": "Daha sık göster",
+        "next": "Sonraki", "tip_level": "Mod / seviye değiştir",
+        "pin_on": "Konum kilitli — aç", "pin_off": "Konumu kilitle",
+        "choose": "Seviyeni seç",
+        "modes": {"general": "Genel", "daily": "Günlük", "academic": "Akademik"},
+        "hints": {"general": "Alt seviyelerden de ara sıra tekrar gelir — seviyeni seç",
+                  "daily": "Günlük konuşma kelimeleri ve kalıplar — seviyeni seç",
+                  "academic": "Makale, tez ve sunum dili — seviyeni seç"},
+        "m_mode": "Mod", "m_level": "Seviye", "m_interval": "Değişme süresi",
+        "sec": "{} saniye", "m_lock": "Konumu kilitle", "m_top": "Her zaman üstte",
+        "m_bg": "Arka plan resmi seç…", "m_bg_reset": "Varsayılan arka plan",
+        "m_reset": "İlerlemeyi sıfırla", "m_close": "Kapat", "images": "Resimler",
+        "types": {"n": "İSİM", "v": "FİİL", "a": "SIFAT", "d": "ZARF",
+                  "p": "KALIP", "w": "KELİME"},
+    },
+    "en": {
+        "know": "✓ I know it", "dont": "✗ Didn't know",
+        "tip_know": "Learned — show less often", "tip_dont": "Show more often",
+        "next": "Next", "tip_level": "Change mode / level",
+        "pin_on": "Position locked — unlock", "pin_off": "Lock position",
+        "choose": "Choose your level",
+        "modes": {"general": "General", "daily": "Everyday", "academic": "Academic"},
+        "hints": {"general": "Lower levels come back now and then — choose your level",
+                  "daily": "Everyday words and phrases — choose your level",
+                  "academic": "Language of papers, theses and talks — choose your level"},
+        "m_mode": "Mode", "m_level": "Level", "m_interval": "Change every",
+        "sec": "{} seconds", "m_lock": "Lock position", "m_top": "Always on top",
+        "m_bg": "Choose background image…", "m_bg_reset": "Default background",
+        "m_reset": "Reset progress", "m_close": "Close", "images": "Images",
+        "types": {"n": "NOUN", "v": "VERB", "a": "ADJECTIVE", "d": "ADVERB",
+                  "p": "PHRASE", "w": "WORD"},
+    },
+    "de": {
+        "know": "✓ Kann ich", "dont": "✗ Wusste ich nicht",
+        "tip_know": "Gelernt — seltener zeigen", "tip_dont": "Öfter zeigen",
+        "next": "Weiter", "tip_level": "Modus / Niveau ändern",
+        "pin_on": "Position gesperrt — entsperren", "pin_off": "Position sperren",
+        "choose": "Wähle dein Niveau",
+        "modes": {"general": "Allgemein", "daily": "Alltag", "academic": "Akademisch"},
+        "hints": {"general": "Niedrigere Niveaus kommen ab und zu wieder — wähle dein Niveau",
+                  "daily": "Wörter und Wendungen für den Alltag — wähle dein Niveau",
+                  "academic": "Sprache für Paper, Abschlussarbeit und Vortrag — wähle dein Niveau"},
+        "m_mode": "Modus", "m_level": "Niveau", "m_interval": "Wechsel alle",
+        "sec": "{} Sekunden", "m_lock": "Position sperren", "m_top": "Immer im Vordergrund",
+        "m_bg": "Hintergrundbild wählen…", "m_bg_reset": "Standard-Hintergrund",
+        "m_reset": "Fortschritt zurücksetzen", "m_close": "Schließen", "images": "Bilder",
+        "types": {"n": "NOMEN", "v": "VERB", "a": "ADJEKTIV", "d": "ADVERB",
+                  "p": "WENDUNG", "w": "WORT"},
+    },
+}
+
+
+# --------------------------------------------------------------------------- word lists
+def parse_block(raw, mode, meaning):
+    """raw: level -> 'type|word|turkish|hint' lines. meaning(word, turkish) -> text"""
+    out = {}
+    for lv, block in raw.items():
+        items = []
+        for line in block.strip().splitlines():
+            p = [x.strip() for x in line.split("|")]
+            if len(p) < 3:
+                continue
+            items.append({"t": p[0], "w": p[1], "m": meaning(p[1], p[2]),
+                          "x": p[3] if len(p) > 3 else "", "lv": lv,
+                          "mode": mode, "key": f"{mode}:{p[1]}"})
+        out[lv] = items
+    return out
+
+
+def en_de(mode):
+    table = english.EN_DE_ACADEMIC if mode == "academic" else english.EN_DE
+    return lambda w, tr: table.get(w) or english.EN_DE.get(w, tr)
+
+
+PAIRS = {
+    "de-tr": {"title": "Kelime Akışı · DE → TR", "ui": "tr", "src": "de", "dst": "tr",
+              "state": "kelime-akisi",
+              "modes": {"general": parse_block(german.GERMAN, "general",
+                                               lambda w, tr: tr)}},
+    "en-tr": {"title": "Word Flow · EN → TR", "ui": "tr", "src": "en", "dst": "tr",
+              "state": "kelime-akisi-en",
+              "modes": {"daily": parse_block(english.DAILY, "daily", lambda w, tr: tr),
+                        "academic": parse_block(english.ACADEMIC, "academic",
+                                                lambda w, tr: tr)}},
+    "en-de": {"title": "Word Flow · EN → DE", "ui": "de", "src": "en", "dst": "de",
+              "state": "word-flow-en-de",
+              "modes": {"daily": parse_block(english.DAILY, "daily", en_de("daily")),
+                        "academic": parse_block(english.ACADEMIC, "academic",
+                                                en_de("academic"))}},
+    "de-en": {"title": "Word Flow · DE → EN", "ui": "en", "src": "de", "dst": "en",
+              "state": "word-flow-de-en",
+              "modes": {"general": parse_block(german.GERMAN, "general",
+                                               lambda w, tr: german.DE_EN.get(w, tr))}},
+}
+
+ARTICLE_COLORS = {"der": "#7fb2ff", "die": "#ff8fa3", "das": "#7fe0a8"}
+ARTICLE_RE = re.compile(r"(?<![\wäöüßÄÖÜ])(der|die|das)(?= [A-ZÄÖÜ])")
+
+
+def colorize_german(text, base):
+    """Colour der/die/das (blue / pink / green) in a German string."""
+    esc = escape(text, quote=False)
+    html = ARTICLE_RE.sub(
+        lambda m: f"<span style='color:{ARTICLE_COLORS[m.group(1)]}'>{m.group(1)}</span>",
+        esc)
+    return f"<span style='color:{base}'>{html}</span>"
+
+
+CHIP_CSS = ("QPushButton{color:#e8e6ff;background:rgba(255,255,255,0.13);"
+            "border:none;border-radius:9px;padding:2px 9px;font-size:11px;"
+            "font-weight:600;}"
+            "QPushButton:hover{background:rgba(255,255,255,0.24);}")
+
+
+def btn_css(bg, hover):
+    return ("QPushButton{color:white;background:%s;border:none;"
+            "border-radius:11px;padding:5px 10px;font-size:12px;"
+            "font-weight:600;}QPushButton:hover{background:%s;}" % (bg, hover))
+
+
+# --------------------------------------------------------------------------- widget
+class WordWidget(QWidget):
+    def __init__(self, pair_id):
+        super().__init__()
+        self.pair_id = pair_id
+        self.pair = PAIRS[pair_id]
+        self.T = UI[self.pair["ui"]]
+        self.words = self.pair["modes"]
+        self.levels = {m: list(v.keys()) for m, v in self.words.items()}
+        self.config_dir = os.path.join(CONFIG_ROOT, self.pair["state"])
+        self.state_file = os.path.join(self.config_dir, "state.json")
+
+        self.st = self.load_state()
+        self.bg_pix = None
+        self.load_bg()
+
+        self.cur = None
+        self.counter = 0
+        self.recent = []
+        self.soon = []          # [(card_no, key)] — "didn't know" words come back soon
+        self.elapsed = 0.0
+        self.hovering = False
+        self._drag = None
+        self.picker_mode = self.mode()
+
+        flags = Qt.WindowType.FramelessWindowHint | Qt.WindowType.Tool
+        if self.st["on_top"]:
+            flags |= Qt.WindowType.WindowStaysOnTopHint
+        self.setWindowFlags(flags)
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
+        self.setFixedSize(APP_W, APP_H)
+        self.setWindowTitle(self.pair["title"])
+
+        self.stack = QStackedWidget(self)
+        self.stack.setGeometry(0, 0, APP_W, APP_H)
+        self.stack.addWidget(self.build_card())
+        self.stack.addWidget(self.build_picker())
+
+        self.tick = QTimer(self)
+        self.tick.timeout.connect(self.on_tick)
+        self.tick.start(100)
+        self.save_timer = QTimer(self)
+        self.save_timer.setSingleShot(True)
+        self.save_timer.timeout.connect(self.save_state)
+
+        if self.st.get("pos"):
+            self.move(QPoint(*self.st["pos"]))
+        else:
+            scr = QApplication.primaryScreen().availableGeometry()
+            idx = list(PAIRS).index(pair_id)
+            self.move(scr.right() - APP_W - 30, scr.top() + 60 + idx * (APP_H + 16))
+
+        if self.level() in self.levels.get(self.mode(), []):
+            self.show_card()
+        else:
+            self.show_picker()
+
+    # ------------------------------------------------------------ state
+    def mode(self):
+        m = self.st.get("mode")
+        return m if m in self.words else next(iter(self.words))
+
+    def level(self):
+        return self.st["levels"].get(self.mode())
+
+    def load_state(self):
+        d = {"mode": None, "levels": {}, "interval": 20, "pinned": False,
+             "on_top": True, "bg": None, "pos": None, "words": {},
+             "today": {"date": "", "k": 0, "u": 0}}
+        try:
+            with open(self.state_file, encoding="utf-8") as f:
+                d.update(json.load(f))
+        except Exception:
+            pass
+        # migrate the first single-file version (one level, plain word keys)
+        if isinstance(d.get("level"), str) and not d["levels"]:
+            d["levels"] = {"general": d.pop("level")}
+            d["mode"] = "general"
+        d.pop("level", None)
+        if any(":" not in k for k in d["words"]):
+            d["words"] = {(k if ":" in k else f"general:{k}"): v
+                          for k, v in d["words"].items()}
+        return d
+
+    def save_state(self):
+        try:
+            os.makedirs(self.config_dir, exist_ok=True)
+            self.st["pos"] = [self.x(), self.y()]
+            tmp = self.state_file + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(self.st, f, ensure_ascii=False, indent=1)
+            os.replace(tmp, self.state_file)
+        except Exception as e:
+            print("Could not save state:", e, file=sys.stderr)
+
+    def ws(self, e):
+        return self.st["words"].setdefault(e["key"], {"w": 1.0, "k": 0, "u": 0})
+
+    def today(self):
+        t = self.st["today"]
+        d = datetime.date.today().isoformat()
+        if t.get("date") != d:
+            t.update({"date": d, "k": 0, "u": 0})
+        return t
+
+    # ------------------------------------------------------------ UI
+    def build_card(self):
+        page = QWidget()
+        v = QVBoxLayout(page)
+        v.setContentsMargins(16, 11, 16, 14)
+        v.setSpacing(0)
+
+        top = QHBoxLayout()
+        top.setSpacing(6)
+        self.level_btn = QPushButton()
+        self.level_btn.setStyleSheet(CHIP_CSS)
+        self.level_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.level_btn.setToolTip(self.T["tip_level"])
+        self.level_btn.clicked.connect(self.show_picker)
+        self.type_lbl = QLabel()
+        self.type_lbl.setStyleSheet("color:rgba(255,255,255,0.55);"
+                                    "font-size:9px;font-weight:700;letter-spacing:1px;")
+        self.stats_lbl = QLabel()
+        self.stats_lbl.setStyleSheet("color:rgba(255,255,255,0.6);font-size:11px;")
+        self.pin_btn = QPushButton()
+        self.pin_btn.setFixedSize(26, 22)
+        self.pin_btn.setStyleSheet(CHIP_CSS)
+        self.pin_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.pin_btn.clicked.connect(self.toggle_pin)
+        top.addWidget(self.level_btn)
+        top.addWidget(self.type_lbl)
+        top.addStretch(1)
+        top.addWidget(self.stats_lbl)
+        top.addWidget(self.pin_btn)
+        v.addLayout(top)
+        v.addStretch(1)
+
+        self.w_lbl = QLabel()
+        self.w_lbl.setTextFormat(Qt.TextFormat.RichText)
+        self.w_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.x_lbl = QLabel()
+        self.x_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.x_lbl.setStyleSheet("color:rgba(255,255,255,0.5);font-size:10px;")
+        self.m_lbl = QLabel()
+        self.m_lbl.setTextFormat(Qt.TextFormat.RichText)
+        self.m_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.m_lbl.setWordWrap(True)
+        for w in (self.w_lbl, self.x_lbl, self.m_lbl):
+            w.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+        v.addWidget(self.w_lbl)
+        v.addWidget(self.x_lbl)
+        v.addSpacing(3)
+        v.addWidget(self.m_lbl)
+        v.addStretch(1)
+
+        row = QHBoxLayout()
+        row.setSpacing(6)
+        self.know_btn = QPushButton(self.T["know"])
+        self.know_btn.setStyleSheet(btn_css("rgba(46,170,110,0.55)", "rgba(46,170,110,0.85)"))
+        self.know_btn.setToolTip(self.T["tip_know"])
+        self.know_btn.clicked.connect(lambda: self.mark(True))
+        self.dont_btn = QPushButton(self.T["dont"])
+        self.dont_btn.setStyleSheet(btn_css("rgba(220,80,100,0.55)", "rgba(220,80,100,0.85)"))
+        self.dont_btn.setToolTip(self.T["tip_dont"])
+        self.dont_btn.clicked.connect(lambda: self.mark(False))
+        self.skip_btn = QPushButton("›")
+        self.skip_btn.setFixedWidth(34)
+        self.skip_btn.setStyleSheet(btn_css("rgba(255,255,255,0.14)", "rgba(255,255,255,0.28)"))
+        self.skip_btn.setToolTip(self.T["next"])
+        self.skip_btn.clicked.connect(self.next_word)
+        for b in (self.know_btn, self.dont_btn, self.skip_btn):
+            b.setCursor(Qt.CursorShape.PointingHandCursor)
+        row.addWidget(self.know_btn, 1)
+        row.addWidget(self.dont_btn, 1)
+        row.addWidget(self.skip_btn)
+        v.addLayout(row)
+        return page
+
+    def build_picker(self):
+        page = QWidget()
+        v = QVBoxLayout(page)
+        v.setContentsMargins(16, 11, 16, 12)
+        v.setSpacing(7)
+
+        self.mode_btns = {}
+        if len(self.words) > 1:
+            seg = QHBoxLayout()
+            seg.setSpacing(0)
+            for m in self.words:
+                b = QPushButton(self.T["modes"][m])
+                b.setCursor(Qt.CursorShape.PointingHandCursor)
+                b.clicked.connect(lambda _=False, x=m: self.pick_mode(x))
+                self.mode_btns[m] = b
+                seg.addWidget(b)
+            v.addLayout(seg)
+        else:
+            t = QLabel(self.T["choose"])
+            t.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            t.setStyleSheet("color:white;font-size:15px;font-weight:700;")
+            v.addWidget(t)
+
+        self.pick_hint = QLabel()
+        self.pick_hint.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.pick_hint.setWordWrap(True)
+        self.pick_hint.setStyleSheet("color:rgba(255,255,255,0.6);font-size:10px;")
+        v.addWidget(self.pick_hint)
+
+        host = QWidget()
+        self.grid = QGridLayout(host)
+        self.grid.setContentsMargins(0, 0, 0, 0)
+        self.grid.setSpacing(6)
+        v.addWidget(host)
+        v.addStretch(1)
+        return page
+
+    def seg_css(self, on, left):
+        r = ("border-top-left-radius:11px;border-bottom-left-radius:11px;" if left
+             else "border-top-right-radius:11px;border-bottom-right-radius:11px;")
+        bg = "rgba(140,120,255,0.8)" if on else "rgba(255,255,255,0.12)"
+        return ("QPushButton{color:white;background:%s;border:none;%s"
+                "padding:5px;font-size:12px;font-weight:700;}"
+                "QPushButton:hover{background:rgba(140,120,255,0.6);}" % (bg, r))
+
+    def pick_mode(self, m):
+        self.picker_mode = m
+        for i, (k, b) in enumerate(self.mode_btns.items()):
+            b.setStyleSheet(self.seg_css(k == m, i == 0))
+        self.pick_hint.setText(self.T["hints"][m])
+        while self.grid.count():
+            wd = self.grid.takeAt(0).widget()
+            if wd is not None:
+                wd.hide()
+                wd.setParent(None)
+                wd.deleteLater()
+        cur = self.st["levels"].get(m) if m == self.mode() else None
+        for i, lv in enumerate(self.levels[m]):
+            b = QPushButton(lv)
+            b.setCursor(Qt.CursorShape.PointingHandCursor)
+            b.setStyleSheet(btn_css("rgba(140,120,255,0.75)" if lv == cur
+                                    else "rgba(255,255,255,0.13)", "rgba(140,120,255,0.9)"))
+            b.clicked.connect(lambda _=False, x=lv: self.set_level(m, x))
+            self.grid.addWidget(b, i // 4, i % 4)
+
+    def show_picker(self):
+        self.pick_mode(self.mode())
+        self.stack.setCurrentIndex(1)
+        self.update()
+
+    def show_card(self):
+        self.stack.setCurrentIndex(0)
+        self.refresh_chrome()
+        if self.cur is None:
+            self.next_word()
+        self.update()
+
+    def set_level(self, mode, lv):
+        changed = mode != self.mode() or lv != self.level()
+        self.st["mode"] = mode
+        self.st["levels"][mode] = lv
+        self.save_state()
+        if changed:
+            self.cur = None
+            self.soon.clear()
+            self.recent.clear()
+        self.show_card()
+
+    def refresh_chrome(self):
+        lvl = self.level()
+        if len(self.words) > 1:
+            self.level_btn.setText(f"{self.T['modes'][self.mode()]} · {lvl} ▾")
+        else:
+            self.level_btn.setText(f"{lvl} ▾")
+        self.pin_btn.setText("📌" if self.st["pinned"] else "📍")
+        self.pin_btn.setToolTip(self.T["pin_on"] if self.st["pinned"] else self.T["pin_off"])
+        t = self.today()
+        self.stats_lbl.setText(f"✓{t['k']}  ✗{t['u']}")
+
+    # ------------------------------------------------------------ choosing words
+    def pool(self):
+        m = self.mode()
+        lvls = self.levels[m]
+        idx = lvls.index(self.level())
+        items, weights = [], []
+        for i, lv in enumerate(lvls[:idx + 1]):
+            base = 1.0 if i == idx else (0.35 if i == idx - 1 else 0.12)
+            for e in self.words[m][lv]:
+                items.append(e)
+                weights.append(base * self.ws(e)["w"])
+        return items, weights
+
+    def find(self, key):
+        for m in self.words.values():
+            for items in m.values():
+                for e in items:
+                    if e["key"] == key:
+                        return e
+        return None
+
+    def next_word(self):
+        self.counter += 1
+        e = None
+        if self.soon and self.soon[0][0] <= self.counter:
+            e = self.find(self.soon.pop(0)[1])
+        if e is None:
+            items, weights = self.pool()
+            cand = [(it, w) for it, w in zip(items, weights) if it["key"] not in self.recent]
+            if not cand:
+                cand = list(zip(items, weights))
+            e = random.choices([c[0] for c in cand], weights=[c[1] for c in cand])[0]
+        self.cur = e
+        self.recent = (self.recent + [e["key"]])[-8:]
+        self.elapsed = 0.0
+        self.render_word()
+        self.update()
+
+    def mark(self, known):
+        if not self.cur:
+            return
+        s = self.ws(self.cur)
+        t = self.today()
+        if known:
+            s["k"] += 1
+            s["w"] = max(0.04, s["w"] * 0.3)
+            t["k"] += 1
+        else:
+            s["u"] += 1
+            s["w"] = min(8.0, s["w"] * 2 + 0.5)
+            t["u"] += 1
+            self.soon = sorted([x for x in self.soon if x[1] != self.cur["key"]]
+                               + [(self.counter + 4, self.cur["key"])])
+        self.save_state()
+        self.refresh_chrome()
+        self.next_word()
+
+    # ------------------------------------------------------------ drawing
+    def fit_font(self, text, max_pt, min_pt, width):
+        f = QFont(self.font())
+        f.setBold(True)
+        pt = max_pt
+        while pt > min_pt:
+            f.setPointSizeF(pt)
+            if QFontMetrics(f).horizontalAdvance(text) <= width:
+                break
+            pt -= 0.5
+        f.setPointSizeF(pt)
+        return f
+
+    def render_word(self):
+        e = self.cur
+        avail = APP_W - 36
+        self.w_lbl.setFont(self.fit_font(e["w"], 22, 12, avail))
+        if self.pair["src"] == "de":
+            self.w_lbl.setText(colorize_german(e["w"], "white"))
+        else:
+            self.w_lbl.setText(f"<span style='color:white'>{escape(e['w'])}</span>")
+        self.x_lbl.setText(e["x"])
+        self.x_lbl.setVisible(bool(e["x"]))
+        self.m_lbl.setFont(self.fit_font(e["m"], 15, 11, avail))
+        gold = "#ffd98a"
+        if self.pair["dst"] == "de":
+            self.m_lbl.setText(colorize_german(e["m"], gold))
+        else:
+            self.m_lbl.setText(f"<span style='color:{gold}'>{escape(e['m'])}</span>")
+        self.type_lbl.setText(self.T["types"].get(e["t"], ""))
+        s = self.ws(e)
+        self.know_btn.setText(self.T["know"] + (f" ·{s['k']}" if s["k"] else ""))
+        self.dont_btn.setText(self.T["dont"] + (f" ·{s['u']}" if s["u"] else ""))
+
+    def paintEvent(self, ev):
+        p = QPainter(self)
+        p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        path = QPainterPath()
+        path.addRoundedRect(QRectF(self.rect()).adjusted(0.5, 0.5, -0.5, -0.5), 20, 20)
+        p.setClipPath(path)
+
+        if self.bg_pix and not self.bg_pix.isNull():
+            pm = self.bg_pix.scaled(self.size(), Qt.AspectRatioMode.KeepAspectRatioByExpanding,
+                                    Qt.TransformationMode.SmoothTransformation)
+            p.drawPixmap(int((self.width() - pm.width()) / 2),
+                         int((self.height() - pm.height()) / 2), pm)
+            ov = QLinearGradient(0, 0, 0, self.height())
+            ov.setColorAt(0, QColor(10, 10, 25, 110))
+            ov.setColorAt(1, QColor(10, 10, 25, 185))
+            p.fillRect(self.rect(), ov)
+        else:
+            g = QLinearGradient(0, 0, self.width(), self.height())
+            g.setColorAt(0, QColor("#141a3a"))
+            g.setColorAt(0.55, QColor("#2a1d4f"))
+            g.setColorAt(1, QColor("#0d1226"))
+            p.fillRect(self.rect(), g)
+            glow = QRadialGradient(self.width() * 0.85, self.height() * 0.1, self.width() * 0.6)
+            glow.setColorAt(0, QColor(255, 140, 120, 70))
+            glow.setColorAt(1, QColor(255, 140, 120, 0))
+            p.fillRect(self.rect(), glow)
+            glow2 = QRadialGradient(self.width() * 0.1, self.height() * 1.0, self.width() * 0.55)
+            glow2.setColorAt(0, QColor(90, 160, 255, 60))
+            glow2.setColorAt(1, QColor(90, 160, 255, 0))
+            p.fillRect(self.rect(), glow2)
+
+        if self.stack.currentIndex() == 0:   # countdown line
+            frac = min(1.0, self.elapsed / max(1, self.st["interval"]))
+            p.fillRect(QRectF(0, self.height() - 3, self.width(), 3), QColor(255, 255, 255, 25))
+            p.fillRect(QRectF(0, self.height() - 3, self.width() * frac, 3),
+                       QColor(255, 217, 138, 90 if self.hovering else 200))
+
+        p.setClipping(False)
+        p.setPen(QColor(255, 255, 255, 40))
+        p.drawPath(path)
+
+    # ------------------------------------------------------------ timer
+    def on_tick(self):
+        if self.stack.currentIndex() != 0 or self.hovering:
+            return
+        self.elapsed += 0.1
+        if self.elapsed >= self.st["interval"]:
+            self.next_word()
+        else:
+            self.update(0, self.height() - 4, self.width(), 4)
+
+    def enterEvent(self, e):
+        self.hovering = True     # pause while the mouse is over the card
+        self.update()
+
+    def leaveEvent(self, e):
+        self.hovering = False
+        self.update()
+
+    # ------------------------------------------------------------ dragging
+    def mousePressEvent(self, e):
+        if e.button() != Qt.MouseButton.LeftButton or self.st["pinned"]:
+            return
+        h = self.windowHandle()
+        if h is not None and h.startSystemMove():
+            return
+        self._drag = e.globalPosition().toPoint() - self.frameGeometry().topLeft()
+
+    def mouseMoveEvent(self, e):
+        if self._drag is not None and not self.st["pinned"]:
+            self.move(e.globalPosition().toPoint() - self._drag)
+
+    def mouseReleaseEvent(self, e):
+        self._drag = None
+
+    def moveEvent(self, e):
+        self.save_timer.start(800)
+
+    def toggle_pin(self):
+        self.st["pinned"] = not self.st["pinned"]
+        self.refresh_chrome()
+        self.save_state()
+
+    # ------------------------------------------------------------ right-click menu
+    def contextMenuEvent(self, e):
+        T = self.T
+        m = QMenu(self)
+        if len(self.words) > 1:
+            mm = m.addMenu(T["m_mode"])
+            for k in self.words:
+                a = mm.addAction(T["modes"][k])
+                a.setCheckable(True)
+                a.setChecked(k == self.mode())
+                a.triggered.connect(lambda _=False, x=k: self.switch_mode(x))
+        lv = m.addMenu(T["m_level"])
+        for l in self.levels[self.mode()]:
+            a = lv.addAction(l)
+            a.setCheckable(True)
+            a.setChecked(l == self.level())
+            a.triggered.connect(lambda _=False, x=l: self.set_level(self.mode(), x))
+        sm = m.addMenu(T["m_interval"])
+        grp = QActionGroup(sm)
+        for s in (10, 15, 20, 30, 45, 60):
+            a = sm.addAction(T["sec"].format(s))
+            a.setCheckable(True)
+            a.setChecked(self.st["interval"] == s)
+            grp.addAction(a)
+            a.triggered.connect(lambda _=False, x=s: self.set_interval(x))
+        m.addSeparator()
+        a = m.addAction(T["m_lock"])
+        a.setCheckable(True)
+        a.setChecked(self.st["pinned"])
+        a.triggered.connect(self.toggle_pin)
+        a = m.addAction(T["m_top"])
+        a.setCheckable(True)
+        a.setChecked(self.st["on_top"])
+        a.triggered.connect(self.toggle_on_top)
+        m.addSeparator()
+        m.addAction(T["m_bg"], self.choose_bg)
+        if self.st.get("bg"):
+            m.addAction(T["m_bg_reset"], self.reset_bg)
+        m.addAction(T["m_reset"], self.reset_progress)
+        m.addSeparator()
+        m.addAction(T["m_close"], self.close)
+        m.exec(e.globalPos())
+
+    def switch_mode(self, k):
+        lv = self.st["levels"].get(k)
+        if lv in self.levels[k]:
+            self.set_level(k, lv)
+        else:
+            self.pick_mode(k)
+            self.stack.setCurrentIndex(1)
+            self.update()
+
+    def set_interval(self, s):
+        self.st["interval"] = s
+        self.elapsed = min(self.elapsed, s - 0.5)
+        self.save_state()
+
+    def toggle_on_top(self):
+        self.st["on_top"] = not self.st["on_top"]
+        pos = self.pos()
+        self.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, self.st["on_top"])
+        self.show()
+        self.move(pos)
+        self.save_state()
+
+    def load_bg(self):
+        path = self.st.get("bg")
+        self.bg_pix = QPixmap(path) if path and os.path.exists(path) else None
+
+    def choose_bg(self):
+        path, _ = QFileDialog.getOpenFileName(
+            self, self.T["m_bg"], os.path.expanduser("~"),
+            f"{self.T['images']} (*.png *.jpg *.jpeg *.webp *.bmp)")
+        if path:
+            self.st["bg"] = path
+            self.load_bg()
+            self.save_state()
+            self.update()
+
+    def reset_bg(self):
+        self.st["bg"] = None
+        self.bg_pix = None
+        self.save_state()
+        self.update()
+
+    def reset_progress(self):
+        self.st["words"] = {}
+        self.st["today"] = {"date": "", "k": 0, "u": 0}
+        self.soon.clear()
+        self.save_state()
+        self.refresh_chrome()
+        if self.cur:
+            self.render_word()
+
+    def closeEvent(self, e):
+        self.save_state()
+        super().closeEvent(e)
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Word Flow — tiny vocabulary widget")
+    ap.add_argument("pair", nargs="?", default="de-tr", choices=list(PAIRS),
+                    help="language pair: word → meaning (default: de-tr)")
+    args = ap.parse_args()
+    app = QApplication(sys.argv[:1])
+    app.setApplicationName(PAIRS[args.pair]["title"])
+    w = WordWidget(args.pair)
+    w.show()
+    sys.exit(app.exec())
+
+
+if __name__ == "__main__":
+    main()
