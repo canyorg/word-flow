@@ -1740,6 +1740,156 @@ v|sich verstehen|anlaşmak
 v|sich streiten|tartışmak, kavga etmek
 v|sich vertragen|iyi geçinmek
 v|sich anpassen|uyum sağlamak
+w|dabei|bu sırada; bu konuda
+w|dazu|buna ek olarak; bunun için
+w|sowie|ve ayrıca
+w|dafür|bunun için; buna karşılık
+w|davon|bundan
+w|darauf|bunun üzerine
+w|zwar … aber|gerçi … ama
+w|jemand|biri
+w|darüber|bunun hakkında
+w|eben|az önce; işte
+w|beide|her ikisi
+w|daran|buna
+w|direkt|doğrudan
+w|anders|farklı
+w|ebenfalls|aynı şekilde, de
+w|eher|daha çok; daha erken
+w|nachdem|-dikten sonra
+w|egal|fark etmez
+w|bisher|şimdiye kadar
+w|mehrere|birkaç
+w|niemand|hiç kimse
+w|zunächst|ilk önce
+w|darum|bu yüzden
+w|bevor|-meden önce
+w|wert|değerinde
+w|innerhalb|içinde (+ Gen.)
+w|völlig|tamamen
+w|zudem|üstelik
+w|irgendwie|bir şekilde
+w|vorbei|geçmiş, bitmiş
+w|dagegen|buna karşı
+w|wobei|ki bu sırada
+n|der Einsatz|kullanım; görev; çaba
+w|falls|eğer, -diği takdirde
+w|hinaus|dışarı
+w|vorher|önceden
+w|häufig|sık
+w|manche|bazı
+w|unbedingt|mutlaka
+w|unterwegs|yolda
+w|wenigstens|en azından
+w|zuvor|daha önce
+w|indem|-erek
+w|entfernt|uzak
+w|durchaus|kesinlikle, tamamen
+w|inzwischen|bu arada, artık
+w|komplett|tamamen
+w|niemals|asla
+w|erneut|yeniden
+w|total|tamamen
+w|früh|erken
+w|nahe|yakın
+v|nennen|adlandırmak
+v|erfahren|öğrenmek (haber); deneyimlemek
+w|aktiv|aktif
+w|hart|sert
+w|offenbar|anlaşılan
+w|absolut|kesinlikle
+w|immerhin|yine de, hiç değilse
+w|solange|-dığı sürece
+w|ständig|sürekli
+w|persönlich|kişisel
+v|bieten|sunmak
+w|spät|geç
+v|sterben|ölmek
+w|stets|daima
+n|die Version|sürüm
+w|irgendwo|bir yerde
+w|froh|memnun
+v|leisten|başarmak; karşılamak
+v|aussehen|görünmek
+w|miteinander|birbiriyle
+w|schade|yazık
+w|schlimm|kötü, vahim
+w|verantwortlich|sorumlu
+w|weltweit|dünya çapında
+w|vorhanden|mevcut
+n|die Halle|salon
+w|wiederum|öte yandan; yine
+w|zugleich|aynı zamanda
+w|extrem|aşırı
+w|längst|çoktan
+w|positiv|olumlu
+w|böse|kötü; kızgın
+w|diesmal|bu kez
+v|handeln|davranmak; ticaret yapmak
+w|notwendig|gerekli
+w|näher|daha yakın
+v|reichen|yetmek; uzatmak
+n|die Industrie|sanayi
+w|innen|içeride
+w|unglaublich|inanılmaz
+v|sich befinden|bulunmak
+n|das Finale|final
+w|herum|etrafında
+n|der Landkreis|ilçe
+v|treten|basmak; tekmelemek
+w|entgegen|-e karşı, aksine
+w|hauptsächlich|başlıca
+v|ansehen|bakmak, seyretmek
+w|international|uluslararası
+w|sicherlich|kesinlikle
+w|vollkommen|mükemmel; tamamen
+w|mitten|ortasında
+w|seitdem|o zamandan beri
+w|sowieso|zaten
+n|die Stiftung|vakıf
+w|vollständig|eksiksiz
+w|unabhängig|bağımsız
+v|erleben|yaşamak, tecrübe etmek
+v|schlagen|vurmak; yenmek
+w|entlang|boyunca
+v|kriegen|almak (günlük dil)
+w|teils|kısmen
+v|bewegen|hareket ettirmek
+v|dienen|hizmet etmek
+w|ursprünglich|aslında, başlangıçta
+n|der Wille|irade
+w|abgesehen von|-den başka
+w|komisch|tuhaf; komik
+w|mehrfach|defalarca
+v|steuern|yönlendirmek
+v|aussagen|ifade vermek
+w|geschickt|becerikli
+w|politisch|siyasi
+w|real|gerçek
+w|daneben|yanında; ayrıca
+w|dringend|acil
+v|hängen|asılı olmak; asmak
+w|morgens|sabahları
+w|nachts|geceleri
+n|der Nutzer|kullanıcı
+n|die Nutzung|kullanım
+w|tätig|faal, çalışan
+w|automatisch|otomatik
+w|gelassen|sakin
+w|momentan|şu an
+w|nahezu|neredeyse
+w|demnach|buna göre
+n|der Hersteller|üretici
+w|jemals|hiç, şimdiye dek
+w|kaputt|bozuk
+w|mittels|aracılığıyla
+w|unmittelbar|doğrudan, hemen
+v|fordern|talep etmek
+v|gestalten|biçimlendirmek, tasarlamak
+w|anscheinend|görünüşe göre
+n|die Kommunikation|iletişim
+v|scheinen|görünmek; parlamak
+w|spätestens|en geç
 """,
 "B2.1": """
 n|die Auswirkung|etki, sonuç
@@ -1852,6 +2002,336 @@ p|im Einklang mit|-ile uyumlu olarak
 w|andernfalls|aksi takdirde
 p|davon abgesehen|bununla birlikte
 w|somit|böylece
+v|stecken|sokmak; bulunmak
+w|voraus|önde, önceden
+v|achten auf|dikkat etmek
+w|ausgezeichnet|mükemmel
+w|einst|bir zamanlar
+n|die Integration|entegrasyon, uyum
+w|womit|neyle
+n|der Code|kod
+w|definitiv|kesinlikle
+v|drehen|döndürmek; çekmek (film)
+w|gratis|bedava
+w|witzig|esprili
+w|zumal|özellikle de
+w|anstatt|yerine
+w|aufmerksam|dikkatli
+w|ausgeschlossen|imkânsız
+w|begeistert|heyecanlı, hayran
+w|daraufhin|bunun üzerine
+w|erforderlich|gerekli
+w|ewig|sonsuz
+v|aufnehmen|kaydetmek; kabul etmek
+w|speziell|özel
+n|der Tipp|ipucu
+w|betroffen|etkilenmiş
+v|erfolgen|gerçekleşmek
+w|ernsthaft|ciddi
+n|der Hass|nefret
+w|sinnvoll|anlamlı, mantıklı
+w|sofern|-dığı sürece
+n|das Umfeld|çevre, ortam
+v|vergeben|affetmek; vermek
+w|einerseits … andererseits|bir yandan … öte yandan
+w|eventuell|belki
+w|generell|genel olarak
+v|gucken|bakmak (günlük)
+w|quasi|adeta
+w|scheinbar|görünüşte
+n|die Variante|varyant
+w|genügend|yeterli
+w|lieb|sevimli
+w|maximal|en fazla
+w|bezüglich|ile ilgili (+ Gen.)
+w|blöd|aptalca
+w|ordentlich|düzenli
+w|wach|uyanık
+v|greifen|tutmak, kavramak
+n|die Hölle|cehennem
+w|locker|gevşek, rahat
+w|sichtbar|görünür
+w|dankbar|minnettar
+w|dicht|sık; sızdırmaz
+w|doppelt|çift
+w|einzig|tek
+w|gezwungen|zorunda kalmış
+w|inklusive|dahil
+v|stammen aus|-den gelmek
+w|still|sessiz
+v|vorgehen|davranmak; ilerlemek
+w|zuständig|yetkili, sorumlu
+n|der Anbieter|sağlayıcı
+w|herzlich|içten
+w|spannend|heyecanlı
+v|treiben|sürmek; yapmak (spor)
+v|töten|öldürmek
+w|unterschiedlich|farklı
+w|beinahe|neredeyse
+v|fassen|tutmak; kavramak
+w|gebildet|eğitimli
+v|geraten in|-e düşmek
+w|jederzeit|her zaman
+n|das Netzwerk|ağ
+v|reagieren|tepki vermek
+n|der Schuss|atış
+v|spenden|bağış yapmak
+v|verbringen|geçirmek (zaman)
+v|beziehen|almak; taşınmak
+w|ferner|ayrıca
+v|gelangen|ulaşmak
+w|hinterher|sonradan
+n|der Rassismus|ırkçılık
+n|die Fraktion|meclis grubu
+w|freiwillig|gönüllü
+w|gewohnt|alışık
+n|die Kooperation|iş birliği
+w|lächerlich|gülünç
+w|nachher|sonra
+w|negativ|olumsuz
+v|richten|yöneltmek
+w|zufolge|-e göre
+w|endgültig|kesin, nihai
+w|fair|adil
+n|die Finanzierung|finansman
+w|gering|az
+v|umgehen mit|başa çıkmak
+w|wiederholt|tekrar tekrar
+w|angebracht|uygun
+w|mehrmals|birkaç kez
+v|spüren|hissetmek
+n|die Verbesserung|iyileştirme
+w|gerecht|adil
+w|heutzutage|günümüzde
+n|die Hinsicht|bakımdan
+w|insofern|bu bakımdan
+w|künftig|gelecekte
+n|die Option|seçenek
+w|rechtzeitig|zamanında
+w|verrückt|deli
+v|entfernen|kaldırmak
+w|gelegentlich|ara sıra
+w|typisch|tipik
+v|sich wenden an|başvurmak
+v|abgeben|teslim etmek
+n|die Erweiterung|genişleme
+w|nackt|çıplak
+w|peinlich|utanç verici
+v|verteidigen|savunmak
+n|das Überleben|hayatta kalma
+w|demnächst|yakında
+w|fein|ince; güzel
+w|heftig|şiddetli
+n|die Kampagne|kampanya
+w|korrekt|doğru
+w|oftmals|çoğu zaman
+v|präsentieren|sunmak
+v|siegen|galip gelmek
+w|sozial|sosyal
+w|technisch|teknik
+w|ausgerechnet|tam da
+v|landen|inmek
+v|profitieren|yararlanmak
+w|umsonst|boşuna; bedava
+w|einander|birbirini
+w|erstaunlich|şaşırtıcı
+n|die Motivation|motivasyon
+n|der Profi|profesyonel
+n|der Beschluss|karar
+v|brechen|kırmak
+v|ehren|onurlandırmak
+v|erlangen|elde etmek
+w|gefangen|esir
+w|kürzlich|geçenlerde
+w|massiv|büyük; masif
+w|rasch|hızlı
+w|spontan|kendiliğinden
+v|verraten|ele vermek
+w|verständlich|anlaşılır
+w|angewiesen auf|-e muhtaç
+w|bedingt|şartlı; kısmen
+w|beschränkt|sınırlı
+w|hübsch|güzel, hoş
+w|jenseits|ötesinde
+v|räumen|boşaltmak, toplamak
+w|seltsam|garip
+w|versteckt|gizli
+n|der Kumpel|kanka
+n|der Tourismus|turizm
+w|unbekannt|bilinmeyen
+n|die Vielfalt|çeşitlilik
+v|zerstören|yok etmek
+w|angenehm|hoş
+v|beachten|dikkate almak
+v|belegen|kanıtlamak; almak (kurs)
+w|daheim|evde
+w|digital|dijital
+w|einig|hemfikir
+v|hinterlassen|geride bırakmak
+v|kontrollieren|kontrol etmek
+w|quer|çapraz
+w|samt|ile birlikte
+w|vertraut|tanıdık
+v|wetten|bahse girmek
+w|derart|öyle, o derece
+w|einverstanden|razı
+v|erzielen|elde etmek
+w|fern|uzak
+v|klagen|şikâyet etmek; dava açmak
+w|konkret|somut
+w|nebenbei|bu arada; yan iş olarak
+w|wunderschön|çok güzel
+w|blind|kör
+w|dauerhaft|kalıcı
+w|durchschnittlich|ortalama
+v|heiraten|evlenmek
+w|historisch|tarihî
+w|langfristig|uzun vadeli
+v|mitmachen|katılmak
+w|passend|uygun
+w|schief|eğri
+n|die Überwachung|gözetim
+n|die Altstadt|eski şehir
+w|besorgt|endişeli
+n|die Erhöhung|artış
+w|hilfreich|yararlı
+w|höchst|son derece
+w|soeben|az önce
+n|die Staatsanwaltschaft|savcılık
+v|weichen|çekilmek, yol vermek
+n|die Betreuung|bakım, danışmanlık
+w|glatt|düz, kaygan
+w|jahrelang|yıllarca
+n|der Modus|mod
+w|schlicht|sade
+n|die Vielzahl|çokluk
+w|vorerst|şimdilik
+w|zustande kommen|gerçekleşmek
+n|der Betreiber|işletmeci
+n|das Detail|ayrıntı
+n|das Fazit|sonuç
+v|kennenlernen|tanışmak
+w|schuldig|suçlu; borçlu
+w|sozusagen|tabiri caizse
+v|verstecken|saklamak
+w|vorhin|az önce
+w|zugunsten|lehine
+n|die Dokumentation|belgeleme; belgesel
+n|die Einschätzung|değerlendirme
+w|exakt|tam
+w|finanziell|mali
+w|infolge|sonucunda (+ Gen.)
+n|der Jahrgang|yaş grubu; dönem
+w|schrecklich|korkunç
+w|seither|o zamandan beri
+w|unklar|belirsiz
+w|unterhalb|altında
+w|wirtschaftlich|ekonomik
+v|aufbauen|kurmak
+v|bedienen|hizmet etmek; kullanmak
+w|dazwischen|arasında
+n|die Erfüllung|yerine getirme
+v|erwähnen|bahsetmek
+v|klingen|kulağa gelmek
+w|neulich|geçenlerde
+v|opfern|feda etmek
+v|umgeben|çevrelemek
+w|ungewöhnlich|olağandışı
+n|die Zerstörung|yıkım
+w|abseits|uzağında
+v|befreien|kurtarmak
+v|betreten|girmek (mekâna)
+w|dauernd|sürekli
+n|der Entwickler|geliştirici
+w|erstens|birincisi
+w|konsequent|tutarlı
+w|kräftig|güçlü
+w|lokal|yerel
+v|wandern|yürüyüş yapmak
+w|einzeln|tek tek
+w|enorm|muazzam
+w|etliche|epeyce
+w|kurzfristig|kısa vadeli
+w|mitunter|zaman zaman
+w|mächtig|güçlü
+w|woanders|başka yerde
+n|der Zugriff|erişim
+w|zweitens|ikincisi
+n|die Bearbeitung|işleme
+v|gebrauchen|kullanmak
+w|stabil|sağlam
+w|vorwiegend|ağırlıklı olarak
+w|wahnsinnig|çılgınca
+n|die Weiterbildung|ileri eğitim
+v|bekämpfen|mücadele etmek
+n|die Berichterstattung|haber yapma
+v|blicken|bakmak
+v|erheben|yükseltmek; toplamak (vergi)
+w|erreichbar|ulaşılabilir
+w|unendlich|sonsuz
+w|unnötig|gereksiz
+v|vorliegen|mevcut olmak
+n|die Aufstellung|liste; diziliş
+v|ausprobieren|denemek
+v|benötigen|ihtiyaç duymak
+w|binnen|içinde (süre)
+w|entschlossen|kararlı
+n|die Erhebung|anket; tahsil
+w|gewöhnt|alışık
+w|herrlich|harika
+w|pleite|beş parasız
+w|unsicher|emin olmayan
+n|das Vorfeld|ön aşama
+n|die Allianz|ittifak
+w|gemein|kaba, adi
+w|genial|dâhice
+n|der Konzern|şirketler grubu
+n|das Medium|araç; medya
+n|die Route|güzergâh
+w|schlau|zeki
+w|traditionell|geleneksel
+w|treu|sadık
+v|abwarten|beklemek
+n|der Einzelfall|münferit vaka
+n|die Episode|bölüm
+w|erfreut|memnun
+n|der Genuss|zevk
+w|heimlich|gizlice
+n|die Präsentation|sunum
+n|der Rechner|bilgisayar
+v|streichen|boyamak; silmek
+w|untereinander|kendi aralarında
+v|sich wehren|kendini savunmak
+w|wissenschaftlich|bilimsel
+v|anlegen|yatırım yapmak; kurmak
+w|denkbar|düşünülebilir
+w|furchtbar|korkunç
+w|geradezu|adeta
+w|gesetzlich|yasal
+w|gewöhnlich|olağan
+w|hervorragend|mükemmel
+w|illegal|yasa dışı
+w|komplex|karmaşık
+w|nirgends|hiçbir yerde
+v|schieben|itmek
+w|südlich|güneyde
+w|zeitweise|zaman zaman
+n|die Berücksichtigung|dikkate alma
+n|der Erhalt|alım; koruma
+v|eröffnen|açmak (resmî)
+n|die Fotografie|fotoğrafçılık
+w|friedlich|barışçıl
+w|lebendig|canlı
+w|nördlich|kuzeyde
+n|die Orientierung|yönelim
+w|rechtlich|hukuki
+w|vernünftig|makul
+v|aufhalten|durdurmak
+n|die Datenbank|veritabanı
+n|der Datenschutz|veri koruma
+n|der Einstieg|giriş, başlangıç
+w|erwachsen|yetişkin
+w|konstant|sabit
 """,
 "B2.2": """
 n|der Einfluss|etki, nüfuz
@@ -2027,6 +2507,374 @@ p|angesichts der Tatsache, dass|-diği göz önüne alınırsa
 w|daher|dolayısıyla
 p|auf lange Sicht|uzun vadede
 p|mit dem Ziel|-mek amacıyla
+w|oberhalb|üstünde
+n|die Pressemitteilung|basın bülteni
+v|reiten|ata binmek
+v|sinken|düşmek, batmak
+w|unangenehm|nahoş
+v|verschaffen|sağlamak
+w|verzweifelt|umutsuz
+w|vorwärts|ileri
+n|der Asylbewerber|sığınmacı
+n|die Ausrichtung|yönelim
+w|betrunken|sarhoş
+n|die Bezahlung|ödeme
+n|die Digitalisierung|dijitalleşme
+v|finanzieren|finanse etmek
+w|flach|düz
+w|gewiss|kesin
+w|grob|kaba
+v|senken|düşürmek
+v|zulassen|izin vermek
+v|antreten|başlamak (göreve); yarışmak
+n|der Arbeitsmarkt|iş piyasası
+v|brennen|yanmak
+w|circa|yaklaşık
+n|die Elite|seçkinler
+v|erwerben|edinmek
+w|fröhlich|neşeli
+w|logisch|mantıklı
+n|die Migration|göç
+n|die Partnerschaft|ortaklık
+w|vorübergehend|geçici
+w|weitaus|çok daha
+v|zielen auf|hedeflemek
+v|besorgen|temin etmek
+v|fliehen|kaçmak
+w|merkwürdig|tuhaf
+n|der Notfall|acil durum
+w|schriftlich|yazılı
+v|verdanken|borçlu olmak (minnet)
+w|zeitlich|zamansal
+v|anhören|dinlemek
+w|annähernd|yaklaşık
+w|anwesend|mevcut, hazır
+v|aufstellen|dikmek; kurmak
+n|die Auswertung|değerlendirme
+v|begreifen|kavramak
+w|beruflich|mesleki
+v|buchen|rezervasyon yapmak
+v|erben|miras almak
+w|geistig|zihinsel
+n|der Mindestlohn|asgari ücret
+v|versorgen|bakmak, sağlamak
+v|verursachen|sebep olmak
+v|ausdrücken|ifade etmek
+v|errichten|inşa etmek
+w|fähig|yetenekli
+w|gänzlich|tamamen
+w|primär|öncelikle
+n|die Sanierung|yenileme
+w|stetig|sürekli
+v|stürzen|düşmek
+w|unwahrscheinlich|olası değil
+n|das Vorjahr|önceki yıl
+v|ausmachen|kapatmak; oluşturmak
+w|effektiv|etkili
+w|individuell|bireysel
+w|legal|yasal
+w|mobil|mobil
+w|unglücklich|mutsuz
+w|verlegen|mahcup
+w|weich|yumuşak
+w|zulässig|izin verilen
+w|zwingend|zorunlu
+w|zwischendurch|arada bir
+w|allmählich|yavaş yavaş
+w|berühmt|ünlü
+v|bremsen|fren yapmak
+v|demonstrieren|gösteri yapmak
+w|identisch|aynı
+w|riesig|devasa
+w|sinnlos|anlamsız
+w|sorgfältig|özenli
+v|strafen|cezalandırmak
+v|werben|reklam yapmak
+n|die Zulassung|ruhsat; kabul
+n|die Aktivität|faaliyet
+w|aufrecht|dik
+v|sich begeben|gitmek
+v|beherrschen|hâkim olmak
+w|durcheinander|karmakarışık
+w|indirekt|dolaylı
+w|körperlich|bedensel
+v|locken|cezbetmek
+w|prinzipiell|prensipte
+n|der Riss|çatlak
+w|umgehend|derhal
+v|verletzen|yaralamak
+n|die Zielgruppe|hedef kitle
+w|zugrunde liegen|temelinde yatmak
+n|der Abstieg|iniş, düşüş
+n|der Anleger|yatırımcı
+n|die Bekämpfung|mücadele
+v|besprechen|görüşmek
+w|brav|uslu
+n|die Formulierung|ifade
+w|hässlich|çirkin
+v|jagen|avlamak
+n|die Kreativität|yaratıcılık
+v|lauten|olmak (metin)
+w|sportlich|sportif
+w|tödlich|ölümcül
+w|unheimlich|ürkütücü; aşırı
+w|verkehrt|ters
+n|die Diskriminierung|ayrımcılık
+v|einnehmen|almak (ilaç); kazanmak
+w|männlich|erkek
+w|sanft|yumuşak
+n|die Ankündigung|duyuru
+n|der Auftakt|başlangıç
+v|ausfallen|iptal olmak
+v|beten|dua etmek
+w|brutal|vahşi
+v|sich eignen|uygun olmak
+w|frühzeitig|erkenden
+n|die Kriminalität|suç oranı
+n|das Potenzial|potansiyel
+w|problematisch|sorunlu
+n|die Recherche|araştırma
+w|voraussichtlich|muhtemelen
+v|vornehmen|yapmak; niyet etmek
+w|zukünftig|gelecekteki
+w|anonym|anonim
+v|ausführen|yürütmek
+n|das Bedürfnis|ihtiyaç
+v|entgehen|kaçmak, gözden kaçmak
+n|die Innovation|yenilik
+w|nebenan|yan tarafta
+v|spazieren gehen|gezinti yapmak
+w|tagsüber|gündüz
+v|benehmen (sich)|davranmak
+v|entnehmen|çıkarmak, anlamak
+w|glücklicherweise|neyse ki
+n|die Mobilität|hareketlilik
+n|die Präsenz|varlık
+v|tauchen|dalmak
+v|verbrennen|yakmak
+v|verleihen|ödünç vermek; ödül vermek
+n|der Verlierer|kaybeden
+v|verweisen auf|işaret etmek
+v|wecken|uyandırmak
+v|aussuchen|seçmek
+w|einsam|yalnız
+v|eintreten|girmek; meydana gelmek
+w|gewaltig|muazzam
+n|die Investition|yatırım
+v|sich orientieren|yönelmek
+v|sperren|kapatmak, bloke etmek
+w|staatlich|devlete ait
+n|die Uhrzeit|saat
+n|die Umstellung|geçiş, değişiklik
+v|zusehen|seyretmek
+v|bearbeiten|işlemek, düzenlemek
+v|gefährden|tehlikeye atmak
+w|gepflegt|bakımlı
+w|hintereinander|arka arkaya
+n|der Klimaschutz|iklim koruma
+n|die Privatsphäre|mahremiyet
+w|realistisch|gerçekçi
+n|die Schaffung|oluşturma
+w|skeptisch|şüpheci
+w|vergeblich|boşuna
+w|weiblich|kadın
+w|wertvoll|değerli
+w|westlich|batıda
+w|wirksam|etkili
+v|überfallen|saldırmak, soymak
+w|absurd|saçma
+n|die Akzeptanz|kabul
+v|besetzen|işgal etmek; doldurmak
+v|drängen|sıkıştırmak, zorlamak
+v|sich engagieren|kendini adamak
+w|fraglich|şüpheli
+w|rückwärts|geriye
+n|die Tragödie|trajedi
+v|abstimmen|oylamak
+n|der Ausschluss|dışlama
+w|drüben|karşıda
+w|durchgehend|kesintisiz
+v|entkommen|kaçmak
+v|erlassen|çıkarmak (yasa); bağışlamak
+v|ernähren|beslemek
+v|erschaffen|yaratmak
+w|menschlich|insani
+w|psychisch|ruhsal
+v|realisieren|gerçekleştirmek
+w|vergangen|geçmiş
+w|fällig|vadesi gelmiş
+w|gegenwärtig|şimdiki
+w|heilig|kutsal
+w|klassisch|klasik
+v|korrigieren|düzeltmek
+v|lenken|yönlendirmek
+w|sympathisch|sempatik
+w|unerwartet|beklenmedik
+w|ausnahmsweise|bir defalık
+n|die Ermittlung|soruşturma
+v|gönnen|layık görmek
+w|intern|iç
+w|künstlich|yapay
+v|leuchten|parlamak
+w|lose|gevşek
+w|naiv|saf
+n|der Rechtsstaat|hukuk devleti
+v|ruhen|dinlenmek
+w|stundenlang|saatlerce
+w|ungern|isteksizce
+w|unschuldig|masum
+v|unterliegen|tabi olmak; yenilmek
+w|vereinzelt|tek tük
+v|ahnen|sezmek
+v|angreifen|saldırmak
+v|erobern|fethetmek
+w|geheim|gizli
+w|harmlos|zararsız
+w|intelligent|zeki
+n|die Lebensqualität|yaşam kalitesi
+v|loswerden|kurtulmak
+w|nebeneinander|yan yana
+n|das Selbstbewusstsein|özgüven
+v|unterrichten|ders vermek
+v|vernichten|yok etmek
+w|verschlossen|kapalı; içine kapanık
+n|das Weltbild|dünya görüşü
+w|wörtlich|kelimesi kelimesine
+w|östlich|doğuda
+n|die Abgrenzung|ayrım
+v|sich aufregen|sinirlenmek
+v|beleidigen|hakaret etmek
+v|bestreiten|inkâr etmek; karşılamak
+v|blockieren|engellemek
+v|ergreifen|yakalamak; almak (önlem)
+v|hinzufügen|eklemek
+w|liebevoll|sevgi dolu
+w|mies|berbat
+v|mischen|karıştırmak
+w|nüchtern|ayık; nesnel
+w|optisch|görsel
+v|strahlen|ışıldamak
+n|die Thematik|konu
+n|die Unterscheidung|ayrım
+n|der Unterstützer|destekçi
+v|abhalten|düzenlemek; engellemek
+w|anderswo|başka yerde
+v|austauschen|değiş tokuş etmek
+w|ausverkauft|tükenmiş
+w|beiseite|bir kenara
+w|dramatisch|dramatik
+w|erwünscht|istenen
+w|gesamt|toplam
+w|neutral|tarafsız
+w|platt|düz; şaşkın
+v|stützen|desteklemek
+w|widerlich|iğrenç
+n|die Attacke|saldırı
+n|der Austritt|çıkış, ayrılma
+n|die Befragung|sorgu, anket
+w|beliebig|herhangi
+w|eigen|kendi
+n|das Feuerwerk|havai fişek
+v|garantieren|garanti etmek
+w|gemischt|karışık
+n|die Publikation|yayın
+w|schräg|eğik
+n|der Terrorismus|terörizm
+w|unzufrieden|memnuniyetsiz
+v|verarbeiten|işlemek
+v|abschalten|kapatmak
+n|die Auszeit|mola
+w|diesbezüglich|bununla ilgili
+n|die Erstellung|oluşturma
+n|die Fertigstellung|tamamlama
+v|herrschen|hüküm sürmek
+w|neuerdings|son zamanlarda
+w|radikal|radikal
+n|die Relevanz|önem
+w|vorzeitig|erken
+v|absetzen|indirmek; görevden almak
+w|allerlei|türlü türlü
+v|angehören|ait olmak
+v|anhalten|durmak
+n|die Auslegung|yorum
+v|ausrichten|iletmek; düzenlemek
+v|belasten|yük olmak
+v|einsehen|kabul etmek, anlamak
+v|flüchten|kaçmak
+n|der Lebensraum|yaşam alanı
+w|verwickelt|karışık; bulaşmış
+v|verzeichnen|kaydetmek
+n|die Zugehörigkeit|aidiyet
+v|entfallen|düşmek, iptal olmak
+w|gleichfalls|aynı şekilde
+n|die Inspiration|ilham
+n|die Leistungsfähigkeit|verimlilik
+v|ablegen|çıkarmak; vermek (sınav)
+v|absolvieren|bitirmek
+n|der Anwohner|bölge sakini
+v|erfinden|icat etmek
+w|frech|arsız
+n|die Immobilie|gayrimenkul
+n|die Rendite|getiri
+w|schlank|ince
+w|steil|dik
+n|der Stellenwert|önem
+v|veranstalten|düzenlemek
+w|allenfalls|olsa olsa
+v|ausbauen|genişletmek
+v|beibehalten|korumak
+w|bescheiden|mütevazı
+w|demokratisch|demokratik
+w|erfolglos|başarısız
+n|die Lebensweise|yaşam tarzı
+w|nacheinander|birbiri ardına
+v|reinigen|temizlemek
+v|stehlen|çalmak
+w|transparent|şeffaf
+v|verwirklichen|gerçekleştirmek
+w|zweifellos|şüphesiz
+n|der Ansprechpartner|irtibat kişisi
+v|benennen|adlandırmak
+v|bestrafen|cezalandırmak
+n|der Entschluss|karar
+v|erteilen|vermek (izin, ders)
+w|grausam|zalim
+w|mühsam|zahmetli
+n|die Registrierung|kayıt
+w|unverzüglich|gecikmeksizin
+n|die Vorgehensweise|yöntem
+v|abschaffen|kaldırmak
+n|das Darlehen|kredi, borç
+n|die Insolvenz|iflas
+v|nachfragen|sormak
+v|sich nähern|yaklaşmak
+w|selbständig|bağımsız
+w|unerträglich|dayanılmaz
+n|der Zusammenschluss|birleşme
+v|ausreichen|yetmek
+v|ausscheiden|elenmek; ayrılmak
+n|die Ausschreibung|ihale; ilan
+n|der Ausstieg|çıkış
+w|auswendig|ezbere
+n|die Gleichberechtigung|eşit haklar
+w|moralisch|ahlaki
+w|schmerzhaft|acı verici
+w|ungerecht|haksız
+w|verdächtig|şüpheli
+v|vereinbaren|kararlaştırmak
+w|versehentlich|yanlışlıkla
+v|zittern|titremek
+w|abwechselnd|dönüşümlü
+n|der Auftraggeber|işveren, müşteri
+v|beschleunigen|hızlandırmak
+v|besiegen|yenmek
+v|sich erholen|dinlenmek, iyileşmek
+n|die Festplatte|sabit disk
+v|genügen|yetmek
+n|die Intensität|yoğunluk
+w|nutzlos|işe yaramaz
+w|optimistisch|iyimser
+w|romantisch|romantik
 """,
 "C1.1": """
 n|die Annahme|varsayım; kabul
@@ -6441,7 +7289,855 @@ DE_EN = {'der Mann': 'man',
  'larmoyant': 'maudlin',
  'obsequiös': 'obsequious',
  'sakrosankt': 'sacrosanct',
- 'süffisant': 'smug'}
+ 'süffisant': 'smug',
+ 'dabei': 'in doing so, at the same time',
+ 'dazu': 'in addition, for it',
+ 'sowie': 'as well as',
+ 'dafür': 'for it, in return',
+ 'davon': 'of it, from it',
+ 'darauf': 'on it, thereupon',
+ 'zwar … aber': 'admittedly … but',
+ 'jemand': 'someone',
+ 'darüber': 'about it, above it',
+ 'eben': 'just; simply',
+ 'beide': 'both',
+ 'daran': 'on it, about it',
+ 'direkt': 'direct(ly)',
+ 'anders': 'different(ly)',
+ 'ebenfalls': 'likewise, also',
+ 'eher': 'rather; sooner',
+ 'nachdem': 'after (conjunction)',
+ 'egal': "no matter, doesn't matter",
+ 'bisher': 'so far',
+ 'mehrere': 'several',
+ 'niemand': 'nobody',
+ 'zunächst': 'first of all',
+ 'darum': "that's why",
+ 'bevor': 'before (conjunction)',
+ 'wert': 'worth',
+ 'innerhalb': 'within',
+ 'völlig': 'completely',
+ 'zudem': 'moreover',
+ 'irgendwie': 'somehow',
+ 'vorbei': 'over, past',
+ 'dagegen': 'against it; on the other hand',
+ 'wobei': 'whereby, while',
+ 'der Einsatz': 'use; deployment; effort',
+ 'falls': 'in case, if',
+ 'hinaus': 'out',
+ 'vorher': 'before, beforehand',
+ 'häufig': 'frequent(ly)',
+ 'manche': 'some',
+ 'unbedingt': 'absolutely, by all means',
+ 'unterwegs': 'on the way',
+ 'wenigstens': 'at least',
+ 'zuvor': 'previously',
+ 'indem': 'by (doing)',
+ 'entfernt': 'distant, away',
+ 'durchaus': 'absolutely, quite',
+ 'inzwischen': 'meanwhile, by now',
+ 'komplett': 'complete(ly)',
+ 'niemals': 'never',
+ 'erneut': 'again, anew',
+ 'total': 'totally',
+ 'früh': 'early',
+ 'nahe': 'near',
+ 'nennen': 'to name, to call',
+ 'erfahren': 'to learn of; to experience',
+ 'aktiv': 'active',
+ 'hart': 'hard',
+ 'offenbar': 'apparently',
+ 'absolut': 'absolutely',
+ 'immerhin': 'after all, at least',
+ 'solange': 'as long as',
+ 'ständig': 'constantly',
+ 'persönlich': 'personal(ly)',
+ 'bieten': 'to offer',
+ 'spät': 'late',
+ 'sterben': 'to die',
+ 'stets': 'always',
+ 'die Version': 'version',
+ 'irgendwo': 'somewhere',
+ 'froh': 'glad',
+ 'leisten': 'to achieve; to afford',
+ 'aussehen': 'to look (appearance)',
+ 'miteinander': 'with each other',
+ 'schade': 'a pity',
+ 'schlimm': 'bad',
+ 'verantwortlich': 'responsible',
+ 'weltweit': 'worldwide',
+ 'vorhanden': 'available, existing',
+ 'die Halle': 'hall',
+ 'wiederum': 'in turn; again',
+ 'zugleich': 'at the same time',
+ 'extrem': 'extreme(ly)',
+ 'längst': 'long since',
+ 'positiv': 'positive',
+ 'böse': 'evil; angry',
+ 'diesmal': 'this time',
+ 'handeln': 'to act; to trade',
+ 'notwendig': 'necessary',
+ 'näher': 'closer',
+ 'reichen': 'to be enough; to pass',
+ 'die Industrie': 'industry',
+ 'innen': 'inside',
+ 'unglaublich': 'unbelievable',
+ 'sich befinden': 'to be located',
+ 'das Finale': 'final',
+ 'herum': 'around',
+ 'der Landkreis': 'district',
+ 'treten': 'to step; to kick',
+ 'entgegen': 'contrary to, towards',
+ 'hauptsächlich': 'mainly',
+ 'ansehen': 'to look at, to watch',
+ 'international': 'international',
+ 'sicherlich': 'certainly',
+ 'vollkommen': 'perfect; completely',
+ 'mitten': 'in the middle',
+ 'seitdem': 'since then',
+ 'sowieso': 'anyway',
+ 'die Stiftung': 'foundation',
+ 'vollständig': 'complete',
+ 'unabhängig': 'independent',
+ 'erleben': 'to experience',
+ 'schlagen': 'to hit; to beat',
+ 'entlang': 'along',
+ 'kriegen': 'to get (colloquial)',
+ 'teils': 'partly',
+ 'bewegen': 'to move',
+ 'dienen': 'to serve',
+ 'ursprünglich': 'originally',
+ 'der Wille': 'will',
+ 'abgesehen von': 'apart from',
+ 'komisch': 'strange; funny',
+ 'mehrfach': 'several times',
+ 'steuern': 'to steer, to control',
+ 'aussagen': 'to testify, to state',
+ 'geschickt': 'skilful',
+ 'politisch': 'political',
+ 'real': 'real',
+ 'daneben': 'next to it; besides',
+ 'dringend': 'urgent(ly)',
+ 'hängen': 'to hang',
+ 'morgens': 'in the morning',
+ 'nachts': 'at night',
+ 'der Nutzer': 'user',
+ 'die Nutzung': 'use',
+ 'tätig': 'active, working',
+ 'automatisch': 'automatic',
+ 'gelassen': 'calm, relaxed',
+ 'momentan': 'at the moment',
+ 'nahezu': 'almost',
+ 'demnach': 'accordingly',
+ 'der Hersteller': 'manufacturer',
+ 'jemals': 'ever',
+ 'kaputt': 'broken',
+ 'mittels': 'by means of',
+ 'unmittelbar': 'immediate(ly)',
+ 'fordern': 'to demand',
+ 'gestalten': 'to shape, to design',
+ 'anscheinend': 'apparently',
+ 'die Kommunikation': 'communication',
+ 'scheinen': 'to seem; to shine',
+ 'spätestens': 'at the latest',
+ 'stecken': 'to put in; to be stuck',
+ 'voraus': 'ahead',
+ 'achten auf': 'to pay attention to',
+ 'ausgezeichnet': 'excellent',
+ 'einst': 'once',
+ 'die Integration': 'integration',
+ 'womit': 'with what',
+ 'der Code': 'code',
+ 'definitiv': 'definitely',
+ 'drehen': 'to turn; to shoot (film)',
+ 'gratis': 'free of charge',
+ 'witzig': 'funny',
+ 'zumal': 'especially since',
+ 'anstatt': 'instead of',
+ 'aufmerksam': 'attentive',
+ 'ausgeschlossen': 'out of the question',
+ 'begeistert': 'enthusiastic',
+ 'daraufhin': 'thereupon',
+ 'erforderlich': 'required',
+ 'ewig': 'eternal',
+ 'aufnehmen': 'to record; to take in',
+ 'speziell': 'special',
+ 'der Tipp': 'tip',
+ 'betroffen': 'affected',
+ 'erfolgen': 'to take place',
+ 'ernsthaft': 'serious(ly)',
+ 'der Hass': 'hatred',
+ 'sinnvoll': 'sensible',
+ 'sofern': 'provided that',
+ 'das Umfeld': 'environment, surroundings',
+ 'vergeben': 'to forgive; to award',
+ 'einerseits … andererseits': 'on the one hand … on the other',
+ 'eventuell': 'possibly',
+ 'generell': 'generally',
+ 'gucken': 'to look (colloquial)',
+ 'quasi': 'virtually, so to speak',
+ 'scheinbar': 'seemingly',
+ 'die Variante': 'variant',
+ 'genügend': 'sufficient',
+ 'lieb': 'dear, kind',
+ 'maximal': 'maximum',
+ 'bezüglich': 'regarding',
+ 'blöd': 'stupid',
+ 'ordentlich': 'tidy, proper',
+ 'wach': 'awake',
+ 'greifen': 'to grab',
+ 'die Hölle': 'hell',
+ 'locker': 'loose, relaxed',
+ 'sichtbar': 'visible',
+ 'dankbar': 'grateful',
+ 'dicht': 'dense; tight',
+ 'doppelt': 'double',
+ 'einzig': 'only, sole',
+ 'gezwungen': 'forced',
+ 'inklusive': 'including',
+ 'stammen aus': 'to come from',
+ 'still': 'quiet',
+ 'vorgehen': 'to proceed',
+ 'zuständig': 'responsible, in charge',
+ 'der Anbieter': 'provider',
+ 'herzlich': 'warm(ly)',
+ 'spannend': 'exciting',
+ 'treiben': 'to drive; to do (sport)',
+ 'töten': 'to kill',
+ 'unterschiedlich': 'different',
+ 'beinahe': 'almost',
+ 'fassen': 'to grasp',
+ 'gebildet': 'educated',
+ 'geraten in': 'to get into',
+ 'jederzeit': 'at any time',
+ 'das Netzwerk': 'network',
+ 'reagieren': 'to react',
+ 'der Schuss': 'shot',
+ 'spenden': 'to donate',
+ 'verbringen': 'to spend (time)',
+ 'beziehen': 'to obtain; to move into',
+ 'ferner': 'furthermore',
+ 'gelangen': 'to reach',
+ 'hinterher': 'afterwards',
+ 'der Rassismus': 'racism',
+ 'die Fraktion': 'parliamentary group',
+ 'freiwillig': 'voluntary',
+ 'gewohnt': 'used to',
+ 'die Kooperation': 'cooperation',
+ 'lächerlich': 'ridiculous',
+ 'nachher': 'afterwards',
+ 'negativ': 'negative',
+ 'richten': 'to direct',
+ 'zufolge': 'according to',
+ 'endgültig': 'final(ly)',
+ 'fair': 'fair',
+ 'die Finanzierung': 'financing',
+ 'gering': 'low, small',
+ 'umgehen mit': 'to deal with',
+ 'wiederholt': 'repeatedly',
+ 'angebracht': 'appropriate',
+ 'mehrmals': 'several times',
+ 'spüren': 'to feel, to sense',
+ 'die Verbesserung': 'improvement',
+ 'gerecht': 'just, fair',
+ 'heutzutage': 'nowadays',
+ 'die Hinsicht': 'respect, regard',
+ 'insofern': 'in this respect',
+ 'künftig': 'in future',
+ 'die Option': 'option',
+ 'rechtzeitig': 'in time',
+ 'verrückt': 'crazy',
+ 'entfernen': 'to remove',
+ 'gelegentlich': 'occasionally',
+ 'typisch': 'typical',
+ 'sich wenden an': 'to turn to',
+ 'abgeben': 'to hand in',
+ 'die Erweiterung': 'extension',
+ 'nackt': 'naked',
+ 'peinlich': 'embarrassing',
+ 'verteidigen': 'to defend',
+ 'das Überleben': 'survival',
+ 'demnächst': 'soon',
+ 'fein': 'fine',
+ 'heftig': 'violent, heavy',
+ 'die Kampagne': 'campaign',
+ 'korrekt': 'correct',
+ 'oftmals': 'often',
+ 'präsentieren': 'to present',
+ 'siegen': 'to win',
+ 'sozial': 'social',
+ 'technisch': 'technical',
+ 'ausgerechnet': 'of all things',
+ 'landen': 'to land',
+ 'profitieren': 'to benefit',
+ 'umsonst': 'in vain; free',
+ 'einander': 'each other',
+ 'erstaunlich': 'astonishing',
+ 'die Motivation': 'motivation',
+ 'der Profi': 'professional',
+ 'der Beschluss': 'resolution, decision',
+ 'brechen': 'to break',
+ 'ehren': 'to honour',
+ 'erlangen': 'to attain',
+ 'gefangen': 'captured',
+ 'kürzlich': 'recently',
+ 'massiv': 'massive',
+ 'rasch': 'quick',
+ 'spontan': 'spontaneous',
+ 'verraten': 'to betray, to reveal',
+ 'verständlich': 'understandable',
+ 'angewiesen auf': 'dependent on',
+ 'bedingt': 'conditional; partly',
+ 'beschränkt': 'limited',
+ 'hübsch': 'pretty',
+ 'jenseits': 'beyond',
+ 'räumen': 'to clear',
+ 'seltsam': 'strange',
+ 'versteckt': 'hidden',
+ 'der Kumpel': 'mate, buddy',
+ 'der Tourismus': 'tourism',
+ 'unbekannt': 'unknown',
+ 'die Vielfalt': 'diversity',
+ 'zerstören': 'to destroy',
+ 'angenehm': 'pleasant',
+ 'beachten': 'to observe, to heed',
+ 'belegen': 'to prove; to take (course)',
+ 'daheim': 'at home',
+ 'digital': 'digital',
+ 'einig': 'in agreement',
+ 'hinterlassen': 'to leave behind',
+ 'kontrollieren': 'to check',
+ 'quer': 'across',
+ 'samt': 'together with',
+ 'vertraut': 'familiar',
+ 'wetten': 'to bet',
+ 'derart': 'so, such',
+ 'einverstanden': 'agreed',
+ 'erzielen': 'to achieve',
+ 'fern': 'far',
+ 'klagen': 'to complain; to sue',
+ 'konkret': 'concrete',
+ 'nebenbei': 'incidentally; on the side',
+ 'wunderschön': 'beautiful',
+ 'blind': 'blind',
+ 'dauerhaft': 'permanent',
+ 'durchschnittlich': 'average',
+ 'heiraten': 'to marry',
+ 'historisch': 'historical',
+ 'langfristig': 'long-term',
+ 'mitmachen': 'to join in',
+ 'passend': 'suitable',
+ 'schief': 'crooked',
+ 'die Überwachung': 'surveillance',
+ 'die Altstadt': 'old town',
+ 'besorgt': 'worried',
+ 'die Erhöhung': 'increase',
+ 'hilfreich': 'helpful',
+ 'höchst': 'highly',
+ 'soeben': 'just now',
+ 'die Staatsanwaltschaft': "public prosecutor's office",
+ 'weichen': 'to give way',
+ 'die Betreuung': 'care, supervision',
+ 'glatt': 'smooth',
+ 'jahrelang': 'for years',
+ 'der Modus': 'mode',
+ 'schlicht': 'plain, simple',
+ 'die Vielzahl': 'multitude',
+ 'vorerst': 'for the time being',
+ 'zustande kommen': 'to come about',
+ 'der Betreiber': 'operator',
+ 'das Detail': 'detail',
+ 'das Fazit': 'conclusion',
+ 'kennenlernen': 'to get to know',
+ 'schuldig': 'guilty; owing',
+ 'sozusagen': 'so to speak',
+ 'verstecken': 'to hide',
+ 'vorhin': 'a moment ago',
+ 'zugunsten': 'in favour of',
+ 'die Dokumentation': 'documentation',
+ 'die Einschätzung': 'assessment',
+ 'exakt': 'exact',
+ 'finanziell': 'financial',
+ 'infolge': 'as a result of',
+ 'der Jahrgang': 'year, vintage',
+ 'schrecklich': 'terrible',
+ 'seither': 'since then',
+ 'unklar': 'unclear',
+ 'unterhalb': 'below',
+ 'wirtschaftlich': 'economic',
+ 'aufbauen': 'to build up',
+ 'bedienen': 'to serve; to operate',
+ 'dazwischen': 'in between',
+ 'die Erfüllung': 'fulfilment',
+ 'erwähnen': 'to mention',
+ 'klingen': 'to sound',
+ 'neulich': 'recently',
+ 'opfern': 'to sacrifice',
+ 'umgeben': 'to surround',
+ 'ungewöhnlich': 'unusual',
+ 'die Zerstörung': 'destruction',
+ 'abseits': 'away from',
+ 'befreien': 'to free',
+ 'betreten': 'to enter',
+ 'dauernd': 'constantly',
+ 'der Entwickler': 'developer',
+ 'erstens': 'firstly',
+ 'konsequent': 'consistent',
+ 'kräftig': 'strong',
+ 'lokal': 'local',
+ 'wandern': 'to hike',
+ 'einzeln': 'individual(ly)',
+ 'enorm': 'enormous',
+ 'etliche': 'quite a few',
+ 'kurzfristig': 'short-term',
+ 'mitunter': 'at times',
+ 'mächtig': 'powerful',
+ 'woanders': 'elsewhere',
+ 'der Zugriff': 'access',
+ 'zweitens': 'secondly',
+ 'die Bearbeitung': 'processing',
+ 'gebrauchen': 'to use',
+ 'stabil': 'stable',
+ 'vorwiegend': 'predominantly',
+ 'wahnsinnig': 'insane(ly)',
+ 'die Weiterbildung': 'further education',
+ 'bekämpfen': 'to fight',
+ 'die Berichterstattung': 'reporting',
+ 'blicken': 'to look, to glance',
+ 'erheben': 'to raise; to levy',
+ 'erreichbar': 'reachable',
+ 'unendlich': 'infinite',
+ 'unnötig': 'unnecessary',
+ 'vorliegen': 'to be available',
+ 'die Aufstellung': 'list; line-up',
+ 'ausprobieren': 'to try out',
+ 'benötigen': 'to need',
+ 'binnen': 'within',
+ 'entschlossen': 'determined',
+ 'die Erhebung': 'survey; levy',
+ 'gewöhnt': 'accustomed',
+ 'herrlich': 'wonderful',
+ 'pleite': 'broke',
+ 'unsicher': 'unsure, unsafe',
+ 'das Vorfeld': 'run-up',
+ 'die Allianz': 'alliance',
+ 'gemein': 'mean',
+ 'genial': 'brilliant',
+ 'der Konzern': 'group, corporation',
+ 'das Medium': 'medium',
+ 'die Route': 'route',
+ 'schlau': 'clever',
+ 'traditionell': 'traditional',
+ 'treu': 'loyal',
+ 'abwarten': 'to wait and see',
+ 'der Einzelfall': 'individual case',
+ 'die Episode': 'episode',
+ 'erfreut': 'pleased',
+ 'der Genuss': 'pleasure',
+ 'heimlich': 'secret(ly)',
+ 'die Präsentation': 'presentation',
+ 'der Rechner': 'computer',
+ 'streichen': 'to paint; to cancel',
+ 'untereinander': 'among themselves',
+ 'sich wehren': 'to defend oneself',
+ 'wissenschaftlich': 'scientific',
+ 'anlegen': 'to invest; to set up',
+ 'denkbar': 'conceivable',
+ 'furchtbar': 'awful',
+ 'geradezu': 'downright',
+ 'gesetzlich': 'legal',
+ 'gewöhnlich': 'usual',
+ 'hervorragend': 'excellent',
+ 'illegal': 'illegal',
+ 'komplex': 'complex',
+ 'nirgends': 'nowhere',
+ 'schieben': 'to push',
+ 'südlich': 'southern',
+ 'zeitweise': 'at times',
+ 'die Berücksichtigung': 'consideration',
+ 'der Erhalt': 'receipt; preservation',
+ 'eröffnen': 'to open',
+ 'die Fotografie': 'photography',
+ 'friedlich': 'peaceful',
+ 'lebendig': 'lively',
+ 'nördlich': 'northern',
+ 'die Orientierung': 'orientation',
+ 'rechtlich': 'legal',
+ 'vernünftig': 'sensible',
+ 'aufhalten': 'to stop, to hold up',
+ 'die Datenbank': 'database',
+ 'der Datenschutz': 'data protection',
+ 'der Einstieg': 'entry',
+ 'erwachsen': 'adult',
+ 'konstant': 'constant',
+ 'oberhalb': 'above',
+ 'die Pressemitteilung': 'press release',
+ 'reiten': 'to ride',
+ 'sinken': 'to sink, to fall',
+ 'unangenehm': 'unpleasant',
+ 'verschaffen': 'to procure',
+ 'verzweifelt': 'desperate',
+ 'vorwärts': 'forward',
+ 'der Asylbewerber': 'asylum seeker',
+ 'die Ausrichtung': 'alignment, focus',
+ 'betrunken': 'drunk',
+ 'die Bezahlung': 'payment',
+ 'die Digitalisierung': 'digitalisation',
+ 'finanzieren': 'to finance',
+ 'flach': 'flat',
+ 'gewiss': 'certain',
+ 'grob': 'rough',
+ 'senken': 'to lower',
+ 'zulassen': 'to allow',
+ 'antreten': 'to take up; to compete',
+ 'der Arbeitsmarkt': 'labour market',
+ 'brennen': 'to burn',
+ 'circa': 'about',
+ 'die Elite': 'elite',
+ 'erwerben': 'to acquire',
+ 'fröhlich': 'cheerful',
+ 'logisch': 'logical',
+ 'die Migration': 'migration',
+ 'die Partnerschaft': 'partnership',
+ 'vorübergehend': 'temporary',
+ 'weitaus': 'by far',
+ 'zielen auf': 'to aim at',
+ 'besorgen': 'to get, to obtain',
+ 'fliehen': 'to flee',
+ 'merkwürdig': 'odd',
+ 'der Notfall': 'emergency',
+ 'schriftlich': 'in writing',
+ 'verdanken': 'to owe',
+ 'zeitlich': 'in terms of time',
+ 'anhören': 'to listen to',
+ 'annähernd': 'approximately',
+ 'anwesend': 'present',
+ 'aufstellen': 'to set up',
+ 'die Auswertung': 'evaluation',
+ 'begreifen': 'to comprehend',
+ 'beruflich': 'professional',
+ 'buchen': 'to book',
+ 'erben': 'to inherit',
+ 'geistig': 'mental',
+ 'der Mindestlohn': 'minimum wage',
+ 'versorgen': 'to supply, to look after',
+ 'verursachen': 'to cause',
+ 'ausdrücken': 'to express',
+ 'errichten': 'to erect',
+ 'fähig': 'capable',
+ 'gänzlich': 'entirely',
+ 'primär': 'primarily',
+ 'die Sanierung': 'renovation',
+ 'stetig': 'steady',
+ 'stürzen': 'to fall',
+ 'unwahrscheinlich': 'unlikely',
+ 'das Vorjahr': 'previous year',
+ 'ausmachen': 'to switch off; to make up',
+ 'effektiv': 'effective',
+ 'individuell': 'individual',
+ 'legal': 'legal',
+ 'mobil': 'mobile',
+ 'unglücklich': 'unhappy',
+ 'verlegen': 'embarrassed',
+ 'weich': 'soft',
+ 'zulässig': 'permissible',
+ 'zwingend': 'compulsory',
+ 'zwischendurch': 'in between',
+ 'allmählich': 'gradually',
+ 'berühmt': 'famous',
+ 'bremsen': 'to brake',
+ 'demonstrieren': 'to demonstrate',
+ 'identisch': 'identical',
+ 'riesig': 'huge',
+ 'sinnlos': 'pointless',
+ 'sorgfältig': 'careful',
+ 'strafen': 'to punish',
+ 'werben': 'to advertise',
+ 'die Zulassung': 'approval; admission',
+ 'die Aktivität': 'activity',
+ 'aufrecht': 'upright',
+ 'sich begeben': 'to proceed',
+ 'beherrschen': 'to master',
+ 'durcheinander': 'in a muddle',
+ 'indirekt': 'indirect',
+ 'körperlich': 'physical',
+ 'locken': 'to lure',
+ 'prinzipiell': 'in principle',
+ 'der Riss': 'crack',
+ 'umgehend': 'immediately',
+ 'verletzen': 'to injure',
+ 'die Zielgruppe': 'target group',
+ 'zugrunde liegen': 'to underlie',
+ 'der Abstieg': 'descent, relegation',
+ 'der Anleger': 'investor',
+ 'die Bekämpfung': 'fight against',
+ 'besprechen': 'to discuss',
+ 'brav': 'well-behaved',
+ 'die Formulierung': 'wording',
+ 'hässlich': 'ugly',
+ 'jagen': 'to hunt',
+ 'die Kreativität': 'creativity',
+ 'lauten': 'to read, to go (text)',
+ 'sportlich': 'sporty',
+ 'tödlich': 'deadly',
+ 'unheimlich': 'scary; incredibly',
+ 'verkehrt': 'wrong, the wrong way',
+ 'die Diskriminierung': 'discrimination',
+ 'einnehmen': 'to take; to earn',
+ 'männlich': 'male',
+ 'sanft': 'gentle',
+ 'die Ankündigung': 'announcement',
+ 'der Auftakt': 'start, prelude',
+ 'ausfallen': 'to be cancelled',
+ 'beten': 'to pray',
+ 'brutal': 'brutal',
+ 'sich eignen': 'to be suitable',
+ 'frühzeitig': 'early',
+ 'die Kriminalität': 'crime',
+ 'das Potenzial': 'potential',
+ 'problematisch': 'problematic',
+ 'die Recherche': 'research',
+ 'voraussichtlich': 'expected(ly)',
+ 'vornehmen': 'to carry out; to resolve',
+ 'zukünftig': 'future',
+ 'anonym': 'anonymous',
+ 'ausführen': 'to carry out',
+ 'das Bedürfnis': 'need',
+ 'entgehen': 'to escape, to miss',
+ 'die Innovation': 'innovation',
+ 'nebenan': 'next door',
+ 'spazieren gehen': 'to go for a walk',
+ 'tagsüber': 'during the day',
+ 'benehmen (sich)': 'to behave',
+ 'entnehmen': 'to take from, to gather',
+ 'glücklicherweise': 'fortunately',
+ 'die Mobilität': 'mobility',
+ 'die Präsenz': 'presence',
+ 'tauchen': 'to dive',
+ 'verbrennen': 'to burn',
+ 'verleihen': 'to lend; to award',
+ 'der Verlierer': 'loser',
+ 'verweisen auf': 'to refer to',
+ 'wecken': 'to wake',
+ 'aussuchen': 'to pick',
+ 'einsam': 'lonely',
+ 'eintreten': 'to enter; to occur',
+ 'gewaltig': 'enormous',
+ 'die Investition': 'investment',
+ 'sich orientieren': 'to orient oneself',
+ 'sperren': 'to block',
+ 'staatlich': 'state, public',
+ 'die Uhrzeit': 'time (of day)',
+ 'die Umstellung': 'changeover',
+ 'zusehen': 'to watch',
+ 'bearbeiten': 'to edit, to process',
+ 'gefährden': 'to endanger',
+ 'gepflegt': 'well-kept',
+ 'hintereinander': 'in a row',
+ 'der Klimaschutz': 'climate protection',
+ 'die Privatsphäre': 'privacy',
+ 'realistisch': 'realistic',
+ 'die Schaffung': 'creation',
+ 'skeptisch': 'sceptical',
+ 'vergeblich': 'in vain',
+ 'weiblich': 'female',
+ 'wertvoll': 'valuable',
+ 'westlich': 'western',
+ 'wirksam': 'effective',
+ 'überfallen': 'to attack, to rob',
+ 'absurd': 'absurd',
+ 'die Akzeptanz': 'acceptance',
+ 'besetzen': 'to occupy; to fill',
+ 'drängen': 'to push, to urge',
+ 'sich engagieren': 'to get involved',
+ 'fraglich': 'questionable',
+ 'rückwärts': 'backwards',
+ 'die Tragödie': 'tragedy',
+ 'abstimmen': 'to vote',
+ 'der Ausschluss': 'exclusion',
+ 'drüben': 'over there',
+ 'durchgehend': 'continuous(ly)',
+ 'entkommen': 'to escape',
+ 'erlassen': 'to issue; to waive',
+ 'ernähren': 'to feed',
+ 'erschaffen': 'to create',
+ 'menschlich': 'human',
+ 'psychisch': 'psychological',
+ 'realisieren': 'to realise',
+ 'vergangen': 'past',
+ 'fällig': 'due',
+ 'gegenwärtig': 'current',
+ 'heilig': 'holy',
+ 'klassisch': 'classic(al)',
+ 'korrigieren': 'to correct',
+ 'lenken': 'to steer',
+ 'sympathisch': 'likeable',
+ 'unerwartet': 'unexpected',
+ 'ausnahmsweise': 'for once',
+ 'die Ermittlung': 'investigation',
+ 'gönnen': 'not to begrudge',
+ 'intern': 'internal',
+ 'künstlich': 'artificial',
+ 'leuchten': 'to shine',
+ 'lose': 'loose',
+ 'naiv': 'naive',
+ 'der Rechtsstaat': 'constitutional state',
+ 'ruhen': 'to rest',
+ 'stundenlang': 'for hours',
+ 'ungern': 'reluctantly',
+ 'unschuldig': 'innocent',
+ 'unterliegen': 'to be subject to; to lose',
+ 'vereinzelt': 'isolated',
+ 'ahnen': 'to suspect, to sense',
+ 'angreifen': 'to attack',
+ 'erobern': 'to conquer',
+ 'geheim': 'secret',
+ 'harmlos': 'harmless',
+ 'intelligent': 'intelligent',
+ 'die Lebensqualität': 'quality of life',
+ 'loswerden': 'to get rid of',
+ 'nebeneinander': 'side by side',
+ 'das Selbstbewusstsein': 'self-confidence',
+ 'unterrichten': 'to teach',
+ 'vernichten': 'to destroy',
+ 'verschlossen': 'locked; reserved',
+ 'das Weltbild': 'world view',
+ 'wörtlich': 'literal(ly)',
+ 'östlich': 'eastern',
+ 'die Abgrenzung': 'demarcation',
+ 'sich aufregen': 'to get upset',
+ 'beleidigen': 'to insult',
+ 'bestreiten': 'to deny; to cover',
+ 'blockieren': 'to block',
+ 'ergreifen': 'to seize; to take',
+ 'hinzufügen': 'to add',
+ 'liebevoll': 'loving',
+ 'mies': 'lousy',
+ 'mischen': 'to mix',
+ 'nüchtern': 'sober',
+ 'optisch': 'visual',
+ 'strahlen': 'to beam',
+ 'die Thematik': 'subject matter',
+ 'die Unterscheidung': 'distinction',
+ 'der Unterstützer': 'supporter',
+ 'abhalten': 'to hold; to keep from',
+ 'anderswo': 'elsewhere',
+ 'austauschen': 'to exchange',
+ 'ausverkauft': 'sold out',
+ 'beiseite': 'aside',
+ 'dramatisch': 'dramatic',
+ 'erwünscht': 'desired',
+ 'gesamt': 'total',
+ 'neutral': 'neutral',
+ 'platt': 'flat; flabbergasted',
+ 'stützen': 'to support',
+ 'widerlich': 'disgusting',
+ 'die Attacke': 'attack',
+ 'der Austritt': 'exit',
+ 'die Befragung': 'survey, questioning',
+ 'beliebig': 'any',
+ 'eigen': 'own',
+ 'das Feuerwerk': 'fireworks',
+ 'garantieren': 'to guarantee',
+ 'gemischt': 'mixed',
+ 'die Publikation': 'publication',
+ 'schräg': 'slanted',
+ 'der Terrorismus': 'terrorism',
+ 'unzufrieden': 'dissatisfied',
+ 'verarbeiten': 'to process',
+ 'abschalten': 'to switch off',
+ 'die Auszeit': 'time out',
+ 'diesbezüglich': 'in this regard',
+ 'die Erstellung': 'creation',
+ 'die Fertigstellung': 'completion',
+ 'herrschen': 'to rule, to prevail',
+ 'neuerdings': 'recently',
+ 'radikal': 'radical',
+ 'die Relevanz': 'relevance',
+ 'vorzeitig': 'premature(ly)',
+ 'absetzen': 'to put down; to depose',
+ 'allerlei': 'all sorts of',
+ 'angehören': 'to belong to',
+ 'anhalten': 'to stop',
+ 'die Auslegung': 'interpretation',
+ 'ausrichten': 'to pass on; to organise',
+ 'belasten': 'to burden',
+ 'einsehen': 'to realise',
+ 'flüchten': 'to flee',
+ 'der Lebensraum': 'habitat',
+ 'verwickelt': 'complicated; involved',
+ 'verzeichnen': 'to record',
+ 'die Zugehörigkeit': 'affiliation, belonging',
+ 'entfallen': 'to be dropped',
+ 'gleichfalls': 'likewise',
+ 'die Inspiration': 'inspiration',
+ 'die Leistungsfähigkeit': 'efficiency',
+ 'ablegen': 'to take off; to take (exam)',
+ 'absolvieren': 'to complete',
+ 'der Anwohner': 'resident',
+ 'erfinden': 'to invent',
+ 'frech': 'cheeky',
+ 'die Immobilie': 'property',
+ 'die Rendite': 'return, yield',
+ 'schlank': 'slim',
+ 'steil': 'steep',
+ 'der Stellenwert': 'importance',
+ 'veranstalten': 'to organise',
+ 'allenfalls': 'at most',
+ 'ausbauen': 'to expand',
+ 'beibehalten': 'to retain',
+ 'bescheiden': 'modest',
+ 'demokratisch': 'democratic',
+ 'erfolglos': 'unsuccessful',
+ 'die Lebensweise': 'way of life',
+ 'nacheinander': 'one after another',
+ 'reinigen': 'to clean',
+ 'stehlen': 'to steal',
+ 'transparent': 'transparent',
+ 'verwirklichen': 'to realise',
+ 'zweifellos': 'undoubtedly',
+ 'der Ansprechpartner': 'contact person',
+ 'benennen': 'to name',
+ 'bestrafen': 'to punish',
+ 'der Entschluss': 'decision',
+ 'erteilen': 'to grant, to give',
+ 'grausam': 'cruel',
+ 'mühsam': 'laborious',
+ 'die Registrierung': 'registration',
+ 'unverzüglich': 'without delay',
+ 'die Vorgehensweise': 'approach',
+ 'abschaffen': 'to abolish',
+ 'das Darlehen': 'loan',
+ 'die Insolvenz': 'insolvency',
+ 'nachfragen': 'to ask, to enquire',
+ 'sich nähern': 'to approach',
+ 'selbständig': 'independent',
+ 'unerträglich': 'unbearable',
+ 'der Zusammenschluss': 'merger',
+ 'ausreichen': 'to suffice',
+ 'ausscheiden': 'to be eliminated; to leave',
+ 'die Ausschreibung': 'tender; advertisement',
+ 'der Ausstieg': 'exit',
+ 'auswendig': 'by heart',
+ 'die Gleichberechtigung': 'equality',
+ 'moralisch': 'moral',
+ 'schmerzhaft': 'painful',
+ 'ungerecht': 'unfair',
+ 'verdächtig': 'suspicious',
+ 'vereinbaren': 'to agree on',
+ 'versehentlich': 'by mistake',
+ 'zittern': 'to tremble',
+ 'abwechselnd': 'alternately',
+ 'der Auftraggeber': 'client',
+ 'beschleunigen': 'to accelerate',
+ 'besiegen': 'to defeat',
+ 'sich erholen': 'to recover',
+ 'die Festplatte': 'hard drive',
+ 'genügen': 'to suffice',
+ 'die Intensität': 'intensity',
+ 'nutzlos': 'useless',
+ 'optimistisch': 'optimistic',
+ 'romantisch': 'romantic'}
 
 DE_EN_ACADEMIC = {'die Forschung': 'research',
  'die Daten (Pl.)': 'data',
