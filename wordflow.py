@@ -6,14 +6,16 @@ Word Flow — a tiny always-on-top vocabulary widget.
 A new word / verb / phrase every 20 seconds, with its meaning right below it,
 so you learn it whenever your eye catches it.
 
-On first start it asks which language you speak (Turkish, English or German)
-and which of the other two you want to learn; you can change this any time
-from the right-click menu.
+On first start it asks which language you speak (Turkish, English, German or
+Russian) and which of the other three you want to learn; you can change this
+any time from the right-click menu.
 
 Language pairs (word → meaning):
     de-tr / en-tr   German / English → Turkish   (Turkish speakers)
     de-en / tr-en   German / Turkish → English   (English speakers)
     en-de / tr-de   English / Turkish → German   (German speakers)
+    en-ru / de-ru / tr-ru   English / German / Turkish → Russian (Russian speakers)
+    ru-tr / ru-en / ru-de   Russian → Turkish / English / German (learn Russian)
 
 Usage:
     python3 wordflow.py           # remembers your languages, asks on first start
@@ -42,7 +44,7 @@ from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton,
                              QStackedWidget, QMenu, QFileDialog, QSizePolicy)
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from wordlists import german, english  # noqa: E402
+from wordlists import german, english, russian  # noqa: E402
 
 APP_W, APP_H = 340, 196
 CONFIG_ROOT = os.path.join(os.path.expanduser("~"), ".config")
@@ -67,7 +69,7 @@ UI = {
         "m_reset": "İlerlemeyi sıfırla", "m_close": "Kapat", "images": "Resimler",
         "m_lang": "Dili değiştir…", "learn_q": "Hangi dili öğrenmek istiyorsunuz?",
         "learn_hint": "Kelimeler bu dilde gelir, anlamı Türkçe yazar",
-        "langs": {"tr": "Türkçe", "en": "İngilizce", "de": "Almanca"}, "back": "‹ Geri",
+        "langs": {"tr": "Türkçe", "en": "İngilizce", "de": "Almanca", "ru": "Rusça"}, "back": "‹ Geri",
         "types": {"n": "İSİM", "v": "FİİL", "a": "SIFAT", "d": "ZARF",
                   "p": "KALIP", "w": "KELİME"},
     },
@@ -89,7 +91,7 @@ UI = {
         "m_reset": "Reset progress", "m_close": "Close", "images": "Images",
         "m_lang": "Change language…", "learn_q": "Which language do you want to learn?",
         "learn_hint": "Words appear in that language, with the meaning in English",
-        "langs": {"tr": "Turkish", "en": "English", "de": "German"}, "back": "‹ Back",
+        "langs": {"tr": "Turkish", "en": "English", "de": "German", "ru": "Russian"}, "back": "‹ Back",
         "types": {"n": "NOUN", "v": "VERB", "a": "ADJECTIVE", "d": "ADVERB",
                   "p": "PHRASE", "w": "WORD"},
     },
@@ -111,9 +113,32 @@ UI = {
         "m_reset": "Fortschritt zurücksetzen", "m_close": "Schließen", "images": "Bilder",
         "m_lang": "Sprache ändern…", "learn_q": "Welche Sprache möchten Sie lernen?",
         "learn_hint": "Die Wörter erscheinen in dieser Sprache, die Bedeutung auf Deutsch",
-        "langs": {"tr": "Türkisch", "en": "Englisch", "de": "Deutsch"}, "back": "‹ Zurück",
+        "langs": {"tr": "Türkisch", "en": "Englisch", "de": "Deutsch", "ru": "Russisch"}, "back": "‹ Zurück",
         "types": {"n": "NOMEN", "v": "VERB", "a": "ADJEKTIV", "d": "ADVERB",
                   "p": "WENDUNG", "w": "WORT"},
+    },
+    "ru": {
+        "know": "✓ Знаю", "dont": "✗ Не знал(а)",
+        "tip_know": "Выучил(а) — показывать реже", "tip_dont": "Показывать чаще",
+        "next": "Дальше", "tip_level": "Сменить режим / уровень",
+        "pin_on": "Позиция закреплена — открепить", "pin_off": "Закрепить позицию",
+        "choose": "Выберите уровень",
+        "modes": {"general": "Общий", "daily": "Повседневный", "academic": "Академический",
+                  "cyber": "Кибер"},
+        "hints": {"general": "От 1500 базовых слов до идиом уровня C2",
+                  "daily": "Повседневные слова, фразовые глаголы, идиомы",
+                  "academic": "Язык статей, диссертаций и докладов",
+                  "cyber": "Кибербезопасность: сеть → атаки → пентест → SOC → GRC"},
+        "m_mode": "Режим", "m_level": "Уровень", "m_interval": "Смена каждые",
+        "sec": "{} секунд", "m_lock": "Закрепить позицию", "m_top": "Поверх всех окон",
+        "m_bg": "Выбрать фон…", "m_bg_reset": "Стандартный фон",
+        "m_reset": "Сбросить прогресс", "m_close": "Закрыть", "images": "Изображения",
+        "m_lang": "Сменить язык…", "learn_q": "Какой язык вы хотите учить?",
+        "learn_hint": "Слова показываются на этом языке, значение — по-русски",
+        "langs": {"tr": "Турецкий", "en": "Английский", "de": "Немецкий", "ru": "Русский"},
+        "back": "‹ Назад",
+        "types": {"n": "СУЩ.", "v": "ГЛАГОЛ", "a": "ПРИЛ.", "d": "НАРЕЧИЕ",
+                  "p": "ВЫРАЖЕНИЕ", "w": "СЛОВО"},
     },
 }
 
@@ -161,10 +186,35 @@ def de_en(table):
     return lambda w, tr: table.get(w, tr)
 
 
+def to_ru(table):
+    return lambda w, tr: table.get(w, tr)
+
+
+def parse_ru(raw, mode, table, meaning):
+    """Russian → X: the Russian translation of each entry becomes the word."""
+    out = {}
+    for lv, block in raw.items():
+        items, seen = [], set()
+        for line in block.strip().splitlines():
+            p = [x.strip() for x in line.split("|")]
+            if len(p) < 3 or p[1] not in table:
+                continue
+            ru = table[p[1]]
+            if ru in seen or ru.startswith("("):
+                continue
+            seen.add(ru)
+            items.append({"t": p[0], "w": ru, "m": meaning(p[1], p[2]), "x": "", "lv": lv,
+                          "mode": mode, "key": f"{mode}:{ru}"})
+        out[lv] = items
+    return out
+
+
 # (spoken language, language to learn) -> pair
 PAIR_FOR = {("tr", "en"): "en-tr", ("tr", "de"): "de-tr",
             ("en", "de"): "de-en", ("en", "tr"): "tr-en",
-            ("de", "en"): "en-de", ("de", "tr"): "tr-de"}
+            ("de", "en"): "en-de", ("de", "tr"): "tr-de",
+            ("ru", "en"): "en-ru", ("ru", "de"): "de-ru", ("ru", "tr"): "tr-ru",
+            ("tr", "ru"): "ru-tr", ("en", "ru"): "ru-en", ("de", "ru"): "ru-de"}
 
 PAIRS = {
     "de-tr": {"title": "Kelime Akışı · DE → TR", "ui": "tr", "src": "de", "dst": "tr",
@@ -202,6 +252,36 @@ PAIRS = {
               "modes": {"general": parse_reverse(german.GERMAN, "general", lambda w: w),
                         "academic": parse_reverse(german.GERMAN_ACADEMIC, "academic", lambda w: w),
                         "cyber": parse_reverse(german.GERMAN_CYBER, "cyber", lambda w: w)}},
+    "en-ru": {"title": "Word Flow · EN → RU", "ui": "ru", "src": "en", "dst": "ru",
+              "state": "word-flow-en-ru",
+              "modes": {m: parse_block(r, m, to_ru(russian.EN_RU)) for m, r in
+                        (("daily", english.DAILY), ("academic", english.ACADEMIC),
+                         ("cyber", english.CYBER))}},
+    "de-ru": {"title": "Word Flow · DE → RU", "ui": "ru", "src": "de", "dst": "ru",
+              "state": "word-flow-de-ru",
+              "modes": {m: parse_block(r, m, to_ru(russian.DE_RU)) for m, r in
+                        (("general", german.GERMAN), ("academic", german.GERMAN_ACADEMIC),
+                         ("cyber", german.GERMAN_CYBER))}},
+    "tr-ru": {"title": "Word Flow · TR → RU", "ui": "ru", "src": "tr", "dst": "ru",
+              "state": "word-flow-tr-ru",
+              "modes": {m: parse_reverse(r, m, lambda w: russian.EN_RU.get(w, w)) for m, r in
+                        (("daily", english.DAILY), ("academic", english.ACADEMIC),
+                         ("cyber", english.CYBER))}},
+    "ru-tr": {"title": "Word Flow · RU → TR", "ui": "tr", "src": "ru", "dst": "tr",
+              "state": "word-flow-ru-tr",
+              "modes": {m: parse_ru(r, m, russian.EN_RU, lambda w, tr: tr) for m, r in
+                        (("daily", english.DAILY), ("academic", english.ACADEMIC),
+                         ("cyber", english.CYBER))}},
+    "ru-en": {"title": "Word Flow · RU → EN", "ui": "en", "src": "ru", "dst": "en",
+              "state": "word-flow-ru-en",
+              "modes": {m: parse_ru(r, m, russian.EN_RU, lambda w, tr: w) for m, r in
+                        (("daily", english.DAILY), ("academic", english.ACADEMIC),
+                         ("cyber", english.CYBER))}},
+    "ru-de": {"title": "Word Flow · RU → DE", "ui": "de", "src": "ru", "dst": "de",
+              "state": "word-flow-ru-de",
+              "modes": {m: parse_ru(r, m, russian.DE_RU, lambda w, tr: w) for m, r in
+                        (("general", german.GERMAN), ("academic", german.GERMAN_ACADEMIC),
+                         ("cyber", german.GERMAN_CYBER))}},
 }
 
 ARTICLE_COLORS = {"der": "#7fb2ff", "die": "#ff8fa3", "das": "#7fe0a8"}
@@ -804,8 +884,8 @@ class WordWidget(QWidget):
 # --------------------------------------------------------------------------- first start
 APP_CONFIG = os.path.join(CONFIG_ROOT, "word-flow", "app.json")
 QUESTION_ALL = [("Hangi dili konuşuyorsunuz?", 14), ("Which language do you speak?", 11),
-                ("Welche Sprache sprechen Sie?", 11)]
-NATIVE_NAMES = [("tr", "Türkçe"), ("en", "English"), ("de", "Deutsch")]
+                ("Welche Sprache sprechen Sie?", 11), ("На каком языке вы говорите?", 11)]
+NATIVE_NAMES = [("tr", "Türkçe"), ("en", "English"), ("de", "Deutsch"), ("ru", "Русский")]
 
 
 def default_pos():
@@ -814,8 +894,8 @@ def default_pos():
 
 
 class Onboarding(QWidget):
-    """Step 1: which language do you speak (asked in all three languages).
-    Step 2: which of the other two do you want to learn (asked in your language)."""
+    """Step 1: which language do you speak (asked in all four languages).
+    Step 2: which of the other three do you want to learn (asked in your language)."""
 
     def __init__(self, controller, pos):
         super().__init__()

@@ -1,6 +1,6 @@
 # Word Flow
 
-**English** · [Türkçe](#türkçe) · [Deutsch](#deutsch)
+**English** · [Türkçe](#türkçe) · [Deutsch](#deutsch) · [Русский](#русский)
 
 ![Word Flow — English → German and German → English](screenshots/en-de_de-en.png)
 
@@ -11,7 +11,7 @@ A tiny vocabulary widget that stays on top of your other windows. Every 20 secon
 *Top row: English → German. Bottom row: German → English.*
 
 ### First start
-Word Flow is a single app for English, German and Turkish. On first start it asks **which language you speak**, in all three languages. It then asks, in your language, **which of the other two you want to learn**, and finally which level you are at. You can change your languages at any time with the 🌐 button on the card.
+Word Flow is a single app for English, German, Turkish and Russian. On first start it asks **which language you speak**, in all four languages. It then asks, in your language, **which of the other three you want to learn**, and finally which level you are at. You can change your languages at any time with the 🌐 button on the card.
 
 ![First start: choose the language you speak, then the language you want to learn](screenshots/first-start.png)
 
@@ -23,12 +23,20 @@ Word Flow is a single app for English, German and Turkish. On first start it ask
 | German | Turkish | Turkish → German | General 4,485 · Academic 684 · Cyber 500 |
 | Turkish | English | English → Turkish | Everyday 4,925 · Academic 753 · Cyber 502 |
 | Turkish | German | German → Turkish | General 4,573 · Academic 691 · Cyber 500 |
+| Turkish | Russian | Russian → Turkish | Everyday 4,850 · Academic 746 · Cyber 502 |
+| English | Russian | Russian → English | Everyday 4,850 · Academic 746 · Cyber 502 |
+| German | Russian | Russian → German | General 4,420 · Academic 685 · Cyber 499 |
+| Russian | English | English → Russian | Everyday 4,925 · Academic 753 · Cyber 502 |
+| Russian | German | German → Russian | General 4,573 · Academic 691 · Cyber 500 |
+| Russian | Turkish | Turkish → Russian | Everyday 4,805 · Academic 745 · Cyber 502 |
+
+![Russian: Russian → German, German → Russian, English → Russian, Russian → Turkish](screenshots/russian.png)
 
 ### Word lists
 - **General / Everyday (A1.1 – C2.2).** A1–B1 cover a core vocabulary of 1,500 words across 26 topics, such as greetings, numbers, family, home, food, the city, work and official paperwork in Germany. Extra everyday verbs are included too. B2–C1 add C1-level verbs, nouns, adjectives, phrasal verbs and connectors, ordered by how common they are. C2 adds rare words and idioms.
 - **Academic (B1.1 – C2.2).** Vocabulary and set phrases for papers, theses and talks, such as *the data indicate that…* and *beyond the scope of this study*.
 - **Cyber (B1.1 – C2.2).** Professional cybersecurity vocabulary, ordered like a course: core concepts → networking → Linux and systems → attacks → web security → cryptography and identity management → pentest and red team → SOC and incident response → governance, risk and compliance (GRC).
-- Every word has a Turkish, English and German meaning, so every language combination teaches the same content.
+- Every word has a Turkish, English, German and Russian meaning, so every language combination teaches the same content.
 
 ### Features
 - **A new card every 20 seconds.** You can choose 10–60 seconds from the right-click menu. A thin line at the bottom shows how much time is left.
@@ -59,7 +67,7 @@ The word lists are in `wordlists/german.py` and `wordlists/english.py`, one line
 type|word|Turkish meaning|hint
 v|fahren|(araçla) gitmek|er fährt · ist gefahren
 ```
-Then add the translation to the matching `DE_EN*` or `EN_DE*` table.
+Then add the translation to the matching `DE_EN*` or `EN_DE*` table, and the Russian one to `EN_RU` or `DE_RU` in `wordlists/russian.py`.
 
 ---
 
@@ -72,7 +80,7 @@ Diğer pencerelerin üstünde duran küçük bir kelime widget'ı. Her 20 saniye
 *Üst sıra: Almanca → Türkçe. Alt sıra: İngilizce → Türkçe. İngilizce ↔ Almanca görüntüleri sayfanın en üstünde.*
 
 ### İlk açılış
-Word Flow İngilizce, Almanca ve Türkçe için tek bir uygulama. İlk açılışta üç dilde birden **hangi dili konuştuğunu** soruyor. Ardından seçtiğin dilde **diğer iki dilden hangisini öğrenmek istediğini**, en son da seviyeni soruyor. Dillerini kartın üstündeki 🌐 düğmesiyle istediğin zaman değiştirebilirsin.
+Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk açılışta dört dilde birden **hangi dili konuştuğunu** soruyor. Ardından seçtiğin dilde **diğer üç dilden hangisini öğrenmek istediğini**, en son da seviyeni soruyor. Dillerini kartın üstündeki 🌐 düğmesiyle istediğin zaman değiştirebilirsin.
 
 ![İlk açılış: önce konuştuğun dil, sonra öğrenmek istediğin dil](screenshots/first-start.png)
 
@@ -84,12 +92,18 @@ Word Flow İngilizce, Almanca ve Türkçe için tek bir uygulama. İlk açılı�
 | İngilizce | Türkçe | Türkçe → İngilizce | Günlük 4.805 · Akademik 745 · Siber 502 |
 | Almanca | İngilizce | İngilizce → Almanca | Günlük 4.925 · Akademik 753 · Siber 502 |
 | Almanca | Türkçe | Türkçe → Almanca | Genel 4.485 · Akademik 684 · Siber 500 |
+| Türkçe | Rusça | Rusça → Türkçe | Günlük 4.850 · Akademik 746 · Siber 502 |
+| İngilizce | Rusça | Rusça → İngilizce | Günlük 4.850 · Akademik 746 · Siber 502 |
+| Almanca | Rusça | Rusça → Almanca | Genel 4.420 · Akademik 685 · Siber 499 |
+| Rusça | İngilizce | İngilizce → Rusça | Günlük 4.925 · Akademik 753 · Siber 502 |
+| Rusça | Almanca | Almanca → Rusça | Genel 4.573 · Akademik 691 · Siber 500 |
+| Rusça | Türkçe | Türkçe → Rusça | Günlük 4.805 · Akademik 745 · Siber 502 |
 
 ### Kelime listeleri
 - **Genel / Günlük (A1.1 – C2.2).** A1–B1 seviyeleri 26 konuda 1500 temel kelimeyi kapsıyor. Konular arasında selamlaşma, sayılar, aile, ev, yemek, şehir, iş ve Almanya'daki resmî işler var. Bunlara ek günlük fiiller de eklendi. B2–C1 seviyelerinde C1 düzeyinde fiiller, isimler, sıfatlar, phrasal verb'ler ve bağlaçlar var; ne kadar sık kullanıldıklarına göre sıralandılar. C2'de nadir kelimeler ve deyimler var.
 - **Akademik (B1.1 – C2.2).** Makale, tez ve sunum dili için kelimeler ve kalıplar. Örneğin *the data indicate that…* ve *beyond the scope of this study*.
 - **Siber Güvenlik (B1.1 – C2.2).** Mesleki siber güvenlik terimleri bir ders gibi sıralandı: temel kavramlar → ağ → Linux ve sistemler → saldırılar → web güvenliği → kriptografi ve kimlik yönetimi → sızma testi ve kırmızı takım → SOC ve olay müdahalesi → yönetişim, risk ve uyum (GRC).
-- Her kelimenin Türkçe, İngilizce ve Almanca karşılığı var. Hangi dil kombinasyonunu seçersen seç, içerik aynı.
+- Her kelimenin Türkçe, İngilizce, Almanca ve Rusça karşılığı var. Hangi dil kombinasyonunu seçersen seç, içerik aynı.
 
 ### Özellikler
 - **Her 20 saniyede yeni kart.** Sağ tık menüsünden 10–60 saniye arasında bir süre seçebilirsin. Alttaki ince çizgi kalan süreyi gösteriyor.
@@ -120,7 +134,7 @@ Kelime listeleri `wordlists/german.py` ve `wordlists/english.py` dosyalarında, 
 tür|kelime|Türkçe anlamı|ipucu
 v|fahren|(araçla) gitmek|er fährt · ist gefahren
 ```
-Sonra çevirisini ilgili `DE_EN*` ya da `EN_DE*` tablosuna ekle.
+Sonra çevirisini ilgili `DE_EN*` ya da `EN_DE*` tablosuna, Rusçasını da `wordlists/russian.py` içindeki `EN_RU` ya da `DE_RU` tablosuna ekle.
 
 ---
 
@@ -133,7 +147,7 @@ Ein kleines Vokabel-Widget, das über deinen anderen Fenstern bleibt. Alle 20 Se
 *Obere Reihe: Englisch → Deutsch. Untere Reihe: Deutsch → Englisch.*
 
 ### Erster Start
-Word Flow ist eine einzige App für Englisch, Deutsch und Türkisch. Beim ersten Start fragt sie in allen drei Sprachen, **welche Sprache du sprichst**. Danach fragt sie in deiner Sprache, **welche der beiden anderen du lernen möchtest**, und zuletzt nach deinem Niveau. Mit der 🌐-Schaltfläche auf der Karte kannst du deine Sprachen jederzeit ändern.
+Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. Beim ersten Start fragt sie in allen vier Sprachen, **welche Sprache du sprichst**. Danach fragt sie in deiner Sprache, **welche der drei anderen du lernen möchtest**, und zuletzt nach deinem Niveau. Mit der 🌐-Schaltfläche auf der Karte kannst du deine Sprachen jederzeit ändern.
 
 ![Erster Start: zuerst die Sprache, die du sprichst, dann die Sprache, die du lernen möchtest](screenshots/first-start.png)
 
@@ -145,12 +159,18 @@ Word Flow ist eine einzige App für Englisch, Deutsch und Türkisch. Beim ersten
 | Englisch | Türkisch | Türkisch → Englisch | Alltag 4.805 · Akademisch 745 · Cyber 502 |
 | Türkisch | Englisch | Englisch → Türkisch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
 | Türkisch | Deutsch | Deutsch → Türkisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
+| Deutsch | Russisch | Russisch → Deutsch | Allgemein 4.420 · Akademisch 685 · Cyber 499 |
+| Englisch | Russisch | Russisch → Englisch | Alltag 4.850 · Akademisch 746 · Cyber 502 |
+| Türkisch | Russisch | Russisch → Türkisch | Alltag 4.850 · Akademisch 746 · Cyber 502 |
+| Russisch | Deutsch | Deutsch → Russisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
+| Russisch | Englisch | Englisch → Russisch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
+| Russisch | Türkisch | Türkisch → Russisch | Alltag 4.805 · Akademisch 745 · Cyber 502 |
 
 ### Wortlisten
 - **Allgemein / Alltag (A1.1 – C2.2).** A1–B1 umfassen einen Grundwortschatz von 1.500 Wörtern aus 26 Themen, zum Beispiel Begrüßung, Zahlen, Familie, Wohnen, Essen, Stadt, Arbeit und Behördengänge in Deutschland. Dazu kommen weitere Alltagsverben. B2–C1 ergänzen Verben, Nomen, Adjektive, Phrasal Verbs und Konnektoren auf C1-Niveau, sortiert nach Häufigkeit. C2 enthält seltene Wörter und Redewendungen.
 - **Akademisch (B1.1 – C2.2).** Wortschatz und feste Wendungen für Paper, Abschlussarbeiten und Vorträge, zum Beispiel *the data indicate that…* und *beyond the scope of this study*.
 - **Cyber (B1.1 – C2.2).** Fachwortschatz der Cybersecurity, aufgebaut wie ein Kurs: Grundbegriffe → Netzwerke → Linux und Systeme → Angriffe → Websicherheit → Kryptografie und Identitätsmanagement → Pentest und Red Team → SOC und Incident Response → Governance, Risiko und Compliance (GRC).
-- Jedes Wort hat eine türkische, englische und deutsche Bedeutung, daher vermittelt jede Sprachkombination denselben Inhalt.
+- Jedes Wort hat eine türkische, englische, deutsche und russische Bedeutung, daher vermittelt jede Sprachkombination denselben Inhalt.
 
 ### Funktionen
 - **Alle 20 Sekunden eine neue Karte.** Im Rechtsklickmenü kannst du 10–60 Sekunden einstellen. Eine dünne Linie unten zeigt die verbleibende Zeit.
@@ -181,7 +201,29 @@ Die Wortlisten stehen in `wordlists/german.py` und `wordlists/english.py`, ein W
 Typ|Wort|türkische Bedeutung|Hinweis
 v|fahren|(araçla) gitmek|er fährt · ist gefahren
 ```
-Danach die Übersetzung in die passende Tabelle `DE_EN*` oder `EN_DE*` eintragen.
+Danach die Übersetzung in die passende Tabelle `DE_EN*` oder `EN_DE*` eintragen, die russische in `EN_RU` oder `DE_RU` in `wordlists/russian.py`.
+
+---
+
+## Русский
+
+Маленький виджет для изучения слов, который всегда остаётся поверх других окон. Каждые 20 секунд он показывает новое слово, глагол или выражение, а прямо под ним — значение. Так слова запоминаются каждый раз, когда на них падает взгляд.
+
+![Word Flow на русском](screenshots/russian.png)
+
+### Первый запуск
+Word Flow — одно приложение для английского, немецкого, турецкого и русского. При первом запуске оно на всех четырёх языках спрашивает, **на каком языке вы говорите**, затем на вашем языке — **какой из трёх других вы хотите учить**, и в конце — ваш уровень. Языки можно сменить в любой момент кнопкой 🌐 на карточке.
+
+| Вы говорите | Вы учите | Слово → значение | Режимы (количество слов) |
+|---|---|---|---|
+| русский | английский | английский → русский | Повседневный 4 925 · Академический 753 · Кибер 502 |
+| русский | немецкий | немецкий → русский | Общий 4 573 · Академический 691 · Кибер 500 |
+| русский | турецкий | турецкий → русский | Повседневный 4 805 · Академический 745 · Кибер 502 |
+| английский | русский | русский → английский | 4 850 · 746 · 502 |
+| немецкий | русский | русский → немецкий | 4 420 · 685 · 499 |
+| турецкий | русский | русский → турецкий | 4 850 · 746 · 502 |
+
+Всё остальное (уровни A1.1–C2.2, кнопки ✓ Знаю / ✗ Не знал(а), три режима, установка) работает так же, как описано выше.
 
 ---
 
