@@ -4533,6 +4533,196 @@ a|nebulous|bulanık
 a|perfunctory|baştan savma
 a|tenuous|zayıf
 d|ostensibly|görünüşte
+n|aberration|sapma
+n|acquiescence|boyun eğme
+n|adulation|aşırı övgü
+n|affinity|yakınlık
+n|animosity|düşmanlık
+n|apathy|ilgisizlik
+n|aplomb|soğukkanlılık
+n|arrogance|kibir
+n|audacity|cüret
+n|austerity|kemer sıkma
+n|avarice|açgözlülük
+n|benevolence|iyilikseverlik
+n|bigotry|bağnazlık
+n|bravado|kabadayılık
+n|brevity|kısalık
+n|cacophony|ses kargaşası
+n|camaraderie|yoldaşlık
+n|clemency|merhamet
+n|complicity|suç ortaklığı
+n|conjecture|varsayım
+n|connoisseur|uzman, ehil
+n|contrition|pişmanlık
+n|credence|inanç, güven
+n|culpability|kusurluluk
+n|dearth|kıtlık
+n|decorum|edep
+n|deference|hürmet
+n|demeanour|tavır
+n|derision|alay
+n|diatribe|ağır eleştiri
+n|diligence|özen, çalışkanlık
+n|discord|anlaşmazlık
+n|duplicity|ikiyüzlülük
+n|effrontery|küstahlık
+n|eloquence|belâgat
+n|enigma|bilmece
+n|equanimity|soğukkanlılık
+n|euphoria|coşku
+n|exasperation|bıkkınlık
+n|facade|cephe, görünüş
+n|fervour|şevk
+n|finesse|incelik
+n|folly|ahmaklık
+n|fortitude|metanet
+n|frivolity|uçarılık
+n|futility|beyhudelik
+n|gravitas|ağırbaşlılık
+n|gullibility|saflık
+n|hindsight|geriye dönük anlayış
+n|hypocrisy|ikiyüzlülük
+n|idiosyncrasy|kendine has özellik
+n|ignominy|rezillik
+n|impetus|itici güç
+n|impunity|cezasızlık
+n|inertia|atalet
+n|ingenuity|yaratıcılık
+n|introspection|iç gözlem
+n|lethargy|uyuşukluk
+n|longevity|uzun ömür
+n|magnanimity|yüce gönüllülük
+n|malaise|huzursuzluk
+n|malice|kötü niyet
+n|melancholy|hüzün
+n|mitigation|hafifletme
+n|nostalgia|nostalji
+n|nuisance|baş belası
+n|obstinacy|inatçılık
+n|onus|sorumluluk, yük
+n|opulence|şatafat
+n|paradigm shift|paradigma değişimi
+n|parity|eşitlik
+n|paucity|azlık
+n|perseverance|sebat
+n|petulance|huysuzluk
+n|plight|kötü durum
+n|pragmatism|pragmatizm
+n|precedence|öncelik
+n|prerogative|ayrıcalık
+n|probity|dürüstlük
+n|prudence|sağduyu
+n|rapport|yakınlık, uyum
+n|rebuttal|çürütme
+n|recourse|başvuru yolu
+n|remorse|vicdan azabı
+n|resentment|kırgınlık
+n|restitution|tazmin
+n|reticence|suskunluk
+n|reverence|saygı
+n|scepticism|şüphecilik
+n|serendipity|hoş tesadüf
+n|solace|teselli
+n|stigma|damga
+n|subterfuge|hile
+n|trepidation|endişe
+n|ubiquity|her yerde olma
+n|veneer|cila, sahte görünüş
+n|veracity|doğruluk
+n|vigilance|uyanıklık
+n|zeal|şevk
+v|abdicate|tahttan feragat etmek
+v|abhor|tiksinmek
+v|admonish|uyarmak
+v|allay|yatıştırmak
+v|ameliorate|iyileştirmek
+v|assuage|dindirmek
+v|beguile|büyülemek
+v|belittle|küçümsemek
+v|berate|azarlamak
+v|capitulate|teslim olmak
+v|castigate|şiddetle eleştirmek
+v|cajole|kandırmak, dil dökmek
+v|chastise|cezalandırmak
+v|coerce|zorlamak
+v|commiserate|teselli etmek
+v|concur|aynı görüşte olmak
+v|construe|yorumlamak
+v|debunk|çürütmek
+v|decry|kınamak
+v|deride|alay etmek
+v|discern|ayırt etmek
+v|disparage|kötülemek
+v|dissuade|vazgeçirmek
+v|elucidate|açıklamak
+v|emulate|örnek almak
+v|encroach|tecavüz etmek (hak)
+v|engender|doğurmak
+v|enthral|büyülemek
+v|epitomise|simgelemek
+v|eschew|kaçınmak
+v|exonerate|aklamak
+v|expedite|hızlandırmak
+v|extol|övmek
+v|fabricate|uydurmak
+v|flout|hiçe saymak
+v|foment|kışkırtmak
+v|forgo|vazgeçmek
+v|hamper|engellemek
+v|harangue|nutuk atmak
+v|impede|engellemek
+v|implore|yalvarmak
+v|incite|kışkırtmak
+v|instigate|başlatmak, kışkırtmak
+v|jeopardise|tehlikeye atmak
+v|languish|sürünmek
+v|negate|geçersiz kılmak
+v|ostracise|dışlamak
+v|pacify|yatıştırmak
+v|perpetuate|sürdürmek
+v|ponder|derin düşünmek
+v|precipitate|hızlandırmak, tetiklemek
+v|preclude|engellemek
+v|procrastinate|ertelemek
+v|proliferate|çoğalmak
+v|rebuke|azarlamak
+v|recant|sözünü geri almak
+v|reciprocate|karşılık vermek
+v|reprimand|kınamak
+v|rescind|iptal etmek
+v|reverberate|yankılanmak
+v|scrutinise|incelemek
+v|squander|israf etmek
+v|stifle|bastırmak
+v|subjugate|boyun eğdirmek
+v|supplant|yerini almak
+v|transcend|aşmak
+v|underpin|temellendirmek
+v|usurp|gasp etmek
+v|vilify|kötülemek
+v|waive|feragat etmek
+v|wane|azalmak
+v|waver|tereddüt etmek
+v|wield|kullanmak (güç)
+a|abject|sefil
+a|acerbic|iğneleyici
+a|adamant|kararlı
+a|adroit|becerikli
+a|affable|cana yakın
+a|ambivalent|kararsız
+a|amenable|uysal
+a|apprehensive|endişeli
+a|arcane|gizemli
+a|ardent|ateşli
+a|articulate|kendini iyi ifade eden
+a|auspicious|uğurlu
+a|austere|sade, sert
+a|banal|bayağı
+a|benign|iyi huylu
+a|blatant|bariz
+a|brusque|sert, kaba
+a|callous|duygusuz
 """,
 "C2.2": """
 n|window dressing|göz boyama
@@ -4617,6 +4807,159 @@ a|sanctimonious|ikiyüzlü dindar
 a|supercilious|kibirli
 a|truculent|kavgacı
 a|unctuous|yağcı
+a|candid|açık sözlü
+a|capricious|kaprisli
+a|caustic|yakıcı
+a|clandestine|gizli
+a|complacent|rehavet içinde
+a|conducive|elverişli
+a|contentious|tartışmalı
+a|copious|bol
+a|cursory|üstünkörü
+a|cynical|alaycı
+a|daunting|göz korkutucu
+a|deft|becerikli
+a|despondent|umutsuz
+a|diffident|çekingen
+a|dilapidated|harap
+a|discerning|zevk sahibi
+a|disparate|farklı
+a|dogmatic|dogmatik
+a|ebullient|coşkun
+a|eclectic|eklektik
+a|efficacious|etkili
+a|elusive|yakalanması zor
+a|empirical|deneysel
+a|enigmatic|esrarengiz
+a|erratic|düzensiz
+a|esoteric|ezoterik
+a|exemplary|örnek
+a|exorbitant|fahiş
+a|expedient|uygun, işe yarar
+a|facetious|şakacı
+a|fallible|yanılabilir
+a|fervent|ateşli
+a|flagrant|açık, rezil
+a|frugal|tutumlu
+a|furtive|sinsi
+a|gregarious|sosyal
+a|haphazard|gelişigüzel
+a|heinous|iğrenç
+a|histrionic|abartılı
+a|idiosyncratic|kendine özgü
+a|ignominious|utanç verici
+a|immaculate|kusursuz
+a|impeccable|kusursuz
+a|imperative|zorunlu
+a|impetuous|aceleci
+a|implacable|yatıştırılamaz
+a|incessant|aralıksız
+a|incongruous|uyumsuz
+a|indefatigable|yorulmak bilmez
+a|indelible|silinmez
+a|indolent|tembel
+a|innate|doğuştan
+a|innocuous|zararsız
+a|insidious|sinsi
+a|intrepid|korkusuz
+a|irascible|asabi
+a|judicious|akıllıca
+a|languid|bitkin
+a|lucid|açık, net
+a|ludicrous|gülünç
+a|magnanimous|yüce gönüllü
+a|mundane|sıradan
+a|nefarious|kötü
+a|nonchalant|kayıtsız
+a|nuanced|incelikli
+a|obstinate|inatçı
+a|ominous|uğursuz
+a|onerous|külfetli
+a|ostentatious|gösterişli
+a|palpable|elle tutulur
+a|paltry|önemsiz
+a|placid|sakin
+a|poignant|dokunaklı
+a|pragmatic|pragmatik
+a|precarious|güvencesiz
+a|prescient|öngörülü
+a|pristine|bozulmamış
+a|prolific|üretken
+a|prudent|ihtiyatlı
+a|quaint|şirin, eski tarz
+a|rampant|yaygın, dizginsiz
+a|recalcitrant|inatçı
+a|reticent|ketum
+a|sanguine|iyimser
+a|scrupulous|titiz
+a|scathing|sert, yaralayıcı
+a|serene|sakin
+a|shrewd|kurnaz
+a|spurious|sahte
+a|staunch|sadık
+a|stoic|sabırlı
+a|succinct|öz
+a|superfluous|gereksiz
+a|surreptitious|gizli
+a|taciturn|az konuşan
+a|tangible|somut
+a|trite|basmakalıp
+a|unequivocal|kesin
+a|venerable|muhterem
+a|verbose|laf kalabalığı yapan
+a|vindictive|kinci
+a|volatile|değişken
+a|wary|tetikte
+a|whimsical|kaprisli, hayalperest
+a|zealous|gayretli
+d|inadvertently|yanlışlıkla
+d|perfunctorily|baştan savma
+d|vehemently|şiddetle
+d|unequivocally|kesinlikle
+d|invariably|her zaman
+d|wholeheartedly|tüm kalbiyle
+d|begrudgingly|isteksizce
+p|a far cry from|-den çok uzak
+p|a moot point|tartışmalı nokta
+p|add insult to injury|yaraya tuz basmak
+p|at loggerheads|arası açık
+p|beyond the pale|kabul edilemez
+p|by the same token|aynı şekilde
+p|come full circle|başa dönmek
+p|cut both ways|iki tarafı da etkilemek
+p|err on the side of caution|temkinli davranmak
+p|fall on deaf ears|kulak asılmamak
+p|get wind of|kulağına gelmek
+p|go against the grain|tabiatına aykırı olmak
+p|hold sway|hâkim olmak
+p|in the offing|yakında, ufukta
+p|keep at bay|uzak tutmak
+p|leave no stone unturned|her yolu denemek
+p|make headway|ilerleme kaydetmek
+p|on tenterhooks|diken üstünde
+p|pay lip service to|laf olsun diye desteklemek
+p|pull one's weight|üzerine düşeni yapmak
+p|rest on one's laurels|başarısıyla yetinmek
+p|run the gauntlet|ateş altında kalmak
+p|steal someone's thunder|birinin parlayacağı anı çalmak
+p|take with a pinch of salt|ihtiyatla karşılamak
+p|the writing on the wall|kötü sonun işaretleri
+p|throw down the gauntlet|meydan okumak
+p|to all intents and purposes|fiilen
+p|turn a blind eye|göz yummak
+p|up in arms|ayaklanmış
+p|vested interest|kişisel çıkar
+p|with bated breath|nefesini tutarak
+p|a red herring|dikkat dağıtıcı yanlış iz
+p|a Pyrrhic victory|pirüs zaferi
+p|an uphill battle|zorlu mücadele
+p|caught between a rock and a hard place|iki ateş arasında
+p|cross the Rubicon|geri dönülmez adım atmak
+p|draw the line|sınırı çizmek
+p|let sleeping dogs lie|kurcalamamak
+p|on the fence|kararsız
+p|the last straw|bardağı taşıran son damla
+p|touch and go|riskli, belirsiz
 """,
 }
 
@@ -10494,7 +10837,350 @@ EN_DE = {'family': 'die Familie',
  'impulse': 'der Impuls',
  'incapable': 'unfähig',
  'insecure': 'unsicher',
- 'knot': 'der Knoten'}
+ 'knot': 'der Knoten',
+ 'aberration': 'die Abweichung',
+ 'acquiescence': 'die Einwilligung',
+ 'adulation': 'die Lobhudelei',
+ 'affinity': 'die Affinität',
+ 'animosity': 'die Feindseligkeit',
+ 'apathy': 'die Apathie',
+ 'aplomb': 'die Gelassenheit',
+ 'arrogance': 'die Arroganz',
+ 'audacity': 'die Kühnheit',
+ 'austerity': 'die Sparpolitik',
+ 'avarice': 'die Habgier',
+ 'benevolence': 'das Wohlwollen',
+ 'bigotry': 'die Engstirnigkeit',
+ 'bravado': 'die Prahlerei',
+ 'brevity': 'die Kürze',
+ 'cacophony': 'die Kakophonie',
+ 'camaraderie': 'die Kameradschaft',
+ 'clemency': 'die Milde',
+ 'complicity': 'die Mittäterschaft',
+ 'conjecture': 'die Vermutung',
+ 'connoisseur': 'der Kenner',
+ 'contrition': 'die Reue',
+ 'credence': 'der Glaube',
+ 'culpability': 'die Schuldhaftigkeit',
+ 'dearth': 'der Mangel',
+ 'decorum': 'der Anstand',
+ 'deference': 'die Ehrerbietung',
+ 'demeanour': 'das Auftreten',
+ 'derision': 'der Spott',
+ 'diatribe': 'die Schmährede',
+ 'diligence': 'der Fleiß',
+ 'discord': 'die Zwietracht',
+ 'duplicity': 'die Doppelzüngigkeit',
+ 'effrontery': 'die Unverschämtheit',
+ 'eloquence': 'die Beredsamkeit',
+ 'enigma': 'das Rätsel',
+ 'equanimity': 'der Gleichmut',
+ 'euphoria': 'die Euphorie',
+ 'exasperation': 'die Verärgerung',
+ 'facade': 'die Fassade',
+ 'fervour': 'die Inbrunst',
+ 'finesse': 'das Fingerspitzengefühl',
+ 'folly': 'die Torheit',
+ 'fortitude': 'die Standhaftigkeit',
+ 'frivolity': 'die Leichtfertigkeit',
+ 'futility': 'die Vergeblichkeit',
+ 'gravitas': 'die Würde',
+ 'gullibility': 'die Leichtgläubigkeit',
+ 'hindsight': 'die Rückschau',
+ 'hypocrisy': 'die Heuchelei',
+ 'idiosyncrasy': 'die Eigenart',
+ 'ignominy': 'die Schmach',
+ 'impetus': 'der Antrieb',
+ 'impunity': 'die Straflosigkeit',
+ 'inertia': 'die Trägheit',
+ 'ingenuity': 'der Einfallsreichtum',
+ 'introspection': 'die Selbstbeobachtung',
+ 'lethargy': 'die Lethargie',
+ 'longevity': 'die Langlebigkeit',
+ 'magnanimity': 'die Großmut',
+ 'malaise': 'das Unbehagen',
+ 'malice': 'die Bosheit',
+ 'melancholy': 'die Melancholie',
+ 'mitigation': 'die Milderung',
+ 'nostalgia': 'die Nostalgie',
+ 'nuisance': 'das Ärgernis',
+ 'obstinacy': 'die Hartnäckigkeit',
+ 'onus': 'die Last, die Pflicht',
+ 'opulence': 'die Üppigkeit',
+ 'paradigm shift': 'der Paradigmenwechsel',
+ 'parity': 'die Parität',
+ 'paucity': 'die Knappheit',
+ 'perseverance': 'die Beharrlichkeit',
+ 'petulance': 'die Gereiztheit',
+ 'plight': 'die Notlage',
+ 'pragmatism': 'der Pragmatismus',
+ 'precedence': 'der Vorrang',
+ 'prerogative': 'das Vorrecht',
+ 'probity': 'die Redlichkeit',
+ 'prudence': 'die Umsicht',
+ 'rapport': 'der Draht, die Beziehung',
+ 'rebuttal': 'die Widerlegung',
+ 'recourse': 'der Rückgriff',
+ 'remorse': 'die Reue',
+ 'resentment': 'der Groll',
+ 'restitution': 'die Rückerstattung',
+ 'reticence': 'die Zurückhaltung',
+ 'reverence': 'die Ehrfurcht',
+ 'scepticism': 'die Skepsis',
+ 'serendipity': 'der glückliche Zufall',
+ 'solace': 'der Trost',
+ 'stigma': 'das Stigma',
+ 'subterfuge': 'die List',
+ 'trepidation': 'die Beklommenheit',
+ 'ubiquity': 'die Allgegenwart',
+ 'veneer': 'die Fassade',
+ 'veracity': 'die Wahrhaftigkeit',
+ 'vigilance': 'die Wachsamkeit',
+ 'zeal': 'der Eifer',
+ 'abdicate': 'abdanken',
+ 'abhor': 'verabscheuen',
+ 'admonish': 'ermahnen',
+ 'allay': 'zerstreuen (Bedenken)',
+ 'ameliorate': 'verbessern',
+ 'assuage': 'lindern',
+ 'beguile': 'betören',
+ 'belittle': 'herabsetzen',
+ 'berate': 'ausschimpfen',
+ 'capitulate': 'kapitulieren',
+ 'castigate': 'geißeln',
+ 'cajole': 'beschwatzen',
+ 'chastise': 'züchtigen',
+ 'coerce': 'nötigen',
+ 'commiserate': 'mitfühlen',
+ 'concur': 'übereinstimmen',
+ 'construe': 'auslegen',
+ 'debunk': 'entlarven',
+ 'decry': 'anprangern',
+ 'deride': 'verhöhnen',
+ 'discern': 'erkennen',
+ 'disparage': 'herabsetzen',
+ 'dissuade': 'abraten',
+ 'elucidate': 'erläutern',
+ 'emulate': 'nacheifern',
+ 'encroach': 'übergreifen',
+ 'engender': 'hervorrufen',
+ 'enthral': 'fesseln',
+ 'epitomise': 'verkörpern',
+ 'eschew': 'meiden',
+ 'exonerate': 'entlasten',
+ 'expedite': 'beschleunigen',
+ 'extol': 'preisen',
+ 'fabricate': 'erfinden',
+ 'flout': 'missachten',
+ 'foment': 'schüren',
+ 'forgo': 'verzichten',
+ 'hamper': 'behindern',
+ 'harangue': 'eine Strafpredigt halten',
+ 'impede': 'behindern',
+ 'implore': 'anflehen',
+ 'incite': 'aufhetzen',
+ 'instigate': 'anstiften',
+ 'jeopardise': 'gefährden',
+ 'languish': 'schmachten',
+ 'negate': 'aufheben',
+ 'ostracise': 'ausgrenzen',
+ 'pacify': 'beruhigen',
+ 'perpetuate': 'fortführen',
+ 'ponder': 'grübeln',
+ 'precipitate': 'auslösen',
+ 'preclude': 'ausschließen',
+ 'procrastinate': 'aufschieben',
+ 'proliferate': 'sich ausbreiten',
+ 'rebuke': 'zurechtweisen',
+ 'recant': 'widerrufen',
+ 'reciprocate': 'erwidern',
+ 'reprimand': 'rügen',
+ 'rescind': 'aufheben',
+ 'reverberate': 'nachhallen',
+ 'scrutinise': 'prüfen',
+ 'squander': 'vergeuden',
+ 'stifle': 'unterdrücken',
+ 'subjugate': 'unterwerfen',
+ 'supplant': 'verdrängen',
+ 'transcend': 'übersteigen',
+ 'underpin': 'untermauern',
+ 'usurp': 'an sich reißen',
+ 'vilify': 'verunglimpfen',
+ 'waive': 'verzichten auf',
+ 'wane': 'schwinden',
+ 'waver': 'schwanken',
+ 'wield': 'ausüben',
+ 'abject': 'erbärmlich',
+ 'acerbic': 'bissig',
+ 'adamant': 'unnachgiebig',
+ 'adroit': 'geschickt',
+ 'affable': 'umgänglich',
+ 'ambivalent': 'ambivalent',
+ 'amenable': 'zugänglich',
+ 'apprehensive': 'besorgt',
+ 'arcane': 'geheimnisvoll',
+ 'ardent': 'leidenschaftlich',
+ 'articulate': 'redegewandt',
+ 'auspicious': 'vielversprechend',
+ 'austere': 'streng, karg',
+ 'banal': 'banal',
+ 'benign': 'gutartig',
+ 'blatant': 'offenkundig',
+ 'brusque': 'schroff',
+ 'callous': 'gefühllos',
+ 'candid': 'offen',
+ 'capricious': 'launisch',
+ 'caustic': 'ätzend',
+ 'clandestine': 'heimlich',
+ 'complacent': 'selbstgefällig',
+ 'conducive': 'förderlich',
+ 'contentious': 'strittig',
+ 'copious': 'reichlich',
+ 'cursory': 'flüchtig',
+ 'cynical': 'zynisch',
+ 'daunting': 'entmutigend',
+ 'deft': 'geschickt',
+ 'despondent': 'niedergeschlagen',
+ 'diffident': 'schüchtern',
+ 'dilapidated': 'baufällig',
+ 'discerning': 'anspruchsvoll',
+ 'disparate': 'ungleichartig',
+ 'dogmatic': 'dogmatisch',
+ 'ebullient': 'überschwänglich',
+ 'eclectic': 'eklektisch',
+ 'efficacious': 'wirksam',
+ 'elusive': 'schwer fassbar',
+ 'empirical': 'empirisch',
+ 'enigmatic': 'rätselhaft',
+ 'erratic': 'unberechenbar',
+ 'esoteric': 'esoterisch',
+ 'exemplary': 'vorbildlich',
+ 'exorbitant': 'überhöht',
+ 'expedient': 'zweckdienlich',
+ 'facetious': 'witzelnd',
+ 'fallible': 'fehlbar',
+ 'fervent': 'inbrünstig',
+ 'flagrant': 'eklatant',
+ 'frugal': 'sparsam',
+ 'furtive': 'verstohlen',
+ 'gregarious': 'gesellig',
+ 'haphazard': 'planlos',
+ 'heinous': 'abscheulich',
+ 'histrionic': 'theatralisch',
+ 'idiosyncratic': 'eigenwillig',
+ 'ignominious': 'schmachvoll',
+ 'immaculate': 'makellos',
+ 'impeccable': 'tadellos',
+ 'imperative': 'unerlässlich',
+ 'impetuous': 'ungestüm',
+ 'implacable': 'unversöhnlich',
+ 'incessant': 'unaufhörlich',
+ 'incongruous': 'unpassend',
+ 'indefatigable': 'unermüdlich',
+ 'indelible': 'unauslöschlich',
+ 'indolent': 'träge',
+ 'innate': 'angeboren',
+ 'innocuous': 'harmlos',
+ 'insidious': 'heimtückisch',
+ 'intrepid': 'unerschrocken',
+ 'irascible': 'jähzornig',
+ 'judicious': 'umsichtig',
+ 'languid': 'matt',
+ 'lucid': 'klar',
+ 'ludicrous': 'lächerlich',
+ 'magnanimous': 'großmütig',
+ 'mundane': 'alltäglich',
+ 'nefarious': 'ruchlos',
+ 'nonchalant': 'lässig',
+ 'nuanced': 'differenziert',
+ 'obstinate': 'starrsinnig',
+ 'ominous': 'unheilvoll',
+ 'onerous': 'belastend',
+ 'ostentatious': 'protzig',
+ 'palpable': 'spürbar',
+ 'paltry': 'dürftig',
+ 'placid': 'ruhig',
+ 'poignant': 'ergreifend',
+ 'pragmatic': 'pragmatisch',
+ 'precarious': 'prekär',
+ 'prescient': 'vorausschauend',
+ 'pristine': 'unberührt',
+ 'prolific': 'produktiv',
+ 'prudent': 'umsichtig',
+ 'quaint': 'malerisch',
+ 'rampant': 'grassierend',
+ 'recalcitrant': 'widerspenstig',
+ 'reticent': 'zurückhaltend',
+ 'sanguine': 'zuversichtlich',
+ 'scrupulous': 'gewissenhaft',
+ 'scathing': 'vernichtend',
+ 'serene': 'gelassen',
+ 'shrewd': 'scharfsinnig',
+ 'spurious': 'unecht',
+ 'staunch': 'unerschütterlich',
+ 'stoic': 'stoisch',
+ 'succinct': 'prägnant',
+ 'superfluous': 'überflüssig',
+ 'surreptitious': 'heimlich',
+ 'taciturn': 'wortkarg',
+ 'tangible': 'greifbar',
+ 'trite': 'abgedroschen',
+ 'unequivocal': 'unmissverständlich',
+ 'venerable': 'ehrwürdig',
+ 'verbose': 'weitschweifig',
+ 'vindictive': 'rachsüchtig',
+ 'volatile': 'volatil',
+ 'wary': 'vorsichtig',
+ 'whimsical': 'verspielt',
+ 'zealous': 'eifrig',
+ 'inadvertently': 'versehentlich',
+ 'perfunctorily': 'oberflächlich',
+ 'vehemently': 'vehement',
+ 'unequivocally': 'unmissverständlich',
+ 'invariably': 'ausnahmslos',
+ 'wholeheartedly': 'von ganzem Herzen',
+ 'begrudgingly': 'widerwillig',
+ 'a far cry from': 'weit entfernt von',
+ 'a moot point': 'eine strittige Frage',
+ 'add insult to injury': 'noch eins draufsetzen',
+ 'at loggerheads': 'im Clinch',
+ 'beyond the pale': 'indiskutabel',
+ 'by the same token': 'ebenso',
+ 'come full circle': 'sich schließt der Kreis',
+ 'cut both ways': 'ein zweischneidiges Schwert sein',
+ 'err on the side of caution': 'lieber vorsichtig sein',
+ 'fall on deaf ears': 'auf taube Ohren stoßen',
+ 'get wind of': 'Wind bekommen von',
+ 'go against the grain': 'gegen den Strich gehen',
+ 'hold sway': 'vorherrschen',
+ 'in the offing': 'bevorstehend',
+ 'keep at bay': 'in Schach halten',
+ 'leave no stone unturned': 'nichts unversucht lassen',
+ 'make headway': 'vorankommen',
+ 'on tenterhooks': 'wie auf glühenden Kohlen',
+ 'pay lip service to': 'ein Lippenbekenntnis ablegen',
+ "pull one's weight": 'seinen Beitrag leisten',
+ "rest on one's laurels": 'sich auf seinen Lorbeeren ausruhen',
+ 'run the gauntlet': 'Spießruten laufen',
+ "steal someone's thunder": 'jemandem die Schau stehlen',
+ 'take with a pinch of salt': 'mit Vorsicht genießen',
+ 'the writing on the wall': 'die Zeichen an der Wand',
+ 'throw down the gauntlet': 'den Fehdehandschuh hinwerfen',
+ 'to all intents and purposes': 'praktisch',
+ 'turn a blind eye': 'ein Auge zudrücken',
+ 'up in arms': 'in Aufruhr',
+ 'vested interest': 'ein persönliches Interesse',
+ 'with bated breath': 'mit angehaltenem Atem',
+ 'a red herring': 'eine falsche Fährte',
+ 'a Pyrrhic victory': 'ein Pyrrhussieg',
+ 'an uphill battle': 'ein harter Kampf',
+ 'caught between a rock and a hard place': 'zwischen Baum und Borke',
+ 'cross the Rubicon': 'den Rubikon überschreiten',
+ 'draw the line': 'die Grenze ziehen',
+ 'let sleeping dogs lie': 'keine schlafenden Hunde wecken',
+ 'on the fence': 'unentschlossen',
+ 'the last straw': 'der Tropfen, der das Fass zum Überlaufen bringt',
+ 'touch and go': 'auf Messers Schneide'}
 
 EN_DE_ACADEMIC = {'research': 'die Forschung',
  'data': 'die Daten (Pl.)',

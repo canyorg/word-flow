@@ -4167,6 +4167,206 @@ w|kryptisch|anlaşılması güç
 w|landläufig|yaygın kabul gören
 w|unbotmäßig|itaatsiz
 w|zuvorderst|her şeyden önce
+w|mühelos|zahmetsizce
+w|greifbar|somut, elle tutulur
+w|mangelhaft|yetersiz, kusurlu
+v|festnehmen|gözaltına almak
+v|erkranken|hastalanmak
+v|verhaften|tutuklamak
+v|vertuschen|örtbas etmek
+v|verachten|hor görmek
+w|unbequem|rahatsız edici
+w|fortgeschritten|ileri düzey
+n|die Mahnung|ihtar
+n|die Abmahnung|ihtarname
+n|die Missachtung|hiçe sayma
+n|die Maxime|ilke
+n|die Intuition|sezgi
+w|bedeutsam|anlamlı, önemli
+w|eindringlich|ısrarlı, etkileyici
+w|energisch|enerjik, kararlı
+v|erliegen|yenik düşmek (+ Dat.)
+w|gierig|açgözlü
+n|der Idealfall|ideal durum
+n|das Konstrukt|kurgu
+w|respektvoll|saygılı
+w|wahrhaft|gerçekten
+w|zwangsweise|zorla
+w|imstande|muktedir
+w|rückläufig|azalan
+w|rücksichtslos|düşüncesiz
+w|unverantwortlich|sorumsuz
+w|unverbindlich|bağlayıcı olmayan
+n|der Verfechter|savunucu
+n|die Ausdrucksweise|ifade tarzı
+w|nichtig|hükümsüz; önemsiz
+w|ratsam|tavsiye edilir
+v|schwärmen von|hayranlıkla söz etmek
+n|die Verdrängung|bastırma
+w|verschollen|kayıp
+w|wahrhaftig|sahiden
+n|der Inbegriff|özü, simgesi
+w|nahtlos|kesintisiz
+w|spärlich|kıt
+v|taugen|işe yaramak
+v|widerrufen|geri almak
+n|das Alibi|mazeret
+n|der Vorgeschmack|ön tadımlık
+n|die Ambition|hırs
+n|die Anmaßung|küstahlık
+n|die Ausflucht|bahane
+n|die Bedrängnis|sıkıntı
+n|die Behelfslösung|geçici çözüm
+n|die Belanglosigkeit|önemsizlik
+n|die Bereitwilligkeit|gönüllülük
+n|die Dreistigkeit|yüzsüzlük
+n|die Eintracht|uyum
+n|die Entrüstung|infial
+n|die Erhabenheit|yücelik
+n|die Fahrigkeit|dalgınlık
+n|die Folgerichtigkeit|tutarlılık
+n|die Gediegenheit|sağlamlık, kalite
+n|die Genügsamkeit|kanaatkârlık
+n|die Gesetzmäßigkeit|yasallık; kanunilik
+n|die Gutgläubigkeit|saflık
+n|die Heuchelei|ikiyüzlülük
+n|die Hingabe|bağlılık
+n|die Kaltschnäuzigkeit|soğukluk, küstahlık
+n|die Kurzweil|eğlence
+n|die Langmut|sabır
+n|die Missgunst|haset
+n|die Mündigkeit|reşitlik; olgunluk
+n|die Nachsichtigkeit|hoşgörü
+n|die Nüchternheit|ayıklık; nesnellik
+n|die Redseligkeit|gevezelik
+n|die Rechtschaffenheit|dürüstlük
+n|die Ruchlosigkeit|alçaklık
+n|die Schlagfertigkeit|hazırcevaplık
+n|die Schwermut|hüzün
+n|die Sorgfaltspflicht|özen yükümlülüğü
+n|die Taktlosigkeit|patavatsızlık
+n|die Ungereimtheit|tutarsızlık
+n|die Unverfrorenheit|küstahlık
+n|die Verblendung|gözü dönmüşlük
+n|die Verdrossenheit|bezginlik
+n|die Vergänglichkeit|geçicilik
+n|die Verhältnismäßigkeit|orantılılık
+n|die Verschwiegenheit|ketumluk
+n|die Voreiligkeit|acelecilik
+n|die Weitsicht|ileri görüşlülük
+n|die Wehmut|hasret
+n|die Willkür|keyfilik
+n|die Zerrissenheit|bölünmüşlük
+n|die Zuversicht|güven, umut
+n|der Argwohn|kuşku
+n|der Eigensinn|inatçılık
+n|der Frevel|günah, saygısızlık
+n|der Gleichmut|soğukkanlılık
+n|der Hochmut|kibir
+n|der Kleinmut|yılgınlık
+n|der Missmut|keyifsizlik
+n|der Scharfsinn|zekâ keskinliği
+n|der Starrsinn|dik kafalılık
+n|der Übermut|taşkınlık
+n|der Unmut|hoşnutsuzluk
+n|der Wankelmut|kararsızlık
+n|der Kunstgriff|hüner, hile
+n|der Fauxpas|gaf
+n|der Euphemismus|örtmece
+n|der Pragmatismus|pragmatizm
+n|der Pessimismus|kötümserlik
+n|der Zynismus|sinizm
+n|der Opportunismus|fırsatçılık
+n|der Dünkel|kibir
+n|der Habitus|tavır, alışkanlık
+n|der Nimbus|hale, şöhret
+n|der Affront|hakaret
+n|der Eklat|skandal
+n|der Elan|şevk
+n|der Esprit|espri, zekâ
+n|das Paradoxon|paradoks
+n|das Zerwürfnis|küslük
+n|das Zugeständnis|taviz
+n|das Unbehagen|tedirginlik
+n|das Ansinnen|istek, talep
+n|das Erbarmen|merhamet
+n|das Feingefühl|incelik
+n|das Fingerspitzengefühl|ince sezgi
+n|das Gemüt|mizaç
+n|das Lamento|yakınma
+n|das Pathos|pathos, coşku
+n|das Plazet|onay
+n|das Prozedere|prosedür
+n|das Tohuwabohu|kargaşa
+n|das Verhängnis|felaket, kader
+n|das Wagnis|risk
+v|sich anbiedern|yaranmaya çalışmak
+v|aufbegehren|isyan etmek
+v|ausharren|dayanmak
+v|ausmerzen|kökünü kazımak
+v|bagatellisieren|önemsizleştirmek
+v|beglaubigen|onaylamak (noter)
+v|begünstigen|kolaylaştırmak, kayırmak
+v|belangen|yasal sorumlu tutmak
+v|bemänteln|örtbas etmek
+v|dahinsiechen|eriyip gitmek
+v|degradieren|rütbesini düşürmek
+v|entbehren|yoksun olmak
+v|entfremden|yabancılaştırmak
+v|entgleisen|raydan çıkmak
+v|entlarven|maskesini düşürmek
+v|entrinnen|kurtulmak
+v|sich ergötzen an|zevk almak
+v|erheitern|neşelendirmek
+v|erhärten|sağlamlaştırmak
+v|ermahnen|uyarmak
+v|frohlocken|sevinçten coşmak
+v|gebieten|emretmek
+v|geißeln|kınamak
+v|gewahren|fark etmek
+v|grollen|kin tutmak
+v|harren|beklemek (edebi)
+v|heucheln|rol yapmak
+v|hintergehen|aldatmak
+v|kapitulieren|teslim olmak
+v|mäkeln|kusur bulmak
+v|obsiegen|galip gelmek
+v|perpetuieren|sürdürmek
+v|plädieren|savunmak
+v|an den Pranger stellen|teşhir etmek
+v|propagieren|yaymak
+v|resignieren|pes etmek
+v|revidieren|gözden geçirmek
+v|sanktionieren|yaptırım uygulamak
+v|schwelgen|kendini kaptırmak
+v|sinnieren|derin düşünmek
+v|stagnieren|durgunlaşmak
+v|suggerieren|telkin etmek
+v|torpedieren|baltalamak
+v|trachten nach|peşinde olmak
+v|übertünchen|üstünü örtmek
+v|veräußern|satmak
+v|verfechten|savunmak
+v|vergeuden|israf etmek
+v|verhehlen|saklamak
+v|verifizieren|doğrulamak
+v|verkennen|yanlış değerlendirmek
+v|verklären|idealize etmek
+v|verlautbaren|açıklamak (resmî)
+v|verleumden|iftira etmek
+w|vermeintlich|sözde
+v|veruntreuen|zimmetine geçirmek
+v|verwerfen|reddetmek
+v|verzagen|umudunu yitirmek
+v|vorgaukeln|inandırmaya çalışmak
+v|wettern|atıp tutmak
+v|zaudern|tereddüt etmek
+v|zehren von|-den beslenmek
+v|zuwiderhandeln|aykırı davranmak
+w|abgebrüht|pişkin
+w|abgeschmackt|bayağı
+w|ambivalent|ikircikli
+w|anmaßend|küstah
 """,
 "C2.2": """
 n|die Augenwischerei|göz boyama
@@ -4267,6 +4467,146 @@ w|larmoyant|ağlamaklı, duygusal
 w|obsequiös|dalkavuk
 w|sakrosankt|dokunulmaz
 w|süffisant|kendini beğenmiş
+w|arglos|saf
+w|ausufernd|aşırı büyüyen
+w|bedächtig|temkinli
+w|befangen|taraflı; çekingen
+w|beflissen|gayretli
+w|behäbig|ağırkanlı
+w|beklemmend|bunaltıcı
+w|bezeichnenderweise|manidar biçimde
+w|bieder|sıradan, sade
+w|borniert|dar kafalı
+w|brisant|patlayıcı, hassas
+w|dezent|zarif, ölçülü
+w|diffus|dağınık
+w|eigenwillig|kendine özgü
+w|eingefleischt|koyu, müzmin
+w|eloquent|belâgatli
+w|emsig|çalışkan
+w|engstirnig|dar görüşlü
+w|erhaben|yüce
+w|exorbitant|fahiş
+w|flüchtig|geçici; kaçak
+w|fragil|kırılgan
+w|gediegen|kaliteli
+w|gehässig|kinci
+w|gelinde gesagt|en hafif deyimiyle
+w|geschwätzig|geveze
+w|gewieft|kurnaz
+w|gravierend|ciddi
+w|haarsträubend|tüyler ürpertici
+w|heikel|nazik, hassas
+w|heuchlerisch|ikiyüzlü
+w|hintergründig|derin anlamlı
+w|illuster|seçkin
+w|immens|muazzam
+w|indiskret|patavatsız
+w|inflationär|enflasyonist
+w|infam|alçakça
+w|inkonsequent|tutarsız
+w|kapriziös|kaprisli
+w|kleinlaut|mahcup
+w|kontraproduktiv|ters etki yapan
+w|kurios|tuhaf
+w|labil|dengesiz
+w|launisch|huysuz
+w|lethargisch|uyuşuk
+w|lukrativ|kârlı
+w|makaber|ürkütücü
+w|marode|çürümüş
+w|missgünstig|kıskanç
+w|nonchalant|umursamaz
+w|ominös|uğursuz
+w|opportun|uygun
+w|pedantisch|titiz, ukala
+w|penibel|aşırı titiz
+w|pikant|baharatlı; nazik (mesele)
+w|plakativ|abartılı, basitleştirilmiş
+w|pompös|şatafatlı
+w|prekär|güvencesiz
+w|prägnant|veciz
+w|pragmatisch|pragmatik
+w|rabiat|sert
+w|redlich|dürüst
+w|resolut|kararlı
+w|rigoros|katı
+w|ruchlos|alçak
+w|rudimentär|ilkel
+w|sachdienlich|işe yarar
+w|scheinheilig|ikiyüzlü
+w|schleierhaft|anlaşılmaz
+w|schnöde|alçak, değersiz
+w|selbstgefällig|kendini beğenmiş
+w|skrupellos|vicdansız
+w|sporadisch|seyrek
+w|subversiv|yıkıcı
+w|tendenziös|taraflı
+w|trivial|basit
+w|umsichtig|tedbirli
+w|unbeirrt|yılmadan
+w|unentwegt|durmaksızın
+w|unergründlich|anlaşılmaz
+w|unfehlbar|yanılmaz
+w|unlauter|haksız
+w|unweigerlich|kaçınılmaz olarak
+w|unzulänglich|yetersiz
+w|verbissen|inatçı
+w|verfänglich|tuzaklı
+w|verhängnisvoll|felaket getiren
+w|verklemmt|tutuk
+w|verlogen|yalancı
+w|verschmitzt|muzip
+w|verwegen|gözü kara
+w|vorlaut|haddini bilmez
+w|weitläufig|geniş
+w|weltfremd|gerçeklikten kopuk
+w|widerspenstig|asi
+w|wortkarg|az konuşan
+w|zaghaft|çekingen
+w|zugeknöpft|içine kapanık
+w|zwiespältig|çelişkili
+p|alle Hebel in Bewegung setzen|her yolu denemek
+p|am Hungertuch nagen|açlık çekmek
+p|auf keinen grünen Zweig kommen|bir türlü düze çıkamamak
+p|aus dem Stegreif|hazırlıksız, doğaçlama
+p|das A und O|işin özü
+p|das Blaue vom Himmel versprechen|olmayacak sözler vermek
+p|den Faden verlieren|konuyu kaybetmek
+p|den Löwenanteil bekommen|aslan payını almak
+p|die Spreu vom Weizen trennen|iyiyi kötüden ayırmak
+p|einen Korb bekommen|reddedilmek
+p|etwas auf dem Kerbholz haben|sabıkalı olmak
+p|gang und gäbe sein|olağan olmak
+p|gute Miene zum bösen Spiel machen|kötü duruma iyi görünmek
+p|im Dunkeln tappen|karanlıkta el yordamıyla aramak
+p|in den sauren Apfel beißen|dişini sıkmak
+p|ins Schwarze treffen|tam isabet etmek
+p|jemandem auf den Leim gehen|birinin tuzağına düşmek
+p|jemandem das Wasser reichen können|birine denk olmak
+p|jemanden an der Nase herumführen|birini oyalamak, kandırmak
+p|mit jemandem ein Hühnchen rupfen|biriyle görülecek hesabı olmak
+p|Nägel mit Köpfen machen|işi sağlam yapmak
+p|reinen Tisch machen|meseleyi temizlemek
+p|sich etwas hinter die Ohren schreiben|bir şeyi kulağına küpe etmek
+p|sich kein Bein ausreißen|kendini paralamamak
+p|Tomaten auf den Augen haben|gözü görmemek
+p|unter vier Augen|baş başa
+p|viel Lärm um nichts|boş yere gürültü
+p|wie auf glühenden Kohlen sitzen|diken üstünde olmak
+p|zwei Fliegen mit einer Klappe schlagen|bir taşla iki kuş vurmak
+p|den Bock zum Gärtner machen|kurdu çobanlığa koymak
+p|die Kirche im Dorf lassen|abartmamak
+p|ein Auge zudrücken|göz yummak
+p|eine Eselsbrücke bauen|hatırlatıcı bulmak
+p|etwas aus dem Ärmel schütteln|bir şeyi kolayca yapmak
+p|jemandem einen Bären aufbinden|birine masal anlatmak
+p|jemandem die Leviten lesen|birine ders vermek, fırça atmak
+p|sich die Klinke in die Hand geben|ardı ardına gelmek
+p|über seinen Schatten springen|kendini aşmak
+p|von der Pike auf lernen|işi en baştan öğrenmek
+p|wie Sand am Meer|sayısız
+p|zwischen Baum und Borke stecken|iki ateş arasında kalmak
 """,
 }
 
@@ -9731,7 +10071,347 @@ DE_EN = {'der Mann': 'man',
  'kapieren': 'to get it',
  'der Menschenverstand': 'common sense',
  'praktizieren': 'to practise',
- 'das Schmerzmittel': 'painkiller'}
+ 'das Schmerzmittel': 'painkiller',
+ 'mühelos': 'effortless(ly)',
+ 'greifbar': 'tangible',
+ 'mangelhaft': 'deficient',
+ 'festnehmen': 'to arrest',
+ 'erkranken': 'to fall ill',
+ 'verhaften': 'to arrest',
+ 'vertuschen': 'to cover up',
+ 'verachten': 'to despise',
+ 'unbequem': 'uncomfortable, awkward',
+ 'fortgeschritten': 'advanced',
+ 'die Mahnung': 'reminder, dunning letter',
+ 'die Abmahnung': 'formal warning',
+ 'die Missachtung': 'disregard',
+ 'die Maxime': 'maxim',
+ 'die Intuition': 'intuition',
+ 'bedeutsam': 'significant',
+ 'eindringlich': 'urgent, forceful',
+ 'energisch': 'vigorous',
+ 'erliegen': 'to succumb to',
+ 'gierig': 'greedy',
+ 'der Idealfall': 'ideal case',
+ 'das Konstrukt': 'construct',
+ 'respektvoll': 'respectful',
+ 'wahrhaft': 'truly',
+ 'zwangsweise': 'compulsorily',
+ 'imstande': 'capable',
+ 'rückläufig': 'declining',
+ 'rücksichtslos': 'reckless',
+ 'unverantwortlich': 'irresponsible',
+ 'unverbindlich': 'non-binding',
+ 'der Verfechter': 'advocate',
+ 'die Ausdrucksweise': 'way of expressing oneself',
+ 'nichtig': 'void; trivial',
+ 'ratsam': 'advisable',
+ 'schwärmen von': 'to rave about',
+ 'die Verdrängung': 'repression, displacement',
+ 'verschollen': 'missing',
+ 'wahrhaftig': 'truly',
+ 'der Inbegriff': 'epitome',
+ 'nahtlos': 'seamless',
+ 'spärlich': 'sparse',
+ 'taugen': 'to be good for',
+ 'widerrufen': 'to revoke',
+ 'das Alibi': 'alibi',
+ 'der Vorgeschmack': 'foretaste',
+ 'die Ambition': 'ambition',
+ 'die Anmaßung': 'presumption',
+ 'die Ausflucht': 'excuse, evasion',
+ 'die Bedrängnis': 'distress',
+ 'die Behelfslösung': 'makeshift solution',
+ 'die Belanglosigkeit': 'triviality',
+ 'die Bereitwilligkeit': 'willingness',
+ 'die Dreistigkeit': 'audacity',
+ 'die Eintracht': 'harmony, concord',
+ 'die Entrüstung': 'indignation',
+ 'die Erhabenheit': 'sublimity',
+ 'die Fahrigkeit': 'absent-mindedness',
+ 'die Folgerichtigkeit': 'logical consistency',
+ 'die Gediegenheit': 'solidity, quality',
+ 'die Genügsamkeit': 'frugality',
+ 'die Gesetzmäßigkeit': 'regularity, law',
+ 'die Gutgläubigkeit': 'credulity',
+ 'die Heuchelei': 'hypocrisy',
+ 'die Hingabe': 'devotion',
+ 'die Kaltschnäuzigkeit': 'callousness',
+ 'die Kurzweil': 'amusement',
+ 'die Langmut': 'forbearance',
+ 'die Missgunst': 'envy',
+ 'die Mündigkeit': 'maturity, majority',
+ 'die Nachsichtigkeit': 'indulgence',
+ 'die Nüchternheit': 'sobriety',
+ 'die Redseligkeit': 'talkativeness',
+ 'die Rechtschaffenheit': 'righteousness',
+ 'die Ruchlosigkeit': 'wickedness',
+ 'die Schlagfertigkeit': 'quick-wittedness',
+ 'die Schwermut': 'melancholy',
+ 'die Sorgfaltspflicht': 'duty of care',
+ 'die Taktlosigkeit': 'tactlessness',
+ 'die Ungereimtheit': 'inconsistency',
+ 'die Unverfrorenheit': 'impudence',
+ 'die Verblendung': 'delusion',
+ 'die Verdrossenheit': 'disenchantment',
+ 'die Vergänglichkeit': 'transience',
+ 'die Verhältnismäßigkeit': 'proportionality',
+ 'die Verschwiegenheit': 'discretion',
+ 'die Voreiligkeit': 'rashness',
+ 'die Weitsicht': 'foresight',
+ 'die Wehmut': 'wistfulness',
+ 'die Willkür': 'arbitrariness',
+ 'die Zerrissenheit': 'inner conflict',
+ 'die Zuversicht': 'confidence, optimism',
+ 'der Argwohn': 'suspicion',
+ 'der Eigensinn': 'obstinacy',
+ 'der Frevel': 'sacrilege',
+ 'der Gleichmut': 'equanimity',
+ 'der Hochmut': 'arrogance',
+ 'der Kleinmut': 'faint-heartedness',
+ 'der Missmut': 'ill humour',
+ 'der Scharfsinn': 'acumen',
+ 'der Starrsinn': 'stubbornness',
+ 'der Übermut': 'high spirits, recklessness',
+ 'der Unmut': 'displeasure',
+ 'der Wankelmut': 'fickleness',
+ 'der Kunstgriff': 'trick, artifice',
+ 'der Fauxpas': 'faux pas',
+ 'der Euphemismus': 'euphemism',
+ 'der Pragmatismus': 'pragmatism',
+ 'der Pessimismus': 'pessimism',
+ 'der Zynismus': 'cynicism',
+ 'der Opportunismus': 'opportunism',
+ 'der Dünkel': 'conceit',
+ 'der Habitus': 'habitus, bearing',
+ 'der Nimbus': 'aura, nimbus',
+ 'der Affront': 'affront',
+ 'der Eklat': 'scandal, uproar',
+ 'der Elan': 'vigour',
+ 'der Esprit': 'wit',
+ 'das Paradoxon': 'paradox',
+ 'das Zerwürfnis': 'rift',
+ 'das Zugeständnis': 'concession',
+ 'das Unbehagen': 'unease',
+ 'das Ansinnen': 'request, demand',
+ 'das Erbarmen': 'mercy',
+ 'das Feingefühl': 'sensitivity, tact',
+ 'das Fingerspitzengefühl': 'tact, intuition',
+ 'das Gemüt': 'temperament',
+ 'das Lamento': 'lament',
+ 'das Pathos': 'pathos',
+ 'das Plazet': 'approval',
+ 'das Prozedere': 'procedure',
+ 'das Tohuwabohu': 'chaos',
+ 'das Verhängnis': 'doom',
+ 'das Wagnis': 'venture, risk',
+ 'sich anbiedern': 'to ingratiate oneself',
+ 'aufbegehren': 'to rebel',
+ 'ausharren': 'to hold out',
+ 'ausmerzen': 'to eradicate',
+ 'bagatellisieren': 'to trivialise',
+ 'beglaubigen': 'to certify',
+ 'begünstigen': 'to favour',
+ 'belangen': 'to prosecute',
+ 'bemänteln': 'to gloss over',
+ 'dahinsiechen': 'to waste away',
+ 'degradieren': 'to demote',
+ 'entbehren': 'to lack, to do without',
+ 'entfremden': 'to alienate',
+ 'entgleisen': 'to derail',
+ 'entlarven': 'to expose',
+ 'entrinnen': 'to escape',
+ 'sich ergötzen an': 'to delight in',
+ 'erheitern': 'to amuse',
+ 'erhärten': 'to substantiate',
+ 'ermahnen': 'to admonish',
+ 'frohlocken': 'to rejoice',
+ 'gebieten': 'to command',
+ 'geißeln': 'to castigate',
+ 'gewahren': 'to become aware of',
+ 'grollen': 'to bear a grudge',
+ 'harren': 'to await',
+ 'heucheln': 'to feign',
+ 'hintergehen': 'to deceive',
+ 'kapitulieren': 'to capitulate',
+ 'mäkeln': 'to carp',
+ 'obsiegen': 'to prevail',
+ 'perpetuieren': 'to perpetuate',
+ 'plädieren': 'to plead',
+ 'an den Pranger stellen': 'to pillory',
+ 'propagieren': 'to propagate',
+ 'resignieren': 'to resign oneself',
+ 'revidieren': 'to revise',
+ 'sanktionieren': 'to sanction',
+ 'schwelgen': 'to revel',
+ 'sinnieren': 'to ponder',
+ 'stagnieren': 'to stagnate',
+ 'suggerieren': 'to suggest',
+ 'torpedieren': 'to torpedo',
+ 'trachten nach': 'to strive for',
+ 'übertünchen': 'to whitewash',
+ 'veräußern': 'to sell, to dispose of',
+ 'verfechten': 'to champion',
+ 'vergeuden': 'to squander',
+ 'verhehlen': 'to conceal',
+ 'verifizieren': 'to verify',
+ 'verkennen': 'to misjudge',
+ 'verklären': 'to glorify',
+ 'verlautbaren': 'to announce',
+ 'verleumden': 'to slander',
+ 'vermeintlich': 'supposed',
+ 'veruntreuen': 'to embezzle',
+ 'verwerfen': 'to reject',
+ 'verzagen': 'to despair',
+ 'vorgaukeln': 'to pretend',
+ 'wettern': 'to rail against',
+ 'zaudern': 'to hesitate',
+ 'zehren von': 'to live off',
+ 'zuwiderhandeln': 'to contravene',
+ 'abgebrüht': 'hard-boiled',
+ 'abgeschmackt': 'tasteless, trite',
+ 'ambivalent': 'ambivalent',
+ 'anmaßend': 'arrogant',
+ 'arglos': 'guileless',
+ 'ausufernd': 'escalating',
+ 'bedächtig': 'deliberate',
+ 'befangen': 'biased; self-conscious',
+ 'beflissen': 'eager, zealous',
+ 'behäbig': 'sedate',
+ 'beklemmend': 'oppressive',
+ 'bezeichnenderweise': 'tellingly',
+ 'bieder': 'staid',
+ 'borniert': 'narrow-minded',
+ 'brisant': 'explosive, controversial',
+ 'dezent': 'discreet',
+ 'diffus': 'diffuse',
+ 'eigenwillig': 'idiosyncratic',
+ 'eingefleischt': 'confirmed, inveterate',
+ 'eloquent': 'eloquent',
+ 'emsig': 'busy, industrious',
+ 'engstirnig': 'narrow-minded',
+ 'erhaben': 'sublime',
+ 'exorbitant': 'exorbitant',
+ 'flüchtig': 'fleeting; fugitive',
+ 'fragil': 'fragile',
+ 'gediegen': 'high-quality',
+ 'gehässig': 'spiteful',
+ 'gelinde gesagt': 'to put it mildly',
+ 'geschwätzig': 'talkative',
+ 'gewieft': 'shrewd',
+ 'gravierend': 'serious',
+ 'haarsträubend': 'hair-raising',
+ 'heikel': 'delicate, tricky',
+ 'heuchlerisch': 'hypocritical',
+ 'hintergründig': 'subtle, cryptic',
+ 'illuster': 'illustrious',
+ 'immens': 'immense',
+ 'indiskret': 'indiscreet',
+ 'inflationär': 'inflationary',
+ 'infam': 'infamous',
+ 'inkonsequent': 'inconsistent',
+ 'kapriziös': 'capricious',
+ 'kleinlaut': 'sheepish',
+ 'kontraproduktiv': 'counterproductive',
+ 'kurios': 'curious, odd',
+ 'labil': 'unstable',
+ 'launisch': 'moody',
+ 'lethargisch': 'lethargic',
+ 'lukrativ': 'lucrative',
+ 'makaber': 'macabre',
+ 'marode': 'dilapidated',
+ 'missgünstig': 'envious',
+ 'nonchalant': 'nonchalant',
+ 'ominös': 'ominous',
+ 'opportun': 'opportune',
+ 'pedantisch': 'pedantic',
+ 'penibel': 'meticulous',
+ 'pikant': 'spicy; delicate',
+ 'plakativ': 'simplistic, striking',
+ 'pompös': 'pompous',
+ 'prekär': 'precarious',
+ 'prägnant': 'concise',
+ 'pragmatisch': 'pragmatic',
+ 'rabiat': 'rough, brutal',
+ 'redlich': 'honest',
+ 'resolut': 'resolute',
+ 'rigoros': 'rigorous',
+ 'ruchlos': 'wicked',
+ 'rudimentär': 'rudimentary',
+ 'sachdienlich': 'pertinent',
+ 'scheinheilig': 'sanctimonious',
+ 'schleierhaft': 'baffling',
+ 'schnöde': 'base, contemptible',
+ 'selbstgefällig': 'smug',
+ 'skrupellos': 'unscrupulous',
+ 'sporadisch': 'sporadic',
+ 'subversiv': 'subversive',
+ 'tendenziös': 'tendentious',
+ 'trivial': 'trivial',
+ 'umsichtig': 'prudent',
+ 'unbeirrt': 'unwavering',
+ 'unentwegt': 'incessantly',
+ 'unergründlich': 'unfathomable',
+ 'unfehlbar': 'infallible',
+ 'unlauter': 'unfair, dishonest',
+ 'unweigerlich': 'inevitably',
+ 'unzulänglich': 'inadequate',
+ 'verbissen': 'dogged',
+ 'verfänglich': 'tricky, compromising',
+ 'verhängnisvoll': 'fateful',
+ 'verklemmt': 'inhibited',
+ 'verlogen': 'mendacious',
+ 'verschmitzt': 'mischievous',
+ 'verwegen': 'daring',
+ 'vorlaut': 'cheeky',
+ 'weitläufig': 'extensive',
+ 'weltfremd': 'unworldly',
+ 'widerspenstig': 'unruly',
+ 'wortkarg': 'taciturn',
+ 'zaghaft': 'timid',
+ 'zugeknöpft': 'reserved',
+ 'zwiespältig': 'ambivalent',
+ 'alle Hebel in Bewegung setzen': 'to move heaven and earth',
+ 'am Hungertuch nagen': 'to be on the breadline',
+ 'auf keinen grünen Zweig kommen': 'to get nowhere',
+ 'aus dem Stegreif': 'off the cuff',
+ 'das A und O': 'the be-all and end-all',
+ 'das Blaue vom Himmel versprechen': 'to promise the moon',
+ 'den Faden verlieren': 'to lose the thread',
+ 'den Löwenanteil bekommen': "to get the lion's share",
+ 'die Spreu vom Weizen trennen': 'to separate the wheat from the chaff',
+ 'einen Korb bekommen': 'to be turned down',
+ 'etwas auf dem Kerbholz haben': 'to have a record',
+ 'gang und gäbe sein': 'to be common practice',
+ 'gute Miene zum bösen Spiel machen': 'to put a brave face on it',
+ 'im Dunkeln tappen': 'to be in the dark',
+ 'in den sauren Apfel beißen': 'to bite the bullet',
+ 'ins Schwarze treffen': "to hit the bull's-eye",
+ 'jemandem auf den Leim gehen': "to fall for sb's trick",
+ 'jemandem das Wasser reichen können': 'to be a match for sb',
+ 'jemanden an der Nase herumführen': 'to lead sb up the garden path',
+ 'mit jemandem ein Hühnchen rupfen': 'to have a bone to pick with sb',
+ 'Nägel mit Köpfen machen': 'to do the job properly',
+ 'reinen Tisch machen': 'to make a clean sweep',
+ 'sich etwas hinter die Ohren schreiben': 'to take sth to heart',
+ 'sich kein Bein ausreißen': 'not to bend over backwards',
+ 'Tomaten auf den Augen haben': 'to be blind to sth',
+ 'unter vier Augen': 'in private',
+ 'viel Lärm um nichts': 'much ado about nothing',
+ 'wie auf glühenden Kohlen sitzen': 'to be on tenterhooks',
+ 'zwei Fliegen mit einer Klappe schlagen': 'to kill two birds with one stone',
+ 'den Bock zum Gärtner machen': 'to set the fox to guard the henhouse',
+ 'die Kirche im Dorf lassen': 'not to get carried away',
+ 'ein Auge zudrücken': 'to turn a blind eye',
+ 'eine Eselsbrücke bauen': 'to use a mnemonic',
+ 'etwas aus dem Ärmel schütteln': 'to pull sth out of a hat',
+ 'jemandem einen Bären aufbinden': "to pull sb's leg",
+ 'jemandem die Leviten lesen': 'to read sb the riot act',
+ 'sich die Klinke in die Hand geben': 'to come and go in a steady stream',
+ 'über seinen Schatten springen': "to overcome one's nature",
+ 'von der Pike auf lernen': 'to learn from the bottom up',
+ 'wie Sand am Meer': 'countless',
+ 'zwischen Baum und Borke stecken': 'to be caught between a rock and a hard place'}
 
 DE_EN_ACADEMIC = {'die Forschung': 'research',
  'die Daten (Pl.)': 'data',

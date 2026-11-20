@@ -17,12 +17,12 @@ Word Flow is a single app for English, German and Turkish. On first start it ask
 
 | You speak | You learn | Word → meaning | Modes (number of words) |
 |---|---|---|---|
-| English | German | German → English | General 2,588 · Academic 691 · Cyber 500 |
-| English | Turkish | Turkish → English | Everyday 2,417 · Academic 745 · Cyber 502 |
-| German | English | English → German | Everyday 2,443 · Academic 753 · Cyber 502 |
-| German | Turkish | Turkish → German | General 2,567 · Academic 684 · Cyber 500 |
-| Turkish | English | English → Turkish | Everyday 2,443 · Academic 753 · Cyber 502 |
-| Turkish | German | German → Turkish | General 2,588 · Academic 691 · Cyber 500 |
+| English | German | German → English | General 4,573 · Academic 691 · Cyber 500 |
+| English | Turkish | Turkish → English | Everyday 4,805 · Academic 745 · Cyber 502 |
+| German | English | English → German | Everyday 4,925 · Academic 753 · Cyber 502 |
+| German | Turkish | Turkish → German | General 4,485 · Academic 684 · Cyber 500 |
+| Turkish | English | English → Turkish | Everyday 4,925 · Academic 753 · Cyber 502 |
+| Turkish | German | German → Turkish | General 4,573 · Academic 691 · Cyber 500 |
 
 ### Word lists
 - **General / Everyday (A1.1 – C2.2).** A1–B1 cover a core vocabulary of 1,500 words across 26 topics, such as greetings, numbers, family, home, food, the city, work and official paperwork in Germany. Extra everyday verbs are included too. B2–C1 add C1-level verbs, nouns, adjectives, phrasal verbs and connectors, ordered by how common they are. C2 adds rare words and idioms.
@@ -78,12 +78,12 @@ Word Flow İngilizce, Almanca ve Türkçe için tek bir uygulama. İlk açılı�
 
 | Konuştuğun dil | Öğrendiğin dil | Kelime → anlamı | Modlar (kelime sayısı) |
 |---|---|---|---|
-| Türkçe | İngilizce | İngilizce → Türkçe | Günlük 2.443 · Akademik 753 · Siber 502 |
-| Türkçe | Almanca | Almanca → Türkçe | Genel 2.588 · Akademik 691 · Siber 500 |
-| İngilizce | Almanca | Almanca → İngilizce | Genel 2.588 · Akademik 691 · Siber 500 |
-| İngilizce | Türkçe | Türkçe → İngilizce | Günlük 2.417 · Akademik 745 · Siber 502 |
-| Almanca | İngilizce | İngilizce → Almanca | Günlük 2.443 · Akademik 753 · Siber 502 |
-| Almanca | Türkçe | Türkçe → Almanca | Genel 2.567 · Akademik 684 · Siber 500 |
+| Türkçe | İngilizce | İngilizce → Türkçe | Günlük 4.925 · Akademik 753 · Siber 502 |
+| Türkçe | Almanca | Almanca → Türkçe | Genel 4.573 · Akademik 691 · Siber 500 |
+| İngilizce | Almanca | Almanca → İngilizce | Genel 4.573 · Akademik 691 · Siber 500 |
+| İngilizce | Türkçe | Türkçe → İngilizce | Günlük 4.805 · Akademik 745 · Siber 502 |
+| Almanca | İngilizce | İngilizce → Almanca | Günlük 4.925 · Akademik 753 · Siber 502 |
+| Almanca | Türkçe | Türkçe → Almanca | Genel 4.485 · Akademik 684 · Siber 500 |
 
 ### Kelime listeleri
 - **Genel / Günlük (A1.1 – C2.2).** A1–B1 seviyeleri 26 konuda 1500 temel kelimeyi kapsıyor. Konular arasında selamlaşma, sayılar, aile, ev, yemek, şehir, iş ve Almanya'daki resmî işler var. Bunlara ek günlük fiiller de eklendi. B2–C1 seviyelerinde C1 düzeyinde fiiller, isimler, sıfatlar, phrasal verb'ler ve bağlaçlar var; ne kadar sık kullanıldıklarına göre sıralandılar. C2'de nadir kelimeler ve deyimler var.
@@ -139,12 +139,12 @@ Word Flow ist eine einzige App für Englisch, Deutsch und Türkisch. Beim ersten
 
 | Du sprichst | Du lernst | Wort → Bedeutung | Modi (Anzahl Wörter) |
 |---|---|---|---|
-| Deutsch | Englisch | Englisch → Deutsch | Alltag 2.443 · Akademisch 753 · Cyber 502 |
-| Deutsch | Türkisch | Türkisch → Deutsch | Allgemein 2.567 · Akademisch 684 · Cyber 500 |
-| Englisch | Deutsch | Deutsch → Englisch | Allgemein 2.588 · Akademisch 691 · Cyber 500 |
-| Englisch | Türkisch | Türkisch → Englisch | Alltag 2.417 · Akademisch 745 · Cyber 502 |
-| Türkisch | Englisch | Englisch → Türkisch | Alltag 2.443 · Akademisch 753 · Cyber 502 |
-| Türkisch | Deutsch | Deutsch → Türkisch | Allgemein 2.588 · Akademisch 691 · Cyber 500 |
+| Deutsch | Englisch | Englisch → Deutsch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
+| Deutsch | Türkisch | Türkisch → Deutsch | Allgemein 4.485 · Akademisch 684 · Cyber 500 |
+| Englisch | Deutsch | Deutsch → Englisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
+| Englisch | Türkisch | Türkisch → Englisch | Alltag 4.805 · Akademisch 745 · Cyber 502 |
+| Türkisch | Englisch | Englisch → Türkisch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
+| Türkisch | Deutsch | Deutsch → Türkisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
 
 ### Wortlisten
 - **Allgemein / Alltag (A1.1 – C2.2).** A1–B1 umfassen einen Grundwortschatz von 1.500 Wörtern aus 26 Themen, zum Beispiel Begrüßung, Zahlen, Familie, Wohnen, Essen, Stadt, Arbeit und Behördengänge in Deutschland. Dazu kommen weitere Alltagsverben. B2–C1 ergänzen Verben, Nomen, Adjektive, Phrasal Verbs und Konnektoren auf C1-Niveau, sortiert nach Häufigkeit. C2 enthält seltene Wörter und Redewendungen.
