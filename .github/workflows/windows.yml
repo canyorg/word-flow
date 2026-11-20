@@ -2,7 +2,8 @@ name: Windows exe
 
 on:
   push:
-    tags: ["v*"]
+    branches: [main]
+    paths: ["wordflow.py", "wordlists/**", "icon.*", ".github/workflows/windows.yml"]
   workflow_dispatch:
 
 permissions:
@@ -40,9 +41,16 @@ jobs:
           name: WordFlow-windows
           path: dist/WordFlow.exe
 
-      - name: Attach to release
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Word Flow 1.0.${{ github.run_number }}
+          target_commitish: ${{ github.sha }}
+          make_latest: true
           files: dist/WordFlow.exe
-          generate_release_notes: true
+          body: |
+            **Windows:** download `WordFlow.exe` below and double-click it. No installation, no Python needed.
+            If Windows shows "Windows protected your PC", click **More info → Run anyway** (the exe isn't signed).
+
+            **Linux:** see the README (`./install.sh --autostart`).
