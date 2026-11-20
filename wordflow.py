@@ -6,15 +6,18 @@ Word Flow — a tiny always-on-top vocabulary widget.
 A new word / verb / phrase every 20 seconds, with its meaning right below it,
 so you learn it whenever your eye catches it.
 
+On first start it asks which language you speak (Turkish, English or German)
+and which of the other two you want to learn; you can change this any time
+from the right-click menu.
+
 Language pairs (word → meaning):
-    de-tr   German  → Turkish   (General / Academic / Cyber)
-    en-tr   English → Turkish   (Everyday / Academic / Cyber)
-    en-de   English → German    (Everyday / Academic / Cyber)
-    de-en   German  → English   (General / Academic / Cyber)
+    de-tr / en-tr   German / English → Turkish   (Turkish speakers)
+    de-en / tr-en   German / Turkish → English   (English speakers)
+    en-de / tr-de   English / Turkish → German   (German speakers)
 
 Usage:
-    python3 wordflow.py de-tr
-    python3 wordflow.py en-de
+    python3 wordflow.py           # remembers your languages, asks on first start
+    python3 wordflow.py en-de     # open one pair directly
 """
 import os
 import re
@@ -62,6 +65,9 @@ UI = {
         "sec": "{} saniye", "m_lock": "Konumu kilitle", "m_top": "Her zaman üstte",
         "m_bg": "Arka plan resmi seç…", "m_bg_reset": "Varsayılan arka plan",
         "m_reset": "İlerlemeyi sıfırla", "m_close": "Kapat", "images": "Resimler",
+        "m_lang": "Dili değiştir…", "learn_q": "Hangi dili öğrenmek istiyorsunuz?",
+        "learn_hint": "Kelimeler bu dilde gelir, anlamı Türkçe yazar",
+        "langs": {"tr": "Türkçe", "en": "İngilizce", "de": "Almanca"}, "back": "‹ Geri",
         "types": {"n": "İSİM", "v": "FİİL", "a": "SIFAT", "d": "ZARF",
                   "p": "KALIP", "w": "KELİME"},
     },
@@ -81,6 +87,9 @@ UI = {
         "sec": "{} seconds", "m_lock": "Lock position", "m_top": "Always on top",
         "m_bg": "Choose background image…", "m_bg_reset": "Default background",
         "m_reset": "Reset progress", "m_close": "Close", "images": "Images",
+        "m_lang": "Change language…", "learn_q": "Which language do you want to learn?",
+        "learn_hint": "Words appear in that language, with the meaning in English",
+        "langs": {"tr": "Turkish", "en": "English", "de": "German"}, "back": "‹ Back",
         "types": {"n": "NOUN", "v": "VERB", "a": "ADJECTIVE", "d": "ADVERB",
                   "p": "PHRASE", "w": "WORD"},
     },
@@ -100,6 +109,9 @@ UI = {
         "sec": "{} Sekunden", "m_lock": "Position sperren", "m_top": "Immer im Vordergrund",
         "m_bg": "Hintergrundbild wählen…", "m_bg_reset": "Standard-Hintergrund",
         "m_reset": "Fortschritt zurücksetzen", "m_close": "Schließen", "images": "Bilder",
+        "m_lang": "Sprache ändern…", "learn_q": "Welche Sprache möchten Sie lernen?",
+        "learn_hint": "Die Wörter erscheinen in dieser Sprache, die Bedeutung auf Deutsch",
+        "langs": {"tr": "Türkisch", "en": "Englisch", "de": "Deutsch"}, "back": "‹ Zurück",
         "types": {"n": "NOMEN", "v": "VERB", "a": "ADJEKTIV", "d": "ADVERB",
                   "p": "WENDUNG", "w": "WORT"},
     },
@@ -123,6 +135,22 @@ def parse_block(raw, mode, meaning):
     return out
 
 
+def parse_reverse(raw, mode, source):
+    """Turkish → X: the Turkish meaning becomes the word, source(word) the meaning."""
+    out = {}
+    for lv, block in raw.items():
+        items, seen = [], set()
+        for line in block.strip().splitlines():
+            p = [x.strip() for x in line.split("|")]
+            if len(p) < 3 or p[2] in seen:
+                continue
+            seen.add(p[2])
+            items.append({"t": p[0], "w": p[2], "m": source(p[1]), "x": "", "lv": lv,
+                          "mode": mode, "key": f"{mode}:{p[2]}"})
+        out[lv] = items
+    return out
+
+
 def en_de(mode):
     table = {"academic": english.EN_DE_ACADEMIC, "cyber": english.EN_DE_CYBER}.get(
         mode, english.EN_DE)
@@ -132,6 +160,11 @@ def en_de(mode):
 def de_en(table):
     return lambda w, tr: table.get(w, tr)
 
+
+# (spoken language, language to learn) -> pair
+PAIR_FOR = {("tr", "en"): "en-tr", ("tr", "de"): "de-tr",
+            ("en", "de"): "de-en", ("en", "tr"): "tr-en",
+            ("de", "en"): "en-de", ("de", "tr"): "tr-de"}
 
 PAIRS = {
     "de-tr": {"title": "Kelime Akışı · DE → TR", "ui": "tr", "src": "de", "dst": "tr",
@@ -159,6 +192,16 @@ PAIRS = {
                                                 de_en(german.DE_EN_ACADEMIC)),
                         "cyber": parse_block(german.GERMAN_CYBER, "cyber",
                                              de_en(german.DE_EN_CYBER))}},
+    "tr-en": {"title": "Word Flow · TR → EN", "ui": "en", "src": "tr", "dst": "en",
+              "state": "word-flow-tr-en",
+              "modes": {"daily": parse_reverse(english.DAILY, "daily", lambda w: w),
+                        "academic": parse_reverse(english.ACADEMIC, "academic", lambda w: w),
+                        "cyber": parse_reverse(english.CYBER, "cyber", lambda w: w)}},
+    "tr-de": {"title": "Word Flow · TR → DE", "ui": "de", "src": "tr", "dst": "de",
+              "state": "word-flow-tr-de",
+              "modes": {"general": parse_reverse(german.GERMAN, "general", lambda w: w),
+                        "academic": parse_reverse(german.GERMAN_ACADEMIC, "academic", lambda w: w),
+                        "cyber": parse_reverse(german.GERMAN_CYBER, "cyber", lambda w: w)}},
 }
 
 ARTICLE_COLORS = {"der": "#7fb2ff", "die": "#ff8fa3", "das": "#7fe0a8"}
@@ -172,6 +215,38 @@ def colorize_german(text, base):
         lambda m: f"<span style='color:{ARTICLE_COLORS[m.group(1)]}'>{m.group(1)}</span>",
         esc)
     return f"<span style='color:{base}'>{html}</span>"
+
+
+def paint_card(w, bg_pix):
+    """Rounded dark card background (or the user's picture). Returns (painter, path)."""
+    p = QPainter(w)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    path = QPainterPath()
+    path.addRoundedRect(QRectF(w.rect()).adjusted(0.5, 0.5, -0.5, -0.5), 20, 20)
+    p.setClipPath(path)
+    if bg_pix and not bg_pix.isNull():
+        pm = bg_pix.scaled(w.size(), Qt.AspectRatioMode.KeepAspectRatioByExpanding,
+                           Qt.TransformationMode.SmoothTransformation)
+        p.drawPixmap(int((w.width() - pm.width()) / 2), int((w.height() - pm.height()) / 2), pm)
+        ov = QLinearGradient(0, 0, 0, w.height())
+        ov.setColorAt(0, QColor(10, 10, 25, 110))
+        ov.setColorAt(1, QColor(10, 10, 25, 185))
+        p.fillRect(w.rect(), ov)
+    else:
+        g = QLinearGradient(0, 0, w.width(), w.height())
+        g.setColorAt(0, QColor("#141a3a"))
+        g.setColorAt(0.55, QColor("#2a1d4f"))
+        g.setColorAt(1, QColor("#0d1226"))
+        p.fillRect(w.rect(), g)
+        glow = QRadialGradient(w.width() * 0.85, w.height() * 0.1, w.width() * 0.6)
+        glow.setColorAt(0, QColor(255, 140, 120, 70))
+        glow.setColorAt(1, QColor(255, 140, 120, 0))
+        p.fillRect(w.rect(), glow)
+        glow2 = QRadialGradient(w.width() * 0.1, w.height() * 1.0, w.width() * 0.55)
+        glow2.setColorAt(0, QColor(90, 160, 255, 60))
+        glow2.setColorAt(1, QColor(90, 160, 255, 0))
+        p.fillRect(w.rect(), glow2)
+    return p, path
 
 
 CHIP_CSS = ("QPushButton{color:#e8e6ff;background:rgba(255,255,255,0.13);"
@@ -188,8 +263,9 @@ def btn_css(bg, hover):
 
 # --------------------------------------------------------------------------- widget
 class WordWidget(QWidget):
-    def __init__(self, pair_id):
+    def __init__(self, pair_id, controller=None, pos=None):
         super().__init__()
+        self.controller = controller
         self.pair_id = pair_id
         self.pair = PAIRS[pair_id]
         self.T = UI[self.pair["ui"]]
@@ -231,12 +307,12 @@ class WordWidget(QWidget):
         self.save_timer.setSingleShot(True)
         self.save_timer.timeout.connect(self.save_state)
 
-        if self.st.get("pos"):
+        if pos is not None:
+            self.move(pos)
+        elif self.st.get("pos"):
             self.move(QPoint(*self.st["pos"]))
         else:
-            scr = QApplication.primaryScreen().availableGeometry()
-            idx = list(PAIRS).index(pair_id)
-            self.move(scr.right() - APP_W - 30, scr.top() + 60 + idx * (APP_H + 16))
+            self.move(default_pos())
 
         if self.level() in self.levels.get(self.mode(), []):
             self.show_card()
@@ -319,6 +395,14 @@ class WordWidget(QWidget):
         top.addWidget(self.type_lbl)
         top.addStretch(1)
         top.addWidget(self.stats_lbl)
+        if self.controller:
+            self.lang_btn = QPushButton("🌐")
+            self.lang_btn.setFixedSize(26, 22)
+            self.lang_btn.setStyleSheet(CHIP_CSS)
+            self.lang_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+            self.lang_btn.setToolTip(self.T["m_lang"])
+            self.lang_btn.clicked.connect(lambda: self.controller.change_language(self))
+            top.addWidget(self.lang_btn)
         top.addWidget(self.pin_btn)
         v.addLayout(top)
         v.addStretch(1)
@@ -558,42 +642,12 @@ class WordWidget(QWidget):
         self.dont_btn.setText(self.T["dont"] + (f" ·{s['u']}" if s["u"] else ""))
 
     def paintEvent(self, ev):
-        p = QPainter(self)
-        p.setRenderHint(QPainter.RenderHint.Antialiasing)
-        path = QPainterPath()
-        path.addRoundedRect(QRectF(self.rect()).adjusted(0.5, 0.5, -0.5, -0.5), 20, 20)
-        p.setClipPath(path)
-
-        if self.bg_pix and not self.bg_pix.isNull():
-            pm = self.bg_pix.scaled(self.size(), Qt.AspectRatioMode.KeepAspectRatioByExpanding,
-                                    Qt.TransformationMode.SmoothTransformation)
-            p.drawPixmap(int((self.width() - pm.width()) / 2),
-                         int((self.height() - pm.height()) / 2), pm)
-            ov = QLinearGradient(0, 0, 0, self.height())
-            ov.setColorAt(0, QColor(10, 10, 25, 110))
-            ov.setColorAt(1, QColor(10, 10, 25, 185))
-            p.fillRect(self.rect(), ov)
-        else:
-            g = QLinearGradient(0, 0, self.width(), self.height())
-            g.setColorAt(0, QColor("#141a3a"))
-            g.setColorAt(0.55, QColor("#2a1d4f"))
-            g.setColorAt(1, QColor("#0d1226"))
-            p.fillRect(self.rect(), g)
-            glow = QRadialGradient(self.width() * 0.85, self.height() * 0.1, self.width() * 0.6)
-            glow.setColorAt(0, QColor(255, 140, 120, 70))
-            glow.setColorAt(1, QColor(255, 140, 120, 0))
-            p.fillRect(self.rect(), glow)
-            glow2 = QRadialGradient(self.width() * 0.1, self.height() * 1.0, self.width() * 0.55)
-            glow2.setColorAt(0, QColor(90, 160, 255, 60))
-            glow2.setColorAt(1, QColor(90, 160, 255, 0))
-            p.fillRect(self.rect(), glow2)
-
+        p, path = paint_card(self, self.bg_pix)
         if self.stack.currentIndex() == 0:   # countdown line
             frac = min(1.0, self.elapsed / max(1, self.st["interval"]))
             p.fillRect(QRectF(0, self.height() - 3, self.width(), 3), QColor(255, 255, 255, 25))
             p.fillRect(QRectF(0, self.height() - 3, self.width() * frac, 3),
                        QColor(255, 217, 138, 90 if self.hovering else 200))
-
         p.setClipping(False)
         p.setPen(QColor(255, 255, 255, 40))
         p.drawPath(path)
@@ -680,7 +734,9 @@ class WordWidget(QWidget):
             m.addAction(T["m_bg_reset"], self.reset_bg)
         m.addAction(T["m_reset"], self.reset_progress)
         m.addSeparator()
-        m.addAction(T["m_close"], self.close)
+        if self.controller:
+            m.addAction("🌐 " + T["m_lang"], lambda: self.controller.change_language(self))
+        m.addAction(T["m_close"], self.quit_app)
         m.exec(e.globalPos())
 
     def switch_mode(self, k):
@@ -734,20 +790,197 @@ class WordWidget(QWidget):
         if self.cur:
             self.render_word()
 
+    def quit_app(self):
+        self.save_state()
+        QApplication.instance().quit()
+
     def closeEvent(self, e):
         self.save_state()
+        if not (self.controller and self.controller.switching):
+            QApplication.instance().quit()
         super().closeEvent(e)
+
+
+# --------------------------------------------------------------------------- first start
+APP_CONFIG = os.path.join(CONFIG_ROOT, "word-flow", "app.json")
+QUESTION_ALL = [("Hangi dili konuşuyorsunuz?", 14), ("Which language do you speak?", 11),
+                ("Welche Sprache sprechen Sie?", 11)]
+NATIVE_NAMES = [("tr", "Türkçe"), ("en", "English"), ("de", "Deutsch")]
+
+
+def default_pos():
+    scr = QApplication.primaryScreen().availableGeometry()
+    return QPoint(scr.right() - APP_W - 30, scr.top() + 60)
+
+
+class Onboarding(QWidget):
+    """Step 1: which language do you speak (asked in all three languages).
+    Step 2: which of the other two do you want to learn (asked in your language)."""
+
+    def __init__(self, controller, pos):
+        super().__init__()
+        self.controller = controller
+        self.native = None
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.Tool
+                            | Qt.WindowType.WindowStaysOnTopHint)
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
+        self.setFixedSize(APP_W, APP_H)
+        self.setWindowTitle("Word Flow")
+        self.stack = QStackedWidget(self)
+        self.stack.setGeometry(0, 0, APP_W, APP_H)
+        self.stack.addWidget(self.build_step1())
+        self.step2 = QWidget()
+        self.stack.addWidget(self.step2)
+        self.move(pos)
+
+    def build_step1(self):
+        page = QWidget()
+        v = QVBoxLayout(page)
+        v.setContentsMargins(16, 16, 16, 16)
+        v.setSpacing(2)
+        v.addStretch(1)
+        for text, size in QUESTION_ALL:
+            l = QLabel(text)
+            l.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            l.setStyleSheet(f"color:{'white' if size > 12 else 'rgba(255,255,255,0.7)'};"
+                            f"font-size:{size}px;font-weight:{700 if size > 12 else 500};")
+            v.addWidget(l)
+        v.addSpacing(12)
+        row = QHBoxLayout()
+        row.setSpacing(6)
+        for code, name in NATIVE_NAMES:
+            b = QPushButton(name)
+            b.setCursor(Qt.CursorShape.PointingHandCursor)
+            b.setMinimumHeight(34)
+            b.setStyleSheet(btn_css("rgba(140,120,255,0.55)", "rgba(140,120,255,0.9)"))
+            b.clicked.connect(lambda _=False, c=code: self.pick_native(c))
+            row.addWidget(b)
+        v.addLayout(row)
+        v.addStretch(1)
+        return page
+
+    def pick_native(self, code):
+        self.native = code
+        T = UI[code]
+        old = self.step2
+        page = QWidget()
+        v = QVBoxLayout(page)
+        v.setContentsMargins(16, 11, 16, 16)
+        v.setSpacing(4)
+        top = QHBoxLayout()
+        back = QPushButton(T["back"])
+        back.setStyleSheet(CHIP_CSS)
+        back.setCursor(Qt.CursorShape.PointingHandCursor)
+        back.clicked.connect(lambda: self.stack.setCurrentIndex(0))
+        top.addWidget(back)
+        top.addStretch(1)
+        v.addLayout(top)
+        v.addStretch(1)
+        q = QLabel(T["learn_q"])
+        q.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        q.setWordWrap(True)
+        q.setStyleSheet("color:white;font-size:15px;font-weight:700;")
+        v.addWidget(q)
+        h = QLabel(T["learn_hint"])
+        h.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        h.setWordWrap(True)
+        h.setStyleSheet("color:rgba(255,255,255,0.6);font-size:10px;")
+        v.addWidget(h)
+        v.addSpacing(8)
+        row = QHBoxLayout()
+        row.setSpacing(8)
+        for target in [c for c, _ in NATIVE_NAMES if c != code]:
+            b = QPushButton(T["langs"][target])
+            b.setCursor(Qt.CursorShape.PointingHandCursor)
+            b.setMinimumHeight(36)
+            b.setStyleSheet(btn_css("rgba(140,120,255,0.55)", "rgba(140,120,255,0.9)"))
+            b.clicked.connect(lambda _=False, t=target: self.controller.chosen(self, code, t))
+            row.addWidget(b)
+        v.addLayout(row)
+        v.addStretch(1)
+        self.stack.removeWidget(old)
+        old.deleteLater()
+        self.step2 = page
+        self.stack.addWidget(page)
+        self.stack.setCurrentWidget(page)
+
+    def paintEvent(self, ev):
+        p, path = paint_card(self, None)
+        p.setClipping(False)
+        p.setPen(QColor(255, 255, 255, 40))
+        p.drawPath(path)
+
+    def mousePressEvent(self, e):
+        if e.button() == Qt.MouseButton.LeftButton:
+            h = self.windowHandle()
+            if h is not None:
+                h.startSystemMove()
+
+    def closeEvent(self, e):
+        if not self.controller.switching:
+            QApplication.instance().quit()
+        super().closeEvent(e)
+
+
+class Controller:
+    """Keeps exactly one card on screen and switches between pairs."""
+
+    def __init__(self):
+        self.win = None
+        self.switching = False
+
+    def load(self):
+        try:
+            with open(APP_CONFIG, encoding="utf-8") as f:
+                c = json.load(f)
+            return PAIR_FOR.get((c.get("native"), c.get("target")))
+        except Exception:
+            return None
+
+    def save(self, native, target):
+        os.makedirs(os.path.dirname(APP_CONFIG), exist_ok=True)
+        with open(APP_CONFIG, "w", encoding="utf-8") as f:
+            json.dump({"native": native, "target": target}, f)
+
+    def start(self, pair=None):
+        pair = pair or self.load()
+        if pair:
+            self.open_pair(pair)
+        else:
+            self.show(Onboarding(self, default_pos()))
+
+    def show(self, w):
+        old, self.win = self.win, w
+        w.show()
+        if old is not None:
+            self.switching = True
+            old.close()
+            old.deleteLater()
+            self.switching = False
+
+    def open_pair(self, pair, pos=None):
+        self.show(WordWidget(pair, self, pos))
+
+    def chosen(self, onboarding, native, target):
+        self.save(native, target)
+        self.open_pair(PAIR_FOR[(native, target)], onboarding.pos())
+
+    def change_language(self, widget):
+        widget.save_state()
+        self.show(Onboarding(self, widget.pos()))
 
 
 def main():
     ap = argparse.ArgumentParser(description="Word Flow — tiny vocabulary widget")
-    ap.add_argument("pair", nargs="?", default="de-tr", choices=list(PAIRS),
-                    help="language pair: word → meaning (default: de-tr)")
+    ap.add_argument("pair", nargs="?", choices=list(PAIRS),
+                    help="open one language pair directly (word → meaning); "
+                         "without it Word Flow asks for your languages on first start")
     args = ap.parse_args()
     app = QApplication(sys.argv[:1])
-    app.setApplicationName(PAIRS[args.pair]["title"])
-    w = WordWidget(args.pair)
-    w.show()
+    app.setApplicationName("Word Flow")
+    app.setQuitOnLastWindowClosed(False)
+    ctl = Controller()
+    ctl.start(args.pair)
     sys.exit(app.exec())
 
 

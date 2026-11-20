@@ -1,16 +1,8 @@
 #!/usr/bin/env bash
 # Word Flow installer for Linux (GNOME, KDE, …)
-#   ./install.sh                      -> app-menu entries for all 4 pairs
-#   ./install.sh --autostart de-tr en-tr  -> also start these pairs at login
+#   ./install.sh              -> adds "Word Flow" to the app menu
+#   ./install.sh --autostart  -> also starts it when you log in
 set -euo pipefail
-
-PAIRS=(de-tr en-tr en-de de-en)
-declare -A NAMES=(
-  [de-tr]="Word Flow · Deutsch → Türkçe"
-  [en-tr]="Word Flow · English → Türkçe"
-  [en-de]="Word Flow · English → Deutsch"
-  [de-en]="Word Flow · Deutsch → English"
-)
 
 DEST="$HOME/.local/share/word-flow"
 APPS="$HOME/.local/share/applications"
@@ -28,13 +20,16 @@ fi
 mkdir -p "$DEST" "$APPS"
 cp -r "$SRC/wordflow.py" "$SRC/wordlists" "$DEST/"
 
-write_entry() {   # $1 = pair, $2 = target file
-  cat > "$2" <<DESK
+# remove entries of older versions (one entry per language pair)
+rm -f "$APPS"/word-flow-*.desktop "$AUTO"/word-flow-*.desktop "$AUTO"/kelime-akisi*.desktop
+
+write_entry() {
+  cat > "$1" <<DESK
 [Desktop Entry]
 Type=Application
-Name=${NAMES[$1]}
-Comment=Tiny always-on-top vocabulary widget
-Exec=python3 $DEST/wordflow.py $1
+Name=Word Flow
+Comment=Tiny always-on-top vocabulary widget (English · Deutsch · Türkçe)
+Exec=python3 $DEST/wordflow.py
 Icon=accessories-dictionary
 Terminal=false
 Categories=Education;Languages;
@@ -42,17 +37,11 @@ X-GNOME-Autostart-Delay=10
 DESK
 }
 
-for p in "${PAIRS[@]}"; do
-  write_entry "$p" "$APPS/word-flow-$p.desktop"
-done
+write_entry "$APPS/word-flow.desktop"
 echo "✓ Installed to $DEST — find 'Word Flow' in your app menu."
 
 if [[ "${1:-}" == "--autostart" ]]; then
-  shift
   mkdir -p "$AUTO"
-  for p in "$@"; do
-    [[ -n "${NAMES[$p]:-}" ]] || { echo "unknown pair: $p"; exit 1; }
-    write_entry "$p" "$AUTO/word-flow-$p.desktop"
-    echo "✓ $p will start at login"
-  done
+  write_entry "$AUTO/word-flow.desktop"
+  echo "✓ Word Flow will start when you log in"
 fi
