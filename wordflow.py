@@ -35,7 +35,9 @@ if sys.platform.startswith("linux") and os.environ.get("WAYLAND_DISPLAY") \
         and "QT_QPA_PLATFORM" not in os.environ:
     os.environ["QT_QPA_PLATFORM"] = "xcb"
 
-from PyQt6.QtCore import Qt, QTimer, QRectF, QPoint
+import shutil
+import subprocess
+from PyQt6.QtCore import Qt, QTimer, QRectF, QPoint, QLocale
 from PyQt6.QtGui import (QPainter, QColor, QLinearGradient, QRadialGradient,
                          QPainterPath, QPixmap, QFont, QFontMetrics,
                          QActionGroup)
@@ -98,6 +100,15 @@ UI = {
                   "cyber": "Siber güvenlik: ağ → saldırı → pentest → SOC → GRC"},
         "m_mode": "Mod", "m_level": "Seviye", "m_interval": "Değişme süresi",
         "sec": "{} saniye", "m_lock": "Konumu kilitle", "m_top": "Her zaman üstte", "m_auto": "Windows ile başlat",
+        "m_hide": "Anlamı gizle",
+        "hide_off": "Kapalı (anlam hep açık)",
+        "hide_after": "{} saniye sonra göster",
+        "hide_hover": "Sadece üzerine gelince / tıklayınca",
+        "hidden_tip": "Önce kendin hatırla — üzerine gel ya da tıkla",
+        "m_speak": "🔊 Sesli oku",
+        "m_autospeak": "Yeni kelimeyi otomatik oku",
+        "tip_speak": "Sesli oku",
+        "no_voice": "Bu dil için sistemde ses bulunamadı.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Ayarlar → Saat ve dil → Konuşma → Ses ekle",
         "m_bg": "Arka plan resmi seç…", "m_bg_reset": "Varsayılan arka plan",
         "m_reset": "İlerlemeyi sıfırla", "m_close": "Kapat", "images": "Resimler",
         "m_lang": "Dili değiştir…", "learn_q": "Hangi dili öğrenmek istiyorsunuz?",
@@ -150,6 +161,15 @@ UI = {
                   "cyber": "Cybersecurity: network → attacks → pentest → SOC → GRC"},
         "m_mode": "Mode", "m_level": "Level", "m_interval": "Change every",
         "sec": "{} seconds", "m_lock": "Lock position", "m_top": "Always on top", "m_auto": "Start with Windows",
+        "m_hide": "Hide the meaning",
+        "hide_off": "Off (meaning always shown)",
+        "hide_after": "Show after {} seconds",
+        "hide_hover": "Only on hover / click",
+        "hidden_tip": "Try to recall it first — hover or click to reveal",
+        "m_speak": "🔊 Read aloud",
+        "m_autospeak": "Read new words aloud automatically",
+        "tip_speak": "Read aloud",
+        "no_voice": "No voice for this language was found on your system.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Settings → Time & language → Speech → Add voices",
         "m_bg": "Choose background image…", "m_bg_reset": "Default background",
         "m_reset": "Reset progress", "m_close": "Close", "images": "Images",
         "m_lang": "Change language…", "learn_q": "Which language do you want to learn?",
@@ -202,6 +222,15 @@ UI = {
                   "cyber": "Cybersecurity: Netzwerk → Angriffe → Pentest → SOC → GRC"},
         "m_mode": "Modus", "m_level": "Niveau", "m_interval": "Wechsel alle",
         "sec": "{} Sekunden", "m_lock": "Position sperren", "m_top": "Immer im Vordergrund", "m_auto": "Mit Windows starten",
+        "m_hide": "Bedeutung verbergen",
+        "hide_off": "Aus (Bedeutung immer sichtbar)",
+        "hide_after": "Nach {} Sekunden zeigen",
+        "hide_hover": "Nur beim Überfahren / Klicken",
+        "hidden_tip": "Erst selbst erinnern — überfahren oder klicken",
+        "m_speak": "🔊 Vorlesen",
+        "m_autospeak": "Neue Wörter automatisch vorlesen",
+        "tip_speak": "Vorlesen",
+        "no_voice": "Für diese Sprache wurde keine Stimme gefunden.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Einstellungen → Zeit und Sprache → Sprache → Stimmen hinzufügen",
         "m_bg": "Hintergrundbild wählen…", "m_bg_reset": "Standard-Hintergrund",
         "m_reset": "Fortschritt zurücksetzen", "m_close": "Schließen", "images": "Bilder",
         "m_lang": "Sprache ändern…", "learn_q": "Welche Sprache möchten Sie lernen?",
@@ -254,6 +283,15 @@ UI = {
                   "cyber": "Кибербезопасность: сеть → атаки → пентест → SOC → GRC"},
         "m_mode": "Режим", "m_level": "Уровень", "m_interval": "Смена каждые",
         "sec": "{} секунд", "m_lock": "Закрепить позицию", "m_top": "Поверх всех окон", "m_auto": "Запускать вместе с Windows",
+        "m_hide": "Скрывать значение",
+        "hide_off": "Выкл. (значение видно всегда)",
+        "hide_after": "Показать через {} секунд",
+        "hide_hover": "Только при наведении / щелчке",
+        "hidden_tip": "Сначала вспомните сами — наведите курсор или щёлкните",
+        "m_speak": "🔊 Прочитать вслух",
+        "m_autospeak": "Автоматически читать новые слова",
+        "tip_speak": "Прочитать вслух",
+        "no_voice": "Голос для этого языка в системе не найден.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Параметры → Время и язык → Речь → Добавить голоса",
         "m_bg": "Выбрать фон…", "m_bg_reset": "Стандартный фон",
         "m_reset": "Сбросить прогресс", "m_close": "Закрыть", "images": "Изображения",
         "m_lang": "Сменить язык…", "learn_q": "Какой язык вы хотите учить?",
@@ -462,6 +500,93 @@ def btn_css(bg, hover):
     return ("QPushButton{color:white;background:%s;border:none;"
             "border-radius:11px;padding:5px 10px;font-size:12px;"
             "font-weight:600;}QPushButton:hover{background:%s;}" % (bg, hover))
+
+
+class Speaker:
+    """Offline text-to-speech. Uses Qt's speech engine (speech-dispatcher on Linux,
+    the system voices on Windows); on Linux falls back to espeak-ng / spd-say."""
+    LOCALES = {"de": QLocale.Language.German, "en": QLocale.Language.English,
+               "tr": QLocale.Language.Turkish, "ru": QLocale.Language.Russian}
+    MAIN = {"de": "Germany", "en": "UnitedKingdom", "tr": "Turkey", "ru": "Russia"}
+
+    def __init__(self):
+        self.tts = None
+        try:
+            from PyQt6.QtTextToSpeech import QTextToSpeech
+            engines = [e for e in QTextToSpeech.availableEngines() if e != "mock"]
+            pref = [e for e in ("winrt", "sapi", "speechd", "flite") if e in engines]
+            for eng in pref or engines:
+                t = QTextToSpeech(eng)
+                if t.engine() and t.state() != QTextToSpeech.State.Error:
+                    self.tts = t
+                    break
+        except Exception:
+            self.tts = None
+
+    @staticmethod
+    def clean(text):
+        text = re.sub(r"\(.*?\)|\[.*?\]", "", text)
+        text = re.sub(r"\b(sth|sb|etw\.|jdn\.|jdm\.)(?=\W|$)|…", "", text)
+        return text.split(";")[0].replace("/", ",").strip(" ,")
+
+    def qt_say(self, text, lang):
+        if self.tts is None:
+            return False
+        want = self.LOCALES[lang]
+        voices = [v for v in self.tts.allVoices(QLocale(want))] \
+            if hasattr(self.tts, "allVoices") else []
+        locs = [l for l in self.tts.availableLocales() if l.language() == want]
+        if not locs and not voices:
+            return False
+        if locs:
+            locs.sort(key=lambda l: QLocale.territoryToString(l.territory()).replace(" ", "")
+                      != self.MAIN[lang])
+            self.tts.setLocale(locs[0])
+        own = [v for v in self.tts.availableVoices() if v.locale().language() == want]
+        if own:
+            self.tts.setVoice(own[0])
+        elif voices:
+            self.tts.setVoice(voices[0])
+        elif self.tts.engine() != "speechd":
+            return False
+        self.tts.stop()
+        self.tts.say(text)
+        return True
+
+    @staticmethod
+    def cmd_say(text, lang):
+        if not sys.platform.startswith("linux"):
+            return False
+        for cmd in (["espeak-ng", "-v", lang, "--", text],
+                    ["spd-say", "-l", lang, "--", text], ["espeak", "-v", lang, text]):
+            if shutil.which(cmd[0]):
+                try:
+                    subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    return True
+                except Exception:
+                    pass
+        return False
+
+    def say(self, text, lang):
+        text = self.clean(text)
+        if not text:
+            return True
+        try:
+            if self.qt_say(text, lang):
+                return True
+        except Exception:
+            pass
+        return self.cmd_say(text, lang)
+
+
+SPEAKER = None
+
+
+def speaker():
+    global SPEAKER
+    if SPEAKER is None:
+        SPEAKER = Speaker()
+    return SPEAKER
 
 
 def score_color(n):
@@ -755,6 +880,7 @@ class WordWidget(QWidget):
         self.report = None
         self.elapsed = 0.0
         self.hovering = False
+        self.revealed = True
         self._drag = None
         self.picker_mode = self.mode()
 
@@ -801,6 +927,7 @@ class WordWidget(QWidget):
     def load_state(self):
         d = {"mode": None, "levels": {}, "interval": 20, "pinned": False,
              "on_top": True, "bg": None, "pos": None, "words": {},
+             "reveal": 0, "autospeak": False,
              "today": {"date": "", "k": 0, "u": 0}}
         try:
             with open(self.state_file, encoding="utf-8") as f:
@@ -880,6 +1007,13 @@ class WordWidget(QWidget):
         top.addWidget(self.level_btn)
         top.addWidget(self.type_lbl, 1)
         top.addWidget(self.stats_lbl)
+        self.speak_btn = QPushButton("🔊")
+        self.speak_btn.setFixedSize(26, 22)
+        self.speak_btn.setStyleSheet(CHIP_CSS)
+        self.speak_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.speak_btn.setToolTip(self.T["tip_speak"])
+        self.speak_btn.clicked.connect(self.speak)
+        top.addWidget(self.speak_btn)
         if self.controller:
             self.lang_btn = QPushButton("🌐")
             self.lang_btn.setFixedSize(26, 22)
@@ -1073,6 +1207,8 @@ class WordWidget(QWidget):
         self.elapsed = 0.0
         self.render_word()
         self.update()
+        if self.st.get("autospeak") and self.isVisible():
+            QTimer.singleShot(250, self.speak)
 
     def rate(self, score):
         if not self.cur:
@@ -1130,21 +1266,46 @@ class WordWidget(QWidget):
         self.x_lbl.setText(e["x"])
         self.x_lbl.setVisible(bool(e["x"]))
         self.m_lbl.setFont(self.fit_font(e["m"], 15, 11, avail))
-        gold = "#ffd98a"
-        if self.pair["dst"] == "de":
-            self.m_lbl.setText(colorize_german(e["m"], gold))
-        else:
-            self.m_lbl.setText(f"<span style='color:{gold}'>{escape(e['m'])}</span>")
+        self.revealed = not self.st.get("reveal")
+        self.show_meaning()
         self.set_type(self.T["types"].get(e["t"], ""))
         h = self.ws(e["key"])["h"]
         self.style_scores(h[-1][1] if h else None)   # outline = your last score
         for b in self.score_btns:
             b.setEnabled(True)
 
+    def show_meaning(self):
+        e = self.cur
+        if e is None:
+            return
+        gold = "#ffd98a"
+        if not self.revealed:
+            self.m_lbl.setText("<span style='color:rgba(255,217,138,0.45)'>• • •</span>")
+            self.m_lbl.setToolTip(self.T["hidden_tip"])
+        elif self.pair["dst"] == "de":
+            self.m_lbl.setText(colorize_german(e["m"], gold))
+            self.m_lbl.setToolTip("")
+        else:
+            self.m_lbl.setText(f"<span style='color:{gold}'>{escape(e['m'])}</span>")
+            self.m_lbl.setToolTip("")
+
+    def reveal(self):
+        if not self.revealed and self.cur is not None:
+            self.revealed = True
+            self.show_meaning()
+
+    def speak(self):
+        if self.cur is None:
+            return
+        if not speaker().say(self.cur["w"], self.pair["src"]):
+            self.st["autospeak"] = False
+            self.save_state()
+            QMessageBox.information(self, self.pair["title"], self.T["no_voice"])
+
     def set_type(self, text):
         """Word-type tag (NOUN, VERB …) — dropped when the top row has no room for it."""
         used = (self.level_btn.sizeHint().width() + self.stats_lbl.minimumWidth()
-                + 26 * (2 if self.controller else 1) + 6 * 5)
+                + 26 * (3 if self.controller else 2) + 6 * 6)
         room = APP_W - 32 - used
         fits = QFontMetrics(self.type_lbl.font()).horizontalAdvance(text) + 12 <= room
         self.type_lbl.setText(text if fits else "")
@@ -1179,6 +1340,9 @@ class WordWidget(QWidget):
         if self.stack.currentIndex() != 0 or self.hovering:
             return
         self.elapsed += 0.1
+        r = self.st.get("reveal") or 0
+        if not self.revealed and r > 0 and self.elapsed >= min(r, self.st["interval"] - 2):
+            self.reveal()
         if self.elapsed >= self.st["interval"]:
             self.next_word()
         else:
@@ -1186,6 +1350,7 @@ class WordWidget(QWidget):
 
     def enterEvent(self, e):
         self.hovering = True     # pause while the mouse is over the card
+        self.reveal()
         self.update()
 
     def leaveEvent(self, e):
@@ -1194,6 +1359,8 @@ class WordWidget(QWidget):
 
     # ------------------------------------------------------------ dragging
     def mousePressEvent(self, e):
+        if e.button() == Qt.MouseButton.LeftButton:
+            self.reveal()
         if e.button() != Qt.MouseButton.LeftButton or self.st["pinned"]:
             return
         h = self.windowHandle()
@@ -1241,6 +1408,22 @@ class WordWidget(QWidget):
             a.setChecked(self.st["interval"] == s)
             grp.addAction(a)
             a.triggered.connect(lambda _=False, x=s: self.set_interval(x))
+        hm = m.addMenu(T["m_hide"])
+        grp2 = QActionGroup(hm)
+        for val, label in ((0, T["hide_off"]), (3, T["hide_after"].format(3)),
+                           (5, T["hide_after"].format(5)), (8, T["hide_after"].format(8)),
+                           (-1, T["hide_hover"])):
+            a = hm.addAction(label)
+            a.setCheckable(True)
+            a.setChecked((self.st.get("reveal") or 0) == val)
+            grp2.addAction(a)
+            a.triggered.connect(lambda _=False, x=val: self.set_reveal(x))
+        m.addSeparator()
+        m.addAction(T["m_speak"], self.speak)
+        a = m.addAction(T["m_autospeak"])
+        a.setCheckable(True)
+        a.setChecked(bool(self.st.get("autospeak")))
+        a.triggered.connect(self.toggle_autospeak)
         m.addSeparator()
         a = m.addAction(T["m_lock"])
         a.setCheckable(True)
@@ -1275,6 +1458,19 @@ class WordWidget(QWidget):
             self.pick_mode(k)
             self.stack.setCurrentIndex(1)
             self.update()
+
+    def set_reveal(self, v):
+        self.st["reveal"] = v
+        self.save_state()
+        if self.cur is not None:
+            self.revealed = not v or (v > 0 and self.elapsed >= v)
+            self.show_meaning()
+
+    def toggle_autospeak(self):
+        self.st["autospeak"] = not self.st.get("autospeak")
+        self.save_state()
+        if self.st["autospeak"]:
+            self.speak()
 
     def set_interval(self, s):
         self.st["interval"] = s

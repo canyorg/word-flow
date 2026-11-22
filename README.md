@@ -44,6 +44,8 @@ Word Flow is a single app for English, German, Turkish and Russian. On first sta
 - **Rate every word from 1 to 10** with the buttons on the card: 1 = never seen it, 5 = know it but not the article, 9 = almost. The score is only a record: words come up **at random**, and a 1 or a 9 doesn't change how often a word is shown.
 - **10 = I know it.** The word moves to your *Learned* list and isn't shown again. Clicked 10 by mistake? Open the report and bring it back.
 - **Report** (right-click → 📊 Report): progress per level, your score distribution, every word you rated with its full score history, and the *Learned* list.
+- **Hide the meaning** (right-click → Hide the meaning): the card first shows only the word, so you try to recall it yourself. The meaning appears after 3, 5 or 8 seconds, or only when you hover over or click the card.
+- **🔊 Read aloud:** the 🔊 button on the card reads the word aloud, and you can turn on automatic reading for every new word. It works offline with your system's voices. On Linux, if there is no voice for a language: `sudo dnf install espeak-ng`.
 - **12 levels from A1.1 to C2.2.** Most cards come from your level, with an occasional review word from lower levels.
 - **Three modes:** General/Everyday, Academic and Cyber. To switch, click the chip in the top-left corner.
 - **German articles are colour-coded:** *der* is blue, *die* is pink and *das* is green. Verbs show their forms (*er fährt · ist gefahren*, *went · gone*).
@@ -120,6 +122,8 @@ Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk a
 - **Her kelimeye 1–10 arası puan ver.** 1 = hiç görmedim, 5 = biliyorum ama artikelini bilmiyorum, 9 = neredeyse. Puan sadece kayıt içindir: kelimeler **rastgele** gelir, 1 ya da 9 vermen gösterilme sıklığını değiştirmez.
 - **10 = tam biliyorum.** Kelime *Öğrendiklerim* listesine geçer ve bir daha gösterilmez. Yanlışlıkla 10'a bastıysan rapordan geri getirebilirsin.
 - **Rapor** (sağ tık → 📊 Rapor): seviye başına ilerleme, puan dağılımı, puanladığın her kelime ve tüm puan geçmişi, ayrıca *Öğrendiklerim* listesi.
+- **Anlamı gizle** (sağ tık → Anlamı gizle): kart önce sadece kelimeyi gösterir, sen hatırlamaya çalışırsın. Anlam 3, 5 ya da 8 saniye sonra veya sadece kartın üzerine gelince ya da tıklayınca açılır.
+- **🔊 Sesli okuma:** karttaki 🔊 butonu kelimeyi sesli okur, istersen her yeni kelime otomatik okunur. İnternetsiz çalışır, sistemin kendi seslerini kullanır. Linux'ta bir dil için ses yoksa: `sudo dnf install espeak-ng`.
 - **A1.1'den C2.2'ye 12 seviye.** Kartların çoğu senin seviyenden gelir, ara sıra alt seviyelerden tekrar kelimesi de çıkar.
 - **Üç mod:** Genel/Günlük, Akademik ve Siber. Geçiş yapmak için sol üstteki etikete tıkla.
 - **Almanca artikeller renkli:** *der* mavi, *die* pembe, *das* yeşil. Fiillerin altında çekimleri görünür (*er fährt · ist gefahren*, *went · gone*).
@@ -196,6 +200,8 @@ Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. B
 - **Jedes Wort von 1 bis 10 bewerten.** 1 = nie gesehen, 5 = kenne es, aber nicht den Artikel, 9 = fast. Die Note wird nur aufgezeichnet: Wörter kommen **zufällig**, eine 1 oder 9 ändert nicht, wie oft ein Wort erscheint.
 - **10 = kann ich.** Das Wort wandert in die Liste *Gelernt* und wird nicht mehr gezeigt. Aus Versehen 10 geklickt? Im Bericht zurückholen.
 - **Bericht** (Rechtsklick → 📊 Bericht): Fortschritt pro Niveau, Notenverteilung, alle bewerteten Wörter mit ihrem Verlauf und die Liste *Gelernt*.
+- **Bedeutung verbergen** (Rechtsklick → Bedeutung verbergen): Die Karte zeigt zuerst nur das Wort, damit du dich selbst erinnerst. Die Bedeutung erscheint nach 3, 5 oder 8 Sekunden oder nur beim Überfahren bzw. Klicken.
+- **🔊 Vorlesen:** Der 🔊-Knopf liest das Wort vor, auf Wunsch jedes neue Wort automatisch. Funktioniert offline mit den Stimmen deines Systems. Unter Linux, falls für eine Sprache keine Stimme da ist: `sudo dnf install espeak-ng`.
 - **12 Niveaus von A1.1 bis C2.2.** Die meisten Karten kommen aus deinem Niveau, ab und zu kommt ein Wiederholungswort aus einem niedrigeren.
 - **Drei Modi:** Allgemein/Alltag, Akademisch und Cyber. Zum Wechseln auf das Feld oben links klicken.
 - **Deutsche Artikel sind farbig:** *der* blau, *die* rosa, *das* grün. Verben zeigen ihre Formen (*er fährt · ist gefahren*, *went · gone*).
@@ -251,6 +257,8 @@ Word Flow — одно приложение для английского, не�
 | турецкий | русский | русский → турецкий | 4 850 · 746 · 502 |
 
 **Windows:** скачайте **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** и запустите двойным щелчком — ничего устанавливать не нужно. Автозапуск: правый клик по карточке → **Запускать вместе с Windows**. Если появится окно «Windows защитила ваш компьютер», нажмите **Подробнее → Выполнить в любом случае**.
+
+**Скрывать значение** (правый клик → Скрывать значение): сначала видно только слово, значение появляется через 3, 5 или 8 секунд либо при наведении/щелчке. **🔊** читает слово вслух (офлайн, системными голосами; в Linux при отсутствии голоса: `sudo dnf install espeak-ng`).
 
 Всё остальное (уровни A1.1–C2.2, оценка каждого слова от 1 до 10 — слова показываются случайно, а 10 = «знаю», слово больше не показывается и его можно вернуть в отчёте (правый клик → 📊 Отчёт), три режима, установка) работает так же, как описано выше.
 

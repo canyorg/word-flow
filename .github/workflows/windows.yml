@@ -28,10 +28,15 @@ jobs:
         run: |
           python -c "import wordflow as w; from PyQt6.QtWidgets import QApplication; app = QApplication([]); [w.WordWidget(p).close() for p in w.PAIRS]; print('ok', len(w.PAIRS), 'pairs')"
 
+      - name: Text-to-speech check (Windows voices)
+        run: |
+          python -c "from PyQt6.QtWidgets import QApplication; app = QApplication([]); import wordflow as w; sp = w.speaker(); print('engine:', sp.tts and sp.tts.engine()); print('locales:', sorted(set(l.name() for l in sp.tts.availableLocales())) if sp.tts else None)"
+
       - name: Build one-file exe
         run: >
           pyinstaller --noconfirm --onefile --windowed --name WordFlow
           --icon icon.ico --add-data "icon.png;."
+          --hidden-import PyQt6.QtTextToSpeech
           --exclude-module PyQt6.QtWebEngineCore --exclude-module PyQt6.QtQml
           --exclude-module PyQt6.QtQuick --exclude-module PyQt6.QtMultimedia
           wordflow.py

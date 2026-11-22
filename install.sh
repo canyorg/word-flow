@@ -37,6 +37,11 @@ X-GNOME-Autostart-Delay=10
 DESK
 }
 
+if ! command -v espeak-ng >/dev/null && ! command -v spd-say >/dev/null; then
+  echo "ℹ For the 🔊 read-aloud button install a speech engine:"
+  echo "    Fedora: sudo dnf install espeak-ng    Debian/Ubuntu: sudo apt install espeak-ng"
+fi
+
 write_entry "$APPS/word-flow.desktop"
 echo "✓ Installed to $DEST — find 'Word Flow' in your app menu."
 
