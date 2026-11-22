@@ -40,7 +40,7 @@ import subprocess
 from PyQt6.QtCore import Qt, QTimer, QRectF, QPoint, QLocale
 from PyQt6.QtGui import (QPainter, QColor, QLinearGradient, QRadialGradient,
                          QPainterPath, QPixmap, QFont, QFontMetrics,
-                         QActionGroup)
+                         QActionGroup, QIcon, QPen)
 from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton,
                              QVBoxLayout, QHBoxLayout, QGridLayout,
                              QStackedWidget, QMenu, QFileDialog, QSizePolicy,
@@ -108,6 +108,8 @@ UI = {
         "m_speak": "🔊 Sesli oku",
         "m_autospeak": "Yeni kelimeyi otomatik oku",
         "tip_speak": "Sesli oku",
+        "tip_eye_show": "Anlamı göster",
+        "tip_eye_hide": "Anlamı gizle",
         "no_voice": "Bu dil için sistemde ses bulunamadı.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Ayarlar → Saat ve dil → Konuşma → Ses ekle",
         "m_bg": "Arka plan resmi seç…", "m_bg_reset": "Varsayılan arka plan",
         "m_reset": "İlerlemeyi sıfırla", "m_close": "Kapat", "images": "Resimler",
@@ -169,6 +171,8 @@ UI = {
         "m_speak": "🔊 Read aloud",
         "m_autospeak": "Read new words aloud automatically",
         "tip_speak": "Read aloud",
+        "tip_eye_show": "Show the meaning",
+        "tip_eye_hide": "Hide the meaning",
         "no_voice": "No voice for this language was found on your system.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Settings → Time & language → Speech → Add voices",
         "m_bg": "Choose background image…", "m_bg_reset": "Default background",
         "m_reset": "Reset progress", "m_close": "Close", "images": "Images",
@@ -230,6 +234,8 @@ UI = {
         "m_speak": "🔊 Vorlesen",
         "m_autospeak": "Neue Wörter automatisch vorlesen",
         "tip_speak": "Vorlesen",
+        "tip_eye_show": "Bedeutung zeigen",
+        "tip_eye_hide": "Bedeutung verbergen",
         "no_voice": "Für diese Sprache wurde keine Stimme gefunden.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Einstellungen → Zeit und Sprache → Sprache → Stimmen hinzufügen",
         "m_bg": "Hintergrundbild wählen…", "m_bg_reset": "Standard-Hintergrund",
         "m_reset": "Fortschritt zurücksetzen", "m_close": "Schließen", "images": "Bilder",
@@ -291,6 +297,8 @@ UI = {
         "m_speak": "🔊 Прочитать вслух",
         "m_autospeak": "Автоматически читать новые слова",
         "tip_speak": "Прочитать вслух",
+        "tip_eye_show": "Показать значение",
+        "tip_eye_hide": "Скрыть значение",
         "no_voice": "Голос для этого языка в системе не найден.\nLinux: sudo dnf install espeak-ng  (Debian/Ubuntu: sudo apt install espeak-ng)\nWindows: Параметры → Время и язык → Речь → Добавить голоса",
         "m_bg": "Выбрать фон…", "m_bg_reset": "Стандартный фон",
         "m_reset": "Сбросить прогресс", "m_close": "Закрыть", "images": "Изображения",
@@ -868,6 +876,65 @@ class ReportDialog(QDialog):
         self.refresh()
 
 
+def _icon(draw, size=18, color="white"):
+    pm = QPixmap(size * 2, size * 2)
+    pm.setDevicePixelRatio(2)
+    pm.fill(Qt.GlobalColor.transparent)
+    p = QPainter(pm)
+    p.setRenderHint(QPainter.RenderHint.Antialiasing)
+    pen = QPen(QColor(color))
+    pen.setWidthF(1.6)
+    pen.setCapStyle(Qt.PenCapStyle.RoundCap)
+    pen.setJoinStyle(Qt.PenJoinStyle.RoundJoin)
+    p.setPen(pen)
+    draw(p, size)
+    p.end()
+    return QIcon(pm)
+
+
+def eye_icon(crossed, color="white"):
+    """Open eye = meaning visible, crossed-out eye = meaning hidden."""
+    def draw(p, s):
+        c = s / 2
+        path = QPainterPath()
+        path.moveTo(1.5, c)
+        path.quadTo(c, c - 9, s - 1.5, c)
+        path.quadTo(c, c + 9, 1.5, c)
+        p.drawPath(path)
+        p.drawEllipse(QRectF(c - 2.8, c - 2.8, 5.6, 5.6))
+        if crossed:
+            pen = p.pen()
+            pen.setWidthF(1.8)
+            p.setPen(pen)
+            p.drawLine(QPoint(4, s - 3), QPoint(s - 4, 3))
+    return _icon(draw, color=color)
+
+
+def speaker_icon(color="white"):
+    def draw(p, s):
+        c = s / 2
+        body = QPainterPath()
+        body.moveTo(2, c - 2.5)
+        body.lineTo(5, c - 2.5)
+        body.lineTo(9, c - 6)
+        body.lineTo(9, c + 6)
+        body.lineTo(5, c + 2.5)
+        body.lineTo(2, c + 2.5)
+        body.closeSubpath()
+        p.setBrush(QColor(color))
+        p.drawPath(body)
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        p.drawArc(QRectF(6, c - 3.5, 6, 7), -55 * 16, 110 * 16)
+        p.drawArc(QRectF(6, c - 7, 10, 14), -55 * 16, 110 * 16)
+    return _icon(draw, color=color)
+
+
+SPEAK_W = 24
+ICON_BTN_CSS = ("QPushButton{background:transparent;border:none;border-radius:11px;}"
+                "QPushButton:hover{background:rgba(255,255,255,0.14);}"
+                "QPushButton:pressed{background:rgba(255,255,255,0.24);}")
+
+
 # --------------------------------------------------------------------------- widget
 class WordWidget(QWidget):
     def __init__(self, pair_id, controller=None, pos=None):
@@ -1020,13 +1087,12 @@ class WordWidget(QWidget):
         top.addWidget(self.level_btn)
         top.addWidget(self.type_lbl, 1)
         top.addWidget(self.stats_lbl)
-        self.speak_btn = QPushButton("🔊")
-        self.speak_btn.setFixedSize(26, 22)
-        self.speak_btn.setStyleSheet(CHIP_CSS)
-        self.speak_btn.setCursor(Qt.CursorShape.PointingHandCursor)
-        self.speak_btn.setToolTip(self.T["tip_speak"])
-        self.speak_btn.clicked.connect(self.speak)
-        top.addWidget(self.speak_btn)
+        self.eye_btn = QPushButton()
+        self.eye_btn.setFixedSize(26, 22)
+        self.eye_btn.setStyleSheet(CHIP_CSS)
+        self.eye_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.eye_btn.clicked.connect(self.toggle_hide)
+        top.addWidget(self.eye_btn)
         if self.controller:
             self.lang_btn = QPushButton("🌐")
             self.lang_btn.setFixedSize(26, 22)
@@ -1049,9 +1115,26 @@ class WordWidget(QWidget):
         self.m_lbl.setTextFormat(Qt.TextFormat.RichText)
         self.m_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.m_lbl.setWordWrap(True)
-        for w in (self.w_lbl, self.x_lbl, self.m_lbl):
+        for w in (self.x_lbl, self.m_lbl):
             w.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
-        v.addWidget(self.w_lbl)
+        self.speak_btn = QPushButton()
+        self.speak_btn.setIcon(speaker_icon())
+        self.speak_btn.setFixedSize(SPEAK_W, SPEAK_W)
+        self.speak_btn.setStyleSheet(ICON_BTN_CSS)
+        self.speak_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.speak_btn.setToolTip(self.T["tip_speak"])
+        self.speak_btn.clicked.connect(self.speak)
+        self.w_lbl.setWordWrap(True)
+        self.w_lbl.setMaximumWidth(APP_W - 36 - 2 * (SPEAK_W + 4))
+        wrow = QHBoxLayout()
+        wrow.setSpacing(0)
+        wrow.addStretch(1)
+        wrow.addSpacing(SPEAK_W + 4)          # balances the button: word stays centred
+        wrow.addWidget(self.w_lbl)
+        wrow.addSpacing(4)
+        wrow.addWidget(self.speak_btn, 0, Qt.AlignmentFlag.AlignVCenter)
+        wrow.addStretch(1)
+        v.addLayout(wrow)
         v.addWidget(self.x_lbl)
         v.addSpacing(3)
         v.addWidget(self.m_lbl)
@@ -1182,6 +1265,7 @@ class WordWidget(QWidget):
         else:
             self.level_btn.setText(f"{lvl} ▾")
         self.pin_btn.setText("📌" if self.st["pinned"] else "📍")
+        self.update_eye()
         self.pin_btn.setToolTip(self.T["pin_on"] if self.st["pinned"] else self.T["pin_off"])
         t = self.today()
         self.stats_lbl.setText(f"✎{t['n']}  ★{self.learned_count()}")
@@ -1271,7 +1355,15 @@ class WordWidget(QWidget):
     def render_word(self):
         e = self.cur
         avail = APP_W - 36
-        self.w_lbl.setFont(self.fit_font(e["w"], 22, 12, avail))
+        ww = avail - 2 * (SPEAK_W + 4)
+        f = self.fit_font(e["w"], 22, 15, ww)
+        if QFontMetrics(f).horizontalAdvance(e["w"]) > ww:     # long phrase: two lines
+            f = self.fit_font(e["w"], 15, 10, ww * 1.6)
+            self.w_lbl.setFixedWidth(ww)
+        else:
+            self.w_lbl.setMinimumWidth(0)
+            self.w_lbl.setMaximumWidth(ww)
+        self.w_lbl.setFont(f)
         if self.pair["src"] == "de":
             self.w_lbl.setText(colorize_german(e["w"], "white"))
         else:
@@ -1301,6 +1393,23 @@ class WordWidget(QWidget):
         else:
             self.m_lbl.setText(f"<span style='color:{gold}'>{escape(e['m'])}</span>")
             self.m_lbl.setToolTip("")
+
+    def update_eye(self):
+        hidden = bool(self.st.get("reveal"))
+        self.eye_btn.setIcon(eye_icon(hidden))
+        self.eye_btn.setToolTip(self.T["tip_eye_show"] if hidden else self.T["tip_eye_hide"])
+
+    def toggle_hide(self):
+        """Eye button: off ⇄ the last hide setting (default: until hover / click)."""
+        r = self.st.get("reveal") or 0
+        if r:
+            self.st["reveal_last"] = r
+            self.set_reveal(0)
+        else:
+            self.set_reveal(self.st.get("reveal_last") or -1)
+            if self.cur is not None:      # hide the current meaning right away
+                self.revealed = False
+                self.show_meaning()
 
     def reveal(self):
         if not self.revealed and self.cur is not None:
@@ -1474,7 +1583,10 @@ class WordWidget(QWidget):
 
     def set_reveal(self, v):
         self.st["reveal"] = v
+        if v:
+            self.st["reveal_last"] = v
         self.save_state()
+        self.update_eye()
         if self.cur is not None:
             self.revealed = not v or (v > 0 and self.elapsed >= v)
             self.show_meaning()

@@ -37,6 +37,9 @@ Word Flow is a single app for English, German, Turkish and Russian. On first sta
 - **Academic (B1.1 – C2.2).** Vocabulary and set phrases for papers, theses and talks, such as *the data indicate that…* and *beyond the scope of this study*.
 - **Cyber (B1.1 – C2.2).** Professional cybersecurity vocabulary, ordered like a course: core concepts → networking → Linux and systems → attacks → web security → cryptography and identity management → pentest and red team → SOC and incident response → governance, risk and compliance (GRC).
 - Every word has a Turkish, English, German and Russian meaning, so every language combination teaches the same content.
+- **Browse the full lists** (every word with its Turkish, German/English and Russian meaning, level by level):
+  - [English · Everyday](docs/wordlists/README.md) — [A1](docs/wordlists/english-everyday-a1.md) · [A2](docs/wordlists/english-everyday-a2.md) · [B1](docs/wordlists/english-everyday-b1.md) · [B2](docs/wordlists/english-everyday-b2.md) · [C1](docs/wordlists/english-everyday-c1.md) · [C2](docs/wordlists/english-everyday-c2.md) · [Academic](docs/wordlists/english-academic.md) · [Cyber](docs/wordlists/english-cyber.md)
+  - [Deutsch · Allgemein](docs/wordlists/README.md) — [A1](docs/wordlists/german-general-a1.md) · [A2](docs/wordlists/german-general-a2.md) · [B1](docs/wordlists/german-general-b1.md) · [B2](docs/wordlists/german-general-b2.md) · [C1](docs/wordlists/german-general-c1.md) · [C2](docs/wordlists/german-general-c2.md) · [Akademisch](docs/wordlists/german-academic.md) · [Cyber](docs/wordlists/german-cyber.md)
 
 ### Features
 - **A new card every 20 seconds.** You can choose 10–60 seconds from the right-click menu. A thin line at the bottom shows how much time is left.
@@ -44,8 +47,8 @@ Word Flow is a single app for English, German, Turkish and Russian. On first sta
 - **Rate every word from 1 to 10** with the buttons on the card: 1 = never seen it, 5 = know it but not the article, 9 = almost. The score is only a record: words come up **at random**, and a 1 or a 9 doesn't change how often a word is shown.
 - **10 = I know it.** The word moves to your *Learned* list and isn't shown again. Clicked 10 by mistake? Open the report and bring it back.
 - **Report** (right-click → 📊 Report): progress per level, your score distribution, every word you rated with its full score history, and the *Learned* list.
-- **Hide the meaning** (right-click → Hide the meaning): the card first shows only the word, so you try to recall it yourself. The meaning appears after 3, 5 or 8 seconds, or only when you hover over or click the card.
-- **🔊 Read aloud:** the 🔊 button on the card reads the word aloud, and you can turn on automatic reading for every new word. It works offline with your system's voices. On Linux, if there is no voice for a language: `sudo dnf install espeak-ng`.
+- **Hide the meaning** with the 👁 eye button at the top: the card first shows only the word, so you try to recall it yourself (crossed-out eye = hidden). Click the dots or the card to reveal it. Right-click → Hide the meaning sets when it appears on its own: after 3, 5 or 8 seconds, or only when you hover over or click the card.
+- **🔊 Read aloud:** the 🔊 button right next to the word reads it aloud, and you can turn on automatic reading for every new word. It works offline with your system's voices. On Linux, if there is no voice for a language: `sudo dnf install espeak-ng`.
 - **12 levels from A1.1 to C2.2.** Most cards come from your level, with an occasional review word from lower levels.
 - **Three modes:** General/Everyday, Academic and Cyber. To switch, click the chip in the top-left corner.
 - **German articles are colour-coded:** *der* is blue, *die* is pink and *das* is green. Verbs show their forms (*er fährt · ist gefahren*, *went · gone*).
@@ -78,7 +81,7 @@ The word lists are in `wordlists/german.py` and `wordlists/english.py`, one line
 type|word|Turkish meaning|hint
 v|fahren|(araçla) gitmek|er fährt · ist gefahren
 ```
-Then add the translation to the matching `DE_EN*` or `EN_DE*` table, and the Russian one to `EN_RU` or `DE_RU` in `wordlists/russian.py`.
+Then add the translation to the matching `DE_EN*` or `EN_DE*` table, and the Russian one to `EN_RU` or `DE_RU` in `wordlists/russian.py`. To refresh the browsable lists in `docs/wordlists/`, run `python3 tools/make_wordlists.py`.
 
 ---
 
@@ -115,6 +118,9 @@ Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk a
 - **Akademik (B1.1 – C2.2).** Makale, tez ve sunum dili için kelimeler ve kalıplar. Örneğin *the data indicate that…* ve *beyond the scope of this study*.
 - **Siber Güvenlik (B1.1 – C2.2).** Mesleki siber güvenlik terimleri bir ders gibi sıralandı: temel kavramlar → ağ → Linux ve sistemler → saldırılar → web güvenliği → kriptografi ve kimlik yönetimi → sızma testi ve kırmızı takım → SOC ve olay müdahalesi → yönetişim, risk ve uyum (GRC).
 - Her kelimenin Türkçe, İngilizce, Almanca ve Rusça karşılığı var. Hangi dil kombinasyonunu seçersen seç, içerik aynı.
+- **Tam listeye göz at** (her kelime Türkçe, Almanca/İngilizce ve Rusça karşılığıyla, seviye seviye):
+  - [English · Everyday](docs/wordlists/README.md) — [A1](docs/wordlists/english-everyday-a1.md) · [A2](docs/wordlists/english-everyday-a2.md) · [B1](docs/wordlists/english-everyday-b1.md) · [B2](docs/wordlists/english-everyday-b2.md) · [C1](docs/wordlists/english-everyday-c1.md) · [C2](docs/wordlists/english-everyday-c2.md) · [Academic](docs/wordlists/english-academic.md) · [Cyber](docs/wordlists/english-cyber.md)
+  - [Deutsch · Allgemein](docs/wordlists/README.md) — [A1](docs/wordlists/german-general-a1.md) · [A2](docs/wordlists/german-general-a2.md) · [B1](docs/wordlists/german-general-b1.md) · [B2](docs/wordlists/german-general-b2.md) · [C1](docs/wordlists/german-general-c1.md) · [C2](docs/wordlists/german-general-c2.md) · [Akademisch](docs/wordlists/german-academic.md) · [Cyber](docs/wordlists/german-cyber.md)
 
 ### Özellikler
 - **Her 20 saniyede yeni kart.** Sağ tık menüsünden 10–60 saniye arasında bir süre seçebilirsin. Alttaki ince çizgi kalan süreyi gösteriyor.
@@ -122,8 +128,8 @@ Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk a
 - **Her kelimeye 1–10 arası puan ver.** 1 = hiç görmedim, 5 = biliyorum ama artikelini bilmiyorum, 9 = neredeyse. Puan sadece kayıt içindir: kelimeler **rastgele** gelir, 1 ya da 9 vermen gösterilme sıklığını değiştirmez.
 - **10 = tam biliyorum.** Kelime *Öğrendiklerim* listesine geçer ve bir daha gösterilmez. Yanlışlıkla 10'a bastıysan rapordan geri getirebilirsin.
 - **Rapor** (sağ tık → 📊 Rapor): seviye başına ilerleme, puan dağılımı, puanladığın her kelime ve tüm puan geçmişi, ayrıca *Öğrendiklerim* listesi.
-- **Anlamı gizle** (sağ tık → Anlamı gizle): kart önce sadece kelimeyi gösterir, sen hatırlamaya çalışırsın. Anlam 3, 5 ya da 8 saniye sonra veya sadece kartın üzerine gelince ya da tıklayınca açılır.
-- **🔊 Sesli okuma:** karttaki 🔊 butonu kelimeyi sesli okur, istersen her yeni kelime otomatik okunur. İnternetsiz çalışır, sistemin kendi seslerini kullanır. Linux'ta bir dil için ses yoksa: `sudo dnf install espeak-ng`.
+- **Anlamı gizle:** üstteki 👁 göz butonuna bas, kart önce sadece kelimeyi gösterir, sen hatırlamaya çalışırsın (üstü çizili göz = gizli). Noktalara ya da karta tıklayınca anlam açılır. Sağ tık → Anlamı gizle menüsünden ne zaman kendiliğinden açılacağını seçersin: 3, 5 ya da 8 saniye sonra veya sadece üzerine gelince / tıklayınca.
+- **🔊 Sesli okuma:** kelimenin hemen yanındaki 🔊 butonu kelimeyi sesli okur, istersen her yeni kelime otomatik okunur. İnternetsiz çalışır, sistemin kendi seslerini kullanır. Linux'ta bir dil için ses yoksa: `sudo dnf install espeak-ng`.
 - **A1.1'den C2.2'ye 12 seviye.** Kartların çoğu senin seviyenden gelir, ara sıra alt seviyelerden tekrar kelimesi de çıkar.
 - **Üç mod:** Genel/Günlük, Akademik ve Siber. Geçiş yapmak için sol üstteki etikete tıkla.
 - **Almanca artikeller renkli:** *der* mavi, *die* pembe, *das* yeşil. Fiillerin altında çekimleri görünür (*er fährt · ist gefahren*, *went · gone*).
@@ -156,7 +162,7 @@ Kelime listeleri `wordlists/german.py` ve `wordlists/english.py` dosyalarında, 
 tür|kelime|Türkçe anlamı|ipucu
 v|fahren|(araçla) gitmek|er fährt · ist gefahren
 ```
-Sonra çevirisini ilgili `DE_EN*` ya da `EN_DE*` tablosuna, Rusçasını da `wordlists/russian.py` içindeki `EN_RU` ya da `DE_RU` tablosuna ekle.
+Sonra çevirisini ilgili `DE_EN*` ya da `EN_DE*` tablosuna, Rusçasını da `wordlists/russian.py` içindeki `EN_RU` ya da `DE_RU` tablosuna ekle. `docs/wordlists/` içindeki listeleri yenilemek için: `python3 tools/make_wordlists.py`.
 
 ---
 
@@ -193,6 +199,9 @@ Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. B
 - **Akademisch (B1.1 – C2.2).** Wortschatz und feste Wendungen für Paper, Abschlussarbeiten und Vorträge, zum Beispiel *the data indicate that…* und *beyond the scope of this study*.
 - **Cyber (B1.1 – C2.2).** Fachwortschatz der Cybersecurity, aufgebaut wie ein Kurs: Grundbegriffe → Netzwerke → Linux und Systeme → Angriffe → Websicherheit → Kryptografie und Identitätsmanagement → Pentest und Red Team → SOC und Incident Response → Governance, Risiko und Compliance (GRC).
 - Jedes Wort hat eine türkische, englische, deutsche und russische Bedeutung, daher vermittelt jede Sprachkombination denselben Inhalt.
+- **Komplette Listen ansehen** (jedes Wort mit türkischer, deutscher/englischer und russischer Bedeutung, Niveau für Niveau):
+  - [English · Everyday](docs/wordlists/README.md) — [A1](docs/wordlists/english-everyday-a1.md) · [A2](docs/wordlists/english-everyday-a2.md) · [B1](docs/wordlists/english-everyday-b1.md) · [B2](docs/wordlists/english-everyday-b2.md) · [C1](docs/wordlists/english-everyday-c1.md) · [C2](docs/wordlists/english-everyday-c2.md) · [Academic](docs/wordlists/english-academic.md) · [Cyber](docs/wordlists/english-cyber.md)
+  - [Deutsch · Allgemein](docs/wordlists/README.md) — [A1](docs/wordlists/german-general-a1.md) · [A2](docs/wordlists/german-general-a2.md) · [B1](docs/wordlists/german-general-b1.md) · [B2](docs/wordlists/german-general-b2.md) · [C1](docs/wordlists/german-general-c1.md) · [C2](docs/wordlists/german-general-c2.md) · [Akademisch](docs/wordlists/german-academic.md) · [Cyber](docs/wordlists/german-cyber.md)
 
 ### Funktionen
 - **Alle 20 Sekunden eine neue Karte.** Im Rechtsklickmenü kannst du 10–60 Sekunden einstellen. Eine dünne Linie unten zeigt die verbleibende Zeit.
@@ -200,8 +209,8 @@ Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. B
 - **Jedes Wort von 1 bis 10 bewerten.** 1 = nie gesehen, 5 = kenne es, aber nicht den Artikel, 9 = fast. Die Note wird nur aufgezeichnet: Wörter kommen **zufällig**, eine 1 oder 9 ändert nicht, wie oft ein Wort erscheint.
 - **10 = kann ich.** Das Wort wandert in die Liste *Gelernt* und wird nicht mehr gezeigt. Aus Versehen 10 geklickt? Im Bericht zurückholen.
 - **Bericht** (Rechtsklick → 📊 Bericht): Fortschritt pro Niveau, Notenverteilung, alle bewerteten Wörter mit ihrem Verlauf und die Liste *Gelernt*.
-- **Bedeutung verbergen** (Rechtsklick → Bedeutung verbergen): Die Karte zeigt zuerst nur das Wort, damit du dich selbst erinnerst. Die Bedeutung erscheint nach 3, 5 oder 8 Sekunden oder nur beim Überfahren bzw. Klicken.
-- **🔊 Vorlesen:** Der 🔊-Knopf liest das Wort vor, auf Wunsch jedes neue Wort automatisch. Funktioniert offline mit den Stimmen deines Systems. Unter Linux, falls für eine Sprache keine Stimme da ist: `sudo dnf install espeak-ng`.
+- **Bedeutung verbergen** mit dem 👁 Augen-Knopf oben: Die Karte zeigt zuerst nur das Wort, damit du dich selbst erinnerst (durchgestrichenes Auge = verborgen). Ein Klick auf die Punkte oder die Karte deckt sie auf. Rechtsklick → Bedeutung verbergen legt fest, wann sie von selbst erscheint: nach 3, 5 oder 8 Sekunden oder nur beim Überfahren bzw. Klicken.
+- **🔊 Vorlesen:** Der 🔊-Knopf direkt neben dem Wort liest es vor, auf Wunsch jedes neue Wort automatisch. Funktioniert offline mit den Stimmen deines Systems. Unter Linux, falls für eine Sprache keine Stimme da ist: `sudo dnf install espeak-ng`.
 - **12 Niveaus von A1.1 bis C2.2.** Die meisten Karten kommen aus deinem Niveau, ab und zu kommt ein Wiederholungswort aus einem niedrigeren.
 - **Drei Modi:** Allgemein/Alltag, Akademisch und Cyber. Zum Wechseln auf das Feld oben links klicken.
 - **Deutsche Artikel sind farbig:** *der* blau, *die* rosa, *das* grün. Verben zeigen ihre Formen (*er fährt · ist gefahren*, *went · gone*).
@@ -234,7 +243,7 @@ Die Wortlisten stehen in `wordlists/german.py` und `wordlists/english.py`, ein W
 Typ|Wort|türkische Bedeutung|Hinweis
 v|fahren|(araçla) gitmek|er fährt · ist gefahren
 ```
-Danach die Übersetzung in die passende Tabelle `DE_EN*` oder `EN_DE*` eintragen, die russische in `EN_RU` oder `DE_RU` in `wordlists/russian.py`.
+Danach die Übersetzung in die passende Tabelle `DE_EN*` oder `EN_DE*` eintragen, die russische in `EN_RU` oder `DE_RU` in `wordlists/russian.py`. Die Listen in `docs/wordlists/` aktualisierst du mit `python3 tools/make_wordlists.py`.
 
 ---
 
@@ -258,9 +267,9 @@ Word Flow — одно приложение для английского, не�
 
 **Windows:** скачайте **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** и запустите двойным щелчком — ничего устанавливать не нужно. Автозапуск: правый клик по карточке → **Запускать вместе с Windows**. Если появится окно «Windows защитила ваш компьютер», нажмите **Подробнее → Выполнить в любом случае**.
 
-**Скрывать значение** (правый клик → Скрывать значение): сначала видно только слово, значение появляется через 3, 5 или 8 секунд либо при наведении/щелчке. **🔊** читает слово вслух (офлайн, системными голосами; в Linux при отсутствии голоса: `sudo dnf install espeak-ng`).
+**Скрыть значение** — кнопка-глаз 👁 вверху (перечёркнутый глаз = скрыто): сначала видно только слово, значение открывается щелчком. В меню (правый клик → Скрывать значение) можно выбрать, когда оно появится само: через 3, 5 или 8 секунд либо при наведении/щелчке. **🔊** рядом со словом читает его вслух (офлайн, системными голосами; в Linux при отсутствии голоса: `sudo dnf install espeak-ng`).
 
-Списки слов основаны на официальных экзаменационных списках: немецкий A1–B1 — **Goethe-Zertifikat**, английский A1–C1 — **Oxford 3000 / 5000**.
+Списки слов основаны на официальных экзаменационных списках: немецкий A1–B1 — **Goethe-Zertifikat**, английский A1–C1 — **Oxford 3000 / 5000**. Все слова с переводом на русский, турецкий и английский/немецкий: **[списки слов](docs/wordlists/README.md)**.
 
 Всё остальное (уровни A1.1–C2.2, оценка каждого слова от 1 до 10 — слова показываются случайно, а 10 = «знаю», слово больше не показывается и его можно вернуть в отчёте (правый клик → 📊 Отчёт), три режима, установка) работает так же, как описано выше.
 
