@@ -17,23 +17,23 @@ Word Flow is a single app for English, German, Turkish and Russian. On first sta
 
 | You speak | You learn | Word → meaning | Modes (number of words) |
 |---|---|---|---|
-| English | German | German → English | General 4,573 · Academic 691 · Cyber 500 |
-| English | Turkish | Turkish → English | Everyday 4,805 · Academic 745 · Cyber 502 |
-| German | English | English → German | Everyday 4,925 · Academic 753 · Cyber 502 |
-| German | Turkish | Turkish → German | General 4,485 · Academic 684 · Cyber 500 |
-| Turkish | English | English → Turkish | Everyday 4,925 · Academic 753 · Cyber 502 |
-| Turkish | German | German → Turkish | General 4,573 · Academic 691 · Cyber 500 |
-| Turkish | Russian | Russian → Turkish | Everyday 4,850 · Academic 746 · Cyber 502 |
-| English | Russian | Russian → English | Everyday 4,850 · Academic 746 · Cyber 502 |
-| German | Russian | Russian → German | General 4,420 · Academic 685 · Cyber 499 |
-| Russian | English | English → Russian | Everyday 4,925 · Academic 753 · Cyber 502 |
-| Russian | German | German → Russian | General 4,573 · Academic 691 · Cyber 500 |
-| Russian | Turkish | Turkish → Russian | Everyday 4,805 · Academic 745 · Cyber 502 |
+| English | German | German → English | General 5,681 · Academic 691 · Cyber 500 |
+| English | Turkish | Turkish → English | Everyday 6,691 · Academic 745 · Cyber 502 |
+| German | English | English → German | Everyday 6,878 · Academic 753 · Cyber 502 |
+| German | Turkish | Turkish → German | General 5,552 · Academic 684 · Cyber 500 |
+| Turkish | English | English → Turkish | Everyday 6,878 · Academic 753 · Cyber 502 |
+| Turkish | German | German → Turkish | General 5,681 · Academic 691 · Cyber 500 |
+| Turkish | Russian | Russian → Turkish | Everyday 6,732 · Academic 746 · Cyber 502 |
+| English | Russian | Russian → English | Everyday 6,732 · Academic 746 · Cyber 502 |
+| German | Russian | Russian → German | General 5,517 · Academic 685 · Cyber 499 |
+| Russian | English | English → Russian | Everyday 6,878 · Academic 753 · Cyber 502 |
+| Russian | German | German → Russian | General 5,681 · Academic 691 · Cyber 500 |
+| Russian | Turkish | Turkish → Russian | Everyday 6,691 · Academic 745 · Cyber 502 |
 
 ![Russian: Russian → German, German → Russian, English → Russian, Russian → Turkish](screenshots/russian.png)
 
 ### Word lists
-- **General / Everyday (A1.1 – C2.2).** A1–B1 cover a core vocabulary of 1,500 words across 26 topics, such as greetings, numbers, family, home, food, the city, work and official paperwork in Germany. Extra everyday verbs are included too. B2–C1 add C1-level verbs, nouns, adjectives, phrasal verbs and connectors, ordered by how common they are. C2 adds rare words and idioms.
+- **General / Everyday (A1.1 – C2.2).** Based on the official exam lists: German A1–B1 follow the **Goethe-Zertifikat word lists** (A1, A2, B1), English A1–C1 follow the **Oxford 3000 and Oxford 5000** with their CEFR levels. Every word of those lists is included at the level the list gives it, together with a core vocabulary of 1,500 words across 26 topics (greetings, numbers, family, home, food, the city, work, official paperwork in Germany). German B2–C2 and English C2 add advanced words, phrasal verbs, connectors and idioms, ordered by how common they are. Within a level, the more common half comes first (.1), the rest second (.2).
 - **Academic (B1.1 – C2.2).** Vocabulary and set phrases for papers, theses and talks, such as *the data indicate that…* and *beyond the scope of this study*.
 - **Cyber (B1.1 – C2.2).** Professional cybersecurity vocabulary, ordered like a course: core concepts → networking → Linux and systems → attacks → web security → cryptography and identity management → pentest and red team → SOC and incident response → governance, risk and compliance (GRC).
 - Every word has a Turkish, English, German and Russian meaning, so every language combination teaches the same content.
@@ -97,21 +97,21 @@ Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk a
 
 | Konuştuğun dil | Öğrendiğin dil | Kelime → anlamı | Modlar (kelime sayısı) |
 |---|---|---|---|
-| Türkçe | İngilizce | İngilizce → Türkçe | Günlük 4.925 · Akademik 753 · Siber 502 |
-| Türkçe | Almanca | Almanca → Türkçe | Genel 4.573 · Akademik 691 · Siber 500 |
-| İngilizce | Almanca | Almanca → İngilizce | Genel 4.573 · Akademik 691 · Siber 500 |
-| İngilizce | Türkçe | Türkçe → İngilizce | Günlük 4.805 · Akademik 745 · Siber 502 |
-| Almanca | İngilizce | İngilizce → Almanca | Günlük 4.925 · Akademik 753 · Siber 502 |
-| Almanca | Türkçe | Türkçe → Almanca | Genel 4.485 · Akademik 684 · Siber 500 |
-| Türkçe | Rusça | Rusça → Türkçe | Günlük 4.850 · Akademik 746 · Siber 502 |
-| İngilizce | Rusça | Rusça → İngilizce | Günlük 4.850 · Akademik 746 · Siber 502 |
-| Almanca | Rusça | Rusça → Almanca | Genel 4.420 · Akademik 685 · Siber 499 |
-| Rusça | İngilizce | İngilizce → Rusça | Günlük 4.925 · Akademik 753 · Siber 502 |
-| Rusça | Almanca | Almanca → Rusça | Genel 4.573 · Akademik 691 · Siber 500 |
-| Rusça | Türkçe | Türkçe → Rusça | Günlük 4.805 · Akademik 745 · Siber 502 |
+| Türkçe | İngilizce | İngilizce → Türkçe | Günlük 6.878 · Akademik 753 · Siber 502 |
+| Türkçe | Almanca | Almanca → Türkçe | Genel 5.681 · Akademik 691 · Siber 500 |
+| İngilizce | Almanca | Almanca → İngilizce | Genel 5.681 · Akademik 691 · Siber 500 |
+| İngilizce | Türkçe | Türkçe → İngilizce | Günlük 6.691 · Akademik 745 · Siber 502 |
+| Almanca | İngilizce | İngilizce → Almanca | Günlük 6.878 · Akademik 753 · Siber 502 |
+| Almanca | Türkçe | Türkçe → Almanca | Genel 5.552 · Akademik 684 · Siber 500 |
+| Türkçe | Rusça | Rusça → Türkçe | Günlük 6.732 · Akademik 746 · Siber 502 |
+| İngilizce | Rusça | Rusça → İngilizce | Günlük 6.732 · Akademik 746 · Siber 502 |
+| Almanca | Rusça | Rusça → Almanca | Genel 5.517 · Akademik 685 · Siber 499 |
+| Rusça | İngilizce | İngilizce → Rusça | Günlük 6.878 · Akademik 753 · Siber 502 |
+| Rusça | Almanca | Almanca → Rusça | Genel 5.681 · Akademik 691 · Siber 500 |
+| Rusça | Türkçe | Türkçe → Rusça | Günlük 6.691 · Akademik 745 · Siber 502 |
 
 ### Kelime listeleri
-- **Genel / Günlük (A1.1 – C2.2).** A1–B1 seviyeleri 26 konuda 1500 temel kelimeyi kapsıyor. Konular arasında selamlaşma, sayılar, aile, ev, yemek, şehir, iş ve Almanya'daki resmî işler var. Bunlara ek günlük fiiller de eklendi. B2–C1 seviyelerinde C1 düzeyinde fiiller, isimler, sıfatlar, phrasal verb'ler ve bağlaçlar var; ne kadar sık kullanıldıklarına göre sıralandılar. C2'de nadir kelimeler ve deyimler var.
+- **Genel / Günlük (A1.1 – C2.2).** Resmî sınav listelerine dayanıyor: Almanca A1–B1 **Goethe-Zertifikat kelime listelerini** (A1, A2, B1), İngilizce A1–C1 ise CEFR seviyeleriyle **Oxford 3000 ve Oxford 5000** listelerini izliyor. Bu listelerdeki her kelime, listenin verdiği seviyede yer alıyor. Bunlara 26 konuda 1500 temel kelime eklendi (selamlaşma, sayılar, aile, ev, yemek, şehir, iş, Almanya'daki resmî işler). Almanca B2–C2 ve İngilizce C2'de ileri düzey kelimeler, phrasal verb'ler, bağlaçlar ve deyimler var; ne kadar sık kullanıldıklarına göre sıralandılar. Her seviyede daha sık kullanılan yarı önce (.1), kalanı sonra (.2) geliyor.
 - **Akademik (B1.1 – C2.2).** Makale, tez ve sunum dili için kelimeler ve kalıplar. Örneğin *the data indicate that…* ve *beyond the scope of this study*.
 - **Siber Güvenlik (B1.1 – C2.2).** Mesleki siber güvenlik terimleri bir ders gibi sıralandı: temel kavramlar → ağ → Linux ve sistemler → saldırılar → web güvenliği → kriptografi ve kimlik yönetimi → sızma testi ve kırmızı takım → SOC ve olay müdahalesi → yönetişim, risk ve uyum (GRC).
 - Her kelimenin Türkçe, İngilizce, Almanca ve Rusça karşılığı var. Hangi dil kombinasyonunu seçersen seç, içerik aynı.
@@ -175,21 +175,21 @@ Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. B
 
 | Du sprichst | Du lernst | Wort → Bedeutung | Modi (Anzahl Wörter) |
 |---|---|---|---|
-| Deutsch | Englisch | Englisch → Deutsch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
-| Deutsch | Türkisch | Türkisch → Deutsch | Allgemein 4.485 · Akademisch 684 · Cyber 500 |
-| Englisch | Deutsch | Deutsch → Englisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
-| Englisch | Türkisch | Türkisch → Englisch | Alltag 4.805 · Akademisch 745 · Cyber 502 |
-| Türkisch | Englisch | Englisch → Türkisch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
-| Türkisch | Deutsch | Deutsch → Türkisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
-| Deutsch | Russisch | Russisch → Deutsch | Allgemein 4.420 · Akademisch 685 · Cyber 499 |
-| Englisch | Russisch | Russisch → Englisch | Alltag 4.850 · Akademisch 746 · Cyber 502 |
-| Türkisch | Russisch | Russisch → Türkisch | Alltag 4.850 · Akademisch 746 · Cyber 502 |
-| Russisch | Deutsch | Deutsch → Russisch | Allgemein 4.573 · Akademisch 691 · Cyber 500 |
-| Russisch | Englisch | Englisch → Russisch | Alltag 4.925 · Akademisch 753 · Cyber 502 |
-| Russisch | Türkisch | Türkisch → Russisch | Alltag 4.805 · Akademisch 745 · Cyber 502 |
+| Deutsch | Englisch | Englisch → Deutsch | Alltag 6.878 · Akademisch 753 · Cyber 502 |
+| Deutsch | Türkisch | Türkisch → Deutsch | Allgemein 5.552 · Akademisch 684 · Cyber 500 |
+| Englisch | Deutsch | Deutsch → Englisch | Allgemein 5.681 · Akademisch 691 · Cyber 500 |
+| Englisch | Türkisch | Türkisch → Englisch | Alltag 6.691 · Akademisch 745 · Cyber 502 |
+| Türkisch | Englisch | Englisch → Türkisch | Alltag 6.878 · Akademisch 753 · Cyber 502 |
+| Türkisch | Deutsch | Deutsch → Türkisch | Allgemein 5.681 · Akademisch 691 · Cyber 500 |
+| Deutsch | Russisch | Russisch → Deutsch | Allgemein 5.517 · Akademisch 685 · Cyber 499 |
+| Englisch | Russisch | Russisch → Englisch | Alltag 6.732 · Akademisch 746 · Cyber 502 |
+| Türkisch | Russisch | Russisch → Türkisch | Alltag 6.732 · Akademisch 746 · Cyber 502 |
+| Russisch | Deutsch | Deutsch → Russisch | Allgemein 5.681 · Akademisch 691 · Cyber 500 |
+| Russisch | Englisch | Englisch → Russisch | Alltag 6.878 · Akademisch 753 · Cyber 502 |
+| Russisch | Türkisch | Türkisch → Russisch | Alltag 6.691 · Akademisch 745 · Cyber 502 |
 
 ### Wortlisten
-- **Allgemein / Alltag (A1.1 – C2.2).** A1–B1 umfassen einen Grundwortschatz von 1.500 Wörtern aus 26 Themen, zum Beispiel Begrüßung, Zahlen, Familie, Wohnen, Essen, Stadt, Arbeit und Behördengänge in Deutschland. Dazu kommen weitere Alltagsverben. B2–C1 ergänzen Verben, Nomen, Adjektive, Phrasal Verbs und Konnektoren auf C1-Niveau, sortiert nach Häufigkeit. C2 enthält seltene Wörter und Redewendungen.
+- **Allgemein / Alltag (A1.1 – C2.2).** Grundlage sind die offiziellen Prüfungslisten: Deutsch A1–B1 folgt den **Wortlisten des Goethe-Zertifikats** (A1, A2, B1), Englisch A1–C1 der **Oxford 3000 und Oxford 5000** mit ihren GER-Niveaus. Jedes Wort dieser Listen ist auf dem dort angegebenen Niveau enthalten, dazu ein Grundwortschatz von 1.500 Wörtern aus 26 Themen (Begrüßung, Zahlen, Familie, Wohnen, Essen, Stadt, Arbeit, Behördengänge in Deutschland). Deutsch B2–C2 und Englisch C2 ergänzen fortgeschrittene Wörter, Phrasal Verbs, Konnektoren und Redewendungen, sortiert nach Häufigkeit. Innerhalb eines Niveaus kommt die häufigere Hälfte zuerst (.1), der Rest danach (.2).
 - **Akademisch (B1.1 – C2.2).** Wortschatz und feste Wendungen für Paper, Abschlussarbeiten und Vorträge, zum Beispiel *the data indicate that…* und *beyond the scope of this study*.
 - **Cyber (B1.1 – C2.2).** Fachwortschatz der Cybersecurity, aufgebaut wie ein Kurs: Grundbegriffe → Netzwerke → Linux und Systeme → Angriffe → Websicherheit → Kryptografie und Identitätsmanagement → Pentest und Red Team → SOC und Incident Response → Governance, Risiko und Compliance (GRC).
 - Jedes Wort hat eine türkische, englische, deutsche und russische Bedeutung, daher vermittelt jede Sprachkombination denselben Inhalt.
@@ -249,16 +249,18 @@ Word Flow — одно приложение для английского, не�
 
 | Вы говорите | Вы учите | Слово → значение | Режимы (количество слов) |
 |---|---|---|---|
-| русский | английский | английский → русский | Повседневный 4 925 · Академический 753 · Кибер 502 |
-| русский | немецкий | немецкий → русский | Общий 4 573 · Академический 691 · Кибер 500 |
-| русский | турецкий | турецкий → русский | Повседневный 4 805 · Академический 745 · Кибер 502 |
-| английский | русский | русский → английский | 4 850 · 746 · 502 |
-| немецкий | русский | русский → немецкий | 4 420 · 685 · 499 |
-| турецкий | русский | русский → турецкий | 4 850 · 746 · 502 |
+| русский | английский | английский → русский | Повседневный 6 878 · Академический 753 · Кибер 502 |
+| русский | немецкий | немецкий → русский | Общий 5 681 · Академический 691 · Кибер 500 |
+| русский | турецкий | турецкий → русский | Повседневный 6 691 · Академический 745 · Кибер 502 |
+| английский | русский | русский → английский | 6 732 · 746 · 502 |
+| немецкий | русский | русский → немецкий | 5 517 · 685 · 499 |
+| турецкий | русский | русский → турецкий | 6 732 · 746 · 502 |
 
 **Windows:** скачайте **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** и запустите двойным щелчком — ничего устанавливать не нужно. Автозапуск: правый клик по карточке → **Запускать вместе с Windows**. Если появится окно «Windows защитила ваш компьютер», нажмите **Подробнее → Выполнить в любом случае**.
 
 **Скрывать значение** (правый клик → Скрывать значение): сначала видно только слово, значение появляется через 3, 5 или 8 секунд либо при наведении/щелчке. **🔊** читает слово вслух (офлайн, системными голосами; в Linux при отсутствии голоса: `sudo dnf install espeak-ng`).
+
+Списки слов основаны на официальных экзаменационных списках: немецкий A1–B1 — **Goethe-Zertifikat**, английский A1–C1 — **Oxford 3000 / 5000**.
 
 Всё остальное (уровни A1.1–C2.2, оценка каждого слова от 1 до 10 — слова показываются случайно, а 10 = «знаю», слово больше не показывается и его можно вернуть в отчёте (правый клик → 📊 Отчёт), три режима, установка) работает так же, как описано выше.
 

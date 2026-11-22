@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """German word lists.
 
-GERMAN          : general, A1.1–C2.2 — 1500 core words + 500-verb list (A1–B1),
-                  C1 vocabulary mirrored from the English C1 list, advanced words
+GERMAN          : general, A1.1–C2.2 — A1–B1 aligned with the Goethe-Zertifikat
+                  word lists (A1, A2, B1) plus 1500 core words; advanced words
                   and idioms up to C2.2
 GERMAN_ACADEMIC : B1.1–C2.2 — academic German (mirrors the English academic list)
 GERMAN_CYBER    : B1.1–C2.2 — cybersecurity German (mirrors the English cyber list)
@@ -12,1965 +12,3401 @@ DE_EN*          : German -> English meaning
 
 GERMAN = {
 "A1.1": """
-n|der Mann|adam
-n|die Frau|kadın
-n|das Kind|çocuk
-n|der Name|isim, ad
-n|das Haus|ev
-n|die Wohnung|daire, ev
-n|das Wasser|su
-n|das Brot|ekmek
-n|der Kaffee|kahve
-n|der Tag|gün
-n|die Woche|hafta
-n|die Stadt|şehir
-n|das Land|ülke
-n|die Sprache|dil
-n|der Freund|arkadaş (erkek)
-n|die Familie|aile
-n|die Mutter|anne
-n|der Vater|baba
-v|sein|olmak|er ist · ist gewesen
-v|haben|sahip olmak, -si olmak|er hat · hat gehabt
-v|heißen|adı ... olmak|er heißt · hat geheißen
-v|kommen|gelmek|er kommt · ist gekommen
-v|wohnen|oturmak, ikamet etmek|er wohnt · hat gewohnt
-v|sprechen|konuşmak|er spricht · hat gesprochen
-v|trinken|içmek|er trinkt · hat getrunken
-v|essen|yemek yemek|er isst · hat gegessen
-v|lernen|öğrenmek|er lernt · hat gelernt
-v|machen|yapmak|er macht · hat gemacht
-w|gut|iyi
-w|groß|büyük
-w|klein|küçük
-w|heute|bugün
-w|hallo|merhaba
-p|guten Morgen|günaydın
-p|guten Tag|iyi günler
-p|guten Abend|iyi akşamlar
-p|gute Nacht|iyi geceler
-w|tschüss|hoşça kal
-p|auf Wiedersehen|güle güle / hoşça kalın
-p|bis später|sonra görüşürüz
-p|bis morgen|yarın görüşürüz
-p|bis bald|yakında görüşürüz
-w|ja|evet
-w|nein|hayır
-w|vielleicht|belki
-w|bitte|lütfen / buyurun
-w|danke|teşekkürler
-p|danke schön|çok teşekkürler
-p|gern geschehen|rica ederim
-w|entschuldigung|affedersiniz / özür dilerim
-p|es tut mir leid|üzgünüm
-p|kein Problem|sorun değil
-p|wie geht's?|nasılsın?
-p|mir geht es gut|iyiyim
-p|und dir?|ya sen?
-w|willkommen|hoş geldin
-p|herzlich willkommen|hoş geldiniz
-p|mein Name ist ...|benim adım ...
-p|ich heiße ...|benim adım ...
-p|freut mich|memnun oldum
-p|wie bitte?|efendim? / anlamadım
-p|ich verstehe nicht|anlamıyorum
-p|langsam bitte|yavaş lütfen
-p|noch einmal|bir kez daha
-w|natürlich|tabii ki
-w|genau|aynen / tam olarak
-w|stimmt|doğru
-w|okay|tamam
-p|in Ordnung|tamam / uygun
-p|viel Glück|bol şans
-p|viel Spaß|iyi eğlenceler
-p|gute Reise|iyi yolculuklar
-p|guten Appetit|afiyet olsun
-w|prost|şerefe
-p|herzlichen Glückwunsch|tebrikler
-p|alles Gute|her şey gönlünce olsun
-p|gute Besserung|geçmiş olsun
-p|schönes Wochenende|iyi hafta sonları
-p|bitte schön|buyurun
-w|Verzeihung|pardon
-w|Achtung|dikkat
-w|Hilfe!|imdat!
-w|null|sıfır
-w|eins|bir
-w|zwei|iki
-w|drei|üç
-w|vier|dört
-w|fünf|beş
-w|sechs|altı
-w|sieben|yedi
-w|acht|sekiz
-w|neun|dokuz
-w|zehn|on
-w|elf|on bir
-w|zwölf|on iki
-w|dreizehn|on üç
-w|vierzehn|on dört
-w|fünfzehn|on beş
-w|sechzehn|on altı
-w|siebzehn|on yedi
-w|achtzehn|on sekiz
-w|neunzehn|on dokuz
-w|zwanzig|yirmi
-w|dreißig|otuz
-w|vierzig|kırk
-w|fünfzig|elli
-w|sechzig|altmış
-w|siebzig|yetmiş
-w|achtzig|seksen
-w|neunzig|doksan
-w|hundert|yüz
-w|tausend|bin
-n|die Million|milyon
-w|erste|birinci
-w|zweite|ikinci
-w|dritte|üçüncü
-w|letzte|sonuncu
-w|halb|yarım
-n|die Hälfte|yarısı
-n|das Viertel|çeyrek
-n|das Paar|çift
-n|das Dutzend|düzine
-w|viel|çok
-w|wenig|az
-w|mehr|daha fazla
-w|weniger|daha az
-w|genug|yeterli
-w|alle|hepsi
-w|nichts|hiçbir şey
-w|etwas|bir şey / biraz
-n|die Zahl|sayı
-n|die Nummer|numara
-n|das Prozent|yüzde
-n|das Stück|adet / parça
-n|das Kilo|kilo
-n|das Gramm|gram
-n|der Liter|litre
-n|die Farbe|renk
-w|rot|kırmızı
-w|blau|mavi
-w|gelb|sarı
-w|grün|yeşil
-w|schwarz|siyah
-w|weiß|beyaz
-w|grau|gri
-w|braun|kahverengi
-w|orange|turuncu
-w|rosa|pembe
-w|lila|mor
-w|bunt|rengarenk
-w|hell|açık (renk) / aydınlık
-w|dunkel|koyu / karanlık
-n|der Kreis|daire
-n|das Quadrat|kare
-n|die Linie|çizgi
-w|rund|yuvarlak
-w|ich|ben
-w|du|sen
-w|er|o (erkek)
-w|sie|o (kadın) / onlar
-w|es|o (nötr)
-w|wir|biz
-w|ihr|siz
-w|mein|benim
-w|dein|senin
-w|unser|bizim
-w|euer|sizin
-w|mich|beni
-w|dich|seni
-w|mir|bana
-w|dir|sana
-w|man|(genel özne) insan
-w|der|(eril artikel)
 w|die|(dişil artikel)
-w|das|(nötr artikel)
-w|ein|bir (eril/nötr)
-w|eine|bir (dişil)
-w|kein|hiçbir / yok
-w|dieser|bu
-w|jener|şu / o
-w|jeder|her biri
-w|einige|bazıları
-w|andere|diğerleri
-w|selbst|kendi
+w|der|(eril artikel)
 w|und|ve
-w|oder|veya
-w|aber|ama
-w|denn|çünkü
-w|weil|çünkü / -dığı için
-w|dass|ki / -dığını
-w|wenn|eğer / -dığında
-w|als|-iken / -den (karşılaştırma)
-w|ob|-ip -mediğini
-w|obwohl|-mesine rağmen
-w|damit|ki (amaç)
-w|also|yani / öyleyse
-w|sondern|aksine / bilakis
-p|sowohl ... als auch|hem ... hem de
-p|entweder ... oder|ya ... ya da
-p|weder ... noch|ne ... ne de
 w|in|içinde
-w|an|-de / kenarında
-w|auf|üstünde
-w|unter|altında
-w|über|üzerinde / hakkında
-w|vor|önünde / önce
-w|hinter|arkasında
-w|neben|yanında
-w|zwischen|arasında
-w|bei|yanında / -de
-w|mit|ile
-w|ohne|-siz / olmadan
-w|für|için
-w|gegen|karşı
-w|von|-den / -in
+w|ich|ben
 w|zu|-e / -a
-w|nach|-den sonra / -e doğru
-w|aus|-den (içinden)
-w|seit|-den beri
-w|bis|-e kadar
-w|durch|içinden / vasıtasıyla
-w|um|etrafında / saat -de
-w|während|sırasında
-w|wegen|yüzünden
-w|statt|yerine
-w|außer|hariç
-w|gegenüber|karşısında
-w|wer|kim
-w|was|ne
-w|wo|nerede
-w|wohin|nereye
-w|woher|nereden
-w|wann|ne zaman
+w|nicht|değil
+w|von|-den / -in
+w|mit|ile
+w|es|o (nötr)
+w|ein|bir (eril/nötr)
+w|auf|üstünde
+w|für|için
+w|sie|o (kadın) / onlar
+w|eine|bir (dişil)
+w|sich|kendini, kendine
+w|auch|de / da
+w|er|o (erkek)
+w|an|-de / kenarında
+d|so|böyle; çok
+w|bei|yanında / -de
 w|wie|nasıl
-w|warum|neden
-w|wieso|niçin
-w|weshalb|niçin
-w|welcher|hangi
-p|wie viel|ne kadar
-p|wie viele|kaç tane
-p|wie lange|ne kadar süre
-p|wie oft|ne sıklıkta
-p|wie weit|ne kadar uzak
-w|wem|kime
-w|wen|kimi
-w|wessen|kimin
-n|die Frage|soru
-n|die Zeit|zaman
-n|die Stunde|saat (süre)
-n|die Minute|dakika
-n|die Sekunde|saniye
-n|der Monat|ay
-n|das Jahr|yıl
-n|der Morgen|sabah
-n|der Vormittag|öğleden önce
-n|der Mittag|öğle
-n|der Nachmittag|öğleden sonra
-n|der Abend|akşam
-n|die Nacht|gece
-w|gestern|dün
-w|übermorgen|öbür gün
-w|vorgestern|evvelki gün
+w|aber|ama
+w|aus|-den (içinden)
+w|nach|-den sonra / -e doğru
+w|noch|hâlâ / daha
+w|wir|biz
+w|du|sen
+w|nur|sadece
+w|oder|veya
+w|was|ne
+v|werden|olmak; -ecek (gelecek zaman)
+w|man|(genel özne) insan
+w|um|etrafında / saat -de
+v|haben|sahip olmak, -si olmak|er hat · hat gehabt
+w|über|üzerinde / hakkında
+w|da|orada / işte
+w|dann|sonra
+w|schon|zaten / çoktan
+w|ja|evet
+w|mehr|daha fazla
+v|sein|olmak|er ist · ist gewesen
+w|mir|bana
+p|an sein|açık olmak (cihaz)
+w|vor|önünde / önce
+w|mich|beni
+w|durch|içinden / vasıtasıyla
+w|hier|burada
+p|was für ein|ne tür bir; ne kadar
+p|zu sein|kapalı olmak
+w|bis|-e kadar
+w|ihr|siz
+p|auf sein|açık olmak; uyanık olmak
 w|jetzt|şimdi
-w|gleich|hemen / birazdan
-w|sofort|derhal
-w|später|sonra
-w|früher|daha önce
-w|bald|yakında
+w|immer|her zaman
+w|alle|hepsi
+w|sehr|çok
+p|aus sein|kapalı olmak (cihaz); bitmiş olmak
+v|können|-ebilmek
+w|unter|altında
+w|gut|iyi
+w|dieser|bu
+w|gegen|karşı
+w|viel|çok
+w|also|yani / öyleyse
+n|die Zeit|zaman
+v|machen|yapmak|er macht · hat gemacht
+w|ab|-den itibaren
+w|denn|çünkü
+w|dir|sana
+w|ohne|-siz / olmadan
+w|einfach|basit / kolay
+p|und dir?|ya sen?
+w|zwei|iki
+w|mein|benim
+w|kein|hiçbir / yok
+w|seit|-den beri
+p|wie viel|ne kadar
+w|wo|nerede
+w|dich|seni
+w|heute|bugün
+w|nichts|hiçbir şey
+w|wer|kim
+v|leben|yaşamak
+n|das Jahr|yıl
+w|ihm|ona (erkek)
+w|zwischen|arasında
+w|ihn|onu (erkek)
+v|müssen|zorunda olmak
+w|dort|orada
 w|gerade|tam şu an
+w|weiß|beyaz
+w|andere|diğerleri
+w|warum|neden
+w|weiter|daha ileri
+n|der Mann|adam
+w|vielleicht|belki
+w|drei|üç
+v|kommen|gelmek|er kommt · ist gekommen
+v|wollen|istemek
+w|bitte|lütfen / buyurun
+n|der Tag|gün
+v|sehen|görmek
+v|sagen|söylemek
 w|nie|asla
-w|manchmal|bazen
+n|das Ende|son
+n|die Uhr|saat
+n|die Frau|kadın
+n|die Stadt|şehir
+n|die Welt|dünya
+a|besser|daha iyi
+d|einmal|bir kez; bir zamanlar
+p|wie bitte?|efendim? / anlamadım
+v|gehen|gitmek, yürümek|er geht · ist gegangen
+w|danke|teşekkürler
+n|die Leute|insanlar
+p|mir geht es gut|iyiyim
+w|dies|bu
+p|noch einmal|bir kez daha
+v|geben|vermek
+v|finden|bulmak
+w|gleich|hemen / birazdan
+d|lange|uzun süre
+n|der Teil|parça, bölüm
+n|das Geld|para
+v|tun|yapmak / etmek
+w|richtig|doğru
+p|weg sein|gitmiş olmak, yok olmak
+w|erste|birinci
+n|die Frage|soru
+n|die Arbeit|iş
+w|zurück|geri
+a|klar|açık, net
+p|wie lange|ne kadar süre
+v|wissen|bilmek|er weiß · hat gewusst
+w|zusammen|birlikte
+w|einige|bazıları
+w|nein|hayır
+w|schön|güzel
+w|schnell|hızlı
+w|sollen|-meli
+w|später|sonra
+v|stehen|yakışmak / durmak
+w|wenig|az
+d|gerne|seve seve
 w|oft|sık sık
-w|selten|nadiren
-w|meistens|çoğunlukla
-w|täglich|günlük
-w|wöchentlich|haftalık
-w|monatlich|aylık
-w|jährlich|yıllık
-n|der Montag|Pazartesi
-n|der Dienstag|Salı
-n|der Mittwoch|Çarşamba
-n|der Donnerstag|Perşembe
-n|der Freitag|Cuma
-n|der Samstag|Cumartesi
-n|der Sonntag|Pazar
-n|das Wochenende|hafta sonu
-n|der Werktag|iş günü
-n|der Feiertag|resmi tatil
-n|der Januar|Ocak
-n|der Februar|Şubat
-n|der März|Mart
-n|der April|Nisan
+n|das Land|ülke
+p|alles Gute|her şey gönlünce olsun
+v|fragen|sormak
+w|dein|senin
+n|der Platz|meydan / yer
+p|wie oft|ne sıklıkta
+v|nehmen|almak|er nimmt · hat genommen
+w|vier|dört
+p|bis später|sonra görüşürüz
+w|unser|bizim
+n|der Morgen|sabah
+w|kurz|kısa
+w|morgen|yarın
+w|weniger|daha az
+v|bekommen|almak, elde etmek|er bekommt · hat bekommen
+v|spielen|oynamak|er spielt · hat gespielt
+n|das Haus|ev
+n|die Familie|aile
+w|möglich|mümkün
+v|arbeiten|çalışmak|er arbeitet · hat gearbeitet
+n|das Bild|resim / tablo
+w|weit|geniş / uzak
+n|die Polizei|polis
+n|die Woche|hafta
+p|wie weit|ne kadar uzak
+w|leider|maalesef
+v|stellen|dikey koymak
+w|beide|her ikisi
+p|bis morgen|yarın görüşürüz
+v|bleiben|kalmak|er bleibt · ist geblieben
+n|das Problem|sorun
+n|die Nacht|gece
+n|das Thema|konu
+w|neu|yeni
+n|das Beispiel|örnek
+n|die Schule|okul
+v|halten|tutmak
+w|allein|yalnız
+p|am besten|en iyi
+v|essen|yemek yemek|er isst · hat gegessen
+w|lang|uzun
+n|das Essen|yemek
+n|das Wasser|su
+n|der Abend|akşam
+n|der Dank|teşekkür
+w|sofort|derhal
+w|bald|yakında
+n|der Junge|erkek çocuk
+n|der Ort|yer / mekân
+p|zum Beispiel|örneğin
+w|lieber|tercihen
+p|bitte schön|buyurun
+n|der Kopf|baş, kafa
+n|das Auto|araba
+v|bringen|getirmek
+n|die Hand|el
+w|fünf|beş
+w|wichtig|önemli
+w|schwer|ağır / zor
+w|letzte|sonuncu
+w|hoch|yüksek
+n|das Kind|çocuk
+p|danke schön|çok teşekkürler
+n|das Alter|yaş
+w|oben|yukarıda
+n|der Anfang|başlangıç
+n|die Straße|cadde, sokak
+n|die Mutter|anne
+p|bis bald|yakında görüşürüz
+p|kein Problem|sorun değil
+n|die Eltern|ebeveynler
+w|bekannt|tanınmış
+v|treffen|buluşmak, karşılaşmak|er trifft · hat getroffen
+n|die Gruppe|grup
+v|schreiben|yazmak|er schreibt · hat geschrieben
+p|guten Tag|iyi günler
+w|Hilfe!|imdat!
+w|leicht|hafif / kolay
+n|das Glück|mutluluk / şans
+n|der Herr|bey, beyefendi
+n|die Hilfe|yardım
+n|das Internet|internet
+n|der Film|film
+n|das Lesen|okuma
+w|laut|gürültülü
+v|lesen|okumak|er liest · hat gelesen
+n|das Prozent|yüzde
+w|früher|daha önce
+n|der Sohn|oğul
+v|dürfen|izni olmak
+n|die Stelle|pozisyon, iş yeri
+n|das Buch|kitap
+n|das Wort|kelime
+p|ein bisschen|biraz
+n|der Vater|baba
+w|groß|büyük
+n|der Mensch|insan
+n|das Mädchen|kız çocuk
+v|liegen|yatmak / bulunmak
+w|frei|özgür / boş
+v|fahren|(araçla) gitmek|er fährt · ist gefahren
+v|helfen|yardım etmek (+ Dativ)|er hilft · hat geholfen
+n|die Kosten|maliyet
+v|suchen|aramak
+v|kosten|(fiyatı) tutmak|es kostet · hat gekostet
+p|gute Nacht|iyi geceler
+p|viel Glück|bol şans
+w|wann|ne zaman
 n|der Mai|Mayıs
+n|der September|Eylül
+v|verstehen|anlamak|er versteht · hat verstanden
+w|stimmt|doğru
+n|die Klasse|sınıf
+w|alt|eski / yaşlı
+n|der Preis|fiyat
+v|brauchen|ihtiyacı olmak|er braucht · hat gebraucht
+p|viel Spaß|iyi eğlenceler
+w|gestern|dün
+n|der März|Mart
+v|zahlen|ödemek
+n|der Name|isim, ad
+v|lernen|öğrenmek|er lernt · hat gelernt
+w|zweite|ikinci
+n|der Blick|bakış; manzara
+v|kaufen|satın almak|er kauft · hat gekauft
+v|sprechen|konuşmak|er spricht · hat gesprochen
+p|guten Morgen|günaydın
+w|sechs|altı
+w|schlecht|kötü
+n|der Moment|an
+n|der August|Ağustos
+n|der November|Kasım
+n|die Mitte|orta
+v|glauben|inanmak / sanmak
+n|der Freund|arkadaş (erkek)
+n|der April|Nisan
+n|der Raum|oda; alan
+p|sowohl ... als auch|hem ... hem de
 n|der Juni|Haziran
 n|der Juli|Temmuz
-n|der August|Ağustos
-n|der September|Eylül
 n|der Oktober|Ekim
-n|der November|Kasım
-n|der Dezember|Aralık
-n|der Frühling|ilkbahar
+w|links|sol
+w|rechts|sağ
+v|hören|duymak / dinlemek
+n|die Wohnung|daire, ev
+w|zehn|on
+n|die Stunde|saat (süre)
 n|der Sommer|yaz
-n|der Herbst|sonbahar
-n|der Winter|kış
-n|die Jahreszeit|mevsim
-n|das Datum|tarih
-n|der Kalender|takvim
-n|die Vergangenheit|geçmiş
-n|die Gegenwart|şimdiki zaman
-n|die Zukunft|gelecek
-n|der Geburtstag|doğum günü
-n|die Verspätung|gecikme
-n|der Mensch|insan
-n|die Leute|insanlar
-n|die Person|kişi
-n|der Junge|erkek çocuk
-n|das Mädchen|kız çocuk
-n|das Baby|bebek
-n|die Eltern|ebeveynler
-n|der Sohn|oğul
 n|die Tochter|kız evlat
+n|der Job|iş
+a|nächste|sonraki, en yakın
+n|die Sprache|dil
+p|guten Abend|iyi akşamlar
+p|mein Name ist ...|benim adım ...
+v|kennen|tanımak
+w|hallo|merhaba
+n|der Fehler|hata
+w|langsam|yavaş
+n|das Bad|banyo
+v|laufen|yürümek / koşmak
+n|der Dezember|Aralık
+n|die Bahn|tren / demiryolu
+n|die Antwort|cevap
+n|der Januar|Ocak
+v|gehören|ait olmak
+n|die Lösung|çözüm
+n|das Foto|fotoğraf
+w|falsch|yanlış
+w|fertig|bitmiş / hazır
+w|schwarz|siyah
+n|der Sonntag|Pazar
+n|der Februar|Şubat
 n|der Bruder|erkek kardeş
-n|die Schwester|kız kardeş
-n|die Geschwister|kardeşler
-n|die Großeltern|büyükanne ve büyükbaba
-n|der Großvater|dede
-n|die Großmutter|büyükanne
-n|der Opa|dede (samimi)
-n|die Oma|nine (samimi)
-n|der Enkel|torun
-n|der Onkel|amca / dayı
-n|die Tante|teyze / hala
-n|der Cousin|kuzen (erkek)
-n|die Cousine|kuzen (kız)
-n|der Neffe|yeğen (erkek)
-n|die Nichte|yeğen (kız)
-n|der Schwiegervater|kayınpeder
-n|die Schwiegermutter|kaynana
-n|der Ehemann|koca
-n|die Ehefrau|eş / karı
-n|der Partner|partner
-n|die Freundin|kız arkadaş
-n|der Gast|misafir
-n|der Erwachsene|yetişkin
-n|der Jugendliche|genç
-n|der Vorname|ad
-n|der Nachname|soyadı
-n|das Alter|yaş
-n|die Hochzeit|düğün
-n|die Ehe|evlilik
-n|die Liebe|aşk / sevgi
-n|die Freundschaft|arkadaşlık
-w|ledig|bekâr
-w|verheiratet|evli
-w|geschieden|boşanmış
-w|schwanger|hamile
-w|verwandt|akraba
-""",
-"A1.2": """
-n|der Bahnhof|tren istasyonu
-n|der Bus|otobüs
-n|die Straße|cadde, sokak
-n|das Zimmer|oda
-n|die Küche|mutfak
-n|der Tisch|masa
-n|der Stuhl|sandalye
-n|das Bett|yatak
-n|die Uhr|saat
-n|das Geld|para
-n|der Preis|fiyat
-n|der Supermarkt|süpermarket
-n|das Obst|meyve
-n|das Gemüse|sebze
-n|die Milch|süt
-n|der Arzt|doktor
-v|gehen|gitmek, yürümek|er geht · ist gegangen
-v|fahren|(araçla) gitmek|er fährt · ist gefahren
-v|kaufen|satın almak|er kauft · hat gekauft
-v|kosten|(fiyatı) tutmak|es kostet · hat gekostet
-v|brauchen|ihtiyacı olmak|er braucht · hat gebraucht
-v|möchten|istemek (kibar)|ich möchte · er möchte
-v|nehmen|almak|er nimmt · hat genommen
-v|schlafen|uyumak|er schläft · hat geschlafen
-v|arbeiten|çalışmak|er arbeitet · hat gearbeitet
-v|spielen|oynamak|er spielt · hat gespielt
-v|lesen|okumak|er liest · hat gelesen
-v|schreiben|yazmak|er schreibt · hat geschrieben
-w|teuer|pahalı
-w|billig|ucuz
-w|morgen|yarın
-w|immer|her zaman
-n|der Körper|vücut
-n|das Haar|saç
-n|das Gesicht|yüz
-n|das Auge|göz
-n|die Nase|burun
-n|der Mund|ağız
-n|das Ohr|kulak
-n|der Zahn|diş
-n|der Hals|boyun / boğaz
-n|der Arm|kol
-n|die Hand|el
-n|der Finger|parmak
-n|der Rücken|sırt
-n|das Bein|bacak
-n|das Knie|diz
-n|der Fuß|ayak
-n|die Haut|cilt
-n|das Herz|kalp
-n|das Blut|kan
-n|die Krankheit|hastalık
-w|gesund|sağlıklı
-n|die Schmerzen|ağrılar
-n|die Kopfschmerzen|baş ağrısı
-n|das Fieber|ateş
-n|der Husten|öksürük
-n|die Grippe|grip
-n|die Allergie|alerji
-n|die Wunde|yara
-n|der Unfall|kaza
-n|die Ärztin|doktor (kadın)
-n|der Zahnarzt|diş hekimi
-n|das Krankenhaus|hastane
-n|die Praxis|muayenehane
-n|das Medikament|ilaç
-n|die Tablette|hap
-n|das Rezept|reçete
-n|die Untersuchung|muayene
-n|die Krankenkasse|sağlık sigortası
-n|die Versichertenkarte|sigorta kartı
-n|die Notaufnahme|acil servis
-n|der Krankenwagen|ambulans
-n|die Behandlung|tedavi
-w|schwach|zayıf / güçsüz
-w|stark|güçlü
-n|die Brille|gözlük
-v|sich ausruhen|dinlenmek
-v|weh tun|acıtmak
-v|sich fühlen|hissetmek
-v|atmen|nefes almak
-v|heilen|iyileşmek
-n|das Wohnzimmer|oturma odası
-n|das Schlafzimmer|yatak odası
-n|das Badezimmer|banyo
-n|die Toilette|tuvalet
-n|der Flur|koridor
-n|der Balkon|balkon
-n|der Garten|bahçe
-n|der Keller|bodrum
-n|die Tür|kapı
-n|das Fenster|pencere
-n|die Wand|duvar
-n|der Boden|zemin
-n|die Decke|tavan / battaniye
-n|das Dach|çatı
-n|die Treppe|merdiven
-n|der Aufzug|asansör
-n|das Schloss|kilit / şato
-n|die Möbel|mobilya
-n|der Sessel|koltuk
-n|das Sofa|kanepe
-n|der Schrank|dolap
-n|das Regal|raf
-n|die Lampe|lamba
-n|das Licht|ışık
-n|der Teppich|halı
-n|der Spiegel|ayna
-n|das Bild|resim / tablo
-n|das Handtuch|havlu
-n|die Seife|sabun
-n|die Zahnbürste|diş fırçası
-n|die Zahnpasta|diş macunu
-n|das Shampoo|şampuan
-n|die Dusche|duş
-n|das Waschbecken|lavabo
-n|die Waschmaschine|çamaşır makinesi
-n|der Kühlschrank|buzdolabı
-n|der Herd|ocak
-n|der Backofen|fırın
-n|die Spülmaschine|bulaşık makinesi
-n|die Heizung|kalorifer
-n|die Klimaanlage|klima
-n|der Mülleimer|çöp kovası
-n|die Steckdose|priz
-n|der Stecker|fiş
-n|der Mieter|kiracı
-n|der Vermieter|ev sahibi
-n|die Nebenkosten|yan giderler
-n|die Kaution|depozito
-n|der Mietvertrag|kira sözleşmesi
-n|der Hausmeister|apartman görevlisi
-n|die Adresse|adres
-n|die Hausnummer|kapı numarası
-n|die Postleitzahl|posta kodu
-n|das Stockwerk|kat
-n|das Erdgeschoss|zemin kat
-n|der Umzug|taşınma
-n|die Hausarbeit|ev işi
-v|putzen|temizlemek
-v|aufräumen|toplamak / düzenlemek
-v|waschen|yıkamak
-v|kochen|yemek pişirmek
-v|mieten|kiralamak
-w|gemütlich|rahat / sıcak (ortam)
-w|sauber|temiz
-w|schmutzig|kirli
-n|das Essen|yemek
-n|das Getränk|içecek
-n|das Frühstück|kahvaltı
-n|das Mittagessen|öğle yemeği
-n|das Abendessen|akşam yemeği
-n|der Hunger|açlık
-n|der Durst|susuzluk
-w|hungrig|aç
-w|durstig|susuz
-n|das Brötchen|küçük ekmek
-n|die Butter|tereyağı
-n|der Käse|peynir
-n|das Ei|yumurta
-n|der Joghurt|yoğurt
-n|die Sahne|krema
-n|das Fleisch|et
-n|das Rindfleisch|dana eti
-n|das Hähnchen|tavuk
-n|das Schweinefleisch|domuz eti
-n|die Wurst|sosis / sucuk
-n|der Schinken|jambon
-n|der Fisch|balık
-n|die Suppe|çorba
-n|der Salat|salata
-n|die Kartoffel|patates
-n|die Tomate|domates
-n|die Gurke|salatalık
-n|die Zwiebel|soğan
-n|der Knoblauch|sarımsak
-n|die Karotte|havuç
-n|der Pfeffer|biber (baharat)
-n|die Paprika|biber
-n|der Reis|pirinç
-n|die Nudeln|makarna
-n|das Mehl|un
-n|der Zucker|şeker
-n|das Salz|tuz
-n|das Öl|yağ
-n|der Apfel|elma
-n|die Banane|muz
-n|die Orange|portakal
-n|die Zitrone|limon
-n|die Erdbeere|çilek
-n|der Kuchen|kek / pasta
-n|die Schokolade|çikolata
-n|das Eis|dondurma / buz
-n|der Honig|bal
-n|die Marmelade|reçel
-n|der Tee|çay
-n|der Saft|meyve suyu
-n|das Bier|bira
-n|der Wein|şarap
-n|die Limonade|gazoz
-n|die Flasche|şişe
-n|das Glas|bardak / cam
-n|die Tasse|fincan
-n|der Teller|tabak
-n|die Gabel|çatal
-n|das Messer|bıçak
-n|der Löffel|kaşık
-n|der Topf|tencere
-n|die Pfanne|tava
-n|das Restaurant|restoran
-n|das Café|kafe
-n|die Speisekarte|menü
-n|das Trinkgeld|bahşiş
-n|der Kellner|garson
-n|die Bestellung|sipariş
-n|die Vorspeise|başlangıç
-n|das Hauptgericht|ana yemek
-n|die Nachspeise|tatlı
-n|die Zutat|malzeme
-w|lecker|lezzetli
-w|süß|tatlı
-w|salzig|tuzlu
-w|sauer|ekşi
-w|scharf|acı / keskin
-w|frisch|taze
-w|gekocht|pişmiş / haşlanmış
-v|backen|fırında pişirmek
-v|braten|kızartmak
-v|schneiden|kesmek
-v|probieren|denemek / tatmak
-v|bestellen|sipariş vermek
-w|satt|tok
-w|vegetarisch|vejetaryen
-n|die Kleidung|giysi
-n|das Hemd|gömlek
-n|das T-Shirt|tişört
-n|der Pullover|kazak
-n|die Jacke|ceket / mont
-n|der Mantel|palto
-n|die Hose|pantolon
-n|die Jeans|kot pantolon
-n|der Rock|etek
-n|das Kleid|elbise
-n|die Socke|çorap
-n|die Unterwäsche|iç çamaşırı
-n|der Schuh|ayakkabı
-n|der Hut|şapka
-n|die Mütze|bere
-n|der Schal|atkı
-n|der Gürtel|kemer
-n|die Tasche|çanta
-n|der Rucksack|sırt çantası
-n|der Regenschirm|şemsiye
-n|der Schmuck|takı
-n|die Größe|beden / boyut
-v|anziehen|giymek
-v|ausziehen|çıkarmak (giysi)
-v|tragen|giymek / taşımak
-v|anprobieren|denemek (giysi)
-v|passen|uymak
-v|stehen|yakışmak / durmak
-w|eng|dar
-w|weit|geniş / uzak
-w|modisch|modaya uygun
-w|bequem|rahat
-n|die Umkleidekabine|deneme kabini
-n|die Wäsche|çamaşır
-n|die Marke|marka
-n|die Mode|moda
-n|die Sonnenbrille|güneş gözlüğü
-""",
-"A2.1": """
-n|der Termin|randevu
-n|die Rechnung|fatura, hesap
-n|der Urlaub|tatil, izin
-n|die Reise|seyahat
-n|das Wetter|hava durumu
-n|der Regen|yağmur
-n|die Erkältung|soğuk algınlığı
-n|der Kopf|baş, kafa
-n|der Bauch|karın
-n|die Apotheke|eczane
-n|der Schlüssel|anahtar
-n|die Miete|kira
-n|der Nachbar|komşu
-n|die Arbeit|iş
-n|der Kollege|iş arkadaşı
-v|anrufen|telefon etmek, aramak|er ruft an · hat angerufen
-v|aufstehen|(yataktan) kalkmak|er steht auf · ist aufgestanden
-v|einkaufen|alışveriş yapmak|er kauft ein · hat eingekauft
-v|anfangen|başlamak|er fängt an · hat angefangen
-v|aufhören|bırakmak, durmak|er hört auf · hat aufgehört
-v|helfen|yardım etmek (+ Dativ)|er hilft · hat geholfen
 v|warten|beklemek|er wartet · hat gewartet
-v|bezahlen|ödemek|er bezahlt · hat bezahlt
-v|vergessen|unutmak|er vergisst · hat vergessen
-v|treffen|buluşmak, karşılaşmak|er trifft · hat getroffen
-v|bleiben|kalmak|er bleibt · ist geblieben
-v|wissen|bilmek|er weiß · hat gewusst
-v|denken|düşünmek|er denkt · hat gedacht
-w|müde|yorgun
-w|krank|hasta
-w|schnell|hızlı
-w|leider|maalesef
-n|das Dorf|köy
-n|das Zentrum|merkez
-n|die Innenstadt|şehir merkezi
-n|der Platz|meydan / yer
-n|der Park|park
-n|die Brücke|köprü
-n|der Fluss|nehir
-n|das Gebäude|bina
-n|die Kirche|kilise
-n|die Moschee|cami
-n|das Museum|müze
-n|das Theater|tiyatro
-n|das Kino|sinema
-n|die Bibliothek|kütüphane
-n|die Schule|okul
-n|die Universität|üniversite
-n|das Rathaus|belediye binası
-n|die Post|postane
+w|unten|aşağıda
+n|der Fußball|futbol
+v|gewinnen|kazanmak|er gewinnt · hat gewonnen
+n|die Firma|firma
+n|der Verein|dernek, kulüp
+n|der Monat|ay
+n|das Ergebnis|sonuç
+n|das Licht|ışık
+w|sieben|yedi
+w|acht|sekiz
+n|die Hälfte|yarısı
+p|weder ... noch|ne ... ne de
+n|der Schüler|öğrenci (okul)
+n|der Text|metin
+n|die Zeitung|gazete
+v|gefallen|hoşuna gitmek
+p|langsam bitte|yavaş lütfen
+w|okay|tamam
+w|eins|bir
+v|erklären|açıklamak|er erklärt · hat erklärt
+n|der Sport|spor
+n|das Zimmer|oda
+n|das Wochenende|hafta sonu
+n|die S-Bahn|banliyö treni
+w|klein|küçük
+n|das Angebot|kampanya / teklif
+n|das Bett|yatak
+p|in Ordnung|tamam / uygun
+w|rot|kırmızı
+n|der Samstag|Cumartesi
+n|der Satz|cümle
+n|die Ordnung|düzen
+v|sich freuen|sevinmek|er freut sich · hat sich gefreut
+n|der Chef|patron
+n|der Lehrer|öğretmen
+n|der Schluss|son, sonuç
+p|ich verstehe nicht|anlamıyorum
+n|der Freitag|Cuma
 n|die Bank|banka
 n|das Hotel|otel
-n|das Geschäft|dükkân
-n|der Laden|mağaza
-n|die Bäckerei|fırın
-n|die Metzgerei|kasap
-n|der Markt|pazar
-n|das Einkaufszentrum|alışveriş merkezi
-n|die Tankstelle|benzin istasyonu
-n|der Parkplatz|otopark
-n|die Haltestelle|durak
-n|der Flughafen|havalimanı
-n|der Hafen|liman
-n|das Stadion|stadyum
-n|das Schwimmbad|yüzme havuzu
-n|das Fitnessstudio|spor salonu
-n|der Friseur|kuaför
-n|die Polizei|polis
-n|die Feuerwehr|itfaiye
-n|der Zoo|hayvanat bahçesi
-n|die Ecke|köşe
-n|die Kreuzung|kavşak
-n|die Ampel|trafik ışığı
-n|der Gehweg|kaldırım
-n|der Weg|yol / patika
-n|die Richtung|yön
-w|rechts|sağ
-w|links|sol
-w|geradeaus|dümdüz
-w|oben|yukarıda
-w|unten|aşağıda
-w|vorne|önde
-w|hinten|arkada
-n|die Mitte|orta
-n|die Seite|taraf / sayfa
-w|nah|yakın
-n|die Umgebung|çevre
-n|der Ort|yer / mekân
-n|die Gegend|bölge
-n|die Grenze|sınır
-n|die Hauptstadt|başkent
-n|der Einwohner|sakin / oturan
-n|die Sehenswürdigkeit|turistik yer
-n|das Denkmal|anıt
-n|der Turm|kule
-n|die Aussicht|manzara
-n|der Verkehr|trafik
-n|das Auto|araba
-n|die Bahn|tren / demiryolu
 n|der Zug|tren
-n|die S-Bahn|banliyö treni
-n|die U-Bahn|metro
-n|die Straßenbahn|tramvay
-n|das Fahrrad|bisiklet
-n|das Motorrad|motosiklet
-n|das Taxi|taksi
-n|das Flugzeug|uçak
-n|das Schiff|gemi
-n|der Führerschein|ehliyet
-n|die Fahrkarte|bilet
-n|das Ticket|bilet
-n|der Fahrplan|tarife
-n|das Gleis|peron / ray
-n|der Ausgang|çıkış
-n|der Eingang|giriş
-n|die Abfahrt|kalkış
-n|die Ankunft|varış
-n|der Aufenthalt|konaklama / mola
-n|die Verbindung|bağlantı
-v|umsteigen|aktarma yapmak
-v|einsteigen|binmek
-v|aussteigen|inmek
-v|fliegen|uçmak
-v|laufen|yürümek / koşmak
-p|zu Fuß|yaya olarak
-n|die Autobahn|otoyol
-n|die Geschwindigkeit|hız
-n|das Benzin|benzin
-n|der Motor|motor
-n|das Rad|tekerlek
-n|der Reifen|lastik
-n|die Panne|arıza
-n|die Strecke|güzergâh / mesafe
-n|die Entfernung|mesafe
-n|der Koffer|bavul
-n|das Gepäck|bagaj
-n|der Pass|pasaport
-n|das Visum|vize
-n|der Ausweis|kimlik
-n|der Zoll|gümrük
-n|die Buchung|rezervasyon
-n|die Unterkunft|konaklama
-n|die Jugendherberge|gençlik yurdu
-n|das Zelt|çadır
-n|die Ferien|tatil (okul)
-n|der Ausflug|gezi
-n|die Tour|tur
-n|der Tourist|turist
-n|die Karte|harita / kart
-n|das Navi|navigasyon
-n|der Stau|trafik sıkışıklığı
-n|die Baustelle|şantiye / yol çalışması
-v|besichtigen|gezmek / ziyaret etmek
-v|reservieren|rezervasyon yapmak
-v|packen|valiz hazırlamak
-v|ankommen|varmak
-v|abfahren|hareket etmek
-v|verpassen|kaçırmak
-n|die Sicherheit|güvenlik
-n|der Euro|avro
-n|der Cent|sent
-n|die Kasse|kasa
-n|die Quittung|fiş
-n|der Kunde|müşteri
-n|der Verkäufer|satıcı
-n|der Einkauf|alışveriş
-n|die Einkaufsliste|alışveriş listesi
-n|der Einkaufswagen|alışveriş arabası
-n|die Tüte|poşet
-n|das Angebot|kampanya / teklif
-n|der Rabatt|indirim
-n|der Ausverkauf|büyük indirim
-w|kostenlos|ücretsiz
-w|günstig|uygun fiyatlı
-n|das Bargeld|nakit
-n|die Kreditkarte|kredi kartı
-n|die EC-Karte|banka kartı
-n|das Konto|hesap
-n|die Überweisung|havale
-n|die Bankleitzahl|banka kodu
-n|die IBAN|IBAN
-n|der Geldautomat|ATM
-n|das Wechselgeld|para üstü
-n|die Steuer|vergi
-n|die Mehrwertsteuer|KDV
-n|die Gebühr|ücret / harç
-n|die Kosten|maliyet
-n|das Einkommen|gelir
-v|sparen|biriktirmek / tasarruf etmek
-v|ausgeben|harcamak
-v|verkaufen|satmak
-v|umtauschen|değiştirmek (ürün)
-v|zurückgeben|iade etmek
-n|die Garantie|garanti
-n|die Lieferung|teslimat
-n|die Ware|ürün / mal
-n|das Produkt|ürün
-n|die Qualität|kalite
-n|die Menge|miktar
-n|die Auswahl|seçenek / çeşit
-n|die Reklamation|şikâyet / iade talebi
-n|die Rate|taksit
-n|die Schulden|borç
-v|werden|olmak; -ecek (gelecek zaman)
-v|können|-ebilmek
-v|müssen|zorunda olmak
-v|wollen|istemek
-w|sollen|-meli
-v|dürfen|izni olmak
-v|mögen|hoşlanmak
-v|tun|yapmak / etmek
-v|sagen|söylemek
-v|reden|konuşmak / sohbet etmek
-v|fragen|sormak
-v|antworten|cevap vermek
-v|sehen|görmek
-v|schauen|bakmak
-v|hören|duymak / dinlemek
-v|zuhören|dinlemek
-v|kennen|tanımak
-v|glauben|inanmak / sanmak
-v|meinen|demek istemek / düşünmek
-v|hoffen|ummak
-v|wünschen|dilemek
-v|geben|vermek
-v|bringen|getirmek
-v|holen|alıp getirmek
-v|halten|tutmak
-v|legen|yatırmak / koymak
-v|stellen|dikey koymak
-v|setzen|oturtmak / koymak
+n|die Nummer|numara
+n|die Reise|seyahat
 v|sitzen|oturmak
-v|liegen|yatmak / bulunmak
-v|aufwachen|uyanmak
-v|einschlafen|uykuya dalmak
-v|gehören|ait olmak
-v|beginnen|başlamak
-v|enden|bitmek
-v|beenden|bitirmek
-v|weitermachen|devam etmek
-v|schaffen|başarmak / oluşturmak
-v|gelingen|başarılı olmak
-v|scheitern|başarısız olmak
-v|danken|teşekkür etmek
-v|bitten|rica etmek
-v|erlauben|izin vermek
-v|verbieten|yasaklamak
-v|wählen|seçmek
-v|planen|planlamak
-v|ändern|değiştirmek
-v|wachsen|büyümek
-v|passieren|olmak / meydana gelmek
-v|geschehen|gerçekleşmek
-v|stattfinden|gerçekleşmek (etkinlik)
-v|dauern|sürmek
-v|besuchen|ziyaret etmek
-v|einladen|davet etmek
-v|mitkommen|birlikte gelmek
-v|begleiten|eşlik etmek
-v|verlassen|terk etmek
-v|verabschieden|vedalaşmak
-v|erkennen|tanımak / fark etmek
-v|merken|fark etmek / aklında tutmak
-v|leben|yaşamak
-v|reisen|seyahat etmek
-v|funktionieren|çalışmak (makine)
-v|existieren|var olmak
-v|genießen|keyfini çıkarmak
-v|fürchten|korkmak
-v|vertrauen|güvenmek
-v|riskieren|risk almak
-v|fehlen|eksik olmak
-v|ärgern|kızdırmak
-v|beruhigen|sakinleştirmek
-v|überraschen|şaşırtmak
-v|entschuldigen|affetmek, mazur görmek
-""",
-"A2.2": """
-n|die Erfahrung|deneyim, tecrübe
-n|die Bewerbung|iş başvurusu
-n|der Lebenslauf|özgeçmiş (CV)
-n|die Stelle|pozisyon, iş yeri
-n|das Gehalt|maaş
-n|der Vertrag|sözleşme
-n|die Prüfung|sınav
-n|die Ausbildung|meslek eğitimi
-n|der Unterschied|fark
-n|die Meinung|fikir, görüş
-n|das Problem|sorun
-n|die Lösung|çözüm
-n|das Gefühl|his, duygu
-n|die Umwelt|çevre
-n|der Müll|çöp
-v|sich freuen|sevinmek|er freut sich · hat sich gefreut
-v|sich beeilen|acele etmek|er beeilt sich · hat sich beeilt
-v|erklären|açıklamak|er erklärt · hat erklärt
-v|verstehen|anlamak|er versteht · hat verstanden
-v|versuchen|denemek, çalışmak|er versucht · hat versucht
-v|entscheiden|karar vermek|er entscheidet · hat entschieden
-v|erzählen|anlatmak|er erzählt · hat erzählt
-v|bekommen|almak, elde etmek|er bekommt · hat bekommen
-v|verlieren|kaybetmek|er verliert · hat verloren
-v|gewinnen|kazanmak|er gewinnt · hat gewonnen
-v|vorbereiten|hazırlamak|er bereitet vor · hat vorbereitet
-v|umziehen|taşınmak|er zieht um · ist umgezogen
-v|mitbringen|yanında getirmek|er bringt mit · hat mitgebracht
-w|wichtig|önemli
-w|zufrieden|memnun
-w|pünktlich|dakik, zamanında
-w|ziemlich|oldukça
-n|der Beruf|meslek
-n|der Job|iş
-n|die Firma|firma
-n|das Unternehmen|şirket
-n|das Büro|ofis
-n|der Chef|patron
-n|der Mitarbeiter|çalışan
-n|das Team|ekip
-n|die Abteilung|departman
-n|die Besprechung|toplantı
-n|die Sitzung|oturum / toplantı
-n|der Auftrag|görev / sipariş
-n|die Aufgabe|görev
-n|das Projekt|proje
-n|das Praktikum|staj
-n|das Vorstellungsgespräch|iş görüşmesi
-n|die Kündigung|fesih / istifa
-n|die Arbeitszeit|çalışma saati
-n|die Überstunde|fazla mesai
-n|die Pause|mola
-n|die Schicht|vardiya
-n|der Feierabend|paydos
-n|die Vollzeit|tam zamanlı
-n|die Teilzeit|yarı zamanlı
-n|der Minijob|mini iş (az ücretli iş)
-n|der Werkstudent|öğrenci çalışan
-w|arbeitslos|işsiz
-n|der Lehrer|öğretmen
-n|der Ingenieur|mühendis
-n|der Anwalt|avukat
-n|der Koch|aşçı
-n|der Bäcker|fırıncı
-n|der Fahrer|şoför
-n|der Polizist|polis memuru
-n|der Krankenpfleger|hemşire (erkek)
-n|die Krankenschwester|hemşire
-n|der Handwerker|zanaatkâr / usta
-n|der Elektriker|elektrikçi
-n|der Mechaniker|tamirci
-n|der Programmierer|yazılımcı
-n|der Informatiker|bilgisayar bilimci
-n|der Architekt|mimar
-n|der Künstler|sanatçı
-n|der Journalist|gazeteci
-n|der Beamte|memur
-n|der Student|öğrenci (üniversite)
-n|der Praktikant|stajyer
-n|der Rentner|emekli
-v|verdienen|kazanmak
-v|leiten|yönetmek
-v|bewerben|başvurmak
-v|einstellen|işe almak
-n|die Karriere|kariyer
-n|die Beförderung|terfi
-n|der Kindergarten|anaokulu
-n|die Grundschule|ilkokul
-n|das Gymnasium|lise
-n|die Hochschule|yüksekokul
-n|der Unterricht|ders (saat)
-n|das Fach|ders (branş)
-n|die Klasse|sınıf
-n|der Kurs|kurs
-n|die Vorlesung|ders (üniversite)
-n|das Seminar|seminer
-n|der Schüler|öğrenci (okul)
-n|der Professor|profesör
-n|die Hausaufgabe|ödev
-n|der Test|test
-n|die Note|not
-n|das Zeugnis|karne / belge
-n|das Abitur|lise bitirme sınavı
-n|das Studium|üniversite eğitimi
-n|der Abschluss|mezuniyet / derece
-n|der Bachelor|lisans
-n|der Master|yüksek lisans
-n|das Semester|dönem
-n|das Buch|kitap
-n|das Heft|defter
-n|das Blatt|yaprak / sayfa
-n|das Papier|kâğıt
-n|der Stift|kalem
-n|der Bleistift|kurşun kalem
-n|der Kugelschreiber|tükenmez kalem
-n|der Radiergummi|silgi
-n|das Lineal|cetvel
-n|die Schere|makas
-n|die Tafel|tahta
-n|der Schreibtisch|çalışma masası
-n|das Wörterbuch|sözlük
-n|die Grammatik|dilbilgisi
-n|das Wort|kelime
-n|der Satz|cümle
-n|der Text|metin
-n|die Übung|alıştırma
-n|der Fehler|hata
-n|die Antwort|cevap
-n|das Beispiel|örnek
-n|das Thema|konu
-n|das Wissen|bilgi
-v|studieren|üniversitede okumak
-v|lehren|öğretmek
-v|üben|alıştırma yapmak
-v|wiederholen|tekrar etmek
-v|rechnen|hesaplamak
-v|durchfallen|sınavda kalmak
-n|die Mathematik|matematik
-n|die Physik|fizik
-n|die Chemie|kimya
-n|die Biologie|biyoloji
-n|die Geschichte|tarih / hikâye
-n|die Erdkunde|coğrafya
-n|die Kunst|sanat
-n|die Musik|müzik
-n|die Natur|doğa
-n|die Sonne|güneş
-n|der Mond|ay (gökyüzü)
-n|der Stern|yıldız
-n|der Himmel|gökyüzü
-n|die Wolke|bulut
-n|der Schnee|kar
-n|der Wind|rüzgâr
-n|der Sturm|fırtına
-n|der Nebel|sis
-n|die Temperatur|sıcaklık
-n|der Grad|derece
-w|warm|ılık / sıcak
-w|heiß|çok sıcak
-w|kalt|soğuk
-w|kühl|serin
-w|sonnig|güneşli
-w|bewölkt|bulutlu
-w|regnerisch|yağmurlu
-w|windig|rüzgârlı
-w|neblig|sisli
-w|trocken|kuru
-w|nass|ıslak
-w|feucht|nemli
-n|der Berg|dağ
-n|das Tal|vadi
-n|der Wald|orman
-n|der Baum|ağaç
-n|die Blume|çiçek
-n|das Gras|çimen
-n|der See|göl
-n|das Meer|deniz
-n|der Strand|plaj
-n|die Insel|ada
-n|die Küste|kıyı
-n|der Stein|taş
-n|die Erde|toprak / dünya
-n|die Welt|dünya
-n|die Luft|hava
-n|das Feuer|ateş
-n|der Klimawandel|iklim değişikliği
-n|die Energie|enerji
-n|das Tier|hayvan
-n|das Haustier|evcil hayvan
-n|der Hund|köpek
-n|die Katze|kedi
-n|das Pferd|at
-n|die Kuh|inek
-n|das Schaf|koyun
-n|die Ziege|keçi
-n|das Schwein|domuz
-n|das Huhn|tavuk
-n|der Hahn|horoz
-n|die Ente|ördek
-n|der Vogel|kuş
-n|die Maus|fare
-n|das Kaninchen|tavşan
-n|der Bär|ayı
-n|der Löwe|aslan
-n|der Elefant|fil
-n|die Schlange|yılan
-n|die Biene|arı
-n|die Fliege|sinek
-n|das Insekt|böcek
-n|der Schwanz|kuyruk
-n|der Flügel|kanat
-n|das Fell|kürk / tüy
-v|bellen|havlamak
-v|fressen|yem yemek (hayvan)
-v|füttern|beslemek
-w|wild|vahşi
-n|der Computer|bilgisayar
-n|der Laptop|dizüstü bilgisayar
-n|das Handy|cep telefonu
-n|das Smartphone|akıllı telefon
-n|das Telefon|telefon
-n|der Bildschirm|ekran
-n|die Tastatur|klavye
-n|die Datei|dosya
-n|das Programm|program
-n|die Software|yazılım
-n|die App|uygulama
-n|das Internet|internet
-n|die Webseite|web sitesi
-n|die E-Mail|e-posta
-n|die Nachricht|mesaj / haber
-n|das Passwort|şifre
-n|der Benutzer|kullanıcı
-n|die Daten|veri
-n|der Speicher|bellek / depolama
-n|das WLAN|kablosuz internet
-n|der Anschluss|bağlantı / hat
-n|der Akku|batarya
-n|das Ladegerät|şarj aleti
-n|der Anruf|arama
-v|telefonieren|telefonla konuşmak
-v|schicken|göndermek
-v|senden|yollamak
-v|herunterladen|indirmek
-v|hochladen|yüklemek
-v|speichern|kaydetmek
-v|löschen|silmek
-v|klicken|tıklamak
-v|suchen|aramak
-v|finden|bulmak
-v|installieren|kurmak
-v|ausschalten|kapatmak
-v|einschalten|açmak
-n|der Fernseher|televizyon
-n|das Foto|fotoğraf
-n|das Video|video
-n|die Technik|teknik / teknoloji
-v|duschen|duş almak
-v|baden|banyo yapmak
-v|kämmen|taramak (saç)
-v|rasieren|tıraş etmek
-v|notieren|not almak
-v|organisieren|organize etmek
-v|malen|resim yapmak, boyamak
-v|zeichnen|çizmek
-v|basteln|el işi yapmak
-v|erwarten|beklemek (ummak)
-v|schwimmen|yüzmek
-v|springen|zıplamak, atlamak
-v|klettern|tırmanmak
-v|rauchen|sigara içmek
-v|surfen|internette gezinmek; sörf yapmak
-v|chatten|sohbet etmek (internette)
-v|posten|paylaşım yapmak
-v|liken|beğenmek (sosyal medya)
-v|kommentieren|yorum yapmak
-v|drucken|yazdırmak
-v|scannen|taramak
-v|zahlen|ödemek
-v|grillen|ızgara yapmak
-v|spülen|bulaşık yıkamak; durulamak
-v|bügeln|ütü yapmak
-v|nähen|dikiş dikmek
-v|kleben|yapıştırmak
-v|auflegen|telefonu kapatmak
-v|ausladen|yük boşaltmak; daveti iptal etmek
-v|parken|park etmek
-v|tanken|benzin almak
-v|sortieren|ayırmak, sıralamak
-v|betrachten|incelemek, bakmak
-v|prüfen|kontrol etmek, sınamak
-v|eintragen|kaydetmek, yazmak
-v|anwenden|uygulamak
-v|raten|tavsiye etmek; tahmin etmek
-v|warnen|uyarmak
-v|drohen|tehdit etmek
-v|zurückkehren|geri dönmek
-v|verschwinden|kaybolmak
-v|erscheinen|görünmek, çıkmak (yayın)
-v|entstehen|ortaya çıkmak, oluşmak
-v|sich entwickeln|gelişmek
-v|sich verändern|değişmek
-v|verschlimmern|kötüleştirmek
-v|sichern|güvence altına almak; yedeklemek
-v|halbieren|ikiye bölmek
-v|verdoppeln|iki katına çıkarmak
-v|multiplizieren|çarpmak
-v|addieren|toplamak
-v|subtrahieren|çıkarmak (matematik)
-v|dividieren|bölmek (matematik)
-v|unterscheiden|ayırt etmek
-v|ordnen|düzenlemek
-""",
-"B1.1": """
-n|die Voraussetzung|ön koşul
-n|die Möglichkeit|imkân, olasılık
-n|die Entwicklung|gelişme
-n|die Gesellschaft|toplum; şirket
-n|der Zusammenhang|bağlam, ilişki
-n|die Verantwortung|sorumluluk
-n|die Behörde|resmi daire
-n|der Antrag|başvuru (dilekçe)
-n|die Anmeldung|kayıt (adres vb.)
-n|die Versicherung|sigorta
-n|die Gesundheit|sağlık
-n|der Vorteil|avantaj
-n|der Nachteil|dezavantaj
-n|die Ursache|sebep
-n|die Folge|sonuç
-v|sich bewerben|başvurmak (um + Akk.)|er bewirbt sich · hat sich beworben
-v|sich kümmern|ilgilenmek (um + Akk.)|er kümmert sich · hat sich gekümmert
-v|sich gewöhnen|alışmak (an + Akk.)|er gewöhnt sich · hat sich gewöhnt
-v|sich beschweren|şikâyet etmek (über + Akk.)|er beschwert sich · hat sich beschwert
-v|teilnehmen|katılmak (an + Dat.)|er nimmt teil · hat teilgenommen
-v|empfehlen|tavsiye etmek|er empfiehlt · hat empfohlen
-v|vergleichen|karşılaştırmak|er vergleicht · hat verglichen
-v|beschreiben|tarif etmek, betimlemek|er beschreibt · hat beschrieben
-v|ausfüllen|(form) doldurmak|er füllt aus · hat ausgefüllt
-v|unterschreiben|imzalamak|er unterschreibt · hat unterschrieben
-v|kündigen|feshetmek, istifa etmek|er kündigt · hat gekündigt
-v|erreichen|ulaşmak|er erreicht · hat erreicht
-v|sich erinnern|hatırlamak (an + Akk.)|er erinnert sich · hat sich erinnert
-w|deshalb|bu yüzden
-w|trotzdem|yine de
-w|ehrlich|dürüst
-w|selbstständig|bağımsız; serbest çalışan
-w|Deutschland|Almanya
-n|die Türkei|Türkiye
-w|Österreich|Avusturya
-n|die Schweiz|İsviçre
-w|Frankreich|Fransa
-w|Russland|Rusya
-w|Europa|Avrupa
-w|Deutsch|Almanca
-w|Türkisch|Türkçe
-w|Englisch|İngilizce
-n|die Muttersprache|ana dil
-n|der Ausländer|yabancı
-n|die Nationalität|uyruk
-n|die Staatsangehörigkeit|vatandaşlık
-n|die Kultur|kültür
-n|die Tradition|gelenek
-n|die Religion|din
-n|die Regierung|hükümet
-n|der Staat|devlet
-n|die Politik|siyaset
-n|das Gesetz|kanun
-n|das Recht|hak / hukuk
-n|die Freiheit|özgürlük
-n|die Zeitung|gazete
-n|die Nachrichten|haberler
-n|der Sport|spor
-n|das Spiel|oyun / maç
-n|der Fußball|futbol
-n|das Schwimmen|yüzme
-n|das Laufen|koşu
-n|das Fitness|fitness
-n|das Training|antrenman
-n|die Mannschaft|takım
-n|der Spieler|oyuncu
-n|der Trainer|antrenör
-n|das Tor|gol / kapı
-n|der Sieg|zafer
-n|der Ball|top
-n|die Freizeit|boş zaman
-n|das Hobby|hobi
-n|das Lied|şarkı
-n|der Film|film
-n|die Serie|dizi
-n|das Konzert|konser
-n|die Party|parti
-n|das Fest|kutlama / festival
-n|das Geschenk|hediye
-n|die Feier|kutlama
-n|das Lesen|okuma
-n|das Kochen|yemek yapma
-n|der Spaziergang|yürüyüş
-v|trainieren|antrenman yapmak
-v|sich entspannen|rahatlamak
-v|feiern|kutlamak
-v|tanzen|dans etmek
-v|singen|şarkı söylemek
-n|das Amt|resmî daire
-n|das Bürgeramt|nüfus dairesi
-n|die Ausländerbehörde|yabancılar dairesi
-n|das Finanzamt|vergi dairesi
-n|das Jobcenter|iş kurumu
-n|die Agentur für Arbeit|iş ajansı
-n|die Abmeldung|kayıt sildirme
-n|die Bescheinigung|belge / yazı
-n|das Formular|form
-n|der Bescheid|karar yazısı
-n|die Unterschrift|imza
-n|der Stempel|mühür
-n|die Kopie|kopya
-n|das Original|asıl / orijinal
-n|die Frist|süre / son tarih
-n|der Nachweis|kanıt / belge
-n|die Meldebescheinigung|ikamet belgesi
-n|die Aufenthaltserlaubnis|oturma izni
-n|die Arbeitserlaubnis|çalışma izni
-n|die Steuer-ID|vergi numarası
-n|die Sozialversicherung|sosyal sigorta
-n|die Rentenversicherung|emeklilik sigortası
-n|die Haftpflichtversicherung|sorumluluk sigortası
-n|der Rundfunkbeitrag|yayın katkı payı
-n|der Sachbearbeiter|dosya sorumlusu
-n|der Schalter|gişe
-n|die Wartenummer|sıra numarası
-n|die Öffnungszeiten|açılış saatleri
-v|beantragen|başvurmak
-v|einreichen|teslim etmek
-v|verlängern|uzatmak
-v|abholen|teslim almak
-v|anmelden|kaydolmak
-w|erlaubt|izinli
-w|verboten|yasak
-w|nötig|gerekli
-w|gültig|geçerli
-v|erinnern|hatırlamak
-v|berichten|rapor etmek
-v|zeigen|göstermek
-v|bedeuten|anlamına gelmek
-v|übersetzen|çevirmek
-v|aussprechen|telaffuz etmek
-v|öffnen|açmak
-v|schließen|kapatmak
-v|zumachen|kapatmak
-v|aufmachen|açmak
-v|drücken|basmak / itmek
-v|ziehen|çekmek
-v|werfen|atmak
-v|fangen|yakalamak
-v|fallen|düşmek
-v|heben|kaldırmak
-v|bauen|inşa etmek
-v|reparieren|tamir etmek
-v|kaputt machen|bozmak
-v|benutzen|kullanmak
-v|verwenden|kullanmak
-v|sammeln|toplamak / biriktirmek
-v|teilen|paylaşmak / bölmek
-v|verteilen|dağıtmak
-v|wechseln|değiştirmek
-v|tauschen|takas etmek
-v|leihen|ödünç vermek / almak
-v|besitzen|sahip olmak
-v|entdecken|keşfetmek
-v|mitteilen|bildirmek
-v|streiten|tartışmak / kavga etmek
-v|diskutieren|tartışmak
-v|versprechen|söz vermek
-v|lügen|yalan söylemek
-v|stören|rahatsız etmek
-v|beeilen|acele etmek
-v|beobachten|gözlemlemek
-v|aufpassen|dikkat etmek
-v|kümmern|ilgilenmek
-v|sorgen|endişelenmek / ilgilenmek
-v|schützen|korumak
-v|retten|kurtarmak
-v|kämpfen|savaşmak / mücadele etmek
-v|bemerken|fark etmek
-v|interessieren|ilgisini çekmek
-v|gefallen|hoşuna gitmek
-v|lieben|sevmek
-v|hassen|nefret etmek
-v|lachen|gülmek
-v|weinen|ağlamak
-v|lächeln|gülümsemek
-v|küssen|öpmek
-v|rufen|seslenmek / çağırmak
-v|schreien|bağırmak
-v|riechen|koklamak / kokmak
-v|schmecken|tadı olmak
-v|fühlen|hissetmek
-v|berühren|dokunmak
-v|wiegen|tartmak
-v|messen|ölçmek
-v|zählen|saymak
-v|vermieten|kiraya vermek
-v|liefern|teslim etmek
-v|führen|yönlendirmek / götürmek
-v|folgen|takip etmek
-v|vorschlagen|önermek
-v|anbieten|sunmak
-v|annehmen|kabul etmek / varsaymak
-v|akzeptieren|kabul etmek
-v|rennen|koşmak
-v|träumen|rüya görmek / hayal etmek
-w|schlecht|kötü
-w|lang|uzun
-w|kurz|kısa
-w|hoch|yüksek
-w|niedrig|alçak
-w|breit|geniş
-w|schmal|dar
-w|dick|kalın / şişman
-w|dünn|ince
-w|schwer|ağır / zor
-w|leicht|hafif / kolay
-w|neu|yeni
-w|alt|eski / yaşlı
-w|jung|genç
-w|modern|modern
-w|langsam|yavaş
-w|laut|gürültülü
-w|leise|sessiz
-w|voll|dolu
-w|leer|boş
-w|offen|açık
-w|geschlossen|kapalı
-w|richtig|doğru
-w|falsch|yanlış
-w|wahr|gerçek
-w|möglich|mümkün
-w|unmöglich|imkânsız
-w|einfach|basit / kolay
-w|schwierig|zor
-w|kompliziert|karmaşık
-w|interessant|ilginç
-w|langweilig|sıkıcı
-w|schön|güzel
-w|nett|kibar / hoş
-w|freundlich|dostane
-w|höflich|nazik
-w|ruhig|sakin
-w|nervös|gergin
-w|fleißig|çalışkan
-w|faul|tembel / çürük
-w|klug|akıllı
-w|dumm|aptal
-w|gefährlich|tehlikeli
-w|sicher|güvenli / emin
-w|frei|özgür / boş
-w|besetzt|dolu / meşgul
-w|beschäftigt|meşgul
-w|bereit|hazır
-w|fertig|bitmiş / hazır
-w|nützlich|faydalı
-w|beliebt|sevilen / popüler
-w|bekannt|tanınmış
-w|fremd|yabancı
-w|ähnlich|benzer
-w|verschieden|farklı
-w|besonders|özel / özellikle
-w|normal|normal
-w|echt|gerçek / hakiki
-w|privat|özel / kişisel
-w|öffentlich|kamuya açık
-w|arm|fakir
-w|reich|zengin
+p|wie geht's?|nasılsın?
+n|die Post|postane
 w|glücklich|mutlu
-w|traurig|üzgün
-w|lustig|komik
-w|ernst|ciddi
-w|stolz|gururlu
-w|mutig|cesur
-w|geduldig|sabırlı
-w|zuverlässig|güvenilir
-w|erfolgreich|başarılı
-w|hilfsbereit|yardımsever
-w|kreativ|yaratıcı
-w|praktisch|pratik
-w|perfekt|mükemmel
-w|wunderbar|harika
-w|toll|süper
-v|lösen|çözmek
-v|befestigen|sabitlemek
-v|befehlen|emretmek
-v|gehorchen|itaat etmek
-v|schenken|hediye etmek
-v|ausleihen|ödünç almak
-v|investieren|yatırım yapmak
-v|zurückkommen|geri gelmek
-v|zurückgehen|geri gitmek
-v|losfahren|yola çıkmak
-v|abreisen|ayrılmak (yolculuğa çıkmak)
-v|mitnehmen|yanında götürmek
-v|wegwerfen|çöpe atmak
-v|auspacken|paketi açmak
-v|markieren|işaretlemek
-v|kopieren|kopyalamak
-v|übertragen|aktarmak; yayınlamak
-v|verbinden|bağlamak
-v|trennen|ayırmak
-v|begegnen|karşılaşmak (+ Dativ)
-v|empfangen|karşılamak; almak (sinyal)
-v|bewundern|hayran olmak
-v|ergänzen|tamamlamak
-v|informieren|bilgilendirmek
-v|beweisen|kanıtlamak
-v|verschlechtern|kötüleştirmek
-v|verändern|değiştirmek
-v|erweitern|genişletmek
-v|reduzieren|azaltmak
-v|erhöhen|artırmak
-v|nutzen|yararlanmak, kullanmak
-v|experimentieren|deney yapmak
-v|starten|başlatmak
-v|stoppen|durdurmak
-v|pausieren|ara vermek
-v|fortsetzen|devam ettirmek
-v|unterbrechen|kesmek, bölmek
-v|vorbeikommen|uğramak
-v|vorbeifahren|yanından geçip gitmek
-v|umdrehen|çevirmek, döndürmek
-v|zurückbleiben|geride kalmak
-v|behandeln|tedavi etmek; davranmak
-v|bedauern|üzülmek, pişman olmak
-v|beklagen|yakınmak
-v|beweinen|ağıt yakmak, yasını tutmak
-v|vermissen|özlemek
-v|schätzen|değer vermek; tahmin etmek
-v|respektieren|saygı duymak
-v|tolerieren|hoş görmek
-v|ignorieren|görmezden gelmek
-v|analysieren|analiz etmek
-v|recherchieren|araştırmak
-v|erläutern|izah etmek
-v|bewerten|değerlendirmek, not vermek
-v|definieren|tanımlamak
-v|entwickeln|geliştirmek
-v|konstruieren|tasarlayıp inşa etmek
-v|produzieren|üretmek
-v|konsumieren|tüketmek
-v|exportieren|ihraç etmek
-v|importieren|ithal etmek
-v|verschwenden|israf etmek
-v|erhalten|almak, teslim almak; korumak
-v|testen|test etmek
-v|versagen|başarısız olmak
-v|misslingen|başarısız olmak (iş)
-v|vorhersehen|önceden görmek
-v|gedeihen|gelişmek, serpilmek
-v|vergehen|geçmek (zaman)
-""",
-"B1.2": """
-n|die Erwartung|beklenti
-n|die Herausforderung|zorluk, meydan okuma
-n|die Fähigkeit|yetenek
-n|die Kenntnisse|bilgiler (Pl.)
-n|das Ziel|hedef
-n|der Erfolg|başarı
-n|die Absicht|niyet
-n|das Verhalten|davranış
-n|die Beziehung|ilişki
-n|der Streit|kavga, tartışma
-n|die Ausnahme|istisna
-n|der Zweck|amaç
-n|die Werbung|reklam
-n|der Verbraucher|tüketici
-n|die Gelegenheit|fırsat
-v|sich verlassen|güvenmek (auf + Akk.)|er verlässt sich · hat sich verlassen
-v|sich entschuldigen|özür dilemek|er entschuldigt sich · hat sich entschuldigt
-v|vermeiden|kaçınmak|er vermeidet · hat vermieden
-v|verbessern|geliştirmek, düzeltmek|er verbessert · hat verbessert
-v|überzeugen|ikna etmek|er überzeugt · hat überzeugt
-v|behaupten|iddia etmek|er behauptet · hat behauptet
-v|zweifeln|şüphe etmek (an + Dat.)|er zweifelt · hat gezweifelt
-v|abhängen|bağlı olmak (von + Dat.)|es hängt ab · hat abgehangen
-v|erledigen|halletmek|er erledigt · hat erledigt
-v|verschieben|ertelemek|er verschiebt · hat verschoben
-v|zunehmen|artmak; kilo almak|er nimmt zu · hat zugenommen
-v|abnehmen|azalmak; kilo vermek|er nimmt ab · hat abgenommen
 v|sich vorstellen|kendini tanıtmak; hayal etmek|er stellt sich vor · hat sich vorgestellt
-w|eigentlich|aslında
-w|allerdings|ancak, gerçi
-w|vorsichtig|dikkatli
-w|neugierig|meraklı
-n|die Freude|sevinç
-n|das Glück|mutluluk / şans
-n|die Trauer|keder
-n|die Angst|korku
-n|die Sorge|endişe
-n|der Stress|stres
-n|die Wut|öfke
-n|der Ärger|kızgınlık / dert
-n|die Überraschung|sürpriz
-n|die Hoffnung|umut
-n|der Wunsch|dilek
-n|das Vertrauen|güven
-n|der Mut|cesaret
-n|die Geduld|sabır
-n|die Ruhe|huzur / sessizlik
-n|die Langeweile|can sıkıntısı
-n|die Einsamkeit|yalnızlık
-n|der Charakter|karakter
-n|die Laune|keyif / ruh hâli
-n|die Stimmung|atmosfer / ruh hâli
-n|das Lachen|gülüş
-n|die Träne|gözyaşı
-v|sich ärgern|sinirlenmek
-v|sich schämen|utanmak
-v|sich langweilen|sıkılmak
-v|sich verlieben|âşık olmak
-v|sich wundern|şaşırmak
-v|sich beruhigen|sakinleşmek
-w|aufgeregt|heyecanlı
-w|enttäuscht|hayal kırıklığına uğramış
-w|überrascht|şaşırmış
-w|verliebt|âşık
-w|wütend|öfkeli
-w|eifersüchtig|kıskanç
-w|schüchtern|utangaç
-w|gespannt|merakla bekleyen
-w|erschöpft|tükenmiş
-w|sehr|çok
-w|ganz|tamamen / oldukça
-w|fast|neredeyse
-w|nur|sadece
-w|auch|de / da
-w|noch|hâlâ / daha
-w|schon|zaten / çoktan
-w|erst|ancak / ilk olarak
-w|wieder|yine
-w|nochmal|tekrar
-p|vor allem|her şeyden önce
-p|zum Beispiel|örneğin
-w|übrigens|bu arada
-w|wirklich|gerçekten
-w|bestimmt|mutlaka
-w|wahrscheinlich|muhtemelen
-w|hoffentlich|umarım
-p|zum Glück|neyse ki
-w|plötzlich|aniden
-w|endlich|sonunda
-w|zuerst|önce
-w|dann|sonra
-w|danach|ondan sonra
-w|zuletzt|en son
-w|schließlich|nihayet
-w|zusammen|birlikte
-w|allein|yalnız
-w|gemeinsam|ortaklaşa
-w|überall|her yerde
-w|dort|orada
-w|hier|burada
-w|da|orada / işte
-w|draußen|dışarıda
-w|drinnen|içeride
-w|weg|uzakta / gitmiş
-w|zurück|geri
-w|weiter|daha ileri
-w|sonst|yoksa / başka
-w|kaum|neredeyse hiç
-w|nicht|değil
-w|doch|ama / yine de
-w|gern|memnuniyetle
-w|lieber|tercihen
-p|am liebsten|en çok
-w|mindestens|en az
-w|höchstens|en fazla
-w|ungefähr|yaklaşık
-w|etwa|yaklaşık
-w|normalerweise|normalde
-w|insgesamt|toplamda
-w|außerdem|ayrıca
-w|jedoch|ancak
-w|sogar|hatta
-w|bereits|hâlihazırda
-w|damals|o zamanlar
-v|melden|bildirmek
-v|empfinden|hissetmek
-v|festlegen|belirlemek
 v|vorstellen|tanıtmak
-v|sich vorbereiten|hazırlanmak
-v|sich treffen|buluşmak
-v|sich setzen|oturmak
+w|dritte|üçüncü
+n|der Montag|Pazartesi
+v|lieben|sevmek
+n|der Plan|plan
+n|der Hund|köpek
+n|der Arzt|doktor
+n|die Karte|harita / kart
+n|die Sonne|güneş
+v|baden|banyo yapmak
+n|die Größe|beden / boyut
+n|der Kaffee|kahve
+n|der Winter|kış
+n|der Laden|mağaza
+v|verkaufen|satmak
+n|das Studium|üniversite eğitimi
+n|das Handy|cep telefonu
+w|lustig|komik
+v|heißen|adı ... olmak|er heißt · hat geheißen
+n|der Urlaub|tatil, izin
+v|legen|yatırmak / koymak
+n|der Tisch|masa
+w|willkommen|hoş geldin
+p|gute Reise|iyi yolculuklar
+w|draußen|dışarıda
+v|schlafen|uyumak|er schläft · hat geschlafen
+n|das Auge|göz
+n|das Bier|bira
+v|antworten|cevap vermek
+v|holen|alıp getirmek
+w|spät|geç
+a|geboren|doğmuş
+n|der Fuß|ayak
+w|täglich|günlük
+n|der Partner|partner
+n|der See|göl
+n|die Party|parti
+n|das Gespräch|konuşma, görüşme
+n|die Minute|dakika
+w|hinten|arkada
+v|möchten|istemek (kibar)|ich möchte · er möchte
+v|fehlen|eksik olmak
+w|zufrieden|memnun
+v|aussehen|görünmek
+a|gestorben|ölmüş
+n|der Geburtstag|doğum günü
+n|die Schwester|kız kardeş
+w|normal|normal
+v|trinken|içmek|er trinkt · hat getrunken
+n|das Wetter|hava durumu
+v|bezahlen|ödemek|er bezahlt · hat bezahlt
+n|das Feuer|ateş
+n|das Telefon|telefon
+v|feiern|kutlamak
+v|lachen|gülmek
+w|ruhig|sakin
+n|die Halle|salon
+n|die Praxis|muayenehane
+w|grün|yeşil
+w|wen|kimi
+n|der Flughafen|havalimanı
+a|tot|ölü
+n|der Mund|ağız
+p|freut mich|memnun oldum
+n|der Herbst|sonbahar
+n|das Dorf|köy
+n|der Test|test
+n|der Anschluss|bağlantı / hat
+w|arm|fakir
+w|böse|kötü; kızgın
+n|das Ausland|yurt dışı
+n|der Arm|kol
+""",
+"A1.2": """
+n|die Behandlung|tedavi
+v|wohnen|oturmak, ikamet etmek|er wohnt · hat gewohnt
+n|die Farbe|renk
+n|das Lied|şarkı
+v|schließen|kapatmak
+n|die Führung|rehberli tur; liderlik
+n|die Heimat|memleket, vatan
+n|der Garten|bahçe
+w|neun|dokuz
+n|das Meer|deniz
+w|geschlossen|kapalı
+v|fernsehen|televizyon izlemek
+n|der Bus|otobüs
+n|das Baby|bebek
+v|erzählen|anlatmak|er erzählt · hat erzählt
+n|der Brief|mektup
+v|mögen|hoşlanmak
+v|schicken|göndermek
+w|jung|genç
+n|der Mittwoch|Çarşamba
+w|krank|hasta
+n|das Geschäft|dükkân
+v|beginnen|başlamak
+v|verdienen|kazanmak
+n|der Wind|rüzgâr
+v|reisen|seyahat etmek
+n|der Fahrer|şoför
+w|international|uluslararası
+n|die Aussage|ifade; beyan
+n|die Ecke|köşe
+v|besuchen|ziyaret etmek
+v|empfehlen|tavsiye etmek|er empfiehlt · hat empfohlen
+v|benutzen|kullanmak
+n|der Bahnhof|tren istasyonu
+n|die Küche|mutfak
+p|es tut mir leid|üzgünüm
+v|anfangen|başlamak|er fängt an · hat angefangen
+v|fliegen|uçmak
+n|der Beruf|meslek
+n|der Computer|bilgisayar
+n|der/die Bekannte|tanıdık
+n|das Fleisch|et
+w|blau|mavi
+w|euer|sizin
+n|der Donnerstag|Perşembe
+n|der Kurs|kurs
+w|woher|nereden
+n|der Dienstag|Salı
+v|kriegen|almak (günlük dil)
+n|der Wein|şarap
+w|wem|kime
+n|der Regen|yağmur
+n|das Kino|sinema
+n|die Prüfung|sınav
+n|die Pause|mola
+v|öffnen|açmak
+n|die Information|bilgi
+w|zwölf|on iki
+n|der Baum|ağaç
+p|gern geschehen|rica ederim
+n|das Glas|bardak / cam
+n|die Rechnung|fatura, hesap
+n|die E-Mail|e-posta
+p|ich heiße ...|benim adım ...
+n|der Termin|randevu
+w|verboten|yasak
+w|daneben|yanında; ayrıca
+w|jährlich|yıllık
+n|der Gast|misafir
+n|der Jugendliche|genç
+n|das Papier|kâğıt
+w|automatisch|otomatik
+n|die Dame|bayan, hanımefendi
+w|teuer|pahalı
+n|der Unterricht|ders (saat)
+w|kaputt|bozuk
+n|das Gewicht|ağırlık
+w|null|sıfır
+n|der Nachmittag|öğleden sonra
+n|die Adresse|adres
+n|der Pass|pasaport
+n|die Anzeige|ilan
+n|das Geschenk|hediye
+w|breit|geniş
+v|scheinen|görünmek; parlamak
+d|bar|nakit
+v|sich kümmern|ilgilenmek (um + Akk.)|er kümmert sich · hat sich gekümmert
+v|kümmern|ilgilenmek
+n|die Maschine|makine
+w|hundert|yüz
+n|die Schmerzen|ağrılar
+n|das Restaurant|restoran
+w|Achtung|dikkat
+v|kochen|yemek pişirmek
+n|die Tasche|çanta
+n|die Marke|marka
+n|das Kochen|yemek yapma
+v|bedeuten|anlamına gelmek
+w|braun|kahverengi
+w|verheiratet|evli
+n|die Milch|süt
+v|bitten|rica etmek
+n|das Brot|ekmek
+w|elf|on bir
+w|wohin|nereye
+n|das Frühstück|kahvaltı
+w|müde|yorgun
+w|tausend|bin
+n|die Oma|nine (samimi)
+v|weh tun|acıtmak
+a|geöffnet|açık
+n|die Hochzeit|düğün
+n|der Kuchen|kek / pasta
+n|das Fahrrad|bisiklet
+n|die CD|CD
+w|lieb|sevimli
+p|schönes Wochenende|iyi hafta sonları
+w|gelb|sarı
+n|der Hunger|açlık
+n|die Kleidung|giysi
+n|das Flugzeug|uçak
+w|wunderbar|harika
+n|der Lkw|kamyon
+n|der Eintritt|giriş (ücreti)
+n|der Tee|çay
+v|dauern|sürmek
+v|drücken|basmak / itmek
+w|leise|sessiz
+w|besetzt|dolu / meşgul
+n|der Kunde|müşteri
+w|günstig|uygun fiyatlı
+n|das Konto|hesap
+v|anbieten|sunmak
+n|die Million|milyon
+n|die Gegenwart|şimdiki zaman
+v|bestellen|sipariş vermek
+n|die Autobahn|otoyol
+w|herzlich|içten
+n|der Liter|litre
+n|das Ei|yumurta
+n|der Schlüssel|anahtar
+n|der Erwachsene|yetişkin
+n|die Flasche|şişe
+n|das Haar|saç
+n|der Eingang|giriş
+v|enden|bitmek
+v|tanzen|dans etmek
+w|jener|şu / o
+n|das Datum|tarih
+v|rauchen|sigara içmek
+n|die Einladung|davet
+n|die Vorsicht|dikkat
+v|schwimmen|yüzmek
+n|die Freizeit|boş zaman
+w|rosa|pembe
+n|der Bauch|karın
+n|die Feier|kutlama
+n|der Glückwunsch|tebrik
+n|die Miete|kira
+n|der Zoll|gümrük
+v|erlauben|izin vermek
+v|abgeben|teslim etmek
+v|Rad fahren|bisiklete binmek
+n|der Fisch|balık
+n|die Lebensmittel|gıda maddeleri
+n|der Stock|kat
+n|das Gemüse|sebze
+n|das Salz|tuz
+v|einkaufen|alışveriş yapmak|er kauft ein · hat eingekauft
+n|die Ehefrau|eş / karı
+n|das Bein|bacak
+n|der Ausländer|yabancı
+v|mitnehmen|yanında götürmek
+n|der Kollege|iş arkadaşı
+w|hell|açık (renk) / aydınlık
+n|die Sekunde|saniye
+n|der Mittag|öğle
+v|anrufen|telefon etmek, aramak|er ruft an · hat angerufen
+w|entschuldigung|affedersiniz / özür dilerim
+p|herzlich willkommen|hoş geldiniz
+n|die Kasse|kasa
+n|der Kindergarten|anaokulu
+n|das Ticket|bilet
+n|der Anruf|arama
+w|billig|ucuz
+v|heiraten|evlenmek
+v|mitmachen|katılmak
+n|das Schild|tabela
+n|der Frühling|ilkbahar
+v|mieten|kiralamak
+v|wiederholen|tekrar etmek
+n|das Hobby|hobi
+d|zurzeit|şu sıralar
+n|die Jacke|ceket / mont
+w|pünktlich|dakik, zamanında
+v|studieren|üniversitede okumak
+w|grau|gri
+n|das Obst|meyve
+n|das Café|kafe
+v|aufstehen|(yataktan) kalkmak|er steht auf · ist aufgestanden
+n|die Ankunft|varış
+v|anmelden|kaydolmak
+v|kennenlernen|tanışmak
+n|die Dusche|duş
+n|das Kilo|kilo
+n|der Opa|dede (samimi)
+n|der Kühlschrank|buzdolabı
+n|der Schmuck|takı
+n|der Beamte|memur
+n|der Doktor|doktor
+n|die Auskunft|bilgi; danışma
+v|waschen|yıkamak
+n|der Ausgang|çıkış
+v|danken|teşekkür etmek
 v|sich waschen|yıkanmak
+w|lokal|yerel
+v|wandern|yürüyüş yapmak
+n|der Balkon|balkon
+n|die Treppe|merdiven
+n|der Koffer|bavul
+n|die Anmeldung|kayıt (adres vb.)
+n|der Bogen|form (kâğıt); yay
+n|die Butter|tereyağı
+w|zwanzig|yirmi
+v|unterschreiben|imzalamak|er unterschreibt · hat unterschrieben
+v|schmecken|tadı olmak
+v|anziehen|giymek
 v|sich anziehen|giyinmek
+w|monatlich|aylık
+n|das Sofa|kanepe
+n|die Orange|portakal
+n|das Taxi|taksi
+v|entschuldigen|affetmek, mazur görmek
+n|das Dutzend|düzine
+n|der Schrank|dolap
+n|das Abendessen|akşam yemeği
+n|der Reis|pirinç
+n|der Verkäufer|satıcı
+n|der Arbeitsplatz|iş yeri
+n|die Toilette|tuvalet
+n|der Student|öğrenci (üniversite)
+n|der Empfänger|alıcı
+n|das Gramm|gram
+p|auf Wiedersehen|güle güle / hoşça kalın
+n|das Fieber|ateş
+n|der Salat|salata
+v|abholen|teslim almak
+v|ankommen|varmak
+w|circa|yaklaşık
+n|die Bestellung|sipariş
+n|die Papiere|belgeler, evrak
+p|gute Besserung|geçmiş olsun
+n|die Geschwister|kardeşler
+n|der Großvater|dede
+n|die Möbel|mobilya
+n|der Vermieter|ev sahibi
+n|die Abfahrt|kalkış
+n|das Gepäck|bagaj
+n|der Ausflug|gezi
+n|der Schuh|ayakkabı
+a|bitter|acı
+n|der Verwandte|akraba
+w|gültig|geçerli
+v|ausmachen|kapatmak; oluşturmak
+v|mitbringen|yanında getirmek|er bringt mit · hat mitgebracht
+v|duschen|duş almak
+n|der Vormittag|öğleden önce
+v|atmen|nefes almak
+n|der Apfel|elma
+n|das Praktikum|staj
+n|der Gruß|selam
+n|die Kopfschmerzen|baş ağrısı
+n|der Saft|meyve suyu
+n|das Brötchen|küçük ekmek
+w|fremd|yabancı
+w|männlich|erkek
+p|herzlichen Glückwunsch|tebrikler
+v|einsteigen|binmek
+w|selbstständig|bağımsız; serbest çalışan
+n|die Unterschrift|imza
+n|die Haltestelle|durak
+v|einladen|davet etmek
+w|wöchentlich|haftalık
+n|die Jahreszeit|mevsim
+n|die Großmutter|büyükanne
+v|telefonieren|telefonla konuşmak
+w|tschüss|hoşça kal
+w|gekocht|pişmiş / haşlanmış
+n|der Ausweis|kimlik
+v|drucken|yazdırmak
+w|weiblich|kadın
+n|der Drucker|yazıcı
+v|heilen|iyileşmek
+n|die Nudeln|makarna
+n|die Blume|çiçek
+n|die Zigarette|sigara
+n|die Großeltern|büyükanne ve büyükbaba
+n|der Gürtel|kemer
+n|die Straßenbahn|tramvay
+w|lila|mor
+n|das Badezimmer|banyo
+n|die Rezeption|resepsiyon
+n|der Zahnarzt|diş hekimi
+v|aussteigen|inmek
+n|die Ärztin|doktor (kadın)
+n|der Herd|ocak
+n|die Sahne|krema
+v|reparieren|tamir etmek
+v|grillen|ızgara yapmak
+v|riechen|koklamak / kokmak
+w|dreißig|otuz
+n|der Aufzug|asansör
+v|ausziehen|çıkarmak (giysi)
+n|das Gleis|peron / ray
+w|arbeitslos|işsiz
 v|sich ausziehen|soyunmak
-v|sich verlieben in|-e âşık olmak
-v|sich bedanken|teşekkür etmek
-v|sich verabschieden|vedalaşmak
-v|sich entscheiden|karar vermek
-v|sich konzentrieren|odaklanmak
-v|sich wünschen|dilemek, istemek
-v|sich lohnen|değmek
-v|sich auszahlen|karşılığını vermek
-v|sich überlegen|düşünüp taşınmak
-v|sich irren|yanılmak
-v|sich ändern|değişmek
-v|sich verbessern|gelişmek, iyileşmek
-v|sich informieren|bilgi almak
-v|sich beklagen|şikâyet etmek
-v|sich unterhalten|sohbet etmek
-v|sich verlaufen|yolunu kaybetmek
-v|sich anstrengen|çaba göstermek
-v|sich auskennen|bir konuyu iyi bilmek
-v|sich trauen|cesaret etmek
-v|sich verschlechtern|kötüleşmek
-v|sich sorgen|endişelenmek
-v|sich freuen auf|dört gözle beklemek
-v|sich umsehen|etrafa bakmak
-v|sich verstehen|anlaşmak
-v|sich streiten|tartışmak, kavga etmek
-v|sich vertragen|iyi geçinmek
-v|sich anpassen|uyum sağlamak
+n|die Reparatur|tamir
+n|der Appetit|iştah
+p|guten Appetit|afiyet olsun
+n|der Schalter|gişe
+n|das Getränk|içecek
+n|das Schwimmbad|yüzme havuzu
+v|umziehen|taşınmak|er zieht um · ist umgezogen
+n|die Bäckerei|fırın
+n|die Disco|disko
+v|ausfüllen|(form) doldurmak|er füllt aus · hat ausgefüllt
+n|die Waschmaschine|çamaşır makinesi
+n|der Knoblauch|sarımsak
+n|der Vorname|ad
+n|der Durst|susuzluk
+n|die Unterwäsche|iç çamaşırı
+v|gratulieren|tebrik etmek
+n|Grad Celsius|santigrat derece
+n|die Kartoffel|patates
+n|das Formular|form
+v|übernachten|geceyi geçirmek
+n|die Hausfrau|ev hanımı
+w|vierzehn|on dört
+n|der Schinken|jambon
+v|vermieten|kiraya vermek
+w|Lieblings-|en sevilen
+w|fünfzehn|on beş
+n|der Schal|atkı
+w|fünfzig|elli
+n|der Joghurt|yoğurt
+w|eilig|acele
+n|die Ansage|anons
+w|wessen|kimin
+n|das Fax|faks
+n|das Apartment|daire
+n|der Buchstabe|harf
+w|vierzig|kırk
+n|die Banane|muz
+v|besichtigen|gezmek / ziyaret etmek
+w|kulturell|kültürel
+n|der Kiosk|büfe
+n|die Hausarbeit|ev işi
+v|überweisen|havale etmek
+n|der Bahnsteig|peron
+n|die Paprika|biber
+n|die Sonnenbrille|güneş gözlüğü
+n|die Birne|armut; ampul
+v|regnen|yağmur yağmak
+n|die Kaution|depozito
+v|frühstücken|kahvaltı yapmak
+w|dreizehn|on üç
+n|der Nachname|soyadı
+n|der Mietvertrag|kira sözleşmesi
+n|der Absender|gönderen
+n|die Notaufnahme|acil servis
+n|der Mülleimer|çöp kovası
+n|der Bleistift|kurşun kalem
+n|der Abflug|kalkış (uçak)
+n|die Schwiegermutter|kaynana
+n|das Quadrat|kare
+n|der Reiseführer|rehber (kişi/kitap)
+n|die Allergie|alerji
+n|die Hausnummer|kapı numarası
+n|das Shampoo|şampuan
+n|das Schweinefleisch|domuz eti
+n|der Backofen|fırın
+n|das Hähnchen|tavuk
+n|das Waschbecken|lavabo
+n|der Kugelschreiber|tükenmez kalem
+n|der Schwiegervater|kayınpeder
+n|das Rindfleisch|dana eti
+n|die Gurke|salatalık
+n|die Speisekarte|menü
+n|die Fahrkarte|bilet
+w|sechzehn|on altı
+n|die Tomate|domates
+v|anmachen|açmak (ışık vb.)
+n|der Prospekt|broşür
+w|sechzig|altmış
+n|die Nebenkosten|yan giderler
+n|der Geburtsort|doğum yeri
+n|die Durchsage|anons
+n|die Anrede|hitap
+n|der Automat|otomat
+n|die Zahnpasta|diş macunu
+v|mitkommen|birlikte gelmek
+v|anklicken|tıklamak
+n|das Reisebüro|seyahat acentesi
+n|die Spülmaschine|bulaşık makinesi
+v|abfahren|hareket etmek
+w|achtzehn|on sekiz
+w|siebzehn|on yedi
+n|der Regenschirm|şemsiye
+w|ledig|bekâr
+n|die Briefmarke|pul
+n|die Sehenswürdigkeit|turistik yer
+n|die Zutat|malzeme
+n|die Postleitzahl|posta kodu
+w|siebzig|yetmiş
+n|die Vorspeise|başlangıç
+n|die Vorwahl|alan kodu
+n|das Geburtsjahr|doğum yılı
+w|achtzig|seksen
+v|ankreuzen|çarpı ile işaretlemek
+n|die Hausaufgabe|ödev
+n|der Anrufbeantworter|telesekreter
+n|das Einzelzimmer|tek kişilik oda
+n|die Erdbeere|çilek
+w|modisch|modaya uygun
+n|das Doppelzimmer|çift kişilik oda
+n|der Werktag|iş günü
+n|die Halbpension|yarım pansiyon
+w|neunzig|doksan
+n|der Familienname|soyadı
+w|neunzehn|on dokuz
+n|die Pommes frites|patates kızartması
+n|die Umkleidekabine|deneme kabini
+v|anprobieren|denemek (giysi)
+v|buchstabieren|harf harf söylemek
+n|der Familienstand|medeni hal
+n|das Hauptgericht|ana yemek
+a|ausländisch|yabancı
+v|abfliegen|uçakla kalkmak
+p|auf Wiederhören|görüşmek üzere (telefonda)
+""",
+"A2.1": """
+w|als|-iken / -den (karşılaştırma)
+w|dass|ki / -dığını
+w|wenn|eğer / -dığında
+d|mal|bir kere; hele
+w|doch|ama / yine de
+w|wieder|yine
+w|ganz|tamamen / oldukça
+w|weil|çünkü / -dığı için
+w|etwas|bir şey / biraz
+w|selbst|kendi
 w|dabei|bu sırada; bu konuda
-w|dazu|buna ek olarak; bunun için
-w|sowie|ve ayrıca
+w|erst|ancak / ilk olarak
+v|lassen|bırakmak; yaptırmak
+w|wirklich|gerçekten
 w|dafür|bunun için; buna karşılık
-w|davon|bundan
-w|darauf|bunun üzerine
-w|zwar … aber|gerçi … ama
+n|der Weg|yol / patika
+w|wegen|yüzünden
+w|weg|uzakta / gitmiş
+w|genau|aynen / tam olarak
+w|natürlich|tabii ki
+w|jeder|her biri
+w|eigentlich|aslında
+w|fast|neredeyse
+n|das Paar|çift
+p|recht haben|haklı olmak
+n|das Wissen|bilgi
+w|sicher|güvenli / emin
+p|ein paar|birkaç
+v|meinen|demek istemek / düşünmek
+w|sogar|hatta
 w|jemand|biri
-w|darüber|bunun hakkında
-w|eben|az önce; işte
-w|beide|her ikisi
-w|daran|buna
+n|die Seite|taraf / sayfa
+n|das Spiel|oyun / maç
+w|neben|yanında
+w|besonders|özel / özellikle
+n|die Geschichte|tarih / hikâye
+d|hin|oraya (doğru)
+w|sonst|yoksa / başka
+n|der Euro|avro
+w|deshalb|bu yüzden
+w|außerdem|ayrıca
+a|online|çevrimiçi
+n|das Unternehmen|şirket
+w|genug|yeterli
+w|echt|gerçek / hakiki
 w|direkt|doğrudan
 w|anders|farklı
+w|hinter|arkasında
+w|pro|başına
+n|die Musik|müzik
+a|deutlich|açık, belirgin
+n|die Person|kişi
+v|zeigen|göstermek
+w|endlich|sonunda
+w|damals|o zamanlar
+w|stark|güçlü
+w|egal|fark etmez
+w|rund|yuvarlak
+w|gegenüber|karşısında
+d|her|buraya (doğru)
+w|niemand|hiç kimse
+n|der Artikel|makale; artikel
+n|die Sache|şey; mesele
+v|denken|düşünmek|er denkt · hat gedacht
+n|das Team|ekip
+n|der Spaß|eğlence
+p|auf jeden Fall|her halükârda
+n|das Fest|kutlama / festival
+n|die Idee|fikir
+w|manchmal|bazen
+a|super|süper
+d|raus|dışarı
+n|das Ziel|hedef
+w|voll|dolu
+n|die Angst|korku
+d|rein|içeri
+v|vergessen|unutmak|er vergisst · hat vergessen
+n|die Kirche|kilise
+w|außer|hariç
+w|gern|memnuniyetle
+w|vorbei|geçmiş, bitmiş
+v|reden|konuşmak / sohbet etmek
+w|dagegen|buna karşı
+n|die Meinung|fikir, görüş
+w|wahrscheinlich|muhtemelen
+p|dagegen sein|karşı olmak
+v|setzen|oturtmak / koymak
+v|schaffen|başarmak / oluşturmak
+v|sich setzen|oturmak
+n|das Stück|adet / parça
+n|die Zahl|sayı
+n|der Titel|başlık; unvan
+n|der Mitarbeiter|çalışan
+n|die Kunst|sanat
+n|die Menge|miktar
+w|mindestens|en az
+n|die Band|müzik grubu
+w|überall|her yerde
+n|das Gesicht|yüz
+v|tragen|giymek / taşımak
+w|toll|süper
+v|versuchen|denemek, çalışmak|er versucht · hat versucht
+w|welcher|hangi
+w|vorher|önceden
+n|die Nähe|yakınlık, civar
+n|die Kultur|kültür
+n|die Reihe|sıra
+n|das Interesse|ilgi
+v|erreichen|ulaşmak|er erreicht · hat erreicht
+w|plötzlich|aniden
+n|die Situation|durum
+d|heraus|dışarı (buradan)
+n|der Körper|vücut
+p|fertig sein|hazır olmak; bitirmiş olmak
+n|der Markt|pazar
+n|die Freundin|kız arkadaş
+w|offen|açık
+n|die Ausbildung|meslek eğitimi
+w|unbedingt|mutlaka
+w|wenigstens|en azından
+n|das Programm|program
+w|zuerst|önce
+n|die Ahnung|fikir, sezgi
+n|die Erfahrung|deneyim, tecrübe
+n|das Projekt|proje
+n|der Grad|derece
+p|unterwegs sein|yolda olmak
+v|wählen|seçmek
+v|fallen|düşmek
+n|die Natur|doğa
+v|ändern|değiştirmek
+n|die Mannschaft|takım
+v|teilen|paylaşmak / bölmek
+w|reich|zengin
+v|sich ändern|değişmek
+w|total|tamamen
+n|die Aufgabe|görev
+w|früh|erken
+v|nennen|adlandırmak
+n|die Universität|üniversite
+n|die Tür|kapı
+a|aktuell|güncel
+n|die Ruhe|huzur / sessizlik
+w|aktiv|aktif
+w|hart|sert
+n|der Rest|geri kalan
+n|der Besuch|ziyaret; misafir
+n|das Fenster|pencere
+w|zuletzt|en son
+v|erwarten|beklemek (ummak)
+n|der Vertrag|sözleşme
+n|die Lust|istek, heves
+n|das Schloss|kilit / şato
+v|bestehen|(sınavı) geçmek; ısrar etmek (auf)|er besteht · hat bestanden
+n|der Wagen|araba; vagon
+w|außerhalb|dışında
+n|der Kontakt|temas, iletişim
+n|das Mittel|araç, çare; ilaç
+n|der Unterschied|fark
+v|sich fühlen|hissetmek
+a|tief|derin
+n|der Club|kulüp
+n|das Gericht|yemek; mahkeme
+n|der Himmel|gökyüzü
+p|zu Fuß|yaya olarak
+v|bauen|inşa etmek
+v|sterben|ölmek
+n|der Wald|orman
+n|die Qualität|kalite
+w|wahr|gerçek
+w|interessant|ilginç
+n|das Ding|şey
+v|verlieren|kaybetmek|er verliert · hat verloren
+n|die Nachricht|mesaj / haber
+n|der Rücken|sırt
+w|froh|memnun
+n|die App|uygulama
+v|passieren|olmak / meydana gelmek
+w|schade|yazık
+w|schlimm|kötü, vahim
+v|wünschen|dilemek
+v|sich wünschen|dilemek, istemek
+n|die Insel|ada
+w|dumm|aptal
+n|das Interview|röportaj
+n|die Kamera|kamera
+n|der Verkehr|trafik
+w|kostenlos|ücretsiz
+n|das Krankenhaus|hastane
+v|sich erinnern|hatırlamak (an + Akk.)|er erinnert sich · hat sich erinnert
+v|erinnern|hatırlamak
+n|der Link|bağlantı
+n|die Tour|tur
+n|der Wunsch|dilek
+w|hoffentlich|umarım
+w|notwendig|gerekli
+n|der Star|ünlü, yıldız
+w|vorne|önde
+n|das Büro|ofis
+n|der Park|park
+n|das Theater|tiyatro
+n|der Traum|rüya, hayal
+p|erlaubt sein|izinli olmak
+n|das Museum|müze
+n|der Unfall|kaza
+w|nett|kibar / hoş
+n|das Zentrum|merkez
+w|schwierig|zor
+n|die Ausstellung|sergi
+n|die Gesundheit|sağlık
+v|ansehen|bakmak, seyretmek
+n|das Radio|radyo
+n|die Sendung|yayın, program; gönderi
+n|das Schiff|gemi
+v|hoffen|ummak
+v|sparen|biriktirmek / tasarruf etmek
+n|die Veranstaltung|etkinlik
+w|meistens|çoğunlukla
+v|passen|uymak
+n|der Ball|top
+w|traurig|üzgün
+n|das Training|antrenman
+w|praktisch|pratik
+w|komisch|tuhaf; komik
+n|der Berg|dağ
+n|die Brücke|köprü
+n|das Konzert|konser
+v|berichten|rapor etmek
+p|nächstes Mal|bir dahaki sefere
+n|der Service|hizmet
+w|heiß|çok sıcak
+n|das Tier|hayvan
+w|leer|boş
+w|gefährlich|tehlikeli
+w|dringend|acil
+v|hängen|asılı olmak; asmak
+n|der Witz|şaka, fıkra
+n|der Hamburger|hamburger
+n|das Gerät|cihaz
+n|die Krankheit|hastalık
+n|das Eis|dondurma / buz
+n|der Fan|hayran
+p|verboten sein|yasak olmak
+n|die Homepage|ana sayfa
+n|das Gegenteil|zıt, karşıt
+v|posten|paylaşım yapmak
+v|erscheinen|görünmek, çıkmak (yayın)
+n|der Keller|bodrum
+w|frisch|taze
+n|der Rock|etek
+w|eng|dar
+n|der Vorschlag|öneri
+v|rechnen|hesaplamak
+n|die Software|yazılım
+n|die Hauptstadt|başkent
+w|gesund|sağlıklı
+v|singen|şarkı söylemek
+w|kalt|soğuk
+w|nah|yakın
+w|privat|özel / kişisel
+n|der Wettbewerb|rekabet
+n|das Produkt|ürün
+n|die Übersetzung|çeviri
+n|der Ring|yüzük
+v|liefern|teslim etmek
+w|witzig|esprili
+n|der Schwanz|kuyruk
+v|aufhören|bırakmak, durmak|er hört auf · hat aufgehört
+v|wechseln|değiştirmek
+v|rufen|seslenmek / çağırmak
+n|das Smartphone|akıllı telefon
+n|der Tipp|ipucu
+n|der Anwalt|avukat
+w|warm|ılık / sıcak
+n|die Webseite|web sitesi
+n|das Messer|bıçak
+n|der Stress|stres
+n|der Flug|uçuş
+n|der/das Blog|blog
+n|die Hochschule|yüksekokul
+n|die Katze|kedi
+w|süß|tatlı
+v|informieren|bilgilendirmek
+n|das Festival|festival
+n|die Zeitschrift|dergi
+n|der Motor|motor
+v|sammeln|toplamak / biriktirmek
+v|prüfen|kontrol etmek, sınamak
+n|der Hals|boyun / boğaz
+w|sauber|temiz
+w|blöd|aptalca
+w|wach|uyanık
+n|die Landschaft|manzara, peyzaj
+n|das Öl|yağ
+n|der Bescheid|karar yazısı
+v|lügen|yalan söylemek
+v|interessieren|ilgisini çekmek
+v|bestätigen|doğrulamak, teyit etmek
+n|der Schnee|kar
+n|der Vogel|kuş
+n|der Fluss|nehir
+n|die Hose|pantolon
+v|vergleichen|karşılaştırmak|er vergleicht · hat verglichen
+w|freundlich|dostane
+w|vorsichtig|dikkatli
+v|beantworten|cevaplamak
+n|der Strand|plaj
+w|dunkel|koyu / karanlık
+w|schwach|zayıf / güçsüz
+n|der Zucker|şeker
+w|scharf|acı / keskin
+w|spannend|heyecanlı
+a|fett|yağlı; şişman
+n|das Gymnasium|lise
+n|das Pferd|at
+v|merken|fark etmek / aklında tutmak
+w|langweilig|sıkıcı
+n|die Messe|fuar; ayin
+w|dick|kalın / şişman
+v|sich unterhalten|sohbet etmek
+n|der Müll|çöp
+n|die Sitzung|oturum / toplantı
+n|die Chemie|kimya
+v|betrachten|incelemek, bakmak
+n|die Bibliothek|kütüphane
+v|diskutieren|tartışmak
+w|freiwillig|gönüllü
+n|die Mode|moda
+v|ausgehen|varsaymak (von + Dat.)|er geht aus · ist ausgegangen
+n|das Paket|paket, koli
+n|die Innenstadt|şehir merkezi
+v|beenden|bitirmek
+n|das Gehalt|maaş
+n|das Blatt|yaprak / sayfa
+n|der Cent|sent
+v|stattfinden|gerçekleşmek (etkinlik)
+n|das Fach|ders (branş)
+n|der Schmerz|ağrı
+n|das Rezept|reçete
+w|beliebt|sevilen / popüler
+w|typisch|tipik
+n|das Rathaus|belediye binası
+v|planen|planlamak
+v|existieren|var olmak
+n|der Master|yüksek lisans
+n|der Flügel|kanat
+n|das Ohr|kulak
+n|die Rose|gül
+n|der Haushalt|ev işleri; bütçe
+v|üben|alıştırma yapmak
+n|der Fernseher|televizyon
+p|fit sein|formda olmak
+n|der Reifen|lastik
+n|der Bachelor|lisans
+""",
+"A2.2": """
+n|das Heft|defter
+n|die Physik|fizik
+n|der Käse|peynir
+w|sauer|ekşi
+v|beschreiben|tarif etmek, betimlemek|er beschreibt · hat beschrieben
+a|streng|sıkı, katı
+n|die Mathematik|matematik
+v|probieren|denemek / tatmak
+v|teilnehmen|katılmak (an + Dat.)|er nimmt teil · hat teilgenommen
+v|weinen|ağlamak
+n|die Note|not
+w|trocken|kuru
+v|schneiden|kesmek
+n|das Kleid|elbise
+n|die Pizza|pizza
+n|der Parkplatz|otopark
+n|der Hahn|horoz
+n|das WLAN|kablosuz internet
+v|raten|tavsiye etmek; tahmin etmek
+v|beraten|danışmanlık yapmak
+n|der Stuhl|sandalye
+w|einig|hemfikir
+v|kontrollieren|kontrol etmek
+v|scheitern|başarısız olmak
+n|die Grundschule|ilkokul
+n|das T-Shirt|tişört
+v|träumen|rüya görmek / hayal etmek
+p|einverstanden sein|razı olmak
+v|zeichnen|çizmek
+n|die Kette|zincir; kolye
+v|stören|rahatsız etmek
+v|schenken|hediye etmek
+p|untersuchen|araştırmak, incelemek
+n|die Lüge|yalan
+n|die Werkstatt|atölye; tamirhane
+n|das Instrument|enstrüman
+n|der Aufenthalt|konaklama / mola
+w|modern|modern
+v|packen|valiz hazırlamak
+n|die Brille|gözlük
+v|streiten|tartışmak / kavga etmek
+n|der Magen|mide
+n|die Maus|fare
+w|bequem|rahat
+w|schrecklich|korkunç
+n|der Umzug|taşınma
+n|der Kredit|kredi
+n|die Gitarre|gitar
+n|das Wohnzimmer|oturma odası
+n|die Schokolade|çikolata
+n|das Klavier|piyano
+n|der Führerschein|ehliyet
+n|das Schlafzimmer|yatak odası
+n|die Ferien|tatil (okul)
+v|bewerben|başvurmak
+n|der Schreibtisch|çalışma masası
+v|organisieren|organize etmek
+v|sich bewerben|başvurmak (um + Akk.)|er bewirbt sich · hat sich beworben
+v|verpassen|kaçırmak
+n|die Schicht|vardiya
+n|die Tafel|tahta
+n|der Laptop|dizüstü bilgisayar
+n|der Supermarkt|süpermarket
+n|das Rätsel|bilmece
+n|das Tennis|tenis
+v|verbieten|yasaklamak
+n|der Kalender|takvim
+n|der Zoo|hayvanat bahçesi
+w|orange|turuncu
+w|schwanger|hamile
+v|trainieren|antrenman yapmak
+v|aufpassen|dikkat etmek
+n|der Basketball|basketbol
+n|die Rate|taksit
+n|der Akku|batarya
+n|das Mittagessen|öğle yemeği
+n|der Nachbar|komşu
+v|vorbereiten|hazırlamak|er bereitet vor · hat vorbereitet
+w|nass|ıslak
+w|fleißig|çalışkan
+w|drinnen|içeride
+v|sich vorbereiten|hazırlanmak
+w|furchtbar|korkunç
+w|nirgends|hiçbir yerde
+n|die Pflanze|bitki
+n|die Bewerbung|iş başvurusu
+n|der Handwerker|zanaatkâr / usta
+w|nützlich|faydalı
+n|die Kenntnisse|bilgiler (Pl.)
+n|die Erlaubnis|izin
+n|das Bargeld|nakit
+n|der Rentner|emekli
+n|das Schwein|domuz
+n|die Schlange|yılan
+v|malen|resim yapmak, boyamak
+v|zurückkehren|geri dönmek
+w|klug|akıllı
+v|reiten|ata binmek
+w|vorwärts|ileri
+n|der/das Comic|çizgi roman
+n|das E-Book|e-kitap
+n|die Datei|dosya
+n|die Wurst|sosis / sucuk
+n|die Jeans|kot pantolon
+w|faul|tembel / çürük
+n|der Ski|kayak (alet)
+n|der Teller|tabak
+w|dünn|ince
+n|der Stift|kalem
+w|schriftlich|yazılı
+v|ausgeben|harcamak
+v|buchen|rezervasyon yapmak
+n|das Tablet|tablet
+v|herstellen|üretmek
+v|lehren|öğretmek
+w|bunt|rengarenk
+n|die Tasse|fincan
+n|der Topf|tencere
+v|backen|fırında pişirmek
+w|nervös|gergin
+v|sich bedanken|teşekkür etmek
+n|der Zettel|kâğıt parçası, not
+n|die Apotheke|eczane
+n|die Unterkunft|konaklama
+v|drohen|tehdit etmek
+v|verschieben|ertelemek|er verschiebt · hat verschoben
+w|weich|yumuşak
+n|die Garage|garaj
+p|gültig sein|geçerli olmak
+n|das Zelt|çadır
+n|die Baustelle|şantiye / yol çalışması
+n|die Kuh|inek
+n|das Passwort|şifre
+n|der Mantel|palto
+n|die Wäsche|çamaşır
+w|berühmt|ünlü
+n|der Architekt|mimar
+n|der Klimawandel|iklim değişikliği
+n|das Hemd|gömlek
+n|der Rucksack|sırt çantası
+w|verschieden|farklı
+v|verletzen|yaralamak
+v|zuhören|dinlemek
+v|sich beschweren|şikâyet etmek (über + Akk.)|er beschwert sich · hat sich beschwert
+w|hässlich|çirkin
+w|sportlich|sportif
+n|die Moschee|cami
+n|die Heizung|kalorifer
+n|die Kreuzung|kavşak
+n|der Bär|ayı
+v|anwenden|uygulamak
+n|der Anzug|takım elbise
+v|klappen|yolunda gitmek
+n|die Grammatik|dilbilgisi
+n|die Lampe|lamba
+v|putzen|temizlemek
+n|die Suppe|çorba
+w|nebenan|yan tarafta
+n|der Speicher|bellek / depolama
+n|die Verspätung|gecikme
+n|der Zahn|diş
+n|der Spaziergang|yürüyüş
+v|aussprechen|telaffuz etmek
+v|spazieren gehen|gezinti yapmak
+v|wecken|uyandırmak
+n|die Ampel|trafik ışığı
+v|parken|park etmek
+v|weitermachen|devam etmek
+n|die Arbeitszeit|çalışma saati
+v|kündigen|feshetmek, istifa etmek|er kündigt · hat gekündigt
+n|die Reinigung|kuru temizleme; temizlik
+n|der Workshop|atölye çalışması
+n|der Krimi|polisiye
+n|der Benutzer|kullanıcı
+n|das Erdgeschoss|zemin kat
+v|abschließen|kilitlemek; bitirmek
+n|das Kaninchen|tavşan
+v|begründen|gerekçelendirmek
+w|drüben|karşıda
+v|fotografieren|fotoğraf çekmek
+n|der Stiefel|çizme
+d|herein|içeri (buraya)
+w|kühl|serin
+w|sympathisch|sempatik
+a|fantastisch|harika
+v|ärgern|kızdırmak
+n|der Bäcker|fırıncı
+n|das Zeugnis|karne / belge
+v|kommentieren|yorum yapmak
+v|sich ärgern|sinirlenmek
+n|das Plakat|afiş
+w|intelligent|zeki
+v|übersetzen|çevirmek
+n|der Löwe|aslan
+n|das Fell|kürk / tüy
+v|speichern|kaydetmek
+v|aufmachen|açmak
+v|austauschen|değiş tokuş etmek
+n|das Poster|poster
+w|eigen|kendi
+n|die Portion|porsiyon
+v|basteln|el işi yapmak
+n|die Krankenkasse|sağlık sigortası
+n|die Süßigkeiten|tatlılar, şekerlemeler
+n|die Beförderung|terfi
+n|die Mütze|bere
+n|der Zirkus|sirk
+v|einziehen|taşınmak (içeri)
+n|der Schirm|şemsiye
+n|das Gewitter|fırtına (gök gürültülü)
+n|die Partnerin|partner (kadın)
+n|der Volleyball|voleybol
+n|die Fliege|sinek
+n|der Husten|öksürük
+v|riskieren|risk almak
+n|der Löffel|kaşık
+v|vereinbaren|kararlaştırmak
+n|die Wolke|bulut
+n|das Huhn|tavuk
+w|romantisch|romantik
+n|die Vorlesung|ders (üniversite)
+n|die Schere|makas
+n|die Ente|ördek
+v|einschlafen|uykuya dalmak
+v|ausschalten|kapatmak
+n|das Medikament|ilaç
+n|das Einkaufszentrum|alışveriş merkezi
+v|eintragen|kaydetmek, yazmak
+n|das Handtuch|havlu
+v|aufräumen|toplamak / düzenlemek
+v|leihen|ödünç vermek / almak
+n|das Schaf|koyun
+v|surfen|internette gezinmek; sörf yapmak
+n|die Grippe|grip
+n|der Pullover|kazak
+n|der Apparat|cihaz; telefon
+v|zurückgeben|iade etmek
+v|braten|kızartmak
+v|sich verlieben|âşık olmak
+n|die Torte|pasta
+w|schädlich|zararlı
+n|die Creme|krem
+w|schmutzig|kirli
+n|die Seife|sabun
+n|das Geschirr|bulaşık; tabak çanak
+a|blond|sarışın
+n|das Verkehrsmittel|ulaşım aracı
+n|die Notiz|not
+w|vorgestern|evvelki gün
+n|die Gabel|çatal
+n|das Taschengeld|harçlık
+v|sich ausruhen|dinlenmek
+w|aufregend|heyecan verici
+n|das Quiz|bilgi yarışması
+n|das Stockwerk|kat
+n|der Flohmarkt|bit pazarı
+v|joggen|koşu yapmak
+n|der Fahrplan|tarife
+v|bellen|havlamak
+w|übermorgen|öbür gün
+n|das Stipendium|burs
+n|das Fitnessstudio|spor salonu
+v|umsteigen|aktarma yapmak
+v|sortieren|ayırmak, sıralamak
+n|der Tourist|turist
+w|geradeaus|dümdüz
+p|sehr geehrte …|sayın …
+n|der Rundgang|tur, gezinti
+v|verdoppeln|iki katına çıkarmak
+n|die Zitrone|limon
+n|die Kosmetik|kozmetik
+n|das Navi|navigasyon
+v|herunterladen|indirmek
+n|der Informatiker|bilgisayar bilimci
+n|das Rind|sığır
+n|der Elefant|fil
+n|die Biene|arı
+n|die Bluse|bluz
+n|der Programmierer|yazılımcı
+n|die Ziege|keçi
+v|auspacken|paketi açmak
+v|einpacken|paketlemek
+n|der Gehweg|kaldırım
+n|der Sportplatz|spor sahası
+p|verabredet sein|randevusu olmak
+v|auflegen|telefonu kapatmak
+n|das Mineralwasser|maden suyu
+v|schimpfen|azarlamak, söylenmek
+a|stressig|stresli
+v|notieren|not almak
+n|die Postkarte|kartpostal
+v|reservieren|rezervasyon yapmak
+n|die Geldbörse|cüzdan
+n|der Elektriker|elektrikçi
+n|das Mobiltelefon|cep telefonu
+n|das Parfüm|parfüm
+a|preiswert|uygun fiyatlı
+w|bewölkt|bulutlu
+v|scannen|taramak
+v|renovieren|tadilat yapmak
+v|zumachen|kapatmak
+v|chatten|sohbet etmek (internette)
+v|austragen|dağıtmak (gazete vb.)
+n|der Einkaufswagen|alışveriş arabası
+w|sonnig|güneşli
+n|die Cafeteria|kafeterya
+n|die Sprechstunde|muayene/görüşme saati
+n|die Buchung|rezervasyon
+v|bügeln|ütü yapmak
+v|verreisen|seyahate çıkmak
+v|sich beeilen|acele etmek|er beeilt sich · hat sich beeilt
+v|beeilen|acele etmek
+n|die Tablette|hap
+n|die Nudel|makarna
+n|der Ausverkauf|büyük indirim
+v|wehtun|acımak
+n|die Jugendherberge|gençlik yurdu
+n|die Bohne|fasulye
+p|erkältet sein|soğuk algınlığı geçirmek
+n|der Stadtplan|şehir haritası
+n|die Erdkunde|coğrafya
+n|das Ladegerät|şarj aleti
+n|der Babysitter|çocuk bakıcısı
+n|die IBAN|IBAN
+n|das Insekt|böcek
+v|halbieren|ikiye bölmek
+n|die Metzgerei|kasap
+w|windig|rüzgârlı
+n|der Minijob|mini iş (az ücretli iş)
+v|verschlimmern|kötüleştirmek
+v|addieren|toplamak
+n|die Mailbox|sesli mesaj kutusu
+n|das Lineal|cetvel
+v|liken|beğenmek (sosyal medya)
+n|die Ermäßigung|indirim
+v|kämmen|taramak (saç)
+n|das Wechselgeld|para üstü
+v|schneien|kar yağmak
+n|der Motorroller|motosiklet (scooter)
+n|die Einkaufsliste|alışveriş listesi
+n|der Werkstudent|öğrenci çalışan
+n|der Fotoapparat|fotoğraf makinesi
+v|durchfallen|sınavda kalmak
+v|multiplizieren|çarpmak
+w|regnerisch|yağmurlu
+v|ausladen|yük boşaltmak; daveti iptal etmek
+w|neblig|sisli
+n|die Reklamation|şikâyet / iade talebi
+n|der Radiergummi|silgi
+n|die Fundsachen|kayıp eşyalar
+v|dividieren|bölmek (matematik)
+w|tschüs|hoşça kal
+v|leidtun|üzgün olmak
+v|subtrahieren|çıkarmak (matematik)
+""",
+"B1.1": """
+w|das|(nötr artikel)
+d|noch mal|bir kez daha
+w|damit|ki (amaç)
+d|nun|şimdi; peki
+p|so viel wie|… kadar çok
+w|Deutschland|Almanya
+w|ob|-ip -mediğini
+w|viele|birçok
+w|als ob|sanki
+w|sondern|aksine / bilakis
+p|wie viele|kaç tane
+d|wohl|herhalde
+w|dazu|buna ek olarak; bunun için
+w|sowie|ve ayrıca
+w|während|sırasında
+w|bereits|hâlihazırda
+p|gar nicht|hiç (değil)
+w|etwa|yaklaşık
+n|das Recht|hak / hukuk
+w|davon|bundan
+w|jedoch|ancak
+n|der Fall|durum; dava
+w|darauf|bunun üzerine
+w|allerdings|ancak, gerçi
+p|vor allem|her şeyden önce
+w|zwar … aber|gerçi … ama
+n|die Liebe|aşk / sevgi
+w|statt|yerine
+w|darüber|bunun hakkında
+w|eben|az önce; işte
+w|daher|dolayısıyla
+n|der Grund|sebep; zemin
+w|kaum|neredeyse hiç
+w|daran|buna
+d|überhaupt|zaten, hiç
 w|ebenfalls|aynı şekilde, de
 w|eher|daha çok; daha erken
+v|erhalten|almak, teslim almak; korumak
 w|nachdem|-dikten sonra
-w|egal|fark etmez
+w|danach|ondan sonra
+n|die Gesellschaft|toplum; şirket
+w|Europa|Avrupa
+d|los|haydi; oluyor
+n|der Gott|tanrı
 w|bisher|şimdiye kadar
+w|trotzdem|yine de
+v|sich treffen|buluşmak
+n|die Folge|sonuç
+w|Deutsch|Almanca
+n|die Politik|siyaset
+w|bestimmt|mutlaka
 w|mehrere|birkaç
-w|niemand|hiç kimse
 w|zunächst|ilk önce
+n|die Regierung|hükümet
+n|die Richtung|yön
+w|schließlich|nihayet
+w|ernst|ciddi
+n|die Zukunft|gelecek
+n|der Bereich|alan
+p|zum Glück|neyse ki
+w|Österreich|Avusturya
+n|die Form|biçim
 w|darum|bu yüzden
+n|die Wahl|seçim
 w|bevor|-meden önce
 w|wert|değerinde
+n|die Entwicklung|gelişme
+v|folgen|takip etmek
+w|obwohl|-mesine rağmen
+w|ziemlich|oldukça
+w|wieso|niçin
+n|die Lage|durum; konum
+n|der Krieg|savaş
+n|der Erfolg|başarı
+v|sich verstehen|anlaşmak
+n|die Rolle|rol
+n|der Tod|ölüm
+p|jedes Mal|her seferinde
+w|insgesamt|toplamda
 w|innerhalb|içinde (+ Gen.)
 w|völlig|tamamen
 w|zudem|üstelik
+w|trotz|-e rağmen
 w|irgendwie|bir şekilde
-w|vorbei|geçmiş, bitmiş
-w|dagegen|buna karşı
+v|führen|yönlendirmek / götürmek
+d|ebenso|aynı şekilde
 w|wobei|ki bu sırada
+n|das Video|video
+v|stehen bleiben|durmak
+d|tatsächlich|gerçekten
+v|sich einigen|anlaşmak, uzlaşmak
+n|das System|sistem
+v|bekannt geben|duyurmak
+d|nämlich|yani, çünkü
+w|gemeinsam|ortaklaşa
+n|die Möglichkeit|imkân, olasılık
+n|die Schweiz|İsviçre
+d|gleichzeitig|aynı anda
 n|der Einsatz|kullanım; görev; çaba
 w|falls|eğer, -diği takdirde
+n|die Höhe|yükseklik; miktar
+v|sorgen|endişelenmek / ilgilenmek
+w|zumindest|en azından
+w|übrigens|bu arada
+v|sich sorgen|endişelenmek
+n|der Spieler|oyuncu
+n|die Sicherheit|güvenlik
+n|die Chance|şans, fırsat
 w|hinaus|dışarı
-w|vorher|önceden
+n|das Laufen|koşu
+v|ziehen|çekmek
+n|das Gefühl|his, duygu
+n|die Saison|sezon
+n|die Medien|medya
+v|nutzen|yararlanmak, kullanmak
+n|das Herz|kalp
+d|jeweils|her biri; her seferinde
+n|die Entscheidung|karar
+n|der Sinn|anlam; duyu
+n|die Sucht|bağımlılık
+w|bereit|hazır
+n|die Luft|hava
+n|die Daten|veri
+n|die Stimme|ses; oy
+n|der König|kral
 w|häufig|sık
+w|Frankreich|Fransa
+n|der Boden|zemin
+n|die Region|bölge
+n|die Wirtschaft|ekonomi
+n|die Kritik|eleştiri
+n|das Opfer|kurban, mağdur
+w|nochmal|tekrar
 w|manche|bazı
-w|unbedingt|mutlaka
+n|die Nachrichten|haberler
+n|der Kreis|daire
+n|die Rede|konuşma, söylev
+n|die Bevölkerung|nüfus
+n|der Typ|tip; adam
+n|der Punkt|nokta; puan
+w|Russland|Rusya
+n|der Staat|devlet
+w|mittlerweile|artık, bu arada
+n|die Regel|kural
+n|der Beginn|başlangıç
+d|deswegen|bu yüzden
+n|der Politiker|politikacı
+w|selten|nadiren
+n|die Verbindung|bağlantı
+n|die Bedeutung|önem
 w|unterwegs|yolda
-w|wenigstens|en azından
 w|zuvor|daha önce
+n|der Bürger|vatandaş
+n|die Tat|eylem; suç
+n|der Kampf|mücadele, savaş
+n|die Kraft|güç
 w|indem|-erek
+v|schauen|bakmak
+n|die Liste|liste
+n|der Druck|baskı; basınç
+v|stimmen|doğru olmak; oy vermek
+d|genauso|aynı şekilde
 w|entfernt|uzak
+v|verlassen|terk etmek
+n|die Unterstützung|destek
+w|wenige|az, birkaç
+n|der Schritt|adım
+v|sich verlassen|güvenmek (auf + Akk.)|er verlässt sich · hat sich verlassen
 w|durchaus|kesinlikle, tamamen
 w|inzwischen|bu arada, artık
 w|komplett|tamamen
 w|niemals|asla
+n|die Linie|çizgi
+n|die Wahrheit|gerçek, doğruluk
+n|die Schuld|suç, kabahat; borç
+n|die Gefahr|tehlike
 w|erneut|yeniden
-w|total|tamamen
-w|früh|erken
+w|knapp|kıt
+n|die Serie|dizi
+w|ähnlich|benzer
+n|die Runde|tur; grup
+v|sich freuen auf|dört gözle beklemek
+n|das Gesetz|kanun
+p|entweder ... oder|ya ... ya da
+n|das Gebäude|bina
+n|die U-Bahn|metro
+v|erkennen|tanımak / fark etmek
+v|entscheiden|karar vermek|er entscheidet · hat entschieden
+n|der Beitrag|katkı; aidat; yazı
+v|sich entscheiden|karar vermek
 w|nahe|yakın
-v|nennen|adlandırmak
+w|ehrlich|dürüst
+n|der Sieg|zafer
+n|die Ehe|evlilik
+n|die Erde|toprak / dünya
+n|die Bewegung|hareket
+n|der Start|başlangıç; kalkış
+n|die Gewalt|şiddet
+n|das Gold|altın
+v|gründen|kurmak
+n|das Verhalten|davranış
 v|erfahren|öğrenmek (haber); deneyimlemek
-w|aktiv|aktif
-w|hart|sert
+w|Englisch|İngilizce
+n|das Werk|eser; fabrika
+d|irgendwann|bir gün, bir ara
 w|offenbar|anlaşılan
+n|die Freiheit|özgürlük
+w|stolz|gururlu
+p|im Freien|açık havada
+n|das Zeichen|işaret
+n|der Bericht|rapor, haber
+d|drin|içeride
+n|der Zusammenhang|bağlam, ilişki
+w|erfolgreich|başarılı
+n|die Auswahl|seçenek / çeşit
+n|die Leistung|performans; hizmet
+a|regelmäßig|düzenli
+a|interessiert|ilgili, meraklı
+n|der Versuch|deneme
+p|sich etwas gefallen lassen|bir şeye katlanmak
+n|die Freude|sevinç
 w|absolut|kesinlikle
+n|der Zeitpunkt|an, zaman noktası
+v|regeln|düzenlemek
+n|die Anzahl|sayı, miktar
+n|der Bau|inşaat; yapı
+d|bloß|sadece
+w|sobald|-er -mez
+n|der Meister|usta; şampiyon
 w|immerhin|yine de, hiç değilse
 w|solange|-dığı sürece
+w|perfekt|mükemmel
+n|die Grenze|sınır
+n|der Schutz|koruma
+a|zusätzlich|ek, ilave
 w|ständig|sürekli
+n|die Technik|teknik / teknoloji
+n|die Studie|araştırma, çalışma
+n|das Mitglied|üye
+n|die Werbung|reklam
+n|das Amt|resmî daire
+v|fühlen|hissetmek
+n|der Einfluss|etki, nüfuz
+n|der Betrieb|işletme
+n|der Teilnehmer|katılımcı
+n|die Jugend|gençlik
+d|möglichst|mümkün olduğunca
+n|das Gebiet|bölge; alan
 w|persönlich|kişisel
+n|der Trainer|antrenör
+n|die Energie|enerji
+a|besondere|özel
+d|relativ|nispeten
+n|die Hoffnung|umut
 v|bieten|sunmak
-w|spät|geç
-v|sterben|ölmek
 w|stets|daima
 n|die Version|sürüm
+n|das Tor|gol / kapı
+w|nötig|gerekli
+w|beschäftigt|meşgul
+n|der Abschluss|mezuniyet / derece
+n|der Richter|hâkim
+d|dahin|oraya
+v|schaden|zarar vermek
+v|geboren werden|doğmak
+v|gelten|geçerli olmak
 w|irgendwo|bir yerde
-w|froh|memnun
+n|die Vergangenheit|geçmiş
+n|die Haut|cilt
+v|vertrauen|güvenmek
+n|der Zustand|durum, hal
+n|die Aktion|eylem; kampanya
+n|der Inhalt|içerik
+n|die Kontrolle|kontrol
+d|ausschließlich|yalnızca
+n|die Beziehung|ilişki
+n|das Vertrauen|güven
 v|leisten|başarmak; karşılamak
-v|aussehen|görünmek
+n|die Türkei|Türkiye
+v|rennen|koşmak
+n|die Umgebung|çevre
+n|der Künstler|sanatçı
+n|die Zusammenarbeit|iş birliği
+n|die Literatur|edebiyat
+n|die Diskussion|tartışma
 w|miteinander|birbiriyle
-w|schade|yazık
-w|schlimm|kötü, vahim
 w|verantwortlich|sorumlu
 w|weltweit|dünya çapında
+v|vertreten|temsil etmek; savunmak
+n|das Netz|ağ, file
+n|das Zuhause|yuva, ev
+n|der Gegensatz|zıtlık
+n|der Prozess|süreç; dava
 w|vorhanden|mevcut
-n|die Halle|salon
+v|geschehen|gerçekleşmek
+v|entstehen|ortaya çıkmak, oluşmak
+v|verhindern|önlemek
+n|der Autor|yazar
+n|der Eindruck|izlenim
+n|die Szene|sahne
+v|unterstützen|desteklemek
+n|der Dienst|hizmet; görev
+n|das Lachen|gülüş
 w|wiederum|öte yandan; yine
 w|zugleich|aynı zamanda
+v|schützen|korumak
+v|wirken|etkili olmak; görünmek
+a|allgemein|genel
+n|der Verlag|yayınevi
 w|extrem|aşırı
 w|längst|çoktan
 w|positiv|olumlu
-w|böse|kötü; kızgın
+n|die Verantwortung|sorumluluk
+v|kämpfen|savaşmak / mücadele etmek
+n|der Spiegel|ayna
+n|der Auftrag|görev / sipariş
+n|der Professor|profesör
+n|der Anspruch|hak, talep
+n|der Rat|tavsiye; konsey
 w|diesmal|bu kez
 v|handeln|davranmak; ticaret yapmak
-w|notwendig|gerekli
 w|näher|daha yakın
 v|reichen|yetmek; uzatmak
+w|erlaubt|izinli
+n|das Blut|kan
+n|die Mehrheit|çoğunluk
+n|die Leitung|yönetim; hat
+d|außen|dışarıda
+n|der Gegner|rakip
 n|die Industrie|sanayi
 w|innen|içeride
 w|unglaublich|inanılmaz
+w|öffentlich|kamuya açık
+n|die Wirkung|etki
+n|die Leiter|merdiven (portatif)
 v|sich befinden|bulunmak
 n|das Finale|final
+n|die Religion|din
+v|übernehmen|üstlenmek|er übernimmt · hat übernommen
+n|das Urteil|hüküm, karar
+n|die Anlage|tesis; ek
+n|die Ausgabe|harcama; baskı
+v|enthalten|içermek
+n|der Vertreter|temsilci
+n|die Verwaltung|idare
+n|der Kauf|satın alma
+n|das Modell|model
+n|das Gewissen|vicdan
 w|herum|etrafında
 n|der Landkreis|ilçe
+n|die Karriere|kariyer
+n|der Strom|elektrik; akıntı
+n|das Material|malzeme
+n|die Forschung|araştırma
+w|ungefähr|yaklaşık
 v|treten|basmak; tekmelemek
+n|die Strecke|güzergâh / mesafe
+n|die Öffentlichkeit|kamuoyu
+n|der Frieden|barış
+n|die Erklärung|açıklama
+n|die Gelegenheit|fırsat
 w|entgegen|-e karşı, aksine
 w|hauptsächlich|başlıca
-v|ansehen|bakmak, seyretmek
-w|international|uluslararası
+n|die Wand|duvar
+v|leiden|acı çekmek, maruz kalmak
+n|die Not|sıkıntı, ihtiyaç
+n|die Wissenschaft|bilim
+n|das Wunder|mucize
+n|die Presse|basın
+n|die Produktion|üretim
+d|extra|ayrıca, özellikle
+a|selbstverständlich|tabii ki, doğal
+n|der Hof|avlu; çiftlik
+n|die Alternative|alternatif
 w|sicherlich|kesinlikle
 w|vollkommen|mükemmel; tamamen
+w|unmöglich|imkânsız
+n|der Bedarf|ihtiyaç
+n|die Einführung|giriş; tanıtım
+n|die Generation|nesil
+v|melden|bildirmek
 w|mitten|ortasında
 w|seitdem|o zamandan beri
 w|sowieso|zaten
 n|die Stiftung|vakıf
 w|vollständig|eksiksiz
+w|halb|yarım
+n|der Finger|parmak
+n|der Stein|taş
+n|der Zweifel|şüphe
+n|das Verhältnis|oran; ilişki
+n|der Roman|roman
+a|offiziell|resmî
 w|unabhängig|bağımsız
+n|der Hinweis|ipucu, uyarı
+n|das Lager|depo; kamp
+n|der Alkohol|alkol
+n|die Erinnerung|anı; hatırlatma
+n|das Institut|enstitü
+n|der Handel|ticaret
+n|die Reaktion|tepki
 v|erleben|yaşamak, tecrübe etmek
 v|schlagen|vurmak; yenmek
+n|die Gegend|bölge
+n|die Länge|uzunluk
+n|der Zuschauer|seyirci
+n|die Breite|genişlik
+n|der Täter|fail
+n|die Tatsache|gerçek, olgu
+w|sodass|öyle ki
+n|der Stil|tarz, üslup
+n|das Holz|odun, tahta
+n|das Risiko|risk
+n|der Zweck|amaç
+n|die Sorge|endişe
+n|die Stimmung|atmosfer / ruh hâli
+w|überrascht|şaşırmış
 w|entlang|boyunca
-v|kriegen|almak (günlük dil)
 w|teils|kısmen
+n|der Vorteil|avantaj
+n|die Tradition|gelenek
+n|das Original|asıl / orijinal
+v|verwenden|kullanmak
+v|zählen|saymak
+v|lösen|çözmek
+v|starten|başlatmak
+v|entwickeln|geliştirmek
+n|die Nase|burun
+n|die Umwelt|çevre
+v|sich entwickeln|gelişmek
+n|das Feld|tarla; alan
+n|die Tätigkeit|faaliyet, iş
+n|die Darstellung|tasvir, sunum
+n|die Vorstellung|tanıtım; gösteri; tasavvur
+n|der Gewinn|kazanç, kâr
 v|bewegen|hareket ettirmek
 v|dienen|hizmet etmek
 w|ursprünglich|aslında, başlangıçta
-n|der Wille|irade
+n|der Antrag|başvuru (dilekçe)
 w|abgesehen von|-den başka
-w|komisch|tuhaf; komik
 w|mehrfach|defalarca
 v|steuern|yönlendirmek
+n|der Respekt|saygı
+v|behalten|saklamak, tutmak
+n|die Bühne|sahne
+v|werfen|atmak
+n|der Streit|kavga, tartışma
 v|aussagen|ifade vermek
 w|geschickt|becerikli
 w|politisch|siyasi
 w|real|gerçek
-w|daneben|yanında; ayrıca
-w|dringend|acil
-v|hängen|asılı olmak; asmak
+w|weshalb|niçin
+v|genießen|keyfini çıkarmak
+n|die Förderung|teşvik, destek
+n|die Aufnahme|kayıt; kabul
+n|das Publikum|seyirci kitlesi
+n|das Verständnis|anlayış
+n|die Theorie|teori
+d|andererseits|öte yandan
+v|retten|kurtarmak
+n|der Charakter|karakter
+n|der Zugang|erişim
+a|übrig|artan, kalan
+n|die Realität|gerçeklik
+v|steigen|yükselmek; tırmanmak
+n|der Gang|koridor; vites; yemek (sırası)
 w|morgens|sabahları
 w|nachts|geceleri
 n|der Nutzer|kullanıcı
 n|die Nutzung|kullanım
 w|tätig|faal, çalışan
-w|automatisch|otomatik
+w|eindeutig|açık, kesin
+v|pflanzen|dikmek
+n|die Einrichtung|mobilya; kurum
+n|der Sitz|koltuk; merkez
+a|verpflichtet|yükümlü
+v|übertragen|aktarmak; yayınlamak
 w|gelassen|sakin
 w|momentan|şu an
 w|nahezu|neredeyse
+n|die Untersuchung|muayene
 w|demnach|buna göre
 n|der Hersteller|üretici
 w|jemals|hiç, şimdiye dek
-w|kaputt|bozuk
 w|mittels|aracılığıyla
 w|unmittelbar|doğrudan, hemen
+n|das Dach|çatı
+v|verlangen|talep etmek
+n|die Dauer|süre
+n|die Ausnahme|istisna
 v|fordern|talep etmek
 v|gestalten|biçimlendirmek, tasarlamak
+n|die Abteilung|departman
+n|die Fläche|alan, yüzey
+n|das Zeug|eşya, şey
+n|die Pflicht|görev, yükümlülük
+n|die Medizin|tıp; ilaç
+v|kaputt machen|bozmak
+v|vermeiden|kaçınmak|er vermeidet · hat vermieden
 w|anscheinend|görünüşe göre
 n|die Kommunikation|iletişim
-v|scheinen|görünmek; parlamak
 w|spätestens|en geç
+n|die Temperatur|sıcaklık
+v|stecken|sokmak; bulunmak
+w|voraus|önde, önceden
+n|der Leser|okur
+n|der Beweis|kanıt
+n|der Schauspieler|oyuncu
+n|die Mühe|zahmet, çaba
+v|überzeugen|ikna etmek|er überzeugt · hat überzeugt
+n|der Mut|cesaret
+v|sich überlegen|düşünüp taşınmak
+w|ausgezeichnet|mükemmel
+n|die Integration|entegrasyon, uyum
+p|je … desto|ne kadar … o kadar
+n|die Figur|figür; vücut şekli
+n|die Flucht|kaçış
+n|die Teilnahme|katılım
+v|achten|dikkat etmek; saygı göstermek
+v|besitzen|sahip olmak
+v|beweisen|kanıtlamak
+v|drehen|döndürmek; çekmek (film)
+w|gratis|bedava
+n|das Forum|forum
+n|der Bewohner|sakin
+n|der Ausdruck|ifade; çıktı
+n|das Personal|personel
+n|die Spur|iz; şerit
+n|das Gas|gaz
+n|der Geschmack|tat; zevk
+v|unterscheiden|ayırt etmek
+w|aufmerksam|dikkatli
+w|begeistert|heyecanlı, hayran
+w|erforderlich|gerekli
+w|ewig|sonsuz
+n|das Fahrzeug|taşıt
+n|das Boot|tekne
+n|der Schlaf|uyku
+n|der Musiker|müzisyen
+a|geeignet|uygun
+n|die Gemeinschaft|topluluk
+a|zufällig|tesadüfi
+v|auftreten|ortaya çıkmak; sahneye çıkmak
+w|normalerweise|normalde
+v|funktionieren|çalışmak (makine)
+n|der Sturm|fırtına
+v|verzichten|vazgeçmek (auf + Akk.)|er verzichtet · hat verzichtet
+v|aufnehmen|kaydetmek; kabul etmek
+w|speziell|özel
+n|die Zustimmung|onay
+n|die Strafe|ceza
+n|der Verlust|kayıp
+n|die Krise|kriz
+d|öfter|daha sık
+a|abhängig|bağımlı
+n|die Methode|yöntem
+n|die Ursache|sebep
+v|beobachten|gözlemlemek
+w|gespannt|merakla bekleyen
+n|der Einwohner|sakin / oturan
+n|der Stern|yıldız
+w|wild|vahşi
+w|ausreichend|yeterli
+n|der Unternehmer|girişimci
+n|die Wolle|yün
+n|der Alltag|günlük hayat
+n|die Änderung|değişiklik
+n|die Planung|planlama
+w|sämtliche|tüm
+n|der Schatten|gölge
+n|das Kreuz|haç; çarpı
+n|die Geburt|doğum
+n|der Abschnitt|bölüm, kısım
+d|anfangs|başlangıçta
+n|die Feuerwehr|itfaiye
+w|sinnvoll|anlamlı, mantıklı
+n|die Rückkehr|dönüş
+n|der/die Tote|ölü
+n|der Sender|kanal, verici
+n|der Sieger|galip
+n|die Operation|ameliyat; operasyon
+n|die Statistik|istatistik
+v|lächeln|gülümsemek
+v|verbessern|geliştirmek, düzeltmek|er verbessert · hat verbessert
+v|sich verbessern|gelişmek, iyileşmek
+v|sich informieren|bilgi almak
+n|die Geschwindigkeit|hız
+w|eventuell|belki
+v|gucken|bakmak (günlük)
+v|erfüllen|yerine getirmek, karşılamak
+n|die Botschaft|büyükelçilik; mesaj
+d|einerseits|bir yandan
+n|der Kanal|kanal
+n|die Herkunft|köken
+n|der Humor|mizah
+v|verändern|değiştirmek
+n|das Stadion|stadyum
+v|sich verändern|değişmek
+w|maximal|en fazla
+n|der Rand|kenar
+n|der Augenblick|an
+n|die Station|istasyon; servis (hastane)
+n|das Verbot|yasak
+n|der Vortrag|sunum, konferans
+n|die Absicht|niyet
+v|behaupten|iddia etmek|er behauptet · hat behauptet
+p|am liebsten|en çok
+n|das Viertel|çeyrek
+v|wachsen|büyümek
+v|verschwinden|kaybolmak
+v|sichern|güvence altına almak; yedeklemek
+n|die Begründung|gerekçe
+w|ordentlich|düzenli
+n|die Lehre|çıraklık; öğreti
+n|der Zufall|tesadüf
+n|der Direktor|müdür
+n|die Vorbereitung|hazırlık
+n|das Gefängnis|hapishane
+w|enttäuscht|hayal kırıklığına uğramış
+n|der Koch|aşçı
+v|greifen|tutmak, kavramak
+w|locker|gevşek, rahat
+w|sichtbar|görünür
+d|umso|o kadar (daha)
+n|die Landwirtschaft|tarım
+n|die Therapie|terapi
+n|der Stoff|kumaş; madde; konu
+n|das Studio|stüdyo
+n|die Summe|toplam
+v|erhöhen|artırmak
+n|die Überraschung|sürpriz
+n|die Freundschaft|arkadaşlık
+w|dankbar|minnettar
+w|dicht|sık; sızdırmaz
+w|doppelt|çift
+w|einzig|tek
+w|inklusive|dahil
+w|still|sessiz
+w|zuständig|yetkili, sorumlu
+n|die Nachfrage|talep (piyasa)
+w|solch|böyle
+v|stammen|kökenli olmak
+n|die Stufe|basamak; seviye
+d|vorn|önde
+n|die Klinik|klinik
+n|das Klima|iklim
+d|heim|eve
+a|innere|iç
+n|das Kapitel|bölüm
+v|behandeln|tedavi etmek; davranmak
+n|die Forderung|talep
+n|der Anbieter|sağlayıcı
+v|treiben|sürmek; yapmak (spor)
+w|unterschiedlich|farklı
+n|das Loch|delik
+v|nachdenken|düşünmek
+d|nochmals|tekrar
+n|der Bauer|çiftçi
+n|der Wissenschaftler|bilim insanı
+v|schweigen|susmak
+n|die Konkurrenz|rekabet; rakipler
+n|die Mauer|duvar (dış)
+a|parallel|paralel
+n|das Rad|tekerlek
+n|die Steuer|vergi
+n|die Schulden|borç
+w|beinahe|neredeyse
+v|fassen|tutmak; kavramak
+w|jederzeit|her zaman
+n|das Netzwerk|ağ
+v|reagieren|tepki vermek
+v|verbringen|geçirmek (zaman)
+n|die Unterhaltung|sohbet; eğlence
+p|Bescheid sagen|haber vermek
+n|das Abenteuer|macera
+n|das Magazin|dergi
+w|hinterher|sonradan
+n|der Gedanke|düşünce
+w|einschließlich|dahil
+n|das Geschlecht|cinsiyet
+n|die Tabelle|tablo
+v|versprechen|söz vermek
+v|darstellen|temsil etmek, sunmak|er stellt dar · hat dargestellt
+v|fördern|desteklemek, teşvik etmek
+w|gewohnt|alışık
+w|nachher|sonra
+w|negativ|olumsuz
+v|beschäftigen|meşgul etmek; çalıştırmak
+n|die Brust|göğüs
+n|die Wirklichkeit|gerçeklik
+n|die Ernährung|beslenme
+n|der Sänger|şarkıcı
+n|der Konflikt|çatışma
+n|die Umfrage|anket
+v|annehmen|kabul etmek / varsaymak
+n|der Hut|şapka
+v|klicken|tıklamak
+w|endgültig|kesin, nihai
+w|fair|adil
+w|gering|az
+n|die Versicherung|sigorta
+n|das Schwimmen|yüzme
+v|akzeptieren|kabul etmek
+v|löschen|silmek
+v|spüren|hissetmek
+v|einsetzen|kullanmak, görevlendirmek
+a|üblich|olağan
+n|die Rente|emekli maaşı
+a|bio|organik
+n|die Burg|kale
+d|auseinander|ayrı, ayrılmış
+v|schätzen|değer vermek; tahmin etmek
+v|testen|test etmek
+n|der Ärger|kızgınlık / dert
+w|höchstens|en fazla
+n|die Aussicht|manzara
+n|die Entfernung|mesafe
+w|gerecht|adil
+w|rechtzeitig|zamanında
+w|verrückt|deli
+n|der Verdacht|şüphe
+n|der Tanz|dans
+v|entlassen|işten çıkarmak; taburcu etmek
+n|der Sand|kum
+n|das Geheimnis|sır
+a|umgekehrt|tersi, tersine
+a|kritisch|eleştirel; kritik
+w|verliebt|âşık
+n|die Decke|tavan / battaniye
+n|der Hafen|liman
+n|das Einkommen|gelir
+v|entfernen|kaldırmak
+p|in Rente gehen|emekli olmak
+n|die Beratung|danışmanlık
+n|die Trennung|ayrılık
+v|wenden|çevirmek
+v|schießen|ateş etmek; şut atmak
+n|das Knie|diz
+n|der Mond|ay (gökyüzü)
+w|peinlich|utanç verici
+v|vorkommen|yaşanmak; görünmek|es kommt vor · ist vorgekommen
+v|überprüfen|doğrulamak
+n|der Schriftsteller|yazar
+n|die Kindheit|çocukluk
+n|die Herausforderung|zorluk, meydan okuma
+w|korrekt|doğru
+v|präsentieren|sunmak
+v|siegen|galip gelmek
+w|sozial|sosyal
+w|technisch|teknik
+n|die Galerie|galeri
+v|trennen|ayırmak
+v|einstellen|işe almak
+v|feststellen|tespit etmek|er stellt fest · hat festgestellt
+v|landen|inmek
+w|umsonst|boşuna; bedava
+n|der Händler|satıcı, tüccar
+n|die Hitze|sıcaklık (bunaltıcı)
+n|das Golf|golf
+n|die Behörde|resmi daire
+v|entdecken|keşfetmek
+v|verbinden|bağlamak
+w|lecker|lezzetli
+n|der Profi|profesyonel
+n|die Unterlagen|belgeler
+n|der Betrag|tutar
+n|die Technologie|teknoloji
+n|der Durchschnitt|ortalama
+a|intensiv|yoğun
+n|die Schrift|yazı
+n|die Verletzung|yaralanma
+v|empfangen|karşılamak; almak (sinyal)
+v|sich konzentrieren|odaklanmak
+n|der Polizist|polis memuru
+v|brechen|kırmak
+w|kürzlich|geçenlerde
+v|verraten|ele vermek
+w|verständlich|anlaşılır
+n|die Zone|bölge
+a|begrenzt|sınırlı
+n|die Konferenz|konferans
+v|klären|açıklığa kavuşturmak
+v|messen|ölçmek
+v|investieren|yatırım yapmak
+v|stoppen|durdurmak
+n|die Küste|kıyı
+w|hübsch|güzel, hoş
+w|seltsam|garip
+n|der Dialog|diyalog
+n|das Symbol|sembol
+n|das Kabel|kablo
+n|die Voraussetzung|ön koşul
+v|begleiten|eşlik etmek
+n|der Tourismus|turizm
+v|zerstören|yok etmek
+w|zugänglich|erişilebilir
+a|national|ulusal
+n|der Transport|nakliye
+n|der Protest|protesto
+n|der Abschied|veda
+n|das Virus|virüs
+n|die Wut|öfke
+n|die Laune|keyif / ruh hâli
+n|der Onkel|amca / dayı
+n|die Ware|ürün / mal
+v|senden|yollamak
+n|der Vorwurf|suçlama, sitem
+w|angenehm|hoş
+v|beachten|dikkate almak
+w|digital|dijital
+v|hinterlassen|geride bırakmak
+v|wetten|bahse girmek
+n|die Qualifikation|nitelik, yeterlilik
+a|befreit|muaf; kurtarılmış
+n|das Talent|yetenek
+n|der Dreck|pislik
+n|die Schulter|omuz
+n|der Knochen|kemik
+n|das Grundstück|arsa
+n|die Zinsen|faiz
+w|einverstanden|razı
+v|klagen|şikâyet etmek; dava açmak
+w|nebenbei|bu arada; yan iş olarak
+w|wunderschön|çok güzel
+n|die Reform|reform
+d|dorthin|oraya
+n|die Meldung|haber; bildirim
+v|fangen|yakalamak
+n|die Fähigkeit|yetenek
+n|der Ehemann|koca
+n|das Gras|çimen
+v|springen|zıplamak, atlamak
+w|blind|kör
+w|durchschnittlich|ortalama
+w|historisch|tarihî
+w|schief|eğri
+n|die Wärme|sıcaklık
+v|aufgeben|vazgeçmek; postalamak
+n|der Experte|uzman
+n|der Sack|çuval
+n|die Versammlung|toplantı
+n|die Katastrophe|felaket
+n|der Mangel|eksiklik
+n|die Geduld|sabır
+v|beeinflussen|etkilemek|er beeinflusst · hat beeinflusst
+n|die Erhöhung|artış
+n|der Lohn|ücret, maaş
+n|der Faktor|etken
+n|die Agentur für Arbeit|iş ajansı
+n|das Ereignis|olay
+n|die Betreuung|bakım, danışmanlık
+w|glatt|düz, kaygan
+n|das Tempo|hız, tempo
+v|begrüßen|selamlamak; memnuniyetle karşılamak
+n|die Oper|opera
+n|das Metall|metal
+v|verteilen|dağıtmak
+v|sich streiten|tartışmak, kavga etmek
+n|der Journalist|gazeteci
+n|die Übung|alıştırma
+n|das Tal|vadi
+n|das Detail|ayrıntı
+w|schuldig|suçlu; borçlu
+v|verstecken|saklamak
+w|vorhin|az önce
+n|die Fortsetzung|devam
+n|die Angabe|bilgi, beyan
+n|das Pech|şanssızlık
+n|die Intelligenz|zekâ
+v|vorhaben|niyetinde olmak
+v|hassen|nefret etmek
+v|reduzieren|azaltmak
+v|produzieren|üretmek
+n|das Abitur|lise bitirme sınavı
+w|finanziell|mali
+""",
+"B1.2": """
+n|das Ufer|kıyı
+a|schick|şık
+n|die Schauspielerin|kadın oyuncu
+n|die Störung|arıza; rahatsızlık
+n|der Held|kahraman
+n|die Hütte|kulübe
+w|kompliziert|karmaşık
+w|aufgeregt|heyecanlı
+v|bedienen|hizmet etmek; kullanmak
+v|klingen|kulağa gelmek
+w|neulich|geçenlerde
+w|ungewöhnlich|olağandışı
+n|der Fortschritt|ilerleme
+a|ausgebildet|eğitimli, kalifiye
+n|der Patient|hasta
+a|ideal|ideal
+v|sich vergnügen|eğlenmek
+n|die Grafik|grafik
+a|mittlere|orta
+v|schreien|bağırmak
+v|abnehmen|azalmak; kilo vermek|er nimmt ab · hat abgenommen
+n|das Motorrad|motosiklet
+w|dauernd|sürekli
+w|kräftig|güçlü
+n|die Distanz|mesafe
+a|prima|harika
+n|das Erlebnis|yaşantı, deneyim
+d|voneinander|birbirinden
+n|der Hauptbahnhof|merkez istasyon
+n|der Maler|ressam; boyacı
+n|der Verbraucher|tüketici
+n|der Turm|kule
+w|einzeln|tek tek
+n|der Radfahrer|bisikletli
+n|die Tante|teyze / hala
+n|die Überzeugung|inanç, kanaat
+v|gebrauchen|kullanmak
+w|wahnsinnig|çılgınca
+n|die Weiterbildung|ileri eğitim
+v|zwingen|zorlamak, mecbur bırakmak
+n|die Fabrik|fabrika
+n|die Beschäftigung|uğraş; istihdam
+n|der Sportler|sporcu
+v|hinweisen|işaret etmek, belirtmek
+n|der Gegenstand|nesne
+a|theoretisch|teorik
+v|ignorieren|görmezden gelmek
+v|erledigen|halletmek|er erledigt · hat erledigt
+w|wütend|öfkeli
+v|sich verlaufen|yolunu kaybetmek
+n|der Mieter|kiracı
+v|leiten|yönetmek
+n|das Unglück|kaza; talihsizlik
+n|der Bart|sakal
+v|veröffentlichen|yayımlamak
+v|begegnen|karşılaşmak (+ Dativ)
+v|fürchten|korkmak
+v|benötigen|ihtiyaç duymak
+a|regional|bölgesel
+n|die Bestätigung|onay
+n|das Dokument|belge
+n|der Saal|salon
+n|die Scheibe|dilim; cam
+n|der Käufer|alıcı
+v|gießen|sulamak; dökmek
+w|niedrig|alçak
+v|sich entschuldigen|özür dilemek|er entschuldigt sich · hat sich entschuldigt
+w|neugierig|meraklı
+w|traditionell|geleneksel
+w|treu|sadık
+n|der Zeuge|tanık
+n|der Tropfen|damla
+n|das Orchester|orkestra
+d|hierher|buraya
+a|selbe|aynı
+v|vermuten|tahmin etmek
+n|das Fitness|fitness
+w|heimlich|gizlice
+n|die Präsentation|sunum
+n|der Rechner|bilgisayar
+n|die Reihenfolge|sıra
+n|der Rekord|rekor
+v|festhalten|sıkı tutmak; kaydetmek
+n|der Kandidat|aday
+n|das Kennzeichen|plaka; özellik
+a|obere|üst
+v|bewerten|değerlendirmek, not vermek
+n|die Trauer|keder
+v|sich wundern|şaşırmak
+n|das Benzin|benzin
+n|die Lieferung|teslimat
+v|fressen|yem yemek (hayvan)
+w|gewöhnlich|olağan
+w|illegal|yasa dışı
+v|schieben|itmek
+n|der Reporter|muhabir
+n|das Spielzeug|oyuncak
+n|der/die Kranke|hasta (kişi)
+v|heben|kaldırmak
+v|sich trauen|cesaret etmek
+w|gemütlich|rahat / sıcak (ortam)
+n|das Seminar|seminer
+n|der Nebel|sis
+n|die Fotografie|fotoğrafçılık
+w|rechtlich|hukuki
+w|vernünftig|makul
+n|der Lärm|gürültü
+n|der Rasen|çim
+d|nirgendwo|hiçbir yerde
+n|der/die Angehörige|yakın, akraba
+n|die Senioren|yaşlılar
+n|der Katalog|katalog
+n|der Nachweis|kanıt / belge
+v|vermissen|özlemek
+v|empfinden|hissetmek
+n|der Wille|irade
+n|der Teppich|halı
+v|aufhalten|durdurmak
+v|sinken|düşmek, batmak
+n|der Nachwuchs|çocuklar; yeni kuşak
+n|die Anleitung|talimat
+n|der Staub|toz
+v|sich stoßen|çarpmak (bir yere)
+n|der Klick|tıklama
+n|das Gedicht|şiir
+n|die Frist|süre / son tarih
+v|gelingen|başarılı olmak
+v|zustimmen|onaylamak, katılmak (+ Dat.)|er stimmt zu · hat zugestimmt
+w|betrunken|sarhoş
+v|finanzieren|finanse etmek
+w|flach|düz
+n|das Leder|deri
+n|die Zahlung|ödeme
+n|der Alarm|alarm
+v|pflegen|bakmak
+n|der Kuss|öpücük
+n|die Kündigung|fesih / istifa
+v|brennen|yanmak
+w|fröhlich|neşeli
+n|die Migration|göç
+a|zentral|merkezi
+n|die Kälte|soğuk
+n|der Nachteil|dezavantaj
+v|tauschen|takas etmek
+v|versagen|başarısız olmak
+n|der Bildschirm|ekran
+v|warnen|uyarmak
+v|sich bemühen|çaba göstermek
+v|besorgen|temin etmek
+v|fliehen|kaçmak
+w|merkwürdig|tuhaf
+n|die Urkunde|belge, sertifika
+n|die Wiese|çayır
+n|die Kurve|viraj; eğri
+n|der Ingenieur|mühendis
+w|beruflich|mesleki
+v|verursachen|sebep olmak
+n|die Rücksicht|saygı, göz önüne alma
+n|das Werkzeug|alet
+v|angeben|belirtmek; hava atmak
+v|anschließen|bağlamak
+n|die Schwangerschaft|hamilelik
+n|die Vermittlung|aracılık
+n|der Hügel|tepe
+a|alternativ|alternatif
+n|die Kopie|kopya
+v|mitteilen|bildirmek
+v|erweitern|genişletmek
+v|sich anpassen|uyum sağlamak
+n|der Enkel|torun
+w|satt|tok
+n|der Rabatt|indirim
+v|überraschen|şaşırtmak
+n|die Minderheit|azınlık
+v|stürzen|düşmek
+n|die Fantasie|hayal gücü
+v|einfallen|aklına gelmek
+n|der Schein|banknot; belge; görünüş
+v|sich entspannen|rahatlamak
+v|küssen|öpmek
+n|der Honig|bal
+n|das Denkmal|anıt
+w|individuell|bireysel
+w|mobil|mobil
+n|das Plastik|plastik
+n|die Erfindung|icat
+n|der Verbrecher|suçlu
+n|der Kasten|kasa, kutu
+v|grüßen|selamlamak
+v|berühren|dokunmak
+v|vergehen|geçmek (zaman)
+n|der Flur|koridor
+n|die Garantie|garanti
+v|bremsen|fren yapmak
+w|riesig|devasa
+w|sinnlos|anlamsız
+v|fließen|akmak
+v|sich beteiligen|katılmak
+n|die Couch|kanepe
+n|der Einbruch|hırsızlık (eve girme)
+w|kreativ|yaratıcı
+n|das Semester|dönem
+n|die Aktivität|faaliyet
+w|durcheinander|karmakarışık
+v|kritisieren|eleştirmek
+n|die Eisenbahn|demiryolu
+v|besprechen|görüşmek
+w|tödlich|ölümcül
+w|unheimlich|ürkütücü; aşırı
+v|integrieren|entegre etmek, bütünleştirmek
+n|der Übersetzer|çevirmen
+w|worum|ne hakkında
+v|schalten|anahtarlamak; vites değiştirmek
+n|die Scheidung|boşanma
+n|das Gift|zehir
+n|die Bedingung|koşul
+n|der Standpunkt|bakış açısı
+v|widersprechen|itiraz etmek (+ Dat.)|er widerspricht · hat widersprochen
+v|ansprechen|hitap etmek; değinmek
+v|einnehmen|almak (ilaç); kazanmak
+w|gründlich|etraflı, derinlemesine
+a|unentschieden|berabere; kararsız
+n|der Einkauf|alışveriş
+n|der Lebenslauf|özgeçmiş (CV)
+v|ausfallen|iptal olmak
+v|sich eignen|uygun olmak
+n|die Recherche|araştırma
+w|voraussichtlich|muhtemelen
+w|zukünftig|gelecekteki
+n|der Knopf|düğme
+n|die Gewerkschaft|sendika
+w|mutig|cesur
+n|die Zeichnung|çizim
+n|die Wiederholung|tekrar
+w|worüber|ne hakkında
+n|die Vertretung|vekâlet; temsilcilik
+v|beantragen|başvurmak
+v|ergänzen|tamamlamak
+v|sich verabschieden|vedalaşmak
+w|verwandt|akraba
+v|verabschieden|vedalaşmak
+n|die Mobilität|hareketlilik
+v|tauchen|dalmak
+v|verbrennen|yakmak
+n|der Verlierer|kaybeden
+n|der Blitz|şimşek; flaş
+n|die Kiste|sandık
+n|die Biologie|biyoloji
+w|feucht|nemli
+v|aussuchen|seçmek
+w|einsam|yalnız
+v|eintreten|girmek; meydana gelmek
+v|erleichtern|kolaylaştırmak
+n|der Nagel|çivi; tırnak
+n|der Fotograf|fotoğrafçı
+n|die Zeile|satır
+n|die Erholung|dinlenme
+n|die Steuer-ID|vergi numarası
+v|definieren|tanımlamak
+v|sich schämen|utanmak
+v|sich irren|yanılmak
+w|realistisch|gerçekçi
+w|vergeblich|boşuna
+w|wertvoll|değerli
+n|die Flüssigkeit|sıvı
+n|die Abbildung|resim, şekil
+n|die Enttäuschung|hayal kırıklığı
+n|die Infektion|enfeksiyon
+n|die Wunde|yara
+n|der Stau|trafik sıkışıklığı
+n|die Tastatur|klavye
+v|besetzen|işgal etmek; doldurmak
+w|rückwärts|geriye
+n|das Diplom|diploma
+v|anstellen|işe almak; açmak; sıraya girmek
+n|die Pension|pansiyon; emekli maaşı
+n|das Kissen|yastık
+v|sich beruhigen|sakinleşmek
+v|beruhigen|sakinleştirmek
+v|ablehnen|reddetmek|er lehnt ab · hat abgelehnt
+v|abstimmen|oylamak
+v|ernähren|beslemek
+w|menschlich|insani
+v|realisieren|gerçekleştirmek
+n|der Kompromiss|uzlaşma
+a|reif|olgun
+n|der Fleck|leke
+n|die Batterie|pil
+v|einrichten|döşemek; kurmak
+n|die Entlassung|işten çıkarma; taburcu
+n|der Karneval|karnaval
+n|das Gebirge|dağlar
+v|berechnen|hesaplamak
+v|sich gewöhnen|alışmak (an + Akk.)|er gewöhnt sich · hat sich gewöhnt
+v|installieren|kurmak
+w|fällig|vadesi gelmiş
+v|korrigieren|düzeltmek
+v|ausschließen|dışlamak, hariç tutmak
+n|der Umweltschutz|çevre koruma
+n|die Uniform|üniforma
+n|der Fußgänger|yaya
+n|der Treffpunkt|buluşma noktası
+n|der Grill|ızgara
+w|zuverlässig|güvenilir
+w|erschöpft|tükenmiş
+v|aufwachen|uyanmak
+w|künstlich|yapay
+n|der Export|ihracat
+v|herausfinden|öğrenmek, bulmak
+n|die Mahlzeit|öğün
+n|der Feierabend|paydos
+n|die Vollzeit|tam zamanlı
+w|geheim|gizli
+v|unterrichten|ders vermek
+n|der Lautsprecher|hoparlör
+n|die Lippe|dudak
+n|die Terrasse|teras
+n|die Diät|diyet
+n|die Dose|kutu (konserve)
+n|der Ozean|okyanus
+n|der Monitor|monitör
+w|Türkisch|Türkçe
+n|die Kreditkarte|kredi kartı
+n|das Wörterbuch|sözlük
+v|sich aufregen|sinirlenmek
+v|beleidigen|hakaret etmek
+v|mischen|karıştırmak
+v|beschränken|kısıtlamak
+n|die Überschrift|başlık
+n|die Zutaten|malzemeler
+n|der Abfall|çöp
+w|höflich|nazik
+v|analysieren|analiz etmek
+n|die Gebühr|ücret / harç
+w|gesamt|toplam
+a|untersagt|yasaklanmış
+n|der Dialekt|lehçe
+n|die Wanderung|yürüyüş (doğa)
+v|einführen|tanıtmak; ithal etmek
+n|der Streik|grev
+n|das Kostüm|kostüm; tayyör
+v|bemerken|fark etmek
+n|das Regal|raf
+v|garantieren|garanti etmek
+w|vorläufig|geçici
+n|die Aussprache|telaffuz
+n|der Salon|salon
+v|sich scheiden lassen|boşanmak
+v|verwechseln|karıştırmak
+n|die Münze|madeni para
+a|musikalisch|müzikal
+n|das Finanzamt|vergi dairesi
+n|der Feiertag|resmi tatil
+n|die Tankstelle|benzin istasyonu
+v|klettern|tırmanmak
+n|der Beleg|makbuz, kanıt
+n|das Ehepaar|evli çift
+v|versichern|sigortalamak; temin etmek
+n|das Vitamin|vitamin
+n|die Öffnungszeiten|açılış saatleri
+v|verlängern|uzatmak
+v|vorschlagen|önermek
+v|zweifeln|şüphe etmek (an + Dat.)|er zweifelt · hat gezweifelt
+v|ausrichten|iletmek; düzenlemek
+w|derselbe|aynı
+n|der Wirt|lokanta sahibi; ev sahibi
+n|der Wohnsitz|ikametgâh
+n|das Quartier|konaklama yeri; mahalle
+n|das Schnitzel|şinitzel
+n|der Spielplatz|oyun parkı
+n|der/die Studierende|öğrenci (üniversite)
+n|das Menü|menü
+a|statistisch|istatistiksel
+n|die Langeweile|can sıkıntısı
+n|die Einsamkeit|yalnızlık
+v|sich vertragen|iyi geçinmek
+n|der Cousin|kuzen (erkek)
+n|die Tüte|poşet
+w|gleichfalls|aynı şekilde
+n|die Landung|iniş
+n|die Einnahme|gelir; alım (ilaç)
+n|die Kabine|kabin
+v|fortsetzen|devam ettirmek
+n|der Kellner|garson
+n|die EC-Karte|banka kartı
+v|erfinden|icat etmek
+w|frech|arsız
+w|steil|dik
+n|die Fahrbahn|yol, şerit
+n|die Frisur|saç modeli
+n|die Frucht|meyve
+v|transportieren|taşımak
+n|die Pille|hap
+v|festlegen|belirlemek
+n|das Mehl|un
+v|einschalten|açmak
+v|reinigen|temizlemek
+v|stehlen|çalmak
+n|die Badewanne|küvet
+n|der Dieb|hırsız
+n|der Wohnort|yaşadığı yer
+n|die Kneipe|meyhane, bar
+n|der Ordner|klasör
+v|respektieren|saygı duymak
+v|bestrafen|cezalandırmak
+n|die Buchhandlung|kitapçı
+v|auflösen|çözmek; feshetmek
+n|der Pilz|mantar
+n|der Einbrecher|hırsız (eve giren)
+v|stechen|batmak; sokmak
+v|erläutern|izah etmek
+v|abhängen|bağlı olmak (von + Dat.)|es hängt ab · hat abgehangen
+n|der Pfeffer|biber (baharat)
+n|die Teilzeit|yarı zamanlı
+n|die Krankenschwester|hemşire
+v|erfordern|gerektirmek
+v|sich nähern|yaklaşmak
+d|rauf|yukarı
+n|das Tuch|bez; eşarp
+n|die Etage|kat
+n|die Schüssel|kâse
+v|schütteln|sallamak
+v|vergrößern|büyütmek
+v|bedauern|üzülmek, pişman olmak
+w|schüchtern|utangaç
+v|kleben|yapıştırmak
+v|ausreichen|yetmek
+w|verdächtig|şüpheli
+n|der Stempel|mühür
+v|beklagen|yakınmak
+v|sich lohnen|değmek
+v|sich beklagen|şikâyet etmek
+w|prost|şerefe
+n|die Pfanne|tava
+v|anerkennen|tanımak, takdir etmek
+v|sich erholen|dinlenmek, iyileşmek
+n|die Festplatte|sabit disk
+v|genügen|yetmek
+w|optimistisch|iyimser
+n|das Lexikon|ansiklopedi
+n|das Nahrungsmittel|besin
+n|der Zuhörer|dinleyici
+v|zuschauen|izlemek
+v|beschließen|karar vermek
+n|das Kraftwerk|elektrik santrali
+n|der Kunststoff|plastik, sentetik
+a|minimal|asgari
+n|die Erwartung|beklenti
+n|der Friseur|kuaför
+w|elegant|zarif
+v|loben|övmek
+v|protestieren|protesto etmek
+n|die Fähre|feribot
+a|flexibel|esnek
+v|ausdrucken|yazdırmak
+n|die Puppe|oyuncak bebek
+v|auswählen|seçmek
+v|kopieren|kopyalamak
+v|bewundern|hayran olmak
+n|die Klimaanlage|klima
+w|hungrig|aç
+p|absagen|iptal etmek
+v|schwitzen|terlemek
+n|die Nadel|iğne
+n|der Bauernhof|çiftlik
+n|die Muttersprache|ana dil
+v|zurückgehen|geri gitmek
+v|markieren|işaretlemek
+n|der Sessel|koltuk
+n|der Notruf|acil çağrı
+w|passiv|pasif
+v|tippen|yazmak (klavye); tahmin etmek
+v|trocknen|kurutmak
+n|der Briefkasten|posta kutusu
+n|der Betreuer|bakıcı; danışman
+v|aufheben|yerden almak; saklamak
+n|die Cousine|kuzen (kız)
+n|die Besprechung|toplantı
+v|füttern|beslemek
+n|der Hörer|dinleyici; ahize
+w|populär|popüler
+w|strafbar|cezai, suç teşkil eden
+v|verurteilen|mahkûm etmek
+n|die Fachleute|uzmanlar
+n|die Droge|uyuşturucu
+n|der Wecker|çalar saat
+n|die Vorschrift|yönetmelik, kural
+w|geschieden|boşanmış
+n|das Referat|sunum (ödev)
+n|die Broschüre|broşür
+n|das Pflaster|yara bandı; kaldırım taşı
+n|die Soße|sos
+n|das Jobcenter|iş kurumu
+w|geduldig|sabırlı
+n|der Neffe|yeğen (erkek)
+w|aufwärts|yukarı
+w|meinetwegen|bana kalırsa, olur
+v|beißen|ısırmak
+a|elektrisch|elektrikli
+n|der Spezialist|uzman
+n|der Metzger|kasap
+v|sich verlieben in|-e âşık olmak
+v|hochladen|yüklemek
+n|die Fortbildung|mesleki gelişim eğitimi
+n|das Gasthaus|han, lokanta
+a|einheitlich|tek tip
+v|wiegen|tartmak
+v|einfügen|eklemek, yapıştırmak
+v|verzeihen|bağışlamak
+v|überfahren|ezmek (araçla)
+n|die Reportage|röportaj
+n|der Nerv|sinir
+w|schmal|dar
+n|die Nichte|yeğen (kız)
+v|überqueren|karşıya geçmek
+n|die Taste|tuş
+a|pauschal|toptan, götürü
+n|die Eile|acele
+n|der Import|ithalat
+v|vorlesen|sesli okumak
+n|die Nationalität|uyruk
+v|tanken|benzin almak
+w|stumm|dilsiz, sessiz
+v|überholen|sollamak
+n|die Bremse|fren
+n|das Treppenhaus|merdiven boşluğu
+n|die Kerze|mum
+v|klingeln|zil çalmak
+v|verschwenden|israf etmek
+n|die Erkältung|soğuk algınlığı
+n|der Fachmann|uzman
+v|betreuen|bakmak, ilgilenmek
+n|der Schreck|korku, ürkme
+n|der Sekretär|sekreter
+v|klopfen|vurmak, kapı çalmak
+a|zahlreich|çok sayıda
+n|die Rentenversicherung|emeklilik sigortası
+v|einreichen|teslim etmek
+n|der Hausmeister|apartman görevlisi
+w|biologisch|biyolojik
+v|nützen|yaramak
+n|das Ballett|bale
+v|abheben|para çekmek; havalanmak
+n|die Ausfahrt|çıkış (yol)
+a|äußerlich|dış, harici
+n|der Pfleger|hastabakıcı
+n|die Sportart|spor dalı
+n|die Metropole|metropol
+n|die Staatsangehörigkeit|vatandaşlık
+v|zunehmen|artmak; kilo almak|er nimmt zu · hat zugenommen
+v|übertreiben|abartmak
+n|der Kakao|kakao
+n|der Muskel|kas
+v|nähen|dikiş dikmek
+n|die Gewohnheit|alışkanlık
+n|die Nachhilfe|özel ders
+v|unterlassen|yapmaktan kaçınmak
+a|blass|solgun
+n|die Einfahrt|giriş (araç)
+n|die Schwierigkeit|zorluk
+v|unterbrechen|kesmek, bölmek
+n|der Betriebsrat|işçi temsilciliği
+w|spitz|sivri
+v|entsorgen|elden çıkarmak, bertaraf etmek
+a|vordere|ön
+v|zurückkommen|geri gelmek
+w|süchtig|bağımlı
+n|der Raucher|sigara içen
+a|fließend|akıcı
+n|die Gaststätte|lokanta
+v|umdrehen|çevirmek, döndürmek
+v|zusagen|söz vermek; hoşa gitmek
+v|behindern|engellemek
+a|ökologisch|ekolojik
+v|recherchieren|araştırmak
+n|der Stecker|fiş
+n|das Trinkgeld|bahşiş
+v|überreden|ikna etmek
+v|abbiegen|sapmak
+n|der Zuschlag|ek ücret
+n|die Fremdsprache|yabancı dil
+n|das Haustier|evcil hayvan
+w|eifersüchtig|kıskanç
+v|blühen|çiçek açmak
+w|senkrecht|dikey
+v|umarmen|sarılmak
+w|ängstlich|korkak
+n|das Buffet|açık büfe
+n|das Zertifikat|sertifika
+n|die Überweisung|havale
+n|die Spritze|iğne, şırınga
+n|die Mensa|öğrenci yemekhanesi
+n|die Marmelade|reçel
+w|wertlos|değersiz
+n|der Donner|gök gürültüsü
+v|ausleihen|ödünç almak
+v|wegwerfen|çöpe atmak
+n|die Panne|arıza
+v|rasieren|tıraş etmek
+w|abwärts|aşağı
+n|das Alphabet|alfabe
+n|der Essig|sirke
+n|das Visum|vize
+v|zusammenfassen|özetlemek
+v|heizen|ısıtmak
+n|die Fernbedienung|uzaktan kumanda
+n|die Enkelin|kız torun
+n|der Vorort|banliyö
+v|operieren|ameliyat etmek
+w|sparsam|tutumlu
+n|die Flöte|flüt
+v|zugehen|kapanmak; yaklaşmak
+n|die Zwiebel|soğan
+n|das Vorstellungsgespräch|iş görüşmesi
+v|ordnen|düzenlemek
+v|ausstellen|sergilemek; düzenlemek (belge)
+v|enttäuschen|hayal kırıklığına uğratmak
+v|verbrauchen|tüketmek
+n|die Garderobe|vestiyer
+v|winken|el sallamak
+n|der Imbiss|büfe, atıştırmalık
+n|das Müsli|müsli
+n|die Mehrwertsteuer|KDV
+n|der Mechaniker|tamirci
+v|abonnieren|abone olmak
+a|roh|çiğ
+n|das Portemonnaie|cüzdan
+n|die Schachtel|kutu
+v|unterstreichen|altını çizmek
+n|der Sachbearbeiter|dosya sorumlusu
+w|Verzeihung|pardon
+n|der Krankenwagen|ambulans
+n|die Gratulation|tebrik
+v|befehlen|emretmek
+v|vorbeikommen|uğramak
+w|giftig|zehirli
+v|streiken|grev yapmak
+n|die Rückfahrt|dönüş yolculuğu
+n|das Dessert|tatlı
+n|die Kantine|kantin
+n|die Steckdose|priz
+v|spülen|bulaşık yıkamak; durulamak
+v|aufladen|şarj etmek
+v|betrügen|aldatmak, dolandırmak
+v|zelten|kamp yapmak (çadırda)
+n|das Picknick|piknik
+v|sich auszahlen|karşılığını vermek
+w|mild|ılıman
+w|mündlich|sözlü
+n|der Fasching|karnaval
+n|der Passagier|yolcu
+a|elektronisch|elektronik
+n|die Sozialversicherung|sosyal sigorta
+v|sich weigern|reddetmek
+n|der Lift|asansör
+v|konstruieren|tasarlayıp inşa etmek
+v|konsumieren|tüketmek
+w|vegetarisch|vejetaryen
+n|der Praktikant|stajyer
+n|die Umleitung|yol değişikliği
+n|die Vorfahrt|geçiş üstünlüğü
+v|genehmigen|onaylamak
+v|befestigen|sabitlemek
+v|gehorchen|itaat etmek
+n|die Zahnbürste|diş fırçası
+n|die Quittung|fiş
+v|verhaften|tutuklamak
+n|die Mahnung|ihtar
+n|die Rufnummer|telefon numarası
+a|taub|sağır
+v|gedeihen|gelişmek, serpilmek
+v|sich anstrengen|çaba göstermek
+v|festnehmen|gözaltına almak
+n|der Nichtraucher|sigara içmeyen
+n|die Vermietung|kiralama
+n|die Rundfahrt|tur (araçla)
+n|das Schaufenster|vitrin
+n|die Vase|vazo
+v|entgegenkommen|uzlaşmak, yardımcı olmak
+n|der Ratschlag|tavsiye
+v|anschaffen|satın almak, edinmek
+v|sich erkundigen|bilgi almak
+n|das Gebäck|hamur işi
+v|experimentieren|deney yapmak
+n|der Lehrling|çırak
+n|die Klingel|zil
+n|der Korridor|koridor
+n|die Socke|çorap
+n|der Tierpark|hayvanat bahçesi
+n|der Schnupfen|nezle
+v|aufschreiben|not almak
+n|der Sozialarbeiter|sosyal hizmet uzmanı
+n|die Visitenkarte|kartvizit
+a|mager|yağsız; zayıf
+n|die Gymnastik|jimnastik
+n|die Träne|gözyaşı
+n|die Neuigkeit|haber, yenilik
+v|bluten|kanamak
+w|hilfsbereit|yardımsever
+v|tolerieren|hoş görmek
+v|importieren|ithal etmek
+n|die Reservierung|rezervasyon
+a|tolerant|hoşgörülü
+n|die Kanne|demlik, sürahi
+n|das Girokonto|vadesiz hesap
+v|zubereiten|hazırlamak (yemek)
+a|befriedigend|tatmin edici; orta (not)
+n|die Salbe|merhem
+v|stinken|kötü kokmak
+n|das Konsulat|konsolosluk
+a|gleichberechtigt|eşit haklara sahip
+v|exportieren|ihraç etmek
+v|sich langweilen|sıkılmak
+v|beschädigen|hasar vermek
+n|der Terminkalender|ajanda
+n|das Altenheim|huzurevi
+v|ankündigen|duyurmak
+n|die Personalien|kişisel bilgiler
+v|sich umsehen|etrafa bakmak
+n|die Übernachtung|konaklama (gece)
+n|das Hackfleisch|kıyma
+n|der Krankenpfleger|hemşire (erkek)
+v|frieren|üşümek; donmak
+v|abschreiben|kopya çekmek; kopyalamak
+n|das Heimweh|sıla hasreti
+n|die Mülltonne|çöp bidonu
+n|das Feuerzeug|çakmak
+v|verpacken|paketlemek
+n|die Bescheinigung|belge / yazı
+n|das Taschentuch|mendil
+n|der Einfall|fikir
+n|die Kriminalpolizei|cinayet/suç polisi
+n|die Zange|pense
+v|anhaben|üzerinde olmak (giysi)
+n|die Aushilfe|geçici yardımcı
+n|die Speise|yemek
+n|die Kassette|kaset
+v|hupen|korna çalmak
+v|sich auskennen|bir konuyu iyi bilmek
+v|sich amüsieren|eğlenmek
+a|stilistisch|üslupsal
+v|eilen|acele etmek
+a|vergnügt|neşeli
+a|virtuell|sanal
+n|die Drogerie|kozmetik mağazası
+a|alltäglich|gündelik
+v|einzahlen|para yatırmak
+v|pausieren|ara vermek
+v|blitzen|şimşek çakmak; radara yakalanmak
+n|der Tagesablauf|günlük akış
+v|einbrechen|hırsızlık için girmek
+n|der Hausmann|ev erkeği
+n|die Reklame|reklam
+a|entspannend|rahatlatıcı
+v|losfahren|yola çıkmak
+n|die Brieftasche|cüzdan
+n|die Einbahnstraße|tek yönlü yol
+n|das Einschreiben|taahhütlü mektup
+v|sich verabreden|buluşmak üzere sözleşmek
+n|die Verabredung|randevu, buluşma
+v|vorbeifahren|yanından geçip gitmek
+n|der Wetterbericht|hava raporu
+a|abwesend|yok, bulunmayan
+n|die Büchse|kutu (konserve)
+v|verschlechtern|kötüleştirmek
+v|sich verschlechtern|kötüleşmek
+n|die Bürste|fırça
+n|die Abgase|egzoz gazları
+v|verschreiben|reçete yazmak
+n|die Müllabfuhr|çöp toplama
+n|die Wettervorhersage|hava tahmini
+v|zurückbleiben|geride kalmak
+n|die Einzahlung|para yatırma
+n|der Strafzettel|ceza makbuzu
+n|das Waschmittel|deterjan
+n|der Migrant|göçmen
+n|die Haftpflichtversicherung|sorumluluk sigortası
+n|das Laufwerk|sürücü (disk)
+v|nachschlagen|bakmak (sözlükte)
+v|festsetzen|belirlemek
+n|der Rundfunkbeitrag|yayın katkı payı
+v|sich entschließen|karar vermek
+w|salzig|tuzlu
+n|die Umweltverschmutzung|çevre kirliliği
+v|abwaschen|bulaşık yıkamak
+v|versäumen|kaçırmak
+n|die Limonade|gazoz
+a|berufstätig|çalışan
+v|umtauschen|değiştirmek (ürün)
+v|zurechtkommen|başa çıkmak
+n|die Pflaume|erik
+n|das Souvenir|hediyelik eşya
+n|die Diskothek|diskotek
+w|durstig|susuz
+v|duzen|"sen" diye hitap etmek
+n|das Inserat|ilan
+a|eckig|köşeli
+n|die Ausländerbehörde|yabancılar dairesi
+n|der Lerner|öğrenen
+v|dekorieren|süslemek
+n|die Karotte|havuç
+n|das Verkehrszeichen|trafik işareti
+n|der Kloß|köfte (hamur)
+n|das Gewürz|baharat
+v|abreisen|ayrılmak (yolculuğa çıkmak)
+n|das Sonderangebot|özel indirim
+a|waagerecht|yatay
+v|sich ereignen|meydana gelmek
+n|die Lehrstelle|çıraklık yeri
+n|das Kraftfahrzeug|motorlu taşıt
+v|vorhersehen|önceden görmek
+n|der Briefträger|postacı
+v|donnern|gök gürlemek
+n|der Umtausch|değişim (ürün)
+n|der Strumpf|çorap
+n|die Aufenthaltserlaubnis|oturma izni
+n|der Kopierer|fotokopi makinesi
+n|die Schlagsahne|krem şanti
+v|kaputtmachen|bozmak, kırmak
+n|der Steward|kabin memuru
+n|die Möhre|havuç
+v|feststehen|kesinleşmiş olmak
+n|die Stewardess|hostes
+n|das Bürgeramt|nüfus dairesi
+n|die Arbeitserlaubnis|çalışma izni
+n|der Kuli|tükenmez kalem
+n|das Streichholz|kibrit
+n|der Briefumschlag|zarf
+v|sich siezen|"siz" diye hitap etmek
+n|die Gebrauchsanweisung|kullanım kılavuzu
+n|die Bedienungsanleitung|kullanım kılavuzu
+d|halbtags|yarım gün
+n|die Nachspeise|tatlı
+n|der Geldautomat|ATM
+n|das Fundbüro|kayıp eşya bürosu
+v|anschnallen|kemer takmak
+n|der Speisewagen|yemekli vagon
+v|faulenzen|tembellik etmek
+n|die Zweitsprache|ikinci dil
+v|abmachen|kararlaştırmak; sökmek
+n|die Abmeldung|kayıt sildirme
+n|die Annonce|ilan
+v|staubsaugen|elektrik süpürgesi çekmek
+v|herunterfahren|kapatmak (bilgisayar)
+n|die Klassenarbeit|sınıf sınavı
+a|städtisch|kentsel; belediyeye ait
+v|kaputtgehen|bozulmak
+a|möbliert|eşyalı
+n|der Abfalleimer|çöp kutusu
+n|der Kursleiter|kurs öğretmeni
+v|verpflegen|yiyecek sağlamak
+n|die Konfitüre|reçel
+n|das Suchtmittel|bağımlılık yapan madde
+n|die Chipkarte|çipli kart
+v|misslingen|başarısız olmak (iş)
+n|die Einzelheit|ayrıntı
+n|der Profisportler|profesyonel sporcu
+n|die Zahncreme|diş macunu
+a|interkulturell|kültürlerarası
+n|die Bankleitzahl|banka kodu
+v|hageln|dolu yağmak
+n|der Intensivkurs|yoğun kurs
+v|sich erkälten|üşütmek
+n|die Geschwindigkeitsbeschränkung|hız sınırı
+v|beweinen|ağıt yakmak, yasını tutmak
+n|der Personenstand|medeni durum
+a|sogenannt|sözde, adı verilen
+a|heutig|bugünkü
+n|die Versichertenkarte|sigorta kartı
+n|die Meldebescheinigung|ikamet belgesi
+n|die Überstunde|fazla mesai
+n|die Wartenummer|sıra numarası
+v|runterwerfen|aşağı atmak
+n|der/die Serviceangestellte|servis elemanı
 """,
 "B2.1": """
 n|die Auswirkung|etki, sonuç
 n|die Maßnahme|önlem
 n|der Aufwand|emek, zahmet
-n|die Bedingung|koşul
 n|die Einstellung|tutum; ayar; işe alım
-n|die Forderung|talep
-n|der Vorwurf|suçlama, sitem
 n|die Ansicht|görüş
 n|das Vorurteil|önyargı
 n|die Zuverlässigkeit|güvenilirlik
-n|der Wettbewerb|rekabet
 n|die Nachhaltigkeit|sürdürülebilirlik
-n|die Begründung|gerekçe
 n|der Umgang|(bir şeyle) başa çıkma, ilişki
-n|der Anspruch|hak, talep
 v|beitragen|katkıda bulunmak (zu + Dat.)|er trägt bei · hat beigetragen
 v|berücksichtigen|dikkate almak|er berücksichtigt · hat berücksichtigt
 v|bewältigen|üstesinden gelmek|er bewältigt · hat bewältigt
 v|ermöglichen|mümkün kılmak|er ermöglicht · hat ermöglicht
-v|beeinflussen|etkilemek|er beeinflusst · hat beeinflusst
-v|darstellen|temsil etmek, sunmak|er stellt dar · hat dargestellt
 v|sich auseinandersetzen|ele almak, uğraşmak (mit)|er setzt sich auseinander · hat sich auseinandergesetzt
-v|feststellen|tespit etmek|er stellt fest · hat festgestellt
-v|verzichten|vazgeçmek (auf + Akk.)|er verzichtet · hat verzichtet
-v|bestehen|(sınavı) geçmek; ısrar etmek (auf)|er besteht · hat bestanden
 v|nachweisen|kanıtlamak|er weist nach · hat nachgewiesen
 v|gewährleisten|güvence altına almak|er gewährleistet · hat gewährleistet
 w|offensichtlich|apaçık
-w|ausreichend|yeterli
 w|umfangreich|kapsamlı
 w|dennoch|buna rağmen
 w|nachvollziehbar|anlaşılır, makul
 n|die Anforderung|gereklilik, talep
-n|der Bedarf|ihtiyaç
 n|die Beschwerde|şikâyet
 n|die Erkenntnis|bulgu, idrak
-n|das Ereignis|olay
-n|die Fortbildung|mesleki gelişim eğitimi
-n|die Gewohnheit|alışkanlık
-n|der Hinweis|ipucu, uyarı
-n|die Leistung|performans; hizmet
 n|das Merkmal|özellik
-n|die Mehrheit|çoğunluk
-n|die Minderheit|azınlık
-n|der Standpunkt|bakış açısı
-n|die Überzeugung|inanç, kanaat
 n|der Umstand|durum, koşul
 n|die Verpflichtung|yükümlülük
 n|der Verlauf|seyir, süreç
-n|die Wirkung|etki
-n|der Zweifel|şüphe
-n|die Zusammenarbeit|iş birliği
-n|der Zugang|erişim
 v|ausüben|icra etmek, uygulamak
-v|beantworten|cevaplamak
 v|bedenken|göz önünde bulundurmak
 v|befürchten|endişe etmek
-v|begründen|gerekçelendirmek
 v|beurteilen|değerlendirmek, yargılamak
 v|durchführen|yürütmek, gerçekleştirmek
 v|eingehen auf|ele almak, değinmek
 v|einhalten|uymak (kurala, süreye)
 v|ermitteln|tespit etmek; soruşturmak
-v|fördern|desteklemek, teşvik etmek
 v|hinweisen auf|dikkat çekmek
 v|nachdenken über|üzerine düşünmek
 v|überwiegen|ağır basmak
-v|verlangen|talep etmek
 v|voraussetzen|şart koşmak, varsaymak
 v|zurückführen auf|-e bağlamak
 w|angemessen|uygun, makul
 w|bedeutend|önemli
-w|eindeutig|açık, kesin
 w|gegenseitig|karşılıklı
 w|grundsätzlich|temelde, prensipte
 w|jedenfalls|her halükârda
 w|überwiegend|ağırlıklı olarak
 w|vermutlich|muhtemelen
-w|zumindest|en azından
 w|zunehmend|giderek
 v|angehen, ansprechen|ele almak, çözüme kavuşturmak
 v|unterstützen; sichern|desteklemek, yedeklemek
@@ -1980,7 +3416,6 @@ v|bestimmen, festlegen|belirlemek, saptamak
 v|sicherstellen, gewährleisten|sağlamak, garantiye almak
 v|steigen, erhöhen|artmak, artırmak
 v|aufrechterhalten; behaupten|sürdürmek, savunmak
-v|verhindern|önlemek
 n|der Reiz; der Einspruch|çekicilik, itiraz
 n|die Kapazität|kapasite, yetenek
 w|wesentlich, unerlässlich|temel, şart
@@ -1992,7 +3427,6 @@ p|gut auskommen mit; weitermachen|iyi geçinmek, devam etmek
 p|nachgeben|pes etmek, boyun eğmek
 p|durchgehen, überprüfen|gözden geçirmek
 p|Schritt halten mit|ayak uydurmak
-p|untersuchen|araştırmak, incelemek
 p|wiedergutmachen|telafi etmek
 p|sich abfinden mit|katlanmak
 p|aufbrechen; darlegen|yola koyulmak, ortaya koymak
@@ -2002,205 +3436,110 @@ p|im Einklang mit|-ile uyumlu olarak
 w|andernfalls|aksi takdirde
 p|davon abgesehen|bununla birlikte
 w|somit|böylece
-v|stecken|sokmak; bulunmak
-w|voraus|önde, önceden
 v|achten auf|dikkat etmek
-w|ausgezeichnet|mükemmel
 w|einst|bir zamanlar
-n|die Integration|entegrasyon, uyum
 w|womit|neyle
 n|der Code|kod
 w|definitiv|kesinlikle
-v|drehen|döndürmek; çekmek (film)
-w|gratis|bedava
-w|witzig|esprili
 w|zumal|özellikle de
 w|anstatt|yerine
-w|aufmerksam|dikkatli
 w|ausgeschlossen|imkânsız
-w|begeistert|heyecanlı, hayran
 w|daraufhin|bunun üzerine
-w|erforderlich|gerekli
-w|ewig|sonsuz
-v|aufnehmen|kaydetmek; kabul etmek
-w|speziell|özel
-n|der Tipp|ipucu
 w|betroffen|etkilenmiş
 v|erfolgen|gerçekleşmek
 w|ernsthaft|ciddi
 n|der Hass|nefret
-w|sinnvoll|anlamlı, mantıklı
 w|sofern|-dığı sürece
 n|das Umfeld|çevre, ortam
 v|vergeben|affetmek; vermek
 w|einerseits … andererseits|bir yandan … öte yandan
-w|eventuell|belki
 w|generell|genel olarak
-v|gucken|bakmak (günlük)
 w|quasi|adeta
 w|scheinbar|görünüşte
 n|die Variante|varyant
 w|genügend|yeterli
-w|lieb|sevimli
-w|maximal|en fazla
 w|bezüglich|ile ilgili (+ Gen.)
-w|blöd|aptalca
-w|ordentlich|düzenli
-w|wach|uyanık
-v|greifen|tutmak, kavramak
 n|die Hölle|cehennem
-w|locker|gevşek, rahat
-w|sichtbar|görünür
-w|dankbar|minnettar
-w|dicht|sık; sızdırmaz
-w|doppelt|çift
-w|einzig|tek
 w|gezwungen|zorunda kalmış
-w|inklusive|dahil
 v|stammen aus|-den gelmek
-w|still|sessiz
 v|vorgehen|davranmak; ilerlemek
-w|zuständig|yetkili, sorumlu
-n|der Anbieter|sağlayıcı
-w|herzlich|içten
-w|spannend|heyecanlı
-v|treiben|sürmek; yapmak (spor)
 v|töten|öldürmek
-w|unterschiedlich|farklı
-w|beinahe|neredeyse
-v|fassen|tutmak; kavramak
 w|gebildet|eğitimli
 v|geraten in|-e düşmek
-w|jederzeit|her zaman
-n|das Netzwerk|ağ
-v|reagieren|tepki vermek
 n|der Schuss|atış
 v|spenden|bağış yapmak
-v|verbringen|geçirmek (zaman)
 v|beziehen|almak; taşınmak
 w|ferner|ayrıca
 v|gelangen|ulaşmak
-w|hinterher|sonradan
 n|der Rassismus|ırkçılık
 n|die Fraktion|meclis grubu
-w|freiwillig|gönüllü
-w|gewohnt|alışık
 n|die Kooperation|iş birliği
 w|lächerlich|gülünç
-w|nachher|sonra
-w|negativ|olumsuz
 v|richten|yöneltmek
 w|zufolge|-e göre
-w|endgültig|kesin, nihai
-w|fair|adil
 n|die Finanzierung|finansman
-w|gering|az
 v|umgehen mit|başa çıkmak
 w|wiederholt|tekrar tekrar
 w|angebracht|uygun
 w|mehrmals|birkaç kez
-v|spüren|hissetmek
 n|die Verbesserung|iyileştirme
-w|gerecht|adil
 w|heutzutage|günümüzde
 n|die Hinsicht|bakımdan
 w|insofern|bu bakımdan
 w|künftig|gelecekte
 n|die Option|seçenek
-w|rechtzeitig|zamanında
-w|verrückt|deli
-v|entfernen|kaldırmak
 w|gelegentlich|ara sıra
-w|typisch|tipik
 v|sich wenden an|başvurmak
-v|abgeben|teslim etmek
 n|die Erweiterung|genişleme
 w|nackt|çıplak
-w|peinlich|utanç verici
 v|verteidigen|savunmak
 n|das Überleben|hayatta kalma
 w|demnächst|yakında
 w|fein|ince; güzel
 w|heftig|şiddetli
 n|die Kampagne|kampanya
-w|korrekt|doğru
 w|oftmals|çoğu zaman
-v|präsentieren|sunmak
-v|siegen|galip gelmek
-w|sozial|sosyal
-w|technisch|teknik
 w|ausgerechnet|tam da
-v|landen|inmek
 v|profitieren|yararlanmak
-w|umsonst|boşuna; bedava
 w|einander|birbirini
 w|erstaunlich|şaşırtıcı
 n|die Motivation|motivasyon
-n|der Profi|profesyonel
 n|der Beschluss|karar
-v|brechen|kırmak
 v|ehren|onurlandırmak
 v|erlangen|elde etmek
 w|gefangen|esir
-w|kürzlich|geçenlerde
 w|massiv|büyük; masif
 w|rasch|hızlı
 w|spontan|kendiliğinden
-v|verraten|ele vermek
-w|verständlich|anlaşılır
 w|angewiesen auf|-e muhtaç
 w|bedingt|şartlı; kısmen
 w|beschränkt|sınırlı
-w|hübsch|güzel, hoş
 w|jenseits|ötesinde
 v|räumen|boşaltmak, toplamak
-w|seltsam|garip
 w|versteckt|gizli
 n|der Kumpel|kanka
-n|der Tourismus|turizm
 w|unbekannt|bilinmeyen
 n|die Vielfalt|çeşitlilik
-v|zerstören|yok etmek
-w|angenehm|hoş
-v|beachten|dikkate almak
 v|belegen|kanıtlamak; almak (kurs)
 w|daheim|evde
-w|digital|dijital
-w|einig|hemfikir
-v|hinterlassen|geride bırakmak
-v|kontrollieren|kontrol etmek
 w|quer|çapraz
 w|samt|ile birlikte
 w|vertraut|tanıdık
-v|wetten|bahse girmek
 w|derart|öyle, o derece
-w|einverstanden|razı
 v|erzielen|elde etmek
 w|fern|uzak
-v|klagen|şikâyet etmek; dava açmak
 w|konkret|somut
-w|nebenbei|bu arada; yan iş olarak
-w|wunderschön|çok güzel
-w|blind|kör
 w|dauerhaft|kalıcı
-w|durchschnittlich|ortalama
-v|heiraten|evlenmek
-w|historisch|tarihî
 w|langfristig|uzun vadeli
-v|mitmachen|katılmak
 w|passend|uygun
-w|schief|eğri
 n|die Überwachung|gözetim
 n|die Altstadt|eski şehir
 w|besorgt|endişeli
-n|die Erhöhung|artış
 w|hilfreich|yararlı
 w|höchst|son derece
 w|soeben|az önce
 n|die Staatsanwaltschaft|savcılık
 v|weichen|çekilmek, yol vermek
-n|die Betreuung|bakım, danışmanlık
-w|glatt|düz, kaygan
 w|jahrelang|yıllarca
 n|der Modus|mod
 w|schlicht|sade
@@ -2208,47 +3547,31 @@ n|die Vielzahl|çokluk
 w|vorerst|şimdilik
 w|zustande kommen|gerçekleşmek
 n|der Betreiber|işletmeci
-n|das Detail|ayrıntı
 n|das Fazit|sonuç
-v|kennenlernen|tanışmak
-w|schuldig|suçlu; borçlu
 w|sozusagen|tabiri caizse
-v|verstecken|saklamak
-w|vorhin|az önce
 w|zugunsten|lehine
 n|die Dokumentation|belgeleme; belgesel
 n|die Einschätzung|değerlendirme
 w|exakt|tam
-w|finanziell|mali
 w|infolge|sonucunda (+ Gen.)
 n|der Jahrgang|yaş grubu; dönem
-w|schrecklich|korkunç
 w|seither|o zamandan beri
 w|unklar|belirsiz
 w|unterhalb|altında
 w|wirtschaftlich|ekonomik
 v|aufbauen|kurmak
-v|bedienen|hizmet etmek; kullanmak
 w|dazwischen|arasında
 n|die Erfüllung|yerine getirme
 v|erwähnen|bahsetmek
-v|klingen|kulağa gelmek
-w|neulich|geçenlerde
 v|opfern|feda etmek
 v|umgeben|çevrelemek
-w|ungewöhnlich|olağandışı
 n|die Zerstörung|yıkım
 w|abseits|uzağında
 v|befreien|kurtarmak
 v|betreten|girmek (mekâna)
-w|dauernd|sürekli
 n|der Entwickler|geliştirici
 w|erstens|birincisi
 w|konsequent|tutarlı
-w|kräftig|güçlü
-w|lokal|yerel
-v|wandern|yürüyüş yapmak
-w|einzeln|tek tek
 w|enorm|muazzam
 w|etliche|epeyce
 w|kurzfristig|kısa vadeli
@@ -2258,11 +3581,8 @@ w|woanders|başka yerde
 n|der Zugriff|erişim
 w|zweitens|ikincisi
 n|die Bearbeitung|işleme
-v|gebrauchen|kullanmak
 w|stabil|sağlam
 w|vorwiegend|ağırlıklı olarak
-w|wahnsinnig|çılgınca
-n|die Weiterbildung|ileri eğitim
 v|bekämpfen|mücadele etmek
 n|die Berichterstattung|haber yapma
 v|blicken|bakmak
@@ -2273,7 +3593,6 @@ w|unnötig|gereksiz
 v|vorliegen|mevcut olmak
 n|die Aufstellung|liste; diziliş
 v|ausprobieren|denemek
-v|benötigen|ihtiyaç duymak
 w|binnen|içinde (süre)
 w|entschlossen|kararlı
 n|die Erhebung|anket; tahsil
@@ -2289,44 +3608,30 @@ n|der Konzern|şirketler grubu
 n|das Medium|araç; medya
 n|die Route|güzergâh
 w|schlau|zeki
-w|traditionell|geleneksel
-w|treu|sadık
 v|abwarten|beklemek
 n|der Einzelfall|münferit vaka
 n|die Episode|bölüm
 w|erfreut|memnun
 n|der Genuss|zevk
-w|heimlich|gizlice
-n|die Präsentation|sunum
-n|der Rechner|bilgisayar
 v|streichen|boyamak; silmek
 w|untereinander|kendi aralarında
 v|sich wehren|kendini savunmak
 w|wissenschaftlich|bilimsel
 v|anlegen|yatırım yapmak; kurmak
 w|denkbar|düşünülebilir
-w|furchtbar|korkunç
 w|geradezu|adeta
 w|gesetzlich|yasal
-w|gewöhnlich|olağan
 w|hervorragend|mükemmel
-w|illegal|yasa dışı
 w|komplex|karmaşık
-w|nirgends|hiçbir yerde
-v|schieben|itmek
 w|südlich|güneyde
 w|zeitweise|zaman zaman
 n|die Berücksichtigung|dikkate alma
 n|der Erhalt|alım; koruma
 v|eröffnen|açmak (resmî)
-n|die Fotografie|fotoğrafçılık
 w|friedlich|barışçıl
 w|lebendig|canlı
 w|nördlich|kuzeyde
 n|die Orientierung|yönelim
-w|rechtlich|hukuki
-w|vernünftig|makul
-v|aufhalten|durdurmak
 n|die Datenbank|veritabanı
 n|der Datenschutz|veri koruma
 n|der Einstieg|giriş, başlangıç
@@ -2334,11 +3639,8 @@ w|erwachsen|yetişkin
 w|konstant|sabit
 """,
 "B2.2": """
-n|der Einfluss|etki, nüfuz
 n|die Grundlage|temel
-n|der Zustand|durum, hal
 n|die Abhängigkeit|bağımlılık
-n|der Beitrag|katkı; aidat; yazı
 n|die Wahrnehmung|algı
 n|der Vorgang|süreç, işlem
 n|die Einschränkung|kısıtlama
@@ -2351,15 +3653,9 @@ n|der Rückgang|düşüş, azalma
 v|umsetzen|hayata geçirmek|er setzt um · hat umgesetzt
 v|hervorheben|vurgulamak|er hebt hervor · hat hervorgehoben
 v|einschätzen|değerlendirmek, tahmin etmek|er schätzt ein · hat eingeschätzt
-v|ablehnen|reddetmek|er lehnt ab · hat abgelehnt
-v|zustimmen|onaylamak, katılmak (+ Dat.)|er stimmt zu · hat zugestimmt
-v|widersprechen|itiraz etmek (+ Dat.)|er widerspricht · hat widersprochen
 v|sich durchsetzen|sözünü geçirmek; kabul görmek|er setzt sich durch · hat sich durchgesetzt
-v|ausgehen|varsaymak (von + Dat.)|er geht aus · ist ausgegangen
-v|übernehmen|üstlenmek|er übernimmt · hat übernommen
 v|verfügen|sahip olmak (über + Akk.)|er verfügt · hat verfügt
 v|bewirken|yol açmak, sağlamak|er bewirkt · hat bewirkt
-v|vorkommen|yaşanmak; görünmek|es kommt vor · ist vorgekommen
 w|zwangsläufig|kaçınılmaz olarak
 w|erheblich|önemli ölçüde
 w|weitgehend|büyük ölçüde
@@ -2379,35 +3675,26 @@ n|die Rechtfertigung|haklı çıkarma, gerekçe
 n|die Tendenz|eğilim
 n|der Überblick|genel bakış
 n|die Überlegung|düşünce, değerlendirme
-n|das Verhältnis|oran; ilişki
 n|die Vorhersage|tahmin
 n|der Zusammenhalt|dayanışma
-v|anerkennen|tanımak, takdir etmek
-v|ansprechen|hitap etmek; değinmek
 v|aufweisen|göstermek, sergilemek
 v|ausgleichen|dengelemek
 v|aushandeln|pazarlıkla belirlemek
-v|sich bemühen|çaba göstermek
 v|benachteiligen|dezavantajlı duruma düşürmek
 v|bevorzugen|tercih etmek
 v|einbeziehen|dahil etmek
-v|einsetzen|kullanmak, görevlendirmek
-v|erfordern|gerektirmek
 v|gelten als|… olarak kabul edilmek
 v|hinnehmen|kabullenmek
 v|sich auswirken auf|etkilemek
 v|überschätzen|fazla değer vermek
 v|unterschätzen|hafife almak
 v|vernachlässigen|ihmal etmek
-v|vertreten|temsil etmek; savunmak
-v|zusammenfassen|özetlemek
 w|absehbar|öngörülebilir
 w|ausdrücklich|açıkça
 w|befristet|süreli
 w|folglich|sonuç olarak
 w|hinsichtlich|bakımından (+ Gen.)
 w|keineswegs|asla, hiç de
-w|mittlerweile|artık, bu arada
 w|sachlich|nesnel
 w|umstritten|tartışmalı
 w|vielmehr|daha ziyade
@@ -2417,7 +3704,6 @@ v|sich leisten können|(maddi olarak) gücü yetmek
 v|argumentieren, streiten|iddia etmek, tartışmak
 v|steigern, ankurbeln|artırmak, yükseltmek
 v|sich verpflichten; begehen|taahhüt etmek, adamak
-v|bestätigen|doğrulamak, teyit etmek
 v|sich befassen mit, erledigen|ilgilenmek, halletmek
 v|leugnen, verweigern|inkâr etmek, reddetmek
 v|beseitigen|ortadan kaldırmak, elemek
@@ -2442,7 +3728,6 @@ v|enthüllen, offenbaren|ortaya çıkarmak, açığa vurmak
 v|umkehren|tersine çevirmek
 v|sich niederlassen; beilegen|yerleşmek, çözüme kavuşturmak
 v|ersetzen|yerine koymak
-v|leiden|acı çekmek, maruz kalmak
 v|neigen, tendieren|eğiliminde olmak
 v|eindringlich auffordern|ısrarla teşvik etmek
 v|variieren|değişkenlik göstermek
@@ -2464,8 +3749,6 @@ n|die Initiative|girişim, inisiyatif
 n|die Einsicht, der Einblick|içgörü
 n|die Integrität|bütünlük, dürüstlük
 n|die Haftung|sorumluluk, yükümlülük
-n|das Ergebnis|sonuç
-n|das Tempo|hız, tempo
 n|das Muster|örüntü, kalıp
 n|die Perspektive|bakış açısı
 n|die Vorliebe, die Präferenz|tercih
@@ -2473,11 +3756,9 @@ n|die Priorität|öncelik
 n|der Anteil, das Verhältnis|oran
 n|die Ressource|kaynak
 n|der Umfang, der Rahmen|kapsam
-n|die Bedeutung|önem
 n|die Belastung, die Anspannung|gerilim, zorlanma
 n|der Übergang|geçiş
 n|der Trend|eğilim, trend
-w|zugänglich|erişilebilir
 w|umfassend|kapsamlı
 w|konsistent, folgerichtig|tutarlı
 w|entscheidend|çok önemli, kritik
@@ -2496,7 +3777,6 @@ w|nachfolgend|sonraki
 w|verwundbar|savunmasız, kırılgan
 w|letztendlich|nihayetinde
 p|zur Sprache bringen; großziehen|gündeme getirmek, yetiştirmek
-p|absagen|iptal etmek
 p|stoßen auf; wirken|rastlamak, izlenim vermek
 p|einsparen bei|kısmak, azaltmak
 p|abschneiden, trennen|kesmek, bağlantıyı koparmak
@@ -2504,46 +3784,31 @@ p|nachverfolgen, nachhaken|takip etmek, peşini bırakmamak
 p|zurückhalten|geri tutmak, çekinmek
 p|im Großen und Ganzen|genel olarak
 p|angesichts der Tatsache, dass|-diği göz önüne alınırsa
-w|daher|dolayısıyla
 p|auf lange Sicht|uzun vadede
 p|mit dem Ziel|-mek amacıyla
 w|oberhalb|üstünde
 n|die Pressemitteilung|basın bülteni
-v|reiten|ata binmek
-v|sinken|düşmek, batmak
 w|unangenehm|nahoş
 v|verschaffen|sağlamak
 w|verzweifelt|umutsuz
-w|vorwärts|ileri
 n|der Asylbewerber|sığınmacı
 n|die Ausrichtung|yönelim
-w|betrunken|sarhoş
 n|die Bezahlung|ödeme
 n|die Digitalisierung|dijitalleşme
-v|finanzieren|finanse etmek
-w|flach|düz
 w|gewiss|kesin
 w|grob|kaba
 v|senken|düşürmek
 v|zulassen|izin vermek
 v|antreten|başlamak (göreve); yarışmak
 n|der Arbeitsmarkt|iş piyasası
-v|brennen|yanmak
-w|circa|yaklaşık
 n|die Elite|seçkinler
 v|erwerben|edinmek
-w|fröhlich|neşeli
 w|logisch|mantıklı
-n|die Migration|göç
 n|die Partnerschaft|ortaklık
 w|vorübergehend|geçici
 w|weitaus|çok daha
 v|zielen auf|hedeflemek
-v|besorgen|temin etmek
-v|fliehen|kaçmak
-w|merkwürdig|tuhaf
 n|der Notfall|acil durum
-w|schriftlich|yazılı
 v|verdanken|borçlu olmak (minnet)
 w|zeitlich|zamansal
 v|anhören|dinlemek
@@ -2552,13 +3817,10 @@ w|anwesend|mevcut, hazır
 v|aufstellen|dikmek; kurmak
 n|die Auswertung|değerlendirme
 v|begreifen|kavramak
-w|beruflich|mesleki
-v|buchen|rezervasyon yapmak
 v|erben|miras almak
 w|geistig|zihinsel
 n|der Mindestlohn|asgari ücret
 v|versorgen|bakmak, sağlamak
-v|verursachen|sebep olmak
 v|ausdrücken|ifade etmek
 v|errichten|inşa etmek
 w|fähig|yetenekli
@@ -2566,99 +3828,65 @@ w|gänzlich|tamamen
 w|primär|öncelikle
 n|die Sanierung|yenileme
 w|stetig|sürekli
-v|stürzen|düşmek
 w|unwahrscheinlich|olası değil
 n|das Vorjahr|önceki yıl
-v|ausmachen|kapatmak; oluşturmak
 w|effektiv|etkili
-w|individuell|bireysel
 w|legal|yasal
-w|mobil|mobil
 w|unglücklich|mutsuz
 w|verlegen|mahcup
-w|weich|yumuşak
 w|zulässig|izin verilen
 w|zwingend|zorunlu
 w|zwischendurch|arada bir
 w|allmählich|yavaş yavaş
-w|berühmt|ünlü
-v|bremsen|fren yapmak
 v|demonstrieren|gösteri yapmak
 w|identisch|aynı
-w|riesig|devasa
-w|sinnlos|anlamsız
 w|sorgfältig|özenli
 v|strafen|cezalandırmak
 v|werben|reklam yapmak
 n|die Zulassung|ruhsat; kabul
-n|die Aktivität|faaliyet
 w|aufrecht|dik
 v|sich begeben|gitmek
 v|beherrschen|hâkim olmak
-w|durcheinander|karmakarışık
 w|indirekt|dolaylı
 w|körperlich|bedensel
 v|locken|cezbetmek
 w|prinzipiell|prensipte
 n|der Riss|çatlak
 w|umgehend|derhal
-v|verletzen|yaralamak
 n|die Zielgruppe|hedef kitle
 w|zugrunde liegen|temelinde yatmak
 n|der Abstieg|iniş, düşüş
 n|der Anleger|yatırımcı
 n|die Bekämpfung|mücadele
-v|besprechen|görüşmek
 w|brav|uslu
 n|die Formulierung|ifade
-w|hässlich|çirkin
 v|jagen|avlamak
 n|die Kreativität|yaratıcılık
 v|lauten|olmak (metin)
-w|sportlich|sportif
-w|tödlich|ölümcül
-w|unheimlich|ürkütücü; aşırı
 w|verkehrt|ters
 n|die Diskriminierung|ayrımcılık
-v|einnehmen|almak (ilaç); kazanmak
-w|männlich|erkek
 w|sanft|yumuşak
 n|die Ankündigung|duyuru
 n|der Auftakt|başlangıç
-v|ausfallen|iptal olmak
 v|beten|dua etmek
 w|brutal|vahşi
-v|sich eignen|uygun olmak
 w|frühzeitig|erkenden
 n|die Kriminalität|suç oranı
 n|das Potenzial|potansiyel
 w|problematisch|sorunlu
-n|die Recherche|araştırma
-w|voraussichtlich|muhtemelen
 v|vornehmen|yapmak; niyet etmek
-w|zukünftig|gelecekteki
 w|anonym|anonim
 v|ausführen|yürütmek
 n|das Bedürfnis|ihtiyaç
 v|entgehen|kaçmak, gözden kaçmak
 n|die Innovation|yenilik
-w|nebenan|yan tarafta
-v|spazieren gehen|gezinti yapmak
 w|tagsüber|gündüz
 v|benehmen (sich)|davranmak
 v|entnehmen|çıkarmak, anlamak
 w|glücklicherweise|neyse ki
-n|die Mobilität|hareketlilik
 n|die Präsenz|varlık
-v|tauchen|dalmak
-v|verbrennen|yakmak
 v|verleihen|ödünç vermek; ödül vermek
-n|der Verlierer|kaybeden
 v|verweisen auf|işaret etmek
-v|wecken|uyandırmak
-v|aussuchen|seçmek
-w|einsam|yalnız
-v|eintreten|girmek; meydana gelmek
 w|gewaltig|muazzam
 n|die Investition|yatırım
 v|sich orientieren|yönelmek
@@ -2673,48 +3901,33 @@ w|gepflegt|bakımlı
 w|hintereinander|arka arkaya
 n|der Klimaschutz|iklim koruma
 n|die Privatsphäre|mahremiyet
-w|realistisch|gerçekçi
 n|die Schaffung|oluşturma
 w|skeptisch|şüpheci
-w|vergeblich|boşuna
-w|weiblich|kadın
-w|wertvoll|değerli
 w|westlich|batıda
 w|wirksam|etkili
 v|überfallen|saldırmak, soymak
 w|absurd|saçma
 n|die Akzeptanz|kabul
-v|besetzen|işgal etmek; doldurmak
 v|drängen|sıkıştırmak, zorlamak
 v|sich engagieren|kendini adamak
 w|fraglich|şüpheli
-w|rückwärts|geriye
 n|die Tragödie|trajedi
-v|abstimmen|oylamak
 n|der Ausschluss|dışlama
-w|drüben|karşıda
 w|durchgehend|kesintisiz
 v|entkommen|kaçmak
 v|erlassen|çıkarmak (yasa); bağışlamak
-v|ernähren|beslemek
 v|erschaffen|yaratmak
-w|menschlich|insani
 w|psychisch|ruhsal
-v|realisieren|gerçekleştirmek
 w|vergangen|geçmiş
-w|fällig|vadesi gelmiş
 w|gegenwärtig|şimdiki
 w|heilig|kutsal
 w|klassisch|klasik
-v|korrigieren|düzeltmek
 v|lenken|yönlendirmek
-w|sympathisch|sempatik
 w|unerwartet|beklenmedik
 w|ausnahmsweise|bir defalık
 n|die Ermittlung|soruşturma
 v|gönnen|layık görmek
 w|intern|iç
-w|künstlich|yapay
 v|leuchten|parlamak
 w|lose|gevşek
 w|naiv|saf
@@ -2728,29 +3941,23 @@ w|vereinzelt|tek tük
 v|ahnen|sezmek
 v|angreifen|saldırmak
 v|erobern|fethetmek
-w|geheim|gizli
 w|harmlos|zararsız
-w|intelligent|zeki
 n|die Lebensqualität|yaşam kalitesi
 v|loswerden|kurtulmak
 w|nebeneinander|yan yana
 n|das Selbstbewusstsein|özgüven
-v|unterrichten|ders vermek
 v|vernichten|yok etmek
 w|verschlossen|kapalı; içine kapanık
 n|das Weltbild|dünya görüşü
 w|wörtlich|kelimesi kelimesine
 w|östlich|doğuda
 n|die Abgrenzung|ayrım
-v|sich aufregen|sinirlenmek
-v|beleidigen|hakaret etmek
 v|bestreiten|inkâr etmek; karşılamak
 v|blockieren|engellemek
 v|ergreifen|yakalamak; almak (önlem)
 v|hinzufügen|eklemek
 w|liebevoll|sevgi dolu
 w|mies|berbat
-v|mischen|karıştırmak
 w|nüchtern|ayık; nesnel
 w|optisch|görsel
 v|strahlen|ışıldamak
@@ -2759,12 +3966,10 @@ n|die Unterscheidung|ayrım
 n|der Unterstützer|destekçi
 v|abhalten|düzenlemek; engellemek
 w|anderswo|başka yerde
-v|austauschen|değiş tokuş etmek
 w|ausverkauft|tükenmiş
 w|beiseite|bir kenara
 w|dramatisch|dramatik
 w|erwünscht|istenen
-w|gesamt|toplam
 w|neutral|tarafsız
 w|platt|düz; şaşkın
 v|stützen|desteklemek
@@ -2773,9 +3978,7 @@ n|die Attacke|saldırı
 n|der Austritt|çıkış, ayrılma
 n|die Befragung|sorgu, anket
 w|beliebig|herhangi
-w|eigen|kendi
 n|das Feuerwerk|havai fişek
-v|garantieren|garanti etmek
 w|gemischt|karışık
 n|die Publikation|yayın
 w|schräg|eğik
@@ -2797,7 +4000,6 @@ w|allerlei|türlü türlü
 v|angehören|ait olmak
 v|anhalten|durmak
 n|die Auslegung|yorum
-v|ausrichten|iletmek; düzenlemek
 v|belasten|yük olmak
 v|einsehen|kabul etmek, anlamak
 v|flüchten|kaçmak
@@ -2806,18 +4008,14 @@ w|verwickelt|karışık; bulaşmış
 v|verzeichnen|kaydetmek
 n|die Zugehörigkeit|aidiyet
 v|entfallen|düşmek, iptal olmak
-w|gleichfalls|aynı şekilde
 n|die Inspiration|ilham
 n|die Leistungsfähigkeit|verimlilik
 v|ablegen|çıkarmak; vermek (sınav)
 v|absolvieren|bitirmek
 n|der Anwohner|bölge sakini
-v|erfinden|icat etmek
-w|frech|arsız
 n|die Immobilie|gayrimenkul
 n|die Rendite|getiri
 w|schlank|ince
-w|steil|dik
 n|der Stellenwert|önem
 v|veranstalten|düzenlemek
 w|allenfalls|olsa olsa
@@ -2828,14 +4026,11 @@ w|demokratisch|demokratik
 w|erfolglos|başarısız
 n|die Lebensweise|yaşam tarzı
 w|nacheinander|birbiri ardına
-v|reinigen|temizlemek
-v|stehlen|çalmak
 w|transparent|şeffaf
 v|verwirklichen|gerçekleştirmek
 w|zweifellos|şüphesiz
 n|der Ansprechpartner|irtibat kişisi
 v|benennen|adlandırmak
-v|bestrafen|cezalandırmak
 n|der Entschluss|karar
 v|erteilen|vermek (izin, ders)
 w|grausam|zalim
@@ -2847,11 +4042,9 @@ v|abschaffen|kaldırmak
 n|das Darlehen|kredi, borç
 n|die Insolvenz|iflas
 v|nachfragen|sormak
-v|sich nähern|yaklaşmak
 w|selbständig|bağımsız
 w|unerträglich|dayanılmaz
 n|der Zusammenschluss|birleşme
-v|ausreichen|yetmek
 v|ausscheiden|elenmek; ayrılmak
 n|die Ausschreibung|ihale; ilan
 n|der Ausstieg|çıkış
@@ -2860,21 +4053,14 @@ n|die Gleichberechtigung|eşit haklar
 w|moralisch|ahlaki
 w|schmerzhaft|acı verici
 w|ungerecht|haksız
-w|verdächtig|şüpheli
-v|vereinbaren|kararlaştırmak
 w|versehentlich|yanlışlıkla
 v|zittern|titremek
 w|abwechselnd|dönüşümlü
 n|der Auftraggeber|işveren, müşteri
 v|beschleunigen|hızlandırmak
 v|besiegen|yenmek
-v|sich erholen|dinlenmek, iyileşmek
-n|die Festplatte|sabit disk
-v|genügen|yetmek
 n|die Intensität|yoğunluk
 w|nutzlos|işe yaramaz
-w|optimistisch|iyimser
-w|romantisch|romantik
 """,
 "C1.1": """
 n|die Annahme|varsayım; kabul
@@ -2883,8 +4069,6 @@ n|die Tragweite|önem, kapsam
 n|der Sachverhalt|olay, durum (resmî)
 n|die Befugnis|yetki
 n|die Beeinträchtigung|olumsuz etki, engel
-n|der Verdacht|şüphe
-n|die Rücksicht|saygı, göz önüne alma
 n|die Anerkennung|tanınma; takdir
 n|der Missbrauch|kötüye kullanım
 n|die Schwachstelle|zayıf nokta, açık
@@ -2905,7 +4089,6 @@ v|bewerkstelligen|becermek, başarmak|er bewerkstelligt · hat bewerkstelligt
 w|maßgeblich|belirleyici
 w|nachhaltig|sürdürülebilir; kalıcı
 w|ausschlaggebend|belirleyici, kesin
-w|vorläufig|geçici
 w|stichhaltig|sağlam (argüman)
 n|die Abwägung|tartma, değerlendirme
 n|der Anreiz|teşvik
@@ -2968,10 +4151,8 @@ v|entlassen; abtun|reddetmek, işten çıkarmak
 v|näher ausführen|ayrıntılandırmak
 v|ertragen, aushalten|dayanmak, katlanmak
 v|überschreiten|aşmak, geçmek
-v|ausschließen|dışlamak, hariç tutmak
 v|ausbeuten, ausnutzen|sömürmek, istismar etmek
 v|aussetzen; aufdecken|maruz bırakmak, ifşa etmek
-v|erleichtern|kolaylaştırmak
 v|herausfinden, verstehen|çözmek, anlamak
 v|regieren, bestimmen|yönetmek, belirlemek
 v|zögern|tereddüt etmek
@@ -2979,7 +4160,6 @@ v|andeuten, implizieren|ima etmek
 v|auferlegen, aufzwingen|dayatmak, yüklemek
 v|bestehen auf|ısrar etmek
 v|inspirieren|ilham vermek
-v|integrieren|entegre etmek, bütünleştirmek
 v|sich einmischen, stören|müdahale etmek, karışmak
 v|interpretieren, deuten|yorumlamak
 v|eingreifen|araya girmek, müdahale etmek
@@ -2987,14 +4167,12 @@ v|manipulieren|manipüle etmek, yönlendirmek
 v|modifizieren, ändern|değiştirmek, uyarlamak
 v|verhandeln|müzakere etmek, pazarlık yapmak
 v|skizzieren, umreißen|ana hatlarıyla belirtmek
-v|überreden|ikna etmek
 v|anwerben, einstellen|işe almak
 v|unterlassen, sich enthalten|kaçınmak, geri durmak
 v|verstärken|pekiştirmek, güçlendirmek
 v|entlasten, lindern|rahatlatmak, hafifletmek
 v|machen zu; erbringen|hâle getirmek, sunmak
 v|ähneln|benzemek
-v|beschränken|kısıtlamak
 v|abrufen, zurückholen|geri almak, geri getirmek
 v|stärken|güçlendirmek
 v|streben|çabalamak, gayret etmek
@@ -3003,7 +4181,6 @@ v|maßschneidern, anpassen|özel olarak uyarlamak
 v|verwandeln|dönüştürmek
 v|durchlaufen, sich unterziehen|geçirmek, maruz kalmak
 v|untergraben|zayıflatmak, baltalamak
-v|überprüfen|doğrulamak
 v|zurückziehen, abheben|geri çekmek, çekilmek
 v|standhalten|dayanmak, karşı koymak
 n|die Rechenschaftspflicht|hesap verebilirlik
@@ -3026,7 +4203,6 @@ n|der Präzedenzfall|emsal
 n|die Prämisse|öncül, dayanak
 n|die Verbreitung, die Häufigkeit|yaygınlık
 n|die Argumentation|akıl yürütme
-n|der Rest|geri kalan
 n|die genaue Prüfung|yakın inceleme
 n|der Überschuss|fazlalık, artı değer
 n|die Schwelle|eşik
@@ -3070,10 +4246,8 @@ w|fragwürdig|kuşkulu
 w|widerwillig|isteksiz
 w|streng, gründlich|titiz, sıkı
 w|robust|sağlam, güçlü
-w|knapp|kıt
 w|unkompliziert|dolaysız, anlaşılır
 w|anfällig|duyarlı, açık (etkiye)
-w|gründlich|etraflı, derinlemesine
 w|einstimmig|oybirliğiyle
 w|beispiellos|eşi görülmemiş
 w|vielseitig|çok yönlü
@@ -3106,16 +4280,13 @@ v|aufklären|aydınlatmak
 w|dergleichen|benzeri
 w|durchweg|baştan sona
 w|einmalig|tek seferlik; eşsiz
-w|elegant|zarif
 w|empfindlich|hassas
 w|entsetzt|dehşete düşmüş
 v|erlernen|öğrenmek (beceri)
 n|das Exil|sürgün
 n|die Globalisierung|küreselleşme
 n|die Komplexität|karmaşıklık
-v|loben|övmek
 n|das Massaker|katliam
-v|protestieren|protesto etmek
 v|registrieren|kaydetmek
 n|das Repertoire|repertuvar
 n|die Straftat|suç
@@ -3137,7 +4308,6 @@ n|das Misstrauen|güvensizlik
 w|neidisch|kıskanç
 n|die Reduzierung|azaltma
 w|regelrecht|resmen
-v|schwitzen|terlemek
 n|die Tötung|öldürme
 n|das Umland|çevre bölge
 w|unfähig|yeteneksiz
@@ -3155,13 +4325,9 @@ v|fügen|eklemek, birleştirmek
 n|das Gesundheitswesen|sağlık sistemi
 w|ironisch|ironik
 v|knacken|kırmak, çatlatmak
-n|der Notruf|acil çağrı
-w|passiv|pasif
 v|rügen|azarlamak
 n|das Tabu|tabu
-v|tippen|yazmak (klavye); tahmin etmek
 n|das Trauma|travma
-v|trocknen|kurutmak
 n|die Umwandlung|dönüştürme
 w|unsichtbar|görünmez
 v|verschenken|hediye etmek
@@ -3173,10 +4339,8 @@ v|beibringen|öğretmek
 v|beschaffen|temin etmek
 w|eiskalt|buz gibi
 n|die Flexibilität|esneklik
-v|gratulieren|tebrik etmek
 w|hilflos|çaresiz
 v|hindern|engellemek
-n|der Hörer|dinleyici; ahize
 n|die Inschrift|kitabe
 n|die Kehle|gırtlak
 n|die Manipulation|manipülasyon
@@ -3184,13 +4348,10 @@ v|meistern|üstesinden gelmek
 w|notfalls|gerekirse
 v|pfeifen|ıslık çalmak
 v|platzen|patlamak; suya düşmek
-w|populär|popüler
 w|religiös|dindar
 n|die Sichtweise|bakış açısı
-w|strafbar|cezai, suç teşkil eden
 v|täuschen|aldatmak
 w|verborgen|gizli
-v|verurteilen|mahkûm etmek
 v|wegnehmen|elinden almak
 n|die Begrenzung|sınırlama
 n|der Betrachter|izleyici
@@ -3213,7 +4374,6 @@ n|der Zeitplan|zaman çizelgesi
 w|albern|saçma
 n|die Anhörung|duruşma, dinleme
 n|die Anschaffung|satın alma
-w|aufwärts|yukarı
 v|auskommen mit|geçinmek
 n|die Demenz|bunama
 v|einlegen|koymak; itiraz etmek
@@ -3223,7 +4383,6 @@ n|die Gewissheit|kesinlik
 v|jammern|sızlanmak
 n|die Klausur|sınav (üniversite)
 n|die Klärung|açıklık getirme
-w|meinetwegen|bana kalırsa, olur
 n|die Mitgliederversammlung|genel kurul
 v|prägen|şekillendirmek
 n|die Psyche|ruh
@@ -3250,13 +4409,11 @@ v|ablenken|dikkatini dağıtmak
 n|die Abrechnung|hesaplaşma; fatura
 w|anständig|edepli, düzgün
 v|ausdenken (sich)|uydurmak, düşünmek
-v|einfügen|eklemek, yapıştırmak
 v|erwachen|uyanmak
 v|kassieren|tahsil etmek
 w|niedlich|şirin
 v|schildern|anlatmak, betimlemek
 v|verkünden|ilan etmek
-v|verzeihen|bağışlamak
 w|wünschenswert|arzu edilir
 n|das Arzneimittel|ilaç
 v|aufbringen|bulmak, toplamak (para, cesaret)
@@ -3290,7 +4447,6 @@ w|ausnahmslos|istisnasız
 v|aussterben|nesli tükenmek
 v|befragen|sorgulamak, sormak
 n|das Desaster|felaket
-w|eilig|acele
 v|sich einlassen auf|bulaşmak, girişmek
 n|die Konfrontation|yüzleşme
 w|konservativ|muhafazakâr
@@ -3300,7 +4456,6 @@ w|oberflächlich|yüzeysel
 w|sehenswert|görülmeye değer
 w|seinerseits|o da kendi tarafından
 w|sichtlich|gözle görülür biçimde
-w|stumm|dilsiz, sessiz
 w|tragisch|trajik
 v|verfassen|kaleme almak
 v|verschicken|göndermek
@@ -3336,7 +4491,6 @@ n|das Anschreiben|ön yazı (başvuru)
 n|die Beschaffenheit|nitelik
 v|beschützen|korumak
 n|die Besteuerung|vergilendirme
-w|biologisch|biyolojik
 n|das Erscheinungsbild|dış görünüş
 v|erziehen|yetiştirmek
 w|flüssig|akıcı; sıvı
@@ -3346,7 +4500,6 @@ w|ineinander|iç içe
 n|das Jugendamt|gençlik dairesi
 n|der Lebensstil|yaşam tarzı
 n|das Milieu|çevre
-v|nützen|yaramak
 n|die Optimierung|iyileştirme
 w|prompt|derhal
 n|das Ritual|ritüel
@@ -3365,7 +4518,6 @@ v|ausbilden|yetiştirmek
 n|die Drohne|drone
 n|die Faszination|büyülenme
 w|gehoben|üst düzey
-w|kulturell|kültürel
 v|verbleiben|kalmak
 n|die Vermarktung|pazarlama
 n|die Verschiebung|kaydırma, erteleme
@@ -3389,13 +4541,11 @@ n|die Gruppierung|gruplaşma
 v|jubeln|sevinç çığlığı atmak
 n|die Konstellation|durum, düzen
 w|manuell|el ile
-n|die Nachhilfe|özel ders
 n|die Schreibweise|yazılış
 v|verwalten|yönetmek
 v|zusammenhängen|bağlantılı olmak
 w|anschaulich|açık, somut
 v|ansetzen|planlamak; başlamak
-n|der Betriebsrat|işçi temsilciliği
 w|erfreulich|sevindirici
 v|erwecken|uyandırmak
 v|erwischen|yakalamak
@@ -3407,7 +4557,6 @@ n|das Meisterwerk|başyapıt
 v|rauschen|hışırdamak
 n|die Rechtslage|hukuki durum
 v|reiben|ovmak
-w|spitz|sivri
 v|unterzeichnen|imzalamak
 v|verhungern|açlıktan ölmek
 v|sich verständigen|anlaşmak
@@ -3415,7 +4564,6 @@ w|zurückhaltend|ölçülü, çekingen
 v|anbringen|takmak
 v|anzünden|yakmak
 w|auffallend|dikkat çekici
-w|aufregend|heyecan verici
 w|bestenfalls|en iyi ihtimalle
 w|eineinhalb|bir buçuk
 n|der Endeffekt|nihai sonuç
@@ -3432,7 +4580,6 @@ v|rutschen|kaymak
 v|schlichten|arabuluculuk yapmak
 v|schmunzeln|gülümsemek
 w|steif|sert, kaskatı
-w|süchtig|bağımlı
 w|tagelang|günlerce
 w|tapfer|cesur
 v|tasten|el yordamıyla aramak
@@ -3444,7 +4591,6 @@ v|bereichern|zenginleştirmek
 n|die Erlösung|kurtuluş
 v|erneuern|yenilemek
 n|die Finanzkrise|finans krizi
-n|der Flohmarkt|bit pazarı
 n|die Gedenkstätte|anıt yeri
 w|glaubwürdig|inandırıcı
 n|das Grundeinkommen|temel gelir
@@ -3463,8 +4609,6 @@ w|umher|etrafta
 v|vermehren|çoğaltmak
 v|versammeln|toplamak
 v|vorwerfen|suçlamak
-v|zusagen|söz vermek; hoşa gitmek
-v|abbiegen|sapmak
 n|das Ambiente|atmosfer
 n|die Bauweise|yapım tarzı
 v|bedrohen|tehdit etmek
@@ -3511,7 +4655,6 @@ n|die Zentralbank|merkez bankası
 n|die Attraktivität|çekicilik
 v|befolgen|uymak
 n|der Blickwinkel|bakış açısı
-v|blühen|çiçek açmak
 v|bohren|delmek
 w|drittens|üçüncüsü
 w|düster|kasvetli
@@ -3526,11 +4669,9 @@ n|der Spielraum|hareket alanı, esneklik
 n|das Anliegen|istek, mesele
 n|der Werdegang|kariyer geçmişi
 n|die Gratwanderung|ince çizgide yürümek
-n|die Nachfrage|talep (piyasa)
 n|das Ausmaß|boyut, ölçek
 n|der Nachdruck|vurgu, ısrar
 n|die Hürde|engel
-n|der Kompromiss|uzlaşma
 v|bemängeln|kusur bulmak|er bemängelt · hat bemängelt
 v|sich herausstellen|ortaya çıkmak|es stellt sich heraus · hat sich herausgestellt
 v|nachgehen|peşine düşmek, takip etmek|er geht nach · ist nachgegangen
@@ -3565,7 +4706,6 @@ v|beherzigen|(öğüdü) dikkate almak
 v|bekunden|ifade etmek
 v|dulden|göz yummak
 v|einbüßen|kaybetmek
-v|entgegenkommen|uzlaşmak, yardımcı olmak
 v|erachten|saymak, addetmek
 v|ergründen|derinlemesine araştırmak
 v|sich erübrigen|gereksiz hale gelmek
@@ -3590,11 +4730,9 @@ v|ansammeln, anhäufen|birikmek, biriktirmek
 v|lindern|hafifletmek, azaltmak
 v|zuweisen, bereitstellen|tahsis etmek, ayırmak
 v|zusammenarbeiten|iş birliği yapmak
-v|zwingen|zorlamak, mecbur bırakmak
 v|zusammenstellen|derlemek
 v|verbergen|gizlemek, saklamak
 v|entsprechen; korrespondieren|karşılık gelmek, yazışmak
-v|kritisieren|eleştirmek
 v|pflegen, kultivieren|geliştirmek, yetiştirmek
 v|widmen|adamak, tahsis etmek
 v|aufschieben|ertelemek
@@ -3605,13 +4743,9 @@ v|ersinnen, entwerfen|tasarlamak, kurgulamak
 v|verringern, abnehmen|azalmak, küçültmek
 v|entmutigen, abraten|caydırmak, cesaretini kırmak
 v|verdrängen, vertreiben|yerinden etmek
-v|entsorgen|elden çıkarmak, bertaraf etmek
 v|auseinandergehen, abweichen|ayrılmak, sapmak
 v|betonen|vurgulamak
 v|mit sich bringen|gerektirmek, beraberinde getirmek
-v|übertreiben|abartmak
-v|erfüllen|yerine getirmek, karşılamak
-v|behindern|engellemek
 v|neigen zu|eğilim göstermek
 v|herbeiführen, auslösen|yol açmak, teşvik etmek
 v|hemmen|engellemek, ketlemek
@@ -3654,7 +4788,6 @@ n|die Tragfähigkeit|yaşayabilirlik, uygulanabilirlik
 w|mehrdeutig|belirsiz, çift anlamlı
 w|auffällig|göze çarpan
 w|umständlich, schwerfällig|hantal, kullanışsız
-w|schädlich|zararlı
 w|zweifelhaft|şüpheli
 w|herausragend, bedeutend|seçkin, önde gelen
 w|erschöpfend, lückenlos|çok kapsamlı, eksiksiz
@@ -3691,9 +4824,7 @@ v|kreuzen|kesişmek
 w|obgleich|-e rağmen
 v|schleppen|sürüklemek
 v|schmelzen|erimek
-w|senkrecht|dikey
 w|symbolisch|sembolik
-v|umarmen|sarılmak
 w|unberührt|el değmemiş
 w|ungestört|rahatsız edilmeden
 v|unterbinden|engellemek
@@ -3703,7 +4834,6 @@ w|vielerlei|türlü
 n|der Vormarsch|ilerleme
 w|vorzugsweise|tercihen
 n|der Wegfall|ortadan kalkma
-w|ängstlich|korkak
 n|die Überwindung|üstesinden gelme
 n|das Belieben|keyif, istek
 w|beständig|kalıcı, istikrarlı
@@ -3759,9 +4889,7 @@ w|treffend|yerinde
 w|unverschämt|küstah
 w|verbindlich|bağlayıcı
 v|verhelfen zu|yardım etmek
-w|wertlos|değersiz
 n|die Ökologie|ekoloji
-w|abwärts|aşağı
 n|die Arroganz|kibir
 w|aufrichtig|içten
 v|bedürfen|gerektirmek (+ Gen.)
@@ -3791,7 +4919,6 @@ n|die Gelassenheit|soğukkanlılık
 w|genetisch|genetik
 n|die Gänsehaut|tüyleri diken diken olma
 n|der Hauptsitz|merkez
-v|heizen|ısıtmak
 n|das Immunsystem|bağışıklık sistemi
 n|das Kindergeld|çocuk parası
 n|das Markenzeichen|alamet-i farika
@@ -3816,12 +4943,10 @@ v|hüten|korumak, bakmak
 n|das Inkrafttreten|yürürlüğe girme
 n|das Lebenswerk|ömür boyu eser
 n|die Legitimation|meşruiyet
-v|operieren|ameliyat etmek
 w|paradox|çelişkili
 n|der Prozessor|işlemci
 n|das Selbstverständnis|öz algı
 n|die Sozialhilfe|sosyal yardım
-w|sparsam|tutumlu
 n|das Spektakel|gösteri
 n|der Steuerberater|vergi danışmanı
 v|trauern|yas tutmak
@@ -3836,10 +4961,8 @@ n|die Zeitgeschichte|çağdaş tarih
 v|zuschlagen|vurmak; kapatmak
 v|abdecken|örtmek, kapsamak
 v|aufgehen|açılmak; doğmak
-v|ausstellen|sergilemek; düzenlemek (belge)
 n|die Automatisierung|otomasyon
 v|beitreten|katılmak (üye)
-v|enttäuschen|hayal kırıklığına uğratmak
 n|das Ermessen|takdir
 w|fürchterlich|korkunç
 w|gleichgültig|kayıtsız
@@ -3852,7 +4975,6 @@ v|rauben|soymak
 n|der Rechtsstreit|hukuki anlaşmazlık
 n|der Regelfall|olağan durum
 n|die Rehabilitation|rehabilitasyon
-v|verbrauchen|tüketmek
 n|die Vergebung|bağışlama
 v|verkürzen|kısaltmak
 w|vertraulich|gizli
@@ -3864,7 +4986,6 @@ v|abspielen|oynatmak
 n|die Arbeitskraft|işgücü
 w|bezeichnend|tipik
 v|durchbrechen|yarmak
-v|einpacken|paketlemek
 v|entsetzen|dehşete düşürmek
 v|erhitzen|ısıtmak
 n|das Gestein|kayaç
@@ -3883,11 +5004,9 @@ w|vergebens|boşuna
 v|verkehren|işlemek (sefer); takılmak
 v|versenden|göndermek
 w|vollends|tamamen
-v|winken|el sallamak
 v|zerbrechen|kırılmak
 w|zivil|sivil
 n|der Zuschuss|sübvansiyon
-v|abonnieren|abone olmak
 w|amtlich|resmî
 n|die Anlaufstelle|başvuru noktası
 w|aufgeschlossen|açık fikirli
@@ -3949,7 +5068,6 @@ v|einordnen|sınıflandırmak
 w|fassungslos|şaşkın
 w|gereizt|sinirli
 n|das Gespür|sezgi
-w|giftig|zehirli
 n|das Idol|idol
 v|predigen|vaaz vermek
 n|die Rangliste|sıralama
@@ -3961,7 +5079,6 @@ n|der Schadensersatz|tazminat
 w|schlagartig|birden
 v|schmücken|süslemek
 n|die Strafverfolgung|kovuşturma
-v|streiken|grev yapmak
 w|ungewohnt|alışılmadık
 v|vergraben|gömmek
 n|das Vermächtnis|miras
@@ -3974,8 +5091,6 @@ w|zweierlei|iki türlü
 v|zünden|ateşlemek
 w|allerhand|türlü türlü
 n|der Antragsteller|başvuran
-v|aufladen|şarj etmek
-v|betrügen|aldatmak, dolandırmak
 w|blutig|kanlı
 w|egoistisch|bencil
 v|einsperren|kilitlemek, hapsetmek
@@ -4006,9 +5121,6 @@ v|entführen|kaçırmak
 n|die Euphorie|coşku
 w|hohl|boş, oyuk
 v|lauschen|kulak vermek
-w|mild|ılıman
-w|mündlich|sözlü
-v|schimpfen|azarlamak, söylenmek
 n|die Selbsthilfe|kendi kendine yardım
 n|die Strafanzeige|suç duyurusu
 w|ungefährlich|tehlikesiz
@@ -4034,7 +5146,6 @@ v|unterwerfen|boyun eğdirmek
 v|verrichten|yerine getirmek
 v|vertiefen|derinleştirmek
 n|der Vorreiter|öncü
-v|sich weigern|reddetmek
 n|der Zulieferer|tedarikçi
 v|anführen|liderlik etmek; öne sürmek
 v|begehren|arzulamak
@@ -4170,14 +5281,11 @@ w|zuvorderst|her şeyden önce
 w|mühelos|zahmetsizce
 w|greifbar|somut, elle tutulur
 w|mangelhaft|yetersiz, kusurlu
-v|festnehmen|gözaltına almak
 v|erkranken|hastalanmak
-v|verhaften|tutuklamak
 v|vertuschen|örtbas etmek
 v|verachten|hor görmek
 w|unbequem|rahatsız edici
 w|fortgeschritten|ileri düzey
-n|die Mahnung|ihtar
 n|die Abmahnung|ihtarname
 n|die Missachtung|hiçe sayma
 n|die Maxime|ilke
@@ -10411,7 +11519,1115 @@ DE_EN = {'der Mann': 'man',
  'über seinen Schatten springen': "to overcome one's nature",
  'von der Pike auf lernen': 'to learn from the bottom up',
  'wie Sand am Meer': 'countless',
- 'zwischen Baum und Borke stecken': 'to be caught between a rock and a hard place'}
+ 'zwischen Baum und Borke stecken': 'to be caught between a rock and a hard place',
+ 'sich': 'oneself',
+ 'so': 'so',
+ 'was für ein': 'what kind of',
+ 'zu sein': 'to be closed',
+ 'auf sein': 'to be open; to be up',
+ 'an sein': 'to be on',
+ 'aus sein': 'to be off; to be over',
+ 'ab': 'from (on)',
+ 'ihm': '(to) him',
+ 'ihn': 'him',
+ 'das Ende': 'the end',
+ 'besser': 'better',
+ 'einmal': 'once',
+ 'dies': 'this',
+ 'lange': 'for a long time',
+ 'der Teil': 'part',
+ 'weg sein': 'to be gone',
+ 'klar': 'clear',
+ 'gerne': 'gladly',
+ 'der Dank': 'thanks',
+ 'der Anfang': 'beginning',
+ 'die Gruppe': 'group',
+ 'der Herr': 'gentleman, Mr',
+ 'die Hilfe': 'help',
+ 'ein bisschen': 'a little',
+ 'der Blick': 'look; view',
+ 'der Moment': 'moment',
+ 'der Raum': 'room; space',
+ 'das Bad': 'bathroom',
+ 'der Verein': 'club, association',
+ 'die Ordnung': 'order',
+ 'der Schluss': 'end, conclusion',
+ 'der Plan': 'plan',
+ 'geboren': 'born',
+ 'das Gespräch': 'conversation',
+ 'gestorben': 'died',
+ 'tot': 'dead',
+ 'das Ausland': 'abroad, foreign countries',
+ 'die Führung': 'guided tour; leadership',
+ 'die Heimat': 'home(land)',
+ 'fernsehen': 'to watch TV',
+ 'der Brief': 'letter',
+ 'die Aussage': 'statement',
+ 'der/die Bekannte': 'acquaintance',
+ 'die Information': 'information',
+ 'die Dame': 'lady',
+ 'das Gewicht': 'weight',
+ 'die Anzeige': 'advertisement, ad',
+ 'bar': 'in cash',
+ 'die Maschine': 'machine',
+ 'geöffnet': 'open',
+ 'die CD': 'CD',
+ 'der Lkw': 'truck, lorry',
+ 'am besten': 'best',
+ 'der Eintritt': 'admission, entry',
+ 'die Einladung': 'invitation',
+ 'die Vorsicht': 'caution',
+ 'der Glückwunsch': 'congratulations',
+ 'Rad fahren': 'to cycle',
+ 'die Lebensmittel': 'groceries, food',
+ 'der Stock': 'floor (storey)',
+ 'das Schild': 'sign',
+ 'zurzeit': 'at the moment',
+ 'der Doktor': 'doctor',
+ 'die Auskunft': 'information',
+ 'der Bogen': 'sheet; arc',
+ 'der Arbeitsplatz': 'workplace',
+ 'der Empfänger': 'recipient',
+ 'die Papiere': 'papers, documents',
+ 'bitter': 'bitter',
+ 'der Verwandte': 'relative',
+ 'der Gruß': 'greeting',
+ 'der Drucker': 'printer',
+ 'die Zigarette': 'cigarette',
+ 'die Rezeption': 'reception',
+ 'die Reparatur': 'repair',
+ 'der Appetit': 'appetite',
+ 'die Disco': 'disco',
+ 'Grad Celsius': 'degrees Celsius',
+ 'übernachten': 'to stay overnight',
+ 'die Hausfrau': 'housewife',
+ 'Lieblings-': 'favourite',
+ 'die Ansage': 'announcement',
+ 'das Fax': 'fax',
+ 'das Apartment': 'apartment',
+ 'der Buchstabe': 'letter (of the alphabet)',
+ 'der Kiosk': 'kiosk',
+ 'überweisen': 'to transfer (money)',
+ 'der Bahnsteig': 'platform',
+ 'die Birne': 'pear; light bulb',
+ 'regnen': 'to rain',
+ 'frühstücken': 'to have breakfast',
+ 'der Absender': 'sender',
+ 'der Abflug': 'departure (flight)',
+ 'der Reiseführer': 'guide; guidebook',
+ 'anmachen': 'to switch on',
+ 'der Prospekt': 'brochure',
+ 'der Geburtsort': 'place of birth',
+ 'die Durchsage': 'announcement',
+ 'die Anrede': 'form of address',
+ 'der Automat': 'vending machine',
+ 'anklicken': 'to click on',
+ 'das Reisebüro': 'travel agency',
+ 'nächste': 'next',
+ 'die Briefmarke': 'stamp',
+ 'die Vorwahl': 'area code',
+ 'das Geburtsjahr': 'year of birth',
+ 'ankreuzen': 'to tick, to cross',
+ 'der Anrufbeantworter': 'answering machine',
+ 'das Einzelzimmer': 'single room',
+ 'das Doppelzimmer': 'double room',
+ 'die Halbpension': 'half board',
+ 'der Familienname': 'surname',
+ 'die Pommes frites': 'chips, French fries',
+ 'buchstabieren': 'to spell',
+ 'der Familienstand': 'marital status',
+ 'ausländisch': 'foreign',
+ 'abfliegen': 'to take off, to depart',
+ 'auf Wiederhören': 'goodbye (on the phone)',
+ 'mal': 'once; just',
+ 'lassen': 'to let; to have sth done',
+ 'recht haben': 'to be right',
+ 'ein paar': 'a few',
+ 'auf jeden Fall': 'in any case',
+ 'hin': 'there (towards)',
+ 'online': 'online',
+ 'pro': 'per',
+ 'deutlich': 'clear, distinct',
+ 'her': 'here (towards)',
+ 'der Artikel': 'article',
+ 'die Sache': 'thing; matter',
+ 'der Spaß': 'fun',
+ 'die Idee': 'idea',
+ 'super': 'great',
+ 'raus': 'out',
+ 'rein': 'in',
+ 'dagegen sein': 'to be against it',
+ 'nächstes Mal': 'next time',
+ 'der Titel': 'title',
+ 'die Band': 'band',
+ 'die Nähe': 'vicinity',
+ 'die Reihe': 'row; turn',
+ 'das Interesse': 'interest',
+ 'die Situation': 'situation',
+ 'heraus': 'out',
+ 'fertig sein': 'to be ready; to be finished',
+ 'die Ahnung': 'idea, notion',
+ 'unterwegs sein': 'to be on the way',
+ 'aktuell': 'current',
+ 'der Besuch': 'visit; visitors',
+ 'die Lust': 'desire',
+ 'der Wagen': 'car; carriage',
+ 'außerhalb': 'outside',
+ 'der Kontakt': 'contact',
+ 'das Mittel': 'means; remedy',
+ 'tief': 'deep',
+ 'der Club': 'club',
+ 'das Gericht': 'dish; court',
+ 'das Ding': 'thing',
+ 'das Interview': 'interview',
+ 'die Kamera': 'camera',
+ 'der Link': 'link',
+ 'der Star': 'star (celebrity)',
+ 'der Traum': 'dream',
+ 'erlaubt sein': 'to be allowed',
+ 'die Ausstellung': 'exhibition',
+ 'das Radio': 'radio',
+ 'die Sendung': 'broadcast; shipment',
+ 'die Veranstaltung': 'event',
+ 'der Service': 'service',
+ 'der Witz': 'joke',
+ 'der Hamburger': 'hamburger',
+ 'das Gerät': 'device',
+ 'der Fan': 'fan',
+ 'verboten sein': 'to be forbidden',
+ 'die Homepage': 'homepage',
+ 'das Gegenteil': 'opposite',
+ 'der Vorschlag': 'suggestion',
+ 'die Übersetzung': 'translation',
+ 'der Ring': 'ring',
+ 'der Flug': 'flight',
+ 'der/das Blog': 'blog',
+ 'das Festival': 'festival',
+ 'die Zeitschrift': 'magazine',
+ 'die Landschaft': 'landscape',
+ 'fett': 'fatty; fat',
+ 'die Messe': 'trade fair; mass',
+ 'das Paket': 'parcel',
+ 'der Schmerz': 'pain',
+ 'die Rose': 'rose',
+ 'der Haushalt': 'household; budget',
+ 'fit sein': 'to be fit',
+ 'streng': 'strict',
+ 'die Pizza': 'pizza',
+ 'beraten': 'to advise',
+ 'einverstanden sein': 'to agree',
+ 'die Kette': 'chain; necklace',
+ 'die Lüge': 'lie',
+ 'die Werkstatt': 'workshop; garage',
+ 'das Instrument': 'instrument',
+ 'der Magen': 'stomach',
+ 'der Kredit': 'loan, credit',
+ 'die Gitarre': 'guitar',
+ 'das Klavier': 'piano',
+ 'das Rätsel': 'puzzle, riddle',
+ 'das Tennis': 'tennis',
+ 'der Basketball': 'basketball',
+ 'die Pflanze': 'plant',
+ 'die Erlaubnis': 'permission',
+ 'der/das Comic': 'comic',
+ 'das E-Book': 'e-book',
+ 'der Ski': 'ski',
+ 'das Tablet': 'tablet',
+ 'herstellen': 'to produce',
+ 'der Zettel': 'slip of paper, note',
+ 'die Garage': 'garage',
+ 'gültig sein': 'to be valid',
+ 'der Anzug': 'suit',
+ 'klappen': 'to work out',
+ 'sehr geehrte …': 'dear … (formal)',
+ 'die Reinigung': "dry cleaner's; cleaning",
+ 'der Workshop': 'workshop',
+ 'der Krimi': 'crime novel / film',
+ 'abschließen': 'to lock; to complete',
+ 'fotografieren': 'to photograph',
+ 'der Stiefel': 'boot',
+ 'herein': 'in',
+ 'fantastisch': 'fantastic',
+ 'das Plakat': 'poster',
+ 'das Poster': 'poster',
+ 'die Portion': 'portion',
+ 'die Süßigkeiten': 'sweets',
+ 'der Zirkus': 'circus',
+ 'einziehen': 'to move in',
+ 'der Schirm': 'umbrella',
+ 'das Gewitter': 'thunderstorm',
+ 'die Partnerin': 'partner (female)',
+ 'der Volleyball': 'volleyball',
+ 'der Apparat': 'device; phone',
+ 'die Torte': 'gateau, cake',
+ 'die Creme': 'cream',
+ 'das Geschirr': 'dishes, crockery',
+ 'blond': 'blond',
+ 'das Verkehrsmittel': 'means of transport',
+ 'die Notiz': 'note',
+ 'das Taschengeld': 'pocket money',
+ 'das Quiz': 'quiz',
+ 'joggen': 'to jog',
+ 'das Stipendium': 'scholarship',
+ 'der Rundgang': 'tour',
+ 'die Kosmetik': 'cosmetics',
+ 'das Rind': 'cattle; beef',
+ 'die Bluse': 'blouse',
+ 'der Sportplatz': 'sports ground',
+ 'verabredet sein': 'to have arranged to meet',
+ 'das Mineralwasser': 'mineral water',
+ 'stressig': 'stressful',
+ 'die Postkarte': 'postcard',
+ 'die Geldbörse': 'purse, wallet',
+ 'das Mobiltelefon': 'mobile phone',
+ 'das Parfüm': 'perfume',
+ 'preiswert': 'inexpensive',
+ 'renovieren': 'to renovate',
+ 'austragen': 'to deliver',
+ 'die Cafeteria': 'cafeteria',
+ 'die Sprechstunde': 'consulting hours',
+ 'verreisen': 'to go away (on a trip)',
+ 'die Nudel': 'noodle',
+ 'wehtun': 'to hurt',
+ 'die Bohne': 'bean',
+ 'erkältet sein': 'to have a cold',
+ 'der Stadtplan': 'city map',
+ 'der Babysitter': 'babysitter',
+ 'die Mailbox': 'voicemail',
+ 'die Ermäßigung': 'discount',
+ 'schneien': 'to snow',
+ 'der Motorroller': 'scooter',
+ 'der Fotoapparat': 'camera',
+ 'die Fundsachen': 'lost property',
+ 'tschüs': 'bye',
+ 'leidtun': 'to be sorry',
+ 'noch mal': 'once more',
+ 'nun': 'now; well',
+ 'so viel wie': 'as much as',
+ 'viele': 'many',
+ 'als ob': 'as if',
+ 'wohl': 'probably',
+ 'gar nicht': 'not at all',
+ 'der Fall': 'case',
+ 'je … desto': 'the … the',
+ 'der Grund': 'reason; ground',
+ 'überhaupt': 'at all',
+ 'los': 'go; going on',
+ 'der Gott': 'god',
+ 'der Bereich': 'area, field',
+ 'die Form': 'form, shape',
+ 'die Wahl': 'choice; election',
+ 'die Lage': 'situation; location',
+ 'der Krieg': 'war',
+ 'die Rolle': 'role',
+ 'der Tod': 'death',
+ 'jedes Mal': 'every time',
+ 'trotz': 'despite',
+ 'ebenso': 'likewise',
+ 'stehen bleiben': 'to stop',
+ 'tatsächlich': 'actually',
+ 'sich einigen': 'to agree',
+ 'das System': 'system',
+ 'bekannt geben': 'to announce',
+ 'die Höhe': 'height; amount',
+ 'die Chance': 'chance',
+ 'die Saison': 'season',
+ 'die Medien': 'media',
+ 'jeweils': 'each; in each case',
+ 'die Entscheidung': 'decision',
+ 'der Sinn': 'sense, meaning',
+ 'die Sucht': 'addiction',
+ 'die Stimme': 'voice; vote',
+ 'der König': 'king',
+ 'die Region': 'region',
+ 'die Wirtschaft': 'economy',
+ 'die Kritik': 'criticism',
+ 'das Opfer': 'victim; sacrifice',
+ 'die Rede': 'speech',
+ 'die Bevölkerung': 'population',
+ 'der Typ': 'type; guy',
+ 'der Punkt': 'point; dot',
+ 'die Regel': 'rule',
+ 'der Beginn': 'beginning',
+ 'deswegen': 'therefore',
+ 'der Politiker': 'politician',
+ 'der Bürger': 'citizen',
+ 'die Tat': 'deed; act',
+ 'der Kampf': 'fight, struggle',
+ 'die Kraft': 'strength, force',
+ 'die Liste': 'list',
+ 'der Druck': 'pressure; printing',
+ 'stimmen': 'to be right; to vote',
+ 'genauso': 'just as, exactly the same',
+ 'die Unterstützung': 'support',
+ 'wenige': 'few',
+ 'der Schritt': 'step',
+ 'die Wahrheit': 'truth',
+ 'die Schuld': 'guilt; debt',
+ 'die Gefahr': 'danger',
+ 'die Runde': 'round; group',
+ 'die Bewegung': 'movement',
+ 'der Start': 'start; take-off',
+ 'die Gewalt': 'violence',
+ 'das Gold': 'gold',
+ 'gründen': 'to found',
+ 'das Werk': 'work; plant',
+ 'irgendwann': 'sometime',
+ 'im Freien': 'outdoors',
+ 'das Zeichen': 'sign',
+ 'der Bericht': 'report',
+ 'drin': 'inside',
+ 'regelmäßig': 'regular',
+ 'interessiert': 'interested',
+ 'der Versuch': 'attempt',
+ 'sich etwas gefallen lassen': 'to put up with sth',
+ 'der Zeitpunkt': 'point in time',
+ 'regeln': 'to regulate, to sort out',
+ 'die Anzahl': 'number',
+ 'der Bau': 'construction; building',
+ 'bloß': 'just, merely',
+ 'sobald': 'as soon as',
+ 'der Meister': 'master; champion',
+ 'der Schutz': 'protection',
+ 'die Studie': 'study',
+ 'das Mitglied': 'member',
+ 'der Betrieb': 'company, business',
+ 'der Teilnehmer': 'participant',
+ 'die Jugend': 'youth',
+ 'möglichst': 'as … as possible',
+ 'das Gebiet': 'area, region; field',
+ 'der Richter': 'judge',
+ 'dahin': 'there',
+ 'schaden': 'to harm',
+ 'geboren werden': 'to be born',
+ 'gelten': 'to be valid',
+ 'die Aktion': 'action; campaign',
+ 'der Inhalt': 'content',
+ 'die Kontrolle': 'control, check',
+ 'die Literatur': 'literature',
+ 'die Diskussion': 'discussion',
+ 'das Netz': 'net, network',
+ 'das Zuhause': 'home',
+ 'der Gegensatz': 'contrast',
+ 'der Autor': 'author',
+ 'der Eindruck': 'impression',
+ 'die Szene': 'scene',
+ 'wirken': 'to have an effect; to seem',
+ 'allgemein': 'general',
+ 'der Verlag': 'publisher',
+ 'der Rat': 'advice; council',
+ 'die Leitung': 'management; line',
+ 'außen': 'outside',
+ 'der Gegner': 'opponent',
+ 'die Leiter': 'ladder',
+ 'das Urteil': 'verdict',
+ 'die Anlage': 'facility; attachment',
+ 'die Ausgabe': 'expense; edition',
+ 'enthalten': 'to contain',
+ 'der Vertreter': 'representative',
+ 'die Verwaltung': 'administration',
+ 'der Kauf': 'purchase',
+ 'das Modell': 'model',
+ 'das Gewissen': 'conscience',
+ 'der Strom': 'electricity; stream',
+ 'das Material': 'material',
+ 'die Öffentlichkeit': 'the public',
+ 'die Not': 'need, hardship',
+ 'die Wissenschaft': 'science',
+ 'das Wunder': 'miracle',
+ 'die Presse': 'press',
+ 'die Produktion': 'production',
+ 'extra': 'extra; specially',
+ 'selbstverständlich': 'of course, obvious',
+ 'der Hof': 'courtyard; farm',
+ 'die Einführung': 'introduction',
+ 'die Generation': 'generation',
+ 'der Roman': 'novel',
+ 'offiziell': 'official',
+ 'das Lager': 'warehouse; camp',
+ 'der Alkohol': 'alcohol',
+ 'die Erinnerung': 'memory; reminder',
+ 'das Institut': 'institute',
+ 'der Handel': 'trade',
+ 'die Länge': 'length',
+ 'der Zuschauer': 'spectator',
+ 'die Breite': 'width',
+ 'der Täter': 'perpetrator',
+ 'die Tatsache': 'fact',
+ 'sodass': 'so that',
+ 'der Stil': 'style',
+ 'das Holz': 'wood',
+ 'das Feld': 'field',
+ 'die Tätigkeit': 'activity',
+ 'die Darstellung': 'depiction',
+ 'die Vorstellung': 'introduction; performance; idea',
+ 'der Gewinn': 'profit; prize',
+ 'der Respekt': 'respect',
+ 'behalten': 'to keep',
+ 'die Bühne': 'stage',
+ 'die Förderung': 'promotion, funding',
+ 'die Aufnahme': 'recording; admission',
+ 'das Publikum': 'audience',
+ 'das Verständnis': 'understanding',
+ 'übrig': 'left over',
+ 'die Realität': 'reality',
+ 'steigen': 'to rise; to climb',
+ 'der Gang': 'corridor; gear; course',
+ 'pflanzen': 'to plant',
+ 'die Einrichtung': 'furnishings; institution',
+ 'der Sitz': 'seat; headquarters',
+ 'verpflichtet': 'obliged',
+ 'die Dauer': 'duration',
+ 'die Fläche': 'area, surface',
+ 'das Zeug': 'stuff',
+ 'die Pflicht': 'duty',
+ 'die Medizin': 'medicine',
+ 'der Leser': 'reader',
+ 'der Beweis': 'proof',
+ 'der Schauspieler': 'actor',
+ 'die Mühe': 'effort, trouble',
+ 'die Figur': 'figure',
+ 'die Flucht': 'escape, flight',
+ 'die Teilnahme': 'participation',
+ 'achten': 'to pay attention; to respect',
+ 'das Forum': 'forum',
+ 'der Bewohner': 'inhabitant, resident',
+ 'der Ausdruck': 'expression; printout',
+ 'das Personal': 'staff',
+ 'die Spur': 'trace; lane',
+ 'das Gas': 'gas',
+ 'der Geschmack': 'taste',
+ 'das Fahrzeug': 'vehicle',
+ 'das Boot': 'boat',
+ 'der Schlaf': 'sleep',
+ 'der Musiker': 'musician',
+ 'geeignet': 'suitable',
+ 'die Gemeinschaft': 'community',
+ 'die Zustimmung': 'approval, consent',
+ 'die Strafe': 'punishment, fine',
+ 'der Verlust': 'loss',
+ 'die Krise': 'crisis',
+ 'öfter': 'more often',
+ 'der Unternehmer': 'entrepreneur',
+ 'die Wolle': 'wool',
+ 'der Alltag': 'everyday life',
+ 'die Änderung': 'change',
+ 'die Planung': 'planning',
+ 'sämtliche': 'all',
+ 'der Schatten': 'shadow, shade',
+ 'das Kreuz': 'cross',
+ 'die Geburt': 'birth',
+ 'die Rückkehr': 'return',
+ 'der/die Tote': 'dead person',
+ 'der Sender': 'channel, transmitter',
+ 'der Sieger': 'winner',
+ 'die Operation': 'operation',
+ 'die Botschaft': 'embassy; message',
+ 'einerseits': 'on the one hand',
+ 'der Kanal': 'channel; canal',
+ 'die Herkunft': 'origin',
+ 'der Humor': 'humour',
+ 'der Rand': 'edge',
+ 'der Augenblick': 'moment',
+ 'die Station': 'station; ward',
+ 'das Verbot': 'ban',
+ 'der Vortrag': 'talk, lecture',
+ 'die Lehre': 'apprenticeship; teaching',
+ 'der Zufall': 'coincidence, chance',
+ 'der Direktor': 'director',
+ 'die Vorbereitung': 'preparation',
+ 'das Gefängnis': 'prison',
+ 'umso': 'all the more',
+ 'die Landwirtschaft': 'agriculture',
+ 'die Therapie': 'therapy',
+ 'der Stoff': 'fabric; substance; material',
+ 'das Studio': 'studio',
+ 'die Summe': 'sum',
+ 'solch': 'such',
+ 'stammen': 'to come from',
+ 'die Stufe': 'step; level',
+ 'vorn': 'at the front',
+ 'die Klinik': 'clinic',
+ 'das Klima': 'climate',
+ 'heim': 'home(wards)',
+ 'das Loch': 'hole',
+ 'nachdenken': 'to think about',
+ 'nochmals': 'once again',
+ 'der Bauer': 'farmer',
+ 'der Wissenschaftler': 'scientist',
+ 'schweigen': 'to be silent',
+ 'die Konkurrenz': 'competition',
+ 'die Mauer': 'wall',
+ 'die Unterhaltung': 'conversation; entertainment',
+ 'Bescheid sagen': 'to let sb know',
+ 'das Abenteuer': 'adventure',
+ 'das Magazin': 'magazine',
+ 'der Gedanke': 'thought',
+ 'einschließlich': 'including',
+ 'das Geschlecht': 'gender, sex',
+ 'beschäftigen': 'to occupy; to employ',
+ 'die Brust': 'chest, breast',
+ 'die Wirklichkeit': 'reality',
+ 'die Ernährung': 'nutrition',
+ 'der Sänger': 'singer',
+ 'der Konflikt': 'conflict',
+ 'üblich': 'usual',
+ 'die Rente': 'pension',
+ 'bio': 'organic',
+ 'die Burg': 'castle',
+ 'auseinander': 'apart',
+ 'der Tanz': 'dance',
+ 'entlassen': 'to dismiss; to discharge',
+ 'der Sand': 'sand',
+ 'das Geheimnis': 'secret',
+ 'in Rente gehen': 'to retire',
+ 'die Beratung': 'advice, consultation',
+ 'die Trennung': 'separation',
+ 'wenden': 'to turn',
+ 'schießen': 'to shoot',
+ 'der Schriftsteller': 'writer',
+ 'die Kindheit': 'childhood',
+ 'die Galerie': 'gallery',
+ 'der Händler': 'dealer, trader',
+ 'die Hitze': 'heat',
+ 'das Golf': 'golf',
+ 'die Unterlagen': 'documents',
+ 'der Betrag': 'amount',
+ 'die Technologie': 'technology',
+ 'der Durchschnitt': 'average',
+ 'intensiv': 'intensive',
+ 'die Schrift': 'writing, script',
+ 'die Verletzung': 'injury',
+ 'die Zone': 'zone',
+ 'begrenzt': 'limited',
+ 'die Konferenz': 'conference',
+ 'der Dialog': 'dialogue',
+ 'das Symbol': 'symbol',
+ 'das Kabel': 'cable',
+ 'national': 'national',
+ 'der Transport': 'transport',
+ 'der Protest': 'protest',
+ 'der Abschied': 'farewell',
+ 'die Qualifikation': 'qualification',
+ 'befreit': 'exempt; freed',
+ 'das Talent': 'talent',
+ 'der Dreck': 'dirt',
+ 'die Schulter': 'shoulder',
+ 'der Knochen': 'bone',
+ 'das Grundstück': 'plot of land',
+ 'die Reform': 'reform',
+ 'dorthin': 'there',
+ 'die Meldung': 'report; notification',
+ 'die Wärme': 'warmth',
+ 'aufgeben': 'to give up; to post',
+ 'der Experte': 'expert',
+ 'der Sack': 'sack',
+ 'die Versammlung': 'meeting, assembly',
+ 'die Katastrophe': 'catastrophe',
+ 'der Mangel': 'lack, shortage',
+ 'der Lohn': 'wage',
+ 'begrüßen': 'to greet; to welcome',
+ 'die Oper': 'opera',
+ 'das Metall': 'metal',
+ 'die Fortsetzung': 'continuation, sequel',
+ 'die Angabe': 'statement, information',
+ 'das Pech': 'bad luck',
+ 'die Intelligenz': 'intelligence',
+ 'vorhaben': 'to plan, to intend',
+ 'das Ufer': 'shore, bank',
+ 'schick': 'chic, smart',
+ 'die Schauspielerin': 'actress',
+ 'die Störung': 'disruption; fault',
+ 'der Held': 'hero',
+ 'die Hütte': 'hut, cabin',
+ 'der Fortschritt': 'progress',
+ 'ausgebildet': 'trained, qualified',
+ 'der Patient': 'patient',
+ 'ideal': 'ideal',
+ 'sich vergnügen': 'to enjoy oneself',
+ 'die Grafik': 'graphic',
+ 'die Distanz': 'distance',
+ 'prima': 'great',
+ 'das Erlebnis': 'experience',
+ 'voneinander': 'from each other',
+ 'der Hauptbahnhof': 'main station',
+ 'der Maler': 'painter',
+ 'der Radfahrer': 'cyclist',
+ 'die Fabrik': 'factory',
+ 'die Beschäftigung': 'occupation; employment',
+ 'der Sportler': 'athlete',
+ 'hinweisen': 'to point out',
+ 'der Gegenstand': 'object',
+ 'das Unglück': 'accident; misfortune',
+ 'der Bart': 'beard',
+ 'regional': 'regional',
+ 'die Bestätigung': 'confirmation',
+ 'das Dokument': 'document',
+ 'der Saal': 'hall',
+ 'die Scheibe': 'slice; pane',
+ 'der Käufer': 'buyer',
+ 'gießen': 'to water; to pour',
+ 'der Zeuge': 'witness',
+ 'der Tropfen': 'drop',
+ 'das Orchester': 'orchestra',
+ 'hierher': 'here',
+ 'die Reihenfolge': 'order, sequence',
+ 'der Rekord': 'record',
+ 'festhalten': 'to hold on; to record',
+ 'der Kandidat': 'candidate',
+ 'das Kennzeichen': 'number plate; feature',
+ 'der Reporter': 'reporter',
+ 'das Spielzeug': 'toy',
+ 'der/die Kranke': 'sick person',
+ 'der Lärm': 'noise',
+ 'der Rasen': 'lawn',
+ 'nirgendwo': 'nowhere',
+ 'der/die Angehörige': 'relative',
+ 'die Senioren': 'senior citizens',
+ 'der Katalog': 'catalogue',
+ 'der Nachwuchs': 'offspring; young talent',
+ 'die Anleitung': 'instructions',
+ 'der Staub': 'dust',
+ 'sich stoßen': 'to bump oneself',
+ 'der Klick': 'click',
+ 'obere': 'upper',
+ 'das Gedicht': 'poem',
+ 'das Leder': 'leather',
+ 'die Zahlung': 'payment',
+ 'der Alarm': 'alarm',
+ 'pflegen': 'to care for',
+ 'der Kuss': 'kiss',
+ 'zentral': 'central',
+ 'die Kälte': 'cold',
+ 'die Urkunde': 'certificate',
+ 'die Wiese': 'meadow',
+ 'die Kurve': 'bend; curve',
+ 'das Werkzeug': 'tool',
+ 'angeben': 'to state; to show off',
+ 'anschließen': 'to connect',
+ 'die Schwangerschaft': 'pregnancy',
+ 'die Vermittlung': 'mediation, agency',
+ 'der Hügel': 'hill',
+ 'die Fantasie': 'imagination',
+ 'einfallen': 'to occur to',
+ 'der Schein': 'banknote; certificate; appearance',
+ 'das Plastik': 'plastic',
+ 'die Erfindung': 'invention',
+ 'der Verbrecher': 'criminal',
+ 'der Kasten': 'box, crate',
+ 'grüßen': 'to greet',
+ 'fließen': 'to flow',
+ 'sich beteiligen': 'to take part',
+ 'die Couch': 'couch',
+ 'der Einbruch': 'burglary',
+ 'die Eisenbahn': 'railway',
+ 'der Übersetzer': 'translator',
+ 'worum': 'what about',
+ 'schalten': 'to switch; to change gear',
+ 'die Scheidung': 'divorce',
+ 'das Gift': 'poison',
+ 'unentschieden': 'drawn; undecided',
+ 'der Knopf': 'button',
+ 'die Gewerkschaft': 'trade union',
+ 'die Zeichnung': 'drawing',
+ 'die Wiederholung': 'repetition',
+ 'worüber': 'what about',
+ 'die Vertretung': 'substitute; representation',
+ 'der Blitz': 'lightning; flash',
+ 'die Kiste': 'box, crate',
+ 'der Nagel': 'nail',
+ 'der Fotograf': 'photographer',
+ 'die Zeile': 'line',
+ 'die Erholung': 'rest, recovery',
+ 'die Flüssigkeit': 'liquid',
+ 'die Abbildung': 'illustration',
+ 'die Enttäuschung': 'disappointment',
+ 'die Infektion': 'infection',
+ 'das Diplom': 'diploma',
+ 'anstellen': 'to employ; to switch on; to queue',
+ 'die Pension': 'guesthouse; pension',
+ 'das Kissen': 'pillow, cushion',
+ 'reif': 'ripe, mature',
+ 'der Fleck': 'stain',
+ 'die Batterie': 'battery',
+ 'einrichten': 'to furnish; to set up',
+ 'die Entlassung': 'dismissal; discharge',
+ 'der Karneval': 'carnival',
+ 'das Gebirge': 'mountains',
+ 'der Umweltschutz': 'environmental protection',
+ 'die Uniform': 'uniform',
+ 'der Fußgänger': 'pedestrian',
+ 'der Treffpunkt': 'meeting point',
+ 'der Grill': 'grill',
+ 'der Export': 'export',
+ 'herausfinden': 'to find out',
+ 'die Mahlzeit': 'meal',
+ 'der Lautsprecher': 'loudspeaker',
+ 'die Lippe': 'lip',
+ 'die Terrasse': 'terrace',
+ 'die Diät': 'diet',
+ 'die Dose': 'can, tin',
+ 'der Ozean': 'ocean',
+ 'der Monitor': 'monitor',
+ 'die Überschrift': 'heading',
+ 'die Zutaten': 'ingredients',
+ 'der Abfall': 'waste',
+ 'untersagt': 'prohibited',
+ 'der Dialekt': 'dialect',
+ 'die Wanderung': 'hike',
+ 'einführen': 'to introduce; to import',
+ 'der Streik': 'strike',
+ 'das Kostüm': 'costume; suit',
+ 'die Aussprache': 'pronunciation',
+ 'der Salon': 'salon',
+ 'sich scheiden lassen': 'to get divorced',
+ 'verwechseln': 'to confuse, to mix up',
+ 'die Münze': 'coin',
+ 'musikalisch': 'musical',
+ 'der Beleg': 'receipt, proof',
+ 'das Ehepaar': 'married couple',
+ 'versichern': 'to insure; to assure',
+ 'das Vitamin': 'vitamin',
+ 'derselbe': 'the same',
+ 'der Wirt': 'landlord; host',
+ 'der Wohnsitz': 'place of residence',
+ 'das Quartier': 'accommodation; quarter',
+ 'das Schnitzel': 'schnitzel',
+ 'der Spielplatz': 'playground',
+ 'der/die Studierende': 'student',
+ 'das Menü': 'set menu',
+ 'die Landung': 'landing',
+ 'die Einnahme': 'income; taking',
+ 'die Kabine': 'cabin',
+ 'die Fahrbahn': 'carriageway',
+ 'die Frisur': 'hairstyle',
+ 'die Frucht': 'fruit',
+ 'transportieren': 'to transport',
+ 'die Pille': 'pill',
+ 'die Badewanne': 'bathtub',
+ 'der Dieb': 'thief',
+ 'der Wohnort': 'place of residence',
+ 'die Kneipe': 'pub',
+ 'der Ordner': 'folder',
+ 'die Buchhandlung': 'bookshop',
+ 'auflösen': 'to dissolve',
+ 'der Pilz': 'mushroom',
+ 'der Einbrecher': 'burglar',
+ 'stechen': 'to sting; to prick',
+ 'rauf': 'up',
+ 'das Tuch': 'cloth; scarf',
+ 'die Etage': 'floor',
+ 'die Schüssel': 'bowl',
+ 'schütteln': 'to shake',
+ 'vergrößern': 'to enlarge',
+ 'das Lexikon': 'encyclopaedia',
+ 'das Nahrungsmittel': 'foodstuff',
+ 'der Zuhörer': 'listener',
+ 'zuschauen': 'to watch',
+ 'beschließen': 'to decide',
+ 'das Kraftwerk': 'power station',
+ 'der Kunststoff': 'plastic',
+ 'minimal': 'minimal',
+ 'die Fähre': 'ferry',
+ 'flexibel': 'flexible',
+ 'ausdrucken': 'to print out',
+ 'die Puppe': 'doll',
+ 'die Nadel': 'needle',
+ 'der Bauernhof': 'farm',
+ 'der Briefkasten': 'letterbox',
+ 'die Fachleute': 'experts',
+ 'die Droge': 'drug',
+ 'der Wecker': 'alarm clock',
+ 'die Vorschrift': 'regulation',
+ 'das Referat': 'presentation, paper',
+ 'die Broschüre': 'brochure',
+ 'das Pflaster': 'plaster; paving',
+ 'die Soße': 'sauce',
+ 'beißen': 'to bite',
+ 'elektrisch': 'electric',
+ 'der Spezialist': 'specialist',
+ 'der Metzger': 'butcher',
+ 'das Gasthaus': 'inn',
+ 'überfahren': 'to run over',
+ 'die Reportage': 'report, documentary',
+ 'der Nerv': 'nerve',
+ 'überqueren': 'to cross',
+ 'die Taste': 'key, button',
+ 'pauschal': 'flat-rate; sweeping',
+ 'die Eile': 'hurry',
+ 'der Import': 'import',
+ 'vorlesen': 'to read aloud',
+ 'überholen': 'to overtake',
+ 'die Bremse': 'brake',
+ 'das Treppenhaus': 'staircase',
+ 'die Kerze': 'candle',
+ 'klingeln': 'to ring',
+ 'der Fachmann': 'expert',
+ 'betreuen': 'to look after',
+ 'der Schreck': 'fright',
+ 'der Sekretär': 'secretary',
+ 'klopfen': 'to knock',
+ 'das Ballett': 'ballet',
+ 'abheben': 'to withdraw; to take off',
+ 'die Ausfahrt': 'exit',
+ 'äußerlich': 'external',
+ 'der Pfleger': 'nurse, carer',
+ 'die Sportart': 'type of sport',
+ 'die Metropole': 'metropolis',
+ 'der Frieden': 'peace',
+ 'der Kakao': 'cocoa',
+ 'der Muskel': 'muscle',
+ 'unterlassen': 'to refrain from',
+ 'blass': 'pale',
+ 'die Einfahrt': 'entrance (driveway)',
+ 'die Schwierigkeit': 'difficulty',
+ 'der Raucher': 'smoker',
+ 'fließend': 'fluent',
+ 'die Gaststätte': 'restaurant',
+ 'der Zuschlag': 'surcharge',
+ 'die Fremdsprache': 'foreign language',
+ 'das Buffet': 'buffet',
+ 'die Spritze': 'injection, syringe',
+ 'die Mensa': 'university canteen',
+ 'die Zinsen': 'interest',
+ 'der Donner': 'thunder',
+ 'das Alphabet': 'alphabet',
+ 'der Essig': 'vinegar',
+ 'die Fernbedienung': 'remote control',
+ 'die Enkelin': 'granddaughter',
+ 'der Vorort': 'suburb',
+ 'die Flöte': 'flute',
+ 'zugehen': 'to close; to approach',
+ 'die Garderobe': 'cloakroom',
+ 'der Imbiss': 'snack bar',
+ 'das Müsli': 'muesli',
+ 'roh': 'raw',
+ 'das Portemonnaie': 'purse',
+ 'die Schachtel': 'box',
+ 'innere': 'inner',
+ 'die Gratulation': 'congratulations',
+ 'die Rückfahrt': 'return journey',
+ 'das Dessert': 'dessert',
+ 'die Kantine': 'canteen',
+ 'zelten': 'to camp',
+ 'das Picknick': 'picnic',
+ 'der Fasching': 'carnival',
+ 'der Passagier': 'passenger',
+ 'elektronisch': 'electronic',
+ 'der Lift': 'lift',
+ 'die Umleitung': 'diversion',
+ 'die Vorfahrt': 'right of way',
+ 'genehmigen': 'to approve',
+ 'die Rufnummer': 'phone number',
+ 'taub': 'deaf',
+ 'der Nichtraucher': 'non-smoker',
+ 'die Vermietung': 'renting out',
+ 'die Rundfahrt': 'tour',
+ 'das Schaufenster': 'shop window',
+ 'die Vase': 'vase',
+ 'der Ratschlag': 'piece of advice',
+ 'anschaffen': 'to acquire',
+ 'sich erkundigen': 'to enquire',
+ 'das Gebäck': 'pastries',
+ 'der Lehrling': 'apprentice',
+ 'die Klingel': 'doorbell',
+ 'der Korridor': 'corridor',
+ 'ökologisch': 'ecological',
+ 'der Tierpark': 'zoo',
+ 'der Schnupfen': 'cold, sniffles',
+ 'aufschreiben': 'to write down',
+ 'der Sozialarbeiter': 'social worker',
+ 'die Visitenkarte': 'business card',
+ 'mager': 'lean; thin',
+ 'die Gymnastik': 'gymnastics, exercises',
+ 'die Neuigkeit': 'piece of news',
+ 'bluten': 'to bleed',
+ 'die Reservierung': 'reservation',
+ 'tolerant': 'tolerant',
+ 'die Kanne': 'pot, jug',
+ 'das Girokonto': 'current account',
+ 'zubereiten': 'to prepare (food)',
+ 'befriedigend': 'satisfactory',
+ 'die Salbe': 'ointment',
+ 'stinken': 'to stink',
+ 'das Konsulat': 'consulate',
+ 'gleichberechtigt': 'having equal rights',
+ 'beschädigen': 'to damage',
+ 'der Terminkalender': 'diary, planner',
+ 'das Altenheim': "old people's home",
+ 'ankündigen': 'to announce',
+ 'die Personalien': 'personal details',
+ 'die Übernachtung': 'overnight stay',
+ 'das Hackfleisch': 'minced meat',
+ 'frieren': 'to be cold; to freeze',
+ 'abschreiben': 'to copy',
+ 'vordere': 'front',
+ 'das Heimweh': 'homesickness',
+ 'die Mülltonne': 'dustbin',
+ 'das Feuerzeug': 'lighter',
+ 'verpacken': 'to pack, to wrap',
+ 'das Taschentuch': 'handkerchief, tissue',
+ 'der Einfall': 'idea',
+ 'die Zange': 'pliers',
+ 'anhaben': 'to have on',
+ 'die Aushilfe': 'temporary help',
+ 'die Speise': 'dish, food',
+ 'die Kassette': 'cassette',
+ 'hupen': 'to honk',
+ 'sich amüsieren': 'to have fun',
+ 'stilistisch': 'stylistic',
+ 'eilen': 'to hurry',
+ 'vergnügt': 'cheerful',
+ 'virtuell': 'virtual',
+ 'die Drogerie': "chemist's",
+ 'alltäglich': 'everyday',
+ 'einzahlen': 'to pay in',
+ 'blitzen': 'to flash; to be caught speeding',
+ 'der Tagesablauf': 'daily routine',
+ 'einbrechen': 'to break in',
+ 'der Hausmann': 'househusband',
+ 'die Reklame': 'advertising',
+ 'entspannend': 'relaxing',
+ 'die Brieftasche': 'wallet',
+ 'die Einbahnstraße': 'one-way street',
+ 'das Einschreiben': 'registered letter',
+ 'sich verabreden': 'to arrange to meet',
+ 'die Verabredung': 'appointment, date',
+ 'der Wetterbericht': 'weather report',
+ 'abwesend': 'absent',
+ 'selbe': 'same',
+ 'mittlere': 'middle',
+ 'die Büchse': 'tin, can',
+ 'die Bürste': 'brush',
+ 'die Abgase': 'exhaust fumes',
+ 'verschreiben': 'to prescribe',
+ 'die Müllabfuhr': 'refuse collection',
+ 'die Wettervorhersage': 'weather forecast',
+ 'die Einzahlung': 'deposit',
+ 'der Strafzettel': 'parking ticket',
+ 'das Waschmittel': 'detergent',
+ 'der Migrant': 'migrant',
+ 'das Laufwerk': 'drive',
+ 'nachschlagen': 'to look up',
+ 'festsetzen': 'to fix, to set',
+ 'sich entschließen': 'to decide',
+ 'die Umweltverschmutzung': 'pollution',
+ 'abwaschen': 'to wash up',
+ 'versäumen': 'to miss',
+ 'berufstätig': 'working, employed',
+ 'zurechtkommen': 'to cope',
+ 'die Pflaume': 'plum',
+ 'das Souvenir': 'souvenir',
+ 'die Diskothek': 'discotheque',
+ 'duzen': 'to address as "du"',
+ 'das Inserat': 'advertisement',
+ 'eckig': 'angular',
+ 'der Lerner': 'learner',
+ 'dekorieren': 'to decorate',
+ 'das Verkehrszeichen': 'road sign',
+ 'der Kloß': 'dumpling',
+ 'das Gewürz': 'spice',
+ 'das Sonderangebot': 'special offer',
+ 'waagerecht': 'horizontal',
+ 'sich ereignen': 'to happen',
+ 'die Lehrstelle': 'apprenticeship',
+ 'das Kraftfahrzeug': 'motor vehicle',
+ 'der Briefträger': 'postman',
+ 'donnern': 'to thunder',
+ 'der Umtausch': 'exchange',
+ 'der Strumpf': 'stocking, sock',
+ 'der Kopierer': 'photocopier',
+ 'kaputtmachen': 'to break',
+ 'der Steward': 'steward',
+ 'die Möhre': 'carrot',
+ 'feststehen': 'to be certain',
+ 'die Stewardess': 'stewardess',
+ 'der Kuli': 'biro, pen',
+ 'das Streichholz': 'match',
+ 'der Briefumschlag': 'envelope',
+ 'sich siezen': 'to address each other as "Sie"',
+ 'die Gebrauchsanweisung': 'instructions for use',
+ 'die Bedienungsanleitung': 'operating instructions',
+ 'halbtags': 'part-time',
+ 'das Fundbüro': 'lost property office',
+ 'anschnallen': 'to fasten seatbelt',
+ 'der Speisewagen': 'dining car',
+ 'faulenzen': 'to laze about',
+ 'die Zweitsprache': 'second language',
+ 'abmachen': 'to agree; to remove',
+ 'die Annonce': 'advertisement',
+ 'staubsaugen': 'to vacuum',
+ 'herunterfahren': 'to shut down',
+ 'die Klassenarbeit': 'class test',
+ 'städtisch': 'urban; municipal',
+ 'kaputtgehen': 'to break down',
+ 'möbliert': 'furnished',
+ 'die Kriminalpolizei': 'criminal police',
+ 'besondere': 'special',
+ 'der Abfalleimer': 'waste bin',
+ 'der Kursleiter': 'course instructor',
+ 'verpflegen': 'to cater for',
+ 'die Konfitüre': 'jam',
+ 'das Suchtmittel': 'addictive substance',
+ 'die Chipkarte': 'smart card',
+ 'die Einzelheit': 'detail',
+ 'der Profisportler': 'professional athlete',
+ 'die Zahncreme': 'toothpaste',
+ 'interkulturell': 'intercultural',
+ 'hageln': 'to hail',
+ 'der Intensivkurs': 'intensive course',
+ 'sich erkälten': 'to catch a cold',
+ 'die Geschwindigkeitsbeschränkung': 'speed limit',
+ 'die Schlagsahne': 'whipped cream',
+ 'der Personenstand': 'civil status',
+ 'sogenannt': 'so-called',
+ 'heutig': "today's",
+ 'runterwerfen': 'to throw down',
+ 'der/die Serviceangestellte': 'service employee',
+ 'nämlich': 'namely, you see',
+ 'gleichzeitig': 'at the same time',
+ 'zusätzlich': 'additional',
+ 'relativ': 'relatively',
+ 'ausschließlich': 'exclusively',
+ 'der Prozess': 'process; trial',
+ 'unterstützen': 'to support',
+ 'der Dienst': 'service; duty',
+ 'die Forschung': 'research',
+ 'die Erklärung': 'explanation',
+ 'die Alternative': 'alternative',
+ 'die Reaktion': 'reaction',
+ 'das Risiko': 'risk',
+ 'die Theorie': 'theory',
+ 'andererseits': 'on the other hand',
+ 'zufällig': 'by chance',
+ 'auftreten': 'to occur; to perform',
+ 'abhängig': 'dependent',
+ 'die Methode': 'method',
+ 'der Abschnitt': 'section',
+ 'anfangs': 'at first',
+ 'die Statistik': 'statistics',
+ 'das Kapitel': 'chapter',
+ 'parallel': 'parallel',
+ 'die Tabelle': 'table, chart',
+ 'die Umfrage': 'survey',
+ 'umgekehrt': 'the other way round',
+ 'kritisch': 'critical',
+ 'klären': 'to clarify',
+ 'das Virus': 'virus',
+ 'der Faktor': 'factor',
+ 'theoretisch': 'theoretical',
+ 'veröffentlichen': 'to publish',
+ 'vermuten': 'to suspect, to assume',
+ 'alternativ': 'alternative',
+ 'berechnen': 'to calculate',
+ 'statistisch': 'statistical',
+ 'auswählen': 'to choose',
+ 'der Betreuer': 'carer; supervisor',
+ 'aufheben': 'to pick up; to keep',
+ 'einheitlich': 'uniform',
+ 'zahlreich': 'numerous',
+ 'das Zertifikat': 'certificate',
+ 'unterstreichen': 'to underline'}
 
 DE_EN_ACADEMIC = {'die Forschung': 'research',
  'die Daten (Pl.)': 'data',

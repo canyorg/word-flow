@@ -347,6 +347,19 @@ def de_en(table):
     return lambda w, tr: table.get(w, tr)
 
 
+EN_RU_DAILY = {**russian.EN_RU, **getattr(russian, "EN_RU_DAILY", {})}
+DE_RU_GENERAL = {**russian.DE_RU, **getattr(russian, "DE_RU_GENERAL", {})}
+
+
+def en_ru(mode):
+    """Russian meanings; everyday words can differ from the academic/cyber sense."""
+    return EN_RU_DAILY if mode == "daily" else russian.EN_RU
+
+
+def de_ru(mode):
+    return DE_RU_GENERAL if mode == "general" else russian.DE_RU
+
+
 def to_ru(table):
     return lambda w, tr: table.get(w, tr)
 
@@ -415,32 +428,32 @@ PAIRS = {
                         "cyber": parse_reverse(german.GERMAN_CYBER, "cyber", lambda w: w)}},
     "en-ru": {"title": "Word Flow · EN → RU", "ui": "ru", "src": "en", "dst": "ru",
               "state": "word-flow-en-ru",
-              "modes": {m: parse_block(r, m, to_ru(russian.EN_RU)) for m, r in
+              "modes": {m: parse_block(r, m, to_ru(en_ru(m))) for m, r in
                         (("daily", english.DAILY), ("academic", english.ACADEMIC),
                          ("cyber", english.CYBER))}},
     "de-ru": {"title": "Word Flow · DE → RU", "ui": "ru", "src": "de", "dst": "ru",
               "state": "word-flow-de-ru",
-              "modes": {m: parse_block(r, m, to_ru(russian.DE_RU)) for m, r in
+              "modes": {m: parse_block(r, m, to_ru(de_ru(m))) for m, r in
                         (("general", german.GERMAN), ("academic", german.GERMAN_ACADEMIC),
                          ("cyber", german.GERMAN_CYBER))}},
     "tr-ru": {"title": "Word Flow · TR → RU", "ui": "ru", "src": "tr", "dst": "ru",
               "state": "word-flow-tr-ru",
-              "modes": {m: parse_reverse(r, m, lambda w: russian.EN_RU.get(w, w)) for m, r in
+              "modes": {m: parse_reverse(r, m, lambda w, t=en_ru(m): t.get(w, w)) for m, r in
                         (("daily", english.DAILY), ("academic", english.ACADEMIC),
                          ("cyber", english.CYBER))}},
     "ru-tr": {"title": "Word Flow · RU → TR", "ui": "tr", "src": "ru", "dst": "tr",
               "state": "word-flow-ru-tr",
-              "modes": {m: parse_ru(r, m, russian.EN_RU, lambda w, tr: tr) for m, r in
+              "modes": {m: parse_ru(r, m, en_ru(m), lambda w, tr: tr) for m, r in
                         (("daily", english.DAILY), ("academic", english.ACADEMIC),
                          ("cyber", english.CYBER))}},
     "ru-en": {"title": "Word Flow · RU → EN", "ui": "en", "src": "ru", "dst": "en",
               "state": "word-flow-ru-en",
-              "modes": {m: parse_ru(r, m, russian.EN_RU, lambda w, tr: w) for m, r in
+              "modes": {m: parse_ru(r, m, en_ru(m), lambda w, tr: w) for m, r in
                         (("daily", english.DAILY), ("academic", english.ACADEMIC),
                          ("cyber", english.CYBER))}},
     "ru-de": {"title": "Word Flow · RU → DE", "ui": "de", "src": "ru", "dst": "de",
               "state": "word-flow-ru-de",
-              "modes": {m: parse_ru(r, m, russian.DE_RU, lambda w, tr: w) for m, r in
+              "modes": {m: parse_ru(r, m, de_ru(m), lambda w, tr: w) for m, r in
                         (("general", german.GERMAN), ("academic", german.GERMAN_ACADEMIC),
                          ("cyber", german.GERMAN_CYBER))}},
 }
