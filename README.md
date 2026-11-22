@@ -50,6 +50,8 @@ Word Flow is a single app for English, German, Turkish and Russian. On first sta
 - You can drag the card anywhere and 📍 lock it in place. It stays on top of other windows, and you can set your own background image.
 - Your progress is saved separately for each language combination in `~/.config/…`.
 
+![Report: progress per level, score distribution and the learned list](screenshots/report-en.png)
+
 ### Windows
 Download **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** and double-click it. That's all: there is nothing to install and no Python needed. To start it automatically, right-click the card and tick **Start with Windows**.
 
@@ -123,6 +125,8 @@ Word Flow İngilizce, Almanca, Türkçe ve Rusça için tek bir uygulama. İlk a
 - **Almanca artikeller renkli:** *der* mavi, *die* pembe, *das* yeşil. Fiillerin altında çekimleri görünür (*er fährt · ist gefahren*, *went · gone*).
 - Kartı istediğin yere sürükleyip 📍 ile sabitleyebilirsin. Diğer pencerelerin üstünde kalır ve istersen kendi arka plan resmini seçebilirsin.
 - İlerlemen her dil kombinasyonu için ayrı olarak `~/.config/…` içinde saklanır.
+
+![Rapor: seviye başına ilerleme, puan dağılımı ve öğrendiklerim listesi](screenshots/report-tr.png)
 
 ### Windows
 **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** dosyasını indir ve çift tıkla. Bu kadar: kurulum yok, Python gerekmiyor. Bilgisayar açılınca kendiliğinden başlasın istersen karta sağ tıklayıp **Windows ile başlat** seçeneğini işaretle.
@@ -198,6 +202,8 @@ Word Flow ist eine einzige App für Englisch, Deutsch, Türkisch und Russisch. B
 - Du kannst die Karte überallhin ziehen und mit 📍 fixieren. Sie bleibt über anderen Fenstern, und du kannst ein eigenes Hintergrundbild wählen.
 - Dein Fortschritt wird für jede Sprachkombination getrennt in `~/.config/…` gespeichert.
 
+![Bericht: Fortschritt pro Niveau, Notenverteilung und die Liste „Gelernt“](screenshots/report-de.png)
+
 ### Windows
 **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** herunterladen und doppelklicken. Fertig: keine Installation, kein Python nötig. Damit es automatisch startet, Rechtsklick auf die Karte und **Mit Windows starten** anhaken.
 
@@ -247,6 +253,8 @@ Word Flow — одно приложение для английского, не�
 **Windows:** скачайте **[WordFlow.exe](https://github.com/canyorg/word-flow/releases/latest/download/WordFlow.exe)** и запустите двойным щелчком — ничего устанавливать не нужно. Автозапуск: правый клик по карточке → **Запускать вместе с Windows**. Если появится окно «Windows защитила ваш компьютер», нажмите **Подробнее → Выполнить в любом случае**.
 
 Всё остальное (уровни A1.1–C2.2, оценка каждого слова от 1 до 10 — слова показываются случайно, а 10 = «знаю», слово больше не показывается и его можно вернуть в отчёте (правый клик → 📊 Отчёт), три режима, установка) работает так же, как описано выше.
+
+![Отчёт: прогресс по уровням, распределение оценок и выученные слова](screenshots/report-ru.png)
 
 ---
 

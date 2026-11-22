@@ -43,7 +43,8 @@ from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton,
                              QVBoxLayout, QHBoxLayout, QGridLayout,
                              QStackedWidget, QMenu, QFileDialog, QSizePolicy,
                              QDialog, QTabWidget, QTableWidget, QTableWidgetItem,
-                             QHeaderView, QAbstractItemView, QMessageBox)
+                             QHeaderView, QAbstractItemView, QMessageBox,
+                             QProgressBar)
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wordlists import german, english, russian  # noqa: E402
@@ -339,7 +340,7 @@ PAIR_FOR = {("tr", "en"): "en-tr", ("tr", "de"): "de-tr",
             ("tr", "ru"): "ru-tr", ("en", "ru"): "ru-en", ("de", "ru"): "ru-de"}
 
 PAIRS = {
-    "de-tr": {"title": "Kelime Akışı · DE → TR", "ui": "tr", "src": "de", "dst": "tr",
+    "de-tr": {"title": "Word Flow · DE → TR", "ui": "tr", "src": "de", "dst": "tr",
               "state": "kelime-akisi",
               "modes": {"general": parse_block(german.GERMAN, "general", lambda w, tr: tr),
                         "academic": parse_block(german.GERMAN_ACADEMIC, "academic",
@@ -561,7 +562,7 @@ class ReportDialog(QDialog):
         self.ww = ww
         T = ww.T
         self.setWindowTitle(f"{T['r_title']} · {ww.pair['title'].split('·')[-1].strip()}")
-        self.resize(640, 520)
+        self.resize(690, 560)
         self.setStyleSheet(DIALOG_CSS)
         v = QVBoxLayout(self)
         self.tabs = QTabWidget()
@@ -660,13 +661,23 @@ class ReportDialog(QDialog):
             lasts = [r["h"][-1][1] for r in seen]
             avg = round(sum(lasts) / len(lasts), 1) if lasts else ""
             pct = round(100 * learned / len(keys)) if keys else 0
-            bar = "█" * (pct // 10) + "░" * (10 - pct // 10) + f"  {pct}%"
-            rows.append({"cells": [lv, len(keys), len(seen), learned, avg, bar]})
+            rows.append({"cells": [lv, len(keys), len(seen), learned, avg, ""], "pct": pct})
             tot[0] += len(keys); tot[1] += len(seen); tot[2] += learned; tot[3] += lasts
         avg = round(sum(tot[3]) / len(tot[3]), 1) if tot[3] else ""
         pct = round(100 * tot[2] / tot[0]) if tot[0] else 0
-        rows.append({"cells": [T["r_all"], tot[0], tot[1], tot[2], avg, f"{pct}%"]})
+        rows.append({"cells": [T["r_all"], tot[0], tot[1], tot[2], avg, ""], "pct": pct})
         self.fill(self.lv_table, rows)
+        for r, row in enumerate(rows):
+            bar = QProgressBar()
+            bar.setRange(0, 100)
+            bar.setValue(row["pct"])
+            bar.setFormat("%p%")
+            bar.setStyleSheet(
+                "QProgressBar{background:#2a2640;border:none;border-radius:6px;color:white;"
+                "text-align:center;font-size:11px;margin:5px 6px;}"
+                "QProgressBar::chunk{border-radius:6px;background:qlineargradient("
+                "x1:0,y1:0,x2:1,y2:0,stop:0 #6f5cf0,stop:1 #d6aa3c);}")
+            self.lv_table.setCellWidget(r, 5, bar)
 
         n_ratings = sum(len(r["h"]) for r in recs.values())
         week = datetime.datetime.now().timestamp() - 7 * 86400
@@ -853,7 +864,10 @@ class WordWidget(QWidget):
         self.level_btn.setCursor(Qt.CursorShape.PointingHandCursor)
         self.level_btn.setToolTip(self.T["tip_level"])
         self.level_btn.clicked.connect(self.show_picker)
+        self.level_btn.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         self.type_lbl = QLabel()
+        self.type_lbl.setSizePolicy(QSizePolicy.Policy.Ignored, QSizePolicy.Policy.Preferred)
+        self.type_lbl.setMinimumWidth(0)
         self.type_lbl.setStyleSheet("color:rgba(255,255,255,0.55);"
                                     "font-size:9px;font-weight:700;letter-spacing:1px;")
         self.stats_lbl = QLabel()
@@ -864,8 +878,7 @@ class WordWidget(QWidget):
         self.pin_btn.setCursor(Qt.CursorShape.PointingHandCursor)
         self.pin_btn.clicked.connect(self.toggle_pin)
         top.addWidget(self.level_btn)
-        top.addWidget(self.type_lbl)
-        top.addStretch(1)
+        top.addWidget(self.type_lbl, 1)
         top.addWidget(self.stats_lbl)
         if self.controller:
             self.lang_btn = QPushButton("🌐")
@@ -1122,11 +1135,19 @@ class WordWidget(QWidget):
             self.m_lbl.setText(colorize_german(e["m"], gold))
         else:
             self.m_lbl.setText(f"<span style='color:{gold}'>{escape(e['m'])}</span>")
-        self.type_lbl.setText(self.T["types"].get(e["t"], ""))
+        self.set_type(self.T["types"].get(e["t"], ""))
         h = self.ws(e["key"])["h"]
         self.style_scores(h[-1][1] if h else None)   # outline = your last score
         for b in self.score_btns:
             b.setEnabled(True)
+
+    def set_type(self, text):
+        """Word-type tag (NOUN, VERB …) — dropped when the top row has no room for it."""
+        used = (self.level_btn.sizeHint().width() + self.stats_lbl.minimumWidth()
+                + 26 * (2 if self.controller else 1) + 6 * 5)
+        room = APP_W - 32 - used
+        fits = QFontMetrics(self.type_lbl.font()).horizontalAdvance(text) + 12 <= room
+        self.type_lbl.setText(text if fits else "")
 
     def render_empty(self):
         self.w_lbl.setFont(self.fit_font(self.T["all_learned"], 14, 9, APP_W - 36))
