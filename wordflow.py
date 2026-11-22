@@ -41,7 +41,9 @@ from PyQt6.QtGui import (QPainter, QColor, QLinearGradient, QRadialGradient,
                          QActionGroup)
 from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton,
                              QVBoxLayout, QHBoxLayout, QGridLayout,
-                             QStackedWidget, QMenu, QFileDialog, QSizePolicy)
+                             QStackedWidget, QMenu, QFileDialog, QSizePolicy,
+                             QDialog, QTabWidget, QTableWidget, QTableWidgetItem,
+                             QHeaderView, QAbstractItemView, QMessageBox)
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wordlists import german, english, russian  # noqa: E402
@@ -52,8 +54,38 @@ CONFIG_ROOT = os.path.join(os.path.expanduser("~"), ".config")
 # --------------------------------------------------------------------------- UI text
 UI = {
     "tr": {
-        "know": "✓ Biliyorum", "dont": "✗ Bilmiyordum",
-        "tip_know": "Öğrendim — daha az göster", "tip_dont": "Daha sık göster",
+        "rate_tip": "Ne kadar biliyorsun? 1 = hiç, 9 = neredeyse. 10 = tam biliyorum, bir daha gösterme",
+        "rate_10": "10 = tam biliyorum — bir daha gösterme (Rapor → Öğrendiklerim'den geri getirilebilir)",
+        "stats_tip": "Bugün puanlanan · öğrenilen (bu modda)",
+        "all_learned": "Bu seviyedeki tüm kelimeleri öğrendin 🎉",
+        "all_learned2": "Seviyeyi yükselt ya da Rapor → Öğrendiklerim'den kelime geri getir",
+        "m_report": "📊 Rapor ve öğrendiklerim…",
+        "r_title": "Word Flow — Rapor",
+        "r_summary": "Özet",
+        "r_words": "Puanladıklarım",
+        "r_learned": "Öğrendiklerim",
+        "r_level": "Seviye",
+        "r_total": "Kelime",
+        "r_seen": "Puanlanan",
+        "r_learned_n": "Öğrenilen",
+        "r_avg": "Ort. puan",
+        "r_progress": "İlerleme",
+        "r_all": "Toplam",
+        "r_ratings": "Toplam puanlama",
+        "r_dist": "Puan dağılımı (son puanlar)",
+        "r_week": "Son 7 gün",
+        "r_word": "Kelime",
+        "r_meaning": "Anlam",
+        "r_count": "Kaç kez",
+        "r_last": "Son",
+        "r_hist": "Geçmiş",
+        "r_date": "Tarih",
+        "r_restore": "Seçilenleri geri getir",
+        "r_restore_tip": "Kelime tekrar gösterilmeye başlar",
+        "r_none": "Henüz yok",
+        "r_mode": "Mod",
+        "r_close": "Kapat",
+        "reset_q": "Bu dil yönündeki tüm puanlar ve öğrenilen kelimeler silinsin mi?",
         "next": "Sonraki", "tip_level": "Mod / seviye değiştir",
         "pin_on": "Konum kilitli — aç", "pin_off": "Konumu kilitle",
         "choose": "Seviyeni seç",
@@ -74,8 +106,38 @@ UI = {
                   "p": "KALIP", "w": "KELİME"},
     },
     "en": {
-        "know": "✓ I know it", "dont": "✗ Didn't know",
-        "tip_know": "Learned — show less often", "tip_dont": "Show more often",
+        "rate_tip": "How well do you know it? 1 = not at all, 9 = almost. 10 = I know it, don't show again",
+        "rate_10": "10 = I know it — don't show again (bring it back from Report → Learned)",
+        "stats_tip": "Rated today · learned (this mode)",
+        "all_learned": "You've learned every word at this level 🎉",
+        "all_learned2": "Pick a higher level or bring words back from Report → Learned",
+        "m_report": "📊 Report and learned words…",
+        "r_title": "Word Flow — Report",
+        "r_summary": "Summary",
+        "r_words": "Rated words",
+        "r_learned": "Learned",
+        "r_level": "Level",
+        "r_total": "Words",
+        "r_seen": "Rated",
+        "r_learned_n": "Learned",
+        "r_avg": "Avg. score",
+        "r_progress": "Progress",
+        "r_all": "Total",
+        "r_ratings": "Ratings in total",
+        "r_dist": "Score distribution (latest scores)",
+        "r_week": "Last 7 days",
+        "r_word": "Word",
+        "r_meaning": "Meaning",
+        "r_count": "Times",
+        "r_last": "Last",
+        "r_hist": "History",
+        "r_date": "Date",
+        "r_restore": "Bring selected back",
+        "r_restore_tip": "The word will be shown again",
+        "r_none": "Nothing yet",
+        "r_mode": "Mode",
+        "r_close": "Close",
+        "reset_q": "Delete all scores and learned words for this language pair?",
         "next": "Next", "tip_level": "Change mode / level",
         "pin_on": "Position locked — unlock", "pin_off": "Lock position",
         "choose": "Choose your level",
@@ -96,8 +158,38 @@ UI = {
                   "p": "PHRASE", "w": "WORD"},
     },
     "de": {
-        "know": "✓ Kann ich", "dont": "✗ Wusste ich nicht",
-        "tip_know": "Gelernt — seltener zeigen", "tip_dont": "Öfter zeigen",
+        "rate_tip": "Wie gut kennst du es? 1 = gar nicht, 9 = fast. 10 = kann ich, nicht mehr zeigen",
+        "rate_10": "10 = kann ich — nicht mehr zeigen (zurückholen unter Bericht → Gelernt)",
+        "stats_tip": "Heute bewertet · gelernt (in diesem Modus)",
+        "all_learned": "Du hast alle Wörter dieses Niveaus gelernt 🎉",
+        "all_learned2": "Wähle ein höheres Niveau oder hol Wörter unter Bericht → Gelernt zurück",
+        "m_report": "📊 Bericht und gelernte Wörter…",
+        "r_title": "Word Flow — Bericht",
+        "r_summary": "Übersicht",
+        "r_words": "Bewertete Wörter",
+        "r_learned": "Gelernt",
+        "r_level": "Niveau",
+        "r_total": "Wörter",
+        "r_seen": "Bewertet",
+        "r_learned_n": "Gelernt",
+        "r_avg": "Ø Note",
+        "r_progress": "Fortschritt",
+        "r_all": "Gesamt",
+        "r_ratings": "Bewertungen insgesamt",
+        "r_dist": "Verteilung (letzte Bewertung)",
+        "r_week": "Letzte 7 Tage",
+        "r_word": "Wort",
+        "r_meaning": "Bedeutung",
+        "r_count": "Mal",
+        "r_last": "Zuletzt",
+        "r_hist": "Verlauf",
+        "r_date": "Datum",
+        "r_restore": "Ausgewählte zurückholen",
+        "r_restore_tip": "Das Wort wird wieder angezeigt",
+        "r_none": "Noch nichts",
+        "r_mode": "Modus",
+        "r_close": "Schließen",
+        "reset_q": "Alle Bewertungen und gelernten Wörter dieses Sprachpaars löschen?",
         "next": "Weiter", "tip_level": "Modus / Niveau ändern",
         "pin_on": "Position gesperrt — entsperren", "pin_off": "Position sperren",
         "choose": "Wähle dein Niveau",
@@ -118,8 +210,38 @@ UI = {
                   "p": "WENDUNG", "w": "WORT"},
     },
     "ru": {
-        "know": "✓ Знаю", "dont": "✗ Не знал(а)",
-        "tip_know": "Выучил(а) — показывать реже", "tip_dont": "Показывать чаще",
+        "rate_tip": "Насколько хорошо вы знаете слово? 1 = совсем нет, 9 = почти. 10 = знаю, больше не показывать",
+        "rate_10": "10 = знаю — больше не показывать (вернуть: Отчёт → Выученные)",
+        "stats_tip": "Оценено сегодня · выучено (в этом режиме)",
+        "all_learned": "Вы выучили все слова этого уровня 🎉",
+        "all_learned2": "Выберите уровень выше или верните слова: Отчёт → Выученные",
+        "m_report": "📊 Отчёт и выученные слова…",
+        "r_title": "Word Flow — Отчёт",
+        "r_summary": "Сводка",
+        "r_words": "Оценённые слова",
+        "r_learned": "Выученные",
+        "r_level": "Уровень",
+        "r_total": "Слов",
+        "r_seen": "Оценено",
+        "r_learned_n": "Выучено",
+        "r_avg": "Ср. оценка",
+        "r_progress": "Прогресс",
+        "r_all": "Всего",
+        "r_ratings": "Всего оценок",
+        "r_dist": "Распределение (последние оценки)",
+        "r_week": "Последние 7 дней",
+        "r_word": "Слово",
+        "r_meaning": "Значение",
+        "r_count": "Раз",
+        "r_last": "Последняя",
+        "r_hist": "История",
+        "r_date": "Дата",
+        "r_restore": "Вернуть выбранные",
+        "r_restore_tip": "Слово снова начнёт показываться",
+        "r_none": "Пока ничего",
+        "r_mode": "Режим",
+        "r_close": "Закрыть",
+        "reset_q": "Удалить все оценки и выученные слова для этой языковой пары?",
         "next": "Дальше", "tip_level": "Сменить режим / уровень",
         "pin_on": "Позиция закреплена — открепить", "pin_off": "Закрепить позицию",
         "choose": "Выберите уровень",
@@ -341,6 +463,262 @@ def btn_css(bg, hover):
             "font-weight:600;}QPushButton:hover{background:%s;}" % (bg, hover))
 
 
+def score_color(n):
+    """1 = red … 9 = green-ish, 10 = gold (learned)."""
+    if n == 10:
+        return (214, 170, 60)
+    t = (n - 1) / 8
+    return (int(220 - 150 * t), int(80 + 100 * t), int(100 - 10 * t))
+
+
+def score_css(n, outlined):
+    if n is None:
+        bg, hv = "rgba(255,255,255,0.14)", "rgba(255,255,255,0.28)"
+    else:
+        r, g, b = score_color(n)
+        bg, hv = f"rgba({r},{g},{b},0.45)", f"rgba({r},{g},{b},0.9)"
+    border = "2px solid rgba(255,255,255,0.95)" if outlined else "none"
+    return ("QPushButton{color:white;background:%s;border:%s;border-radius:7px;"
+            "padding:0px;font-size:11px;font-weight:700;}"
+            "QPushButton:hover{background:%s;}"
+            "QPushButton:disabled{color:rgba(255,255,255,0.3);"
+            "background:rgba(255,255,255,0.06);}" % (bg, border, hv))
+
+
+DIALOG_CSS = """
+QDialog, QTabWidget::pane, QTableWidget, QLabel {background:#1d1a2e; color:#ece9ff;}
+QTabWidget::pane {border:1px solid #3a3558; border-radius:8px; top:-1px;}
+QTabBar::tab {background:#2a2640; color:#cfc9f0; padding:7px 16px; margin-right:3px;
+              border-top-left-radius:8px; border-top-right-radius:8px;}
+QTabBar::tab:selected {background:#5b4fc4; color:white;}
+QTableWidget {gridline-color:#3a3558; border:none; alternate-background-color:#242038;
+              selection-background-color:#5b4fc4;}
+QHeaderView::section {background:#2a2640; color:#cfc9f0; border:none; padding:5px;
+                      font-weight:600;}
+QPushButton {background:#5b4fc4; color:white; border:none; border-radius:8px;
+             padding:7px 14px; font-weight:600;}
+QPushButton:hover {background:#7466e0;}
+QPushButton:disabled {background:#3a3558; color:#8c86ad;}
+"""
+
+
+class DistChart(QWidget):
+    """Bar chart of the latest score of every rated word (1–10)."""
+    def __init__(self):
+        super().__init__()
+        self.counts = [0] * 11
+        self.setMinimumHeight(110)
+
+    def set_counts(self, counts):
+        self.counts = counts
+        self.update()
+
+    def paintEvent(self, ev):
+        p = QPainter(self)
+        p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        w, h = self.width(), self.height()
+        slot = w / 10
+        bw = min(34.0, slot * 0.62)
+        mx = max(self.counts[1:]) or 1
+        top, bottom = 16, h - 18
+        f = QFont(self.font())
+        f.setPointSizeF(8.5)
+        p.setFont(f)
+        for n in range(1, 11):
+            x = (n - 1) * slot + (slot - bw) / 2
+            bh = (bottom - top) * self.counts[n] / mx
+            p.setPen(Qt.PenStyle.NoPen)
+            p.setBrush(QColor(255, 255, 255, 18))
+            p.drawRoundedRect(QRectF(x, top, bw, bottom - top), 4, 4)
+            p.setBrush(QColor(*score_color(n)))
+            if bh > 0:
+                p.drawRoundedRect(QRectF(x, bottom - bh, bw, bh), 4, 4)
+            p.setPen(QColor("#cfc9f0"))
+            p.drawText(QRectF(x - 10, bottom - bh - 15, bw + 20, 14),
+                       Qt.AlignmentFlag.AlignCenter, str(self.counts[n]))
+            p.setPen(QColor("white"))
+            p.drawText(QRectF(x - 10, bottom + 2, bw + 20, 14),
+                       Qt.AlignmentFlag.AlignCenter, str(n))
+        p.end()
+
+
+class SortItem(QTableWidgetItem):
+    """Table cell that sorts by a hidden value (dates, scores) instead of its text."""
+    def __lt__(self, other):
+        a = self.data(Qt.ItemDataRole.UserRole + 1)
+        b = other.data(Qt.ItemDataRole.UserRole + 1)
+        if a is not None and b is not None:
+            return a < b
+        return super().__lt__(other)
+
+
+class ReportDialog(QDialog):
+    """Right-click → Report: progress per level, every rating, and the learned list
+    (words scored 10) from which words can be brought back."""
+
+    def __init__(self, ww):
+        super().__init__(None)
+        self.ww = ww
+        T = ww.T
+        self.setWindowTitle(f"{T['r_title']} · {ww.pair['title'].split('·')[-1].strip()}")
+        self.resize(640, 520)
+        self.setStyleSheet(DIALOG_CSS)
+        v = QVBoxLayout(self)
+        self.tabs = QTabWidget()
+        v.addWidget(self.tabs)
+
+        # summary
+        page = QWidget()
+        pv = QVBoxLayout(page)
+        self.head = QLabel()
+        self.head.setWordWrap(True)
+        self.head.setTextFormat(Qt.TextFormat.RichText)
+        pv.addWidget(self.head)
+        self.lv_table = self.table([T["r_level"], T["r_total"], T["r_seen"],
+                                    T["r_learned_n"], T["r_avg"], T["r_progress"]])
+        pv.addWidget(self.lv_table, 1)
+        self.dist_lbl = QLabel(T["r_dist"])
+        self.dist_lbl.setStyleSheet("color:#cfc9f0;")
+        pv.addWidget(self.dist_lbl)
+        self.dist = DistChart()
+        pv.addWidget(self.dist)
+        self.tabs.addTab(page, T["r_summary"])
+
+        # rated words
+        self.w_table = self.table([T["r_word"], T["r_meaning"], T["r_level"], T["r_count"],
+                                   T["r_last"], T["r_avg"], T["r_hist"], T["r_date"]])
+        self.w_table.setSortingEnabled(True)
+        self.w_table.horizontalHeader().setSortIndicator(7, Qt.SortOrder.DescendingOrder)
+        self.tabs.addTab(self.w_table, T["r_words"])
+
+        # learned
+        page = QWidget()
+        lv = QVBoxLayout(page)
+        self.l_table = self.table([T["r_word"], T["r_meaning"], T["r_level"], T["r_date"]])
+        self.l_table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
+        self.l_table.setSortingEnabled(True)
+        self.l_table.horizontalHeader().setSortIndicator(3, Qt.SortOrder.DescendingOrder)
+        lv.addWidget(self.l_table, 1)
+        self.restore_btn = QPushButton("↩ " + T["r_restore"])
+        self.restore_btn.setToolTip(T["r_restore_tip"])
+        self.restore_btn.clicked.connect(self.do_restore)
+        self.l_table.itemSelectionChanged.connect(
+            lambda: self.restore_btn.setEnabled(bool(self.l_table.selectionModel().selectedRows())))
+        lv.addWidget(self.restore_btn, 0, Qt.AlignmentFlag.AlignRight)
+        self.tabs.addTab(page, T["r_learned"])
+
+        close = QPushButton(T["r_close"])
+        close.clicked.connect(self.close)
+        v.addWidget(close, 0, Qt.AlignmentFlag.AlignRight)
+
+    def table(self, cols):
+        t = QTableWidget(0, len(cols))
+        t.setHorizontalHeaderLabels(cols)
+        t.verticalHeader().setVisible(False)
+        t.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        t.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        t.setAlternatingRowColors(True)
+        hh = t.horizontalHeader()
+        hh.setSectionResizeMode(QHeaderView.ResizeMode.ResizeToContents)
+        hh.setStretchLastSection(True)
+        return t
+
+    @staticmethod
+    def item(value, sort=None):
+        it = SortItem()
+        it.setData(Qt.ItemDataRole.DisplayRole, value)
+        if sort is not None:
+            it.setData(Qt.ItemDataRole.UserRole + 1, sort)
+        return it
+
+    def fill(self, table, rows):
+        sorting = table.isSortingEnabled()
+        table.setSortingEnabled(False)
+        table.setRowCount(len(rows))
+        for r, row in enumerate(rows):
+            for c, val in enumerate(row["cells"]):
+                it = QTableWidgetItem() if not isinstance(val, QTableWidgetItem) else val
+                if not isinstance(val, QTableWidgetItem):
+                    it.setData(Qt.ItemDataRole.DisplayRole, val)
+                if c == 0:
+                    it.setData(Qt.ItemDataRole.UserRole, row.get("key"))
+                table.setItem(r, c, it)
+        table.setSortingEnabled(sorting)
+
+    def refresh(self):
+        ww, T = self.ww, self.ww.T
+        mode = ww.mode()
+        recs = {k: v for k, v in ww.st["words"].items() if k.startswith(mode + ":") and v["h"]}
+        fmt = lambda ts: datetime.datetime.fromtimestamp(ts).strftime("%d.%m.%Y")
+
+        # per level
+        rows, tot = [], [0, 0, 0, []]
+        for lv in ww.levels[mode]:
+            keys = [e["key"] for e in ww.words[mode][lv]]
+            seen = [recs[k] for k in keys if k in recs]
+            learned = sum(1 for r in seen if r.get("learned"))
+            lasts = [r["h"][-1][1] for r in seen]
+            avg = round(sum(lasts) / len(lasts), 1) if lasts else ""
+            pct = round(100 * learned / len(keys)) if keys else 0
+            bar = "█" * (pct // 10) + "░" * (10 - pct // 10) + f"  {pct}%"
+            rows.append({"cells": [lv, len(keys), len(seen), learned, avg, bar]})
+            tot[0] += len(keys); tot[1] += len(seen); tot[2] += learned; tot[3] += lasts
+        avg = round(sum(tot[3]) / len(tot[3]), 1) if tot[3] else ""
+        pct = round(100 * tot[2] / tot[0]) if tot[0] else 0
+        rows.append({"cells": [T["r_all"], tot[0], tot[1], tot[2], avg, f"{pct}%"]})
+        self.fill(self.lv_table, rows)
+
+        n_ratings = sum(len(r["h"]) for r in recs.values())
+        week = datetime.datetime.now().timestamp() - 7 * 86400
+        n_week = sum(1 for r in recs.values() for ts, _ in r["h"] if ts >= week)
+        self.head.setText(
+            f"<b style='font-size:15px'>{escape(ww.pair['title'])}</b> &nbsp; "
+            f"{T['r_mode']}: <b>{T['modes'][mode]}</b><br>"
+            f"{T['r_ratings']}: <b>{n_ratings}</b> &nbsp;·&nbsp; {T['r_week']}: <b>{n_week}</b>"
+            f" &nbsp;·&nbsp; {T['r_learned_n']}: <b>{tot[2]}</b>")
+        counts = [0] * 11
+        for r in recs.values():
+            counts[r["h"][-1][1]] += 1
+        self.dist.set_counts(counts)
+
+        # rated words
+        rows = []
+        for k, r in recs.items():
+            e = ww.index.get(k)
+            if not e:
+                continue
+            sc = [x[1] for x in r["h"]]
+            last = self.item(f"{sc[-1]}" + (" ★" if r.get("learned") else ""), sc[-1])
+            rows.append({"key": k, "cells": [
+                e["w"], e["m"], e["lv"], len(sc), last,
+                round(sum(sc) / len(sc), 1), " ".join(map(str, sc[-12:])),
+                self.item(fmt(r["h"][-1][0]), r["h"][-1][0])]})
+        rows.sort(key=lambda x: -self._ts(x))
+        self.fill(self.w_table, rows)
+
+        # learned
+        rows = []
+        for k, r in recs.items():
+            e = ww.index.get(k)
+            if e and r.get("learned"):
+                rows.append({"key": k, "cells": [e["w"], e["m"], e["lv"],
+                                                 self.item(fmt(r["h"][-1][0]), r["h"][-1][0])]})
+        self.fill(self.l_table, rows)
+        self.tabs.setTabText(2, f"{T['r_learned']} ({len(rows)})")
+        self.restore_btn.setEnabled(False)
+
+    @staticmethod
+    def _ts(row):
+        it = row["cells"][-1]
+        return it.data(Qt.ItemDataRole.UserRole + 1) or 0
+
+    def do_restore(self):
+        keys = [self.l_table.item(i.row(), 0).data(Qt.ItemDataRole.UserRole)
+                for i in self.l_table.selectionModel().selectedRows()]
+        self.ww.restore([k for k in keys if k])
+        self.refresh()
+
+
 # --------------------------------------------------------------------------- widget
 class WordWidget(QWidget):
     def __init__(self, pair_id, controller=None, pos=None):
@@ -361,7 +739,9 @@ class WordWidget(QWidget):
         self.cur = None
         self.counter = 0
         self.recent = []
-        self.soon = []          # [(card_no, key)] — "didn't know" words come back soon
+        self.index = {e["key"]: e for m in self.words.values()
+                      for items in m.values() for e in items}
+        self.report = None
         self.elapsed = 0.0
         self.hovering = False
         self._drag = None
@@ -424,6 +804,10 @@ class WordWidget(QWidget):
         if any(":" not in k for k in d["words"]):
             d["words"] = {(k if ":" in k else f"general:{k}"): v
                           for k, v in d["words"].items()}
+        # v2: 1–10 scale. Old ✓/✗ weights can't be mapped to a score, so they are dropped.
+        d["words"] = {k: v for k, v in d["words"].items() if isinstance(v, dict) and "h" in v}
+        if "n" not in d["today"]:
+            d["today"] = {"date": "", "n": 0}
         return d
 
     def save_state(self):
@@ -437,15 +821,23 @@ class WordWidget(QWidget):
         except Exception as e:
             print("Could not save state:", e, file=sys.stderr)
 
-    def ws(self, e):
-        return self.st["words"].setdefault(e["key"], {"w": 1.0, "k": 0, "u": 0})
+    def ws(self, key):
+        """Per-word record: h = [[unix time, score 1–10], …], learned = scored 10."""
+        return self.st["words"].get(key) or {"h": [], "learned": False}
+
+    def is_learned(self, key):
+        return self.st["words"].get(key, {}).get("learned", False)
 
     def today(self):
         t = self.st["today"]
         d = datetime.date.today().isoformat()
         if t.get("date") != d:
-            t.update({"date": d, "k": 0, "u": 0})
+            t.update({"date": d, "n": 0})
         return t
+
+    def learned_count(self):
+        m = self.mode() + ":"
+        return sum(1 for k, v in self.st["words"].items() if k.startswith(m) and v.get("learned"))
 
     # ------------------------------------------------------------ UI
     def build_card(self):
@@ -506,27 +898,32 @@ class WordWidget(QWidget):
         v.addStretch(1)
 
         row = QHBoxLayout()
-        row.setSpacing(6)
-        self.know_btn = QPushButton(self.T["know"])
-        self.know_btn.setStyleSheet(btn_css("rgba(46,170,110,0.55)", "rgba(46,170,110,0.85)"))
-        self.know_btn.setToolTip(self.T["tip_know"])
-        self.know_btn.clicked.connect(lambda: self.mark(True))
-        self.dont_btn = QPushButton(self.T["dont"])
-        self.dont_btn.setStyleSheet(btn_css("rgba(220,80,100,0.55)", "rgba(220,80,100,0.85)"))
-        self.dont_btn.setToolTip(self.T["tip_dont"])
-        self.dont_btn.clicked.connect(lambda: self.mark(False))
-        self.skip_btn = QPushButton("›")
-        self.skip_btn.setFixedWidth(34)
-        self.skip_btn.setStyleSheet(btn_css("rgba(255,255,255,0.14)", "rgba(255,255,255,0.28)"))
-        self.skip_btn.setToolTip(self.T["next"])
-        self.skip_btn.clicked.connect(self.next_word)
-        for b in (self.know_btn, self.dont_btn, self.skip_btn):
+        row.setSpacing(3)
+        self.score_btns = []
+        for n in range(1, 11):
+            b = QPushButton(str(n))
+            b.setFixedHeight(26)
+            b.setMinimumWidth(10)
+            b.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
             b.setCursor(Qt.CursorShape.PointingHandCursor)
-        row.addWidget(self.know_btn, 1)
-        row.addWidget(self.dont_btn, 1)
+            b.setToolTip(self.T["rate_10"] if n == 10 else self.T["rate_tip"])
+            b.clicked.connect(lambda _=False, x=n: self.rate(x))
+            self.score_btns.append(b)
+            row.addWidget(b, 1)
+        self.skip_btn = QPushButton("›")
+        self.skip_btn.setFixedSize(26, 26)
+        self.skip_btn.setStyleSheet(score_css(None, False))
+        self.skip_btn.setToolTip(self.T["next"])
+        self.skip_btn.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.skip_btn.clicked.connect(self.next_word)
         row.addWidget(self.skip_btn)
         v.addLayout(row)
+        self.style_scores(None)
         return page
+
+    def style_scores(self, last):
+        for n, b in enumerate(self.score_btns, 1):
+            b.setStyleSheet(score_css(n, n == last))
 
     def build_picker(self):
         page = QWidget()
@@ -615,7 +1012,6 @@ class WordWidget(QWidget):
         self.save_state()
         if changed:
             self.cur = None
-            self.soon.clear()
             self.recent.clear()
         self.show_card()
 
@@ -628,10 +1024,15 @@ class WordWidget(QWidget):
         self.pin_btn.setText("📌" if self.st["pinned"] else "📍")
         self.pin_btn.setToolTip(self.T["pin_on"] if self.st["pinned"] else self.T["pin_off"])
         t = self.today()
-        self.stats_lbl.setText(f"✓{t['k']}  ✗{t['u']}")
+        self.stats_lbl.setText(f"✎{t['n']}  ★{self.learned_count()}")
+        self.stats_lbl.setMinimumWidth(
+            QFontMetrics(self.stats_lbl.font()).horizontalAdvance(self.stats_lbl.text()) + 8)
+        self.stats_lbl.setToolTip(self.T["stats_tip"])
 
     # ------------------------------------------------------------ choosing words
     def pool(self):
+        """Every word of the chosen level (and, less often, the levels below) that
+        hasn't been scored 10. Scores 1–9 don't change how often a word comes up."""
         m = self.mode()
         lvls = self.levels[m]
         idx = lvls.index(self.level())
@@ -639,53 +1040,58 @@ class WordWidget(QWidget):
         for i, lv in enumerate(lvls[:idx + 1]):
             base = 1.0 if i == idx else (0.35 if i == idx - 1 else 0.12)
             for e in self.words[m][lv]:
-                items.append(e)
-                weights.append(base * self.ws(e)["w"])
+                if not self.is_learned(e["key"]):
+                    items.append(e)
+                    weights.append(base)
         return items, weights
 
-    def find(self, key):
-        for m in self.words.values():
-            for items in m.values():
-                for e in items:
-                    if e["key"] == key:
-                        return e
-        return None
-
     def next_word(self):
-        self.counter += 1
-        e = None
-        if self.soon and self.soon[0][0] <= self.counter:
-            e = self.find(self.soon.pop(0)[1])
-        if e is None:
-            items, weights = self.pool()
-            cand = [(it, w) for it, w in zip(items, weights) if it["key"] not in self.recent]
-            if not cand:
-                cand = list(zip(items, weights))
-            e = random.choices([c[0] for c in cand], weights=[c[1] for c in cand])[0]
+        items, weights = self.pool()
+        if not items:
+            self.cur = None
+            self.render_empty()
+            return
+        cand = [(it, w) for it, w in zip(items, weights) if it["key"] not in self.recent]
+        if not cand:
+            cand = list(zip(items, weights))
+        e = random.choices([c[0] for c in cand], weights=[c[1] for c in cand])[0]
         self.cur = e
-        self.recent = (self.recent + [e["key"]])[-8:]
+        self.recent = (self.recent + [e["key"]])[-min(8, len(items) - 1):] if len(items) > 1 else []
         self.elapsed = 0.0
         self.render_word()
         self.update()
 
-    def mark(self, known):
+    def rate(self, score):
         if not self.cur:
             return
-        s = self.ws(self.cur)
-        t = self.today()
-        if known:
-            s["k"] += 1
-            s["w"] = max(0.04, s["w"] * 0.3)
-            t["k"] += 1
-        else:
-            s["u"] += 1
-            s["w"] = min(8.0, s["w"] * 2 + 0.5)
-            t["u"] += 1
-            self.soon = sorted([x for x in self.soon if x[1] != self.cur["key"]]
-                               + [(self.counter + 4, self.cur["key"])])
+        key = self.cur["key"]
+        rec = self.st["words"].setdefault(key, {"h": [], "learned": False})
+        rec["h"].append([int(datetime.datetime.now().timestamp()), score])
+        rec["h"] = rec["h"][-100:]
+        rec["learned"] = score == 10
+        self.today()["n"] += 1
         self.save_state()
         self.refresh_chrome()
+        if self.report is not None:
+            self.report.refresh()
         self.next_word()
+
+    def restore(self, keys):
+        for k in keys:
+            if k in self.st["words"]:
+                self.st["words"][k]["learned"] = False
+        self.save_state()
+        self.refresh_chrome()
+        if self.cur is None and self.stack.currentIndex() == 0:
+            self.next_word()
+
+    def open_report(self):
+        if self.report is None:
+            self.report = ReportDialog(self)
+        self.report.refresh()
+        self.report.show()
+        self.report.raise_()
+        self.report.activateWindow()
 
     # ------------------------------------------------------------ drawing
     def fit_font(self, text, max_pt, min_pt, width):
@@ -717,9 +1123,24 @@ class WordWidget(QWidget):
         else:
             self.m_lbl.setText(f"<span style='color:{gold}'>{escape(e['m'])}</span>")
         self.type_lbl.setText(self.T["types"].get(e["t"], ""))
-        s = self.ws(e)
-        self.know_btn.setText(self.T["know"] + (f" ·{s['k']}" if s["k"] else ""))
-        self.dont_btn.setText(self.T["dont"] + (f" ·{s['u']}" if s["u"] else ""))
+        h = self.ws(e["key"])["h"]
+        self.style_scores(h[-1][1] if h else None)   # outline = your last score
+        for b in self.score_btns:
+            b.setEnabled(True)
+
+    def render_empty(self):
+        self.w_lbl.setFont(self.fit_font(self.T["all_learned"], 14, 9, APP_W - 36))
+        self.w_lbl.setText(f"<span style='color:white'>{escape(self.T['all_learned'])}</span>")
+        self.x_lbl.setVisible(False)
+        f = QFont(self.font())
+        f.setPointSizeF(9)
+        self.m_lbl.setFont(f)
+        self.m_lbl.setText(f"<span style='color:#ffd98a'>{escape(self.T['all_learned2'])}</span>")
+        self.type_lbl.setText("")
+        self.style_scores(None)
+        for b in self.score_btns:
+            b.setEnabled(False)
+        self.update()
 
     def paintEvent(self, ev):
         p, path = paint_card(self, self.bg_pix)
@@ -819,6 +1240,7 @@ class WordWidget(QWidget):
             m.addAction(T["m_bg_reset"], self.reset_bg)
         m.addAction(T["m_reset"], self.reset_progress)
         m.addSeparator()
+        m.addAction(T["m_report"], self.open_report)
         if self.controller:
             m.addAction("🌐 " + T["m_lang"], lambda: self.controller.change_language(self))
         m.addAction(T["m_close"], self.quit_app)
@@ -867,16 +1289,21 @@ class WordWidget(QWidget):
         self.update()
 
     def reset_progress(self):
+        if QMessageBox.question(self, self.pair["title"], self.T["reset_q"]) \
+                != QMessageBox.StandardButton.Yes:
+            return
         self.st["words"] = {}
-        self.st["today"] = {"date": "", "k": 0, "u": 0}
-        self.soon.clear()
+        self.st["today"] = {"date": "", "n": 0}
         self.save_state()
         self.refresh_chrome()
-        if self.cur:
-            self.render_word()
+        if self.report is not None:
+            self.report.refresh()
+        self.next_word()
 
     def quit_app(self):
         self.save_state()
+        if self.report is not None:
+            self.report.close()
         QApplication.instance().quit()
 
     def closeEvent(self, e):
